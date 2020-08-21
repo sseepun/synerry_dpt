@@ -222,7 +222,7 @@
         <div class="container">
             <div class="section-padding">
                 <h1 class="text-center" data-aos="fade-up" data-aos-delay="0">
-                    เปิดโอกาศให้สังคมและสิ่งแวดล้อม
+                    เปิดโอกาสให้สังคมและสิ่งแวดล้อม
                 </h1>
                 <p class="text-center" data-aos="fade-up" data-aos-delay="300">
                     นี่แหละอุตสาหกรรมยุคใหม่ที่แท้จริง ไม่ว่าคุณจะอยู่ที่ไหนก็ร่วมสร้างแรงบันดาลใจดีดีไปกับเรา
