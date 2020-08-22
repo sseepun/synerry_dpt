@@ -34,7 +34,7 @@
                 <a class="logo" href="./">
                     <img src="./assets/img/logo.png" alt="Logo" />
                     <div class="text">
-                        <h1>สำนักงานปรัดกระทรวงอุตสาหกรรม</h1>
+                        <h1>สำนักงานปลัดกระทรวงอุตสาหกรรม</h1>
                         <p>Office of Permanent Secretary</p>
                     </div>
                 </a>
