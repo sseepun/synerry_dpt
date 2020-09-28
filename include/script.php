@@ -6,4 +6,7 @@
 <script src="public/assets/lib/fancybox-3.5.7/dist/jquery.fancybox.min.js"></script>
 <script src="public/assets/lib/aos-2.3.1/aos.min.js"></script>
 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TweenMax.min.js"></script>
+
 <script src="public/assets/app/js/script.js"></script>
+<script src="public/assets/app/js/lazy-load.js"></script>

@@ -1,0 +1,47 @@
+
+/* Reset */
+html, body{color:#fff; background:#000;}
+
+
+/* Sidenav */
+nav.sidenav{background:#000;}
+nav.sidenav .sidenav-btn{border-color:#fff;}
+nav.sidenav .sidenav-btn .hamburger > *{background:#fff;}
+nav.sidenav .options > .option, nav.sidenav .scroll-wrapper{border-color:#fff;}
+nav.sidenav .option > .dropdown{background:#000;}
+nav.sidenav .option > .dropdown > *{border-color:#fff!important; color:#fff;}
+nav.sidenav .option > .icon{color:#fff;}
+nav.sidenav .menu > a{color:#fff; border-color:#fff;}
+nav.sidenav .menu > .dropdown-toggle{color:#fff;}
+nav.sidenav .menu.has-children > a::after{background:#fff;}
+nav.sidenav .submenu > a{background:#000; color:#fff; border-color:#fff;}
+nav.sidenav .submenu > .dropdown-toggle{color:#fff;}
+nav.sidenav .submenu.has-children > a::after{background:#000;}
+nav.sidenav .submenu-level2 > .submenu > a{background:#000; color:#fff; border-color:#fff;}
+
+
+/* Global Search */
+.global-search-container .hamburger > *{background:#fff;}
+
+
+/* Button */
+.btn.custom-btn-primary, .btn.custom-btn-primary:focus,
+.btn.custom-btn-secondary, .btn.custom-btn-secondary:focus,
+.btn.custom-btn-warning, .btn.custom-btn-warning:focus{
+    background:#fff; color:#000;
+}
+.btn.custom-btn-primary:hover, 
+.btn.custom-btn-secondary:hover,
+.btn.custom-btn-warning:hover{
+    background:#fff; color:#000; box-shadow:inset 0 0 0 100rem rgba(0,0,0,.05);
+}
+.btn.custom-btn-primary:active, 
+.btn.custom-btn-secondary:active,
+.btn.custom-btn-warning:active{
+    background:#fff; color:#000; box-shadow:inset 0 0 0 100rem rgba(0,0,0,.10);
+}
+.btn.custom-btn-primary > i, 
+.btn.custom-btn-secondary > i,
+.btn.custom-btn-warning > i{
+    color:#fff;
+}
