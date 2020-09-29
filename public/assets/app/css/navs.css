@@ -109,7 +109,7 @@ nav.topnav .submenu-dropdown .hero{width:35vw; background-size:cover; background
 nav.topnav .submenu-container{position:relative; width:18rem; padding:.875rem 0 .75rem 0;}
 nav.topnav .submenu-container::after{
     content:''; position:absolute; top:100%; left:0; width:4.5rem; height:2.25rem;
-    background-image:url('public/assets/app/images/hero/01.png');
+    background-image:url('../images/hero/01.png');
     background-size:100% auto; background-position:top left; background-repeat:no-repeat;
 }
 nav.topnav .submenu-container > .submenu > a, nav.topnav .submenu-level2 > .submenu > a{

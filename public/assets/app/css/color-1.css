@@ -38,25 +38,43 @@ nav.sidenav .submenu-level2 > .submenu > a{background:#000; color:#fff; border-c
 /* Button */
 .btn.custom-btn-primary, .btn.custom-btn-primary:focus,
 .btn.custom-btn-secondary, .btn.custom-btn-secondary:focus,
-.btn.custom-btn-warning, .btn.custom-btn-warning:focus{
+.btn.custom-btn-warning, .btn.custom-btn-warning:focus,
+.btn.custom-btn-dark, .btn.custom-btn-dark:focus{
     background:#fff; color:#000;
 }
 .btn.custom-btn-primary:hover, 
 .btn.custom-btn-secondary:hover,
-.btn.custom-btn-warning:hover{
+.btn.custom-btn-warning:hover,
+.btn.custom-btn-dark:hover{
     background:#fff; color:#000; box-shadow:inset 0 0 0 100rem rgba(0,0,0,.05);
 }
 .btn.custom-btn-primary:active, 
 .btn.custom-btn-secondary:active,
-.btn.custom-btn-warning:active{
+.btn.custom-btn-warning:active,
+.btn.custom-btn-dark:active{
     background:#fff; color:#000; box-shadow:inset 0 0 0 100rem rgba(0,0,0,.10);
 }
 .btn.custom-btn-primary > i, 
 .btn.custom-btn-secondary > i,
-.btn.custom-btn-warning > i{
+.btn.custom-btn-warning > i,
+.btn.custom-btn-dark > i{
     color:#fff;
 }
 .btn.custom-btn-theme-0, .btn.custom-btn-theme-1, .btn.custom-btn-theme-2{border:1px solid #fff;}
+
+.btn-action.btn-action-primary{color:#fff;}
+.btn-action.btn-action-primary > i{background:#fff; color:#000;}
+
+
+/* Pagination */
+.pagination .page-btn{color:#fff; border-color:#fff;}
+.pagination .page-btn:hover, .pagination .page-btn.active{
+    border-color:#fff; background:#fff!important; color:#000;
+}
+
+
+/* Post Card */
+.post-card > .title-container > .title{color:#fff;}
 
 
 /* Banner 01 */
@@ -64,3 +82,9 @@ nav.sidenav .submenu-level2 > .submenu > a{background:#000; color:#fff; border-c
 .banner-01 .dots button{background:#fff;}
 .banner-01 .dots button:before{border:1px solid #fff;}
 .banner-01 .arrows > .slick-prev::before, .banner-01 .arrows > .slick-next::before{color:#fff;}
+
+
+/* Tab Container 01 */
+.tab-container-01 .tabs::before{background:#fff;}
+.tab-container-01 .tab.active h5{color:#000; background:#fff;}
+.tab-container-01 .tab.active h5::before{opacity:1;}

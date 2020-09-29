@@ -429,6 +429,6 @@ $(function(){ 'use strict';
 
     
     // AOS Animation
-    // AOS.init({ easing: 'ease-in-out-cubic', duration: 750, once: true, offset: 15 });
+    AOS.init({ easing: 'ease-in-out-cubic', duration: 750, once: true, offset: 15 });
 
 });
