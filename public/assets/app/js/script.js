@@ -309,7 +309,8 @@ $(function(){ 'use strict';
                 self.find('> .slides').slick({
                     centerMode: true, centerPadding: 0, slidesToShow: 1, 
                     focusOnSelect: true, autoplay: true, autoplaySpeed: 4000, speed: 800,
-                    arrows: false, dots: true, appendDots: self.find('.dots'),
+                    arrows: true, appendArrows: self.find('.arrows'),
+                    dots: true, appendDots: self.find('.dots'),
                     adaptiveHeight: true
                 });
             });
@@ -419,8 +420,11 @@ $(function(){ 'use strict';
             $('.page-loader').addClass('fade-out');
             setTimeout(function(){
                 $('.page-loader').remove();
+                $('body').removeClass('loading');
             }, 1350);
         }
+    }else{
+        $('body').removeClass('loading');
     }
 
     

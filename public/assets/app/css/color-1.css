@@ -57,3 +57,10 @@ nav.sidenav .submenu-level2 > .submenu > a{background:#000; color:#fff; border-c
     color:#fff;
 }
 .btn.custom-btn-theme-0, .btn.custom-btn-theme-1, .btn.custom-btn-theme-2{border:1px solid #fff;}
+
+
+/* Banner 01 */
+.banner-01 .dots{background:#000; border-bottom:1px solid #fff;}
+.banner-01 .dots button{background:#fff;}
+.banner-01 .dots button:before{border:1px solid #fff;}
+.banner-01 .arrows > .slick-prev::before, .banner-01 .arrows > .slick-next::before{color:#fff;}

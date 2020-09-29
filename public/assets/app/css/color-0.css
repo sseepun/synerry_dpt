@@ -64,3 +64,9 @@ nav.sidenav .submenu-level2 > .submenu:hover > a{background:#622a6f;}
 }
 .btn.custom-btn-warning > i{color:#622a6f;}
 
+
+/* Banner 01 */
+.banner-01 .dots{background:#552b74;}
+.banner-01 .dots button{background:#fff;}
+.banner-01 .dots button:before{border:1px solid #fff;}
+.banner-01 .arrows > .slick-prev::before, .banner-01 .arrows > .slick-next::before{color:#fff;}
