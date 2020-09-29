@@ -25,6 +25,20 @@ html.global-search-opened, body.global-search-opened{overflow-y:hidden!important
 }
 
 
+/* Colors */
+.color-white{color:#fff!important;}
+.color-black{color:#fff!important;}
+.color-01{color:#422754!important;}
+.color-02{color:#59236e!important;}
+.color-03{color:#8e5e9c!important;}
+
+.bg-white{background:#fff!important;}
+.bg-black{background:#fff!important;}
+.bg-01{background:#422754!important;}
+.bg-02{background:#59236e!important;}
+.bg-03{background:#8e5e9c!important;}
+
+
 /* Typography */
 p, .p{font-size:1.25rem; margin:.625rem 0 0 0; font-weight:300;}
 @media screen and (max-width:767.98px){

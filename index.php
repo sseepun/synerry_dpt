@@ -84,7 +84,7 @@
                 <div class="tab-contents" data-aos="fade-up" data-aos-delay="600">
 
                     <div class="tab-content active" data-tab="1">
-                        <div class="hero" style="background-image:url('public/assets/app/images/bg/09.jpg');"></div>
+                        <div class="hero lazy-bg" data-src="public/assets/app/images/bg/09.jpg"></div>
                         <div class="contents">
                             <div class="grids">
                                 <?php for($j=0; $j<3; $j++){?>
@@ -101,7 +101,7 @@
                                             </div>
                                             <p class="date">21. 09.2563</p>
                                             <div class="ss-img bradius-0">
-                                                <div class="img-bg" style="background-image:url('public/assets/app/images/banner/01.jpg');"></div>
+                                                <div class="img-bg lazy-bg" data-src="public/assets/app/images/banner/01.jpg"></div>
                                                 <div class="socials">
                                                     <ul>
                                                         <li><a class="social social-fw" href="#">
@@ -127,6 +127,52 @@
                                                     <i class="fas fa-chevron-right"></i>
                                                     อ่านรายละเอียด
                                                 </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                <?php }?>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="tab-content" data-tab="2">
+                        <div class="hero lazy-bg" data-src="public/assets/app/images/bg/10.jpg"></div>
+                        <div class="contents pl-0">
+                            <div class="grids no-gap">
+                                <?php for($j=0; $j<3; $j++){?>
+                                    <div class="grid md-1-3">
+                                        <div class="post-card post-card-02">
+                                            <div class="title-container">
+                                                <a class="title h4" href="#">
+                                                    สุริยะฯ ดันแผนพัฒนาอุตฯ 
+                                                    เครื่องจักรกลเต็มสูบ มุ่งสนับสนุน
+                                                    เกษตรแปรรูป ชี้เป็นจุดเริ่มต้นการ
+                                                    ปฏิรูปโครงสร้างศก
+                                                </a>
+                                                <p class="by">เขียนโดย : <strong>สำนักบริหารกลาง</strong></p>
+                                            </div>
+                                            <p class="date">21. 09.2563</p>
+                                            <p class="desc">
+                                                กระทรวงอุตสาหกรรม (อก.) ผลักดันแผน
+                                                อุตสาหกรรมเครื่องจักรกลให้เป็นอุตสาหกรรม
+                                                สนับสนุนเพิ่มขีดความสามารถการผลิตทั้ง
+                                                ภาคอุตสาหกรรมและภาคเกษตรกรรม...
+                                            </p>
+                                            <div class="ss-img bradius-0">
+                                                <div class="img-bg lazy-bg" data-src="public/assets/app/images/banner/02.jpg"></div>
+                                                <div class="socials">
+                                                    <ul>
+                                                        <li><a class="social social-fw" href="#">
+                                                            <i class="fab fa-facebook-f"></i>
+                                                        </a></li>
+                                                        <li><a class="social social-tw" href="#">
+                                                            <i class="fab fa-twitter"></i>
+                                                        </a></li>
+                                                        <li><a class="social social-ln" href="#">
+                                                            <i class="fab fa-line"></i>
+                                                        </a></li>
+                                                    </ul>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
