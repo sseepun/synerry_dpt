@@ -12,6 +12,17 @@ html.global-search-opened, body.global-search-opened{overflow-y:hidden!important
 }
 
 
+/* Section */
+.section-padding{padding:4rem 0;}
+.section-bg{background-size:cover; background-position:center; background-repeat:no-repeat;}
+@media screen and (max-width:991.98px){
+    .section-padding{padding:3rem 0;}
+}
+@media screen and (max-width:575.98px){
+    .section-padding{padding:2.5rem 0;}
+}
+
+
 /* Buttons */
 .btn > i{font-size:60%; transition:color .3s;}
 .btn.btn-xs{font-size:1.0625rem; font-weight:300; padding:.0625rem .75rem;}
