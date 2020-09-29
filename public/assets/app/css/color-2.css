@@ -3,6 +3,17 @@
 html, body{color:#ffff00; background:#000;}
 
 
+/* Topnav */
+nav.topnav > .top-container{background:#000!important;}
+nav.topnav .menu > .submenu-dropdown{background:#000;}
+nav.topnav .submenu-container{background:#000; border-right:1px solid #ffff00;}
+nav.topnav .submenu-container > .submenu > a, nav.topnav .submenu-level2 > .submenu > a{color:#ffff00;}
+nav.topnav .submenu-container > .submenu:hover > a{color:#000; background:#ffff00;}
+nav.topnav .submenu-level2 > .submenu > a{color:#ffff00;}
+nav.topnav .submenu-level2 > .submenu:hover > a{color:#ffff00;}
+nav.topnav .menu-mobile .hamburger > *{background:#ffff00;}
+
+
 /* Sidenav */
 nav.sidenav{background:#000;}
 nav.sidenav .sidenav-btn{border-color:#ffff00;}
@@ -45,3 +56,4 @@ nav.sidenav .submenu-level2 > .submenu > a{background:#000; color:#ffff00; borde
 .btn.custom-btn-warning > i{
     color:#ffff00;
 }
+.btn.custom-btn-theme-0, .btn.custom-btn-theme-1, .btn.custom-btn-theme-2{border:1px solid #ffff00;}

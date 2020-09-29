@@ -3,6 +3,17 @@
 html, body{color:#fff; background:#000;}
 
 
+/* Topnav */
+nav.topnav > .top-container{background:#000!important;}
+nav.topnav .menu > .submenu-dropdown{background:#000;}
+nav.topnav .submenu-container{background:#000; border-right:1px solid #fff;}
+nav.topnav .submenu-container > .submenu > a, nav.topnav .submenu-level2 > .submenu > a{color:#fff;}
+nav.topnav .submenu-container > .submenu:hover > a{color:#000; background:#fff;}
+nav.topnav .submenu-level2 > .submenu > a{color:#fff;}
+nav.topnav .submenu-level2 > .submenu:hover > a{color:#f1d13d;}
+nav.topnav .menu-mobile .hamburger > *{background:#fff;}
+
+
 /* Sidenav */
 nav.sidenav{background:#000;}
 nav.sidenav .sidenav-btn{border-color:#fff;}
@@ -45,3 +56,4 @@ nav.sidenav .submenu-level2 > .submenu > a{background:#000; color:#fff; border-c
 .btn.custom-btn-warning > i{
     color:#fff;
 }
+.btn.custom-btn-theme-0, .btn.custom-btn-theme-1, .btn.custom-btn-theme-2{border:1px solid #fff;}

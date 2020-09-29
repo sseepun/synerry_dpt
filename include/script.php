@@ -1,5 +1,5 @@
 <script src="public/assets/node_modules/jquery/dist/jquery.min.js"></script>
-<script src="public/assets/node_modules/popper.js/dist/popper.min.js"></script>
+<!-- <script src="public/assets/node_modules/popper.js/dist/popper.min.js"></script> -->
 <script src="public/assets/node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
 <script src="public/assets/node_modules/slick-carousel/slick/slick.min.js"></script>
 
