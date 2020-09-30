@@ -3,6 +3,10 @@
 html, body{color:#ffff00; background:#000;}
 
 
+/* Colors */
+.color-white, .color-black, .color-sgray, .color-01, .color-02, .color-03{color:#ffff00!important;}
+
+
 /* Topnav */
 nav.topnav > .top-container{background:#000!important;}
 nav.topnav .menu > .submenu-dropdown{background:#000;}
@@ -62,8 +66,14 @@ nav.sidenav .submenu-level2 > .submenu > a{background:#000; color:#ffff00; borde
 }
 .btn.custom-btn-theme-0, .btn.custom-btn-theme-1, .btn.custom-btn-theme-2{border:1px solid #ffff00;}
 
-.btn-action.btn-action-primary{color:#ffff00;}
-.btn-action.btn-action-primary > i{background:#ffff00; color:#000;}
+.btn-action.btn-action-primary,
+.btn-action.btn-action-dark{
+    color:#ffff00;
+}
+.btn-action.btn-action-primary > i,
+.btn-action.btn-action-dark > i{
+    background:#ffff00; color:#000;
+}
 
 
 /* Pagination */
@@ -75,6 +85,13 @@ nav.sidenav .submenu-level2 > .submenu > a{background:#000; color:#ffff00; borde
 
 /* Post Card */
 .post-card > .title-container > .title{color:#ffff00;}
+.post-card.post-card-04 .title-container > .title::before{background:#ffff00;}
+
+
+/* Table */
+table.table, table.table td{border-color:#ffff00;}
+table.table tbody td{color:#ffff00;}
+table.table .icon{color:#ffff00;}
 
 
 /* Banner 01 */
@@ -85,6 +102,30 @@ nav.sidenav .submenu-level2 > .submenu > a{background:#000; color:#ffff00; borde
 
 
 /* Tab Container 01 */
-.tab-container-01 .tabs::before{background:#ffff00;}
-.tab-container-01 .tab.active h5{color:#000; background:#ffff00;}
-.tab-container-01 .tab.active h5::before{opacity:1;}
+.tab-container.tab-container-01 .tabs::before{background:#ffff00;}
+.tab-container.tab-container-01 .tab.active h5{color:#000; background:#ffff00;}
+.tab-container.tab-container-01 .tab.active h5::before{opacity:1; background:#ffff00!important;}
+
+/* Tab Container 02 */
+.tab-container.tab-container-02 .tab .icon{color:#ffff00;}
+.tab-container.tab-container-02 .tab.active h4{font-weight:600;}
+.tab-container.tab-container-02 .btns{border-color:#ffff00;}
+.tab-container.tab-container-02 .arrows > .slick-prev, 
+.tab-container.tab-container-02 .arrows > .slick-next{color:#ffff00;}
+@media screen and (min-width:768px){
+    .tab-container.tab-container-02 .slide.slick-current .post-card{background:#ffff00;}
+    .tab-container.tab-container-02 .slide.slick-current .post-card *{color:#000!important;}
+    .tab-container.tab-container-02 .slide.slick-current .btns{border-color:#000;}
+    .tab-container.tab-container-02 .slide.slick-current .btn-action > i{
+        background:#000!important; color:#ffff00!important;
+    }
+}
+
+/* Tab Container 04 */
+.tab-container.tab-container-03 .tabs{border:1px solid #ffff00; background:#000;}
+.tab-container.tab-container-03 .tab{border-color:#ffff00; color:#ffff00;}
+.tab-container.tab-container-03 .tab:hover,
+.tab-container.tab-container-03 .tab.active{background:#ffff00; color:#000;}
+.tab-container.tab-container-03 .tab > .icon{background:#ffff00; color:#000;}
+.tab-container.tab-container-03 .tab.active > .icon{background:#000; color:#ffff00;}
+.tab-container.tab-container-03 .tab-contents{border:1px solid #ffff00;}
