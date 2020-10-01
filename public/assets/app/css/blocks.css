@@ -100,7 +100,10 @@
     position:relative; display:block; width:280px; height:auto; margin:0 auto;
     transform:translateY(1rem);
 }
-.call-02 > .call-container{width:100%; padding:3rem 0;}
+.call-02 > .call-container{
+    width:100%; padding:3rem 0; background-size:cover; background-position:center;
+    background-repeat:no-repeat;
+}
 .call-02 .call-text{position:relative; margin:0; font-weight:300;}
 .call-02 .call-text.title{font-size:3.25rem; line-height:1;}
 .call-02 .call-text.desc{font-size:1.4375rem;}
