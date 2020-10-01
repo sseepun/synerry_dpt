@@ -308,3 +308,14 @@ nav.footer > .footer-bottom .wrapper > .count-area{
     box-shadow:none; outline:none; border:0; font-size:1.75rem; padding:0; text-align:center;
     cursor:pointer; transition:color .3s;
 }
+
+
+/* Back to Top */
+.back-to-top{
+    display:block; text-decoration:none; width:3rem; height:3rem; border-radius:.3125rem;
+    text-align:center; line-height:3.25rem; font-size:1.25rem; opacity:0; z-index:90;
+    position:fixed; bottom:1rem; right:1rem; border:1.8px solid transparent;
+    pointer-events:none; transition:opacity .3s;
+}
+.back-to-top.active{opacity:.6; pointer-events:all;}
+.back-to-top.active:hover{opacity:1;}

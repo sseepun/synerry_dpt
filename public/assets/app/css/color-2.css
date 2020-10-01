@@ -51,6 +51,10 @@ nav.footer > .footer-bottom .wrapper > .count-area{background:#ffff00; color:#00
 .global-search-container .hamburger > *{background:#ffff00;}
 
 
+/* Back to Top */
+.back-to-top{background:#000; color:#ffff00!important; border-color:#ffff00;}
+
+
 /* Button */
 .btn.custom-btn-primary, .btn.custom-btn-primary:focus,
 .btn.custom-btn-secondary, .btn.custom-btn-secondary:focus,
