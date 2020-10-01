@@ -245,6 +245,46 @@ nav.sidenav ~ .sidenav-filter{
 }
 
 
+/* Footer */
+nav.footer{width:100%;}
+nav.footer > .footer-top{width:100%; overflow:hidden; padding:1rem 0 0 0;}
+nav.footer .blocks{width:100%; display:flex; justify-content:space-between; flex-wrap:wrap;}
+nav.footer .block{width:auto; max-width:35%; border-left:1px solid transparent; margin:1.5rem 0 0 0;}
+nav.footer .block > .wrapper{
+    padding:0 1.5rem 1rem .5rem;
+    box-sizing:border-box; -moz-box-sizing:border-box; -webkit-box-sizing:border-box;
+}
+nav.footer .block:last-child > .wrapper{padding-right:0;}
+nav.footer .block h4{margin:0; font-size:1.5625rem; line-height:1; font-weight:200;}
+nav.footer .ss-list > li{color:#fff; font-weight:200;}
+nav.footer .ss-list > li > a{font-weight:200; transition:color .3s;}
+nav.footer .ss-list > li:before{background:#d479f6;}
+nav.footer .ss-list > li > .ss-list > li:before{background:#8bb8cb;}
+nav.footer > .footer-bottom{width:100%; overflow:hidden; padding:.75rem 0 1.5rem 0;}
+nav.footer > .footer-bottom .wrapper{
+    width:100%; display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap;
+}
+nav.footer > .footer-bottom .wrapper > *{display:block; margin:.75rem 0;}
+nav.footer > .footer-bottom .wrapper > p{line-height:1.1; font-size:1.1875rem; font-weight:300;}
+nav.footer > .footer-bottom .wrapper > .count-area{
+    display:block; width:14rem; padding:.375rem 1.125rem; text-align:center; border-radius:1000em;
+    font-size:1.0625rem; font-weight:200;
+}
+@media screen and (max-width:1199.98px){
+    nav.footer .block{max-width:30%;}
+}
+@media screen and (max-width:991.98px){
+    nav.footer .block{width:calc((100% - 1.5rem) / 2); max-width:100%;}
+    nav.footer .block > .wrapper{padding:0 0 1rem .5rem!important;}
+    nav.footer > .footer-bottom .wrapper{justify-content:center;}
+    nav.footer > .footer-bottom .wrapper > p{width:100%; text-align:center;}
+    nav.footer > .footer-bottom .wrapper > .count-area{margin:0 auto;}
+}
+@media screen and (max-width:575.98px){
+    nav.footer .block{width:100%;}
+}
+
+
 /* Global Search */
 .global-search-container{
     display:block; position:fixed; top:0; left:0; width:100vw; height:100vh; z-index:100;

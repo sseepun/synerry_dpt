@@ -35,6 +35,18 @@ nav.sidenav .submenu.has-children > a::after{background:#000;}
 nav.sidenav .submenu-level2 > .submenu > a{background:#000; color:#ffff00; border-color:#ffff00;}
 
 
+/* Footer */
+nav.footer > .footer-top{background:#6d2b6b;}
+nav.footer .block{border-color:#936291;}
+nav.footer .block h4{color:#fff;}
+nav.footer .ss-list > li > a{color:#fff;}
+nav.footer .ss-list > li > a:hover{color:#f9b025;}
+
+nav.footer > .footer-bottom{background:#000;}
+nav.footer > .footer-bottom .wrapper > p{color:#ffff00;}
+nav.footer > .footer-bottom .wrapper > .count-area{background:#ffff00; color:#000;}
+
+
 /* Global Search */
 .global-search-container .hamburger > *{background:#ffff00;}
 
@@ -88,6 +100,11 @@ nav.sidenav .submenu-level2 > .submenu > a{background:#000; color:#ffff00; borde
 .post-card.post-card-04 .title-container > .title::before{background:#ffff00;}
 
 
+/* Special List */
+.ss-list > li:before{background:#ffff00;}
+.ss-list > li > .ss-list > li:before{background:#ffff00;}
+
+
 /* Table */
 table.table, table.table td{border-color:#ffff00;}
 table.table tbody td{color:#ffff00;}
@@ -99,6 +116,11 @@ table.table .icon{color:#ffff00;}
 .banner-01 .dots button{background:#ffff00;}
 .banner-01 .dots button:before{border:1px solid #ffff00;}
 .banner-01 .arrows > .slick-prev::before, .banner-01 .arrows > .slick-next::before{color:#ffff00;}
+
+
+/* Call to Action 02 */
+.call-02 .slide-container  .arrows > .slick-prev::before, 
+.call-02 .slide-container  .arrows > .slick-next::before{color:#ffff00;}
 
 
 /* Content 01 */

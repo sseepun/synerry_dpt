@@ -339,8 +339,13 @@
     
     <section class="section-padding">
         <div class="container">
-            <h4 class="text-center mb-0">ข่าวกระทรวงอุตสาหกรรมสำหรับคุณ</h4>
-            <h1 class="text-center mb-0">คุณคือผู้ผลักดัน <span class="font-weight-light">มาร่วมเป็นส่วนหนึ่งในการพัฒนาวงการอุตสาหกรรมไปกับเรา</span></h1>
+            <h4 class="text-center mb-1" data-aos="fade-up" data-aos-delay="0">
+                ข่าวกระทรวงอุตสาหกรรมสำหรับคุณ
+            </h4>
+            <h1 class="text-center mb-0" data-aos="fade-up" data-aos-delay="300">
+                คุณคือผู้ผลักดัน 
+                <span class="fw-200">มาร่วมเป็นส่วนหนึ่งในการพัฒนาวงการอุตสาหกรรมไปกับเรา</span>
+            </h1>
             
             <!-- Tab Container 02 -->
             <div class="tab-container tab-container-02">
@@ -581,6 +586,55 @@
                     </div>
                 </div>
             <?php }?>
+        </div>
+    </section>
+
+    <section class="call-02">
+        <div class="container">
+            <h1 class="text-center mb-0" data-aos="fade-up" data-aos-delay="0">
+                เรารับฟังความคิดเห็นของคุณ
+            </h1>
+            <h4 class="text-center fw-300 mt-0 mb-0" data-aos="fade-up" data-aos-delay="150">
+                เกี่ยวกับความรับผิดชอบของกระทรวงอุตสาหกรรม
+            </h4>
+            <div data-aos="fade-up" data-aos-delay="300">
+                <img class="subject lazy-img" data-src="public/assets/app/images/hero/03.png" alt="Call 02" />
+            </div>
+        </div>
+        <div class="call-container" style="background-image:url('public/assets/app/images/bg/17.jpg');">
+            <div class="container" data-aos="fade-up" data-aos-delay="450">
+                <form action="/" method="POST">
+                    <div class="input-group">
+                        <input type="email" class="form-control" placeholder="สมัครรับข่าวสารกับกระทรวงอุตสาหกรรม" required />
+                        <div class="input-group-append">
+                            <button class="btn custom-btn-secondary" type="submit">
+                                สมัครรับข่าว
+                            </button>
+                        </div>
+                    </div>
+                </form>
+                <div class="call-text text-center title">
+                    ปฏิรูปอุตสาหกรรมสู่ 4.0
+                </div>
+                <div class="call-text text-center desc">
+                    เพิ่มมูลค่าเศรษฐกิจอุตสาหกรรมของไทยให้เติบโตไม่น้อยกว่าร้อยละ 4.5
+                </div>
+                <div class="call-text text-center desc desc-lg">
+                    ภายในปี พ.ศ.2564
+                </div>
+                <div class="slide-container">
+                    <div class="slides">
+                        <?php for($i=0; $i<10; $i++){?>
+                            <div class="slide">
+                                <div class="wrapper">
+                                    <div class="client lazy-bg" data-src="public/assets/app/images/client/01.jpg"></div>
+                                </div>
+                            </div>
+                        <?php }?>
+                    </div>
+                    <div class="arrows"></div>
+                </div>
+            </div>
         </div>
     </section>
     

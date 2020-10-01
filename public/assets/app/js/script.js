@@ -250,7 +250,7 @@ $(function(){ 'use strict';
                     focusOnSelect: true, autoplay: true, autoplaySpeed: 4000, speed: 800,
                     arrows: true, appendArrows: self.find('.arrows'),
                     dots: true, appendDots: self.find('.dots'),
-                    adaptiveHeight: true
+                    adaptiveHeight: false
                 });
             });
         }else{
@@ -265,10 +265,29 @@ $(function(){ 'use strict';
         }
     }
 
+    
+    // Call to Action 02
+    if($('section.call-02').length){
+        $('section.call-02 .slide-container').each(function(){
+            var self = $(this);
+            self.find('> .slides').slick({
+                centerMode: true, centerPadding: 0, slidesToShow: 6, 
+                focusOnSelect: true, autoplay: true, autoplaySpeed: 4000, speed: 600,
+                arrows: true, appendArrows: self.find('.arrows'), dots: false,
+                responsive: [
+                    { breakpoint: 1199.98, settings: { slidesToShow: 5, } },
+                    { breakpoint: 991.98, settings: { slidesToShow: 4, } },
+                    { breakpoint: 767.98, settings: { slidesToShow: 3, } },
+                    { breakpoint: 575.98, settings: { slidesToShow: 2, } },
+                ]
+            });
+        });
+    }
+
 
     // Content 01
-    if($('.content-01').length){
-        $('.content-01').each(function(){
+    if($('section.content-01').length){
+        $('section.content-01').each(function(){
             var self = $(this),
                 contentTabs = self.find('.content-tabs > .tab'),
                 contents = self.find('.contents > .content');
