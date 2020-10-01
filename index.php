@@ -443,12 +443,30 @@
                         <h3 class="fw-300">ข่าวอุตสาหกรรมจังหวัด</h3>
                         <p>ทั้ง 77 จังหวัดทั่วประเทศไทย</p>
                     </div>
-                    <?php for($z=1; $z<=6; $z++){?>
-                        <div class="tab <?php if($z==1)echo 'active'; ?>" data-id="<?= $z; ?>">
-                            <h3 class="fw-300">ทุกจังหวัด</h3>
-                            <p>ทั้ง 77 จังหวัดทั่วประเทศไทย</p>
-                        </div>
-                    <?php }?>
+                    <div class="tab active" data-id="1">
+                        <h3 class="fw-300">รวมทุกจังหวัด</h3>
+                        <p>ทั้ง 77 จังหวัดทั่วประเทศไทย</p>
+                    </div>
+                    <div class="tab" data-id="2">
+                        <h3 class="fw-300">ภาคกลาง</h3>
+                        <p>ทั้ง 77 จังหวัดทั่วประเทศไทย</p>
+                    </div>
+                    <div class="tab" data-id="3">
+                        <h3 class="fw-300">ภาคเหนือ</h3>
+                        <p>ทั้ง 77 จังหวัดทั่วประเทศไทย</p>
+                    </div>
+                    <div class="tab" data-id="4">
+                        <h3 class="fw-300">ภาคอีสาน</h3>
+                        <p>ทั้ง 77 จังหวัดทั่วประเทศไทย</p>
+                    </div>
+                    <div class="tab" data-id="5">
+                        <h3 class="fw-300">ภาคใต้</h3>
+                        <p>ทั้ง 77 จังหวัดทั่วประเทศไทย</p>
+                    </div>
+                    <div class="tab" data-id="6">
+                        <h3 class="fw-300">ภาคตะวันออก</h3>
+                        <p>ทั้ง 77 จังหวัดทั่วประเทศไทย</p>
+                    </div>
                 </div>
             </div>
         </div>
@@ -497,7 +515,7 @@
                                                     <div class="ss-card mb-3">
                                                         <div class="block">
                                                             <div class="ss-img square bradius-0">
-                                                                <div class="img-bg lazy-bg" data-src="public/assets/app/images/banner/01.jpg"></div>
+                                                                <div class="img-bg lazy-bg" data-src="public/assets/app/images/banner/0<?= $k; ?>.jpg"></div>
                                                                 <div class="socials">
                                                                     <ul>
                                                                         <li><a class="social social-fw" href="#">

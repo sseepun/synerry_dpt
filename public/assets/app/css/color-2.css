@@ -101,6 +101,17 @@ table.table .icon{color:#ffff00;}
 .banner-01 .arrows > .slick-prev::before, .banner-01 .arrows > .slick-next::before{color:#ffff00;}
 
 
+/* Content 01 */
+.content-01{border-top:1px solid #ffff00;}
+.content-01 > .content-header::after{background:#ffff00;}
+.content-01 .content-tabs > .tab{border:1px solid #ffff00;}
+.content-01 .content-tabs > .tab.active{background:#ffff00;}
+.content-01 .content-tabs > .tab::after{color:#000; background:#ffff00;}
+.content-01 .content-tabs > .tab.active::after{color:#ffff00; background:#000;}
+.content-01 .content-tabs > .header > *, .content-01 .content-tabs > .tab > *{color:#ffff00;}
+.content-01 .content-tabs > .tab.active > *{color:#000;}
+
+
 /* Tab Container 01 */
 .tab-container.tab-container-01 .tabs::before{background:#ffff00;}
 .tab-container.tab-container-01 .tab.active h5{color:#000; background:#ffff00;}
@@ -128,4 +139,4 @@ table.table .icon{color:#ffff00;}
 .tab-container.tab-container-03 .tab.active{background:#ffff00; color:#000;}
 .tab-container.tab-container-03 .tab > .icon{background:#ffff00; color:#000;}
 .tab-container.tab-container-03 .tab.active > .icon{background:#000; color:#ffff00;}
-.tab-container.tab-container-03 .tab-contents{border:1px solid #ffff00;}
+.tab-container.tab-container-03 .tab-contents{border:1px solid #ffff00; background:#000;}

@@ -264,6 +264,23 @@ $(function(){ 'use strict';
             });
         }
     }
+
+
+    // Content 01
+    if($('.content-01').length){
+        $('.content-01').each(function(){
+            var self = $(this),
+                contentTabs = self.find('.content-tabs > .tab'),
+                contents = self.find('.contents > .content');
+            contentTabs.click(function(e){
+                e.preventDefault();
+                contentTabs.removeClass('active');
+                $(this).addClass('active');
+                contents.removeClass('active');
+                contents.filter('[data-id="'+$(this).data('id')+'"]').addClass('active');
+            });
+        });
+    }
     
 
     // Tab Container
