@@ -52,7 +52,10 @@ nav.topnav .menu-container::after{
     content:''; position:absolute; top:0; bottom:0; right:0; width:1px; pointer-events:none;
     background-image:linear-gradient(to bottom,#8e6099,#dacdc1,#e0d1a8,#dac57a);
 }
-nav.topnav .menu{position:relative; background-size:cover; background-position:center;}
+nav.topnav .menu{
+    position:relative; background-size:cover; background-position:center;
+    transition:background .3s;
+}
 nav.topnav .menu::after{
     content:''; position:absolute; top:0; bottom:0; left:0; width:1px; pointer-events:none;
     background-image:linear-gradient(to bottom,#8e6099,#dacdc1,#e0d1a8,#dac57a);
@@ -137,7 +140,7 @@ nav.topnav .menu-mobile > .sidenav-btn{padding:1rem 0 1rem 1rem;}
 }
 .topnav-filter.active{opacity:.65;}
 
-nav.topnav ~ .topnav-spacer{display:block; width:100%; height:8.25rem;}
+nav.topnav ~ .topnav-spacer{display:block; width:100%; height:8rem;}
 
 @media screen and (max-width:1199.98px){
     nav.topnav.sticky{transform:translateY(0);}
@@ -151,7 +154,7 @@ nav.topnav ~ .topnav-spacer{display:block; width:100%; height:8.25rem;}
     nav.topnav .logo > img{display:block; height:3.5rem; width:auto;}
     nav.topnav .logo > .text{margin:0 0 0 .625rem; width:calc(100% - 5rem);}
     nav.topnav .logo h5{margin:0;}
-    nav.topnav ~ .topnav-spacer{height:4.4375rem;}
+    nav.topnav ~ .topnav-spacer{height:4.1875rem;}
 }
 
 
@@ -258,8 +261,6 @@ nav.footer .block:last-child > .wrapper{padding-right:0;}
 nav.footer .block h4{margin:0; font-size:1.5625rem; line-height:1; font-weight:200;}
 nav.footer .ss-list > li{color:#fff; font-weight:200;}
 nav.footer .ss-list > li > a{font-weight:200; transition:color .3s;}
-nav.footer .ss-list > li:before{background:#d479f6;}
-nav.footer .ss-list > li > .ss-list > li:before{background:#8bb8cb;}
 nav.footer > .footer-bottom{width:100%; overflow:hidden; padding:.75rem 0 1.5rem 0;}
 nav.footer > .footer-bottom .wrapper{
     width:100%; display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap;
@@ -268,7 +269,7 @@ nav.footer > .footer-bottom .wrapper > *{display:block; margin:.75rem 0;}
 nav.footer > .footer-bottom .wrapper > p{line-height:1.1; font-size:1.1875rem; font-weight:300;}
 nav.footer > .footer-bottom .wrapper > .count-area{
     display:block; width:14rem; padding:.375rem 1.125rem; text-align:center; border-radius:1000em;
-    font-size:1.0625rem; font-weight:200;
+    font-size:1.0625rem; font-weight:300;
 }
 @media screen and (max-width:1199.98px){
     nav.footer .block{max-width:30%;}

@@ -9,7 +9,9 @@ html, body{color:#fff; background:#000;}
 
 /* Topnav */
 nav.topnav > .top-container{background:#000!important;}
-nav.topnav .menu > .submenu-dropdown{background:#000;}
+nav.topnav .menu > .submenu-dropdown{
+    background:#000; border-top:1px solid #fff; border-bottom:1px solid #fff;
+}
 nav.topnav .submenu-container{background:#000; border-right:1px solid #fff;}
 nav.topnav .submenu-container > .submenu > a, nav.topnav .submenu-level2 > .submenu > a{color:#fff;}
 nav.topnav .submenu-container > .submenu:hover > a{color:#000; background:#fff;}
@@ -36,12 +38,13 @@ nav.sidenav .submenu-level2 > .submenu > a{background:#000; color:#fff; border-c
 
 
 /* Footer */
-nav.footer > .footer-top{background:#6d2b6b;}
-nav.footer .block{border-color:#936291;}
+nav.footer > .footer-top{
+    background:#000; border-top:1px solid #fff; border-bottom:1px solid #fff;
+}
+nav.footer .block{border-color:#fff;}
 nav.footer .block h4{color:#fff;}
-nav.footer .ss-list > li > a{color:#fff;}
-nav.footer .ss-list > li > a:hover{color:#f9b025;}
-
+nav.footer .ss-list > li, nav.footer .ss-list > li > a{color:#fff;}
+nav.footer .ss-list > li > a:hover{color:#ffff00;}
 nav.footer > .footer-bottom{background:#000;}
 nav.footer > .footer-bottom .wrapper > p{color:#fff;}
 nav.footer > .footer-bottom .wrapper > .count-area{background:#fff; color:#000;}
@@ -120,9 +123,11 @@ table.table .icon{color:#fff;}
 .banner-01 .dots button{background:#fff;}
 .banner-01 .dots button:before{border:1px solid #fff;}
 .banner-01 .arrows > .slick-prev::before, .banner-01 .arrows > .slick-next::before{color:#fff;}
+.banner-01 .slick-dots > li > .desc{background:#000; color:#fff; border:1px solid #fff;}
 
 
 /* Call to Action 02 */
+.call-02 > .call-container{background:transparent!important;}
 .call-02 .slide-container  .arrows > .slick-prev::before, 
 .call-02 .slide-container  .arrows > .slick-next::before{color:#fff;}
 

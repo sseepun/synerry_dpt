@@ -3,10 +3,6 @@
 <head>
     <?php include_once('include/header.php'); ?>
     <?php include_once('include/style.php'); ?>
-<style>
-
-
-</style>
 </head>
 <body class="loading">
     <?php include_once('include/topnav.php'); ?>
@@ -15,7 +11,7 @@
         <div class="slide-container">
             <div class="slides">
                 <?php for($i=0; $i<8; $i++){?>
-                    <div class="slide">
+                    <div class="slide" data-desc="<?= $i+1; ?>/8 | กำหนดชำระค่าธรรมเนียมในเดือน">
                         <img src="public/assets/app/images/banner/07.jpg" alt="Banner <?= $i; ?>" />
                     </div>
                 <?php }?>

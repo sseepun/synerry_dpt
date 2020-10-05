@@ -45,7 +45,7 @@ p, .p{font-size:1.25rem; margin:.625rem 0 0 0; font-weight:300;}
 }
 .btn.btn-round{border-radius:1000em; padding-left:1.1875rem; padding-right:1.1875rem;}
 
-.btn-action{font-size:1.3125rem; transition:color .3s;}
+.btn-action{font-size:1.3125rem; transition:color .3s, box-shadow .3s;}
 .btn-action > i{
     width:1.375rem; height:1.375rem; line-height:1.375rem; text-align:center; border-radius:50%;
     font-size:.625rem;
@@ -166,6 +166,12 @@ p, .p{font-size:1.25rem; margin:.625rem 0 0 0; font-weight:300;}
 .post-card .date{margin:.125rem 0 .4375rem 0;}
 .post-card .desc{margin:.5625rem 0 0 0;}
 .post-card .btns{margin:.875rem 0 0 0;}
+.post-card.btn-on-hover .btns{opacity:0; transition:opacity .3s;}
+.post-card.btn-on-hover:hover .btns{opacity:1;}
+@media screen and (max-width:575.98px){
+    .post-card .title-container{height:auto;}
+    .post-card .title-container > .title{max-height:unset;}
+}
 
 .post-card.post-card-02, .post-card.post-card-03{padding:1.5rem;}
 @media screen and (max-width:991.98px){

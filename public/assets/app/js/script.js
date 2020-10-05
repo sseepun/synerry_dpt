@@ -129,7 +129,9 @@ $(function(){ 'use strict';
     // Themes
     $('.theme-btn').click(function(e){
         e.preventDefault();
-        $('#css-theme').attr('href', 'public/assets/app/css/color-'+$(this).data('theme')+'.css'); 
+        $('#css-theme').attr('href', 'public/assets/app/css/color-'+$(this).data('theme')+'.css');
+        $('body').removeClass('theme-0 theme-1 theme-2');
+        $('body').addClass('theme-'+$(this).data('theme'));
     });
 
 
@@ -242,27 +244,37 @@ $(function(){ 'use strict';
 
     // Banner 01
     if($('section.banner-01').length){
-        if($('section.banner-01').hasClass('img-only')){
-            $('section.banner-01 > .slide-container').each(function(){
-                var self = $(this);
-                self.find('> .slides').slick({
+        $('section.banner-01').each(function(){
+            var self = $(this),
+                options = {
+                    centerMode: true, centerPadding: 0, slidesToShow: 1, 
+                    focusOnSelect: true, autoplay: true, autoplaySpeed: 4000, speed: 800,
+                    arrows: false, dots: true, appendDots: self.find('.dots')
+                };
+            if(self.hasClass('img-only')){
+                options = {
                     centerMode: true, centerPadding: 0, slidesToShow: 1, 
                     focusOnSelect: true, autoplay: true, autoplaySpeed: 4000, speed: 800,
                     arrows: true, appendArrows: self.find('.arrows'),
                     dots: true, appendDots: self.find('.dots'),
                     adaptiveHeight: false
-                });
+                };
+            }
+
+            var descObj = {};
+            self.find('.slide').each(function(i){
+                if($(this).data('desc')!==undefined){
+                    descObj[i] = $(this).data('desc');
+                }
             });
-        }else{
-            $('section.banner-01 > .slide-container').each(function(){
-                var self = $(this);
-                self.find('> .slides').slick({
-                    centerMode: true, centerPadding: 0, slidesToShow: 1, 
-                    focusOnSelect: true, autoplay: true, autoplaySpeed: 4000, speed: 800,
-                    arrows: false, dots: true, appendDots: self.find('.dots')
-                });
+
+            self.find('.slides').slick(options);
+            self.find('.slick-dots > li').each(function(i){
+                if(descObj[i]!==undefined){
+                    $(this).append('<div class="desc">'+descObj[i]+'</div>');
+                }
             });
-        }
+        });
     }
 
     
@@ -297,6 +309,7 @@ $(function(){ 'use strict';
                 $(this).addClass('active');
                 contents.removeClass('active');
                 contents.filter('[data-id="'+$(this).data('id')+'"]').addClass('active');
+                AOS.refresh();
             });
         });
     }
@@ -318,6 +331,8 @@ $(function(){ 'use strict';
                 if(self.hasClass('tab-container-02')){
                     self.find('.slides').slick('setPosition');
                 }
+                
+                AOS.refresh();
             });
 
             // Tab Container 02

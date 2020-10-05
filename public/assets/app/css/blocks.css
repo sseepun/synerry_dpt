@@ -2,11 +2,13 @@
 /* Banner 01 */
 .banner-01{position:relative; width:100%;}
 .banner-01 > .slide-container{position:relative; width:100%; padding:0 0 2.9375rem 0;}
+.banner-01.no-filter > .slide-container{padding:0;}
 .banner-01 .slide{
     height:450px; display:flex; align-items:center; text-align:center; line-height:1;
     background-size:cover; background-position:center; background-repeat:no-repeat;
     padding:0 0 3rem 0;
 }
+.banner-01.no-filter .slide{padding:0;}
 .banner-01 h1{font-size:4.5rem; font-weight:600; margin:0; letter-spacing:.875rem; line-height:.75;}
 .banner-01 h2{font-size:3.25rem; font-weight:100; margin:0; letter-spacing:.0625rem;}
 .banner-01 h3{font-size:2.125rem; font-weight:300; margin:.5rem 0 0 0;}
@@ -18,10 +20,17 @@
     content:''; position:absolute; bottom:100%; left:0; right:0; height:10vw;
     background:rgba(0,0,0,.3);
 }
+.banner-01.no-filter .dots::before{display:none;}
 .banner-01 .dots > .slick-dots{
     display:flex; position:relative; margin:0; padding:0; list-style:none; align-items:center;
 }
-.banner-01 .dots li{position:relative; display:block; margin:0 auto; padding:0 .5625rem;}
+.banner-01 .dots li{position:relative; display:block; margin:0 auto; padding:.5625rem;}
+.banner-01 .dots li > .desc{
+    position:absolute; bottom:100%; left:-6.75rem; width:15rem; text-align:center; padding:.25rem 1rem;
+    pointer-events:none; font-size:1.1875rem; overflow:hidden; white-space:nowrap; text-overflow:ellipsis;
+    font-weight:300; border-radius:.25rem; opacity:0; transition:bottom .3s, opacity .3s;
+}
+.banner-01 .dots li:hover > .desc{bottom:calc(100% + .25rem); opacity:1;}
 .banner-01 .dots button{
     position:relative; display:block; font-size:0; border:0; box-shadow:none;
     border-radius:50%; cursor:pointer; padding:0; margin:0 auto; outline:none;
@@ -37,6 +46,7 @@
     position:absolute; display:flex; justify-content:space-between; align-items:center;
     top:0; bottom:calc(3rem + 10vw); left:0; right:0; padding:0 1rem; pointer-events:none;
 }
+.banner-01.no-filter .arrows{bottom:3rem;}
 .banner-01 .arrows > .slick-prev, .banner-01 .arrows > .slick-next{
     display:block; width:2.5rem; height:2.5rem; pointer-events:auto; cursor:pointer; opacity:0;
     text-align:center; line-height:2.75rem; outline:none; font-size:0; background:transparent;

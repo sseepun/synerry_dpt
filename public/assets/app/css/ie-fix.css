@@ -8,3 +8,9 @@
     nav.topnav .submenu > .submenu-level2{display:none;}
     nav.topnav .submenu:hover > .submenu-level2{display:block;}
 }
+
+/* Banner 01 */
+@media screen and (-ms-high-contrast:active), (-ms-high-contrast:none){
+    .banner-01 .slick-dots > li > .desc{display:none;}
+    .banner-01 .slick-dots > li:hover > .desc{display:block;}
+}
