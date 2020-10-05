@@ -3,10 +3,10 @@
 <head>
     <?php include_once('include/header.php'); ?>
     <?php include_once('include/style.php'); ?>
-    <link rel="stylesheet" href="public/assets/app/css/style_OFFICE.css" />
+    <link rel="stylesheet" href="public/assets/app/css/style_MINISITE.css" />
 </head>
 <body class="loading">
-    <?php include_once('include/topnav_OFFICE.php'); ?>
+    <?php include_once('include/topnav_MINISITE.php'); ?>
     
     <section class="banner-01 img-only no-filter">
         <div class="slide-container">
@@ -81,9 +81,6 @@
                                         <div class="post-card btn-on-hover">
                                             <div class="ss-img bradius-0">
                                                 <div class="img-bg lazy-bg" data-src="public/assets/app/images/banner/0<?= $i; ?>.jpg"></div>
-                                                <div class="tag bg-color-04">
-                                                    สำนักบริหารกลาง
-                                                </div>
                                                 <div class="socials">
                                                     <ul>
                                                         <li><a class="social social-fw" href="#">

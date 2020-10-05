@@ -4,7 +4,10 @@ html, body{color:#ffff00; background:#000;}
 
 
 /* Colors */
-.color-white, .color-black, .color-sgray, .color-01, .color-02, .color-03{color:#ffff00!important;}
+.color-white, .color-black, .color-sgray, .color-01, .color-02, .color-03, 
+.color-04{color:#ffff00!important;}
+.bg-color-white, .bg-color-black, .bg-color-sgray, .bg-color-01, .bg-color-02, .bg-color-03, 
+.bg-color-04{background:#000!important;}
 
 
 /* Topnav */
@@ -116,6 +119,10 @@ nav.footer > .footer-bottom .wrapper > .count-area{background:#ffff00; color:#00
 table.table, table.table td{border-color:#ffff00;}
 table.table tbody td{color:#ffff00;}
 table.table .icon{color:#ffff00;}
+
+
+/* Special Image & Video */
+.ss-img .tag, .ss-video .tag{color:#ffff00;}
 
 
 /* Banner 01 */

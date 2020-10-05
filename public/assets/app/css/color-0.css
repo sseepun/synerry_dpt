@@ -10,6 +10,7 @@ html, body{color:#000;}
 .color-01{color:#422754!important;}
 .color-02{color:#59236e!important;}
 .color-03{color:#8e5e9c!important;}
+.color-04{color:#ba41ce!important;}
 
 .bg-color-white{background:#fff!important;}
 .bg-color-black{background:#fff!important;}
@@ -17,6 +18,7 @@ html, body{color:#000;}
 .bg-color-01{background:#422754!important;}
 .bg-color-02{background:#59236e!important;}
 .bg-color-03{background:#8e5e9c!important;}
+.bg-color-04{background:#ba41ce!important;}
 
 
 /* Topnav */
@@ -149,6 +151,10 @@ table.table tbody td{background:#ebebeb; color:#000;}
 table.table tbody tr:nth-child(even) > td{background:#f3f3f3;}
 table.table .icon{color:#000;}
 table.table .icon:hover{color:#8e5e9c;}
+
+
+/* Special Image & Video */
+.ss-img .tag, .ss-video .tag{color:#fff;}
 
 
 /* Banner 01 */
