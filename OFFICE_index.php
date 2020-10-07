@@ -324,7 +324,7 @@
             <h1 class="text-center color-white mb-0" data-aos="fade-up" data-aos-delay="0">
                 เรารับฟังความคิดเห็นของคุณ
             </h1>
-            <h4 class="text-center color-white fw-300 mt-0 mb-0" data-aos="fade-up" data-aos-delay="150">
+            <h4 class="text-center color-white font-02 fw-300 mt-0 mb-0" data-aos="fade-up" data-aos-delay="150">
                 เกี่ยวกับความรับผิดชอบของกระทรวงอุตสาหกรรม
             </h4>
             <div data-aos="fade-up" data-aos-delay="300">
