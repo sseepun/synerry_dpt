@@ -75,8 +75,11 @@ nav.topnav .menu > a::before{
     counter-increment:topnavCounter; content:counters(topnavCounter, '.', decimal-leading-zero);
     font-size:160%; font-weight:200; margin:0 .25rem 0 0; transition:color .3s;
 }
-nav.topnav .menu.menu-icon > a{padding:1.125rem .625rem .75rem .625rem; text-align:center;}
+nav.topnav .menu.menu-icon > a{
+    min-width:3.875rem; padding:1.125rem .625rem .75rem .625rem; text-align:center;
+}
 nav.topnav .menu.menu-icon > a::before{display:none;}
+nav.topnav .menu.menu-icon > a > img{display:block; height:1.5rem; width:auto; margin:0 auto;}
 nav.topnav .menu.menu-icon .flag-icon{
     display:block; width:1.5rem; height:1.5rem; border-radius:50%; background-size:cover;
     background-position:center; margin:0 auto;
@@ -106,10 +109,11 @@ nav.topnav .menu > .submenu-dropdown{
 }
 nav.topnav .menu:hover > .submenu-dropdown{opacity:1; pointer-events:auto; transform:translateY(0);}
 nav.topnav .menu > .submenu-dropdown > .wrapper{
-    width:100%; min-height:calc(100vh - 17rem); display:flex; position:relative;
+    width:100%; display:flex; position:relative;
+    /* min-height:calc(100vh - 17rem); */
 }
 nav.topnav .submenu-dropdown .hero{width:35vw; background-size:cover; background-position:center;}
-nav.topnav .submenu-container{position:relative; width:18rem; padding:.875rem 0 .75rem 0;}
+nav.topnav .submenu-container{position:relative; width:18rem; padding:.875rem 0 1.75rem 0;}
 nav.topnav .submenu-container::after{
     content:''; position:absolute; top:100%; left:0; width:4.5rem; height:2.25rem;
     background-image:url('../images/hero/01.png');

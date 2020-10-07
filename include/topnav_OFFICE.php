@@ -123,7 +123,7 @@
                     </div>
                     <div class="menu menu-icon" style="background-image:url('public/assets/app/images/bg/06.jpg');">
                         <a class="global-search-toggle" href="#">
-                            <i class="icon fas fa-search"></i>
+                            <img src="public/assets/app/images/icon/search-01.png" alt="Search Icon" />
                             <p>ค้นหา</p>
                         </a>
                     </div>

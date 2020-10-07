@@ -23,9 +23,9 @@
 
     <section class="section-padding">
         <div class="container">
-            <h4 class="text-center mb-0" data-aos="fade-up" data-aos-delay="0">
+            <h3 class="text-center mb-0 font-02 fw-600" data-aos="fade-up" data-aos-delay="0">
                 ข่าวกระทรวงอุตสาหกรรม
-            </h4>
+            </h3>
             <h1 class="text-center mb-0" data-aos="fade-up" data-aos-delay="150">
                 เปิดโลกทัศน์ด้านอุตสาหกรรมให้กับตัวคุณ
             </h1>
@@ -86,7 +86,7 @@
                             <div class="grids">
                                 <?php for($j=0; $j<3; $j++){?>
                                     <div class="grid md-1-3">
-                                        <div class="post-card">
+                                        <div class="post-card btn-on-hover">
                                             <div class="title-container">
                                                 <a class="title h4" href="#">
                                                     สุริยะฯ ดันแผนพัฒนาอุตฯ 
@@ -100,7 +100,7 @@
                                             <div class="ss-img bradius-0">
                                                 <div class="img-bg lazy-bg" data-src="public/assets/app/images/banner/01.jpg"></div>
                                                 <div class="socials">
-                                                    <ul>
+                                                    <!-- <ul>
                                                         <li><a class="social social-fw" href="#">
                                                             <i class="fab fa-facebook-f"></i>
                                                         </a></li>
@@ -110,7 +110,7 @@
                                                         <li><a class="social social-ln" href="#">
                                                             <i class="fab fa-line"></i>
                                                         </a></li>
-                                                    </ul>
+                                                    </ul> -->
                                                 </div>
                                             </div>
                                             <p class="desc">
@@ -160,7 +160,7 @@
                                         <div class="ss-img bradius-0">
                                             <div class="img-bg lazy-bg" data-src="public/assets/app/images/banner/02.jpg"></div>
                                             <div class="socials">
-                                                <ul>
+                                                <!-- <ul>
                                                     <li><a class="social social-fw" href="#">
                                                         <i class="fab fa-facebook-f"></i>
                                                     </a></li>
@@ -170,7 +170,7 @@
                                                     <li><a class="social social-ln" href="#">
                                                         <i class="fab fa-line"></i>
                                                     </a></li>
-                                                </ul>
+                                                </ul> -->
                                             </div>
                                         </div>
                                     </div>
@@ -190,7 +190,7 @@
                                         <div class="ss-img bradius-0">
                                             <div class="img-bg lazy-bg" data-src="public/assets/app/images/banner/03.jpg"></div>
                                             <div class="socials">
-                                                <ul>
+                                                <!-- <ul>
                                                     <li><a class="social social-fw" href="#">
                                                         <i class="fab fa-facebook-f"></i>
                                                     </a></li>
@@ -200,10 +200,10 @@
                                                     <li><a class="social social-ln" href="#">
                                                         <i class="fab fa-line"></i>
                                                     </a></li>
-                                                </ul>
+                                                </ul> -->
                                             </div>
                                         </div>
-                                        <div class="post-card post-card-03 bg-color-white">
+                                        <div class="post-card post-card-03 btn-on-hover bg-color-white">
                                             <div class="title-container">
                                                 <a class="title h4" href="#">
                                                     สุริยะฯ ดันแผนพัฒนาอุตฯ 
@@ -333,14 +333,14 @@
         </div>
     </section>
     
-    <section class="section-padding">
+    <section class="section-padding bg-color-gray">
         <div class="container">
-            <h4 class="text-center mb-1" data-aos="fade-up" data-aos-delay="0">
+            <h3 class="text-center mb-1 font-02 fw-600" data-aos="fade-up" data-aos-delay="0">
                 ข่าวกระทรวงอุตสาหกรรมสำหรับคุณ
-            </h4>
+            </h3>
             <h1 class="text-center mb-0" data-aos="fade-up" data-aos-delay="300">
-                คุณคือผู้ผลักดัน 
-                <span class="fw-200">มาร่วมเป็นส่วนหนึ่งในการพัฒนาวงการอุตสาหกรรมไปกับเรา</span>
+                เปิดโลกทัศน์ให้กับตัวคุณเอง 
+                <span class="fw-200">ด้วยการอัพเดทข่าวสารด้านอุตสาหกรรมกับเราที่นี่</span>
             </h1>
             
             <!-- Tab Container 02 -->
@@ -391,7 +391,7 @@
                                                     กระทรวงอุตสาหกรรม (อก.) ผลักดันแผนอุตสาหกรรมเครื่องจักรกลให้เป็นอุตสาหกรรม
                                                     สนับสนุนเพิ่มขีดความสามารถการผลิตทั้งภาคอุตสาหกรรมและภาคเกษตรกรรม...
                                                 </p>
-                                                <div class="social-btns pt-2 pb-1">
+                                                <!-- <div class="social-btns pt-2 pb-1">
                                                     <a class="btn-social btn-social-fw" href="#">
                                                         <i class="fab fa-facebook"></i>
                                                     </a>
@@ -401,7 +401,7 @@
                                                     <a class="btn-social btn-social-ln" href="#">
                                                         <i class="fab fa-line"></i>
                                                     </a>
-                                                </div>
+                                                </div> -->
                                                 <div class="btns pt-2 pb-2">
                                                     <a class="btn-action btn-action-dark" href="#">
                                                         <i class="fas fa-chevron-right"></i>
@@ -419,7 +419,7 @@
                 </div>
             </div>
             
-            <div class="pagination mt-5" data-aos="fade-up" data-aos-delay="0">
+            <div class="pagination mt-4" data-aos="fade-up" data-aos-delay="0">
                 <div class="wrapper">
                     <a href="#" class="page-btn page-prev disabled"></a>
                     <a href="#" class="page-btn active">01</a>
@@ -475,14 +475,14 @@
             <?php for($z=1; $z<=6; $z++){?>
                 <div class="content <?php if($z==1)echo 'active'; ?>" data-id="<?= $z; ?>">
                     <div class="img-bg-container">
-                        <div class="img-bg" style="background-image:url('public/assets/app/images/bg/16.jpg');"></div>
+                        <div class="img-bg" style="background-image:url('public/assets/app/images/bg/16.jpg'); background-position:center -2rem;"></div>
                     </div>
                     <div class="container">
                         <h1 class="color-white text-center mb-0">
                             ร่วมถ่ายทอดเรื่องราวดีดีเกี่่ยวกับอุตสาหกรรม
                         </h1>
-                        <h4 class="color-white text-center fw-300 mt-3 mb-0 xs-no-br">
-                            ทั้ง <span class="text-xxxl">7<?= $z; ?></span> 
+                        <h4 class="color-white text-center font-02 fw-300 mt-3 mb-0 xs-no-br">
+                            ทั้ง <span class="text-xxxl font-01">7<?= $z; ?></span> 
                             จังหวัดทั่วประเทศไทยเพื่อแลกเปลี่ยนความรู้ความคิดเห็น 
                             <br>และนำไปสู่การต่อยอดเพื่อพัฒนาประชาติต่อไป
                         </h4>
@@ -506,9 +506,15 @@
                                     </div>
                                     <h4 class="text-center">ข่าวที่เปิดอ่าน</h4>
                                 </div>
+                                <div class="tab" data-tab="4">
+                                    <div class="icon">
+                                        <i class="fas fa-star"></i>
+                                    </div>
+                                    <h4 class="text-center">ข่าวยอดนิยม</h4>
+                                </div>
                             </div>
                             <div class="tab-contents">
-                                <?php for($k=1; $k<=3; $k++){?>
+                                <?php for($k=1; $k<=4; $k++){?>
                                     <div class="tab-content <?php if($k==1)echo 'active'; ?>" data-tab="<?= $k; ?>">
                                         <div class="grids no-gap">
                                             <div class="grid lg-50 sm-100 mt-0">
@@ -518,7 +524,7 @@
                                                             <div class="ss-img square bradius-0">
                                                                 <div class="img-bg lazy-bg" data-src="public/assets/app/images/banner/0<?= $k; ?>.jpg"></div>
                                                                 <div class="socials">
-                                                                    <ul>
+                                                                    <!-- <ul>
                                                                         <li><a class="social social-fw" href="#">
                                                                             <i class="fab fa-facebook-f"></i>
                                                                         </a></li>
@@ -528,7 +534,7 @@
                                                                         <li><a class="social social-ln" href="#">
                                                                             <i class="fab fa-line"></i>
                                                                         </a></li>
-                                                                    </ul>
+                                                                    </ul> -->
                                                                 </div>
                                                             </div>
                                                         </div>
@@ -545,8 +551,7 @@
                                                                 <p class="desc">
                                                                     กระทรวงอุตสาหกรรม (อก.) ผลักดันแผน
                                                                     อุตสาหกรรมเครื่องจักรกลให้เป็นอุตสาหกรรม
-                                                                    สนับสนุนเพิ่มขีดความสามารถการผลิตทั้ง
-                                                                    ภาคอุตสาหกรรมและภาคเกษตรกรรม...
+                                                                    สนับสนุนเพิ่มขีดความสามารถการผลิต...
                                                                 </p>
                                                             </div>
                                                         </div>
@@ -590,7 +595,7 @@
             <h1 class="text-center mb-0" data-aos="fade-up" data-aos-delay="0">
                 เรารับฟังความคิดเห็นของคุณ
             </h1>
-            <h4 class="text-center fw-300 mt-0 mb-0" data-aos="fade-up" data-aos-delay="150">
+            <h4 class="text-center font-02 fw-300 mt-0 mb-0" data-aos="fade-up" data-aos-delay="150">
                 เกี่ยวกับความรับผิดชอบของกระทรวงอุตสาหกรรม
             </h4>
             <div data-aos="fade-up" data-aos-delay="300">
@@ -603,7 +608,7 @@
                     <div class="input-group">
                         <input type="email" class="form-control" placeholder="สมัครรับข่าวสารกับกระทรวงอุตสาหกรรม" required />
                         <div class="input-group-append">
-                            <button class="btn custom-btn-secondary" type="submit">
+                            <button class="btn custom-btn-tertiary" type="submit">
                                 สมัครรับข่าว
                             </button>
                         </div>
