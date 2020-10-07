@@ -131,7 +131,7 @@ nav.footer.footer-gray .ss-list > li > a:hover{color:#1f9ad3;}
 
 
 /* Pagination */
-.pagination .page-btn{color:#000; border-color:#c0bfbf;}
+.pagination .page-btn{color:#000; border-color:#c0bfbf; background:#fff;}
 .pagination .page-btn:hover, .pagination .page-btn.active{
     border-color:#6a0e7e; background:#6a0e7e!important; color:#fff;
 }
@@ -199,7 +199,9 @@ table.table .icon:hover{color:#8e5e9c;}
 .content-01 .content-tabs > .tab:nth-child(7n){background:#26a6dc;}
 .content-01 .content-tabs > .tab{box-shadow:0px 0px 20px 0px rgba(82,63,105,.4);}
 .content-01 .content-tabs > .header > *, .content-01 .content-tabs > .tab > *{color:#fff;}
-.content-01 .content-tabs > .tab::after{color:#393a39; background:#fff;}
+.content-01 .content-tabs > .tab::before{background:url('../images/bg/08.png') center/cover no-repeat;}
+.content-01 .content-tabs > .tab::after{background:rgba(0,0,0,.2);}
+.content-01 .content-tabs > .tab h3::after{color:#393a39; background:#fff;}
 
 
 /* Tab Container 01 */
@@ -238,4 +240,4 @@ table.table .icon:hover{color:#8e5e9c;}
 .tab-container.tab-container-03 .tab.active{background:#4e1669;}
 .tab-container.tab-container-03 .tab > .icon{background:#fff; color:#404040;}
 .tab-container.tab-container-03 .tab.active > .icon{color:#4e1669;}
-.tab-container.tab-container-03 .tab-contents{background:#fff;}
+.tab-container.tab-container-03 .tab-contents .grids{background:#fff;}

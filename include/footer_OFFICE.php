@@ -122,7 +122,9 @@
                     <span class="fw-500">
                         สงวนลิขสิทธิ์ กระทรวงอุตสาหกรรม ศูนย์เทคโนโลยีสารสนเทศและการสื่อสาร สำนักงานปลัดกระทรวงอุตสาหกรรม
                     </span> <br>
-                    แสดงผลดีที่สุดที่ขนาดจอภาพ 1024*768 pixel โดยใช้ web browser: IE9+, Firefox, Chrome, Safari
+                    <span class="font-02 text-md">
+                        แสดงผลดีที่สุดที่ขนาดจอภาพ 1024*768 pixel โดยใช้ web browser: IE9+, Firefox, Chrome, Safari
+                    </span>
                 </p>
                 <div class="count-area">
                     จำนวนผู้เข้าชมเว็บไซต์ 1,234,567

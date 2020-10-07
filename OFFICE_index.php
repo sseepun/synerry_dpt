@@ -84,7 +84,7 @@
                                                 <div class="tag bg-color-04">
                                                     สำนักบริหารกลาง
                                                 </div>
-                                                <div class="socials">
+                                                <!-- <div class="socials">
                                                     <ul>
                                                         <li><a class="social social-fw" href="#">
                                                             <i class="fab fa-facebook-f"></i>
@@ -96,7 +96,7 @@
                                                             <i class="fab fa-line"></i>
                                                         </a></li>
                                                     </ul>
-                                                </div>
+                                                </div> -->
                                             </div>
                                             <div class="title-container mt-2">
                                                 <a class="title h4" href="#">
@@ -196,14 +196,14 @@
             <?php for($z=1; $z<=6; $z++){?>
                 <div class="content <?php if($z==1)echo 'active'; ?>" data-id="<?= $z; ?>">
                     <div class="img-bg-container">
-                        <div class="img-bg" style="background-image:url('public/assets/app/images/bg/19.jpg');"></div>
+                        <div class="img-bg" style="background-image:url('public/assets/app/images/bg/19.jpg'); background-position:center -26rem;"></div>
                     </div>
                     <div class="container">
                         <h1 class="color-white text-center mb-0">
                             ร่วมถ่ายทอดเรื่องราวดีดีเกี่่ยวกับอุตสาหกรรม
                         </h1>
-                        <h4 class="color-white text-center fw-300 mt-3 mb-0 xs-no-br">
-                            ทั้ง <span class="text-xxxl">7<?= $z; ?></span> 
+                        <h4 class="color-white text-center font-02 fw-300 mt-3 mb-0 xs-no-br">
+                            ทั้ง <span class="text-xxxl font-01">7<?= $z; ?></span> 
                             จังหวัดทั่วประเทศไทยเพื่อแลกเปลี่ยนความรู้ความคิดเห็น 
                             <br>และนำไปสู่การต่อยอดเพื่อพัฒนาประชาติต่อไป
                         </h4>
@@ -238,7 +238,7 @@
                                                         <div class="block">
                                                             <div class="ss-img square bradius-0">
                                                                 <div class="img-bg lazy-bg" data-src="public/assets/app/images/banner/0<?= $k; ?>.jpg"></div>
-                                                                <div class="socials">
+                                                                <!-- <div class="socials">
                                                                     <ul>
                                                                         <li><a class="social social-fw" href="#">
                                                                             <i class="fab fa-facebook-f"></i>
@@ -250,7 +250,7 @@
                                                                             <i class="fab fa-line"></i>
                                                                         </a></li>
                                                                     </ul>
-                                                                </div>
+                                                                </div> -->
                                                             </div>
                                                         </div>
                                                         <div class="block">
@@ -266,8 +266,7 @@
                                                                 <p class="desc">
                                                                     กระทรวงอุตสาหกรรม (อก.) ผลักดันแผน
                                                                     อุตสาหกรรมเครื่องจักรกลให้เป็นอุตสาหกรรม
-                                                                    สนับสนุนเพิ่มขีดความสามารถการผลิตทั้ง
-                                                                    ภาคอุตสาหกรรมและภาคเกษตรกรรม...
+                                                                    สนับสนุนเพิ่มขีดความสามารถการผลิต...
                                                                 </p>
                                                             </div>
                                                         </div>
@@ -294,6 +293,20 @@
                                                         </p>
                                                     </div>
                                                 <?php }?>
+                                            </div>
+                                        </div>
+                                        <div class="pagination mt-3">
+                                            <div class="wrapper">
+                                                <a href="#" class="page-btn page-prev disabled"></a>
+                                                <a href="#" class="page-btn active">01</a>
+                                                <a href="#" class="page-btn">02</a>
+                                                <a href="#" class="page-btn">03</a>
+                                                <a href="#" class="page-btn">04</a>
+                                                <a href="#" class="page-btn">05</a>
+                                                <a href="#" class="page-btn page-next"></a>
+                                                <a class="btn btn-round custom-btn-dark btn-sm" href="#">
+                                                    อ่านข่าวทั้งหมด
+                                                </a>
                                             </div>
                                         </div>
                                     </div>

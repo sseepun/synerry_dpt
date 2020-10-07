@@ -103,7 +103,7 @@ nav.footer > .footer-bottom .wrapper > .count-area{background:#fff; color:#000;}
 
 
 /* Pagination */
-.pagination .page-btn{color:#fff; border-color:#fff;}
+.pagination .page-btn{color:#fff; border-color:#fff; background:#000;}
 .pagination .page-btn:hover, .pagination .page-btn.active{
     border-color:#fff; background:#fff!important; color:#000;
 }
@@ -148,8 +148,9 @@ table.table .icon{color:#fff;}
 .content-01 > .content-header::after{background:#fff;}
 .content-01 .content-tabs > .tab{border:1px solid #fff;}
 .content-01 .content-tabs > .tab.active{background:#fff;}
-.content-01 .content-tabs > .tab::after{color:#000; background:#fff;}
-.content-01 .content-tabs > .tab.active::after{color:#fff; background:#000;}
+.content-01 .content-tabs > .tab h3::after{color:#000; background:#fff;}
+.content-01 .content-tabs > .tab.active h3::after{color:#fff; background:#000;}
+.content-01 .content-tabs > .tab.active::after{background:#000;}
 .content-01 .content-tabs > .header > *, .content-01 .content-tabs > .tab > *{color:#fff;}
 .content-01 .content-tabs > .tab.active > *{color:#000;}
 
@@ -181,4 +182,4 @@ table.table .icon{color:#fff;}
 .tab-container.tab-container-03 .tab.active{background:#fff; color:#000;}
 .tab-container.tab-container-03 .tab > .icon{background:#fff; color:#000;}
 .tab-container.tab-container-03 .tab.active > .icon{background:#000; color:#fff;}
-.tab-container.tab-container-03 .tab-contents{border:1px solid #fff; background:#000;}
+.tab-container.tab-container-03 .tab-contents .grids{border:1px solid #fff; background:#000;}
