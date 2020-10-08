@@ -196,7 +196,7 @@
 .content-01 > .contents > .content{display:none; position:relative; width:100%; padding:2.625rem 0 0 0;}
 .content-01 > .contents > .content.active{display:block;}
 .content-01 .content > .img-bg-container{
-    position:absolute; top:0; bottom:5rem; left:0; right:0;
+    position:absolute; top:0; bottom:10rem; left:0; right:0;
     -webkit-mask-image:linear-gradient(to bottom, #000, #000, #000, #000, #000, #000,
         rgba(0,0,0,.6666), rgba(0,0,0,.3333), rgba(0,0,0,0));
 }
@@ -244,7 +244,7 @@
 .tab-container.tab-container-01 .tab h5 > *{position:relative;}
 .tab-container.tab-container-01 .tab h5::before{
     content:''; position:absolute; top:0; bottom:0; left:0; right:0; opacity:0;
-    background:url('../images/bg/08.png') center/cover no-repeat;
+    background:url('../images/bg/21.jpg') center/cover no-repeat;
     transition:opacity .3s;
 }
 .tab-container.tab-container-01 .tab.active .text-container{color:#fff; background:#63337e;}
@@ -257,7 +257,7 @@
     box-sizing:border-box; -moz-box-sizing:border-box; -webkit-box-sizing:border-box; outline:none;
 }
 .tab-container.tab-container-01 .tab-content > .filter-bg{
-    position:absolute; top:0; bottom:-1px; left:calc(50% - 50vw); right:calc(50% - 50vw);
+    position:absolute; top:0; bottom:0; left:calc(50% - 50vw); right:calc(50% - 50vw);
     background-size:cover; background-position:center; background-repeat:no-repeat;
 }
 @media screen and (max-width:991.98px){
@@ -287,9 +287,10 @@
 .tab-container.tab-container-02 .slide-container{
     position:relative; width:100%; margin:0;
     -webkit-mask-image: linear-gradient(to bottom, #000, #000, #000, #000, #000, 
-        #000, #000, #000, rgba(0,0,0,0));
+        #000, #000, #000, #000, #000, #000, #000, #000, #000, #000, #000,
+        rgba(0,0,0,.8), rgba(0,0,0,.5), rgba(0,0,0,0));
 }
-.tab-container.tab-container-02 .post-card{padding-bottom:6rem; transition:background .3s;}
+.tab-container.tab-container-02 .post-card{padding-bottom:6.5rem; transition:background .3s;}
 .tab-container.tab-container-02 .btns{
     border-top:1px solid transparent; border-bottom:1px solid transparent; transition:border-color .3s;
 }
@@ -334,4 +335,9 @@
     line-height:1.75rem; font-size:.9375rem; margin:0 .5rem 0 0;
     transition:color .3s, background .3s;
 }
-.tab-container.tab-container-03 .tab-content .grid{padding:1.75rem 1.5rem;}
+.tab-container.tab-container-03 .tab-contents .grids{
+    -webkit-mask-image:linear-gradient(to bottom, #000, #000, #000, #000, #000, #000, 
+        #000, #000, #000, #000, #000, #000, #000, #000, #000, #000, #000, 
+        rgba(0,0,0,.5), rgba(0,0,0,0));
+}
+.tab-container.tab-container-03 .tab-content .grid{padding:1.75rem 1.5rem 2.25rem 1.5rem;}

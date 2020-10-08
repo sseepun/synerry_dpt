@@ -5,9 +5,10 @@ html, body{color:#fff; background:#000;}
 
 /* Colors */
 .color-white, .color-black, .color-sgray, .color-01, .color-02, .color-03, 
-.color-04{color:#fff!important;}
+.color-04, .color-05{color:#fff!important;}
 .bg-color-white, .bg-color-black, .bg-color-sgray, .bg-color-gray,
-.bg-color-01, .bg-color-02, .bg-color-03, .bg-color-04{background:#000!important;}
+.bg-color-01, .bg-color-02, .bg-color-03, .bg-color-04,
+.bg-color-05{background:#000!important;}
 
 
 /* Topnav */

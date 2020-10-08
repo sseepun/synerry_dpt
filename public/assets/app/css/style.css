@@ -165,12 +165,12 @@ p, .p{font-size:1.25rem; margin:.625rem 0 0 0; font-weight:300;}
 
 /* Post Card */
 .post-card{width:100%; padding:0; margin:0;}
-.post-card .title-container{width:100%; height:7.5rem;}
+.post-card .title-container{width:100%; height:7.75rem;}
 .post-card .title-container > .title{
-    display:block; margin:0; max-height:5.25rem; overflow:hidden; text-overflow:ellipsis;
-    transition:color .3s;
+    display:block; margin:0; max-height:5.5rem; overflow:hidden; text-overflow:ellipsis;
+    font-size:1.5rem; font-weight:400; letter-spacing:.02rem; transition:color .3s;
 }
-.post-card .title-container > .by{font-family:'TH Sarabun New'; margin:.3125rem 0 0 0;}
+.post-card .title-container > .by{font-family:'TH Sarabun New'; margin:.375rem 0 0 0;}
 .post-card .title-container > .by > strong{font-weight:600;}
 .post-card .date{font-family:'TH Sarabun New'; margin:.125rem 0 .5rem 0;}
 .post-card .desc{font-family:'TH Sarabun New'; font-size:1.3125rem; margin:.5625rem 0 0 0;}
@@ -183,6 +183,7 @@ p, .p{font-size:1.25rem; margin:.625rem 0 0 0; font-weight:300;}
 }
 
 .post-card.post-card-02, .post-card.post-card-03{padding:1.5rem;}
+.post-card.post-card-02 .date{margin:4.5rem 0 .5rem 0;}
 @media screen and (max-width:991.98px){
     .post-card.post-card-02, .post-card.post-card-03{padding:1.25rem;}
 }

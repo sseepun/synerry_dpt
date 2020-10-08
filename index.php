@@ -139,7 +139,7 @@
                             <div class="grids no-gap">
                                 <?php for($j=0; $j<3; $j++){?>
                                     <div class="grid md-1-3 mt-0">
-                                        <div class="post-card post-card-02 bg-color-0<?= $j+1; ?>">
+                                        <div class="post-card post-card-02 bg-color-0<?= $j+1; ?> btn-on-hover">
                                             <div class="title-container">
                                                 <a class="title h4" href="#">
                                                     สุริยะฯ ดันแผนพัฒนาอุตฯ 
@@ -147,15 +147,23 @@
                                                     เกษตรแปรรูป ชี้เป็นจุดเริ่มต้นการ
                                                     ปฏิรูปโครงสร้างศก
                                                 </a>
-                                                <p class="by">เขียนโดย : <strong>สำนักบริหารกลาง</strong></p>
+                                                <p class="by color-white">
+                                                    เขียนโดย : <strong>สำนักบริหารกลาง</strong>
+                                                </p>
                                             </div>
-                                            <p class="date">21. 09.2563</p>
-                                            <p class="desc">
+                                            <p class="date color-05">21. 09.2563</p>
+                                            <p class="desc color-white">
                                                 กระทรวงอุตสาหกรรม (อก.) ผลักดันแผน
                                                 อุตสาหกรรมเครื่องจักรกลให้เป็นอุตสาหกรรม
                                                 สนับสนุนเพิ่มขีดความสามารถการผลิตทั้ง
                                                 ภาคอุตสาหกรรมและภาคเกษตรกรรม...
                                             </p>
+                                            <div class="btns">
+                                                <a class="btn-action btn-action-white" href="#">
+                                                    <i class="fas fa-chevron-right"></i>
+                                                    อ่านรายละเอียด
+                                                </a>
+                                            </div>
                                         </div>
                                         <div class="ss-img bradius-0">
                                             <div class="img-bg lazy-bg" data-src="public/assets/app/images/banner/02.jpg"></div>
@@ -252,6 +260,9 @@
                             </div>
                             
                             <div class="table-wrapper">
+                                <div class="post-card post-card-03 pt-0 pb-0">
+                                    <h4>เอกสารแนบ</h4>
+                                </div>
                                 <table class="table">
                                     <tbody>
                                         <?php foreach(['pdf', 'xls', 'doc'] as $f){?>
@@ -269,7 +280,9 @@
                                                 </td>
                                                 <td class="text-left pr-4">
                                                     <strong>1.44 MB</strong> 
-                                                    <a class="icon icon-download" href="#"></a>
+                                                    <a href="#">
+                                                        <img class="img-icon ml-2" src="public/assets/app/images/icon/download.png" alt="Download Icon" />
+                                                    </a>
                                                 </td>
                                             </tr>
                                         <?php }?>
@@ -560,24 +573,58 @@
                                             </div>
                                             <div class="grid lg-50 sm-100 bg-color-sgray mt-0">
                                                 <?php for($j=0; $j<2; $j++){?>
-                                                    <div class="post-card post-card-04 mb-3">
-                                                        <div class="title-container">
-                                                            <a class="title h4" href="#">
-                                                                สุริยะฯ ดันแผนพัฒนาอุตฯ 
-                                                                เครื่องจักรกลเต็มสูบ มุ่งสนับสนุน
-                                                                เกษตรแปรรูป ชี้เป็นจุดเริ่มต้นการ
-                                                                ปฏิรูปโครงสร้างศก
-                                                            </a>
+                                                    <div class="ss-card mb-3">
+                                                        <div class="block">
+                                                            <div class="ss-img square bradius-0">
+                                                                <div class="img-bg lazy-bg" data-src="public/assets/app/images/banner/0<?= $k; ?>.jpg"></div>
+                                                                <div class="socials">
+                                                                    <!-- <ul>
+                                                                        <li><a class="social social-fw" href="#">
+                                                                            <i class="fab fa-facebook-f"></i>
+                                                                        </a></li>
+                                                                        <li><a class="social social-tw" href="#">
+                                                                            <i class="fab fa-twitter"></i>
+                                                                        </a></li>
+                                                                        <li><a class="social social-ln" href="#">
+                                                                            <i class="fab fa-line"></i>
+                                                                        </a></li>
+                                                                    </ul> -->
+                                                                </div>
+                                                            </div>
                                                         </div>
-                                                        <p class="date">21. 09.2563</p>
-                                                        <p class="desc">
-                                                            กระทรวงอุตสาหกรรม (อก.) ผลักดันแผน
-                                                            อุตสาหกรรมเครื่องจักรกลให้เป็นอุตสาหกรรม
-                                                            สนับสนุนเพิ่มขีดความสามารถการผลิตทั้ง
-                                                            ภาคอุตสาหกรรมและภาคเกษตรกรรม...
-                                                        </p>
+                                                        <div class="block">
+                                                            <div class="post-card post-card-04">
+                                                                <div class="title-container">
+                                                                    <a class="title h4" href="#">
+                                                                        สุริยะฯ ดันแผนพัฒนาอุตฯ 
+                                                                        เครื่องจักรกลเต็มสูบ มุ่งสนับสนุน
+                                                                        เกษตรแปรรูป 
+                                                                    </a>
+                                                                </div>
+                                                                <p class="date">21. 09.2563</p>
+                                                                <p class="desc">
+                                                                    กระทรวงอุตสาหกรรม (อก.) ผลักดันแผน
+                                                                    อุตสาหกรรมเครื่องจักรกลให้เป็นอุตสาหกรรม
+                                                                    สนับสนุนเพิ่มขีดความสามารถการผลิต...
+                                                                </p>
+                                                            </div>
+                                                        </div>
                                                     </div>
                                                 <?php }?>
+                                            </div>
+                                        </div>
+                                        <div class="pagination mt-0">
+                                            <div class="wrapper">
+                                                <a href="#" class="page-btn page-prev disabled"></a>
+                                                <a href="#" class="page-btn active">01</a>
+                                                <a href="#" class="page-btn">02</a>
+                                                <a href="#" class="page-btn">03</a>
+                                                <a href="#" class="page-btn">04</a>
+                                                <a href="#" class="page-btn">05</a>
+                                                <a href="#" class="page-btn page-next"></a>
+                                                <a class="btn btn-round custom-btn-dark btn-sm" href="#">
+                                                    อ่านข่าวทั้งหมด
+                                                </a>
                                             </div>
                                         </div>
                                     </div>

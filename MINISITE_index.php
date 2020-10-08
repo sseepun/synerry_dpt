@@ -352,7 +352,7 @@
         </div>
     </section>
     
-    <?php include_once('include/footer_OFFICE.php'); ?>
+    <?php include_once('include/footer_MINISITE.php'); ?>
     <?php include_once('include/script.php'); ?>
 </body>
 </html>

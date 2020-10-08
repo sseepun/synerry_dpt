@@ -177,7 +177,3 @@ nav.topnav .menu-mobile .hamburger > *{background:#3e3e3e;}
 .theme-2 .content-01{background:transparent;}
 .theme-2 .content-01 > .content-header{background:#000;}
 .theme-2 .content-01 > .content-header::after{background:#ffff00;}
-
-
-/* Tab Container */
-.tab-container.tab-container-01 .tab h5::before{background:#63347c!important;}
