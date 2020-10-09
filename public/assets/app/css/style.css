@@ -18,6 +18,7 @@ html.global-search-opened, body.global-search-opened{overflow-y:hidden!important
 /* Fonts */
 .font-01{font-family:'DB Ozone X'!important;}
 .font-02{font-family:'TH Sarabun New'!important;}
+.font-03{font-family:'Sukhumvit'!important;}
 
 
 /* Section */
@@ -168,7 +169,8 @@ p, .p{font-size:1.25rem; margin:.625rem 0 0 0; font-weight:300;}
 .post-card .title-container{width:100%; height:7.75rem;}
 .post-card .title-container > .title{
     display:block; margin:0; max-height:5.5rem; overflow:hidden; text-overflow:ellipsis;
-    font-size:1.5rem; font-weight:400; letter-spacing:.02rem; transition:color .3s;
+    font-size:1.5625rem; font-weight:600; line-height:1.24; font-family:'TH Sarabun New';
+    transition:color .3s;
 }
 .post-card .title-container > .by{font-family:'TH Sarabun New'; margin:.375rem 0 0 0;}
 .post-card .title-container > .by > strong{font-weight:600;}
