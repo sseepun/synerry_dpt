@@ -113,7 +113,7 @@
     background-repeat:no-repeat;
 }
 .call-02 .call-text{position:relative; margin:0; font-weight:300;}
-.call-02 .call-text.title{font-size:3.125rem; line-height:1;}
+.call-02 .call-text.title{font-size:2.125rem;}
 .call-02 .call-text.desc{font-family:'TH Sarabun NEW'; font-size:1.625rem;}
 .call-02 .call-text.desc.desc-lg{font-family:'TH Sarabun NEW'; font-size:2rem; line-height:1.1;}
 .call-02 .slide-container{width:100%; margin:1.625rem 0 0 0;}
@@ -174,7 +174,7 @@
     transition:background .3s, width .3s;
 }
 .content-01 .content-tabs > .tab.active{width:11.5rem;}
-.content-01 .content-tabs > .header > h3, .content-01 .content-tabs > .tab > h3{font-size:1.5rem;}
+.content-01 .content-tabs > .header > h3, .content-01 .content-tabs > .tab > h3{font-size:1.125rem;}
 .content-01 .content-tabs > .tab > p{
     position:absolute; left:.75rem; right:.75rem; overflow:hidden; text-overflow:ellipsis;
     font-family:'TH Sarabun New'; font-size:1.125rem; opacity:0; transition:opacity .3s;
@@ -239,7 +239,7 @@
 .tab-container.tab-container-01 .tab h5{
     display:block; position:relative; width:100%; margin:.5rem 0 0 0; height:calc(100% - 4rem);
     padding:.75rem 1rem 1rem 1rem; border-radius:.25rem .25rem 0 0; overflow:hidden;
-    font-weight:300; line-height:1; transition:color .3s, background .3s;
+    font-weight:300; line-height:1.25; font-size:.9375rem; transition:color .3s, background .3s;
 }
 .tab-container.tab-container-01 .tab h5 > *{position:relative;}
 .tab-container.tab-container-01 .tab h5::before{
@@ -261,7 +261,7 @@
     background-size:cover; background-position:center; background-repeat:no-repeat;
 }
 @media screen and (max-width:991.98px){
-    .tab-container.tab-container-01 .tab h5{font-size:1.1875rem; padding:.625rem .25rem 1rem .25rem;}
+    .tab-container.tab-container-01 .tab h5{font-size:.875rem; padding:.625rem .25rem 1rem .25rem;}
     .tab-container.tab-container-01 .tab-content > .hero{width:100%; height:0;}
     .tab-container.tab-container-01 .tab-content > .contents{width:100%; padding:0;}
 }
@@ -329,7 +329,9 @@
     padding:.625rem 1rem; border-right:1px solid transparent; transition:background .3s;
     display:flex; align-items:center;
 }
-.tab-container.tab-container-03 .tab > h4{font-weight:300; margin:0; white-space:nowrap;}
+.tab-container.tab-container-03 .tab > h4{
+    font-weight:300; margin:0; white-space:nowrap; font-size:.875rem;
+}
 .tab-container.tab-container-03 .tab > .icon{
     display:block; width:1.5rem; height:1.5rem; border-radius:50%; text-align:center;
     line-height:1.75rem; font-size:.9375rem; margin:0 .5rem 0 0;

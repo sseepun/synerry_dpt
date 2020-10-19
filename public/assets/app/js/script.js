@@ -73,7 +73,7 @@ $(function(){ 'use strict';
             .from('.global-search-container .hamburger', .6, {
                 opacity: 0, y: 30, ease: Power3.easeInOut
             }, '-=.4')
-            .from('.global-search-container h1', .6, {
+            .from('.global-search-container h3', .6, {
                 opacity: 0, y: 30, ease: Power3.easeInOut
             }, '-=.4')
             .from('.global-search-container .input-container', .6, {

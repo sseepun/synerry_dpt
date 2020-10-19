@@ -122,7 +122,7 @@
                     <span class="fw-500">
                         สงวนลิขสิทธิ์ กระทรวงอุตสาหกรรม ศูนย์เทคโนโลยีสารสนเทศและการสื่อสาร สำนักงานปลัดกระทรวงอุตสาหกรรม
                     </span> <br>
-                    <span class="font-02 text-md">
+                    <span class="font-02 text-xl">
                         แสดงผลดีที่สุดที่ขนาดจอภาพ 1024*768 pixel โดยใช้ web browser: IE9+, Firefox, Chrome, Safari
                     </span>
                 </p>

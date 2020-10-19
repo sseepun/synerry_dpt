@@ -26,12 +26,12 @@
             <h3 class="text-center mb-0 font-02 fw-600" data-aos="fade-up" data-aos-delay="0">
                 ข่าวกระทรวงอุตสาหกรรม
             </h3>
-            <h1 class="text-center mb-0" data-aos="fade-up" data-aos-delay="150">
+            <h2 class="text-center mb-1" data-aos="fade-up" data-aos-delay="150">
                 เปิดโลกทัศน์ด้านอุตสาหกรรมให้กับตัวคุณ
-            </h1>
-            <h2 class="text-center mb-0 fw-200" data-aos="fade-up" data-aos-delay="300">
-                ด้วยการอัพเดทข่าวสารกับเราได้ที่นี่
             </h2>
+            <h4 class="text-center mb-0 fw-200" data-aos="fade-up" data-aos-delay="300">
+                ด้วยการอัพเดทข่าวสารกับเราได้ที่นี่
+            </h4>
             
             <!-- Tab Container 01 -->
             <div class="tab-container tab-container-01">
@@ -335,11 +335,11 @@
             <h1 class="text-center color-white fw-500 mb-0" data-aos="fade-up" data-aos-delay="0">
                 เปิดโอกาสให้สังคมและสิ่งแวดล้อม
             </h1>
-            <h3 class="text-center color-white fw-200 mt-0 mb-3" data-aos="fade-up" data-aos-delay="150">
+            <h4 class="text-center color-white fw-200 mt-0 mb-3" data-aos="fade-up" data-aos-delay="150">
                 นี่แหละคืออุตสาหกรรมยุคใหม่ที่แท้จริง ร่วมสร้างแรงบันดาลใจดีดีไปกับเรา
-            </h3>
+            </h4>
             <div class="btns text-center" data-aos="fade-up" data-aos-delay="300">
-                <a class="btn btn-round custom-btn-secondary btn-md" href="#">
+                <a class="btn btn-round custom-btn-secondary" href="#">
                     หน้ารายงานกิจกรรมเพื่อสังคม
                 </a>
             </div>
@@ -351,10 +351,10 @@
             <h3 class="text-center mb-1 font-02 fw-600" data-aos="fade-up" data-aos-delay="0">
                 ข่าวกระทรวงอุตสาหกรรมสำหรับคุณ
             </h3>
-            <h1 class="text-center mb-0" data-aos="fade-up" data-aos-delay="300">
+            <h2 class="text-center mb-0" data-aos="fade-up" data-aos-delay="300">
                 เปิดโลกทัศน์ให้กับตัวคุณเอง 
                 <span class="fw-200">ด้วยการอัพเดทข่าวสารด้านอุตสาหกรรมกับเราที่นี่</span>
-            </h1>
+            </h2>
             
             <!-- Tab Container 02 -->
             <div class="tab-container tab-container-02">
@@ -491,9 +491,9 @@
                         <div class="img-bg" style="background-image:url('public/assets/app/images/bg/16.jpg'); background-position:center -2rem;"></div>
                     </div>
                     <div class="container">
-                        <h1 class="color-white text-center mb-0">
+                        <h2 class="color-white text-center mb-4">
                             ร่วมถ่ายทอดเรื่องราวดีดีเกี่่ยวกับอุตสาหกรรม
-                        </h1>
+                        </h2>
                         <h4 class="color-white text-center font-02 fw-300 mt-3 mb-0 xs-no-br">
                             ทั้ง <span class="text-xxxl font-01">7<?= $z; ?></span> 
                             จังหวัดทั่วประเทศไทยเพื่อแลกเปลี่ยนความรู้ความคิดเห็น 

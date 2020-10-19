@@ -174,9 +174,9 @@
         </div>
         <div class="container">
             <form action="/" method="GET">
-                <h1 class="color-white text-center mt-0 mb-0-5">
+                <h3 class="color-white text-center mt-0 mb-0-5">
                     คุณกำลังมองหาอะไร?
-                </h1>
+                </h3>
                 <div class="input-container">
                     <input type="text" name="keywords" placeholder="ค้นหา" required>
                     <button type="submit">
