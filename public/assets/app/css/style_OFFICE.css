@@ -6,8 +6,8 @@ nav.topnav > .top-container{padding:.375rem 0;}
 nav.topnav > .top-container::after{display:none;}
 nav.topnav > .bottom-container{background:#f7f7f7!important;}
 nav.topnav > .bottom-container::after{display:none;}
-nav.topnav .logo h1{font-size:1.875rem; color:#3e3e3e; -webkit-text-fill-color:unset;}
-nav.topnav .logo h5{color:#3e3e3e;}
+nav.topnav .logo h1{font-size:1.25rem; color:#3e3e3e; -webkit-text-fill-color:unset;}
+nav.topnav .logo h5{color:#3e3e3e; font-weight:200; margin:.3125rem 0 0 0;}
 nav.topnav .menu-container{background:transparent;}
 nav.topnav .menu::before{display:none;}
 nav.topnav .menu::after, nav.topnav .menu-container::after{

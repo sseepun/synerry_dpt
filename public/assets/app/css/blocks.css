@@ -143,13 +143,13 @@
 }
 .call-02 .slide-container  .arrows > .slick-prev::before{content:'\f053';}
 .call-02 .slide-container  .arrows > .slick-next::before{content:'\f054';}
-.call-02 .input-group{width:100%; max-width:22rem; margin:0 auto 2rem auto;}
+.call-02 .input-group{width:100%; max-width:26rem; margin:0 auto 2rem auto;}
 .call-02 .input-group > input{
-    border-radius:1000em!important; font-size:1.125rem; text-align:center; z-index:2;
+    border-radius:1000em!important; font-size:1rem; text-align:center; z-index:2;
 }
 .call-02 .input-group > .input-group-append{margin-left:-1rem; z-index:1;}
 .call-02 .input-group > .input-group-append > button{
-    border-radius:0 1000em 1000em 0!important; padding-left:1.5rem;
+    border-radius:0 1000em 1000em 0!important; padding-left:1.5rem; font-size:1rem;
 }
 @media screen and (max-width:767.98px){
     .call-02{padding:3rem 0 0 0;}
