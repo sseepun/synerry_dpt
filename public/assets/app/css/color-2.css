@@ -113,6 +113,7 @@ nav.footer > .footer-bottom .wrapper > .count-area{background:#ffff00; color:#00
 /* Post Card */
 .post-card > .title-container > .title{color:#ffff00;}
 .post-card.post-card-04 .title-container > .title::before{background:#ffff00;}
+.post-card.post-card-05{border-color:#ffff00;}
 
 
 /* Special List */

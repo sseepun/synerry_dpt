@@ -100,17 +100,20 @@
                                             <div class="ss-img bradius-0">
                                                 <div class="img-bg lazy-bg" data-src="public/assets/app/images/banner/01.jpg"></div>
                                                 <div class="socials">
-                                                    <!-- <ul>
-                                                        <li><a class="social social-fw" href="#">
-                                                            <i class="fab fa-facebook-f"></i>
+                                                    <ul>
+                                                        <li><a class="social" href="#">
+                                                            <img src="public/assets/app/images/social/fb.png" alt="Social Icon" />
                                                         </a></li>
-                                                        <li><a class="social social-tw" href="#">
-                                                            <i class="fab fa-twitter"></i>
+                                                        <li><a class="social" href="#">
+                                                            <img src="public/assets/app/images/social/tw.png" alt="Social Icon" />
                                                         </a></li>
-                                                        <li><a class="social social-ln" href="#">
-                                                            <i class="fab fa-line"></i>
+                                                        <li><a class="social" href="#">
+                                                            <img src="public/assets/app/images/social/ln.png" alt="Social Icon" />
                                                         </a></li>
-                                                    </ul> -->
+                                                        <li><a class="social" href="#">
+                                                            <img src="public/assets/app/images/social/link.png" alt="Social Icon" />
+                                                        </a></li>
+                                                    </ul>
                                                 </div>
                                             </div>
                                             <p class="desc">
@@ -168,17 +171,20 @@
                                         <div class="ss-img bradius-0">
                                             <div class="img-bg lazy-bg" data-src="public/assets/app/images/banner/02.jpg"></div>
                                             <div class="socials">
-                                                <!-- <ul>
-                                                    <li><a class="social social-fw" href="#">
-                                                        <i class="fab fa-facebook-f"></i>
+                                                <ul>
+                                                    <li><a class="social" href="#">
+                                                        <img src="public/assets/app/images/social/fb.png" alt="Social Icon" />
                                                     </a></li>
-                                                    <li><a class="social social-tw" href="#">
-                                                        <i class="fab fa-twitter"></i>
+                                                    <li><a class="social" href="#">
+                                                        <img src="public/assets/app/images/social/tw.png" alt="Social Icon" />
                                                     </a></li>
-                                                    <li><a class="social social-ln" href="#">
-                                                        <i class="fab fa-line"></i>
+                                                    <li><a class="social" href="#">
+                                                        <img src="public/assets/app/images/social/ln.png" alt="Social Icon" />
                                                     </a></li>
-                                                </ul> -->
+                                                    <li><a class="social" href="#">
+                                                        <img src="public/assets/app/images/social/link.png" alt="Social Icon" />
+                                                    </a></li>
+                                                </ul>
                                             </div>
                                         </div>
                                     </div>
@@ -198,17 +204,20 @@
                                         <div class="ss-img bradius-0">
                                             <div class="img-bg lazy-bg" data-src="public/assets/app/images/banner/03.jpg"></div>
                                             <div class="socials">
-                                                <!-- <ul>
-                                                    <li><a class="social social-fw" href="#">
-                                                        <i class="fab fa-facebook-f"></i>
+                                                <ul>
+                                                    <li><a class="social" href="#">
+                                                        <img src="public/assets/app/images/social/fb.png" alt="Social Icon" />
                                                     </a></li>
-                                                    <li><a class="social social-tw" href="#">
-                                                        <i class="fab fa-twitter"></i>
+                                                    <li><a class="social" href="#">
+                                                        <img src="public/assets/app/images/social/tw.png" alt="Social Icon" />
                                                     </a></li>
-                                                    <li><a class="social social-ln" href="#">
-                                                        <i class="fab fa-line"></i>
+                                                    <li><a class="social" href="#">
+                                                        <img src="public/assets/app/images/social/ln.png" alt="Social Icon" />
                                                     </a></li>
-                                                </ul> -->
+                                                    <li><a class="social" href="#">
+                                                        <img src="public/assets/app/images/social/link.png" alt="Social Icon" />
+                                                    </a></li>
+                                                </ul>
                                             </div>
                                         </div>
                                         <div class="post-card post-card-03 btn-on-hover bg-color-white">
@@ -352,9 +361,14 @@
                     <img src="public/assets/app/images/banner/08.jpg" alt="Popup Banner" />
                 </div>
                 <div class="btns mt-0-5">
-                    <input type="submit" class="btn btn-action btn-secondary" value="ลงทะเบียน" />
-                    <a class="btn btn-action btn-primary btn-popup-toggle" href="#" data-popup="subscribe">
-                        ยกเลิก
+                    <div class="form-check form-check-inline mr-3">
+                        <input class="form-check-input mr-2" type="checkbox" id="show-toggle" value="1">
+                        <label class="form-check-label mt-1" for="show-toggle">
+                            ไม่ต้องแสดงอีก
+                        </label>
+                    </div>
+                    <a class="btn btn-round custom-btn-tertiary btn-popup-toggle px-5" href="#" data-popup="subscribe">
+                        <i class="far fa-times-circle color-white"></i> ปิด
                     </a>
                 </div>
             </div>
@@ -552,17 +566,20 @@
                                                             <div class="ss-img square bradius-0">
                                                                 <div class="img-bg lazy-bg" data-src="public/assets/app/images/banner/0<?= $k; ?>.jpg"></div>
                                                                 <div class="socials">
-                                                                    <!-- <ul>
-                                                                        <li><a class="social social-fw" href="#">
-                                                                            <i class="fab fa-facebook-f"></i>
+                                                                    <ul>
+                                                                        <li><a class="social" href="#">
+                                                                            <img src="public/assets/app/images/social/fb.png" alt="Social Icon" />
                                                                         </a></li>
-                                                                        <li><a class="social social-tw" href="#">
-                                                                            <i class="fab fa-twitter"></i>
+                                                                        <li><a class="social" href="#">
+                                                                            <img src="public/assets/app/images/social/tw.png" alt="Social Icon" />
                                                                         </a></li>
-                                                                        <li><a class="social social-ln" href="#">
-                                                                            <i class="fab fa-line"></i>
+                                                                        <li><a class="social" href="#">
+                                                                            <img src="public/assets/app/images/social/ln.png" alt="Social Icon" />
                                                                         </a></li>
-                                                                    </ul> -->
+                                                                        <li><a class="social" href="#">
+                                                                            <img src="public/assets/app/images/social/link.png" alt="Social Icon" />
+                                                                        </a></li>
+                                                                    </ul>
                                                                 </div>
                                                             </div>
                                                         </div>
@@ -593,17 +610,20 @@
                                                             <div class="ss-img square bradius-0">
                                                                 <div class="img-bg lazy-bg" data-src="public/assets/app/images/banner/0<?= $k; ?>.jpg"></div>
                                                                 <div class="socials">
-                                                                    <!-- <ul>
-                                                                        <li><a class="social social-fw" href="#">
-                                                                            <i class="fab fa-facebook-f"></i>
+                                                                    <ul>
+                                                                        <li><a class="social" href="#">
+                                                                            <img src="public/assets/app/images/social/fb.png" alt="Social Icon" />
                                                                         </a></li>
-                                                                        <li><a class="social social-tw" href="#">
-                                                                            <i class="fab fa-twitter"></i>
+                                                                        <li><a class="social" href="#">
+                                                                            <img src="public/assets/app/images/social/tw.png" alt="Social Icon" />
                                                                         </a></li>
-                                                                        <li><a class="social social-ln" href="#">
-                                                                            <i class="fab fa-line"></i>
+                                                                        <li><a class="social" href="#">
+                                                                            <img src="public/assets/app/images/social/ln.png" alt="Social Icon" />
                                                                         </a></li>
-                                                                    </ul> -->
+                                                                        <li><a class="social" href="#">
+                                                                            <img src="public/assets/app/images/social/link.png" alt="Social Icon" />
+                                                                        </a></li>
+                                                                    </ul>
                                                                 </div>
                                                             </div>
                                                         </div>

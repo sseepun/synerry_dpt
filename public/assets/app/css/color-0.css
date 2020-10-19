@@ -150,11 +150,13 @@ nav.footer.footer-gray .ss-list > li > a:hover{color:#1f9ad3;}
 .post-card > .title-container > .title{color:#000;}
 .post-card > .title-container > .title:hover{color:#88009b;}
 .post-card .title-container > .by, .post-card .desc{color:#343a40;}
+.post-card .stats{color:#88009b;}
 .post-card.post-card-02{color:#fff;}
 .post-card.post-card-02 .title-container > .title{color:#fff;}
 .post-card.post-card-02 .title-container > .title:hover{color:#f1d13d;}
 .post-card.post-card-04 .title-container > .title::before{background:#88009b;}
 .post-card.post-card-04 .date{color:#88009b;}
+.post-card.post-card-05{border-color:#e1e1e1;}
 
 
 /* Special List */

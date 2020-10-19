@@ -5,9 +5,6 @@
     <?php include_once('include/style.php'); ?>
     <style>
         /* Custom CSS */
-        /* Intro 01 */
-        .intro-01{background-position:center; background-size:cover; background-repeat:no-repeat;}
-        .intro-01 > .container{position:relative; padding-top:4rem; padding-bottom:1rem;}
         .ss-card .h-line {margin-top:1rem; height: .25rem; background: #efefef; width:100%;}
         .text-container p {margin:0;}
         .text-container h3 {margin:0;}
@@ -38,64 +35,56 @@
         .list-wrapper li:hover i{color:#bb8a42;}
         .list-wrapper li:hover a{color:var(--color1);}
 
-        @media only screen and (max-width: 991.98px){
+        @media screen and (max-width: 991.98px){
             .slots{margin-top:-3.5rem;}
-            .intro-01 > .container{padding-top:3rem; padding-bottom:1rem;}
             .text-container p {font-size:110%;}
             .text-container h3 {font-size:110%;}
         }
         @media screen and (max-width: 767.98px){
             .slot > img {left: calc(50% - 7.1825rem); width:auto;}
-            .intro-01 > .container{padding-bottom:0;}
             .text-container p {font-size:90%;}
             .text-container h3 {font-size:90%;}
         }
         @media screen and (max-width:575.98px){
-            .intro-01 > .container{padding-top:2.5rem;}
             .slots{margin-top:-3rem;}
-
         }
     </style>
 </head>
 <body class="loading">
     <?php include_once('include/topnav.php'); ?>
 
-    <div class="intro-01 lazy-bg" data-src="public/assets/app/images/bg/22.jpg">
+    <div class="intro-02 section-bg lazy-bg" data-src="public/assets/app/images/bg/22.jpg">
         <div class="container">
-            <div class="text-container color-white">
-                <h3>ข่าวประชาสัมพันธ์</h3>
-                <p>เปิดโลกทัศน์ให้ตัวคุณเองด้วยการอัพเดตข่าวสาร</p>
-                <p>ด้านอุตสาหกรรมกับเราได้ที่นี่</p>
+            <div class="text-container color-white" data-aos="fade-up" data-aos-delay="0">
+                <h2 class="fw-100 mb-0">ข่าวประชาสัมพันธ์</h2>
+                <p class="font-02">
+                    เปิดโลกทัศน์ให้ตัวคุณเองด้วยการอัพเดตข่าวสาร <br>
+                    ด้านอุตสาหกรรมกับเราได้ที่นี่
+                </p>
             </div>
         </div>
     </div>
 
-
-    <section class="section-padding" style="position:relative;">
+    <section>
         <div class="container">
-            <div class="grids jc-space-between">
-                <div class="grid lg-25 md-30 sm-100">
-                    <div class="slots" data-aos="fade-up" data-aos-delay="0">
-                        <div class="slot bg-color-02">
-                            <div class="list-wrapper">
-                                <ul>
-                                    <?php for($i=0; $i < 12; $i++){?>
-                                    <li>
-                                        <i class="fas fa-chevron-right"></i>
-                                        <a href="#">โรงงานและการจัดตั้ง</a>
-                                    </li>
-                                    <?php }?>
-                                </ul>
-                            </div>
+            <div class="grids">
+
+            <div class="grid lg-25 md-35 sm-100 mt-0" style="overflow:hidden;" data-aos="fade-up" data-aos-delay="300">
+                    <div class="menu-column">
+                        <div class="menu-container">
+                            <?php for($i=0; $i<12; $i++){?>
+                                <a class="menu" href="#">
+                                    โรงงานและการจัดตั้ง
+                                </a>
+                            <?php }?>
                         </div>
-                        <div class="slot">
-                            <img src="public/assets/app/images/bg/23.jpg" alt="">
-                        </div>
+                        <img class="decor" src="public/assets/app/images/hero/05.png" alt="Decoration" />
                     </div>
-                    
                 </div>
-                <div class="grid lg-70 md-70 sm-100" >
-                    <div class="grids" data-aos="fade-up" data-aos-delay="0">
+
+                <div class="grid lg-75 md-65 sm-100" data-aos="fade-up" data-aos-delay="600">
+
+                    <div class="grids">
                         <?php for($i = 0; $i < 9; $i++){?>
                             <div class="ss-card mb-3">
                                 <div class="block">
@@ -147,7 +136,7 @@
                         <?php }?>
                     </div>
 
-                    <div class="list-footer">
+                    <div class="list-footer mt-5 mb-5">
                         <div class="block">
                             <div class="text-wrapper text-sm">
                                 จำนวนทั้งหมด <span class="fw-600 color-03">400 รายการ</span> 
@@ -183,10 +172,9 @@
                     </div>
 
                 </div>
+
             </div>
-
         </div>
-
     </section>
 
     <?php include_once('include/footer.php'); ?>
