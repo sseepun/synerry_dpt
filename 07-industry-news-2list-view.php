@@ -26,7 +26,7 @@
             height: 50%; position:relative;
         }
         .slot > img {
-            position: absolute; top:0; left:0; height:auto; width:100%;
+            position: relative; top:0; left:0; height:auto; width:100%;
         }
 
         .list-wrapper {height:100%; padding: 1rem .5rem;}
@@ -45,7 +45,7 @@
             .text-container h3 {font-size:110%;}
         }
         @media screen and (max-width: 767.98px){
-            .slot > img {position:relative; left: calc(50% - 7.1825rem); width:auto;}
+            .slot > img {left: calc(50% - 7.1825rem); width:auto;}
             .intro-01 > .container{padding-bottom:0;}
             .text-container p {font-size:90%;}
             .text-container h3 {font-size:90%;}
@@ -75,7 +75,7 @@
         <div class="container">
             <div class="grids jc-space-between">
                 <div class="grid lg-25 md-30 sm-100">
-                    <div class="slots">
+                    <div class="slots" data-aos="fade-up" data-aos-delay="0">
                         <div class="slot bg-color-02">
                             <div class="list-wrapper">
                                 <ul>
@@ -90,13 +90,12 @@
                         </div>
                         <div class="slot">
                             <img src="public/assets/app/images/bg/23.jpg" alt="">
-                            <!-- <div style="width:20%; position:relative; background-image:url('public/assets/app/images/bg/23.jpg'); background-size:cover; background-position:center;"></div> -->
                         </div>
                     </div>
                     
                 </div>
-                <div class="grid lg-70 md-70 sm-100">
-                    <div class="grids">
+                <div class="grid lg-70 md-70 sm-100" >
+                    <div class="grids" data-aos="fade-up" data-aos-delay="0">
                         <?php for($i = 0; $i < 9; $i++){?>
                             <div class="ss-card mb-3">
                                 <div class="block">
@@ -126,7 +125,7 @@
                                                 เกษตรแปรรูป 
                                             </a>
                                         </div>
-                                        <div class="d-flex">
+                                        <div class="d-flex ai-center">
                                             <div class="date" style="color: #88009b;">13.08.2563</div>
                                             <div class="d-flex view"><div class="icon"><i class="fas fa-eye"></i></div>268</div>
                                         </div>
