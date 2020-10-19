@@ -45,7 +45,7 @@
             .text-container h3 {font-size:110%;}
         }
         @media screen and (max-width: 767.98px){
-            .slot > img {position:relative;}
+            .slot > img {position:relative; left: calc(50% - 7.1825rem);}
             .intro-01 > .container{padding-bottom:0;}
             .text-container p {font-size:90%;}
             .text-container h3 {font-size:90%;}
