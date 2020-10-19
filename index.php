@@ -339,12 +339,27 @@
                 นี่แหละคืออุตสาหกรรมยุคใหม่ที่แท้จริง ร่วมสร้างแรงบันดาลใจดีดีไปกับเรา
             </h4>
             <div class="btns text-center" data-aos="fade-up" data-aos-delay="300">
-                <a class="btn btn-round custom-btn-secondary" href="#">
+                <a class="btn btn-round custom-btn-secondary btn-popup-toggle" href="#" data-popup="subscribe">
                     หน้ารายงานกิจกรรมเพื่อสังคม
                 </a>
             </div>
         </div>
     </section>
+    <div class="popup-container" data-popup="subscribe">
+        <div class="wrapper">
+            <div class="popup-box">
+                <div class="img-container">
+                    <img src="public/assets/app/images/banner/08.jpg" alt="Popup Banner" />
+                </div>
+                <div class="btns mt-0-5">
+                    <input type="submit" class="btn btn-action btn-secondary" value="ลงทะเบียน" />
+                    <a class="btn btn-action btn-primary btn-popup-toggle" href="#" data-popup="subscribe">
+                        ยกเลิก
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
     
     <section class="section-padding bg-color-gray">
         <div class="container">
