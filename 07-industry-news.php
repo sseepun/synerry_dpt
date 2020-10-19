@@ -8,7 +8,7 @@
         /* Intro 01 */
         .intro-01{background-position:center; background-size:cover; background-repeat:no-repeat;}
         .intro-01 > .container{position:relative; padding-top:4rem; padding-bottom:1rem;}
-        
+        .ss-card .h-line {margin-top:1rem; height: .5rem; background: #efefef; width:100%;}
         .text-container p {margin:0;}
         .text-container h3 {margin:0;}
         .post-card .title-container .view {
@@ -72,7 +72,7 @@
 
     <section class="section-padding" style="position:relative;">
         <div class="container">
-            <div class="grids">
+            <div class="grids jc-space-between">
                 <div class="grid lg-25 md-30 sm-100">
                     <div class="slots">
                         <div class="slot bg-color-02">
@@ -94,7 +94,7 @@
                     </div>
                     
                 </div>
-                <div class="grid lg-75 md-70 sm-100">
+                <div class="grid lg-70 md-70 sm-100">
                     <div class="grids">
                         <?php for($i = 0; $i < 9; $i++){?>
                             <div class="grid lg-1-3 md-50 sm-50">
@@ -139,7 +139,7 @@
                                                 </a>
                                             </div>
                                         </div>
-
+                                        <div class="h-line"></div>
 
                                     </div>
                                 </div>
