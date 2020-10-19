@@ -73,7 +73,7 @@
     <section class="section-padding" style="position:relative;">
         <div class="container">
             <div class="grids">
-                <div class="grid md-20 sm-100">
+                <div class="grid lg-25 md-30 sm-100">
                     <div class="slots">
                         <div class="slot bg-color-02">
                             <div class="list-wrapper">
@@ -94,10 +94,10 @@
                     </div>
                     
                 </div>
-                <div class="grid md-70 sm-100">
+                <div class="grid lg-75 md-70 sm-100">
                     <div class="grids">
                         <?php for($i = 0; $i < 9; $i++){?>
-                            <div class="grid md-1-3 sm-50">
+                            <div class="grid lg-1-3 md-50 sm-50">
                                 <div class="ss-card mb-3">
                                     <div class="block w-auto">
                                         
