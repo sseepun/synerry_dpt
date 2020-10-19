@@ -24,9 +24,9 @@
 
     <section class="section-padding">
         <div class="container">
-            <h1 class="text-center mb-0" data-aos="fade-up" data-aos-delay="150">
+            <h2 class="text-center mb-0" data-aos="fade-up" data-aos-delay="150">
                 ข่าวสำนักงานปลัดกระทรวงอุตสาหกรรม
-            </h1>
+            </h2>
             
             <!-- Tab Container 01 -->
             <div class="tab-container tab-container-01 mt-3">
@@ -199,9 +199,9 @@
                         <div class="img-bg" style="background-image:url('public/assets/app/images/bg/19.jpg'); background-position:center -26rem;"></div>
                     </div>
                     <div class="container">
-                        <h1 class="color-white text-center mb-0">
+                        <h2 class="color-white text-center mb-4">
                             ร่วมถ่ายทอดเรื่องราวดีดีเกี่่ยวกับอุตสาหกรรม
-                        </h1>
+                        </h2>
                         <h4 class="color-white text-center font-02 fw-300 mt-3 mb-0 xs-no-br">
                             ทั้ง <span class="text-xxxl font-01">7<?= $z; ?></span> 
                             จังหวัดทั่วประเทศไทยเพื่อแลกเปลี่ยนความรู้ความคิดเห็น 
@@ -321,9 +321,9 @@
 
     <section class="call-02">
         <div class="container">
-            <h1 class="text-center color-white mb-0" data-aos="fade-up" data-aos-delay="0">
+            <h2 class="text-center color-white mb-0" data-aos="fade-up" data-aos-delay="0">
                 เรารับฟังความคิดเห็นของคุณ
-            </h1>
+            </h2>
             <h4 class="text-center color-white font-02 fw-300 mt-0 mb-0" data-aos="fade-up" data-aos-delay="150">
                 เกี่ยวกับความรับผิดชอบของกระทรวงอุตสาหกรรม
             </h4>

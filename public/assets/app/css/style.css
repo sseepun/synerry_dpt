@@ -258,7 +258,8 @@ p, .p{font-size:1.125rem; margin:.625rem 0 0 0; font-weight:300;}
 .ss-img > .socials .social.social-ln{background:#00B900;}
 
 .ss-img .tag, .ss-video .tag{
-    position:absolute; top:0; right:0; padding:.125rem 1rem; font-weight:300; font-size:1.25rem;
+    position:absolute; top:0; right:0; padding:.3125rem 1rem .25rem 1rem; font-weight:300;
+    font-size:.9375rem;
 }
 
 .ss-img .img-num{
