@@ -448,3 +448,26 @@ table.table .img-icon{display:inline-block; height:1rem; width:auto;}
 @media screen and (max-width:575.98px){
     .xs-no-br > br{display:none;}
 }
+
+
+/* List Footer */
+.list-footer{
+    width:100%; display:flex; align-items:center; justify-content:space-between;
+    border-top:1px solid transparent; padding:.125rem 0; margin:1.875rem 0 0 0;
+}
+.list-footer > .block{display:flex; align-items:center;}
+.list-footer .pagination{margin:0;}
+.list-footer .text-wrapper{text-align:center; font-size:1.25rem; padding:.375rem 0; font-weight:300;}
+.list-footer select{
+    border:1px solid transparent; box-shadow:none; outline:none; border-radius:.25rem;
+    padding:.375rem 1.125rem .375rem .375rem; font-size:1.125rem; font-weight:300;
+    margin:0 0 0 .25rem; transition:border-color .3s;
+}
+@media screen and (max-width:767.98px){
+    .list-footer{
+        flex-wrap:wrap; justify-content:center; padding:.625rem 0; margin:1.5rem 0 0 0;
+        border-bottom:1px solid transparent;
+    }
+    .list-footer > .block{width:100%;}
+    .list-footer .text-wrapper{width:100%;}
+}
