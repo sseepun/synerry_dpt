@@ -13,9 +13,9 @@
         .text-container h3 {margin:0;}
         .post-card .title-container .view {
             font-family: 'TH Sarabun New';
-            margin: .125rem 0 .5rem 0;
             color: #88009b;
         }
+        .post-card .title-container .date {margin:0;}
         .post-card .title-container .view .icon {
             width:1.5rem; height:1.5rem; display:block;
             font-size: .9375rem; margin: 0 .5rem 0 0; text-align:center; line-height:1.75rem;
@@ -25,7 +25,7 @@
             height: 50%; position:relative;
         }
         .slot > img {
-            position: absolute; top:0; left:0; height:auto; width:100%;
+            position: relative; top:0; left:0; height:auto; width:100%;
         }
 
         .list-wrapper {height:100%; padding: 1rem .5rem;}
@@ -44,7 +44,7 @@
             .text-container h3 {font-size:110%;}
         }
         @media screen and (max-width: 767.98px){
-            .slot > img {position:relative; left: calc(50% - 7.1825rem); width:auto;}
+            .slot > img { left: calc(50% - 7.1825rem); width:auto;}
             .intro-01 > .container{padding-bottom:0;}
             .text-container p {font-size:90%;}
             .text-container h3 {font-size:90%;}
@@ -74,7 +74,7 @@
         <div class="container">
             <div class="grids jc-space-between">
                 <div class="grid lg-25 md-30 sm-100">
-                    <div class="slots">
+                    <div class="slots" data-aos="fade-up" data-aos-delay="0">
                         <div class="slot bg-color-02">
                             <div class="list-wrapper">
                                 <ul>
@@ -95,7 +95,7 @@
                     
                 </div>
                 <div class="grid lg-70 md-70 sm-100">
-                    <div class="grids">
+                    <div class="grids" data-aos="fade-up" data-aos-delay="0">
                         <?php for($i = 0; $i < 9; $i++){?>
                             <div class="grid lg-1-3 md-50 sm-50">
                                 <div class="ss-card mb-3">
@@ -106,7 +106,7 @@
                                                 <a class="title h4" href="#">
                                                     รมว.สุริยะฯ เผย นิสสันมั่นใจศักยภาพฐานการผลิตของไทย
                                                 </a>
-                                                <div class="d-flex jc-space-between">
+                                                <div class="d-flex ai-center jc-space-between">
                                                     <div class="date" style="color: #88009b;">13.08.2563</div>
                                                     <div class="d-flex view"><div class="icon"><i class="fas fa-eye"></i></div>268</div>
                                                 </div>
@@ -146,21 +146,6 @@
                             </div>
                         <?php }?>
                     </div>
-
-                    <!-- <div class="pagination mt-5" data-aos="fade-up" data-aos-delay="0">
-                        <div class="wrapper">
-                            <a href="#" class="page-btn page-prev disabled"></a>
-                            <a href="#" class="page-btn active">01</a>
-                            <a href="#" class="page-btn">02</a>
-                            <a href="#" class="page-btn">03</a>
-                            <a href="#" class="page-btn">04</a>
-                            <a href="#" class="page-btn">05</a>
-                            <a href="#" class="page-btn page-next"></a>
-                            <a class="btn btn-round custom-btn-dark btn-sm" href="#">
-                                อ่านข่าวทั้งหมด
-                            </a>
-                        </div>
-                    </div> -->
                     <div class="list-footer">
                         <div class="block">
                             <div class="text-wrapper text-sm">
