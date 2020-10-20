@@ -255,7 +255,7 @@ p, .p{font-size:1.125rem; margin:.625rem 0 0 0; font-weight:300;}
     font-family:'TH Sarabun New'; margin:.25rem 0 0 0; font-size:1.1875rem;
 }
 .post-card .title-container > .by > strong{font-weight:600;}
-.post-card .stats{margin:.5rem 0 0 0;}
+.post-card .stats{margin:.875rem 0 .125rem 0; line-height:1;}
 .post-card .date, .post-card .view{
     font-family:'TH Sarabun New'; margin:.125rem 0 .5rem 0; font-size:1.25rem;
     font-weight:300;
@@ -290,13 +290,27 @@ p, .p{font-size:1.125rem; margin:.625rem 0 0 0; font-weight:300;}
 .post-card.post-card-04 .title-container > .title::before{
     content:''; position:absolute; top:.75rem; left:-1.125rem; width:.5rem; height:.5rem;
 }
-.post-card.post-card-04 .date{margin:.5rem 0 0 0; font-weight:400;}
+.post-card.post-card-04 .date{font-weight:400;}
 .post-card.post-card-04 .desc{margin:0;}
 
 .post-card.post-card-05{padding:.75rem 0 .5rem 0; border-bottom:4px solid transparent;}
 .post-card.post-card-05 .title-container{height:auto;}
 .post-card.post-card-05 .title-container > .title{-webkit-line-clamp:2!important;}
 .post-card.post-card-05 .btns{margin:.25rem 0 0 0;}
+
+.post-card.post-card-06{
+    position:relative; padding:0 0 .5rem 0; margin:0 0 0 1rem!important;
+    border-bottom:4px solid transparent; width:calc(100% - 1rem);
+}
+.post-card.post-card-06::before{
+    content:''; position:absolute; top:.5625rem; left:-1rem; width:.4375rem; height:.4375rem;
+}
+.post-card.post-card-06 .title-container{height:auto;}
+.post-card.post-card-06 .title-container > .title{-webkit-line-clamp:2!important;}
+.post-card.post-card-06 .stats{margin:.75rem 0 0 0;}
+.post-card.post-card-06 .stats > *{margin:0;}
+.post-card.post-card-06 .desc{margin:0; -webkit-line-clamp:3!important;}
+.post-card.post-card-06 .btns{margin:.5rem 0 0 0;}
 
 
 /* Special Card */
@@ -309,10 +323,15 @@ p, .p{font-size:1.125rem; margin:.625rem 0 0 0; font-weight:300;}
     .ss-card > .block:nth-child(2){width:100%; margin:.75rem 0 0 0;}
 }
 
-.ss-card-2 .btns{opacity:0; transition:opacity .3s;}
-.ss-card-2:hover .btns{opacity:1;}
+.ss-card-02{width:100%; display:flex; flex-wrap:wrap;}
+.ss-card-02 > .block:nth-child(1){width:12rem; margin:0 1rem 0 0;}
+.ss-card-02 > .block:nth-child(2){width:calc(100% - 13rem);}
+.ss-card-02 > .block > *:first-child{margin:0;}
 @media screen and (max-width:767.98px){
-    .ss-card-2 .btns{opacity:1;}
+    .ss-card-02 > .block:nth-child(1), .ss-card-02 > .block:nth-child(2){
+        width:100%; margin:0;
+    }
+    .ss-card-02 > .block:nth-child(2){margin:.75rem 0 0 0;}
 }
 
 

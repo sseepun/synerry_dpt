@@ -183,7 +183,8 @@ nav.footer.footer-gray .ss-list > li > a:hover{color:#1f9ad3;}
 .post-card.post-card-02 .title-container > .title:hover{color:#f1d13d;}
 .post-card.post-card-04 .title-container > .title::before{background:#88009b;}
 .post-card.post-card-04 .date{color:#88009b;}
-.post-card.post-card-05{border-color:#e1e1e1;}
+.post-card.post-card-05, .post-card.post-card-06{border-color:#e1e1e1;}
+.post-card.post-card-06::before{background:#50137e;}
 
 
 /* Special List */
