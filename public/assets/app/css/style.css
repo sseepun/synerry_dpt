@@ -31,6 +31,14 @@ html.global-search-opened, body.global-search-opened{overflow-y:hidden!important
 }
 
 
+/* Input */
+input[type=text], input[type=email], input[type=password], input[type=date], input[type=tel],
+input[type=number], input[type=phone], input[type=submit], select, textarea{
+    border:1px solid transparent; border-radius:.25rem; box-shadow:none; outline:none;
+    transition:border-color .3s;
+}
+
+
 /* Typography */
 h1, .h1{font-size:2rem;}
 h2, .h2{font-size:1.875rem;}
@@ -113,6 +121,19 @@ p, .p{font-size:1.125rem; margin:.625rem 0 0 0; font-weight:300;}
 }
 .btn-social.btn-social-ln{background:#00B900;}
 .btn-social > img{display:block; width:100%; height:100%;}
+
+
+/* Breadcrumb */
+.breadcrumb-custom{width:100%; padding:.25rem 0 .5rem 0; text-align:right;}
+.breadcrumb-custom a{
+    display:inline-block; font-family:'TH Sarabun New'; font-size:1.25rem;
+    margin:0 0 0 .75rem; transition:color .3s;
+}
+.breadcrumb-custom a:last-child{font-weight:600;}
+.breadcrumb-custom a::before{
+    content:''; display:inline-block; width:.3125rem; height:.3125rem; border-radius:50%;
+    margin:0 .1875rem 0 0; transform:translateY(-.0625rem);
+}
 
 
 /* File Icons */
@@ -523,18 +544,59 @@ table.table .img-icon{display:inline-block; height:1rem; width:auto;}
 }
 
 
+/* List Header */
+.list-header{
+    width:100%; display:flex; align-items:center; justify-content:space-between;
+    flex-wrap:wrap; padding:.125rem 0; margin:0;
+}
+.list-header > .block, .list-header form{display:flex; align-items:center;}
+.list-header .text-wrapper{text-align:center; font-size:1.25rem; padding:.375rem 0; font-weight:300;}
+.list-header select, .list-header input[type=text]{
+    padding:.5rem 1.125rem .5rem .75rem; font-size:1rem; font-weight:300; margin:0;
+    line-height:1.25;
+}
+.list-header select{padding:.5rem .75rem .5rem .75rem; margin:0 0 0 .4375rem;}
+.list-header .search-container{position:relative; width:100%; margin:0 auto;}
+.list-header .search-container input[type=text]{width:100%;}
+.list-header .search-container button[type=submit]{
+    position:absolute; top:0; bottom:0; right:.125rem; background:transparent; border:0;
+    box-shadow:none; outline:none;
+}
+.list-header .search-container button[type=submit] > img{display:block; width:1.25rem; height:auto;}
+.list-header .options > a{
+    display:inline-block; width:2.225rem; height:2.225rem; text-align:center;
+    line-height:2.225rem; font-size:1.375rem; margin:0; padding:0; text-align:center;
+    border-radius:.25rem; border:1px solid transparent;
+    transition:color .3s, border-color .3s, background .3s;
+}
+@media screen and (max-width:1199.98px){
+    .list-header .block{width:100%;}
+}
+@media screen and (max-width:767.98px){
+    .list-header{
+        flex-wrap:wrap; justify-content:center; padding:.625rem 0; margin:0 0 1.5rem 0;
+        border-top:1px solid transparent; border-bottom:1px solid transparent;
+    }
+    .list-header > .block, .list-header form{width:100%; justify-content:center;}
+}
+@media screen and (max-width:575.98px){
+    .list-header > .block{flex-wrap:wrap;}
+    .list-header > .block, .list-header form{width:100%; justify-content:center;}
+    .list-header .text-wrapper{width:100%;}
+    .list-header select, .list-header .search-container{width:100%; max-width:15rem; margin:0 auto;}
+}
+
 /* List Footer */
 .list-footer{
     width:100%; display:flex; align-items:center; justify-content:space-between;
-    border-top:1px solid transparent; padding:.125rem 0; margin:1.875rem 0 0 0;
+    border-top:1px solid transparent; padding:.125rem 0; margin:2rem 0 0 0;
 }
 .list-footer > .block{display:flex; align-items:center;}
 .list-footer .pagination{margin:0;}
 .list-footer .text-wrapper{text-align:center; font-size:1.25rem; padding:.375rem 0; font-weight:300;}
 .list-footer select{
-    border:1px solid transparent; box-shadow:none; outline:none; border-radius:.25rem;
-    padding:.375rem 1.125rem .375rem .375rem; font-size:1.125rem; font-weight:300;
-    margin:0 0 0 .25rem; transition:border-color .3s;
+    padding:.375rem 1.125rem .325rem .375rem; font-size:.9375rem; font-weight:300;
+    margin:0 0 0 .25rem;
 }
 @media screen and (max-width:767.98px){
     .list-footer{

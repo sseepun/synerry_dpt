@@ -26,6 +26,18 @@ html, body{color:#000;}
 .bg-color-06{background:#4a2d73!important;}
 
 
+/* Input */
+input[type=text], input[type=email], input[type=password], input[type=date], input[type=tel],
+input[type=number], input[type=phone], input[type=submit], select, textarea{
+    border-color:#ddd; background:#fff;
+}
+input[type=text]:focus, input[type=email]:focus, input[type=password]:focus, input[type=date]:focus, 
+input[type=tel]:focus, input[type=number]:focus, input[type=phone]:focus, input[type=submit]:focus, 
+select:focus, textarea:focus{
+    border-color:#59236e;
+}
+
+
 /* Topnav */
 nav.topnav .menu > .submenu-dropdown{background:#33254f;}
 nav.topnav .submenu-container{background:#fff;}
@@ -135,6 +147,21 @@ nav.footer.footer-gray .ss-list > li > a:hover{color:#1f9ad3;}
 .btn-action.btn-action-white{color:#fff;}
 .btn-action.btn-action-white:hover{color:#f1d13d;}
 .btn-action.btn-action-white > i{background:#fff; color:#343a40;}
+
+
+/* Breadcrumb */
+.breadcrumb-custom a{color:#666666;}
+.breadcrumb-custom a:last-child{color:#000;}
+.breadcrumb-custom a:hover{color:#7d33b4;}
+.breadcrumb-custom a:before{background:#9b9b9b;}
+.breadcrumb-custom a:last-child:before{background:#7d33b4;}
+
+
+/* List Header */
+.list-header .options > a{border-color:#ddd; color:#6a1771;}
+.list-header .options > a:hover, .list-header .options > a.active{
+    border-color:#6a1771; color:#fff; background:#6a1771;
+}
 
 
 /* Pagination */

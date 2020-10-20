@@ -36,7 +36,16 @@
                     </div>
                 </div>
 
-                <div class="grid lg-75 md-65 sm-100" data-aos="fade-up" data-aos-delay="600">
+                <div class="grid lg-75 md-65 sm-100 pb-5" data-aos="fade-up" data-aos-delay="600">
+                    <?php
+                        $breadcrumb = [
+                            [ 'url' => '#', 'name' => 'หน้าหลัก' ],
+                            [ 'url' => '#', 'name' => 'เกี่ยวกับกระทรวงอุตสาหกรรม' ],
+                            [ 'url' => '#', 'name' => 'ข่าวประชาสัมพันธ์' ],
+                        ];
+                        include_once('component/breadcrumb.php');
+                    ?>
+                    <?php include_once('component/list-header.php'); ?>
 
                     <div class="grids">
                         <?php for($i=0; $i<8; $i++){?>
@@ -93,39 +102,7 @@
                         <?php }?>
                     </div>
 
-                    <div class="list-footer mt-5 mb-5">
-                        <div class="block">
-                            <div class="text-wrapper text-sm">
-                                จำนวนทั้งหมด <span class="fw-600 color-03">400 รายการ</span> 
-                            </div>
-                        </div>
-                        <div class="block">
-                            <div class="pagination">
-                                <div class="wrapper">
-                                    <a href="#" class="page-btn page-prev disabled"></a>
-                                    <a href="#" class="page-btn active">01</a>
-                                    <a href="#" class="page-btn">02</a>
-                                    <a href="#" class="page-btn">03</a>
-                                    <a href="#" class="page-btn">04</a>
-                                    <a href="#" class="page-btn">05</a>
-                                    <a href="#" class="page-btn page-next"></a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="block">
-                            <div class="text-wrapper text-sm">
-                                แสดงผลต่อหน้า
-                                <select class="pp">
-                                    <option value="10">10 รายการ</option>
-                                    <option value="25">25 รายการ</option>
-                                    <option value="50">50 รายการ</option>
-                                    <option value="75">75 รายการ</option>
-                                    <option value="100">100 รายการ</option>
-                                </select>
-                            </div>
-                        </div>
-                    </div>
-
+                    <?php include_once('component/list-footer.php'); ?>
                 </div>
 
             </div>
