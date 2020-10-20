@@ -10,7 +10,7 @@
     <div class="intro-02 section-bg lazy-bg" data-src="public/assets/app/images/bg/22.jpg">
         <div class="container">
             <div class="text-container color-white" data-aos="fade-up" data-aos-delay="0">
-                <h2 class="fw-100 mb-0">ข่าวประชาสัมพันธ์</h2>
+                <h2 class="fw-100 mb-0">วิดีโอ</h2>
                 <p class="font-02">
                     เปิดโลกทัศน์ให้ตัวคุณเองด้วยการอัพเดตข่าวสาร <br>
                     ด้านอุตสาหกรรมกับเราได้ที่นี่
@@ -41,7 +41,7 @@
                         $breadcrumb = [
                             [ 'url' => '#', 'name' => 'หน้าหลัก' ],
                             [ 'url' => '#', 'name' => 'เกี่ยวกับกระทรวงอุตสาหกรรม' ],
-                            [ 'url' => '#', 'name' => 'ข่าวประชาสัมพันธ์' ],
+                            [ 'url' => '#', 'name' => 'วิดีโอ' ],
                         ];
                         include_once('component/breadcrumb.php');
                     ?>
@@ -50,7 +50,7 @@
                     <div class="grids">
                         <?php for($i=0; $i<8; $i++){?>
                             <div class="grid lg-1-3 md-50 sm-50">
-                                <div class="post-card post-card-05 btn-on-hover">
+                                <div class="post-card post-card-08">
                                     <div class="title-container">
                                         <a class="title h4" href="#">
                                             สุริยะฯ ดันแผนพัฒนาอุตฯ 
@@ -62,27 +62,30 @@
                                     <div class="d-flex ai-center jc-space-between stats">
                                         <div class="date">13.08.2563</div>
                                         <div class="d-flex view">
+                                            <div class="icon"><i class="far fa-clock"></i></div>
+                                            3:05
+                                        </div>
+                                        <div class="d-flex view">
                                             <div class="icon"><i class="fas fa-eye"></i></div>
                                             268
                                         </div>
                                     </div>
-                                    <a class="ss-img bradius-0" href="#">
+                                </div>
+                                <?php if($i%2==0){?>
+                                    <div class="ss-video square bradius-0">
+                                        <div class="img-bg lazy-bg" data-src="public/assets/app/images/banner/01.jpg"></div>
+                                        <div class="play-container">
+                                            <a class="play-icon" href="https://www.youtube.com/watch?v=4NRXx6U8ABQ" data-fancybox="">
+                                                <i class="fas fa-play"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                <?php }else{?>
+                                    <a class="ss-img square bradius-0" href="#">
                                         <div class="img-bg lazy-bg" data-src="public/assets/app/images/banner/01.jpg"></div>
                                         <div class="socials"></div>
                                     </a>
-                                    <p class="desc">
-                                        กระทรวงอุตสาหกรรม (อก.) ผลักดันแผน
-                                        อุตสาหกรรมเครื่องจักรกลให้เป็นอุตสาหกรรม
-                                        สนับสนุนเพิ่มขีดความสามารถการผลิตทั้ง
-                                        ภาคอุตสาหกรรมและภาคเกษตรกรรม...
-                                    </p>
-                                    <div class="btns">
-                                        <a class="btn-action btn-action-primary" href="#">
-                                            <i class="fas fa-chevron-right"></i>
-                                            อ่านรายละเอียด
-                                        </a>
-                                    </div>
-                                </div>
+                                <?php }?>
                             </div>
                         <?php }?>
                     </div>

@@ -97,25 +97,10 @@
                                                 <p class="by">เขียนโดย : <strong>สำนักบริหารกลาง</strong></p>
                                             </div>
                                             <p class="date">21. 09.2563</p>
-                                            <div class="ss-img bradius-0">
+                                            <a class="ss-img bradius-0" href="#">
                                                 <div class="img-bg lazy-bg" data-src="public/assets/app/images/banner/01.jpg"></div>
-                                                <div class="socials">
-                                                    <ul>
-                                                        <li><a class="social" href="#">
-                                                            <img src="public/assets/app/images/social/fb.png" alt="Social Icon" />
-                                                        </a></li>
-                                                        <li><a class="social" href="#">
-                                                            <img src="public/assets/app/images/social/tw.png" alt="Social Icon" />
-                                                        </a></li>
-                                                        <li><a class="social" href="#">
-                                                            <img src="public/assets/app/images/social/ln.png" alt="Social Icon" />
-                                                        </a></li>
-                                                        <li><a class="social" href="#">
-                                                            <img src="public/assets/app/images/social/link.png" alt="Social Icon" />
-                                                        </a></li>
-                                                    </ul>
-                                                </div>
-                                            </div>
+                                                <div class="socials"></div>
+                                            </a>
                                             <p class="desc">
                                                 กระทรวงอุตสาหกรรม (อก.) ผลักดันแผน
                                                 อุตสาหกรรมเครื่องจักรกลให้เป็นอุตสาหกรรม
@@ -168,25 +153,10 @@
                                                 </a>
                                             </div>
                                         </div>
-                                        <div class="ss-img bradius-0">
+                                        <a class="ss-img bradius-0" href="#">
                                             <div class="img-bg lazy-bg" data-src="public/assets/app/images/banner/02.jpg"></div>
-                                            <div class="socials">
-                                                <ul>
-                                                    <li><a class="social" href="#">
-                                                        <img src="public/assets/app/images/social/fb.png" alt="Social Icon" />
-                                                    </a></li>
-                                                    <li><a class="social" href="#">
-                                                        <img src="public/assets/app/images/social/tw.png" alt="Social Icon" />
-                                                    </a></li>
-                                                    <li><a class="social" href="#">
-                                                        <img src="public/assets/app/images/social/ln.png" alt="Social Icon" />
-                                                    </a></li>
-                                                    <li><a class="social" href="#">
-                                                        <img src="public/assets/app/images/social/link.png" alt="Social Icon" />
-                                                    </a></li>
-                                                </ul>
-                                            </div>
-                                        </div>
+                                            <div class="socials"></div>
+                                        </a>
                                     </div>
                                 <?php }?>
                             </div>
@@ -201,25 +171,10 @@
                             <div class="grids">
                                 <?php for($j=0; $j<3; $j++){?>
                                     <div class="grid md-1-3">
-                                        <div class="ss-img bradius-0">
+                                        <a class="ss-img bradius-0" href="#">
                                             <div class="img-bg lazy-bg" data-src="public/assets/app/images/banner/03.jpg"></div>
-                                            <div class="socials">
-                                                <ul>
-                                                    <li><a class="social" href="#">
-                                                        <img src="public/assets/app/images/social/fb.png" alt="Social Icon" />
-                                                    </a></li>
-                                                    <li><a class="social" href="#">
-                                                        <img src="public/assets/app/images/social/tw.png" alt="Social Icon" />
-                                                    </a></li>
-                                                    <li><a class="social" href="#">
-                                                        <img src="public/assets/app/images/social/ln.png" alt="Social Icon" />
-                                                    </a></li>
-                                                    <li><a class="social" href="#">
-                                                        <img src="public/assets/app/images/social/link.png" alt="Social Icon" />
-                                                    </a></li>
-                                                </ul>
-                                            </div>
-                                        </div>
+                                            <div class="socials"></div>
+                                        </a>
                                         <div class="post-card post-card-03 btn-on-hover bg-color-white">
                                             <div class="title-container">
                                                 <a class="title h4" href="#">
@@ -272,7 +227,7 @@
                                 <div class="post-card post-card-03 pt-0 pb-0">
                                     <h4>เอกสารแนบ</h4>
                                 </div>
-                                <table class="table">
+                                <table class="table table-gray">
                                     <tbody>
                                         <?php foreach(['pdf', 'xls', 'doc'] as $f){?>
                                             <tr>
@@ -563,25 +518,10 @@
                                                 <?php for($j=0; $j<2; $j++){?>
                                                     <div class="ss-card mb-3">
                                                         <div class="block">
-                                                            <div class="ss-img square bradius-0">
+                                                            <a class="ss-img square bradius-0" href="#">
                                                                 <div class="img-bg lazy-bg" data-src="public/assets/app/images/banner/0<?= $k; ?>.jpg"></div>
-                                                                <div class="socials">
-                                                                    <ul>
-                                                                        <li><a class="social" href="#">
-                                                                            <img src="public/assets/app/images/social/fb.png" alt="Social Icon" />
-                                                                        </a></li>
-                                                                        <li><a class="social" href="#">
-                                                                            <img src="public/assets/app/images/social/tw.png" alt="Social Icon" />
-                                                                        </a></li>
-                                                                        <li><a class="social" href="#">
-                                                                            <img src="public/assets/app/images/social/ln.png" alt="Social Icon" />
-                                                                        </a></li>
-                                                                        <li><a class="social" href="#">
-                                                                            <img src="public/assets/app/images/social/link.png" alt="Social Icon" />
-                                                                        </a></li>
-                                                                    </ul>
-                                                                </div>
-                                                            </div>
+                                                                <div class="socials"></div>
+                                                            </a>
                                                         </div>
                                                         <div class="block">
                                                             <div class="post-card post-card-04">
@@ -607,25 +547,10 @@
                                                 <?php for($j=0; $j<2; $j++){?>
                                                     <div class="ss-card mb-3">
                                                         <div class="block">
-                                                            <div class="ss-img square bradius-0">
+                                                            <a class="ss-img square bradius-0" href="#">
                                                                 <div class="img-bg lazy-bg" data-src="public/assets/app/images/banner/0<?= $k; ?>.jpg"></div>
-                                                                <div class="socials">
-                                                                    <ul>
-                                                                        <li><a class="social" href="#">
-                                                                            <img src="public/assets/app/images/social/fb.png" alt="Social Icon" />
-                                                                        </a></li>
-                                                                        <li><a class="social" href="#">
-                                                                            <img src="public/assets/app/images/social/tw.png" alt="Social Icon" />
-                                                                        </a></li>
-                                                                        <li><a class="social" href="#">
-                                                                            <img src="public/assets/app/images/social/ln.png" alt="Social Icon" />
-                                                                        </a></li>
-                                                                        <li><a class="social" href="#">
-                                                                            <img src="public/assets/app/images/social/link.png" alt="Social Icon" />
-                                                                        </a></li>
-                                                                    </ul>
-                                                                </div>
-                                                            </div>
+                                                                <div class="socials"></div>
+                                                            </a>
                                                         </div>
                                                         <div class="block">
                                                             <div class="post-card post-card-04">
