@@ -8,6 +8,7 @@ body *{outline:none;}
 input[type=text], input[type=email], input[type=password], input[type=date], input[type=tel],
 input[type=phone], select, textarea{font-family:'Sukhumvit';}
 a, a:hover{text-decoration:none;}
+img.img{display:block; width:100%; height:auto;}
 h1, h2, h3, h4, h5, h6, p, .h1, .h2, .h3, .h4, .h5, .h6, .p{line-height:1.4;}
 html.global-search-opened, body.global-search-opened{overflow-y:hidden!important;}
 @media screen and (max-width:1199.98px){
@@ -668,12 +669,22 @@ table.table .icon.icon-download::before{content:'\f019';}
 table.table .icon.icon-dot{width:.5rem; height:.5rem; border-radius:0;}
 table.table .img-icon{display:inline-block; height:1rem; width:auto;}
 
-table.table.table-download th, table.table.table-download td{
+table.table.table-file th, table.table.table-file td{
     padding:.5625rem .625rem .5625rem 0; border-top:0; border-bottom:1px solid transparent;
 }
-table.table.table-download th:last-child, table.table.table-download td:last-child{
+table.table.table-file th:last-child, table.table.table-file td:last-child{
     padding:.5625rem 0 .5625rem .625rem;
 }
+
+table.table.table-download th, table.table.table-download td{
+    padding:.75rem .625rem .75rem 0; border-top:0; border-bottom:1px solid transparent;
+}
+table.table.table-download tbody > tr.row-sep > td{padding:.3125rem 0!important;}
+table.table.table-download tbody > tr.row-sep:first-child > td{padding:0!important;}
+table.table.table-download td:nth-child(1){padding-left:.75rem;}
+table.table.table-download td:nth-child(2){min-width:200px;}
+table.table.table-download td:nth-child(3){min-width:110px;}
+table.table.table-download td:nth-child(4){min-width:134px; text-align:right; padding-right:.75rem;}
 
 @media screen and (max-width:991.98px){
     table.table td{font-size:.875rem;}

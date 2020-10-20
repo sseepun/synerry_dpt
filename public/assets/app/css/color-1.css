@@ -166,9 +166,15 @@ nav.footer > .footer-bottom .wrapper > .count-area{background:#fff; color:#000;}
 
 
 /* Table */
+table.table{color:#fff;}
 table.table.table-gray, table.table.table-gray td{border-color:#fff;}
 table.table.table-gray tbody td{color:#fff;}
 table.table.table-gray .icon{color:#fff;}
+table.table.table-download td{border-color:rgba(255,255,255,.2);}
+table.table.table-download tr.row-sep > td{
+    border-top:2px solid #fff; border-bottom:2px solid #fff;
+}
+table.table.table-download tbody > tr.row-sep:first-child > td{border-top:0;}
 
 
 /* Toggle Target */

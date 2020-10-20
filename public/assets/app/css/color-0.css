@@ -242,6 +242,8 @@ table.table.table-gray tbody td{background:#ebebeb; color:#000;}
 table.table.table-gray tbody tr:nth-child(even) > td{background:#f3f3f3;}
 table.table.table-gray .icon{color:#000;}
 table.table.table-gray .icon:hover{color:#8e5e9c;}
+table.table.table-download td{background:#f0f0f0; border-color:#dadada;}
+table.table.table-download tr.row-sep > td{background:transparent; border-color:transparent;}
 
 
 /* Toggle Target */

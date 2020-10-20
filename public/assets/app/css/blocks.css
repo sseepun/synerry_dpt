@@ -231,6 +231,30 @@
 }
 
 
+/* Mission 01 */
+.mission-01{width:100%; background-size:cover; background-position:center;}
+.mission-01 .text-wrapper{padding:2.5rem 2rem 20rem 2rem;}
+.mission-01 ul{list-style:none; width:100%; max-width:440px; margin:0; padding:0;}
+.mission-01 ul > li{
+    display:block; position:relative; padding:0 0 0 1.75rem; margin:1rem 0; font-size:1.125rem;
+    color:#000;
+}
+.mission-01 ul > li:first-child{margin-top:0;}
+.mission-01 ul > li:last-child{margin-bottom:0;}
+.mission-01 ul > li::before{
+    content:''; position:absolute; top:.4375rem; left:0; width:.625rem; height:.625rem;
+    background:#500c6f;
+}
+@media screen and (max-width:767.98px){
+    .mission-01 .text-wrapper{padding:1.5rem 1.5rem 18rem 1.5rem;}
+    .mission-01 ul > li{font-size:1rem; padding:0 0 0 1.5rem;}
+    .mission-01 ul > li::before{top:.4375rem; width:.5rem; height:.5rem;}
+}
+@media screen and (max-width:575.98px){
+    .mission-01 .text-wrapper{padding:1.25rem 1rem 18rem 1rem;}
+}
+
+
 /* Tab Container */
 .tab-container{position:relative; display:block; width:100%; margin:2.5rem 0 0 0;}
 .tab-container .tabs{

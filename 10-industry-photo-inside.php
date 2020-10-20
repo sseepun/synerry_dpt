@@ -110,7 +110,7 @@
                         <h4 class="fw-600">ไฟล์เอกสารที่เกี่ยวข้อง</h4>
                     </div>
                     <div class="table-wrapper mt-1 border-bottom" data-simplebar data-aos="fade-up" data-aos-delay="300">
-                        <table class="table table-download">
+                        <table class="table table-file">
                             <tbody>
                                 <?php for($i=0; $i<3; $i++){?>
                                     <tr>
