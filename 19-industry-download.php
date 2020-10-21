@@ -95,10 +95,16 @@
                                                 ดาวน์โหลด <span class="fw-600 color-04">23 ครั้ง</span>
                                             </div>
                                         </td>
-                                        <td>
-                                            <a class="btn btn-sm btn-round custom-btn-gray" href="#">
-                                                แจ้งไฟล์เสีย <i class="far fa-bell"></i>
-                                            </a>
+                                        <td style="width:160px;">
+                                            <div class="d-flex ai-center jc-end">
+                                                <a class="btn btn-sm btn-round custom-btn-09" href="#">
+                                                    ดาวน์โหลด <i class="far fa-arrow-alt-circle-down"></i>
+                                                </a>
+                                                <div class="v-sep"></div>
+                                                <a class="btn-icon" href="#">
+                                                    <i class="fas fa-exclamation-triangle"></i>
+                                                </a>
+                                            </div>
                                         </td>
                                     </tr>
                                     <tr class="row-sep">
@@ -106,7 +112,7 @@
                                     </tr>
                                     <tr>
                                         <td>
-                                            <div class="file-icon docx"></div>
+                                            <div class="file-icon doc"></div>
                                         </td>
                                         <td>
                                             การขับเคลื่อนชุมชนเข้มแข็งในการจัดการอนามัยสิ่งแวดล้อมชุมชน
@@ -119,16 +125,22 @@
                                                 ดาวน์โหลด <span class="fw-600 color-04">23 ครั้ง</span>
                                             </div>
                                         </td>
-                                        <td>
-                                            <a class="btn btn-sm btn-round custom-btn-gray" href="#">
-                                                แจ้งไฟล์เสีย <i class="far fa-bell"></i>
-                                            </a>
+                                        <td style="width:160px;">
+                                            <div class="d-flex ai-center jc-end">
+                                                <a class="btn btn-sm btn-round custom-btn-09" href="#">
+                                                    ดาวน์โหลด <i class="far fa-arrow-alt-circle-down"></i>
+                                                </a>
+                                                <div class="v-sep"></div>
+                                                <a class="btn-icon" href="#">
+                                                    <i class="fas fa-exclamation-triangle"></i>
+                                                </a>
+                                            </div>
                                         </td>
                                     </tr>
                                     <tr class="row-sep">
                                         <td colspan="4"></td>
                                     </tr>
-                                    <?php foreach(['doc', 'docx', 'jpg', 'pdf', 'png', 'ppt', 'pptx', 'rar', 'xls', 'xlsx', 'zip'] as $f){?>
+                                    <?php foreach(['doc', 'img', 'pdf', 'ppt', 'xls', 'zip'] as $f){?>
                                         <tr class="<?php if($i%2==0)echo 'selected'; ?>">
                                             <td>
                                                 <div class="file-icon <?php echo $f; ?>"></div>
@@ -144,10 +156,16 @@
                                                     ดาวน์โหลด <span class="fw-600 color-04">23 ครั้ง</span>
                                                 </div>
                                             </td>
-                                            <td>
-                                                <a class="btn btn-sm btn-round custom-btn-gray" href="#">
-                                                    แจ้งไฟล์เสีย <i class="far fa-bell"></i>
-                                                </a>
+                                            <td style="width:160px;">
+                                                <div class="d-flex ai-center jc-end">
+                                                    <a class="btn btn-sm btn-round custom-btn-09" href="#">
+                                                        ดาวน์โหลด <i class="far fa-arrow-alt-circle-down"></i>
+                                                    </a>
+                                                    <div class="v-sep"></div>
+                                                    <a class="btn-icon" href="#">
+                                                        <i class="fas fa-exclamation-triangle"></i>
+                                                    </a>
+                                                </div>
                                             </td>
                                         </tr>
                                     <?php }?>

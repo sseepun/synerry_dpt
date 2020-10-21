@@ -49,98 +49,30 @@
                     <h2 class="fw-500 mt-2 sm-no-br">
                         โครงการจิตอาสา กระทรวงอุตสาหกรรม เราทำความดี ด้วยหัวใจ
                     </h2>
-                    <div class="post-stats">
-                        <div class="stat">
-                            <i class="fas fa-users"></i>
-                            สำนักบริหารกลาง
-                        </div>
-                        <div class="stat">
-                            <i class="fas fa-clock"></i>
-                            7 เมษายน 2563
-                        </div>
-                        <div class="stat">
-                            <i class="fas fa-eye"></i>
-                            17 ครั้ง
-                        </div>
-                    </div>
+                    <?php include_once('component/post-header.php'); ?>
                     
                     <div class="ss-video horizontal bradius-0 mt-4 mb-3">
                         <div class="img-bg lazy-bg" data-src="public/assets/app/images/banner/01.jpg"></div>
+                        <div class="hover-container"></div>
                         <div class="play-container">
                             <a class="play-icon" href="https://www.youtube.com/watch?v=4NRXx6U8ABQ" data-fancybox="">
                                 <i class="fas fa-play"></i>
                             </a>
                         </div>
                     </div>
-                    
-                    <div class="post-footer border-bottom">
-                        <div class="block">
-                            <span class="fw-900">TAGS:</span> 
-                            <div class="ss-tag">สำนักบริหารกลาง</div>
-                        </div>
-                        <div class="blick">
-                            <a class="btn-social" href="#" tabindex="0">
-                                <img src="public/assets/app/images/social/fb.png" alt="Social Icon">
-                            </a>
-                            <a class="btn-social" href="#" tabindex="0">
-                                <img src="public/assets/app/images/social/tw.png" alt="Social Icon">
-                            </a>
-                            <a class="btn-social" href="#" tabindex="0">
-                                <img src="public/assets/app/images/social/ln.png" alt="Social Icon">
-                            </a>
-                            <a class="btn-social" href="#" tabindex="0">
-                                <img src="public/assets/app/images/social/link.png" alt="Social Icon">
-                            </a>
-                        </div>
-                    </div>
+                    <?php include_once('component/post-footer.php'); ?>
                     
                     <div class="ss-icon-title" data-aos="fade-up" data-aos-delay="0">
                         <div class="icon bg-color-07"><i class="far fa-file-alt color-white"></i></div>
-                        <h4 class="fw-600">ไฟล์เอกสารที่เกี่ยวข้อง</h4>
+                        <h4 class="fw-600">EMBED</h4>
                     </div>
-                    <div class="table-wrapper mt-1 border-bottom" data-simplebar data-aos="fade-up" data-aos-delay="300">
-                        <table class="table table-file">
-                            <tbody>
-                                <?php for($i=0; $i<3; $i++){?>
-                                    <tr>
-                                        <td style="min-width:300px;">
-                                            <span class="fw-600 color-04 text-lg">
-                                                ประกาศกรมอนามัย ฉบับที่ 27/04.pdf
-                                            </span>
-                                            <br>
-                                            <span class="text-sm">ขนาดไฟล์</span>
-                                            <span class="fw-600 color-04">1.31 MB</span>
-                                            <span class="text-sm">|</span>
-                                            <span class="text-sm">จำนวนดาวน์โหลด</span>
-                                            <span class="fw-600 color-04">16 ครั้ง</span>
-                                        </td>
-                                        <td style="min-width:390px;">
-                                            <a class="btn btn-sm btn-round custom-btn-sgray btn-toggle" href="#" data-toggle="embed-<?= $i ?>">
-                                                Embed <i class="fas fa-code"></i>
-                                            </a>
-                                            <a class="btn btn-sm btn-round custom-btn-gray" href="#">
-                                                แจ้งไฟล์เสีย <i class="far fa-bell"></i>
-                                            </a>
-                                            <a class="btn btn-sm btn-round custom-btn-tertiary" href="#">
-                                                คลิกเพื่อดาวน์โหลด <i class="far fa-arrow-alt-circle-down"></i>
-                                            </a>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td colspan="2" class="no-padding">
-                                            <div class="toggle-target" data-toggle="embed-<?= $i ?>">
-                                                <textarea name="message" class="no-bradius" rows="2"></textarea>
-                                                <div class="btns mt-0">
-                                                    <a class="btn btn-sm custom-btn-tertiary no-bradius width-full" href="#">
-                                                        คัดลอกโค้ด
-                                                    </a>
-                                                </div>
-                                            </div>
-                                        </td>
-                                    </tr>
-                                <?php }?>
-                            </tbody>
-                        </table>
+                    <div class="toggle-target d-block mt-3 pb-4 border-bottom">
+                        <textarea name="message" class="no-bradius" rows="2"></textarea>
+                        <div class="btns mt-0">
+                            <a class="btn btn-sm custom-btn-09 no-bradius width-full" href="#">
+                                คัดลอกโค้ด
+                            </a>
+                        </div>
                     </div>
 
                     <div class="ss-icon-title" data-aos="fade-up" data-aos-delay="0">
@@ -174,6 +106,7 @@
                                 <?php if($i%2==0){?>
                                     <div class="ss-video square bradius-0">
                                         <div class="img-bg lazy-bg" data-src="public/assets/app/images/banner/01.jpg"></div>
+                                        <div class="hover-container"></div>
                                         <div class="play-container">
                                             <a class="play-icon" href="https://www.youtube.com/watch?v=4NRXx6U8ABQ" data-fancybox="">
                                                 <i class="fas fa-play"></i>
@@ -183,7 +116,9 @@
                                 <?php }else{?>
                                     <a class="ss-img square bradius-0" href="#">
                                         <div class="img-bg lazy-bg" data-src="public/assets/app/images/banner/01.jpg"></div>
-                                        <div class="socials"></div>
+                                        <div class="hover-container">
+                                            <img src="public/assets/app/images/icon/search-02.png" alt="Hover Image" />
+                                        </div>
                                     </a>
                                 <?php }?>
                             </div>

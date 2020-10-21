@@ -54,7 +54,9 @@
                                     <div class="block">
                                         <a class="ss-img square bradius-0" href="#">
                                             <div class="img-bg lazy-bg" data-src="public/assets/app/images/banner/0<?= ($i%7) +1; ?>.jpg"></div>
-                                            <div class="socials"></div>
+                                            <div class="hover-container">
+                                                <img src="public/assets/app/images/icon/search-02.png" alt="Hover Image" />
+                                            </div>
                                         </a>
                                     </div>
                                     <div class="block">

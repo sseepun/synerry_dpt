@@ -55,6 +55,7 @@
                                         <?php if($i%2==0){?>
                                             <div class="ss-video square bradius-0">
                                                 <div class="img-bg lazy-bg" data-src="public/assets/app/images/banner/01.jpg"></div>
+                                                <div class="hover-container"></div>
                                                 <div class="play-container">
                                                     <a class="play-icon" href="https://www.youtube.com/watch?v=4NRXx6U8ABQ" data-fancybox="">
                                                         <i class="fas fa-play"></i>
@@ -64,7 +65,9 @@
                                         <?php }else{?>
                                             <a class="ss-img square bradius-0" href="#">
                                                 <div class="img-bg lazy-bg" data-src="public/assets/app/images/banner/01.jpg"></div>
-                                                <div class="socials"></div>
+                                                <div class="hover-container">
+                                                    <img src="public/assets/app/images/icon/search-02.png" alt="Hover Image" />
+                                                </div>
                                             </a>
                                         <?php }?>
                                     </div>

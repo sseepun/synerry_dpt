@@ -68,7 +68,9 @@
                                     </div>
                                     <a class="ss-img bradius-0" href="#">
                                         <div class="img-bg lazy-bg" data-src="public/assets/app/images/banner/01.jpg"></div>
-                                        <div class="socials"></div>
+                                        <div class="hover-container">
+                                            <img src="public/assets/app/images/icon/search-02.png" alt="Hover Image" />
+                                        </div>
                                     </a>
                                     <p class="desc">
                                         กระทรวงอุตสาหกรรม (อก.) ผลักดันแผน

@@ -50,20 +50,8 @@
                         ก.อุต ดันการแก้ไขปัญหามลพิษ PM 2.5 แบบบูรณาการ 
                         <br> เป็นวาระแห่งชาติ
                     </h2>
-                    <div class="post-stats">
-                        <div class="stat">
-                            <i class="fas fa-users"></i>
-                            สำนักบริหารกลาง
-                        </div>
-                        <div class="stat">
-                            <i class="fas fa-clock"></i>
-                            7 เมษายน 2563
-                        </div>
-                        <div class="stat">
-                            <i class="fas fa-eye"></i>
-                            17 ครั้ง
-                        </div>
-                    </div>
+                    <?php include_once('component/post-header.php'); ?>
+                    
                     <div class="post-img post-img-02 mt-4">
                         <img src="public/assets/app/images/hero/07.jpg" alt="Post Image" />
                     </div>
@@ -84,26 +72,7 @@
                             </div>
                         <?php }?>
                     </div>
-                    <div class="post-footer border-bottom">
-                        <div class="block">
-                            <span class="fw-900">TAGS:</span> 
-                            <div class="ss-tag">สำนักบริหารกลาง</div>
-                        </div>
-                        <div class="blick">
-                            <a class="btn-social" href="#" tabindex="0">
-                                <img src="public/assets/app/images/social/fb.png" alt="Social Icon">
-                            </a>
-                            <a class="btn-social" href="#" tabindex="0">
-                                <img src="public/assets/app/images/social/tw.png" alt="Social Icon">
-                            </a>
-                            <a class="btn-social" href="#" tabindex="0">
-                                <img src="public/assets/app/images/social/ln.png" alt="Social Icon">
-                            </a>
-                            <a class="btn-social" href="#" tabindex="0">
-                                <img src="public/assets/app/images/social/link.png" alt="Social Icon">
-                            </a>
-                        </div>
-                    </div>
+                    <?php include_once('component/post-footer.php'); ?>
                     
                     <div class="ss-icon-title" data-aos="fade-up" data-aos-delay="0">
                         <div class="icon bg-color-07"><i class="far fa-file-alt color-white"></i></div>
@@ -125,16 +94,19 @@
                                             <span class="text-sm">จำนวนดาวน์โหลด</span>
                                             <span class="fw-600 color-04">16 ครั้ง</span>
                                         </td>
-                                        <td style="min-width:390px;">
-                                            <a class="btn btn-sm btn-round custom-btn-sgray btn-toggle" href="#" data-toggle="embed-<?= $i ?>">
-                                                Embed <i class="fas fa-code"></i>
-                                            </a>
-                                            <a class="btn btn-sm btn-round custom-btn-gray" href="#">
-                                                แจ้งไฟล์เสีย <i class="far fa-bell"></i>
-                                            </a>
-                                            <a class="btn btn-sm btn-round custom-btn-tertiary" href="#">
-                                                คลิกเพื่อดาวน์โหลด <i class="far fa-arrow-alt-circle-down"></i>
-                                            </a>
+                                        <td style="width:260px;">
+                                            <div class="d-flex ai-center jc-end">
+                                                <a class="btn btn-sm btn-round custom-btn-10 btn-toggle mr-1" href="#" data-toggle="embed-<?= $i ?>">
+                                                    Embed <i class="fas fa-code"></i>
+                                                </a>
+                                                <a class="btn btn-sm btn-round custom-btn-09" href="#">
+                                                    ดาวน์โหลด <i class="far fa-arrow-alt-circle-down"></i>
+                                                </a>
+                                                <div class="v-sep"></div>
+                                                <a class="btn-icon" href="#">
+                                                    <i class="fas fa-exclamation-triangle"></i>
+                                                </a>
+                                            </div>
                                         </td>
                                     </tr>
                                     <tr>
@@ -161,7 +133,7 @@
                     <div class="grids" data-aos="fade-up" data-aos-delay="300">
                         <?php for($i=0; $i<3; $i++){?>
                             <div class="grid lg-1-3 md-50 sm-50">
-                                <div class="post-card post-card-07 <?= $i%2==0? 'bg-color-02': 'bg-color-08'; ?>">
+                                <div class="post-card post-card-08">
                                     <div class="title-container">
                                         <a class="title h4" href="#">
                                             สุริยะฯ ดันแผนพัฒนาอุตฯ 
@@ -184,7 +156,9 @@
                                 </div>
                                 <a class="ss-img square  bradius-0" href="#">
                                     <div class="img-bg lazy-bg" data-src="public/assets/app/images/banner/01.jpg"></div>
-                                    <div class="socials"></div>
+                                    <div class="hover-container">
+                                        <img src="public/assets/app/images/icon/search-02.png" alt="Hover Image" />
+                                    </div>
                                 </a>
                             </div>
                         <?php }?>

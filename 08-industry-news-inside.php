@@ -49,20 +49,8 @@
                     <h2 class="fw-500 mt-2">
                         รมว. สุริยะฯ เผย นิสสันมั่นใจศักยภาพฐานการผลิตของไทยเดินหน้าลงทุนต่อไป
                     </h2>
-                    <div class="post-stats">
-                        <div class="stat">
-                            <i class="fas fa-users"></i>
-                            สำนักบริหารกลาง
-                        </div>
-                        <div class="stat">
-                            <i class="fas fa-clock"></i>
-                            7 เมษายน 2563
-                        </div>
-                        <div class="stat">
-                            <i class="fas fa-eye"></i>
-                            17 ครั้ง
-                        </div>
-                    </div>
+                    <?php include_once('component/post-header.php'); ?>
+                    
                     <div class="post-img">
                         <img class="hero" src="public/assets/app/images/hero/06.png" alt="Post Hero" />
                         <img src="public/assets/app/images/bg/25.jpg" alt="Post Image" />
@@ -85,26 +73,7 @@
                             ไทม์เปเปอร์ ออดิทอเรียม กาญจน์ ซาบะพูลจตุคามเทรลเลอร์มอนสเตอร์ คอนโดมิเนียมเที่ยงคืน จึ๊กทัวร์ คาแรคเตอร์บอร์ด ออยล์แพลนสแควร์ เซี้ยว เซ็นเซอร์เชอร์รี่ รีดไถคอร์ปอเรชั่น ลีก ตอกย้ำเก๊ะ เหี่ยวย่น โมเดิร์นเทรลเลอร์ทาวน์ บ๋อยธุรกรรมกระดี๊กระด๊า
                         </p>                    
                     </div>
-                    <div class="post-footer border-bottom">
-                        <div class="block">
-                            <span class="fw-900">TAGS:</span> 
-                            <div class="ss-tag">สำนักบริหารกลาง</div>
-                        </div>
-                        <div class="blick">
-                            <a class="btn-social" href="#" tabindex="0">
-                                <img src="public/assets/app/images/social/fb.png" alt="Social Icon">
-                            </a>
-                            <a class="btn-social" href="#" tabindex="0">
-                                <img src="public/assets/app/images/social/tw.png" alt="Social Icon">
-                            </a>
-                            <a class="btn-social" href="#" tabindex="0">
-                                <img src="public/assets/app/images/social/ln.png" alt="Social Icon">
-                            </a>
-                            <a class="btn-social" href="#" tabindex="0">
-                                <img src="public/assets/app/images/social/link.png" alt="Social Icon">
-                            </a>
-                        </div>
-                    </div>
+                    <?php include_once('component/post-footer.php'); ?>
 
                     <div class="ss-icon-title" data-aos="fade-up" data-aos-delay="0">
                         <div class="icon bg-color-07"><i class="far fa-file-alt color-white"></i></div>
@@ -126,13 +95,16 @@
                                             <span class="text-sm">จำนวนดาวน์โหลด</span>
                                             <span class="fw-600 color-04">16 ครั้ง</span>
                                         </td>
-                                        <td style="min-width:300px;">
-                                            <a class="btn btn-sm btn-round custom-btn-gray" href="#">
-                                                แจ้งไฟล์เสีย <i class="far fa-bell"></i>
-                                            </a>
-                                            <a class="btn btn-sm btn-round custom-btn-tertiary" href="#">
-                                                คลิกเพื่อดาวน์โหลด <i class="far fa-arrow-alt-circle-down"></i>
-                                            </a>
+                                        <td style="width:160px;">
+                                            <div class="d-flex ai-center jc-end">
+                                                <a class="btn btn-sm btn-round custom-btn-09" href="#">
+                                                    ดาวน์โหลด <i class="far fa-arrow-alt-circle-down"></i>
+                                                </a>
+                                                <div class="v-sep"></div>
+                                                <a class="btn-icon" href="#">
+                                                    <i class="fas fa-exclamation-triangle"></i>
+                                                </a>
+                                            </div>
                                         </td>
                                     </tr>
                                 <?php }?>
@@ -183,6 +155,7 @@
                             <div class="grid md-1-3">
                                 <div class="ss-video bradius-0">
                                     <div class="img-bg lazy-bg" data-src="public/assets/app/images/banner/01.jpg"></div>
+                                    <div class="hover-container"></div>
                                     <div class="bottom-tag">
                                         <i class="far fa-clock"></i> 10:30
                                     </div>

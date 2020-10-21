@@ -50,7 +50,7 @@
                     <div class="grids">
                         <?php for($i=0; $i<8; $i++){?>
                             <div class="grid lg-1-3 md-50 sm-50">
-                                <div class="post-card post-card-07 <?= $i%2==0? 'bg-color-02': 'bg-color-08'; ?>">
+                                <div class="post-card post-card-08">
                                     <div class="title-container">
                                         <a class="title h4" href="#">
                                             สุริยะฯ ดันแผนพัฒนาอุตฯ 
@@ -73,7 +73,9 @@
                                 </div>
                                 <a class="ss-img square bradius-0" href="#">
                                     <div class="img-bg lazy-bg" data-src="public/assets/app/images/banner/01.jpg"></div>
-                                    <div class="socials"></div>
+                                    <div class="hover-container">
+                                        <img src="public/assets/app/images/icon/search-02.png" alt="Hover Image" />
+                                    </div>
                                 </a>
                             </div>
                         <?php }?>
