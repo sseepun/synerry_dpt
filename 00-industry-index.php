@@ -345,25 +345,25 @@
                 <div class="tabs" data-aos="fade-up" data-aos-delay="300">
                     <div class="tab active" data-tab="1">
                         <div class="icon">
-                            <i class="fas fa-rocket"></i>
+                            <img class="img-svg" src="public/assets/app/images/icon/rocket.svg" alt="Icon" />
                         </div>
                         <h4 class="text-center">ผู้ประกอบการ / SME</h4>
                     </div>
                     <div class="tab" data-tab="2">
                         <div class="icon">
-                            <i class="fas fa-bullseye"></i>
+                            <img class="img-svg" src="public/assets/app/images/icon/target.svg" alt="Icon" />
                         </div>
                         <h4 class="text-center">นักลงทุน</h4>
                     </div>
                     <div class="tab" data-tab="3">
                         <div class="icon">
-                            <i class="fas fa-microscope"></i>
+                            <img class="img-svg" src="public/assets/app/images/icon/microscope.svg" alt="Icon" />
                         </div>
                         <h4 class="text-center">นักวิชาการ</h4>
                     </div>
                     <div class="tab" data-tab="4">
                         <div class="icon">
-                            <i class="fas fa-users"></i>
+                            <img class="img-svg" src="public/assets/app/images/icon/users.svg" alt="Icon" />
                         </div>
                         <h4 class="text-center">บุคคลทั่วไป</h4>
                     </div>

@@ -130,6 +130,8 @@ p, .p{font-size:1.125rem; margin:.625rem 0 0 0; font-weight:300;}
 }
 
 .btn-icon{font-size:1.0625rem; transition:color .3s;}
+.btn-text-image{display:flex; align-items:center;}
+.btn-text-image > img{display:block; height:.75rem; width:auto; transform:translateY(-.1875rem);}
 
 
 /* Breadcrumb */

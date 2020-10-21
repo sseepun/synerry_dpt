@@ -228,6 +228,21 @@ table.table.table-download tbody > tr.row-title > td{background:#ffff00; color:#
 .content-01 .content-tabs > .tab.active > *{color:#000;}
 
 
+/* FAQ 01 */
+.faq-01 .question .ftag{background:#ffff00; color:#000;}
+.faq-01 .question > *:nth-child(2){color:#ffff00; border-color:#ffff00;}
+.faq-01 .question.active > *:nth-child(2){color:#000; background:#ffff00;}
+.faq-01 .question > *:nth-child(2)::before, .faq-01 .question > *:nth-child(2)::after{
+    background:#ffff00;
+}
+.faq-01 .question.active > *:nth-child(2)::before, .faq-01 .question.active > *:nth-child(2)::after{
+    background:#000;
+}
+.faq-01 .answer .ftag{background:#ffff00; color:#000;}
+.faq-01 .answer .content{border:1px solid #ffff00;}
+.faq-01 .answer .content table td{border-color:rgba(255,255,0,.4);}
+
+
 /* Sitemap 01 */
 .sitemap-01 .ss-icon-title > .icon{background:#ffff00!important; color:#000!important;}
 .sitemap-01 .grid{border-color:#ffff00!important;}
