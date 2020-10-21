@@ -80,6 +80,11 @@
                                     <tr class="row-sep">
                                         <td colspan="4"></td>
                                     </tr>
+                                    <tr class="row-title">
+                                        <td colspan="4">
+                                            <h6>แผนงานโครงการงบประมาณรายจ่ายประจำปี</h6>
+                                        </td>
+                                    </tr>
                                     <tr>
                                         <td>
                                             <div class="file-icon pdf"></div>
@@ -139,6 +144,11 @@
                                     </tr>
                                     <tr class="row-sep">
                                         <td colspan="4"></td>
+                                    </tr>
+                                    <tr class="row-title">
+                                        <td colspan="4">
+                                            <h6>แผนงานโครงการงบประมาณรายจ่ายประจำปี</h6>
+                                        </td>
                                     </tr>
                                     <?php foreach(['doc', 'img', 'pdf', 'ppt', 'xls', 'zip'] as $f){?>
                                         <tr class="<?php if($i%2==0)echo 'selected'; ?>">

@@ -188,6 +188,7 @@ table.table.table-download tr.row-sep > td{
     border-top:2px solid #ffff00; border-bottom:2px solid #ffff00;
 }
 table.table.table-download tbody > tr.row-sep:first-child > td{border-top:0;}
+table.table.table-download tbody > tr.row-title > td{background:#ffff00; color:#000;}
 
 
 /* Toggle Target */
