@@ -303,6 +303,16 @@ table.table.table-download tr.row-sep > td{background:transparent; border-color:
 .content-01 .content-tabs > .tab h3::after{color:#393a39; background:#fff;}
 
 
+/* Sitemap 01 */
+.sitemap-01 .grid{border-color:#cccccc!important;}
+.sitemap-01 .title > a{color:#2a2a2a;}
+.sitemap-01 .title:hover > a{color:#3b1167;}
+.sitemap-01 .title > a::before{background:#3b1167;}
+.sitemap-01 ul > li > a{color:#2a2a2a;}
+.sitemap-01 ul > li:hover > a{color:#31b9c6;}
+.sitemap-01 ul > li > a::before{background:#31b9c6;}
+
+
 /* Tab Container 01 */
 .tab-container.tab-container-01 .tabs::before{
     background-image:linear-gradient(to right, #548abf, #4ba4cd, #5d6daf, #63337e, #6d3e96, 

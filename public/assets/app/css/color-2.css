@@ -227,6 +227,15 @@ table.table.table-download tbody > tr.row-sep:first-child > td{border-top:0;}
 .content-01 .content-tabs > .tab.active > *{color:#000;}
 
 
+/* Sitemap 01 */
+.sitemap-01 .ss-icon-title > .icon{background:#ffff00!important; color:#000!important;}
+.sitemap-01 .grid{border-color:#ffff00!important;}
+.sitemap-01 .title > a{color:#ffff00;}
+.sitemap-01 .title > a::before{background:#ffff00;}
+.sitemap-01 ul > li > a{color:#ffff00;}
+.sitemap-01 ul > li > a::before{background:#ffff00;}
+
+
 /* Tab Container 01 */
 .tab-container.tab-container-01 .tabs::before{background:#ffff00;}
 .tab-container.tab-container-01 .tab.active h5{color:#000; background:#ffff00;}
