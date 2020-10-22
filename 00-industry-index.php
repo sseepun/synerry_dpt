@@ -139,7 +139,7 @@
                                                     เขียนโดย : <strong>สำนักบริหารกลาง</strong>
                                                 </p>
                                             </div>
-                                            <p class="date <?= $j==2? 'color-06': 'color-05'; ?>">21. 09.2563</p>
+                                            <p class="date color-05">21. 09.2563</p>
                                             <p class="desc color-white">
                                                 กระทรวงอุตสาหกรรม (อก.) ผลักดันแผน
                                                 อุตสาหกรรมเครื่องจักรกลให้เป็นอุตสาหกรรม
@@ -345,25 +345,25 @@
                 <div class="tabs" data-aos="fade-up" data-aos-delay="300">
                     <div class="tab active" data-tab="1">
                         <div class="icon">
-                            <img class="img-svg" src="public/assets/app/images/icon/rocket.svg" alt="Icon" />
+                            <img class="img-icon" src="public/assets/app/images/icon/rocket-active.png" alt="Icon" />
                         </div>
                         <h4 class="text-center">ผู้ประกอบการ / SME</h4>
                     </div>
                     <div class="tab" data-tab="2">
                         <div class="icon">
-                            <img class="img-svg" src="public/assets/app/images/icon/target.svg" alt="Icon" />
+                            <img class="img-icon" src="public/assets/app/images/icon/target-active.png" alt="Icon" />
                         </div>
                         <h4 class="text-center">นักลงทุน</h4>
                     </div>
                     <div class="tab" data-tab="3">
                         <div class="icon">
-                            <img class="img-svg" src="public/assets/app/images/icon/microscope.svg" alt="Icon" />
+                            <img class="img-icon" src="public/assets/app/images/icon/microscope-active.png" alt="Icon" />
                         </div>
                         <h4 class="text-center">นักวิชาการ</h4>
                     </div>
                     <div class="tab" data-tab="4">
                         <div class="icon">
-                            <img class="img-svg" src="public/assets/app/images/icon/users.svg" alt="Icon" />
+                            <img class="img-icon" src="public/assets/app/images/icon/users-active.png" alt="Icon" />
                         </div>
                         <h4 class="text-center">บุคคลทั่วไป</h4>
                     </div>

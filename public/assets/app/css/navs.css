@@ -1,6 +1,6 @@
 
 /* Topnav */
-nav.topnav{position:fixed; top:0; left:0; width:100vw; transition:transform .3s; z-index:95;}
+nav.topnav{position:fixed; top:0; left:0; width:100%; transition:transform .3s; z-index:95;}
 nav.topnav.sticky{transform:translateY(-3.0625rem);}
 nav.topnav > .top-container{
     position:relative; width:100%; background-position:center; background-size:cover;

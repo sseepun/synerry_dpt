@@ -248,7 +248,7 @@ p, .p{font-size:1.125rem; margin:.625rem 0 0 0; font-weight:300;}
 
 
 /* Menu Column */
-.menu-column{position:relative; width:100%;}
+.menu-column{position:relative; width:100%; margin:0 0 48rem 0;}
 .menu-column > .menu-container{
     position:relative; display:flex; flex-wrap:wrap; width:100%; padding:1rem 0 2.5rem 0;
     background-image:linear-gradient(to bottom, #46205b, #3f0b4c, #3f0b4c);
@@ -266,7 +266,11 @@ p, .p{font-size:1.125rem; margin:.625rem 0 0 0; font-weight:300;}
 .menu-column .decor{
     display:block; position:absolute; top:100%; left:0; right:0; width:100%; height:auto;
 }
+@media screen and (max-width:1199.98px){
+    .menu-column{margin:0 0 44rem 0;}
+}
 @media screen and (max-width:991.98px){
+    .menu-column{margin:0;}
     .menu-column .menu{width:50%;}
 }
 @media screen and (max-width:575.98px){

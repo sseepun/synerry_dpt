@@ -391,13 +391,15 @@
 .tab-container.tab-container-02{margin:.5rem 0 0 0;}
 .tab-container.tab-container-02 .tab{width:10rem; line-height:1; padding:0 .5rem; margin:1.5rem 0 0 0;}
 .tab-container.tab-container-02 .tab .icon{
-    width:100%; text-align:center; line-height:2.5rem; font-size:2.5rem; transition:color .3s;
+    position:relative; width:100%; text-align:center; line-height:2.5rem; font-size:2.5rem;
+    transition:color .3s;
 }
-.tab-container.tab-container-02 .tab .icon > .img-svg{
-    display:block; margin:0 auto; width:4rem; height:auto; opacity:.45; transition:opacity .3s;
+.tab-container.tab-container-02 .tab .icon > .img-icon{
+    display:block; margin:0 auto; width:4rem; height:auto; filter:grayscale(100%);
+    transition:all .3s;
 }
-.tab-container.tab-container-02 .tab:hover .icon > .img-svg,
-.tab-container.tab-container-02 .tab.active .icon > .img-svg{opacity:1;}
+.tab-container.tab-container-02 .tab:hover .icon > .img-icon,
+.tab-container.tab-container-02 .tab.active .icon > .img-icon{filter:grayscale(0%);}
 .tab-container.tab-container-02 .tab h4{
     font-size:1.4375rem; margin:.375rem 0 0 0; font-weight:300;
     font-family:'TH Sarabun New';
