@@ -194,7 +194,7 @@ p, .p{font-size:1.125rem; margin:.625rem 0 0 0; font-weight:300;}
     padding:.5rem 1.125rem .5rem .75rem; font-size:1rem; font-weight:300; margin:0;
     line-height:1.25;
 }
-.list-header select{padding:.5rem .75rem .5rem .75rem; margin:0 0 0 .4375rem;}
+.list-header select{padding:.55rem .75rem .5rem .75rem; margin:0 0 0 .4375rem;}
 .list-header .search-container{position:relative; width:100%; margin:0 auto;}
 .list-header .search-container input[type=text]{width:100%;}
 .list-header .search-container button[type=submit]{
