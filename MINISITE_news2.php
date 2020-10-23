@@ -23,17 +23,43 @@
         
         .post-card {
             transform: translateY(0); transition: all ease-in-out .2s; 
+            -webkit-box-shadow: 0px 10px 15px 0px rgba(0,0,0,0.2);
+            -moz-box-shadow: 0px 10px 15px 0px rgba(0,0,0,0.2);
+            box-shadow: 0px 10px 15px 0px rgba(0,0,0,0.2);
         }
-        .post-card > .text-wrapper {padding: 0 .5rem 0 .75rem; 
-        }
-        .post-card .stat-info {padding: 0 .5rem 0 .75rem;}
-        .post-card .btn-rb {margin-left: .5rem; text-decoration: none;  color: #fff; background: #502683; display:block; padding: .25rem .375rem .25rem .25rem; }
         .post-card:hover {
             transform: translateY(-1rem);
             -webkit-box-shadow: 0px 10px 15px 0px rgba(0,0,0,0.5);
             -moz-box-shadow: 0px 10px 15px 0px rgba(0,0,0,0.5);
             box-shadow: 0px 10px 15px 0px rgba(0,0,0,0.5);
         }
+        .post-card > .text-wrapper {padding: 0 .5rem 0 .75rem; 
+        }
+        .post-card .stat-info {padding: 0 .5rem 0 .75rem;}
+        .post-card .btn-rb {margin-left: .5rem; text-decoration: none;  color: #fff; background: #502683; display:block; padding: .25rem .375rem .25rem .25rem; }
+        
+        
+        .ss-card.ss-card-custom {
+            transform: translate(0); transition: all ease-in-out .2s;
+            -webkit-box-shadow: 0px 10px 15px 0px rgba(0,0,0,0.2);
+            -moz-box-shadow: 0px 10px 15px 0px rgba(0,0,0,0.2);
+            box-shadow: 0px 10px 15px 0px rgba(0,0,0,0.2);
+        }
+        .ss-card.ss-card-custom:hover {
+            transform: translate(-1rem, -1rem);
+            -webkit-box-shadow: 0px 10px 15px 0px rgba(0,0,0,0.5);
+            -moz-box-shadow: 0px 10px 15px 0px rgba(0,0,0,0.5);
+            box-shadow: 0px 10px 15px 0px rgba(0,0,0,0.5);
+        }
+        .ss-card.ss-card-custom .text-wrapper {padding: 1.5rem; 
+        }
+        .ss-card.ss-card-custom .bottom-container {display:flex; flex-wrap:wrap; justify-content:space-between; align-items:center; margin:1.5rem 1.5rem .5rem 1.5rem; border-top: 1px solid #e1e1e1;  }
+        .ss-card.ss-card-custom .btn-rb {margin:0  -1.5rem -1rem .5rem; text-decoration: none;  color: #fff; background: #502683; display:block; padding: .25rem .375rem .25rem .25rem; }
+        .ss-card.ss-card-custom .bottom-container .icons{display:inline-block;}
+        
+        
+
+
         .spacing {
             padding: 3rem 0;
         }
@@ -48,10 +74,11 @@
             .spacing {
                 padding:0;
             }
+            .ss-card.ss-card-custom .btn-rb {margin:0;}
+
         }
 
         @media screen and (max-width: 575.98px) {
-            
         }
     </style>
 
@@ -121,36 +148,66 @@
         </div>
     </section>
 
-    <div class="spacing"></div>
+    <div class="spacing">
+
+        <div class="list-header jc-center">
+            <div class="block">
+                <div class="text-wrapper">
+                    <div class="search-container">
+                        <input type="text" name="search" placeholder="ค้นหา" />
+                        <button type="submit">
+                            <img src="public/assets/app/images/icon/search.png" alt="Search icon" />
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
 
     <section class="section-padding" style="background-image:url('public/assets/app/images/bg/33.jpg'); background-size:cover; background-position:center; background-repeat:no-repeat;">
         <div class="container">
             <h3 class="text-center color-02">ข่าวประชาสัมพันธ์ </h3>
             <div class="grids">
-                <?php for($i=0; $i<8; $i++){?>
-                    <div class="grid lg-25 md-50 sm-100">
-                        <div class="post-card bg-color-white">
-                            <a class="ss-img bradius-0" href="#">
-                                <div class="img-bg lazy-bg" data-src="public/assets/app/images/banner/01.jpg"></div>
-                                <div class="hover-container">
-                                    <img src="public/assets/app/images/icon/search-02.png" alt="Hover Image" />
+                <?php for($i=0; $i<3; $i++){?>
+                    <div class="grid sm-100">
+                        <div class="ss-card ss-card-custom bg-color-white">
+                            <div class="block">
+                                <a class="ss-img h-100 bradius-0" href="#">
+                                    <div class="img-bg lazy-bg" data-src="public/assets/app/images/banner/01.jpg"></div>
+                                    <div class="hover-container">
+                                        <img src="public/assets/app/images/icon/search-02.png" alt="Hover Image" />
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="block">
+                                <div class="text-wrapper">
+                                    <p class="desc font-01 fw-100 text-md">
+                                    วิทยากรการฝึกอบรมการยกระดับผู้ประกอบการสู่มาตรฐานการบริหารจัดการธุรกิจ หลักสูตร "การยกระดับมาตรฐาน...
+                                    </p>
                                 </div>
-                            </a>
-                            <div class="text-wrapper">
-                                <p class="desc font-01 fw-100 text-md">
-                                วิทยากรการฝึกอบรมการยกระดับผู้ประกอบการสู่มาตรฐานการบริหารจัดการธุรกิจ หลักสูตร "การยกระดับมาตรฐาน...
-                                </p>
+                                <div class="bottom-container">
+                                    <div class="stat-info font-01 fw-100 mt-2">
+                                        <d class="d-inlinec mr-2">
+                                            24-08-2563 | เปิดดู : 130
+                                        </d>
+                                        <div class="icons">
+                                            <img src="public/assets/app/images/social/fb.png" alt="social icon">
+                                            <img src="public/assets/app/images/social/tw.png" alt="social icon">
+                                            <img src="public/assets/app/images/social/ln.png" alt="social icon">
+                                            <img src="public/assets/app/images/social/link.png" alt="social icon">
+
+                                        </div>
+                                        
+
+                                    </div>
+                                    <a href="#" class="btn-rb mt-2">อ่านเพิ่ม</a>
+                                </div>
+                                
                             </div>
-                            <div class="d-flex fw-wrap ai-center jc-space-between">
-                                <div class="stat-info font-01 fw-100 mt-2">24-08-2563 | เปิดดู : 130</div>
-                                <a href="#" class="btn-rb mt-2">อ่านเพิ่ม</a>
-                            </div>
-                            
                         </div>
                     </div>
                 <?php }?>
-                
             </div>
         </div>
         
