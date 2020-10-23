@@ -3,55 +3,6 @@
 <head>
     <?php include_once('include/header.php'); ?>
     <?php include_once('include/style.php'); ?>
-<<<<<<< HEAD
-    <style>
-        /* Custom CSS */
-        .ss-card .h-line {margin-top:1rem; height: .0625rem; background: #c5c5c5; width:100%;}
-        .text-container p {margin:0;}
-        .text-container h3 {margin:0;}
-        /* .ss-card .date {margin: .125rem 0 .5rem 0;} */
-        .ss-card .view {
-            font-family: 'TH Sarabun New';
-            margin: .5rem 0 0 .25rem;
-            color: #88009b;
-        }
-        .ss-card .view .icon {
-            width:1.5rem; height:1.5rem; display:block;
-            font-size: .9375rem; margin: 0 .25rem 0 0; text-align:center; line-height:1.75rem;
-        }
-        .slots {margin-top:-5.5rem;}
-        .slot {
-            height: 50%; position:relative;
-        }
-        .slot > img {
-            position: relative; top:0; left:0; height:auto; width:100%;
-        }
-
-        .list-wrapper {height:100%; padding: 1rem .5rem;}
-        .list-wrapper ul {list-style:none; padding:0; margin:0;}
-        .list-wrapper li {display:flex; margin-bottom:1rem;}
-        .list-wrapper li:last-child { margin-bottom:0;}
-        .list-wrapper li a {text-decoration: none; color:#fff; display:block;}
-        .list-wrapper li i {display:block;font-size:.5rem; color:#fff; text-align:center; line-height: 1.375rem; height:1rem; margin-right:.5rem;}
-        .list-wrapper li:hover i{color:#bb8a42;}
-        .list-wrapper li:hover a{color:var(--color1);}
-
-        @media screen and (max-width: 991.98px){
-            .slots{margin-top:-3.5rem;}
-            .text-container p {font-size:110%;}
-            .text-container h3 {font-size:110%;}
-        }
-        @media screen and (max-width: 767.98px){
-            .slot > img {left: calc(50% - 7.1825rem); width:auto;}
-            .text-container p {font-size:90%;}
-            .text-container h3 {font-size:90%;}
-        }
-        @media screen and (max-width:575.98px){
-            .slots{margin-top:-3rem;}
-        }
-    </style>
-=======
->>>>>>> 97c7a9753a30889411b9a8728a635b208d1250ee
 </head>
 <body class="loading">
     <?php include_once('include/topnav.php'); ?>
