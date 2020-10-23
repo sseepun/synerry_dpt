@@ -3,14 +3,15 @@
 <head>
     <?php include_once('include/header.php'); ?>
     <?php include_once('include/style.php'); ?>
+    <link rel="stylesheet" href="public/assets/app/css/style-secretary.css" />
 </head>
 <body class="loading">
-    <?php include_once('include/topnav.php'); ?>
+    <?php include_once('include/topnav-secretary.php'); ?>
 
-    <div class="intro-02 section-bg lazy-bg" data-src="public/assets/app/images/bg/22.jpg">
+    <div class="intro-02 section-bg lazy-bg" data-src="public/assets/app/images/bg/33.jpg">
         <div class="container">
             <div class="text-container color-white" data-aos="fade-up" data-aos-delay="0">
-                <h2 class="fw-100 mb-0">ข่าวประชาสัมพันธ์</h2>
+                <h2 class="fw-100 mb-0">ข่าวสำนักงานปลัดกระทรวงอุตสาหกรรม</h2>
                 <p class="font-02">
                     เปิดโลกทัศน์ให้ตัวคุณเองด้วยการอัพเดตข่าวสาร <br>
                     ด้านอุตสาหกรรมกับเราได้ที่นี่
@@ -32,7 +33,7 @@
                                 </a>
                             <?php }?>
                         </div>
-                        <img class="decor" src="public/assets/app/images/hero/05.png" alt="Decoration" />
+                        <img class="decor" src="public/assets/app/images/hero/08.png" alt="Decoration" />
                     </div>
                 </div>
 
@@ -41,7 +42,7 @@
                         $breadcrumb = [
                             [ 'url' => '#', 'name' => 'หน้าหลัก' ],
                             [ 'url' => '#', 'name' => 'เกี่ยวกับกระทรวงอุตสาหกรรม' ],
-                            [ 'url' => '#', 'name' => 'ข่าวประชาสัมพันธ์' ],
+                            [ 'url' => '#', 'name' => 'ข่าวสำนักงานปลัดกระทรวงอุตสาหกรรม' ],
                         ];
                         include_once('component/breadcrumb.php');
                     ?>
@@ -84,7 +85,7 @@
                             <tbody>
                                 <?php for($i=0; $i<3; $i++){?>
                                     <tr>
-                                        <td style="min-width:300px;">
+                                        <td style="min-width:340px;">
                                             <div class="fw-600 color-04 text-lg">
                                                 ประกาศกรมอนามัย ฉบับที่ 27/04.pdf
                                             </div>
@@ -94,16 +95,16 @@
                                                 <span class="text-sm">|</span>
                                                 <span class="text-sm">จำนวนดาวน์โหลด</span>
                                                 <span class="fw-600 color-04">16 ครั้ง</span>
+                                                <a class="text-xs color-black ml-2" href="#">
+                                                    <i class="fas fa-exclamation-triangle color-04 text-2xs"></i> 
+                                                    แจ้งไฟล์เสีย
+                                                </a>
                                             </div>
                                         </td>
-                                        <td style="min-width:160px;">
+                                        <td style="min-width:130px;">
                                             <div class="d-flex ai-center jc-end">
                                                 <a class="btn btn-sm btn-round custom-btn-09" href="#">
                                                     ดาวน์โหลด <i class="far fa-arrow-alt-circle-down"></i>
-                                                </a>
-                                                <div class="v-sep"></div>
-                                                <a class="btn-icon" href="#">
-                                                    <i class="fas fa-exclamation-triangle"></i>
                                                 </a>
                                             </div>
                                         </td>
@@ -175,7 +176,7 @@
         </div>
     </section>
 
-    <?php include_once('include/footer.php'); ?>
+    <?php include_once('include/footer-secretary.php'); ?>
     <?php include_once('include/script.php'); ?>
 </body>
 </html>

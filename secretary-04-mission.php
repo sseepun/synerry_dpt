@@ -3,11 +3,12 @@
 <head>
     <?php include_once('include/header.php'); ?>
     <?php include_once('include/style.php'); ?>
+    <link rel="stylesheet" href="public/assets/app/css/style-secretary.css" />
 </head>
 <body class="loading">
-    <?php include_once('include/topnav.php'); ?>
+    <?php include_once('include/topnav-secretary.php'); ?>
 
-    <div class="intro-02 section-bg lazy-bg" data-src="public/assets/app/images/bg/26.jpg">
+    <div class="intro-02 section-bg lazy-bg" data-src="public/assets/app/images/bg/33.jpg">
         <div class="container">
             <div class="text-container color-white" data-aos="fade-up" data-aos-delay="0">
                 <h2 class="fw-100 mb-0">พันธกิจ</h2>
@@ -32,7 +33,7 @@
                                 </a>
                             <?php }?>
                         </div>
-                        <img class="decor" src="public/assets/app/images/hero/05.png" alt="Decoration" />
+                        <img class="decor" src="public/assets/app/images/hero/08.png" alt="Decoration" />
                     </div>
                 </div>
 
@@ -50,21 +51,22 @@
                         <div class="text-wrapper">
                             <ul>
                                 <li>
-                                    ส่งเสริมและพัฒนาศักยภาพของผู้ประกอบการ
-                                    ให้มีความเข้มแข็ง และสามารถแข่งขันได้ใน
-                                    ตลาดโลก
+                                    ขับเคลื่อนและบูรณาการนโยบายและ
+                                    ยุทธศาสตร์ เพื่อยกระดับอุตสาหกรรมไทยสู่
+                                    อุตสาหกรรม 4.0
                                 </li>
                                 <li>
-                                    ขับเคลื่อนและพัฒนาระบบนิเวศอุตสาหกรรม
-                                    (Ecosystem) เพื่อเปลี่ยนผ่านอุตสาหกรรม
-                                    ไทยสู่อุตสาหกรรม 4.0
+                                    กำกับ ดูแล ส่งเสริมและพัฒนาศักยาภาพทาง
+                                    การแข่งขันของภาคอุตสาหกรรมไทย
                                 </li>
                                 <li>
-                                    ส่งเสริมการประกอบกิจการอุตสาหกรรมให้เป็นมิตรกับสิ่งเแวดล้อม
+                                    เพิ่มผลิตภาพปัจจัยการผลิตรวมของ
+                                    อุตสหกรรมเป้าหมาย
                                 </li>
                                 <li>
-                                    บูรณาการดำเนินงานหน่วยงานภายในและ
-                                    ภายนอกกระทรวง เพื่อให้บรรลุผลสัมฤทธิ์ตาม เป้าหมาย
+                                    ยกระดับศักยภาพธุรกิจอุตสาหกรรมให้
+                                    สามารถแข่งขันและอยู่ร่วมกับสังคมและ
+                                    ชุมชนได้
                                 </li>
                             </ul>
                         </div>
@@ -75,7 +77,7 @@
         </div>
     </section>
 
-    <?php include_once('include/footer.php'); ?>
+    <?php include_once('include/footer-secretary.php'); ?>
     <?php include_once('include/script.php'); ?>
 </body>
 </html>

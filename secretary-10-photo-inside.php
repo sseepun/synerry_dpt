@@ -3,11 +3,12 @@
 <head>
     <?php include_once('include/header.php'); ?>
     <?php include_once('include/style.php'); ?>
+    <link rel="stylesheet" href="public/assets/app/css/style-secretary.css" />
 </head>
 <body class="loading">
-    <?php include_once('include/topnav.php'); ?>
+    <?php include_once('include/topnav-secretary.php'); ?>
 
-    <div class="intro-02 section-bg lazy-bg" data-src="public/assets/app/images/bg/22.jpg">
+    <div class="intro-02 section-bg lazy-bg" data-src="public/assets/app/images/bg/33.jpg">
         <div class="container">
             <div class="text-container color-white" data-aos="fade-up" data-aos-delay="0">
                 <h2 class="fw-100 mb-0">คลังภาพ</h2>
@@ -32,7 +33,7 @@
                                 </a>
                             <?php }?>
                         </div>
-                        <img class="decor" src="public/assets/app/images/hero/05.png" alt="Decoration" />
+                        <img class="decor" src="public/assets/app/images/hero/08.png" alt="Decoration" />
                     </div>
                 </div>
 
@@ -83,7 +84,7 @@
                             <tbody>
                                 <?php for($i=0; $i<3; $i++){?>
                                     <tr>
-                                        <td style="min-width:300px;">
+                                        <td style="min-width:340px;">
                                             <div class="fw-600 color-04 text-lg">
                                                 ประกาศกรมอนามัย ฉบับที่ 27/04.pdf
                                             </div>
@@ -93,19 +94,19 @@
                                                 <span class="text-sm">|</span>
                                                 <span class="text-sm">จำนวนดาวน์โหลด</span>
                                                 <span class="fw-600 color-04">16 ครั้ง</span>
+                                                <a class="text-xs color-black ml-2" href="#">
+                                                    <i class="fas fa-exclamation-triangle color-04 text-2xs"></i> 
+                                                    แจ้งไฟล์เสีย
+                                                </a>
                                             </div>
                                         </td>
-                                        <td style="min-width:260px;">
+                                        <td style="min-width:230px;">
                                             <div class="d-flex ai-center jc-end">
                                                 <a class="btn btn-sm btn-round custom-btn-10 btn-toggle mr-1" href="#" data-toggle="embed-<?= $i ?>">
                                                     Embed <i class="fas fa-code"></i>
                                                 </a>
                                                 <a class="btn btn-sm btn-round custom-btn-09" href="#">
                                                     ดาวน์โหลด <i class="far fa-arrow-alt-circle-down"></i>
-                                                </a>
-                                                <div class="v-sep"></div>
-                                                <a class="btn-icon" href="#">
-                                                    <i class="fas fa-exclamation-triangle"></i>
                                                 </a>
                                             </div>
                                         </td>
@@ -133,20 +134,18 @@
                     </div>
                     <div class="row" data-aos="fade-up" data-aos-delay="300">
                         <?php for($i=0; $i<3; $i++){?>
-                            <div class="col-lg-4 col-md-6 col-sm-6 mt-4">
-                                <div class="post-card post-card-08">
-                                    <div class="title-container">
-                                        <a class="title h4" href="#">
-                                            สุริยะฯ ดันแผนพัฒนาอุตฯ 
-                                            เครื่องจักรกลเต็มสูบ มุ่งสนับสนุน
-                                            เกษตรแปรรูป ชี้เป็นจุดเริ่มต้นการ
-                                            ปฏิรูปโครงสร้างศก
-                                        </a>
-                                    </div>
+                            <div class="col-lg-4 col-md-6 col-sm-6 mt-3">
+                                <div class="post-card post-card-05 no-border">
+                                    <a class="ss-img square bradius-0" href="#">
+                                        <div class="img-bg lazy-bg" data-src="public/assets/app/images/banner/01.jpg"></div>
+                                        <div class="hover-container">
+                                            <img src="public/assets/app/images/icon/search-02.png" alt="Hover Image" />
+                                        </div>
+                                    </a>
                                     <div class="d-flex ai-center jc-space-between stats">
                                         <div class="date">13.08.2563</div>
                                         <div class="d-flex view">
-                                            <div class="icon"><i class="far fa-image"></i></div>
+                                            <div class="icon"><i class="far fa-images"></i></div>
                                             15
                                         </div>
                                         <div class="d-flex view">
@@ -154,13 +153,15 @@
                                             268
                                         </div>
                                     </div>
-                                </div>
-                                <a class="ss-img square  bradius-0" href="#">
-                                    <div class="img-bg lazy-bg" data-src="public/assets/app/images/banner/01.jpg"></div>
-                                    <div class="hover-container">
-                                        <img src="public/assets/app/images/icon/search-02.png" alt="Hover Image" />
+                                    <div class="title-container">
+                                        <a class="title h4 h-color-blue" href="#">
+                                            สุริยะฯ ดันแผนพัฒนาอุตฯ 
+                                            เครื่องจักรกลเต็มสูบ มุ่งสนับสนุน
+                                            เกษตรแปรรูป ชี้เป็นจุดเริ่มต้นการ
+                                            ปฏิรูปโครงสร้างศก
+                                        </a>
                                     </div>
-                                </a>
+                                </div>
                             </div>
                         <?php }?>
                     </div>
@@ -171,7 +172,7 @@
         </div>
     </section>
 
-    <?php include_once('include/footer.php'); ?>
+    <?php include_once('include/footer-secretary.php'); ?>
     <?php include_once('include/script.php'); ?>
 </body>
 </html>

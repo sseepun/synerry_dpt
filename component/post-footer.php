@@ -1,8 +1,8 @@
 <div class="post-footer border-bottom">
     <div class="block">
         <span class="fw-900">TAGS:</span> 
-        <div class="ss-tag">สำนักบริหารกลาง</div>
-        <div class="ss-tag">โรงงานอุตสาหกรรม</div>
+        <div class="ss-tag ml-2">สำนักบริหารกลาง</div>
+        <div class="ss-tag ml-2">โรงงานอุตสาหกรรม</div>
     </div>
     <div class="block ai-start">
         <a class="btn-social height-auto" href="#" tabindex="0">

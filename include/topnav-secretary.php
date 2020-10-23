@@ -46,7 +46,7 @@
         <div class="container">
             <div class="wrapper">
                 <a class="logo" href="./">
-                    <img src="public/assets/app/images/logo_OFFICE.png" alt="Logo" />
+                    <img src="public/assets/app/images/logo-secretary.png" alt="Logo" />
                     <div class="text">
                         <h1>สำนักงานปลัดกระทรวงอุตสาหกรรม</h1>
                         <h5>Office of Permanent Secretary</h5>

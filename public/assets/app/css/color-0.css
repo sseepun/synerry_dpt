@@ -5,7 +5,8 @@ html, body{color:#000;}
 
 /* Colors */
 .color-white{color:#fff!important;}
-.color-black{color:#fff!important;}
+.color-black{color:#000!important;}
+.color-dark{color:#212529!important;}
 .color-sgray{color:#f3f3f3!important;}
 .color-01{color:#422754!important;}
 .color-02{color:#59236e!important;}
@@ -19,7 +20,8 @@ html, body{color:#000;}
 .color-10{color:#5a0687!important;}
 
 .bg-color-white{background:#fff!important;}
-.bg-color-black{background:#fff!important;}
+.bg-color-black{background:#000!important;}
+.bg-color-dark{background:#212529!important;}
 .bg-color-sgray{background:#f3f3f3!important;}
 .bg-color-gray{background:#e9e9e9!important;}
 .bg-color-01{background:#422754!important;}

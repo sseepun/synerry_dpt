@@ -1,3 +1,31 @@
+<section class="call-02 pt-0">
+    <div class="call-container" style="background-image:url('public/assets/app/images/bg/20.jpg'); padding-top:2rem!important;">
+        <div class="container" data-aos="fade-up" data-aos-delay="0">
+            <div class="call-text text-center title fw-400">
+                ปฏิรูปอุตสาหกรรมสู่ 4.0
+            </div>
+            <div class="call-text text-center desc">
+                เพิ่มมูลค่าเศรษฐกิจอุตสาหกรรมของไทยให้เติบโตไม่น้อยกว่าร้อยละ 4.5
+            </div>
+            <div class="call-text text-center desc desc-lg">
+                ภายในปี พ.ศ.2564
+            </div>
+            <div class="slide-container">
+                <div class="slides">
+                    <?php for($i=0; $i<10; $i++){?>
+                        <div class="slide">
+                            <div class="wrapper">
+                                <div class="client lazy-bg" data-src="public/assets/app/images/client/01.jpg"></div>
+                            </div>
+                        </div>
+                    <?php }?>
+                </div>
+                <div class="arrows"></div>
+            </div>
+        </div>
+    </div>
+</section>
+
 <a class="back-to-top active" href="#">
     <i class="fas fa-chevron-up"></i>
 </a>

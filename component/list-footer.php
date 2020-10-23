@@ -1,7 +1,7 @@
 <div class="list-footer">
     <div class="block">
         <div class="text-wrapper text-sm">
-            จำนวนทั้งหมด <span class="fw-600 color-03">400 รายการ</span> 
+            จำนวนทั้งหมด <span class="fw-600 color-07">400 รายการ</span> 
         </div>
     </div>
     <div class="block">

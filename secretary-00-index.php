@@ -3,16 +3,16 @@
 <head>
     <?php include_once('include/header.php'); ?>
     <?php include_once('include/style.php'); ?>
-    <link rel="stylesheet" href="public/assets/app/css/style_OFFICE.css" />
+    <link rel="stylesheet" href="public/assets/app/css/style-secretary.css" />
 </head>
 <body class="loading">
-    <?php include_once('include/topnav_OFFICE.php'); ?>
+    <?php include_once('include/topnav-secretary.php'); ?>
     
     <section class="banner-01 img-only no-filter">
         <div class="slide-container">
             <div class="slides">
                 <?php for($i=0; $i<8; $i++){?>
-                    <div class="slide" data-desc="<?= $i+1; ?>/8 | กำหนดชำระค่าธรรมเนียมในเดือน">
+                    <div class="slide" data-desc="กำหนดชำระค่าธรรมเนียมในเดือน | <?= $i+1; ?>/8">
                         <img src="public/assets/app/images/banner/03.jpg" alt="Banner <?= $i; ?>" />
                     </div>
                 <?php }?>
@@ -84,19 +84,9 @@
                                                 <div class="tag bg-color-04">
                                                     สำนักบริหารกลาง
                                                 </div>
-                                                <!-- <div class="socials">
-                                                    <ul>
-                                                        <li><a class="social social-fw" href="#">
-                                                            <i class="fab fa-facebook-f"></i>
-                                                        </a></li>
-                                                        <li><a class="social social-tw" href="#">
-                                                            <i class="fab fa-twitter"></i>
-                                                        </a></li>
-                                                        <li><a class="social social-ln" href="#">
-                                                            <i class="fab fa-line"></i>
-                                                        </a></li>
-                                                    </ul>
-                                                </div> -->
+                                                <div class="hover-container">
+                                                    <img src="public/assets/app/images/icon/search-02.png" alt="Hover Image" />
+                                                </div>
                                             </div>
                                             <div class="title-container mt-2">
                                                 <a class="title h4" href="#">
@@ -115,7 +105,7 @@
                                                 ภาคอุตสาหกรรมและภาคเกษตรกรรม...
                                             </p>
                                             <div class="btns">
-                                                <a class="btn-action btn-action-primary" href="#">
+                                                <a class="btn-action btn-action-primary-02" href="#">
                                                     <i class="fas fa-chevron-right"></i>
                                                     อ่านรายละเอียด
                                                 </a>
@@ -129,7 +119,7 @@
                 </div>
             </div>
             
-            <div class="pagination mt-5" data-aos="fade-up" data-aos-delay="0">
+            <div class="pagination pagination-02 mt-5" data-aos="fade-up" data-aos-delay="0">
                 <div class="wrapper">
                     <a href="#" class="page-btn page-prev disabled"></a>
                     <a href="#" class="page-btn active">01</a>
@@ -238,19 +228,9 @@
                                                         <div class="block">
                                                             <div class="ss-img square bradius-0">
                                                                 <div class="img-bg lazy-bg" data-src="public/assets/app/images/banner/0<?= $k; ?>.jpg"></div>
-                                                                <!-- <div class="socials">
-                                                                    <ul>
-                                                                        <li><a class="social social-fw" href="#">
-                                                                            <i class="fab fa-facebook-f"></i>
-                                                                        </a></li>
-                                                                        <li><a class="social social-tw" href="#">
-                                                                            <i class="fab fa-twitter"></i>
-                                                                        </a></li>
-                                                                        <li><a class="social social-ln" href="#">
-                                                                            <i class="fab fa-line"></i>
-                                                                        </a></li>
-                                                                    </ul>
-                                                                </div> -->
+                                                                <div class="hover-container">
+                                                                    <img src="public/assets/app/images/icon/search-02.png" alt="Hover Image" />
+                                                                </div>
                                                             </div>
                                                         </div>
                                                         <div class="block">
@@ -295,7 +275,7 @@
                                                 <?php }?>
                                             </div>
                                         </div>
-                                        <div class="pagination mt-3">
+                                        <div class="pagination pagination-02 mt-3">
                                             <div class="wrapper">
                                                 <a href="#" class="page-btn page-prev disabled"></a>
                                                 <a href="#" class="page-btn active">01</a>
@@ -319,7 +299,7 @@
         </div>
     </section>
 
-    <section class="call-02">
+    <section class="call-02 pb-4">
         <div class="container">
             <h2 class="text-center color-white mb-0" data-aos="fade-up" data-aos-delay="0">
                 เรารับฟังความคิดเห็นของคุณ
@@ -341,34 +321,9 @@
                 </div>
             </form>
         </div>
-        <div class="call-container mt-5" style="background-image:url('public/assets/app/images/bg/20.jpg');">
-            <div class="container" data-aos="fade-up" data-aos-delay="0">
-                <div class="call-text text-center title">
-                    ปฏิรูปอุตสาหกรรมสู่ 4.0
-                </div>
-                <div class="call-text text-center desc">
-                    เพิ่มมูลค่าเศรษฐกิจอุตสาหกรรมของไทยให้เติบโตไม่น้อยกว่าร้อยละ 4.5
-                </div>
-                <div class="call-text text-center desc desc-lg">
-                    ภายในปี พ.ศ.2564
-                </div>
-                <div class="slide-container mt-5">
-                    <div class="slides">
-                        <?php for($i=0; $i<10; $i++){?>
-                            <div class="slide">
-                                <div class="wrapper">
-                                    <div class="client lazy-bg" data-src="public/assets/app/images/client/01.jpg"></div>
-                                </div>
-                            </div>
-                        <?php }?>
-                    </div>
-                    <div class="arrows"></div>
-                </div>
-            </div>
-        </div>
     </section>
     
-    <?php include_once('include/footer_OFFICE.php'); ?>
+    <?php include_once('include/footer-secretary.php'); ?>
     <?php include_once('include/script.php'); ?>
 </body>
 </html>
