@@ -351,25 +351,33 @@
                 <div class="tabs" data-aos="fade-up" data-aos-delay="300">
                     <div class="tab active" data-tab="1">
                         <div class="icon">
-                            <img class="img-icon" src="public/assets/app/images/icon/rocket-active.png" alt="Icon" />
+                            <img class="img-icon theme-0" src="public/assets/app/images/icon/rocket-active.png" alt="Icon" />
+                            <img class="img-icon theme-1" src="public/assets/app/images/icon/rocket-white.png" alt="Icon" />
+                            <img class="img-icon theme-2" src="public/assets/app/images/icon/rocket-yellow.png" alt="Icon" />
                         </div>
                         <h4 class="text-center">ผู้ประกอบการ / SME</h4>
                     </div>
                     <div class="tab" data-tab="2">
                         <div class="icon">
-                            <img class="img-icon" src="public/assets/app/images/icon/target-active.png" alt="Icon" />
+                            <img class="img-icon theme-0" src="public/assets/app/images/icon/target-active.png" alt="Icon" />
+                            <img class="img-icon theme-1" src="public/assets/app/images/icon/target-white.png" alt="Icon" />
+                            <img class="img-icon theme-2" src="public/assets/app/images/icon/target-yellow.png" alt="Icon" />
                         </div>
                         <h4 class="text-center">นักลงทุน</h4>
                     </div>
                     <div class="tab" data-tab="3">
                         <div class="icon">
-                            <img class="img-icon" src="public/assets/app/images/icon/microscope-active.png" alt="Icon" />
+                            <img class="img-icon theme-0" src="public/assets/app/images/icon/microscope-active.png" alt="Icon" />
+                            <img class="img-icon theme-1" src="public/assets/app/images/icon/microscope-white.png" alt="Icon" />
+                            <img class="img-icon theme-2" src="public/assets/app/images/icon/microscope-yellow.png" alt="Icon" />
                         </div>
                         <h4 class="text-center">นักวิชาการ</h4>
                     </div>
                     <div class="tab" data-tab="4">
                         <div class="icon">
-                            <img class="img-icon" src="public/assets/app/images/icon/users-active.png" alt="Icon" />
+                            <img class="img-icon theme-0" src="public/assets/app/images/icon/users-active.png" alt="Icon" />
+                            <img class="img-icon theme-1" src="public/assets/app/images/icon/users-white.png" alt="Icon" />
+                            <img class="img-icon theme-2" src="public/assets/app/images/icon/users-yellow.png" alt="Icon" />
                         </div>
                         <h4 class="text-center">บุคคลทั่วไป</h4>
                     </div>
@@ -394,17 +402,6 @@
                                                     กระทรวงอุตสาหกรรม (อก.) ผลักดันแผนอุตสาหกรรมเครื่องจักรกลให้เป็นอุตสาหกรรม
                                                     สนับสนุนเพิ่มขีดความสามารถการผลิตทั้งภาคอุตสาหกรรมและภาคเกษตรกรรม...
                                                 </p>
-                                                <!-- <div class="social-btns pt-2 pb-1">
-                                                    <a class="btn-social btn-social-fw" href="#">
-                                                        <i class="fab fa-facebook"></i>
-                                                    </a>
-                                                    <a class="btn-social btn-social-tw" href="#">
-                                                        <i class="fab fa-twitter"></i>
-                                                    </a>
-                                                    <a class="btn-social btn-social-ln" href="#">
-                                                        <i class="fab fa-line"></i>
-                                                    </a>
-                                                </div> -->
                                                 <div class="btns pt-2 pb-2">
                                                     <a class="btn-action btn-action-dark" href="#">
                                                         <i class="fas fa-chevron-right"></i>

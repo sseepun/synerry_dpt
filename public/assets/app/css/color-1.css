@@ -263,6 +263,9 @@ table.table.table-download tbody > tr.row-title > td{background:#fff; color:#000
 .tab-container.tab-container-02 .btns{border-color:#fff;}
 .tab-container.tab-container-02 .arrows > .slick-prev, 
 .tab-container.tab-container-02 .arrows > .slick-next{color:#fff;}
+.tab-container.tab-container-02 .tab .icon > .img-icon.theme-0{display:none;}
+.tab-container.tab-container-02 .tab .icon > .img-icon.theme-1{display:block;}
+.tab-container.tab-container-02 .tab .icon > .img-icon.theme-2{display:none;}
 @media screen and (min-width:768px){
     .tab-container.tab-container-02 .slide.slick-current .post-card{background:#fff;}
     .tab-container.tab-container-02 .slide.slick-current .post-card *{color:#000!important;}
