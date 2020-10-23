@@ -803,8 +803,6 @@ table.table.table-download td:nth-child(4){min-width:134px; text-align:right; pa
 @media screen and (max-width:575.98px){
     .xs-no-br > br{display:none;}
 }
-<<<<<<< HEAD
-<<<<<<< HEAD
 
 
 /* List Footer */
@@ -873,9 +871,3 @@ table.table.table-download td:nth-child(4){min-width:134px; text-align:right; pa
 }
 .ss-tags > .ss-tag::before{font-family:'TH Sarabun New';}
 .ss-tags > .ss-tag.type-1::before{content:'สำนักงานบริหารงาน';}
-
-
-=======
->>>>>>> 97c7a9753a30889411b9a8728a635b208d1250ee
-=======
->>>>>>> a5be72a26f4e9de435334f301abf613eef537cbe
