@@ -1,0 +1,14 @@
+
+/* Tree */
+.tree .node{
+    width:180px; padding:20px 8px; min-height:56px; display:flex!important; align-items:center;
+    border-radius:0; box-shadow:rgba(58,45,45,.1) 0px 10px 20px;
+}
+.tree .node > p{
+    margin:0; font-size:16px; font-weight:100; color:#fff; width:100%; text-align:center;
+}
+.tree .node.root{background:#2a2859; width:260px; padding:30px 15px;}
+.tree .node.root > p{position:relative; font-size:22px; font-weight:400; color:#fff;}
+.tree .node.node-1{background:#331131;}
+.tree .node.node-2{background:#591e56;}
+.tree .node.node-3{background:#a638a0;}

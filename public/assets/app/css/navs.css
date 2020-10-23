@@ -1,10 +1,10 @@
 
 /* Topnav */
-nav.topnav{position:fixed; top:0; left:0; width:100vw; transition:transform .3s; z-index:95;}
+nav.topnav{position:fixed; top:0; left:0; width:100%; transition:transform .3s; z-index:95;}
 nav.topnav.sticky{transform:translateY(-3.0625rem);}
 nav.topnav > .top-container{
     position:relative; width:100%; background-position:center; background-size:cover;
-    padding:.375rem 0 calc(.375rem + 2px) 0;
+    padding:.375rem 0 calc(.375rem + 2px) 0; background-repeat:no-repeat;
 }
 nav.topnav > .top-container::after{
     content:''; position:absolute; bottom:0; left:0; right:0; height:2px; pointer-events:none;
@@ -21,6 +21,7 @@ nav.topnav > .top-container .block > .option{
 }
 nav.topnav > .bottom-container{
     width:100%; background-position:center; background-size:cover; position:relative;
+    background-repeat:no-repeat;
 }
 nav.topnav > .bottom-container::after{
     content:''; position:absolute; top:100%; left:0; right:0; height:2px; pointer-events:none;
@@ -56,7 +57,7 @@ nav.topnav .menu-container::after{
 }
 nav.topnav .menu{
     position:relative; background-size:cover; background-position:center;
-    transition:background .3s;
+    background-repeat:no-repeat; transition:background .3s;
 }
 nav.topnav .menu::after{
     content:''; position:absolute; top:0; bottom:0; left:0; width:1px; pointer-events:none;
@@ -84,7 +85,7 @@ nav.topnav .menu.menu-icon > a::before{display:none;}
 nav.topnav .menu.menu-icon > a > img{display:block; height:1.5rem; width:auto; margin:0 auto;}
 nav.topnav .menu.menu-icon .flag-icon{
     display:block; width:1.5rem; height:1.5rem; border-radius:50%; background-size:cover;
-    background-position:center; margin:0 auto;
+    background-position:center; background-repeat:no-repeat; margin:0 auto;
 }
 nav.topnav .menu.menu-icon p{margin:.3125rem 0 .25rem 0; text-align:center; font-size:.6875rem;}
 nav.topnav .menu.menu-icon .icon{display:block; line-height:1; margin:0 auto; font-size:1.5rem;}
@@ -115,7 +116,9 @@ nav.topnav .menu > .submenu-dropdown > .wrapper{
     width:100%; display:flex; position:relative;
     /* min-height:calc(100vh - 17rem); */
 }
-nav.topnav .submenu-dropdown .hero{width:35vw; background-size:cover; background-position:center;}
+nav.topnav .submenu-dropdown .hero{
+    width:35vw; background-size:cover; background-position:center; background-repeat:no-repeat;
+}
 nav.topnav .submenu-container{position:relative; width:18rem; padding:.875rem 0 1.75rem 0;}
 nav.topnav .submenu-container::after{
     content:''; position:absolute; top:100%; left:0; width:4.5rem; height:2.25rem;
@@ -198,7 +201,7 @@ nav.sidenav .option > .dropdown > *{
 nav.sidenav .option > .dropdown > *:first-child{border-top:1px solid transparent;}
 nav.sidenav .option .flag{
     width:1.5rem; height:1rem; border-radius:.125rem; background-size:cover;
-    background-position:center;
+    background-position:center; background-repeat:no-repeat;
 }
 nav.sidenav .option [data-theme="0"]{background:#fff!important; color:#000!important;}
 nav.sidenav .option [data-theme="1"]{background:#000!important; color:#fff!important;}
@@ -328,3 +331,4 @@ nav.footer > .footer-bottom .wrapper > .count-area{
 }
 .back-to-top.active{opacity:.6; pointer-events:all;}
 .back-to-top.active:hover{opacity:1;}
+.back-to-top > i{transform:translateY(-.1875rem);}

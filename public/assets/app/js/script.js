@@ -313,6 +313,19 @@ $(function(){ 'use strict';
             });
         });
     }
+
+    
+    // FAQ 01
+    if($('.faq-01').length){
+        $('.faq-01').each(function(){
+            $(this).find('.question').click(function(e){
+                e.preventDefault();
+                var self = $(this);
+                self.toggleClass('active');
+                self.next().slideToggle();
+            });
+        });
+    }
     
 
     // Tab Container
