@@ -3,7 +3,7 @@
 <head>
     <?php include_once('include/header.php'); ?>
     <?php include_once('include/style.php'); ?>
-    <link rel="stylesheet" href="public/assets/app/css/style_MINISITE.css" />
+    <link rel="stylesheet" href="public/assets/app/css/style-minisite.css" />
     <style>
 
         /* Custom CSS */
@@ -84,7 +84,7 @@
 
 </head>
 <body class="loading">
-    <?php include_once('include/topnav_MINISITE.php'); ?>
+    <?php include_once('include/topnav-minisite.php'); ?>
     
     <div class="intro-02 section-bg lazy-bg" data-src="public/assets/app/images/bg/22.jpg">
         <div class="container">
@@ -263,7 +263,7 @@
         </div>
     </section>
 
-    <?php include_once('include/footer_MINISITE.php'); ?>
+    <?php include_once('include/footer-minisite.php'); ?>
     <?php include_once('include/script.php'); ?>
 </body>
 </html>

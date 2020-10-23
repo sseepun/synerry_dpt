@@ -3,10 +3,10 @@
 <head>
     <?php include_once('include/header.php'); ?>
     <?php include_once('include/style.php'); ?>
-    <link rel="stylesheet" href="public/assets/app/css/style_MINISITE.css" />
+    <link rel="stylesheet" href="public/assets/app/css/style-minisite.css" />
 </head>
 <body class="loading">
-    <?php include_once('include/topnav_MINISITE.php'); ?>
+    <?php include_once('include/topnav-minisite.php'); ?>
     
     <section class="banner-01 img-only no-filter">
         <div class="slide-container">
@@ -352,7 +352,7 @@
         </div>
     </section>
     
-    <?php include_once('include/footer_MINISITE.php'); ?>
+    <?php include_once('include/footer-minisite.php'); ?>
     <?php include_once('include/script.php'); ?>
 </body>
 </html>
