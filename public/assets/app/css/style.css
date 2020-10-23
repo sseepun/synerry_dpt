@@ -812,3 +812,71 @@ table.table.table-download td:nth-child(4){min-width:134px; text-align:right; pa
 @media screen and (max-width:575.98px){
     .xs-no-br > br{display:none;}
 }
+
+
+/* List Footer */
+.list-footer{
+    width:100%; display:flex; align-items:center; justify-content:space-between;
+    border-top:1px solid transparent; padding:.125rem 0; margin:1.875rem 0 0 0;
+}
+.list-footer > .block{display:flex; align-items:center;}
+.list-footer .pagination{margin:0;}
+.list-footer .text-wrapper{text-align:center; font-size:1.25rem; padding:.375rem 0; font-weight:300;}
+.list-footer select{
+    border:1px solid transparent; box-shadow:none; outline:none; border-radius:.25rem;
+    padding:.375rem 1.125rem .375rem .375rem; font-size:1.125rem; font-weight:300;
+    margin:0 0 0 .25rem; transition:border-color .3s;
+}
+@media screen and (max-width:767.98px){
+    .list-footer{
+        flex-wrap:wrap; justify-content:center; padding:.625rem 0; margin:1.5rem 0 0 0;
+        border-bottom:1px solid transparent;
+    }
+    .list-footer > .block{width:100%;}
+    .list-footer .text-wrapper{width:100%;}
+}
+
+/* Special Icon Text */
+.ss-icon-title{width:100%; display:flex; align-items:center; flex-wrap:wrap; margin:2rem 0 0 0;}
+.ss-icon-title > .icon{
+    display:block; width:2.5rem; height:2.5rem; line-height:2.75rem; text-align:center; 
+    font-size:1.375rem; border-radius:50%; margin:0 .6875rem 0 0;
+}
+.ss-icon-title > h2{margin:0; width:calc(100% - 3.1875rem);}
+.ss-icon-title p{margin:0 0 0 auto;}
+.ss-icon-title > .text-wrapper{width:calc(100% - 3.1875rem);}
+.ss-icon-title h4{line-height:1;}
+@media screen and (max-width:991.98px){
+    .ss-icon-title{margin:1.5rem 0 0 0;}
+    .ss-icon-title > .icon{width:2.25rem; height:2.25rem; line-height:2.75rem; font-size:1.25rem;}
+    .ss-icon-title > h2{width:calc(100% - 2.9375rem);}
+    .ss-icon-title > .text-wrapper{width:calc(100% - 2.9375rem);}
+}
+@media screen and (max-width:767.98px){
+    .ss-icon-title{margin:1rem 0 0 0;}
+    .ss-icon-title > .icon{width:2rem; height:2rem; line-height:2.25rem; font-size:1rem;}
+    .ss-icon-title p{width:100%; margin:1rem 0 0 0;}
+    .ss-icon-title > h2{width:calc(100% - 2.6875rem);}
+    .ss-icon-title > .text-wrapper{width:calc(100% - 2.6875rem);}
+}
+
+
+/* Special Mp4 */
+.ss-mp4{position:relative; width:100%;}
+.ss-mp4 > .wrapper{
+    position:relative; width:100%; padding:56.25% 0 0 0; ; overflow:hidden;
+}
+.ss-mp4 video{
+    position:absolute; top:0; bottom:0; left:0; right:0; width:100%; height:100%;
+}
+
+
+/* Special Tags & Status */
+.ss-tags{width:100%; margin:.5rem 0;}
+.ss-tags > .ss-tag{
+    display:inline-block; min-width:5.5rem; font-size:.75rem; padding:0 1rem;
+    border-radius:1rem; text-align:center; margin:.125rem 0; font-weight:300;
+    text-decoration:none;
+}
+.ss-tags > .ss-tag::before{font-family:'TH Sarabun New';}
+.ss-tags > .ss-tag.type-1::before{content:'สำนักงานบริหารงาน';}

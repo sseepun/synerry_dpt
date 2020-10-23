@@ -373,3 +373,7 @@ table.table.table-download tbody > tr.row-title > td{background:#393939; color:#
 .tab-container.tab-container-03 .tab-contents .grids{
     background:#fff; box-shadow:0px 0px 30px 0px rgba(82,63,105,.7);
 }
+
+/* Special Tags */
+.ss-tags > .ss-tag{color:#fff;}
+.ss-tags > .ss-tag.type-1{background:#4d4e52;}
