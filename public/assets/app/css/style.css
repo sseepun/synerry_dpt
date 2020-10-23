@@ -838,7 +838,7 @@ table.table.table-download td:nth-child(4){min-width:134px; text-align:right; pa
 /* Special Icon Text */
 .ss-icon-title{width:100%; display:flex; align-items:center; flex-wrap:wrap; margin:2rem 0 0 0;}
 .ss-icon-title > .icon{
-    display:block; width:2.5rem; height:2.5rem; line-height:2.75rem; text-align:center; 
+    display:block; width:2.5rem; height:2.5rem; line-height:2.6875rem; text-align:center; 
     font-size:1.3125rem; border-radius:50%; margin:0 .6875rem 0 0;
 }
 .ss-icon-title > h2{margin:0; width:calc(100% - 3.1875rem);}

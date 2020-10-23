@@ -73,27 +73,27 @@
                 children: [
                     
                     {   
-                        text:{ name: 'สำนักรัฐมนตรี' },
+                        text: { name: 'สำนักรัฐมนตรี' },
                         HTMLclass: 'node-1',
                         children: [ ],
                     },
                     
                     {   
-                        text:{ name: 'สำนักงานปลัดกระทรวงอุตสาหกรรม' },
+                        text: { name: 'สำนักงานปลัดกระทรวงอุตสาหกรรม' },
                         HTMLclass: 'node-1',
                         children: [ ],
                     },
 
                     {   
-                        text:{ name: 'กลุ่มภารกิจด้านเศรษฐกิจอุตสาหกรรม' },
+                        text: { name: 'กลุ่มภารกิจด้านเศรษฐกิจอุตสาหกรรม' },
                         HTMLclass: 'node-1',
                         children: [
                             {
-                                text:{ name: 'สำนักงานเศรษฐกิจอุตสาหกรรม' },
+                                text: { name: 'สำนักงานเศรษฐกิจอุตสาหกรรม' },
                                 HTMLclass: 'node-2',
                                 children: [
                                     {
-                                        text:{ name: 'สำนักงานคณะกรรมการอ้อยและน้ำตาลทราย' },
+                                        text: { name: 'สำนักงานคณะกรรมการอ้อยและน้ำตาลทราย' },
                                         HTMLclass: 'node-2',
                                         children: [ ],
                                     }
@@ -103,15 +103,15 @@
                     },
 
                     {   
-                        text:{ name: 'กลุ่มภารกิจด้านกำกับตรวจสอบกระบวนการผลิต' },
+                        text: { name: 'กลุ่มภารกิจด้านกำกับตรวจสอบกระบวนการผลิต' },
                         HTMLclass: 'node-1',
                         children: [
                             {
-                                text:{ name: 'กรมโรงงานอุตสาหกรรม' },
+                                text: { name: 'กรมโรงงานอุตสาหกรรม' },
                                 HTMLclass: 'node-2',
                                 children: [
                                     {
-                                        text:{ name: 'กรมอุตสาหกรรมพื้นฐานและการเหมืองแร่' },
+                                        text: { name: 'กรมอุตสาหกรรมพื้นฐานและการเหมืองแร่' },
                                         HTMLclass: 'node-2',
                                         children: [ ],
                                     }
@@ -121,15 +121,15 @@
                     },
 
                     {   
-                        text:{ name: 'กลุ่มภารกิจด้านส่งเสริมอุตสาหกรรมและผู้ประกอบการ' },
+                        text: { name: 'กลุ่มภารกิจด้านส่งเสริมอุตสาหกรรมและผู้ประกอบการ' },
                         HTMLclass: 'node-1',
                         children: [
                             {
-                                text:{ name: 'กรมส่งเสริมอุตสาหกรรม' },
+                                text: { name: 'กรมส่งเสริมอุตสาหกรรม' },
                                 HTMLclass: 'node-2',
                                 children: [
                                     {
-                                        text:{ name: 'สำนักงานมาตรฐานผลิตภัณฑ์อุตสาหกรรม' },
+                                        text: { name: 'สำนักงานมาตรฐานผลิตภัณฑ์อุตสาหกรรม' },
                                         HTMLclass: 'node-2',
                                         children: [ ],
                                     }
@@ -139,11 +139,11 @@
                     },
 
                     {   
-                        text:{ name: 'รัฐวิสาหกิจ' },
+                        text: { name: 'รัฐวิสาหกิจ' },
                         HTMLclass: 'node-1',
                         children: [
                             {
-                                text:{ name: 'การนิคมอุตสาหกรรมแห่งประเทศไทย' },
+                                text: { name: 'การนิคมอุตสาหกรรมแห่งประเทศไทย' },
                                 HTMLclass: 'node-2',
                                 children: [ ],
                             }
@@ -168,19 +168,19 @@
                 children: [
                     
                     {   
-                        text:{ name: 'สถาบันไทย-เยอรมัน' },
+                        text: { name: 'สถาบันไทย-เยอรมัน' },
                         HTMLclass: 'node-3',
                         children: [
                             {   
-                                text:{ name: 'สถาบันเพิ่มผลผลิตแห่งชาติ' },
+                                text: { name: 'สถาบันเพิ่มผลผลิตแห่งชาติ' },
                                 HTMLclass: 'node-3',
                                 children: [
                                     {   
-                                        text:{ name: 'สถาบันอาหาร' },
+                                        text: { name: 'สถาบันอาหาร' },
                                         HTMLclass: 'node-3',
                                         children: [
                                             {   
-                                                text:{ name: 'สถาบันพัฒนาอุตสาหกรรมสิ่งทอ' },
+                                                text: { name: 'สถาบันพัฒนาอุตสาหกรรมสิ่งทอ' },
                                                 HTMLclass: 'node-3',
                                                 children: [
                                                     
@@ -194,27 +194,27 @@
                     },
                     
                     {   
-                        text:{ name: 'สถาบันรองรับมาตรฐานไอเอสโอ' },
+                        text: { name: 'สถาบันรองรับมาตรฐานไอเอสโอ' },
                         HTMLclass: 'node-3',
                         children: [
                             {   
-                                text:{ name: 'สถาบันไฟฟ้าและอิเล็กทรอนิกส์' },
+                                text: { name: 'สถาบันไฟฟ้าและอิเล็กทรอนิกส์' },
                                 HTMLclass: 'node-3',
                                 children: [
                                     {   
-                                        text:{ name: 'สถาบันแหล็กและเหล็กกล้าแห่งประเทศไทย' },
+                                        text: { name: 'สถาบันแหล็กและเหล็กกล้าแห่งประเทศไทย' },
                                         HTMLclass: 'node-3',
                                         children: [
                                             {   
-                                                text:{ name: 'สถาบันพัฒนาวิสาหกิจขนาดกลางและขนาดย่อม' },
+                                                text: { name: 'สถาบันพัฒนาวิสาหกิจขนาดกลางและขนาดย่อม' },
                                                 HTMLclass: 'node-3',
                                                 children: [
                                                     {   
-                                                        text:{ name: 'หน่วยงานที่ดูแลร่วมกับกระทรวงการคลัง' },
+                                                        text: { name: 'หน่วยงานที่ดูแลร่วมกับกระทรวงการคลัง' },
                                                         HTMLclass: 'node-3',
                                                         children: [
                                                             {   
-                                                                text:{ name: 'ธนาคารพัฒนาวิสาหกิจขนาดกลางและขนาดย่อมแห่งประเทศไทย' },
+                                                                text: { name: 'ธนาคารพัฒนาวิสาหกิจขนาดกลางและขนาดย่อมแห่งประเทศไทย' },
                                                                 HTMLclass: 'node-3',
                                                                 children: [
                                                                     
@@ -232,15 +232,15 @@
                     },
                     
                     {   
-                        text:{ name: 'สถาบันพลาสติก' },
+                        text: { name: 'สถาบันพลาสติก' },
                         HTMLclass: 'node-3',
                         children: [
                             {   
-                                text:{ name: 'สถาบันการก่อสร้างแห่งประเทศไทย' },
+                                text: { name: 'สถาบันการก่อสร้างแห่งประเทศไทย' },
                                 HTMLclass: 'node-3',
                                 children: [
                                     {   
-                                        text:{ name: 'สถาบันยานยนต์' },
+                                        text: { name: 'สถาบันยานยนต์' },
                                         HTMLclass: 'node-3',
                                         children: [ ],
                                     },  
