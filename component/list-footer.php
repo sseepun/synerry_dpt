@@ -20,13 +20,15 @@
     <div class="block">
         <div class="text-wrapper text-sm">
             แสดงผลต่อหน้า
-            <select class="pp">
-                <option value="10">10</option>
-                <option value="25">25</option>
-                <option value="50">50</option>
-                <option value="75">75</option>
-                <option value="100">100</option>
-            </select>
+            <div class="select-wrapper">
+                <select class="pp">
+                    <option value="10">10</option>
+                    <option value="25">25</option>
+                    <option value="50">50</option>
+                    <option value="75">75</option>
+                    <option value="100">100</option>
+                </select>
+            </div>
         </div>
     </div>
 </div>

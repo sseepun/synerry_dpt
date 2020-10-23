@@ -9,24 +9,28 @@
             </div>
         </div>
         <div class="text-wrapper">
-            <select class="category">
-                <option value="" disabled selected>แบ่งตามหมวดหมู่</option>
-                <option value="newest">แบ่งตามหมวดหมู่</option>
-            </select>
+            <div class="select-wrapper">
+                <select class="category">
+                    <option value="" disabled selected>แบ่งตามหมวดหมู่</option>
+                    <option value="newest">แบ่งตามหมวดหมู่</option>
+                </select>
+            </div>
         </div>
         <div class="text-wrapper">
-            <select class="order">
-                <option value="" disabled selected>เรียงลำดับข้อมูล</option>
-                <option value="newest">เรียงลำดับข้อมูล</option>
-            </select>
+            <div class="select-wrapper">
+                <select class="order">
+                    <option value="" disabled selected>เรียงลำดับข้อมูล</option>
+                    <option value="newest">เรียงลำดับข้อมูล</option>
+                </select>
+            </div>
         </div>
     </div>
     <div class="block">
         <div class="text-wrapper">
             <div class="options">
-                <a href="#" class="btn grid-view" data-grid-view="1">
+                <!-- <a href="#" class="btn grid-view" data-grid-view="1">
                     <i class="fas fa-th-large"></i>
-                </a>
+                </a> -->
                 <a href="#" class="btn grid-view active" data-grid-view="2">
                     <i class="fas fa-th"></i>
                 </a>

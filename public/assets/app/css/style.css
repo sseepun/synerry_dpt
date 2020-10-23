@@ -15,6 +15,14 @@ html.global-search-opened, body.global-search-opened{overflow-y:hidden!important
     html.sidenav-opened, body.sidenav-opened{overflow-y:hidden!important;}
 }
 
+select{-moz-appearance:none; -moz-appearance:none; -webkit-appearance:none; appearance:none;}
+.select-wrapper{display:inline-block; position:relative;}
+.select-wrapper::after{
+    content:'\f078'; font-family:'Font Awesome 5 Free'; font-weight:900; font-size:.6875rem;
+    position:absolute; top:0; bottom:0; right:0; width:2.125rem; pointer-events:none;
+    display:flex; align-items:center; justify-content:center;
+}
+
 
 /* Fonts */
 .font-01{font-family:'Sukhumvit'!important;}
@@ -194,7 +202,7 @@ p, .p{font-size:1.125rem; margin:.625rem 0 0 0; font-weight:300;}
     padding:.5rem 1.125rem .5rem .75rem; font-size:1rem; font-weight:300; margin:0;
     line-height:1.25;
 }
-.list-header select{padding:.55rem .75rem .5rem .75rem; margin:0 0 0 .4375rem;}
+.list-header select{padding:.5rem 2.125rem .5rem .75rem; margin:0 0 0 .4375rem;}
 .list-header .search-container{position:relative; width:100%; margin:0 auto;}
 .list-header .search-container input[type=text]{width:100%;}
 .list-header .search-container button[type=submit]{
@@ -208,14 +216,15 @@ p, .p{font-size:1.125rem; margin:.625rem 0 0 0; font-weight:300;}
     border-radius:.25rem; border:1px solid transparent;
     transition:color .3s, border-color .3s, background .3s;
 }
-@media screen and (max-width:1199.98px){
+/* @media screen and (max-width:1199.98px){
     .list-header .block{width:100%;}
-}
+} */
 @media screen and (max-width:767.98px){
     .list-header{
         flex-wrap:wrap; justify-content:center; padding:.625rem 0; margin:0 0 1.5rem 0;
         border-top:1px solid transparent; border-bottom:1px solid transparent;
     }
+    .list-header .block{width:100%;}
     .list-header > .block, .list-header form{width:100%; justify-content:center;}
 }
 @media screen and (max-width:575.98px){
@@ -234,7 +243,7 @@ p, .p{font-size:1.125rem; margin:.625rem 0 0 0; font-weight:300;}
 .list-footer .pagination{margin:0;}
 .list-footer .text-wrapper{text-align:center; font-size:1.25rem; padding:.375rem 0; font-weight:300;}
 .list-footer select{
-    padding:.375rem 1.125rem .325rem .375rem; font-size:.9375rem; font-weight:300;
+    padding:.375rem 1.4375rem .325rem .375rem; font-size:.9375rem; font-weight:300;
     margin:0 0 0 .25rem;
 }
 @media screen and (max-width:767.98px){
