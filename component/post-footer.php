@@ -2,7 +2,7 @@
     <div class="block">
         <span class="fw-900">TAGS:</span> 
         <div class="ss-tag">สำนักบริหารกลาง</div>
-        <div class="ss-tag color-white bg-color-09">โรงงานอุตสาหกรรม</div>
+        <div class="ss-tag">โรงงานอุตสาหกรรม</div>
     </div>
     <div class="block ai-start">
         <a class="btn-social height-auto" href="#" tabindex="0">

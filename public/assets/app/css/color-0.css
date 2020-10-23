@@ -241,6 +241,7 @@ nav.footer.footer-gray .ss-list > li > a:hover{color:#1f9ad3;}
 
 /* Special Tag */
 .ss-tag{background:#f7f7f7; color:#000;}
+.ss-tag:hover{background:#5a0687; color:#fff;}
 
 
 /* Table */

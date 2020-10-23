@@ -21,9 +21,9 @@
 
     <section>
         <div class="container">
-            <div class="grids">
+            <div class="row">
 
-                <div class="grid lg-25 md-35 sm-100 mt-0" style="overflow:hidden;" data-aos="fade-up" data-aos-delay="300">
+                <div class="col-lg-3 col-md-12 mt-0" style="overflow:hidden;" data-aos="fade-up" data-aos-delay="300">
                     <div class="menu-column">
                         <div class="menu-container">
                             <?php for($i=0; $i<12; $i++){?>
@@ -36,7 +36,7 @@
                     </div>
                 </div>
 
-                <div class="grid lg-75 md-65 sm-100 pb-5 mt-2" data-aos="fade-up" data-aos-delay="600">
+                <div class="col-lg-9 col-md-12 pb-5 mt-2" data-aos="fade-up" data-aos-delay="600">
                     <?php
                         $breadcrumb = [
                             [ 'url' => '#', 'name' => 'หน้าหลัก' ],
@@ -61,7 +61,7 @@
                             <div class="grid md-25">
                                 <a class="ss-img bradius-0" href="public/assets/app/images/banner/01.jpg" data-fancybox="gallery">
                                     <div class="img-bg lazy-bg" data-src="public/assets/app/images/banner/01.jpg"></div>
-                                    <div class="hover-text">
+                                    <div class="hover-text <?php if($i==7)echo 'op-100'; ?>">
                                         <p class="color-white text-center">
                                             รูปภาพทั้งหมด <br>
                                             <span class="text-xl fw-600">120</span> 
@@ -127,12 +127,12 @@
                     </div>
 
                     <div class="ss-icon-title" data-aos="fade-up" data-aos-delay="0">
-                        <div class="icon bg-color-07"><i class="far fa-file-alt color-white"></i></div>
+                        <div class="icon bg-color-07"><i class="far fa-images color-white"></i></div>
                         <h4 class="fw-600">คลังภาพที่เกี่ยวข้อง</h4>
                     </div>
-                    <div class="grids" data-aos="fade-up" data-aos-delay="300">
+                    <div class="row" data-aos="fade-up" data-aos-delay="300">
                         <?php for($i=0; $i<3; $i++){?>
-                            <div class="grid lg-1-3 md-50 sm-50">
+                            <div class="col-lg-4 col-md-6 col-sm-6 mt-4">
                                 <div class="post-card post-card-08">
                                     <div class="title-container">
                                         <a class="title h4" href="#">

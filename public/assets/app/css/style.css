@@ -203,8 +203,8 @@ p, .p{font-size:1.125rem; margin:.625rem 0 0 0; font-weight:300;}
 }
 .list-header .search-container button[type=submit] > img{display:block; width:1.25rem; height:auto;}
 .list-header .options > a{
-    display:inline-block; width:2.225rem; height:2.225rem; text-align:center;
-    line-height:2.225rem; font-size:1.375rem; margin:0; padding:0; text-align:center;
+    display:inline-block; width:2.375rem; height:2.375rem; text-align:center;
+    line-height:2.375rem; font-size:1.375rem; margin:0; padding:0; text-align:center;
     border-radius:.25rem; border:1px solid transparent;
     transition:color .3s, border-color .3s, background .3s;
 }
@@ -350,7 +350,7 @@ p, .p{font-size:1.125rem; margin:.625rem 0 0 0; font-weight:300;}
 .post-card .desc{
     font-family:'TH Sarabun New'; font-size:1.3125rem; margin:.75rem 0 0 0; line-height:1.25;
     overflow:hidden!important; display:-webkit-box!important;
-    -webkit-line-clamp:4!important; -webkit-box-orient:vertical;
+    -webkit-line-clamp:3!important; -webkit-box-orient:vertical;
 }
 .post-card .btns{margin:.875rem 0 0 0;}
 .post-card.btn-on-hover .btns{opacity:0; transition:opacity .3s;}
@@ -646,7 +646,7 @@ p, .p{font-size:1.125rem; margin:.625rem 0 0 0; font-weight:300;}
 /* Special Tag */
 .ss-tag{
     display:inline-block; font-size:.8125rem; padding:.125rem 1rem; font-weight:500;
-    border-radius:1000em;
+    border-radius:1000em; cursor:pointer; transition:color .3s, background .3s;
 }
 
 
@@ -753,9 +753,10 @@ table.table.table-download td:nth-child(4){min-width:134px; text-align:right; pa
 .fw-800{font-weight:800!important;}
 .fw-900{font-weight:900!important;}
 
-.op-0{opacity:0;}
-.op-10{opacity:.1;} .op-20{opacity:.2;} .op-30{opacity:.3;} .op-40{opacity:.4;} .op-50{opacity:.5;}
-.op-60{opacity:.6;} .op-70{opacity:.7;} .op-80{opacity:.8;} .op-90{opacity:.9;} .op-100{opacity:1;}
+.op-100{opacity:1!important;} .op-0{opacity:0!important;}
+.op-10{opacity:.1!important;} .op-20{opacity:.2!important;} .op-30{opacity:.3!important;}
+.op-40{opacity:.4!important;} .op-50{opacity:.5!important;} .op-60{opacity:.6!important;}
+.op-70{opacity:.7!important;} .op-80{opacity:.8!important;} .op-90{opacity:.9!important;}
 
 .d-block{display:block!important;}
 .d-flex{display:flex!important;}

@@ -11,7 +11,7 @@
         <div class="slide-container">
             <div class="slides">
                 <?php for($i=0; $i<8; $i++){?>
-                    <div class="slide" data-desc="<?= $i+1; ?>/8 | กำหนดชำระค่าธรรมเนียมในเดือน">
+                    <div class="slide" data-desc="กำหนดชำระค่าธรรมเนียมในเดือน | <?= $i+1; ?>/8">
                         <img src="public/assets/app/images/banner/07.jpg" alt="Banner <?= $i; ?>" />
                     </div>
                 <?php }?>
@@ -99,7 +99,9 @@
                                             <p class="date">21. 09.2563</p>
                                             <a class="ss-img bradius-0" href="#">
                                                 <div class="img-bg lazy-bg" data-src="public/assets/app/images/banner/01.jpg"></div>
-                                                <div class="socials"></div>
+                                                <div class="hover-container">
+                                                    <img src="public/assets/app/images/icon/search-02.png" alt="Hover Image" />
+                                                </div>
                                             </a>
                                             <p class="desc">
                                                 กระทรวงอุตสาหกรรม (อก.) ผลักดันแผน
@@ -155,7 +157,9 @@
                                         </div>
                                         <a class="ss-img bradius-0" href="#">
                                             <div class="img-bg lazy-bg" data-src="public/assets/app/images/banner/02.jpg"></div>
-                                            <div class="socials"></div>
+                                            <div class="hover-container">
+                                                <img src="public/assets/app/images/icon/search-02.png" alt="Hover Image" />
+                                            </div>
                                         </a>
                                     </div>
                                 <?php }?>
@@ -173,7 +177,9 @@
                                     <div class="grid md-1-3">
                                         <a class="ss-img bradius-0" href="#">
                                             <div class="img-bg lazy-bg" data-src="public/assets/app/images/banner/03.jpg"></div>
-                                            <div class="socials"></div>
+                                            <div class="hover-container">
+                                                <img src="public/assets/app/images/icon/search-02.png" alt="Hover Image" />
+                                            </div>
                                         </a>
                                         <div class="post-card post-card-03 btn-on-hover bg-color-white">
                                             <div class="title-container">
@@ -223,7 +229,7 @@
                                 <p class="date">21. 09.2563</p>
                             </div>
                             
-                            <div class="table-wrapper">
+                            <div class="table-wrapper pr-4">
                                 <div class="post-card post-card-03 pt-0 pb-0">
                                     <h4>เอกสารแนบ</h4>
                                 </div>
@@ -520,7 +526,9 @@
                                                         <div class="block">
                                                             <a class="ss-img square bradius-0" href="#">
                                                                 <div class="img-bg lazy-bg" data-src="public/assets/app/images/banner/0<?= $k; ?>.jpg"></div>
-                                                                <div class="socials"></div>
+                                                                <div class="hover-container">
+                                                                    <img src="public/assets/app/images/icon/search-02.png" alt="Hover Image" />
+                                                                </div>
                                                             </a>
                                                         </div>
                                                         <div class="block">
@@ -549,7 +557,9 @@
                                                         <div class="block">
                                                             <a class="ss-img square bradius-0" href="#">
                                                                 <div class="img-bg lazy-bg" data-src="public/assets/app/images/banner/0<?= $k; ?>.jpg"></div>
-                                                                <div class="socials"></div>
+                                                                <div class="hover-container">
+                                                                    <img src="public/assets/app/images/icon/search-02.png" alt="Hover Image" />
+                                                                </div>
                                                             </a>
                                                         </div>
                                                         <div class="block">

@@ -21,9 +21,9 @@
 
     <section>
         <div class="container">
-            <div class="grids">
+            <div class="row">
 
-                <div class="grid lg-25 md-35 sm-100 mt-0" style="overflow:hidden;" data-aos="fade-up" data-aos-delay="300">
+                <div class="col-lg-3 col-md-12 mt-0" style="overflow:hidden;" data-aos="fade-up" data-aos-delay="300">
                     <div class="menu-column">
                         <div class="menu-container">
                             <?php for($i=0; $i<12; $i++){?>
@@ -36,7 +36,7 @@
                     </div>
                 </div>
 
-                <div class="grid lg-75 md-65 sm-100 pb-5 mt-2" data-aos="fade-up" data-aos-delay="600">
+                <div class="col-lg-9 col-md-12 pb-5 mt-2" data-aos="fade-up" data-aos-delay="600">
                     <?php
                         $breadcrumb = [
                             [ 'url' => '#', 'name' => 'หน้าหลัก' ],
