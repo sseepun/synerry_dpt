@@ -116,9 +116,9 @@
         
     </section>
 
-    <section class="section-padding" style="background-color:#e9e9e9; position:relative;">
+    <section class="section-padding" style="background-image:url('public/assets/app/images/bg/32.jpg'); background-size:cover; background-position:center; background-repeat:no-repeat;">
         <div class="container">
-            <h3 class="text-center">ไฮไลท์ - ข่าวประชาสัมพันธ์</h3>
+            <h3 class="text-center color-white">ไฮไลท์ - ข่าวประชาสัมพันธ์</h3>
             <div class="grids">
             <?php for($i=0; $i<3; $i++){?>
                 <div class="grid lg-1-3 md-50 sm-100">
@@ -165,7 +165,7 @@
     </div>
 
 
-    <section class="section-padding" style="background-color:#e9e9e9;">
+    <section class="section-padding" style="background-image:url('public/assets/app/images/bg/33.jpg'); background-size:cover; background-position:center; background-repeat:no-repeat;">
         <div class="container">
             <h3 class="text-center color-02">ข่าวประชาสัมพันธ์ </h3>
             <div class="grids">
