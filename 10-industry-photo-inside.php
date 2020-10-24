@@ -62,11 +62,15 @@
                                 <a class="ss-img bradius-0" href="public/assets/app/images/banner/01.jpg" data-fancybox="gallery">
                                     <div class="img-bg lazy-bg" data-src="public/assets/app/images/banner/01.jpg"></div>
                                     <div class="hover-text <?php if($i==7)echo 'op-100'; ?>">
-                                        <p class="color-white text-center">
-                                            รูปภาพทั้งหมด <br>
-                                            <span class="text-xl fw-600">120</span> 
-                                            รูปภาพ
-                                        </p>
+                                        <?php if($i<7){?>
+                                            <img src="public/assets/app/images/icon/search-02.png" alt="Hover Image" />
+                                        <?php }else{?>
+                                            <p class="color-white text-center">
+                                                รูปภาพทั้งหมด <br>
+                                                <span class="text-xl fw-600">120</span> 
+                                                รูปภาพ
+                                            </p>
+                                        <?php }?>
                                     </div>
                                 </a>
                             </div>
@@ -87,11 +91,11 @@
                                             <div class="fw-600 color-04 text-lg">
                                                 ประกาศกรมอนามัย ฉบับที่ 27/04.pdf
                                             </div>
-                                            <div class="mt-1">
-                                                <span class="text-sm">ขนาดไฟล์</span>
+                                            <div class="table-desc">
+                                                ขนาดไฟล์
                                                 <span class="fw-600 color-04">1.31 MB</span>
-                                                <span class="text-sm">|</span>
-                                                <span class="text-sm">จำนวนดาวน์โหลด</span>
+                                                <span class="sep"></span>
+                                                จำนวนดาวน์โหลด
                                                 <span class="fw-600 color-04">16 ครั้ง</span>
                                             </div>
                                         </td>
@@ -135,32 +139,34 @@
                         <?php for($i=0; $i<3; $i++){?>
                             <div class="col-lg-4 col-md-6 col-sm-6 mt-4">
                                 <div class="post-card post-card-08">
-                                    <div class="title-container">
-                                        <a class="title h4" href="#">
-                                            สุริยะฯ ดันแผนพัฒนาอุตฯ 
-                                            เครื่องจักรกลเต็มสูบ มุ่งสนับสนุน
-                                            เกษตรแปรรูป ชี้เป็นจุดเริ่มต้นการ
-                                            ปฏิรูปโครงสร้างศก
-                                        </a>
-                                    </div>
-                                    <div class="d-flex ai-center jc-space-between stats">
-                                        <div class="date">13.08.2563</div>
-                                        <div class="d-flex view">
-                                            <div class="icon"><i class="far fa-image"></i></div>
-                                            15
+                                    <div class="wrapper">
+                                        <div class="title-container">
+                                            <a class="title h4" href="#">
+                                                สุริยะฯ ดันแผนพัฒนาอุตฯ 
+                                                เครื่องจักรกลเต็มสูบ มุ่งสนับสนุน
+                                                เกษตรแปรรูป ชี้เป็นจุดเริ่มต้นการ
+                                                ปฏิรูปโครงสร้างศก
+                                            </a>
                                         </div>
-                                        <div class="d-flex view">
-                                            <div class="icon"><i class="fas fa-eye"></i></div>
-                                            268
+                                        <div class="d-flex ai-center jc-space-between stats">
+                                            <div class="date">13.08.2563</div>
+                                            <div class="d-flex view">
+                                                <div class="icon"><i class="far fa-image"></i></div>
+                                                15
+                                            </div>
+                                            <div class="d-flex view">
+                                                <div class="icon"><i class="fas fa-eye"></i></div>
+                                                268
+                                            </div>
                                         </div>
                                     </div>
+                                    <a class="ss-img square  bradius-0" href="#">
+                                        <div class="img-bg lazy-bg" data-src="public/assets/app/images/banner/01.jpg"></div>
+                                        <div class="hover-container">
+                                            <img src="public/assets/app/images/icon/search-02.png" alt="Hover Image" />
+                                        </div>
+                                    </a>
                                 </div>
-                                <a class="ss-img square  bradius-0" href="#">
-                                    <div class="img-bg lazy-bg" data-src="public/assets/app/images/banner/01.jpg"></div>
-                                    <div class="hover-container">
-                                        <img src="public/assets/app/images/icon/search-02.png" alt="Hover Image" />
-                                    </div>
-                                </a>
                             </div>
                         <?php }?>
                     </div>

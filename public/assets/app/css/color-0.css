@@ -205,8 +205,8 @@ nav.footer.footer-gray .ss-list > li > a:hover{color:#1f9ad3;}
 
 
 /* Post Card */
-.post-card > .title-container > .title{color:#000;}
-.post-card > .title-container > .title:hover{color:#88009b;}
+.post-card .title-container > .title{color:#000;}
+.post-card .title-container > .title:hover{color:#88009b;}
 .post-card .title-container > .by, .post-card .desc{color:#343a40;}
 .post-card .stats{color:#88009b;}
 .post-card.post-card-02{color:#fff;}
@@ -253,6 +253,8 @@ table.table.table-gray tbody td{background:#ebebeb; color:#000;}
 table.table.table-gray tbody tr:nth-child(even) > td{background:#f3f3f3;}
 table.table.table-gray .icon{color:#000;}
 table.table.table-gray .icon:hover{color:#8e5e9c;}
+table.table .table-desc, table.table .table-desc a{color:#9b9b9b;}
+table.table .table-desc .sep{background:#9b9b9b;}
 table.table.table-download td{background:#f0f0f0; border-color:#dadada;}
 table.table.table-download tr.row-sep > td{background:transparent; border-color:transparent;}
 table.table.table-download tbody > tr.row-title > td{background:#393939; color:#fff;}

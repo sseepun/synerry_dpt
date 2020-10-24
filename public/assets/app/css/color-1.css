@@ -150,7 +150,7 @@ nav.footer > .footer-bottom .wrapper > .count-area{background:#fff; color:#000;}
 
 
 /* Post Card */
-.post-card > .title-container > .title{color:#fff;}
+.post-card .title-container > .title{color:#fff;}
 .post-card.post-card-04 .title-container > .title::before{background:#fff;}
 .post-card.post-card-05, .post-card.post-card-06{border-color:#fff;}
 .post-card.post-card-06::before{background:#fff;}
@@ -183,6 +183,7 @@ table.table .v-sep{background:#fff;}
 table.table.table-gray, table.table.table-gray td{border-color:#fff;}
 table.table.table-gray tbody td{color:#fff;}
 table.table.table-gray .icon{color:#fff;}
+table.table .table-desc .sep{background:#fff;}
 table.table.table-download td{border-color:rgba(255,255,255,.2);}
 table.table.table-download tr.row-sep > td{
     border-top:2px solid #fff; border-bottom:2px solid #fff;

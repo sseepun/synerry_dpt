@@ -88,11 +88,11 @@
                                             <div class="fw-600 color-04 text-lg">
                                                 ประกาศกรมอนามัย ฉบับที่ 27/04.pdf
                                             </div>
-                                            <div class="mt-1">
-                                                <span class="text-sm">ขนาดไฟล์</span>
+                                            <div class="table-desc">
+                                                ขนาดไฟล์
                                                 <span class="fw-600 color-04">1.31 MB</span>
-                                                <span class="text-sm">|</span>
-                                                <span class="text-sm">จำนวนดาวน์โหลด</span>
+                                                <span class="sep"></span>
+                                                จำนวนดาวน์โหลด
                                                 <span class="fw-600 color-04">16 ครั้ง</span>
                                             </div>
                                         </td>
@@ -123,11 +123,15 @@
                                 <a class="ss-img bradius-0" href="public/assets/app/images/banner/01.jpg" data-fancybox="gallery">
                                     <div class="img-bg lazy-bg" data-src="public/assets/app/images/banner/01.jpg"></div>
                                     <div class="hover-text <?php if($i==7)echo 'op-100'; ?>">
-                                        <p class="color-white text-center">
-                                            รูปภาพทั้งหมด <br>
-                                            <span class="text-xl fw-600">120</span> 
-                                            รูปภาพ
-                                        </p>
+                                        <?php if($i<7){?>
+                                            <img src="public/assets/app/images/icon/search-02.png" alt="Hover Image" />
+                                        <?php }else{?>
+                                            <p class="color-white text-center">
+                                                รูปภาพทั้งหมด <br>
+                                                <span class="text-xl fw-600">120</span> 
+                                                รูปภาพ
+                                            </p>
+                                        <?php }?>
                                     </div>
                                 </a>
                             </div>

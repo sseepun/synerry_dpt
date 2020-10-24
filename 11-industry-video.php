@@ -51,44 +51,46 @@
                         <?php for($i=0; $i<8; $i++){?>
                             <div class="col-xl-4 col-lg-6 col-md-6 col-sm-6 mt-4">
                                 <div class="post-card post-card-08">
-                                    <div class="title-container">
-                                        <a class="title h4" href="#">
-                                            สุริยะฯ ดันแผนพัฒนาอุตฯ 
-                                            เครื่องจักรกลเต็มสูบ มุ่งสนับสนุน
-                                            เกษตรแปรรูป ชี้เป็นจุดเริ่มต้นการ
-                                            ปฏิรูปโครงสร้างศก
-                                        </a>
-                                    </div>
-                                    <div class="d-flex ai-center jc-space-between stats">
-                                        <div class="date">13.08.2563</div>
-                                        <div class="d-flex view">
-                                            <div class="icon"><i class="far fa-clock"></i></div>
-                                            3:05
-                                        </div>
-                                        <div class="d-flex view">
-                                            <div class="icon"><i class="fas fa-eye"></i></div>
-                                            268
-                                        </div>
-                                    </div>
-                                </div>
-                                <?php if($i%2==0){?>
-                                    <div class="ss-video square bradius-0">
-                                        <div class="img-bg lazy-bg" data-src="public/assets/app/images/banner/01.jpg"></div>
-                                        <div class="hover-container"></div>
-                                        <div class="play-container">
-                                            <a class="play-icon" href="https://www.youtube.com/watch?v=4NRXx6U8ABQ" data-fancybox="">
-                                                <i class="fas fa-play"></i>
+                                    <div class="wrapper">
+                                        <div class="title-container">
+                                            <a class="title h4" href="#">
+                                                สุริยะฯ ดันแผนพัฒนาอุตฯ 
+                                                เครื่องจักรกลเต็มสูบ มุ่งสนับสนุน
+                                                เกษตรแปรรูป ชี้เป็นจุดเริ่มต้นการ
+                                                ปฏิรูปโครงสร้างศก
                                             </a>
                                         </div>
-                                    </div>
-                                <?php }else{?>
-                                    <a class="ss-img square bradius-0" href="#">
-                                        <div class="img-bg lazy-bg" data-src="public/assets/app/images/banner/01.jpg"></div>
-                                        <div class="hover-container">
-                                            <img src="public/assets/app/images/icon/search-02.png" alt="Hover Image" />
+                                        <div class="d-flex ai-center jc-space-between stats">
+                                            <div class="date">13.08.2563</div>
+                                            <div class="d-flex view">
+                                                <div class="icon"><i class="far fa-clock"></i></div>
+                                                3:05
+                                            </div>
+                                            <div class="d-flex view">
+                                                <div class="icon"><i class="fas fa-eye"></i></div>
+                                                268
+                                            </div>
                                         </div>
-                                    </a>
-                                <?php }?>
+                                    </div>
+                                    <?php if($i%2==0){?>
+                                        <div class="ss-video square bradius-0">
+                                            <div class="img-bg lazy-bg" data-src="public/assets/app/images/banner/01.jpg"></div>
+                                            <div class="hover-container"></div>
+                                            <div class="play-container">
+                                                <a class="play-icon" href="https://www.youtube.com/watch?v=4NRXx6U8ABQ" data-fancybox="">
+                                                    <i class="fas fa-play"></i>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    <?php }else{?>
+                                        <a class="ss-img square bradius-0" href="#">
+                                            <div class="img-bg lazy-bg" data-src="public/assets/app/images/banner/01.jpg"></div>
+                                            <div class="hover-container">
+                                                <img src="public/assets/app/images/icon/search-02.png" alt="Hover Image" />
+                                            </div>
+                                        </a>
+                                    <?php }?>
+                                </div>
                             </div>
                         <?php }?>
                     </div>

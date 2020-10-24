@@ -83,34 +83,36 @@
                     <div class="row" data-aos="fade-up" data-aos-delay="300">
                         <?php for($i=0; $i<3; $i++){?>
                             <div class="col-lg-4 col-md-6 col-sm-6 mt-4">
-                                <div class="ss-video square bradius-0">
-                                    <div class="img-bg lazy-bg" data-src="public/assets/app/images/banner/01.jpg"></div>
-                                    <div class="hover-container"></div>
-                                    <div class="play-container">
-                                        <a class="play-icon" href="https://www.youtube.com/watch?v=4NRXx6U8ABQ" data-fancybox="">
-                                            <i class="fas fa-play"></i>
-                                        </a>
-                                    </div>
-                                </div>
-                                <div class="post-card post-card-08 pb-5">
-                                    <div class="d-flex ai-center jc-space-between stats mt-0">
-                                        <div class="date">13.08.2563</div>
-                                        <div class="d-flex view">
-                                            <div class="icon"><i class="far fa-clock"></i></div>
-                                            3:05
-                                        </div>
-                                        <div class="d-flex view">
-                                            <div class="icon"><i class="fas fa-eye"></i></div>
-                                            268
+                                <div class="post-card post-card-08">
+                                    <div class="ss-video square bradius-0">
+                                        <div class="img-bg lazy-bg" data-src="public/assets/app/images/banner/01.jpg"></div>
+                                        <div class="hover-container"></div>
+                                        <div class="play-container">
+                                            <a class="play-icon" href="https://www.youtube.com/watch?v=4NRXx6U8ABQ" data-fancybox="">
+                                                <i class="fas fa-play"></i>
+                                            </a>
                                         </div>
                                     </div>
-                                    <div class="title-container">
-                                        <a class="title h4" href="#">
-                                            สุริยะฯ ดันแผนพัฒนาอุตฯ 
-                                            เครื่องจักรกลเต็มสูบ มุ่งสนับสนุน
-                                            เกษตรแปรรูป ชี้เป็นจุดเริ่มต้นการ
-                                            ปฏิรูปโครงสร้างศก
-                                        </a>
+                                    <div class="wrapper pt-3 pb-4">
+                                        <div class="d-flex ai-center jc-space-between stats mt-0">
+                                            <div class="date">13.08.2563</div>
+                                            <div class="d-flex view">
+                                                <div class="icon"><i class="far fa-clock"></i></div>
+                                                3:05
+                                            </div>
+                                            <div class="d-flex view">
+                                                <div class="icon"><i class="fas fa-eye"></i></div>
+                                                268
+                                            </div>
+                                        </div>
+                                        <div class="title-container">
+                                            <a class="title h4" href="#">
+                                                สุริยะฯ ดันแผนพัฒนาอุตฯ 
+                                                เครื่องจักรกลเต็มสูบ มุ่งสนับสนุน
+                                                เกษตรแปรรูป ชี้เป็นจุดเริ่มต้นการ
+                                                ปฏิรูปโครงสร้างศก
+                                            </a>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
