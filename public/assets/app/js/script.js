@@ -241,10 +241,62 @@ $(function(){ 'use strict';
         $('.popup-container[data-popup="'+$(this).data('popup')+'"]').toggleClass('active');
     });
 
+    // Button Copy
+    var copyReady = true;
+    $('a[data-copy]').click(function(e){
+        e.preventDefault();
+        var self = $(this),
+            target = $('textarea[data-copy="'+self.data('copy')+'"]');
+        if(copyReady && target.length){
+            copyReady = false;
+            target[0].select();
+            target[0].setSelectionRange(0, target[0].value.length);
+            document.execCommand('copy');
+            target.blur();
+            self.html('<i class="fas fa-check"></i> คัดลอกโค๊ดสำเร็จ');
+            setTimeout(function(){
+                copyReady = true;
+                self.closest('.toggle-target').slideUp();
+                self.html('คัดลอกโค้ด');
+            }, 2000);
+        }
+    });
+
+
+    // Swiper
+    var swiperContainers = $('.swiper-container[data-swiper]');
+    if(swiperContainers.length){
+        swiperContainers.each(function(){
+            var self = $(this),
+                dataClass = 'swiper-'+self.data('swiper');
+            self.addClass(dataClass);
+            self.find('.swiper-pagination').addClass(dataClass);
+            new Swiper('.swiper-container.'+dataClass, {
+                effect: 'coverflow',
+                grabCursor: true,
+                centeredSlides: true,
+                slidesPerView: 'auto',
+                observer: true,
+                observeParents: true,
+                coverflowEffect: {
+                    rotate: 50,
+                    stretch: 0,
+                    depth: 100,
+                    modifier: 0.8,
+                    slideShadows: true,
+                },
+                pagination: {
+                    el: '.swiper-pagination.'+dataClass,
+                },
+            });
+        });
+    }
+
 
     // Banner 01
-    if($('section.banner-01').length){
-        $('section.banner-01').each(function(){
+    var banner01 = $('section.banner-01');
+    if(banner01.length){
+        banner01.each(function(){
             var self = $(this),
                 options = {
                     centerMode: true, centerPadding: 0, slidesToShow: 1, 
@@ -279,8 +331,9 @@ $(function(){ 'use strict';
 
     
     // Call to Action 02
-    if($('section.call-02').length){
-        $('section.call-02 .slide-container').each(function(){
+    var call02 = $('section.call-02');
+    if(call02.length){
+        call02.find('.slide-container').each(function(){
             var self = $(this);
             self.find('> .slides').slick({
                 centerMode: true, centerPadding: 0, slidesToShow: 6, 
@@ -298,8 +351,9 @@ $(function(){ 'use strict';
 
 
     // Content 01
-    if($('section.content-01').length){
-        $('section.content-01').each(function(){
+    var content01 = $('section.content-01');
+    if(content01.length){
+        content01.each(function(){
             var self = $(this),
                 contentTabs = self.find('.content-tabs > .tab'),
                 contents = self.find('.contents > .content');
@@ -316,8 +370,9 @@ $(function(){ 'use strict';
 
     
     // FAQ 01
-    if($('.faq-01').length){
-        $('.faq-01').each(function(){
+    var faq01 = $('.faq-01');
+    if(faq01.length){
+        faq01.each(function(){
             $(this).find('.question').click(function(e){
                 e.preventDefault();
                 var self = $(this);
@@ -329,8 +384,9 @@ $(function(){ 'use strict';
     
 
     // Tab Container
-    if($('.tab-container').length){
-        $('.tab-container').each(function(){
+    var tabContainers = $('.tab-container');
+    if(tabContainers.length){
+        tabContainers.each(function(){
             var self = $(this),
                 tabs = self.find('> .tabs > .tab'),
                 tabContents = self.find('> .tab-contents > .tab-content');

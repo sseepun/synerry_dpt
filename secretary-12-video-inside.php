@@ -61,20 +61,7 @@
                             </a>
                         </div>
                     </div>
-                    <?php include_once('component/post-footer.php'); ?>
-                    
-                    <div class="ss-icon-title" data-aos="fade-up" data-aos-delay="0">
-                        <div class="icon bg-color-07"><i class="fas fa-code color-white"></i></div>
-                        <h4 class="fw-600">EMBED</h4>
-                    </div>
-                    <div class="toggle-target d-block mt-3 pb-4 border-bottom">
-                        <textarea name="message" class="no-bradius" rows="2"></textarea>
-                        <div class="btns mt-0">
-                            <a class="btn btn-sm custom-btn-09 no-bradius width-full" href="#">
-                                คัดลอกโค้ด
-                            </a>
-                        </div>
-                    </div>
+                    <?php include_once('component/post-footer-embed.php'); ?>
 
                     <div class="ss-icon-title" data-aos="fade-up" data-aos-delay="0">
                         <div class="icon bg-color-07"><i class="fas fa-film color-white"></i></div>

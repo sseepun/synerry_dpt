@@ -21,7 +21,7 @@
         </div>
     </section>
 
-    <section class="section-padding">
+    <section class="section-padding pb-0">
         <div class="container">
             <h3 class="text-center mb-0 font-02 fw-600" data-aos="fade-up" data-aos-delay="0">
                 ข่าวกระทรวงอุตสาหกรรม
@@ -81,220 +81,276 @@
 
                     <!-- Tab 1 -->
                     <div class="tab-content active" data-tab="1">
-                        <div class="hero lazy-bg" data-src="public/assets/app/images/bg/09.jpg"></div>
-                        <div class="contents">
-                            <div class="grids">
-                                <?php for($j=0; $j<3; $j++){?>
-                                    <div class="grid md-1-3">
-                                        <div class="post-card btn-on-hover">
-                                            <div class="title-container">
-                                                <a class="title h4" href="#">
-                                                    สุริยะฯ ดันแผนพัฒนาอุตฯ 
-                                                    เครื่องจักรกลเต็มสูบ มุ่งสนับสนุน
-                                                    เกษตรแปรรูป ชี้เป็นจุดเริ่มต้นการ
-                                                    ปฏิรูปโครงสร้างศก
-                                                </a>
-                                                <p class="by">เขียนโดย : <strong>สำนักบริหารกลาง</strong></p>
-                                            </div>
-                                            <p class="date">21. 09.2563</p>
-                                            <a class="ss-img bradius-0" href="#">
-                                                <div class="img-bg lazy-bg" data-src="public/assets/app/images/banner/01.jpg"></div>
-                                                <div class="hover-container">
-                                                    <img src="public/assets/app/images/icon/search-02.png" alt="Hover Image" />
+                        <div class="content-wrapper">
+                            <div class="hero lazy-bg" data-src="public/assets/app/images/bg/09.jpg"></div>
+                            <div class="contents">
+                                <div class="grids">
+                                    <?php for($j=0; $j<3; $j++){?>
+                                        <div class="grid md-1-3">
+                                            <div class="post-card btn-on-hover">
+                                                <div class="title-container">
+                                                    <a class="title h4" href="#">
+                                                        สุริยะฯ ดันแผนพัฒนาอุตฯ 
+                                                        เครื่องจักรกลเต็มสูบ มุ่งสนับสนุน
+                                                        เกษตรแปรรูป ชี้เป็นจุดเริ่มต้นการ
+                                                        ปฏิรูปโครงสร้างศก
+                                                    </a>
+                                                    <p class="by">เขียนโดย : <strong>สำนักบริหารกลาง</strong></p>
                                                 </div>
-                                            </a>
-                                            <p class="desc">
-                                                กระทรวงอุตสาหกรรม (อก.) ผลักดันแผน
-                                                อุตสาหกรรมเครื่องจักรกลให้เป็นอุตสาหกรรม
-                                                สนับสนุนเพิ่มขีดความสามารถการผลิตทั้ง
-                                                ภาคอุตสาหกรรมและภาคเกษตรกรรม...
-                                            </p>
-                                            <div class="btns">
-                                                <a class="btn-action btn-action-primary" href="#">
-                                                    <i class="fas fa-chevron-right"></i>
-                                                    อ่านรายละเอียด
+                                                <p class="date">21. 09.2563</p>
+                                                <a class="ss-img bradius-0" href="#">
+                                                    <div class="img-bg lazy-bg" data-src="public/assets/app/images/banner/01.jpg"></div>
+                                                    <div class="hover-container">
+                                                        <img src="public/assets/app/images/icon/search-02.png" alt="Hover Image" />
+                                                    </div>
                                                 </a>
+                                                <p class="desc">
+                                                    กระทรวงอุตสาหกรรม (อก.) ผลักดันแผน
+                                                    อุตสาหกรรมเครื่องจักรกลให้เป็นอุตสาหกรรม
+                                                    สนับสนุนเพิ่มขีดความสามารถการผลิตทั้ง
+                                                    ภาคอุตสาหกรรมและภาคเกษตรกรรม...
+                                                </p>
+                                                <div class="btns">
+                                                    <a class="btn-action btn-action-primary" href="#">
+                                                        <i class="fas fa-chevron-right"></i>
+                                                        อ่านรายละเอียด
+                                                    </a>
+                                                </div>
                                             </div>
                                         </div>
-                                    </div>
-                                <?php }?>
+                                    <?php }?>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="pagination mt-5 mb-5" data-aos="fade-up" data-aos-delay="0">
+                            <div class="wrapper">
+                                <a href="#" class="page-btn page-prev disabled"></a>
+                                <a href="#" class="page-btn active">01</a>
+                                <a href="#" class="page-btn">02</a>
+                                <a href="#" class="page-btn">03</a>
+                                <a href="#" class="page-btn">04</a>
+                                <a href="#" class="page-btn">05</a>
+                                <a href="#" class="page-btn page-next"></a>
+                                <a class="btn btn-round custom-btn-dark btn-sm" href="#">
+                                    อ่านข่าวทั้งหมด
+                                </a>
                             </div>
                         </div>
                     </div>
 
                     <!-- Tab 2 -->
                     <div class="tab-content" data-tab="2">
-                        <div class="hero lazy-bg" data-src="public/assets/app/images/bg/10.jpg"></div>
-                        <div class="contents pl-0">
-                            <div class="grids no-gap">
-                                <?php for($j=0; $j<3; $j++){?>
-                                    <div class="grid md-1-3 mt-0">
-                                        <div class="post-card post-card-02 bg-color-0<?= $j+1; ?> btn-on-hover">
-                                            <div class="title-container">
-                                                <a class="title h4" href="#">
-                                                    สุริยะฯ ดันแผนพัฒนาอุตฯ 
-                                                    เครื่องจักรกลเต็มสูบ มุ่งสนับสนุน
-                                                    เกษตรแปรรูป ชี้เป็นจุดเริ่มต้นการ
-                                                    ปฏิรูปโครงสร้างศก
-                                                </a>
-                                                <p class="by color-white">
-                                                    เขียนโดย : <strong>สำนักบริหารกลาง</strong>
+                        <div class="content-wrapper">
+                            <div class="hero lazy-bg" data-src="public/assets/app/images/bg/10.jpg"></div>
+                            <div class="contents pl-0">
+                                <div class="grids no-gap">
+                                    <?php for($j=0; $j<3; $j++){?>
+                                        <div class="grid md-1-3 mt-0">
+                                            <div class="post-card post-card-02 bg-color-0<?= $j+1; ?> btn-on-hover">
+                                                <div class="title-container">
+                                                    <a class="title h4" href="#">
+                                                        สุริยะฯ ดันแผนพัฒนาอุตฯ 
+                                                        เครื่องจักรกลเต็มสูบ มุ่งสนับสนุน
+                                                        เกษตรแปรรูป ชี้เป็นจุดเริ่มต้นการ
+                                                        ปฏิรูปโครงสร้างศก
+                                                    </a>
+                                                    <p class="by color-white">
+                                                        เขียนโดย : <strong>สำนักบริหารกลาง</strong>
+                                                    </p>
+                                                </div>
+                                                <p class="date color-05">21. 09.2563</p>
+                                                <p class="desc color-white">
+                                                    กระทรวงอุตสาหกรรม (อก.) ผลักดันแผน
+                                                    อุตสาหกรรมเครื่องจักรกลให้เป็นอุตสาหกรรม
+                                                    สนับสนุนเพิ่มขีดความสามารถการผลิตทั้ง
+                                                    ภาคอุตสาหกรรมและภาคเกษตรกรรม...
                                                 </p>
+                                                <div class="btns">
+                                                    <a class="btn-action btn-action-white" href="#">
+                                                        <i class="fas fa-chevron-right"></i>
+                                                        อ่านรายละเอียด
+                                                    </a>
+                                                </div>
                                             </div>
-                                            <p class="date color-05">21. 09.2563</p>
-                                            <p class="desc color-white">
-                                                กระทรวงอุตสาหกรรม (อก.) ผลักดันแผน
-                                                อุตสาหกรรมเครื่องจักรกลให้เป็นอุตสาหกรรม
-                                                สนับสนุนเพิ่มขีดความสามารถการผลิตทั้ง
-                                                ภาคอุตสาหกรรมและภาคเกษตรกรรม...
-                                            </p>
-                                            <div class="btns">
-                                                <a class="btn-action btn-action-white" href="#">
-                                                    <i class="fas fa-chevron-right"></i>
-                                                    อ่านรายละเอียด
-                                                </a>
-                                            </div>
+                                            <a class="ss-img bradius-0" href="#">
+                                                <div class="img-bg lazy-bg" data-src="public/assets/app/images/banner/02.jpg"></div>
+                                                <div class="hover-container">
+                                                    <img src="public/assets/app/images/icon/search-02.png" alt="Hover Image" />
+                                                </div>
+                                            </a>
                                         </div>
-                                        <a class="ss-img bradius-0" href="#">
-                                            <div class="img-bg lazy-bg" data-src="public/assets/app/images/banner/02.jpg"></div>
-                                            <div class="hover-container">
-                                                <img src="public/assets/app/images/icon/search-02.png" alt="Hover Image" />
-                                            </div>
-                                        </a>
-                                    </div>
-                                <?php }?>
+                                    <?php }?>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="pagination mt-5 mb-5" data-aos="fade-up" data-aos-delay="0">
+                            <div class="wrapper">
+                                <a href="#" class="page-btn page-prev disabled"></a>
+                                <a href="#" class="page-btn active">01</a>
+                                <a href="#" class="page-btn">02</a>
+                                <a href="#" class="page-btn">03</a>
+                                <a href="#" class="page-btn">04</a>
+                                <a href="#" class="page-btn">05</a>
+                                <a href="#" class="page-btn page-next"></a>
+                                <a class="btn btn-round custom-btn-dark btn-sm" href="#">
+                                    อ่านข่าวทั้งหมด
+                                </a>
                             </div>
                         </div>
                     </div>
 
                     <!-- Tab 3 -->
                     <div class="tab-content" data-tab="3">
-                        <div class="filter-bg bg-color-02"></div>
-                        <div class="hero lazy-bg" data-src="public/assets/app/images/bg/11.jpg"></div>
-                        <div class="contents">
-                            <div class="grids">
-                                <?php for($j=0; $j<3; $j++){?>
-                                    <div class="grid md-1-3">
-                                        <a class="ss-img bradius-0" href="#">
-                                            <div class="img-bg lazy-bg" data-src="public/assets/app/images/banner/03.jpg"></div>
-                                            <div class="hover-container">
-                                                <img src="public/assets/app/images/icon/search-02.png" alt="Hover Image" />
-                                            </div>
-                                        </a>
-                                        <div class="post-card post-card-03 btn-on-hover bg-color-white">
-                                            <div class="title-container">
-                                                <a class="title h4" href="#">
-                                                    สุริยะฯ ดันแผนพัฒนาอุตฯ 
-                                                    เครื่องจักรกลเต็มสูบ มุ่งสนับสนุน
-                                                    เกษตรแปรรูป ชี้เป็นจุดเริ่มต้นการ
-                                                    ปฏิรูปโครงสร้างศก
-                                                </a>
-                                                <p class="by">เขียนโดย : <strong>สำนักบริหารกลาง</strong></p>
-                                            </div>
-                                            <p class="date">21. 09.2563</p>
-                                            <p class="desc">
-                                                กระทรวงอุตสาหกรรม (อก.) ผลักดันแผน
-                                                อุตสาหกรรมเครื่องจักรกลให้เป็นอุตสาหกรรม
-                                                สนับสนุนเพิ่มขีดความสามารถการผลิตทั้ง
-                                                ภาคอุตสาหกรรมและภาคเกษตรกรรม...
-                                            </p>
-                                            <div class="btns">
-                                                <a class="btn-action btn-action-primary" href="#">
-                                                    <i class="fas fa-chevron-right"></i>
-                                                    อ่านรายละเอียด
-                                                </a>
+                        <div class="content-wrapper">
+                            <div class="filter-bg bg-color-02"></div>
+                            <div class="hero lazy-bg" data-src="public/assets/app/images/bg/11.jpg"></div>
+                            <div class="contents">
+                                <div class="grids">
+                                    <?php for($j=0; $j<3; $j++){?>
+                                        <div class="grid md-1-3">
+                                            <a class="ss-img bradius-0" href="#">
+                                                <div class="img-bg lazy-bg" data-src="public/assets/app/images/banner/03.jpg"></div>
+                                                <div class="hover-container">
+                                                    <img src="public/assets/app/images/icon/search-02.png" alt="Hover Image" />
+                                                </div>
+                                            </a>
+                                            <div class="post-card post-card-03 btn-on-hover bg-color-white">
+                                                <div class="title-container">
+                                                    <a class="title h4" href="#">
+                                                        สุริยะฯ ดันแผนพัฒนาอุตฯ 
+                                                        เครื่องจักรกลเต็มสูบ มุ่งสนับสนุน
+                                                        เกษตรแปรรูป ชี้เป็นจุดเริ่มต้นการ
+                                                        ปฏิรูปโครงสร้างศก
+                                                    </a>
+                                                    <p class="by">เขียนโดย : <strong>สำนักบริหารกลาง</strong></p>
+                                                </div>
+                                                <p class="date">21. 09.2563</p>
+                                                <p class="desc">
+                                                    กระทรวงอุตสาหกรรม (อก.) ผลักดันแผน
+                                                    อุตสาหกรรมเครื่องจักรกลให้เป็นอุตสาหกรรม
+                                                    สนับสนุนเพิ่มขีดความสามารถการผลิตทั้ง
+                                                    ภาคอุตสาหกรรมและภาคเกษตรกรรม...
+                                                </p>
+                                                <div class="btns">
+                                                    <a class="btn-action btn-action-primary" href="#">
+                                                        <i class="fas fa-chevron-right"></i>
+                                                        อ่านรายละเอียด
+                                                    </a>
+                                                </div>
                                             </div>
                                         </div>
-                                    </div>
-                                <?php }?>
+                                    <?php }?>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="pagination mt-5 mb-5" data-aos="fade-up" data-aos-delay="0">
+                            <div class="wrapper">
+                                <a href="#" class="page-btn page-prev disabled"></a>
+                                <a href="#" class="page-btn active">01</a>
+                                <a href="#" class="page-btn">02</a>
+                                <a href="#" class="page-btn">03</a>
+                                <a href="#" class="page-btn">04</a>
+                                <a href="#" class="page-btn">05</a>
+                                <a href="#" class="page-btn page-next"></a>
+                                <a class="btn btn-round custom-btn-dark btn-sm" href="#">
+                                    อ่านข่าวทั้งหมด
+                                </a>
                             </div>
                         </div>
                     </div>
 
                     <!-- Tab 4 -->
                     <div class="tab-content" data-tab="4">
-                        <div class="filter-bg bg-color-sgray"></div>
-                        <div class="hero lazy-bg" data-src="public/assets/app/images/bg/12.jpg"></div>
-                        <div class="contents pl-0 bg-color-white">
-                            <div class="post-card post-card-03 pb-0">
-                                <div class="title-container height-auto">
-                                    <a class="title h4 height-auto" href="#">
-                                        สุริยะฯ ดันแผนพัฒนาอุตฯ 
-                                        เครื่องจักรกลเต็มสูบ มุ่งสนับสนุน
-                                        เกษตรแปรรูป ชี้เป็นจุดเริ่มต้นการ
-                                        ปฏิรูปโครงสร้างศก
-                                    </a>
-                                    <p class="by">เขียนโดย : <strong>สำนักบริหารกลาง</strong></p>
+                        <div class="content-wrapper">
+                            <div class="filter-bg bg-color-sgray"></div>
+                            <div class="hero lazy-bg" data-src="public/assets/app/images/bg/12.jpg"></div>
+                            <div class="contents pl-0 bg-color-white">
+                                <div class="post-card post-card-03 pb-0">
+                                    <div class="title-container height-auto">
+                                        <a class="title h4 height-auto" href="#">
+                                            สุริยะฯ ดันแผนพัฒนาอุตฯ 
+                                            เครื่องจักรกลเต็มสูบ มุ่งสนับสนุน
+                                            เกษตรแปรรูป ชี้เป็นจุดเริ่มต้นการ
+                                            ปฏิรูปโครงสร้างศก
+                                        </a>
+                                        <p class="by">เขียนโดย : <strong>สำนักบริหารกลาง</strong></p>
+                                    </div>
+                                    <p class="date">21. 09.2563</p>
                                 </div>
-                                <p class="date">21. 09.2563</p>
+                                
+                                <div class="table-wrapper pr-4">
+                                    <div class="post-card post-card-03 pt-0 pb-0">
+                                        <h4>เอกสารแนบ</h4>
+                                    </div>
+                                    <table class="table table-gray">
+                                        <tbody>
+                                            <?php foreach(['pdf', 'xls', 'doc'] as $f){?>
+                                                <tr>
+                                                    <td class="pl-4">
+                                                        <div class="file-icon file-icon-sm <?= $f; ?>"></div>
+                                                    </td>
+                                                    <td>
+                                                        การขับเคลื่อนชุมชนเข้มแข็งในการจัดการอนามัยสิ่งแวดล้อมชุมชน
+                                                    </td>
+                                                    <td>
+                                                        <a class="fw-400 color-02 fw-500" href="#">
+                                                            แจ้งไฟล์เสีย
+                                                        </a>
+                                                    </td>
+                                                    <td class="text-left pr-4">
+                                                        <strong>1.44 MB</strong> 
+                                                        <a href="#">
+                                                            <img class="img-icon ml-2" src="public/assets/app/images/icon/download.png" alt="Download Icon" />
+                                                        </a>
+                                                    </td>
+                                                </tr>
+                                            <?php }?>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                
+                                <div class="post-card post-card-03 pt-0">
+                                    <div class="title-container height-auto">
+                                        <a class="title h4 height-auto" href="#">
+                                            สุริยะฯ ดันแผนพัฒนาอุตฯ 
+                                            เครื่องจักรกลเต็มสูบ มุ่งสนับสนุน
+                                            เกษตรแปรรูป ชี้เป็นจุดเริ่มต้นการ
+                                            ปฏิรูปโครงสร้างศก
+                                        </a>
+                                        <p class="by">เขียนโดย : <strong>สำนักบริหารกลาง</strong></p>
+                                    </div>
+                                    <p class="date">21. 09.2563</p>
+                                </div>
                             </div>
-                            
-                            <div class="table-wrapper pr-4">
-                                <div class="post-card post-card-03 pt-0 pb-0">
-                                    <h4>เอกสารแนบ</h4>
-                                </div>
-                                <table class="table table-gray">
-                                    <tbody>
-                                        <?php foreach(['pdf', 'xls', 'doc'] as $f){?>
-                                            <tr>
-                                                <td class="pl-4">
-                                                    <div class="file-icon file-icon-sm <?= $f; ?>"></div>
-                                                </td>
-                                                <td>
-                                                    การขับเคลื่อนชุมชนเข้มแข็งในการจัดการอนามัยสิ่งแวดล้อมชุมชน
-                                                </td>
-                                                <td>
-                                                    <a class="fw-400 color-02 fw-500" href="#">
-                                                        แจ้งไฟล์เสีย
-                                                    </a>
-                                                </td>
-                                                <td class="text-left pr-4">
-                                                    <strong>1.44 MB</strong> 
-                                                    <a href="#">
-                                                        <img class="img-icon ml-2" src="public/assets/app/images/icon/download.png" alt="Download Icon" />
-                                                    </a>
-                                                </td>
-                                            </tr>
-                                        <?php }?>
-                                    </tbody>
-                                </table>
-                            </div>
-                            
-                            <div class="post-card post-card-03 pt-0">
-                                <div class="title-container height-auto">
-                                    <a class="title h4 height-auto" href="#">
-                                        สุริยะฯ ดันแผนพัฒนาอุตฯ 
-                                        เครื่องจักรกลเต็มสูบ มุ่งสนับสนุน
-                                        เกษตรแปรรูป ชี้เป็นจุดเริ่มต้นการ
-                                        ปฏิรูปโครงสร้างศก
-                                    </a>
-                                    <p class="by">เขียนโดย : <strong>สำนักบริหารกลาง</strong></p>
-                                </div>
-                                <p class="date">21. 09.2563</p>
+                        </div>
+                        <div class="pagination mt-5 mb-5" data-aos="fade-up" data-aos-delay="0">
+                            <div class="wrapper">
+                                <a href="#" class="page-btn page-prev disabled"></a>
+                                <a href="#" class="page-btn active">01</a>
+                                <a href="#" class="page-btn">02</a>
+                                <a href="#" class="page-btn">03</a>
+                                <a href="#" class="page-btn">04</a>
+                                <a href="#" class="page-btn">05</a>
+                                <a href="#" class="page-btn page-next"></a>
+                                <a class="btn btn-round custom-btn-dark btn-sm" href="#">
+                                    อ่านข่าวทั้งหมด
+                                </a>
                             </div>
                         </div>
                     </div>
 
                     <!-- Tab 5 -->
-                    <div class="tab-content" data-tab="5" style="height:540px;">
-                        <div class="filter-bg lazy-bg" data-src="public/assets/app/images/bg/13.jpg"></div>
+                    <div class="tab-content" data-tab="5">
+                        <div class="swiper-container" data-swiper="1">
+                            <div class="swiper-wrapper">
+                                <?php for($k=0; $k<8; $k++){?>
+                                    <div class="swiper-slide" style="background-image:url('public/assets/app/images/banner/07.jpg')"></div>
+                                <?php }?>
+                            </div>
+                            <div class="swiper-pagination"></div>
+                        </div>
                     </div>
 
-                </div>
-            </div>
-            
-            <div class="pagination mt-5" data-aos="fade-up" data-aos-delay="0">
-                <div class="wrapper">
-                    <a href="#" class="page-btn page-prev disabled"></a>
-                    <a href="#" class="page-btn active">01</a>
-                    <a href="#" class="page-btn">02</a>
-                    <a href="#" class="page-btn">03</a>
-                    <a href="#" class="page-btn">04</a>
-                    <a href="#" class="page-btn">05</a>
-                    <a href="#" class="page-btn page-next"></a>
-                    <a class="btn btn-round custom-btn-dark btn-sm" href="#">
-                        อ่านข่าวทั้งหมด
-                    </a>
                 </div>
             </div>
         </div>

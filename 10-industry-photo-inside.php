@@ -101,7 +101,8 @@
                                         </td>
                                         <td style="min-width:260px;">
                                             <div class="d-flex ai-center jc-end">
-                                                <a class="btn btn-sm btn-round custom-btn-10 btn-toggle mr-1" href="#" data-toggle="embed-<?= $i ?>">
+                                                <a class="btn btn-sm btn-round custom-btn-10 btn-toggle mr-1" href="#" 
+                                                data-toggle="embed-<?= $i ?>">
                                                     Embed <i class="fas fa-code"></i>
                                                 </a>
                                                 <a class="btn btn-sm btn-round custom-btn-09" href="#">
@@ -117,9 +118,11 @@
                                     <tr>
                                         <td colspan="2" class="no-padding">
                                             <div class="toggle-target" data-toggle="embed-<?= $i ?>">
-                                                <textarea name="message" class="no-bradius" rows="2"></textarea>
+                                                <textarea name="message" class="no-bradius" rows="2" 
+                                                data-copy="copy-<?= $i ?>">Temporary code <?= $i ?></textarea>
                                                 <div class="btns mt-0">
-                                                    <a class="btn btn-sm custom-btn-tertiary no-bradius width-full" href="#">
+                                                    <a class="btn btn-sm custom-btn-tertiary no-bradius width-full" 
+                                                    href="#" data-copy="copy-<?= $i ?>">
                                                         คัดลอกโค้ด
                                                     </a>
                                                 </div>

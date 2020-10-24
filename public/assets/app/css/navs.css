@@ -70,7 +70,7 @@ nav.topnav .menu::before{
 }
 nav.topnav .menu:hover::before{opacity:1;}
 nav.topnav .menu > a{
-    display:block; position:relative; text-decoration:none; padding:2rem 1rem .75rem 1rem;
+    display:block; position:relative; text-decoration:none; padding:2.125rem 1rem .75rem 1rem;
     font-size:.875rem; color:#fff; font-weight:100; white-space:nowrap; transition:color .3s;
 }
 nav.topnav .menu:hover > a, nav.topnav .menu:hover > a::before{color:#f1d13d;}
