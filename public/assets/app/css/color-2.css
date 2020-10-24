@@ -24,10 +24,8 @@ nav.topnav .menu > .submenu-dropdown{
     background:#000; border-top:1px solid #ffff00; border-bottom:1px solid #ffff00;
 }
 nav.topnav .submenu-container{background:#000; border-right:1px solid #ffff00;}
-nav.topnav .submenu-container > .submenu > a, nav.topnav .submenu-level2 > .submenu > a{color:#ffff00;}
-nav.topnav .submenu-container > .submenu:hover > a{color:#000; background:#ffff00;}
-nav.topnav .submenu-level2 > .submenu > a{color:#ffff00;}
-nav.topnav .submenu-level2 > .submenu:hover > a{color:#ffff00;}
+nav.topnav .submenu-container .submenu > a{color:#ffff00;}
+nav.topnav .submenu-container .submenu:hover > a{color:#000; background:#ffff00;}
 nav.topnav .menu-mobile .hamburger > *{background:#ffff00;}
 
 
@@ -45,7 +43,7 @@ nav.sidenav .menu.has-children > a::after{background:#ffff00;}
 nav.sidenav .submenu > a{background:#000; color:#ffff00; border-color:#ffff00;}
 nav.sidenav .submenu > .dropdown-toggle{color:#ffff00;}
 nav.sidenav .submenu.has-children > a::after{background:#000;}
-nav.sidenav .submenu-level2 > .submenu > a{background:#000; color:#ffff00; border-color:#ffff00;}
+nav.sidenav .submenu-container.level-1 > .submenu > a{background:#000; color:#ffff00; border-color:#ffff00;}
 
 
 /* Footer */

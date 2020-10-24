@@ -51,10 +51,14 @@ select:focus, textarea:focus{
 /* Topnav */
 nav.topnav .menu > .submenu-dropdown{background:#33254f;}
 nav.topnav .submenu-container{background:#fff;}
-nav.topnav .submenu-container > .submenu > a, nav.topnav .submenu-level2 > .submenu > a{color:#000;}
-nav.topnav .submenu-container > .submenu:hover > a{color:#fff; background:#622a6f;}
-nav.topnav .submenu-level2 > .submenu > a{color:#fff;}
-nav.topnav .submenu-level2 > .submenu:hover > a{color:#f1d13d;}
+nav.topnav .submenu-container.level-1{background:rgba(255,255,255,.05);}
+nav.topnav .submenu-container.level-2{background:transparent;}
+nav.topnav .submenu-container .submenu > a{color:#000;}
+nav.topnav .submenu-container .submenu:hover > a{color:#fff; background:#622a6f;}
+nav.topnav .submenu-container.level-1 .submenu > a,
+nav.topnav .submenu-container.level-2 .submenu > a{color:#fff;}
+nav.topnav .submenu-container.level-1 .submenu:hover > a,
+nav.topnav .submenu-container.level-2 .submenu:hover > a{color:#f1d13d;}
 nav.topnav .menu-mobile .hamburger > *{background:#fff;}
 
 
@@ -75,10 +79,10 @@ nav.sidenav .submenu > a{background:#622a6f; color:#fff; border-color:rgba(255,2
 nav.sidenav .submenu:hover > a{background:#88009b;}
 nav.sidenav .submenu > .dropdown-toggle{color:#fff;}
 nav.sidenav .submenu.has-children > a::after{background:rgba(255,255,255,.25);}
-nav.sidenav .submenu-level2 > .submenu > a{
+nav.sidenav .submenu-container.level-1 > .submenu > a{
     background:#a580af; color:#fff; border-color:rgba(255,255,255,.25);
 }
-nav.sidenav .submenu-level2 > .submenu:hover > a{background:#622a6f;}
+nav.sidenav .submenu-container.level-1 > .submenu:hover > a{background:#622a6f;}
 
 
 /* Footer */

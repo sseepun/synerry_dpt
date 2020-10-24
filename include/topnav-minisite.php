@@ -40,14 +40,27 @@
                         <div class="submenu-dropdown">
                             <div class="wrapper">
                                 <div class="hero" style="background-image:url('public/assets/app/images/bg/04.jpg');"></div>
-                                <div class="submenu-container">
-                                    <?php for($i=0; $i<12; $i++){?>
+                                <div class="submenu-container" data-simplebar>
+                                    <?php for($i=0; $i<3; $i++){?>
                                         <div class="submenu has-children">
-                                            <a href="#">e-Service กรมโรงงานอุตสาหกรรม</a>
-                                            <div class="submenu-level2">
-                                                <?php for($j=0; $j<12; $j++){?>
-                                                    <div class="submenu">
-                                                        <a href="#">e-Service กรมโรงงานอุตสาหกรรม</a>
+                                            <a href="#">
+                                                e-Service กรมโรงงานอุตสาหกรรม <?= $i ?>
+                                            </a>
+                                            <div class="submenu-container level-1" data-simplebar>
+                                                <?php for($j=0; $j<2; $j++){?>
+                                                    <div class="submenu has-children">
+                                                        <a href="#">
+                                                            e-Service กรมโรงงานอุตสาหกรรม <?= $j ?>
+                                                        </a>
+                                                        <div class="submenu-container level-2" data-simplebar>
+                                                            <?php for($k=0; $k<13; $k++){?>
+                                                                <div class="submenu">
+                                                                    <a href="#">
+                                                                        e-Service กรมโรงงานอุตสาหกรรม <?= $k ?>
+                                                                    </a>
+                                                                </div>
+                                                            <?php }?>
+                                                        </div>
                                                     </div>
                                                 <?php }?>
                                             </div>
@@ -67,14 +80,27 @@
                         <div class="submenu-dropdown">
                             <div class="wrapper">
                                 <div class="hero" style="background-image:url('public/assets/app/images/bg/04.jpg');"></div>
-                                <div class="submenu-container">
-                                    <?php for($i=0; $i<12; $i++){?>
+                                <div class="submenu-container" data-simplebar>
+                                    <?php for($i=0; $i<3; $i++){?>
                                         <div class="submenu has-children">
-                                            <a href="#">e-Service กรมโรงงานอุตสาหกรรม</a>
-                                            <div class="submenu-level2">
-                                                <?php for($j=0; $j<12; $j++){?>
-                                                    <div class="submenu">
-                                                        <a href="#">e-Service กรมโรงงานอุตสาหกรรม</a>
+                                            <a href="#">
+                                                e-Service กรมโรงงานอุตสาหกรรม <?= $i ?>
+                                            </a>
+                                            <div class="submenu-container level-1" data-simplebar>
+                                                <?php for($j=0; $j<2; $j++){?>
+                                                    <div class="submenu has-children">
+                                                        <a href="#">
+                                                            e-Service กรมโรงงานอุตสาหกรรม <?= $j ?>
+                                                        </a>
+                                                        <div class="submenu-container level-2" data-simplebar>
+                                                            <?php for($k=0; $k<13; $k++){?>
+                                                                <div class="submenu">
+                                                                    <a href="#">
+                                                                        e-Service กรมโรงงานอุตสาหกรรม <?= $k ?>
+                                                                    </a>
+                                                                </div>
+                                                            <?php }?>
+                                                        </div>
                                                     </div>
                                                 <?php }?>
                                             </div>

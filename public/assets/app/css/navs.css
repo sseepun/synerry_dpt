@@ -104,42 +104,51 @@ nav.topnav .menu > .dropdown a{
 }
 nav.topnav .menu > .dropdown a:hover{background:#eee;}
 nav.topnav .menu > .dropdown a > p{
-    margin:.3125rem 0 0 0; text-align:center; font-size:.75rem; white-space:nowrap; color:#000;
-    font-weight:600;
+    margin:.3125rem 0 0 0; text-align:center; font-size:.75rem; white-space:nowrap;
+    color:#000; font-weight:600;
 }
+
 nav.topnav .menu > .submenu-dropdown{
     position:fixed; left:0; width:100vw; opacity:0; pointer-events:none;
     transform:translateY(.375rem); transition:opacity .3s, transform .3s;
 }
 nav.topnav .menu:hover > .submenu-dropdown{opacity:1; pointer-events:auto; transform:translateY(0);}
-nav.topnav .menu > .submenu-dropdown > .wrapper{
-    width:100%; display:flex; position:relative;
-    /* min-height:calc(100vh - 17rem); */
-}
+nav.topnav .menu > .submenu-dropdown > .wrapper{width:100%; display:flex; position:relative;}
 nav.topnav .submenu-dropdown .hero{
-    width:35vw; background-size:cover; background-position:center; background-repeat:no-repeat;
+    width:28vw; background-size:cover; background-position:center; background-repeat:no-repeat;
 }
-nav.topnav .submenu-container{position:relative; width:18rem; padding:.875rem 0 1.75rem 0;}
+nav.topnav .submenu-container{
+    position:relative; width:18rem; padding:.875rem 0 1.75rem 0; margin:0; list-style:none;
+    height:calc(100vh - 15rem); max-height:calc(100vh - 15rem);
+}
+nav.topnav .submenu-container .simplebar-wrapper{
+    height:calc(100vh - 15rem); max-height:calc(100vh - 15rem);
+}
 nav.topnav .submenu-container::after{
     content:''; position:absolute; top:100%; left:0; width:4.5rem; height:2.25rem;
     background-image:url('../images/hero/01.png');
     background-size:100% auto; background-position:top left; background-repeat:no-repeat;
 }
-nav.topnav .submenu-container > .submenu > a, nav.topnav .submenu-level2 > .submenu > a{
+nav.topnav .submenu-container.level-1::after,
+nav.topnav .submenu-container.level-2::after{display:none;}
+nav.topnav .submenu-container .submenu > a{
     position:relative; display:block; width:100%; font-size:.93875rem; font-weight:100;
     padding:.75rem 1rem .75rem 2rem; text-decoration:none; line-height:1.25;
-    transition:background .3s, color .3s;
+    transition:background .2s, color .2s;
 }
-nav.topnav .submenu-container > .submenu > a::before,
-nav.topnav .submenu-level2 > .submenu > a::before{
+nav.topnav .submenu-container .submenu > a::before{
     content:'\f054'; font-family:'Font Awesome 5 Free'; font-weight:900; font-size:.5625rem;
     position:absolute; top:0; bottom:0; left:1rem; display:flex; align-items:center;
 }
-nav.topnav .submenu > .submenu-level2{
-    position:absolute; top:0; bottom:0; left:100%; opacity:0; pointer-events:none;
-    padding:.875rem 0 .75rem 0; width:calc(65vw - 18rem - 12rem); transition:opacity .3s;
+nav.topnav .submenu > .submenu-container{
+    position:fixed; top:0; bottom:0; opacity:0; pointer-events:none; visibility:hidden;
+    transition:opacity .3s;
 }
-nav.topnav .submenu:hover > .submenu-level2{opacity:1; pointer-events:auto;}
+nav.topnav .submenu > .submenu-container.level-1{left:calc(28vw + 18rem);}
+nav.topnav .submenu > .submenu-container.level-2{left:calc(28vw + 36rem);}
+nav.topnav .submenu:hover > .submenu-container{
+    opacity:1; pointer-events:auto; visibility:visible;
+}
 
 nav.topnav .menu-mobile{display:none;}
 nav.topnav .menu-mobile > .sidenav-btn{padding:1rem 0 1rem 1rem;}
@@ -152,6 +161,11 @@ nav.topnav .menu-mobile > .sidenav-btn{padding:1rem 0 1rem 1rem;}
 
 nav.topnav ~ .topnav-spacer{display:block; width:100%; height:8rem;}
 
+@media screen and (max-width:1299.98px){
+    nav.topnav .submenu-dropdown .hero{width:24vw;}
+    nav.topnav .submenu > .submenu-container.level-1{left:calc(24vw + 18rem);}
+    nav.topnav .submenu > .submenu-container.level-2{left:calc(24vw + 36rem);}
+}
 @media screen and (max-width:1199.98px){
     nav.topnav.sticky{transform:translateY(0);}
     nav.topnav > .top-container{display:none;}
@@ -237,8 +251,8 @@ nav.sidenav .submenu > a{
     margin:0; font-size:1rem; font-weight:300; min-height:3.3125rem; line-height:1.25;
     border-bottom:1px solid transparent; transition:background .3s, color .3s;
 }
-nav.sidenav .submenu-level2{display:none;}
-nav.sidenav .submenu-level2 > .submenu > a{
+nav.sidenav .submenu-container.level-1{display:none;}
+nav.sidenav .submenu-container.level-1 > .submenu > a{
     display:block; width:100%; text-decoration:none; padding:.875rem 2rem .875rem 1rem;
     margin:0; font-size:1rem; font-weight:300; border-bottom:1px solid transparent;
     transition:background .3s, color .3s;
