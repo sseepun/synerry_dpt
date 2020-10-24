@@ -79,10 +79,10 @@
                             <tbody>
                                 <?php for($i=0; $i<2; $i++){?>
                                     <tr class="row-sep">
-                                        <td colspan="4"></td>
+                                        <td colspan="3"></td>
                                     </tr>
                                     <tr class="row-title">
-                                        <td colspan="4">
+                                        <td colspan="3">
                                             <h6>แผนงานโครงการงบประมาณรายจ่ายประจำปี</h6>
                                         </td>
                                     </tr>
@@ -90,64 +90,62 @@
                                         <td>
                                             <div class="file-icon pdf"></div>
                                         </td>
-                                        <td>
+                                        <td style="min-width:380px;">
+                                            <div class="text-xs color-04 fw-500">27/06/2563</div>
                                             การขับเคลื่อนชุมชนเข้มแข็งในการจัดการอนามัยสิ่งแวดล้อมชุมชน
-                                        </td>
-                                        <td>
-                                            <div class="text-sm fw-500">
-                                                ขนาดไปล์ <span class="fw-600 color-04">1.3 MB</span>
-                                            </div>
-                                            <div class="text-sm fw-500">
-                                                ดาวน์โหลด <span class="fw-600 color-04">23 ครั้ง</span>
-                                            </div>
-                                        </td>
-                                        <td style="min-width:160px;">
-                                            <div class="d-flex ai-center jc-end">
-                                                <a class="btn btn-sm btn-round custom-btn-09" href="#">
-                                                    ดาวน์โหลด <i class="far fa-arrow-alt-circle-down"></i>
-                                                </a>
-                                                <div class="v-sep"></div>
-                                                <a class="btn-icon" href="#">
-                                                    <i class="fas fa-exclamation-triangle"></i>
+                                            <div class="table-desc">
+                                                ขนาดไฟล์
+                                                <span class="fw-600 color-04">1.31 MB</span>
+                                                <span class="sep"></span>
+                                                จำนวนดาวน์โหลด
+                                                <span class="fw-600 color-04">16 ครั้ง</span>
+                                                <span class="sep"></span>
+                                                <a class="text-sm" href="#">
+                                                    <i class="fas fa-exclamation-triangle color-04 text-2xs"></i> 
+                                                    แจ้งไฟล์เสีย
                                                 </a>
                                             </div>
+                                        </td>
+                                        <td style="min-min-width:130px;">
+                                            <a class="btn btn-sm btn-round custom-btn-09" href="#">
+                                                ดาวน์โหลด <i class="far fa-arrow-alt-circle-down"></i>
+                                            </a>
                                         </td>
                                     </tr>
                                     <tr class="row-sep">
-                                        <td colspan="4"></td>
+                                        <td colspan="3"></td>
                                     </tr>
                                     <tr>
                                         <td>
                                             <div class="file-icon doc"></div>
                                         </td>
-                                        <td>
+                                        <td style="min-width:380px;">
+                                            <div class="text-xs color-04 fw-500">27/06/2563</div>
                                             การขับเคลื่อนชุมชนเข้มแข็งในการจัดการอนามัยสิ่งแวดล้อมชุมชน
-                                        </td>
-                                        <td>
-                                            <div class="text-sm fw-500">
-                                                ขนาดไปล์ <span class="fw-600 color-04">1.3 MB</span>
-                                            </div>
-                                            <div class="text-sm fw-500">
-                                                ดาวน์โหลด <span class="fw-600 color-04">23 ครั้ง</span>
-                                            </div>
-                                        </td>
-                                        <td style="width:160px;">
-                                            <div class="d-flex ai-center jc-end">
-                                                <a class="btn btn-sm btn-round custom-btn-09" href="#">
-                                                    ดาวน์โหลด <i class="far fa-arrow-alt-circle-down"></i>
-                                                </a>
-                                                <div class="v-sep"></div>
-                                                <a class="btn-icon" href="#">
-                                                    <i class="fas fa-exclamation-triangle"></i>
+                                            <div class="table-desc">
+                                                ขนาดไฟล์
+                                                <span class="fw-600 color-04">1.31 MB</span>
+                                                <span class="sep"></span>
+                                                จำนวนดาวน์โหลด
+                                                <span class="fw-600 color-04">16 ครั้ง</span>
+                                                <span class="sep"></span>
+                                                <a class="text-sm" href="#">
+                                                    <i class="fas fa-exclamation-triangle color-04 text-2xs"></i> 
+                                                    แจ้งไฟล์เสีย
                                                 </a>
                                             </div>
+                                        </td>
+                                        <td style="min-width:130px;">
+                                            <a class="btn btn-sm btn-round custom-btn-09" href="#">
+                                                ดาวน์โหลด <i class="far fa-arrow-alt-circle-down"></i>
+                                            </a>
                                         </td>
                                     </tr>
                                     <tr class="row-sep">
-                                        <td colspan="4"></td>
+                                        <td colspan="3"></td>
                                     </tr>
                                     <tr class="row-title">
-                                        <td colspan="4">
+                                        <td colspan="3">
                                             <h6>แผนงานโครงการงบประมาณรายจ่ายประจำปี</h6>
                                         </td>
                                     </tr>
@@ -156,27 +154,26 @@
                                             <td>
                                                 <div class="file-icon <?php echo $f; ?>"></div>
                                             </td>
-                                            <td>
+                                            <td style="min-width:380px;">
+                                                <div class="text-xs color-04 fw-500">27/06/2563</div>
                                                 การขับเคลื่อนชุมชนเข้มแข็งในการจัดการอนามัยสิ่งแวดล้อมชุมชน
-                                            </td>
-                                            <td>
-                                                <div class="text-sm fw-500">
-                                                    ขนาดไปล์ <span class="fw-600 color-04">1.3 MB</span>
-                                                </div>
-                                                <div class="text-sm fw-500">
-                                                    ดาวน์โหลด <span class="fw-600 color-04">23 ครั้ง</span>
-                                                </div>
-                                            </td>
-                                            <td style="width:160px;">
-                                                <div class="d-flex ai-center jc-end">
-                                                    <a class="btn btn-sm btn-round custom-btn-09" href="#">
-                                                        ดาวน์โหลด <i class="far fa-arrow-alt-circle-down"></i>
-                                                    </a>
-                                                    <div class="v-sep"></div>
-                                                    <a class="btn-icon" href="#">
-                                                        <i class="fas fa-exclamation-triangle"></i>
+                                                <div class="table-desc">
+                                                    ขนาดไฟล์
+                                                    <span class="fw-600 color-04">1.31 MB</span>
+                                                    <span class="sep"></span>
+                                                    จำนวนดาวน์โหลด
+                                                    <span class="fw-600 color-04">16 ครั้ง</span>
+                                                    <span class="sep"></span>
+                                                    <a class="text-sm" href="#">
+                                                        <i class="fas fa-exclamation-triangle color-04 text-2xs"></i> 
+                                                        แจ้งไฟล์เสีย
                                                     </a>
                                                 </div>
+                                            </td>
+                                            <td style="min-width:130px;">
+                                                <a class="btn btn-sm btn-round custom-btn-09" href="#">
+                                                    ดาวน์โหลด <i class="far fa-arrow-alt-circle-down"></i>
+                                                </a>
                                             </td>
                                         </tr>
                                     <?php }?>

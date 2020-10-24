@@ -58,10 +58,12 @@
                         </div>
                         <div class="block">
                             <div class="text-wrapper">
-                                <select class="category">
-                                    <option value="" disabled selected>แบ่งตามหมวดหมู่</option>
-                                    <option value="newest">แบ่งตามหมวดหมู่</option>
-                                </select>
+                                <div class="select-wrapper">
+                                    <select class="category">
+                                        <option value="" disabled selected>แบ่งตามหมวดหมู่</option>
+                                        <option value="newest">แบ่งตามหมวดหมู่</option>
+                                    </select>
+                                </div>
                             </div>
                         </div>
                     </div>
