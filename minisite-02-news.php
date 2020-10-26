@@ -188,9 +188,9 @@
                                 </div>
                                 <div class="bottom-container">
                                     <div class="stat-info font-01 fw-100 mt-2">
-                                        <d class="d-inlinec mr-2">
+                                        <div class="d-inlinec mr-2">
                                             24-08-2563 | เปิดดู : 130
-                                        </d>
+                                        </div>
                                         <div class="icons">
                                             <img src="public/assets/app/images/social/fb.png" alt="social icon">
                                             <img src="public/assets/app/images/social/tw.png" alt="social icon">
