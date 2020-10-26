@@ -38,15 +38,16 @@
             background-repeat: no-repeat;
             height:calc(100% - 3rem);
             margin:0 auto;
+            width: calc(100% - 30px);
             
         }
 
         .wrapper {
             padding:1.25rem 1rem .75rem 1.25rem; 
             border-bottom: 1px solid #dfd8e9;
-            box-shadow: 0px 0px 10px 5px rgba(0,0,0,.45);
-            -webkit-box-shadow: 0px 0px 10px 5px rgba(0,0,0,.45);
-            -moz-box-shaddow: 0px 0px 10px 5px rgba(0,0,0,.45);
+            box-shadow: 0px 0px 10px 5px rgba(0,0,0,.25);
+            -webkit-box-shadow: 0px 0px 10px 5px rgba(0,0,0,.25);
+            -moz-box-shaddow: 0px 0px 10px 5px rgba(0,0,0,.25);
         }
         .wrapper .header {
             border-bottom: 1px solid #e1e1e1;
@@ -77,7 +78,36 @@
             background: #0081c5; color:#fff;
         }
 
+        /* Icon */
+        .icon-custom {width:3rem;height:3rem; font-size:1.5rem; text-align:center; line-height: 3rem; background:#0081c5; color:#fff;}
+        
+        /* video */
+        .video-container{
+            display:flex; flex-wrap:nowrap; width:100%; overflow-x:scroll; padding-bottom:.5rem;
+        }
+        /* Scrollbar */
+        .video-container::-webkit-scrollbar {
+            height: .5rem;
+        }
+        .video-container::-webkit-scrollbar-track{
+            background:#e1e1e1;
+        }
+        .video-container::-webkit-scrollbar-thumb {
+            background-color:#0081c5;
+        }
 
+        .mp4-wrapper{padding: 0 15px; width:100%;}
+        .mp4-wrapper button {
+            border:none; padding: .2rem 1rem;
+        }
+
+
+        @media screen and (max-width: 575.98px){
+            #letter-bg {display:none;}
+            .img-container .img-bg {
+                position:relative; display:block; top:0; height:20rem;
+            }
+        }
         /* max-width of img-bg is equal to container width - 30px (padding-left + padding-right) */
         @media screen and (min-width: 576px){
             .img-container .img-bg {
@@ -138,7 +168,7 @@
     </section>
     <section class="section-padding" >
         <div class="img-container">
-            <img style="width:100%; height:100%;" src="public/assets/app/images/bg/32.jpg" alt="">
+            <img style="width:100%; height:100%;" id="letter-bg" src="public/assets/app/images/bg/32.jpg" alt="">
             <div class="img-bg" style="background-image:url('public/assets/app/images/banner/01.jpg')"></div>
         </div>
 
@@ -176,6 +206,110 @@
                     <a class="tag-btn type-02" href="#"></a>
                     <a class="tag-btn type-03" href="#"></a>
                     <a class="tag-btn type-04" href="#"></a>
+                </div>
+                <!-- Gallery -->
+                <div class="row mt-2">
+                    <div class="col-md-1 col-sm-2 mt-2">
+                        <div class="icon-custom"><i class="fas fa-camera"></i></div>
+                    </div>
+                    <div class="col-md-11 col-sm-10">
+                        <div class="row">
+                            <?php for($i=0; $i < 4; $i++){?>
+                                <div class="col-md-3 col-sm-6 mt-2">
+                                    <a class="ss-img bradius-0" href="#">
+                                        <div class="img-bg lazy-bg" data-src="public/assets/app/images/banner/01.jpg"></div>
+                                        <div class="hover-text <?php if($i==7)echo 'op-100'; ?>">
+                                            <?php if($i<3){?>
+                                                <img src="public/assets/app/images/icon/search-02.png" alt="Hover Image" />
+                                            <?php }else{?>
+                                                <p class="color-white text-center">
+                                                    รูปภาพทั้งหมด <br>
+                                                    <span class="text-xl fw-600">120</span> 
+                                                    รูปภาพ
+                                                </p>
+                                            <?php }?>
+                                        </div>
+                                    </a>
+                                </div>
+                            <?php }?>
+                        </div>
+                    </div>
+                </div>
+                <!-- Video -->
+                <div class="row mt-2">
+                    <div class="col-md-1 col-sm-2 mt-2">
+                        <div class="icon-custom"><i class="fas fa-play-circle"></i></div>
+                    </div>
+                    <div class="col-md-11 col-sm-10">
+                        <div class="row mt-2">
+                            <div class="mp4-wrapper">
+                                <form>
+                                    <div class="d-flex ai-center jc-center fw-wrap" style="padding: 1.5rem 0; background:#e1e1e1;">
+                                        <label class="font-01 text-md mr-2 mb-0">embed code</label>
+                                        <input type="text" class="bradius-0">
+                                        <button class="bg-color-02 color-white text-sm" href="#">Copy</button>
+                                    </div>
+                                </form>
+                                <div class="ss-mp4 mt-2"  data-aos="fade-up" data-aos-delay="300">
+                                    <div class="wrapper">
+                                        <video controls>
+                                            <source src="public/assets/app/video/01.mp4" type="video/mp4">
+                                            Your browser does not support the video tag.
+                                        </video>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="video-container">
+                                <?php for($i=0; $i < 8; $i++){?>
+                                    <div class="col-md-3 col-sm-6 mt-2" data-aos="fade-up" data-aos-delay="300">
+                                        <div class="ss-video bradius-0">
+                                            <div class="img-bg lazy-bg" data-src="public/assets/app/images/banner/01.jpg"></div>
+                                            <div class="hover-container"></div>
+                                            <div class="bottom-tag">
+                                                <i class="far fa-clock"></i> 10:30
+                                            </div>
+                                            <div class="play-container">
+                                                <a class="play-icon" href="https://www.youtube.com/watch?v=4NRXx6U8ABQ" data-fancybox="">
+                                                    <i class="fas fa-play"></i>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                <?php }?>
+                            </div>
+                            
+                           
+                        </div>
+                    </div>
+                </div>
+                <!-- Download -->
+                <div class="row mt-2">
+                    <div class="col-md-1 col-sm-2 mt-2">
+                        <div class="icon-custom"><i class="fas fa-arrow-down"></i></div>
+                    </div>
+                    <div class="col-md-11 col-sm-10">
+                        <div class="row">
+                            <div class="table-wrapper" style="padding: 0 15px;" data-simplebar data-aos="fade-up" data-aos-delay="300">
+                                <table class="table table-file">
+                                    <tbody>
+                                        <?php for($i=0; $i<3; $i++){?>
+                                            <tr style="border-bottom: 1.5px solid #0081c5;">
+                                                <td style="width:2rem !important;">
+                                                    <div class="file-icon pdf"></div>
+                                                    
+                                                </td>
+                                                <td class="text-left">
+                                                    <a class="text-md" href="#">
+                                                        เอกสารแนบที่ 203.pdf ขนาด 360 kb
+                                                    </a>
+                                                </td>
+                                            </tr>
+                                        <?php }?>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
