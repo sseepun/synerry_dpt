@@ -135,6 +135,73 @@
                     </div>
 
                     <?php include_once('component/list-footer.php'); ?>
+
+                    <div class="contact-01 mt-5">
+                        <div class="wrapper">
+                            <form action="" method="GET">
+                                <h2 class="text-center color-04">
+                                    แบบฟอร์มติดต่อ
+                                </h2>
+                                <p class="text-center">
+                                    หากมีคำถาม คำติชม คำแนะนำ หรือพบปัญหากรุณากรอกแบบฟอร์มด้านล่างนี้
+                                    <br> ทางเจ้าหน้าที่ะคำเนินการตามคำขอโดยเร็วที่สุด
+                                    <br>
+                                    <span class="text-sm">
+                                        กรุณากรอกข้อมูลที่จำเป็นให้ครบถ้วน โดยช่องเฉพาะที่มีเครื่องหมาย *
+                                    </span>
+                                </p>
+                                <div class="row">
+                                    <div class="col-md-6 form-group">
+                                        <label>
+                                            เลือกหน่วยงาน <span class="fw-600 color-04">*</span>
+                                        </label>
+                                        <div class="select-wrapper">
+                                            <select class="form-control" required>
+                                                <option value="">เลือกหน่วยงาน</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 form-group">
+                                        <label>
+                                            ชื่อ-นามสกุล <span class="fw-600 color-04">*</span>
+                                        </label>
+                                        <input type="text" class="form-control" required />
+                                    </div>
+                                    <div class="col-md-6 form-group">
+                                        <label>
+                                            หมายเลขโทรศัพท์ <span class="fw-600 color-04">*</span>
+                                        </label>
+                                        <input type="text" class="form-control" required />
+                                    </div>
+                                    <div class="col-md-6 form-group">
+                                        <label>
+                                            อีเมล <span class="fw-600 color-04">*</span>
+                                        </label>
+                                        <input type="email" class="form-control" required />
+                                    </div>
+                                    <div class="col-md-12 form-group">
+                                        <label>
+                                            ข้อความ <span class="fw-600 color-04">*</span>
+                                        </label>
+                                        <textarea class="form-control" rows="4" required></textarea>
+                                    </div>
+                                </div>
+                                <div class="btn-container">
+                                    <div class="captcha-container">
+                                        <img src="public/assets/app/images/default/captcha.jpg" alt="Captcha" />
+                                    </div>
+                                    <div class="btns">
+                                        <button type="submit" class="btn btn-round custom-btn-09 px-4">
+                                            ส่งข้อความ <i class="far fa-arrow-alt-circle-right ml-1"></i>
+                                        </button>
+                                        <a class="btn btn-round custom-btn-gray px-4 ml-1 btn-clear-form" href="#">
+                                            ล้างข้อมูล <i class="fas fa-times ml-1"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
                 </div>
 
             </div>

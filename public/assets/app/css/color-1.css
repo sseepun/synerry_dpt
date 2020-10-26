@@ -215,6 +215,10 @@ table.table.table-download tbody > tr.row-title > td{background:#fff; color:#000
 .call-02 .slide-container  .arrows > .slick-next::before{color:#fff;}
 
 
+/* Contact 01 */
+.contact-01 .wrapper{border-color:#fff;}
+
+
 /* Content 01 */
 .content-01{border-top:1px solid #fff;}
 .content-01 > .content-header::after{background:#fff;}

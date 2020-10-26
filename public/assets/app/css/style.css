@@ -177,6 +177,12 @@ p, .p{font-size:1.125rem; margin:.625rem 0 0 0; font-weight:300;}
 .file-icon.zip::before{background-image:url('../images/file/zip.png');}
 
 
+/* Form Group */
+.form-group label{margin:0 0 .25rem 0; font-size:.9375rem;}
+.form-group .select-wrapper{display:block; width:100%;}
+.form-group .form-control{border-radius:0; padding:.625rem .75rem; height:auto; }
+
+
 /* Hamburger */
 .hamburger{cursor:pointer;}
 .hamburger > *{width:2rem; height:.14rem; transition:all .5s;}

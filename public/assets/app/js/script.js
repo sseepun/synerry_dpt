@@ -262,6 +262,13 @@ $(function(){ 'use strict';
         }
     });
 
+    // ฺButton Clear Form
+    $('.btn-clear-form').click(function(e){
+        e.preventDefault();
+        var targetForm = $(this).closest('form');
+        targetForm.find('input, textarea').val('');
+    });
+
 
     // Swiper
     var swiperContainers = $('.swiper-container[data-swiper]');
@@ -294,7 +301,7 @@ $(function(){ 'use strict';
 
 
     // Banner 01
-    var banner01 = $('section.banner-01');
+    var banner01 = $('.banner-01');
     if(banner01.length){
         banner01.each(function(){
             var self = $(this),
@@ -331,7 +338,7 @@ $(function(){ 'use strict';
 
     
     // Call to Action 02
-    var call02 = $('section.call-02');
+    var call02 = $('.call-02');
     if(call02.length){
         call02.find('.slide-container').each(function(){
             var self = $(this);
@@ -351,7 +358,7 @@ $(function(){ 'use strict';
 
 
     // Content 01
-    var content01 = $('section.content-01');
+    var content01 = $('.content-01');
     if(content01.length){
         content01.each(function(){
             var self = $(this),

@@ -158,6 +158,19 @@
 }
 
 
+/* Contact 01 */
+.contact-01{width:100%;}
+.contact-01 .wrapper{width:100%; padding:1.5rem; border:1px solid transparent;}
+.contact-01 h1, .contact-01 h2, .contact-01 h3{margin:0;}
+.contact-01 p{font-size:.9375rem; margin:.25rem 0 2rem 0;}
+.contact-01 .btn-container{
+    width:100%; display:flex; align-items:center; justify-content:space-between; flex-wrap:wrap;
+}
+.contact-01 .btn-container .captcha-container{width:300px;}
+.contact-01 .btn-container .captcha-container > img{display:block; width:100%; height:auto;}
+.contact-01 .btn-container .btns{margin:1.5rem 0;}
+
+
 /* Content 01 */
 .content-01{width:100%;}
 .content-01 > .content-header{width:100%; position:relative;}
