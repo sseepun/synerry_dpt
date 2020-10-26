@@ -186,7 +186,7 @@
             <?php for($z=1; $z<=6; $z++){?>
                 <div class="content <?php if($z==1)echo 'active'; ?>" data-id="<?= $z; ?>">
                     <div class="img-bg-container">
-                        <div class="img-bg" style="background-image:url('public/assets/app/images/bg/19.jpg'); background-position:center -26rem;"></div>
+                        <div class="img-bg" style="background-image:url('public/assets/app/images/bg/19.jpg'); background-position:center -25rem;"></div>
                     </div>
                     <div class="container">
                         <h2 class="color-white text-center mb-4">
@@ -255,7 +255,7 @@
                                             </div>
                                             <div class="grid lg-50 sm-100 bg-color-sgray mt-0">
                                                 <?php for($j=0; $j<2; $j++){?>
-                                                    <div class="post-card post-card-04 mb-3">
+                                                    <div class="post-card post-card-06 pb-3 no-border">
                                                         <div class="title-container">
                                                             <a class="title h4" href="#">
                                                                 สุริยะฯ ดันแผนพัฒนาอุตฯ 
@@ -266,6 +266,10 @@
                                                         </div>
                                                         <p class="date">21. 09.2563</p>
                                                         <p class="desc">
+                                                            กระทรวงอุตสาหกรรม (อก.) ผลักดันแผน
+                                                            อุตสาหกรรมเครื่องจักรกลให้เป็นอุตสาหกรรม
+                                                            สนับสนุนเพิ่มขีดความสามารถการผลิตทั้ง
+                                                            ภาคอุตสาหกรรมและภาคเกษตรกรรม
                                                             กระทรวงอุตสาหกรรม (อก.) ผลักดันแผน
                                                             อุตสาหกรรมเครื่องจักรกลให้เป็นอุตสาหกรรม
                                                             สนับสนุนเพิ่มขีดความสามารถการผลิตทั้ง

@@ -202,7 +202,7 @@
         rgba(0,0,0,.6666), rgba(0,0,0,.3333), rgba(0,0,0,0));
 }
 .content-01 .content > .img-bg-container > .img-bg{
-    width:100%; height:100%; background-size:cover; background-position:center;
+    width:100%; height:100%; background-size:cover; background-position:center top;
     background-repeat:no-repeat;
 }
 .content-01 .content > .container{position:relative;}

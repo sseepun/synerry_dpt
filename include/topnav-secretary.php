@@ -149,7 +149,7 @@
                     </div>
                     <div class="menu menu-icon" style="background-image:url('public/assets/app/images/bg/06.jpg');">
                         <a class="global-search-toggle" href="#">
-                            <img src="public/assets/app/images/icon/search-01.png" alt="Search Icon" />
+                            <img src="public/assets/app/images/icon/search-white-02.png" alt="Search Icon" />
                             <p>ค้นหา</p>
                         </a>
                     </div>

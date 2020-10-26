@@ -51,7 +51,7 @@
                     <div class="grids">
                         <?php for($i=0; $i<6; $i++){?>
                             <div class="grid sm-100 mt-4">
-                                <div class="ss-card-02">
+                                <div class="ss-card-02 btn-on-hover">
                                     <div class="block">
                                         <a class="ss-img square bradius-0" href="#">
                                             <div class="img-bg lazy-bg" data-src="public/assets/app/images/banner/0<?= ($i%7) +1; ?>.jpg"></div>

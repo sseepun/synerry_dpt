@@ -210,18 +210,24 @@ nav.footer.footer-gray .ss-list > li > a:hover{color:#1f9ad3;}
 
 /* Post Card */
 .post-card .title-container > .title{color:#000;}
-.post-card .title-container > .title:hover{color:#88009b;}
+.post-card:hover .title-container > .title,
+.ss-card:hover .post-card .title-container > .title,
+.ss-card-02:hover .post-card .title-container > .title{color:#88009b;}
 .post-card .title-container > .by, .post-card .desc{color:#343a40;}
 .post-card .stats{color:#88009b;}
 .post-card.post-card-02{color:#fff;}
 .post-card.post-card-02 .title-container > .title{color:#fff;}
-.post-card.post-card-02 .title-container > .title:hover{color:#f1d13d;}
+.post-card.post-card-02:hover .title-container > .title,
+.ss-card:hover .post-card.post-card-02 .title-container > .title,
+.ss-card-02:hover .post-card.post-card-02 .title-container > .title{color:#f1d13d;}
 .post-card.post-card-04 .title-container > .title::before{background:#88009b;}
 .post-card.post-card-04 .date{color:#88009b;}
 .post-card.post-card-05, .post-card.post-card-06{border-color:#e1e1e1;}
 .post-card.post-card-06::before{background:#50137e;}
 .post-card.post-card-07 .title-container > .title{color:#fff;}
-.post-card.post-card-07 .title-container > .title:hover{color:#f1d13d;}
+.post-card.post-card-07:hover .title-container > .title,
+.ss-card:hover .post-card.post-card-07 .title-container > .title,
+.ss-card-02:hover .post-card.post-card-07 .title-container > .title{color:#f1d13d;}
 .post-card.post-card-07 .stats{color:#fff;}
 .post-card.post-card-08{background:#f2f2f2;}
 .post-card.post-card-08:hover{background:#6a1671;}

@@ -84,7 +84,7 @@
                             <tbody>
                                 <?php for($i=0; $i<3; $i++){?>
                                     <tr>
-                                        <td style="min-width:300px;">
+                                        <td style="min-width:380px;">
                                             <div class="fw-600 color-04 text-lg">
                                                 ประกาศกรมอนามัย ฉบับที่ 27/04.pdf
                                             </div>
@@ -94,16 +94,17 @@
                                                 <span class="sep"></span>
                                                 จำนวนดาวน์โหลด
                                                 <span class="fw-600 color-04">16 ครั้ง</span>
+                                                <span class="sep"></span>
+                                                <a class="text-sm" href="#">
+                                                    <i class="fas fa-exclamation-triangle color-04 text-2xs"></i> 
+                                                    แจ้งไฟล์เสีย
+                                                </a>
                                             </div>
                                         </td>
-                                        <td style="min-width:160px;">
+                                        <td style="min-width:130px;">
                                             <div class="d-flex ai-center jc-end">
                                                 <a class="btn btn-sm btn-round custom-btn-09" href="#">
                                                     ดาวน์โหลด <i class="far fa-arrow-alt-circle-down"></i>
-                                                </a>
-                                                <div class="v-sep"></div>
-                                                <a class="btn-icon" href="#">
-                                                    <i class="fas fa-exclamation-triangle"></i>
                                                 </a>
                                             </div>
                                         </td>

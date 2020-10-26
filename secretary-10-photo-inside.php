@@ -161,7 +161,7 @@
                                         </div>
                                     </div>
                                     <div class="title-container">
-                                        <a class="title h4 h-color-blue" href="#">
+                                        <a class="title h4" href="#">
                                             สุริยะฯ ดันแผนพัฒนาอุตฯ 
                                             เครื่องจักรกลเต็มสูบ มุ่งสนับสนุน
                                             เกษตรแปรรูป ชี้เป็นจุดเริ่มต้นการ
