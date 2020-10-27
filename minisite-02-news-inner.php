@@ -189,7 +189,6 @@
                             <img src="public/assets/app/images/social/tw.png" alt="social icon">
                             <img src="public/assets/app/images/social/ln.png" alt="social icon">
                             <img src="public/assets/app/images/social/link.png" alt="social icon">
-
                         </div>
                     </div>
                 </div>

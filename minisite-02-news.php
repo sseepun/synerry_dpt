@@ -149,7 +149,6 @@
     </section>
 
     <div class="spacing">
-
         <div class="list-header jc-center">
             <div class="block">
                 <div class="text-wrapper">
