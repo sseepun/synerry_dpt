@@ -43,13 +43,13 @@
         <div class="container">
             <?php
                 $breadcrumb = [
-                    [ 'url' => '#', 'name' => 'หน้าหลัก' ],
-                    [ 'url' => '#', 'name' => 'เกี่ยวกับกระทรวงอุตสาหกรรม' ],
-                    [ 'url' => '#', 'name' => 'ข่าวสำนักงานปลัดกระทรวงอุตสาหกรรม' ],
+                    [ 'url' => '#', 'name' => 'หน้าแรก' ],
+                    [ 'url' => '#', 'name' => 'รู้จักสำนักงานปลัดฯ' ],
+                    [ 'url' => '#', 'name' => 'ยกเลิกการรับข่าวสาร' ],
                 ];
                 include_once('component/breadcrumb-3.php');
             ?>
-            <h2>ยกเลิกการรับข่าวสาร</h2>
+            <h2 class="mt-3">ยกเลิกการรับข่าวสาร</h2>
 
             
             <form action="./" method="POST" class="mt-5">
@@ -65,7 +65,7 @@
                                 <p class="fw-500">หากท่านต้องการยกเลิกการรับช่าวสาร กรุณากรอกอีเมล์ที่ท่านต้องการยกเลิกด้านล่าง</p>
                                 <label for="email" class="text-md mt-4 fw-600">อีเมล <span class="text-danger">*</span></label>
                                 <div class="control">
-                                    <input type="email" name="email" required>
+                                    <input placeholder="กรุณากรอกอีเมลที่ต้องการยกเลิกข่าวสาร" type="email" name="email" required>
                                 </div>
                             </div>
                             <div class="captcha-container">
