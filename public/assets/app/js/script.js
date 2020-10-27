@@ -45,6 +45,10 @@ $(function(){ 'use strict';
 
         // Generate sidenav
         sidenavMenus.html( topnav.find('#topnav-menu').html() );
+        topnav.find('#topnav-menu .submenu-container').each(function(){
+            new SimpleBar($(this)[0], {  });
+        });
+
         sidenavMenus.find('.menu.menu-icon').remove();
         sidenavMenus.find('.has-children').each(function(){
             $(this).append('<div class="dropdown-toggle"><i class="fas fa-chevron-right"></i></div>');

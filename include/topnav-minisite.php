@@ -29,8 +29,8 @@
                 <a class="logo" href="./">
                     <img src="public/assets/app/images/logo-minisite.png" alt="Logo" />
                     <div class="text">
-                        <h1>สำนักงานปลัดกระทรวงอุตสาหกรรม</h1>
-                        <h5>Office of Permanent Secretary</h5>
+                        <h2>สำนักงานอุตสาหกรรม</h2>
+                        <h1>จังหวัดเชียงราย</h1>
                     </div>
                 </a>
                 <div class="menu-container" id="topnav-menu">
@@ -40,19 +40,19 @@
                         <div class="submenu-dropdown">
                             <div class="wrapper">
                                 <div class="hero" style="background-image:url('public/assets/app/images/bg/04.jpg');"></div>
-                                <div class="submenu-container" data-simplebar>
+                                <div class="submenu-container">
                                     <?php for($i=0; $i<3; $i++){?>
                                         <div class="submenu has-children">
                                             <a href="#">
                                                 e-Service กรมโรงงานอุตสาหกรรม <?= $i ?>
                                             </a>
-                                            <div class="submenu-container level-1" data-simplebar>
+                                            <div class="submenu-container level-1">
                                                 <?php for($j=0; $j<2; $j++){?>
                                                     <div class="submenu has-children">
                                                         <a href="#">
                                                             e-Service กรมโรงงานอุตสาหกรรม <?= $j ?>
                                                         </a>
-                                                        <div class="submenu-container level-2" data-simplebar>
+                                                        <div class="submenu-container level-2">
                                                             <?php for($k=0; $k<13; $k++){?>
                                                                 <div class="submenu">
                                                                     <a href="#">
@@ -80,19 +80,19 @@
                         <div class="submenu-dropdown">
                             <div class="wrapper">
                                 <div class="hero" style="background-image:url('public/assets/app/images/bg/04.jpg');"></div>
-                                <div class="submenu-container" data-simplebar>
+                                <div class="submenu-container">
                                     <?php for($i=0; $i<3; $i++){?>
                                         <div class="submenu has-children">
                                             <a href="#">
                                                 e-Service กรมโรงงานอุตสาหกรรม <?= $i ?>
                                             </a>
-                                            <div class="submenu-container level-1" data-simplebar>
+                                            <div class="submenu-container level-1">
                                                 <?php for($j=0; $j<2; $j++){?>
                                                     <div class="submenu has-children">
                                                         <a href="#">
                                                             e-Service กรมโรงงานอุตสาหกรรม <?= $j ?>
                                                         </a>
-                                                        <div class="submenu-container level-2" data-simplebar>
+                                                        <div class="submenu-container level-2">
                                                             <?php for($k=0; $k<13; $k++){?>
                                                                 <div class="submenu">
                                                                     <a href="#">
@@ -130,7 +130,7 @@
                     </div>
                     <div class="menu menu-icon" style="background-image:url('public/assets/app/images/bg/06.jpg');">
                         <a class="global-search-toggle" href="#">
-                            <img src="public/assets/app/images/icon/search-01.png" alt="Search Icon" />
+                            <img src="public/assets/app/images/icon/search-white-02.png" alt="Search Icon" />
                             <p>ค้นหา</p>
                         </a>
                     </div>
