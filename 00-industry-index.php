@@ -345,13 +345,23 @@
 
                     <!-- Tab 5 -->
                     <div class="tab-content" data-tab="5">
-                        <div class="swiper-container" data-swiper="1">
-                            <div class="swiper-wrapper">
-                                <?php for($k=0; $k<8; $k++){?>
-                                    <div class="swiper-slide" style="background-image:url('public/assets/app/images/banner/07.jpg')"></div>
-                                <?php }?>
+                        <div class="content-wrapper">
+                            <div class="filter-bg lazy-bg" data-src="public/assets/app/images/bg/40.jpg"></div>
+                            <div class="swiper-container" data-swiper="1">
+                                <div class="swiper-wrapper">
+                                    <?php for($k=0; $k<8; $k++){?>
+                                        <div class="swiper-slide">
+                                            <a href="#" class="wrapper">
+                                                <div class="icon"><i class="fas fa-map-marker-alt"></i></div>
+                                                <div class="img-wrapper">
+                                                    <div class="img-bg" style="background-image:url('public/assets/app/images/banner/07.jpg')"></div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    <?php }?>
+                                </div>
+                                <div class="swiper-pagination"></div>
                             </div>
-                            <div class="swiper-pagination"></div>
                         </div>
                     </div>
 
