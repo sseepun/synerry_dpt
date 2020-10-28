@@ -99,7 +99,7 @@
         .banner-02 .arrows > .slick-next::before{content:'\f054';}
 
         .block-wrapper {
-            padding: 1.5rem 1rem;
+            padding: 1.5rem;
             -webkit-box-shadow: 0px 10px 15px 0px rgba(0,0,0,0.5);
             -moz-box-shadow: 0px 10px 15px 0px rgba(0,0,0,0.5);
             box-shadow: 0px 10px 15px 0px rgba(0,0,0,0.5);
@@ -113,8 +113,10 @@
             margin: 2rem 0; 
         }
         .download-container a {
-            display:inline-block; text-decoration: none; background:#007bff; padding: .625rem 4rem .625rem .625rem; margin: .5rem 1rem 0 0;  color:#fff; text-align:center;
+            display:inline-block; text-decoration: none; background:#4494cb; padding: .625rem 4rem .625rem .625rem; margin: .5rem 1rem 0 0;  color:#fff; text-align:center;
+            transition: background .4s;
         }
+        .download-container a:hover {background:#007bff; }
         .download-container .file-size {margin: .5rem 0 0 0; display:inline-block;}
         .download-container a i {padding: 0 1.25rem 0 0;}
     
