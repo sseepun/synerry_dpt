@@ -186,7 +186,7 @@
                                     </p>
                                 </div>
                                 <div class="bottom-container">
-                                    <div class="stat-info font-01 fw-100 mt-2">
+                                    <div class="stat-info font-01 fw-100 mt-2 d-flex ai-center fw-wrap">
                                         <div class="d-inlinec mr-2">
                                             24-08-2563 | เปิดดู : 130
                                         </div>
