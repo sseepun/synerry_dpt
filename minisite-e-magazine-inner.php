@@ -98,11 +98,45 @@
         .banner-02 .arrows > .slick-prev::before{content:'\f053';}
         .banner-02 .arrows > .slick-next::before{content:'\f054';}
 
+        .block-wrapper {
+            padding: 1.5rem 1rem;
+            -webkit-box-shadow: 0px 10px 15px 0px rgba(0,0,0,0.5);
+            -moz-box-shadow: 0px 10px 15px 0px rgba(0,0,0,0.5);
+            box-shadow: 0px 10px 15px 0px rgba(0,0,0,0.5);
+        }
+        .block-wrapper .info-socials {display:flex; flex-wrap: wrap; align-items:center; justify-content: space-between; padding: 0 0 1rem 0; border-bottom: 1px solid transparent; border-color: #e7e7e7; }
+        .block-wrapper .info-socials .info .date, .block-wrapper .info-socials .info .view {
+            display:inline-block;  border-right: 1px solid transparent; border-color: var(--color2); margin: .5rem .5rem 0 0;  padding: 0 .5rem 0 0;
+        }
+        .block-wrapper .info-socials .info .pages {display:inline-block; margin: .5rem 0 0 0;}
+        .download-container {
+            margin: 2rem 0; 
+        }
+        .download-container a {
+            display:inline-block; text-decoration: none; background:#007bff; padding: .625rem 4rem .625rem .625rem; margin: .5rem 1rem 0 0;  color:#fff; text-align:center;
+        }
+        .download-container .file-size {margin: .5rem 0 0 0; display:inline-block;}
+        .download-container a i {padding: 0 1.25rem 0 0;}
+    
+
+        .block-wrapper .embed-form {padding: 1.5rem 2.5rem; background:#e1e1e1;}
+        .block-wrapper input[type="text"]{
+            border-radius:0; padding: .125rem .125rem .125rem .375rem; width:70%;
+        }
+        .block-wrapper button {border:none; padding: .25rem 3rem .25rem 2.5rem;}
+
+        .block-wrapper .embed-form > * {margin: .5rem 0 0 0;}
+
         @media screen and (max-width:767.98px){
             .banner-02 .slide-container{padding:0 0 2.5rem 0;}
             .banner-02 .arrows{bottom:calc(2.625rem + 10vw);}
+            .block-wrapper input[type="text"]{width:100%;}
+
         }
 
+        @media screen and (max-width: 575.98px){
+            .block-wrapper .embed-form { padding: 1.5rem;}
+        }
 
     </style>
 
@@ -121,6 +155,57 @@
             </div>
         </div>
     </div>
+
+    <style>
+      
+    </style>
+    <section class="section-padding">
+        <div class="container">
+            <div class="block-wrapper">
+                <h3 class="fw-100">รายงานประจำปีสำนักงานปลัดกระทรวงอุตสาหกรรม ประจำปีงบประมาณ พ.ศ. 2558</h3>
+                
+                <div class="info-socials">
+                    <div class="info color-02">
+                        <div class="date">
+                            24-08-2563
+                        </div>
+                        <div class="view">
+                            เปิดดู : 130
+                        </div>
+                        <div class="pages">
+                            77 หน้า
+                        </div>
+                    </div>
+                    <div class="icons mt-2">
+                        <img src="public/assets/app/images/social/fb.png" alt="social icon">
+                        <img src="public/assets/app/images/social/tw.png" alt="social icon">
+                        <img src="public/assets/app/images/social/ln.png" alt="social icon">
+                        <img src="public/assets/app/images/social/link.png" alt="social icon">
+                    </div>
+                </div>
+
+                <div class="download-container fw-100">
+                    <a href="#">
+                        <i class="fas fa-arrow-down"></i>
+                        Download
+                    </a>
+                    <div class="file-size">
+                        ขนาดไฟล์ : 81.91 MB
+                    </div>
+                    
+                </div>
+
+                <form>
+                    <div class="d-flex ai-center jc-start fw-wrap embed-form">
+                        <label class="font-01 text-md mr-2 mb-0 fw-100">embed code</label>
+                        <input type="text">
+                        <button class="bg-color-02 fw-100 color-white text-sm" href="#">copy</button>
+                    </div>
+                </form>
+
+            </div>
+        </div>
+    </section>
 
 
     <section class="section-padding" style="background: #dcdcdc;">
