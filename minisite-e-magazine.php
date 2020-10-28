@@ -86,23 +86,26 @@
     </section>
 
     <section class="section-padding" style="background-color:#dcdcdc; background-image:url('public/assets/app/images/bg/32.jpg'); background-size:contain; background-position:top center; background-repeat:no-repeat;">
-
-        <div class="container">
-            <h3 class="text-center color-white">ไฮไลท์ - ข่าวประชาสัมพันธ์</h3>
-
-            <div class="list-header jc-center mt-2 mb-2">
-                <div class="block">
-                    <div class="text-wrapper">
-                        <div class="search-container">
-                            <input type="text" name="search" placeholder="ค้นหา" />
-                            <button type="submit">
-                                <img src="public/assets/app/images/icon/search.png" alt="Search icon" />
-                            </button>
-                        </div>
+       <div class="header">
+            <div class="container">
+                <h3 class="text-center color-white">วารสารออนไลน์</h3>
+            </div>
+       </div>
+       <div class="list-header jc-center mt-4 mb-4 pt-4 pb-4 bg-white">
+            <div class="block">
+                <div class="text-wrapper">
+                    <div class="search-container">
+                        <input type="text" name="search" placeholder="ค้นหา" />
+                        <button type="submit" class="bg-color-02">
+                            <i class="fas fa-search color-white"></i>
+                            <!-- <img src="public/assets/app/images/icon/search.png" alt="Search icon" /> -->
+                        </button>
                     </div>
                 </div>
             </div>
+        </div>
 
+        <div class="container">
 
             <div class="grids">
                 <?php for($i=0; $i<10; $i++){?>
