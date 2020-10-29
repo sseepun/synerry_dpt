@@ -102,6 +102,53 @@
         }
 
 
+        /* Imported from block.css */
+        /* Banner 01 */
+        .banner-02{position:relative; width:100%;}
+        .banner-02 > .slide-container{position:relative; width:100%; padding:0;}
+        .banner-02 .slides .slick-list {margin: 0 5rem;}
+        .banner-02 .slide{
+            min-height:450px; display:flex; align-items:center; text-align:center; line-height:1;
+            background-size:cover; background-position:center; background-repeat:no-repeat;
+            padding:0;
+        }
+        .banner-02 .arrows{
+            position:absolute; display:flex; justify-content:space-between; align-items:center;
+            top:0; bottom:0; left:0; right:0; padding:0 1rem; pointer-events:none;
+        }
+        .banner-02 .arrows > .slick-prev, .banner-02 .arrows > .slick-next{
+            display:block; width:2.5rem; height:2.5rem; pointer-events:auto; cursor:pointer; opacity:0;
+            text-align:center; line-height:2.75rem; outline:none; font-size:0; background:transparent;
+            box-shadow:none; border:0; transition:opacity .3s, transform .3s; 
+        }
+        .banner-02 .arrows > .slick-prev{transform:translateX(-.625rem);}
+        .banner-02 .arrows > .slick-next{transform:translateX(.625rem);}
+        .banner-02 .slide-container:hover .arrows > .slick-prev, 
+        .banner-02 .slide-container:hover .arrows > .slick-next{
+            opacity:.8; transform:translateX(0);
+        }
+        .banner-02 .arrows > .slick-prev:hover, .banner-02 .arrows > .slick-next:hover{opacity:1;}
+        .banner-02 .arrows > .slick-prev::before, .banner-02 .arrows > .slick-next::before{
+            font-family:'Font Awesome 5 Free'; font-weight:900; font-size:2.5rem;
+        }
+        .banner-02 .arrows > .slick-prev::before{content:'\f053';}
+        .banner-02 .arrows > .slick-next::before{content:'\f054';}
+
+        /* Import from minisite-01-neews */
+        .post-card {
+            transform: translate(0); transition: all ease-in-out .2s; width: calc(100% - 1.5rem); 
+        }
+        .post-card > .text-wrapper {padding: 0 .5rem 0 .75rem; 
+        }
+        .post-card .stat-info {padding: 0 .5rem 0 .75rem;}
+        .post-card .btn-rb {margin-left: .5rem; text-decoration: none;  color: #fff; background: #502683; display:block; padding: .25rem .375rem .25rem .25rem; }
+        .post-card:hover {
+            transform: translate(-1rem, -1rem);
+            -webkit-box-shadow: 0px 10px 15px 0px rgba(0,0,0,0.5);
+            -moz-box-shadow: 0px 10px 15px 0px rgba(0,0,0,0.5);
+            box-shadow: 0px 10px 15px 0px rgba(0,0,0,0.5);
+        }
+
         @media screen and (max-width: 575.98px){
             #letter-bg {display:none;}
             .img-container .img-bg {
@@ -189,7 +236,6 @@
                             <img src="public/assets/app/images/social/tw.png" alt="social icon">
                             <img src="public/assets/app/images/social/ln.png" alt="social icon">
                             <img src="public/assets/app/images/social/link.png" alt="social icon">
-
                         </div>
                     </div>
                 </div>
@@ -315,6 +361,61 @@
         </div>
     </section>
 
+    <div class="list-header jc-center bg-white">
+        <div class="block">
+            <div class="text-wrapper">
+                <div class="search-container">
+                    <input type="text" name="search" placeholder="ค้นหา" />
+                    <button type="submit" class="bg-color-02">
+                        <i class="fas fa-search color-white"></i>
+                        <!-- <img src="public/assets/app/images/icon/search.png" alt="Search icon" /> -->
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <section class="section-padding">
+        <div class="container" style="background: #dcdcdc;">
+            <div class="banner-02 mt-4">
+                <h3 class="text-center color-02 pt-4">ข่าวล่าสุด</h3>
+                <div class="slide-container">
+                    <div class="slides">
+                        <?php for($i=0; $i< 8; $i++){?>
+
+                            <div class="slide">
+                                <div class="post-card bg-color-white">
+                                    <a class="ss-img bradius-0" href="#">
+                                        <div class="img-bg lazy-bg" data-src="public/assets/app/images/banner/01.jpg"></div>
+                                        <div class="hover-container">
+                                            <img src="public/assets/app/images/icon/search-02.png" alt="Hover Image" />
+                                        </div>
+                                    </a>
+                                    <div class="text-wrapper">
+                                        <p class="desc font-01 fw-100 text-md">
+                                        วิทยากรการฝึกอบรมการยกระดับผู้ประกอบการสู่มาตรฐานการบริหารจัดการธุรกิจ หลักสูตร "การยกระดับมาตรฐาน...
+                                        </p>
+                                    </div>
+                                    <div class="d-flex fw-wrap ai-center jc-space-between">
+                                        <div class="stat-info font-01 fw-100 mt-2">24-08-2563 | เปิดดู : 130</div>
+                                        <a href="#" class="btn-rb mt-2">อ่านเพิ่ม</a>
+                                    </div>
+                                    
+                                </div>
+                            </div>
+
+                        <?php }?>
+                        
+                    </div>
+                    <div class="arrows"></div>
+                </div>
+            
+            </div>
+            
+        
+        </div>
+
+    </section>
+
 
 
     
@@ -371,5 +472,40 @@
 
     <?php include_once('include/footer-minisite.php'); ?>
     <?php include_once('include/script.php'); ?>
+
+    <script>
+        var banner02 = $('.banner-02');
+        if(banner02.length){
+
+            banner02.each(function(){
+                var self=  $(this),
+                options = {
+                    centerMode: true, centerPadding: 0, slidesToShow: 3, 
+                    focusOnSelect: true, autoplay: false,
+                    arrows: true, appendArrows: self.find('.arrows'),
+                    responsive: [
+                        {
+                            breakpoint: 991.98,
+                            settings: {
+                                slidesToShow: 2,
+                            }
+                        },
+                        {
+                            breakpoint: 767.98,
+                            settings: {
+                                slidesToShow: 1,
+                            }
+                        },
+                    ]
+                };
+
+                console.log(self);
+
+                self.find('.slides').slick(options);
+
+            });
+        }
+    
+    </script>
 </body>
 </html>
