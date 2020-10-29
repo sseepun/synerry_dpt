@@ -9,6 +9,12 @@
     nav.topnav .submenu:hover > .submenu-level2{display:block;}
 }
 
+/* Toggle Target */
+@media screen and (-ms-high-contrast:active), (-ms-high-contrast:none){
+    .toggle-target-02{display:none;}
+    .toggle-target-02.active{display:block;}
+}
+
 /* Banner 01 */
 @media screen and (-ms-high-contrast:active), (-ms-high-contrast:none){
     .banner-01 .slick-dots > li > .desc{display:none;}

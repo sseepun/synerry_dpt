@@ -215,6 +215,12 @@ table.table.table-download tbody > tr.row-title > td{background:#fff; color:#000
 .call-02 .slide-container  .arrows > .slick-next::before{color:#fff;}
 
 
+/* Call to Action 03 (with 02) */
+.call-03{border-top:1px solid #fff;}
+.call-03 .top-container{background:transparent!important;}
+.call-03 .slide-container p{color:#000;}
+
+
 /* Contact 01 */
 .contact-01 .wrapper{border-color:#fff;}
 
@@ -231,6 +237,13 @@ table.table.table-download tbody > tr.row-title > td{background:#fff; color:#000
 .content-01 .content-tabs > .tab.active > *{color:#000;}
 
 
+/* Content 02 */
+.content-02 .content > .wrapper{background:#000; color:#fff; border:1px solid #fff;}
+.content-02 .content:hover > .wrapper{background:#fff; color:#000;}
+.content-02 .content .icon{color:#fff;}
+.content-02 .content:hover .icon{color:#000;}
+
+
 /* FAQ 01 */
 .faq-01 .question .ftag{background:#fff; color:#000;}
 .faq-01 .question > *:nth-child(2){color:#fff; border-color:#fff;}
@@ -244,6 +257,10 @@ table.table.table-download tbody > tr.row-title > td{background:#fff; color:#000
 .faq-01 .answer .ftag{background:#fff; color:#000;}
 .faq-01 .answer .content{border:1px solid #fff;}
 .faq-01 .answer .content table td{border-color:rgba(255,255,255,.4);}
+
+
+/* Intro 02 */
+.intro-02 p.tag::before{background-color:#000; color:#fff;}
 
 
 /* Sitemap 01 */
@@ -278,7 +295,7 @@ table.table.table-download tbody > tr.row-title > td{background:#fff; color:#000
     }
 }
 
-/* Tab Container 04 */
+/* Tab Container 03 */
 .tab-container.tab-container-03 .tabs{border:1px solid #fff; background:#000;}
 .tab-container.tab-container-03 .tab{border-color:#fff; color:#fff;}
 .tab-container.tab-container-03 .tab:hover,
@@ -286,3 +303,9 @@ table.table.table-download tbody > tr.row-title > td{background:#fff; color:#000
 .tab-container.tab-container-03 .tab > .icon{background:#fff; color:#000;}
 .tab-container.tab-container-03 .tab.active > .icon{background:#000; color:#fff;}
 .tab-container.tab-container-03 .tab-contents .grids{border:1px solid #fff; background:#000;}
+
+/* Tab Container 04 */
+.tab-container.tab-container-04 .tab::before{background:#fff;}
+.tab-container.tab-container-04 .tab::after{background:#fff;}
+.tab-container.tab-container-04 .tab.active .num{background:#fff; color:#000;}
+.tab-container.tab-container-04 .ss-tag{color:#000!important;}

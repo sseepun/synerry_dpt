@@ -238,6 +238,10 @@ $(function(){ 'use strict';
         e.preventDefault();
         $('.toggle-target[data-toggle="'+$(this).data('toggle')+'"]').slideToggle();
     });
+    $('.btn-toggle-02').click(function(e){
+        e.preventDefault();
+        $('.toggle-target-02[data-toggle="'+$(this).data('toggle')+'"]').toggleClass('active');
+    });
 
     // Button Popup
     $('.btn-popup-toggle').click(function(e){
@@ -261,6 +265,7 @@ $(function(){ 'use strict';
             setTimeout(function(){
                 copyReady = true;
                 self.closest('.toggle-target').slideUp();
+                self.closest('.toggle-target-02').removeClass('active');
                 self.html('คัดลอกโค้ด');
             }, 2000);
         }

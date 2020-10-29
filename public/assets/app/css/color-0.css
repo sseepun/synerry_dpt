@@ -300,6 +300,14 @@ table.table.table-download tbody > tr.row-title > td{background:#393939; color:#
 .call-02 .slide-container  .arrows > .slick-next::before{color:#fff;}
 
 
+/* Call to Action 03 (with 02) */
+.call-03 .call-container{background:#e1e1e1;}
+.call-03 .slide-container .client{box-shadow:none;}
+.call-03 .slide-container p{color:#000;}
+.call-03 .slide-container .arrows > .slick-prev::before,
+.call-03 .slide-container .arrows > .slick-next::before{color:#3a3a3a;}
+
+
 /* Contact 01 */
 .contact-01 .wrapper{border-color:#e1e1e1;}
 
@@ -323,6 +331,17 @@ table.table.table-download tbody > tr.row-title > td{background:#393939; color:#
 .content-01 .content-tabs > .tab h3::after{color:#393a39; background:#fff;}
 
 
+/* Content 02 */
+.content-02 .content{box-shadow:rgba(0,0,0,.1) 0px 10px 20px;}
+.content-02 .content > .wrapper{background:#424242; color:#9e9e9e;}
+.content-02 .content:hover > .wrapper{
+    background-image:linear-gradient(to right, #3a1b5d, #4c2476, #5f2c7f, #6e3287, 
+        #7e3890, #7c388a); color:#fff;
+}
+.content-02 .content .icon{color:#a922bc;}
+.content-02 .content:hover .icon{color:#fff;}
+
+
 /* FAQ 01 */
 .faq-01 .question .ftag{background:#6c109d; color:#fff;}
 .faq-01 .question > *:nth-child(2){color:#000; border-color:#e1e1e1;}
@@ -336,6 +355,10 @@ table.table.table-download tbody > tr.row-title > td{background:#393939; color:#
 .faq-01 .answer .ftag{background:#58147d; color:#fff;}
 .faq-01 .answer .content{background:#f2f2f2; color:#000;}
 .faq-01 .answer .content table td{border-color:#dbdbdb;}
+
+
+/* Intro 02 */
+.intro-02 p.tag::before{background-color:#212c43; color:#fff;}
 
 
 /* Sitemap 01 */
@@ -379,7 +402,7 @@ table.table.table-download tbody > tr.row-title > td{background:#393939; color:#
     }
 }
 
-/* Tab Container 04 */
+/* Tab Container 03 */
 .tab-container.tab-container-03 .tabs{
     background:#371d4f; box-shadow:0px 0px 30px 0px rgba(82,63,105,.7);
 }
@@ -391,6 +414,12 @@ table.table.table-download tbody > tr.row-title > td{background:#393939; color:#
 .tab-container.tab-container-03 .tab-contents .grids{
     background:#fff; box-shadow:0px 0px 30px 0px rgba(82,63,105,.7);
 }
+
+/* Tab Container 04 */
+.tab-container.tab-container-04 .tab::before{background:#c9c9c9;}
+.tab-container.tab-container-04 .tab::after{background:#6e3480;}
+.tab-container.tab-container-04 .tab.active .num{background:#6e3480; color:#fff;}
+
 
 /* Special Tags */
 .ss-tags > .ss-tag{color:#fff;}

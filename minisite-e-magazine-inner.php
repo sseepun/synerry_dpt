@@ -141,7 +141,6 @@
         }
 
     </style>
-
 </head>
 <body class="loading">
     <?php include_once('include/topnav-minisite.php'); ?>

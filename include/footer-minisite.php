@@ -1,3 +1,47 @@
+<section class="call-02 call-03">
+    <div class="top-container" style="background-image:url('public/assets/app/images/bg/17.jpg');">
+        <div class="container" data-aos="fade-up" data-aos-delay="0">
+            <h1 class="text-center color-white mb-0">
+                เรารับฟังความคิดเห็นของคุณ
+            </h1>
+            <h4 class="text-center color-white font-02 fw-300 mt-0 mb-0">
+                เกี่ยวกับความรับผิดชอบของกระทรวงอุตสาหกรรม
+            </h4>
+            <form action="/" method="POST">
+                <div class="input-group">
+                    <input type="email" class="form-control" placeholder="สมัครรับข่าวสารกับกระทรวงอุตสาหกรรม" required />
+                    <div class="input-group-append">
+                        <button class="btn custom-btn-tertiary" type="submit">
+                            สมัครรับข่าว
+                        </button>
+                    </div>
+                </div>
+            </form>
+            <img class="subject lazy-img" data-src="public/assets/app/images/hero/03.png" alt="Call 02" />
+        </div>
+    </div>
+    <div class="call-container">
+        <div class="container" data-aos="fade-up" data-aos-delay="300">
+            <div class="slide-container">
+                <div class="slides">
+                    <?php for($i=0; $i<10; $i++){?>
+                        <div class="slide">
+                            <a class="wrapper" href="#">
+                                <div class="client lazy-bg" data-src="public/assets/app/images/client/01.jpg"></div>
+                                <p>
+                                    ศาลปกครอง <br>
+                                    สาระดีดีจากศาลปกครอง
+                                </p>
+                            </a>
+                        </div>
+                    <?php }?>
+                </div>
+                <div class="arrows"></div>
+            </div>
+        </div>
+    </div>
+</section>
+
 <a class="back-to-top active" href="#">
     <i class="fas fa-chevron-up"></i>
 </a>
