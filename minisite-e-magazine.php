@@ -86,11 +86,9 @@
     </section>
 
     <section class="section-padding" style="background-color:#dcdcdc; background-image:url('public/assets/app/images/bg/32.jpg'); background-size:contain; background-position:top center; background-repeat:no-repeat;">
-       <div class="header">
-            <div class="container">
-                <h3 class="text-center color-white">วารสารออนไลน์</h3>
-            </div>
-       </div>
+        <div class="container">
+            <h3 class="text-center color-white">วารสารออนไลน์</h3>
+        </div>
        <div class="list-header jc-center mt-4 mb-4 pt-4 pb-4 bg-white">
             <div class="block">
                 <div class="text-wrapper">
