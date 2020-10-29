@@ -9,6 +9,13 @@
     nav.topnav .submenu:hover > .submenu-level2{display:block;}
 }
 
+/* Specia Search */
+@media screen and (-ms-high-contrast:active), (-ms-high-contrast:none){
+    .ss-search .suggestion{display:none;}
+    .ss-search input[type=text]:focus ~ .suggestion,
+    .ss-search .suggestion:hover{display:block;}
+}
+
 /* Toggle Target */
 @media screen and (-ms-high-contrast:active), (-ms-high-contrast:none){
     .toggle-target-02{display:none;}

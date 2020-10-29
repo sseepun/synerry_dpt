@@ -4,8 +4,8 @@ html, body{color:#fff; background:#000;}
 
 
 /* Colors */
-.color-white, .color-black, .color-dark, .color-sgray, .color-01, .color-02, .color-03, .color-04, 
-.color-05, .color-06, .color-07, .color-08, .color-09{color:#fff!important;}
+.color-white, .color-black, .color-dark, .color-sgray, .color-gray, .color-01, .color-02, .color-03, 
+.color-04, .color-05, .color-06, .color-07, .color-08, .color-09{color:#fff!important;}
 .bg-color-white, .bg-color-black, .bg-color-dark, .bg-color-sgray, .bg-color-gray,
 .bg-color-01, .bg-color-02, .bg-color-03, .bg-color-04, .bg-color-05, .bg-color-06, 
 .bg-color-07, .bg-color-08, .bg-color-09{background:#000!important;}
@@ -153,9 +153,14 @@ nav.footer > .footer-bottom .wrapper > .count-area{background:#fff; color:#000;}
 .post-card.post-card-05, .post-card.post-card-06{border-color:#fff;}
 .post-card.post-card-06::before{background:#fff;}
 .post-card.post-card-07, .post-card.post-card-08{border:1px solid #fff; border-bottom:0;}
+.post-card.post-card-09{border:1px solid #fff;}
+
 
 /* Post Stats */
 .post-stats .stat i{background:#fff; color:#000;}
+.post-stats-02{color:#fff;}
+.post-stats-02 .sep{background:#fff;}
+.post-stats-02 .btn-float{background:#fff; color:#000;}
 
 
 /* Special Image & Video */
@@ -173,6 +178,12 @@ nav.footer > .footer-bottom .wrapper > .count-area{background:#fff; color:#000;}
 
 /* Special Tag */
 .ss-tag{background:#fff; color:#000;}
+
+
+/* Specia Search */
+.ss-search button{background:#502683;}
+.ss-search .suggestion{border-color:#fff; background:#000;}
+.ss-search .suggestion .item{color:#fff; border-color:#fff;}
 
 
 /* Table */

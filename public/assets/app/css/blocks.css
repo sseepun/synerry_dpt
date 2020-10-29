@@ -4,7 +4,7 @@
 .banner-01 > .slide-container{position:relative; width:100%; padding:0;}
 .banner-01 .slide{
     height:450px; display:flex; align-items:center; text-align:center; line-height:1;
-    background-size:cover; background-position:center; background-repeat:no-repeat;
+    background-size:cover; background-position:center;
     padding:0;
 }
 .banner-01 h1{font-size:4.5rem; font-weight:600; margin:0; letter-spacing:.875rem; line-height:.75;}
@@ -110,7 +110,7 @@
 }
 .call-02 > .call-container{
     width:100%; padding:3rem 0 2rem 0; background-size:cover; background-position:center;
-    background-repeat:no-repeat;
+   
 }
 .call-02 .call-text{position:relative; margin:0; font-weight:300;}
 .call-02 .call-text.title{font-size:2.125rem;}
@@ -122,7 +122,7 @@
 .call-02 .slide-container .slick-track{padding:1rem 0;}
 .call-02 .slide-container .client{
     display:block; width:100%; height:50px; border-radius:1000em;
-    background-size:cover; background-position:center; background-repeat:no-repeat;
+    background-size:cover; background-position:center;
 }
 .call-02 .slide-container .arrows{
     position:absolute; display:flex; justify-content:space-between; align-items:center;
@@ -230,7 +230,7 @@
 }
 .content-01 .content > .img-bg-container > .img-bg{
     width:100%; height:100%; background-size:cover; background-position:center top;
-    background-repeat:no-repeat;
+   
 }
 .content-01 .content > .container{position:relative;}
 .content-01 .content .tab-container{margin:6.5rem 0 0 0!important;}
@@ -357,7 +357,7 @@
 
 
 /* Mission 01 */
-.mission-01{width:100%; background-size:cover; background-position:center; background-repeat:no-repeat;}
+.mission-01{width:100%; background-size:cover; background-position:center;}
 .mission-01 .text-wrapper{padding:2.5rem 2rem 20rem 2rem;}
 .mission-01 ul{list-style:none; width:100%; max-width:440px; margin:0; padding:0;}
 .mission-01 ul > li{
@@ -384,7 +384,7 @@
 .sitemap-01{padding:1rem 0 0 0;}
 .sitemap-01 > .img-bg{
     width:100%; height:400px; background-size:cover; background-position:center;
-    background-repeat:no-repeat;
+   
 }
 .sitemap-01 .sitemap-container{margin:.75rem 0 0 0;}
 .sitemap-01 .grid{border-left:1px solid transparent;}
@@ -464,7 +464,7 @@
 }
 .tab-container.tab-container-01 .tab-content > .content-wrapper > .hero{
     position:relative; width:20%; height:100%; background-size:cover; background-position:center;
-    background-repeat:no-repeat;
+   
 }
 .tab-container.tab-container-01 .tab-content .contents{
     position:relative; width:80%; padding:0 0 0 1.5rem;
@@ -472,7 +472,7 @@
 }
 .tab-container.tab-container-01 .tab-content .filter-bg{
     position:absolute; top:0; bottom:0; left:calc(50% - 50vw); right:calc(50% - 50vw);
-    background-size:cover; background-position:center; background-repeat:no-repeat;
+    background-size:cover; background-position:center;
 }
 @media screen and (max-width:991.98px){
     .tab-container.tab-container-01 .tab h5{font-size:.875rem; padding:.625rem .25rem 1rem .25rem;}
@@ -503,7 +503,7 @@
 .tab-container.tab-container-02 .tab-contents{margin:1.75rem 0 0 0;}
 .tab-container.tab-container-02 .tab-content > .filter-bg{
     position:relative; width:100vw; height:240px; margin:0 calc(50% - 50vw);
-    background-size:cover; background-position:center; background-repeat:no-repeat;
+    background-size:cover; background-position:center;
 }
 .tab-container.tab-container-02 .slide-container{
     position:relative; width:100%; margin:0;
