@@ -6,8 +6,10 @@ nav.topnav > .top-container{padding:.375rem 0;}
 nav.topnav > .top-container::after{display:none;}
 nav.topnav > .bottom-container{background:#f7f7f7!important;}
 nav.topnav > .bottom-container::after{display:none;}
-nav.topnav .logo h1{font-size:1.875rem; color:#3e3e3e; -webkit-text-fill-color:unset;}
-nav.topnav .logo h5{color:#3e3e3e;}
+nav.topnav .logo h1, nav.topnav .logo h2{
+    font-size:1.5rem; font-weight:500; color:#3e3e3e; -webkit-text-fill-color:unset;
+}
+nav.topnav .logo h2{font-size:1.125rem; font-weight:600; margin:.25rem 0 .125rem 0;}
 nav.topnav .menu-container{background:transparent;}
 nav.topnav .menu::before{display:none;}
 nav.topnav .menu::after, nav.topnav .menu-container::after{
@@ -39,6 +41,8 @@ nav.topnav .menu-mobile .hamburger > *{background:#3e3e3e;}
 }
 .theme-2 nav.topnav .menu:not(.menu-icon):hover{background:#000;}
 .theme-2 nav.topnav .menu-mobile .hamburger > *{background:#ffff00;}
+
+nav.topnav ~ .topnav-spacer{height:7.75rem;}
 
 
 /* Buttons */
