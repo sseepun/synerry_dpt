@@ -72,7 +72,6 @@
     <section class="section-padding" style="background-color:#dcdcdc; background-image:url('public/assets/app/images/bg/32.jpg'); background-size:contain; background-position:top center; background-repeat:no-repeat;">
         <div class="container">
             <h2 class="text-center color-white">สถาบันเครือข่าย</h2>
-            
         </div>
         <!-- Tab Container 04 -->
         <div class="tab-container tab-container-04 mt-3">
