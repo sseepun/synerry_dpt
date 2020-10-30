@@ -3,10 +3,10 @@
 <head>
     <?php include_once('include/header.php'); ?>
     <?php include_once('include/style.php'); ?>
-    <link rel="stylesheet" href="public/assets/app/css/style-secretary.css" />
+    <link rel="stylesheet" href="public/assets/app/css/style-minisite.css" />
 </head>
 <body class="loading">
-    <?php include_once('include/topnav-secretary.php'); ?>
+    <?php include_once('include/topnav-minisite.php'); ?>
 
     <section data-aos="fade-up" data-aos-delay="0">
         <div class="container">
@@ -26,7 +26,7 @@
             <h2 class="mt-0 mb-0" data-aos="fade-up" data-aos-delay="300">
                 สมัครรับข่าวสาร
             </h2>
-            <form action="./" method="POST">
+            <form action="" method="POST">
                 <div class="ss-box ss-box-02 border mt-5" data-aos="fade-up" data-aos-delay="600">
                     <div class="ss-icon-title mt-0 mb-1">
                         <div class="icon bg-color-07 color-white"><i class="fas fa-mail-bulk"></i></div>
@@ -78,7 +78,7 @@
         </div>
     </section>
 
-    <?php include_once('include/footer-secretary.php'); ?>
+    <?php include_once('include/footer-minisite.php'); ?>
     <?php include_once('include/script.php'); ?>
 </body>
 </html>

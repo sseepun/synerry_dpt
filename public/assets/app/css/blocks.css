@@ -180,7 +180,7 @@
 .contact-01 .btn-container{
     width:100%; display:flex; align-items:center; justify-content:space-between; flex-wrap:wrap;
 }
-.contact-01 .btn-container .captcha-container{width:300px;}
+.contact-01 .btn-container .captcha-container{width:300px; margin:0;}
 .contact-01 .btn-container .captcha-container > img{display:block; width:100%; height:auto;}
 .contact-01 .btn-container .btns{margin:1.5rem 0;}
 

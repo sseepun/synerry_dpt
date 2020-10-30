@@ -159,15 +159,30 @@ p, .p{font-size:1.125rem; margin:.625rem 0 0 0; font-weight:300;}
 
 /* Breadcrumb 02 */
 .breadcrumb-custom-02{
-    display:flex; width:100%; padding:1.5rem 0; align-items:center; justify-content:space-between;
-    flex-wrap:wrap;
+    display:flex; width:100%; padding:1.5rem 0; align-items:center;
+    justify-content:space-between; flex-wrap:wrap;
 }
 .breadcrumb-custom-02 a, .breadcrumb-custom-02 .date{
-    display:inline-block; font-size:.9375rem; font-weight:300; margin:0 .625rem 0 0;
+    display:inline-block; font-size:.9375rem; font-weight:300; margin:0;
     transition:color .3s;
 }
-.breadcrumb-custom-02 .date{margin:0;}
 .breadcrumb-custom-02 a:last-child{font-weight:600;}
+.breadcrumb-custom-02 .sep{
+    display:inline-block; width:1px; height:.8125rem; margin:0 .25rem;
+    transform:translateY(.0625rem);
+}
+
+/* Breadcrumb 03 */
+.breadcrumb-custom-03{width:100%; padding:1.5rem 0;}
+.breadcrumb-custom-03 a{
+    display:inline-block; font-size:.9375rem; font-weight:300; margin:0 .75rem 0 0;
+    transition:color .3s;
+}
+.breadcrumb-custom-03 a:last-child{font-weight:600;}
+.breadcrumb-custom-03 a i{
+    width:1.125rem; height:1.125rem; line-height:1.125rem; text-align:center; border-radius:50%; 
+    font-size:.5rem; transform:translateY(-.0625rem); margin:0 .25rem 0 0;
+}
 
 
 /* Book Container */
@@ -181,6 +196,11 @@ p, .p{font-size:1.125rem; margin:.625rem 0 0 0; font-weight:300;}
 @media screen and (max-width:575.98px){
     .book-container{height:320px;}
 }
+
+
+/* Captcha Container */
+.captcha-container{width:100%; max-width:280px;}
+.captcha-container img{display:block; width:100%; height:auto;}
 
 
 /* Date Selector */
@@ -254,9 +274,11 @@ p, .p{font-size:1.125rem; margin:.625rem 0 0 0; font-weight:300;}
 
 
 /* Form Group */
-.form-group label{margin:0 0 .25rem 0; font-size:.9375rem;}
+.form-group label{margin:0 0 .125rem 0; font-size:.9375rem;}
 .form-group .select-wrapper{display:block; width:100%;}
-.form-group .form-control{border-radius:0; padding:.625rem .75rem; height:auto;}
+.form-group .form-control{width:100%; height:auto;}
+.form-check{margin:0 0 .4375rem 0;}
+.form-check label{font-size:.9375rem; font-weight:300; margin:0;}
 
 
 /* Hamburger */
@@ -643,6 +665,9 @@ p, .p{font-size:1.125rem; margin:.625rem 0 0 0; font-weight:300;}
 .ss-box{display:block; width:100%; max-width:26rem;}
 .ss-box.ss-box-center{margin:0 auto;}
 .ss-box.ss-box-right{margin:0 0 0 auto;}
+
+/* Special Box 02 */
+.ss-box-02{width:100%; padding:2rem; border-radius:.75rem; max-width:38rem;}
 
 
 /* Special Card */
@@ -1169,6 +1194,7 @@ table.table.table-download td:nth-child(4){min-width:134px; text-align:right; pa
 .no-br > br{display:none;}
 
 .no-border{border:0!important;}
+.border{border:1px solid transparent!important;}
 .border-top{border-top:1px solid transparent!important;}
 .border-top-4{border-top:4px solid transparent!important;}
 .border-bottom{border-bottom:1px solid transparent!important;}

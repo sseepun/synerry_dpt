@@ -134,6 +134,11 @@ nav.footer > .footer-bottom .wrapper > .count-area{background:#fff; color:#000;}
 
 /* Breadcrumb 02 */
 .breadcrumb-custom-02 a, .breadcrumb-custom-02 .date{color:#fff;}
+.breadcrumb-custom-02 .sep{background:#fff;}
+
+/* Breadcrumb 03 */
+.breadcrumb-custom-03 a{color:#fff;}
+.breadcrumb-custom-03 a i{background:#fff; color:#000;}
 
 
 /* Date Selector */
@@ -240,6 +245,7 @@ table.table.table-download tbody > tr.row-title > td{background:#fff; color:#000
 
 
 /* Utility */
+.border,
 .border-top, .border-top-4, 
 .border-bottom, .border-bottom-4{
     border-color:#fff!important;

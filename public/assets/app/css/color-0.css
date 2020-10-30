@@ -195,11 +195,22 @@ nav.footer.footer-gray .ss-list > li > a:hover{color:#1f9ad3;}
 /* Breadcrumb 02 */
 .breadcrumb-custom-02 a, .breadcrumb-custom-02 .date{color:#666666;}
 .breadcrumb-custom-02 a:hover, .breadcrumb-custom-02 a:last-child{color:#7d33b4;}
+.breadcrumb-custom-02 .sep{background:#666666;}
+
+/* Breadcrumb 03 */
+.breadcrumb-custom-03 a{color:#666666;}
+.breadcrumb-custom-03 a:last-child, .breadcrumb-custom-03 a:hover{color:#6c109d;}
+.breadcrumb-custom-03 a i{background:#e1e1e1; color:#fff;}
+.breadcrumb-custom-03 a:last-child i{background:#6c109d;}
 
 
 /* Date Selector */
 .date-selectors label{color:#666666; border-color:#ddd;}
 .date-selectors .icon{color:#8539ae;}
+
+
+/* Form Group */
+.form-check label{color:#666;}
 
 
 /* List Header */
@@ -320,6 +331,7 @@ table.table.table-download tbody > tr.row-title > td{background:#393939; color:#
 
 
 /* Utility */
+.border,
 .border-top, .border-top-4, 
 .border-bottom, .border-bottom-4{
     border-color:#e1e1e1!important;
