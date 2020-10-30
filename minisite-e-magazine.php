@@ -89,7 +89,7 @@
         <div class="container">
             <h3 class="text-center color-white">วารสารออนไลน์</h3>
         </div>
-       <div class="list-header jc-center mt-4 mb-4 pt-4 pb-4 bg-white">
+        <div class="list-header jc-center mt-4 mb-4 pt-4 pb-4 bg-white">
             <div class="block">
                 <div class="text-wrapper">
                     <div class="search-container">
