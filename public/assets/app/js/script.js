@@ -384,6 +384,24 @@ $(function(){ 'use strict';
         });
     }
 
+
+    // Content 03
+    var content03 = $('.content-03');
+    if(content03.length){
+        content03.each(function(){
+            var self=  $(this);
+            self.find('.slides').slick({
+                centerMode: true, centerPadding: 0, slidesToShow: 3, 
+                focusOnSelect: true, autoplay: false,
+                arrows: true, appendArrows: self.find('.arrows'), dots: false,
+                responsive: [
+                    { breakpoint: 991.98, settings: { slidesToShow: 2, } },
+                    { breakpoint: 767.98, settings: { slidesToShow: 1, } },
+                ]
+            });
+        });
+    }
+
     
     // FAQ 01
     var faq01 = $('.faq-01');

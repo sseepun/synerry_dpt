@@ -15,7 +15,7 @@
 
 .gallery-grids{
     width:calc(100% + .25rem); display:flex; justify-content:flex-start; flex-wrap:wrap;
-    margin:1rem -.25rem 0 0; box-sizing:border-box; -moz-box-sizing:border-box;
+    margin:0 -.25rem 0 0; box-sizing:border-box; -moz-box-sizing:border-box;
     -webkit-box-sizing:border-box; outline:none;
 }
 .gallery-grids > .grid{

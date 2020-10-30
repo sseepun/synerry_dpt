@@ -18,7 +18,7 @@
         </div>
     </div>
 
-    <section style="padding:3rem 0 1rem 0;">
+    <section data-aos="fade-up" data-aos-delay="0">
         <div class="container">
             <?php
                 $breadcrumb = [
@@ -29,13 +29,13 @@
                     'date' => 'วันจันทร์, 24 สิงหาคม 2563',
                     'time' => '08:27'
                 ];
-                include_once('component/breadcrumb-2.php');
+                include_once('component/breadcrumb-02.php');
             ?>
         </div>
     </section>
 
     <section class="section-padding section-bg" style="background-image:url('public/assets/app/images/bg/32.jpg');">
-        <div class="container">
+        <div class="container" data-aos="fade-up" data-aos-delay="300">
             <h3 class="text-center color-white">ไฮไลท์ - ข่าวประชาสัมพันธ์</h3>
             <div class="grids pt-2 pb-4">
                 <?php for($i=0; $i<3; $i++){?>
@@ -70,7 +70,7 @@
         </div>
     </section>
 
-    <section class="pt-5 pb-5">
+    <section class="ss-search-container" data-aos="fade-up" data-aos-delay="0">
         <div class="container">
             <form action="" method="GET">
                 <div class="ss-search">
@@ -96,9 +96,11 @@
         </div>
     </section>
 
-    <section class="section-padding bg-color-gray">
+    <section class="section-padding bg-color-gray" data-aos="fade-up" data-aos-delay="0">
         <div class="container">
-            <h3 class="text-center color-02">ข่าวประชาสัมพันธ์ </h3>
+            <h3 class="text-center color-02 mb-3">ข่าวประชาสัมพันธ์</h3>
+            <?php include_once('component/list-header.php'); ?>
+
             <div class="grids pt-2 pb-4">
                 <?php for($i=0; $i<8; $i++){?>
                     <div class="grid xl-25 lg-1-3 md-50 sm-100">
@@ -129,6 +131,8 @@
                     </div>
                 <?php }?>
             </div>
+            
+            <?php include_once('component/list-footer.php'); ?>
         </div>
     </section>
 

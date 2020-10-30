@@ -132,6 +132,9 @@ nav.footer > .footer-bottom .wrapper > .count-area{background:#fff; color:#000;}
 .breadcrumb-custom a{color:#fff;}
 .breadcrumb-custom a:before{background:#fff;}
 
+/* Breadcrumb 02 */
+.breadcrumb-custom-02 a, .breadcrumb-custom-02 .date{color:#fff;}
+
 
 /* List Header */
 .list-header .options > a{border-color:#fff; color:#fff;}
@@ -154,6 +157,7 @@ nav.footer > .footer-bottom .wrapper > .count-area{background:#fff; color:#000;}
 .post-card.post-card-06::before{background:#fff;}
 .post-card.post-card-07, .post-card.post-card-08{border:1px solid #fff; border-bottom:0;}
 .post-card.post-card-09{border:1px solid #fff;}
+.post-card.post-card-10 .post-stats-02{border-color:#fff;}
 
 
 /* Post Stats */
@@ -161,6 +165,20 @@ nav.footer > .footer-bottom .wrapper > .count-area{background:#fff; color:#000;}
 .post-stats-02{color:#fff;}
 .post-stats-02 .sep{background:#fff;}
 .post-stats-02 .btn-float{background:#fff; color:#000;}
+
+
+/* Post Topic */
+.post-topic > .icon{color:#000;}
+
+
+/* Shortcode */
+.shortcode{border:1px solid #fff;}
+.shortcode label{color:#fff;}
+.shortcode button{background:#fff; color:#000;}
+
+
+/* Special Card */
+.ss-card-03{border:1px solid #fff;}
 
 
 /* Special Image & Video */
@@ -253,6 +271,10 @@ table.table.table-download tbody > tr.row-title > td{background:#fff; color:#000
 .content-02 .content:hover > .wrapper{background:#fff; color:#000;}
 .content-02 .content .icon{color:#fff;}
 .content-02 .content:hover .icon{color:#000;}
+
+
+/* Content 04 */
+.content-04 .box-wrapper{border:1px solid #fff;}
 
 
 /* FAQ 01 */
