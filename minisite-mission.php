@@ -25,12 +25,7 @@
         .content-03 .img-container {position:relative;}
         .content-03 .img-container .img-bg {position:absolute; top:0; left:0; right:0; bottom:0; padding:100% 0 0 0; background-position:center; background-size:cover; background-repeat:no-repeat; }
         .content-03 .img-container .filter {position:absolute; top:0; left:0; right:0; bottom:0; background: rgba(0,0,0,.45); }
-        .content-03 .text-container {position:absolute; top:50%; left:50%; transform: translate(-50%, -50%); padding:1.5rem; background: rgba(99, 51, 125, .85);}
-    
-
-        @media screen and (max-width: 575.98px){
-            .content-03 .text-container{width:100%;}
-        }
+        .content-03 .text-container {position:absolute; top:50%; left:50%; transform: translate(-50%, -50%); padding:1.5rem; background: rgba(99, 51, 125, .85); width:100%; max-width: 35rem;}
     </style>
 </head>
 <body class="loading">

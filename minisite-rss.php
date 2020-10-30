@@ -32,7 +32,7 @@
         .ss-card-custom .info-container i{margin:.5rem 1rem 0 0; width:1.5rem; font-size:1.25rem; height:1.5rem; ;line-height:1.5rem;  text-align:center; display:inline-block; }
         .list-header.custom {position:absolute; bottom:1rem; left:-15px;}
         @media screen and (max-width: 1199.98px){
-            .list-header.custom {position:relative; bottom:0; left:0; margin-top:1rem;}
+            .list-header.custom {position:relative; bottom:0; left:-15px; margin-top:1rem;}
         }
         @media screen and (max-width: 767.98px){
             .grids.custom-padding {padding: 2rem 1.67rem;}
