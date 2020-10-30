@@ -232,6 +232,14 @@ $(function(){ 'use strict';
         var target = $(this).closest('.control').find('> input');
         if(target.length) target.val('');
     });
+    $('.btn-form-clear').click(function(e){
+        e.preventDefault();
+        var target = $(this).closest('form');
+        if(target.length){
+            target.find('input, select, textarea').val('');
+            target.find('input[type="checkbox"], input[type="radio"]').prop('checked', false);
+        }
+    });
 
     // Button Toggle
     $('.btn-toggle').click(function(e){

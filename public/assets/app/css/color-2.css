@@ -137,6 +137,11 @@ nav.footer > .footer-bottom .wrapper > .count-area{background:#ffff00; color:#00
 .breadcrumb-custom-02 a, .breadcrumb-custom-02 .date{color:#ffff00;}
 
 
+/* Date Selector */
+.date-selectors label{color:#ffff00; border-color:#ffff00;}
+.date-selectors .icon{color:#ffff00;}
+
+
 /* List Header */
 .list-header .options > a{border-color:#ffff00; color:#ffff00;}
 .list-header .options > a:hover, .list-header .options > a.active{
@@ -153,10 +158,13 @@ nav.footer > .footer-bottom .wrapper > .count-area{background:#ffff00; color:#00
 
 /* Post Card */
 .post-card .title-container > .title{color:#ffff00;}
+.post-card .date-tag{
+    color:#ffff00; border-top:1px solid #ffff00; border-bottom:1px solid #ffff00;
+}
 .post-card.post-card-04 .title-container > .title::before{background:#ffff00;}
 .post-card.post-card-05, .post-card.post-card-06{border-color:#ffff00;}
 .post-card.post-card-06::before{background:#ffff00;}
-.post-card.post-card-07, .post-card.post-card-08{border:1px solid #ffff00; border-bottom:0;}
+.post-card.post-card-07, .post-card.post-card-08{border:1px solid #ffff00;}
 .post-card.post-card-09{border:1px solid #ffff00;}
 .post-card.post-card-10 .post-stats-02{border-color:#ffff00;}
 
@@ -180,6 +188,8 @@ nav.footer > .footer-bottom .wrapper > .count-area{background:#ffff00; color:#00
 
 /* Special Card */
 .ss-card-03{border:1px solid #ffff00;}
+.ss-card-04 > .block > .calendar-tag{background:#ffff00;}
+.ss-card-04 > .block > .calendar-tag .text-wrapper > *{color:#000;}
 
 
 /* Special Image & Video */
@@ -199,10 +209,18 @@ nav.footer > .footer-bottom .wrapper > .count-area{background:#ffff00; color:#00
 .ss-tag{background:#ffff00; color:#000;}
 
 
-/* Specia Search */
+/* Special Icon Title */
+.ss-icon-title > .icon{background:#ffff00!important; color:#000!important;}
+.ss-icon-title > .icon > i{color:#000!important;}
+
+
+/* Special Search */
 .ss-search button{background:#502683;}
 .ss-search .suggestion{border-color:#ffff00; background:#000;}
 .ss-search .suggestion .item{color:#ffff00; border-color:#ffff00;}
+
+/* Special Checkbox */
+.ss-checkbox label{color:#ffff00;}
 
 
 /* Table */

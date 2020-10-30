@@ -18,6 +18,7 @@
 <link rel="stylesheet" href="public/assets/lib/swiper/swiper-bundle.min.css" />
 <link rel="stylesheet" href="public/assets/lib/simplebar/simplebar.css" />
 <link rel="stylesheet" href="public/assets/lib/aos-2.3.1/aos.min.css" />
+<link rel="stylesheet" href="public/assets/lib/vanilla-datepicker/dist/css/datepicker.min.css" />
 
 <link rel="stylesheet" href="public/assets/app/css/grids.css" />
 <link rel="stylesheet" href="public/assets/app/css/style.css" />

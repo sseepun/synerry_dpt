@@ -197,6 +197,11 @@ nav.footer.footer-gray .ss-list > li > a:hover{color:#1f9ad3;}
 .breadcrumb-custom-02 a:hover, .breadcrumb-custom-02 a:last-child{color:#7d33b4;}
 
 
+/* Date Selector */
+.date-selectors label{color:#666666; border-color:#ddd;}
+.date-selectors .icon{color:#8539ae;}
+
+
 /* List Header */
 .list-header .options > a{border-color:#ddd; color:#6a1771; background:#fff;}
 .list-header .options > a:hover, .list-header .options > a.active{
@@ -218,6 +223,7 @@ nav.footer.footer-gray .ss-list > li > a:hover{color:#1f9ad3;}
 .post-card:hover .title-container > .title,
 .ss-card:hover .post-card .title-container > .title,
 .ss-card-02:hover .post-card .title-container > .title{color:#88009b;}
+.post-card .date-tag{background:#6c109d; color:#fff;}
 .post-card .title-container > .by, .post-card .desc{color:#343a40;}
 .post-card .stats{color:#88009b;}
 .post-card.post-card-02{color:#fff;}
@@ -229,6 +235,7 @@ nav.footer.footer-gray .ss-list > li > a:hover{color:#1f9ad3;}
 .post-card.post-card-04 .date{color:#88009b;}
 .post-card.post-card-05, .post-card.post-card-06{border-color:#e1e1e1;}
 .post-card.post-card-06::before{background:#50137e;}
+.post-card.post-card-07{background:#6a1671;}
 .post-card.post-card-07 .title-container > .title{color:#fff;}
 .post-card.post-card-07:hover .title-container > .title,
 .ss-card:hover .post-card.post-card-07 .title-container > .title,
@@ -236,7 +243,9 @@ nav.footer.footer-gray .ss-list > li > a:hover{color:#1f9ad3;}
 .post-card.post-card-07 .stats{color:#fff;}
 .post-card.post-card-08{background:#f2f2f2;}
 .post-card.post-card-08:hover{background:#6a1671;}
-.post-card.post-card-08:hover .title-container > .title{color:#fff;}
+.post-card.post-card-08:hover .title-container > .title,
+.post-card.post-card-08:hover .color-black,
+.post-card.post-card-08:hover a.btn-action{color:#fff!important;}
 .post-card.post-card-08:hover .stats{color:#fff;}
 .post-card.post-card-09:hover{box-shadow:0px 10px 20px 0px rgba(0,0,0,.3);}
 .post-card.post-card-10 .post-stats-02{border-color:#e9e9e9;}
@@ -260,6 +269,8 @@ nav.footer.footer-gray .ss-list > li > a:hover{color:#1f9ad3;}
 
 /* Special Card */
 .ss-card-03:hover{box-shadow:0px 10px 20px 0px rgba(0,0,0,.3);}
+.ss-card-04 > .block > .calendar-tag{background:#6c109d;}
+.ss-card-04 > .block > .calendar-tag .text-wrapper > *{color:#fff;}
 
 
 /* Special Image & Video */
@@ -280,11 +291,14 @@ nav.footer.footer-gray .ss-list > li > a:hover{color:#1f9ad3;}
 .ss-tag:hover{background:#5a0687; color:#fff;}
 
 
-/* Specia Search */
+/* Special Search */
 .ss-search button{background:#502683;}
 .ss-search .suggestion{border-color:#e9e9e9; background:#fff;}
 .ss-search .suggestion .item{color:#4f4e4e; border-color:#ddd;}
 .ss-search .suggestion .item:hover{background:#f3f3f3;}
+
+/* Special Checkbox */
+.ss-checkbox label{color:#666666;}
 
 
 /* Table */
