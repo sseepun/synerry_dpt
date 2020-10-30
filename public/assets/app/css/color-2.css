@@ -20,6 +20,7 @@ input[type=number], input[type=phone], input[type=submit], select, textarea{
 
 /* Topnav */
 nav.topnav > .top-container{background:#000!important;}
+nav.topnav > .top-container .block > .option{color:#ffff00;}
 nav.topnav .menu > .submenu-dropdown{
     background:#000; border-top:1px solid #ffff00; border-bottom:1px solid #ffff00;
 }
@@ -275,6 +276,11 @@ table.table.table-download tbody > tr.row-title > td{background:#ffff00; color:#
 
 /* Content 04 */
 .content-04 .box-wrapper{border:1px solid #ffff00;}
+
+
+/* Content 05 */
+.content-05 .filter{background:rgba(0,0,0,.45);}
+.content-05 .text-container{background:rgba(0,0,0,.8); color:#ffff00;}
 
 
 /* FAQ 01 */

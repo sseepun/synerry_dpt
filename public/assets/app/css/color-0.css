@@ -255,7 +255,7 @@ nav.footer.footer-gray .ss-list > li > a:hover{color:#1f9ad3;}
 
 /* Shortcode */
 .shortcode label{color:#4f4e4e;}
-.shortcode button{background:#59236e; color:#fff;}
+.shortcode button{background:#59236e; color:#fff!important;}
 
 
 /* Special Card */
@@ -375,6 +375,11 @@ table.table.table-download tbody > tr.row-title > td{background:#393939; color:#
 
 /* Content 04 */
 .content-04 .box-wrapper{border:1px solid #eee; box-shadow:0px 0px 16px 8px rgba(0,0,0,.1);}
+
+
+/* Content 05 */
+.content-05 .filter{background:rgba(0,0,0,.45);}
+.content-05 .text-container{background:rgba(80,40,128,.8); color:#fff;}
 
 
 /* FAQ 01 */

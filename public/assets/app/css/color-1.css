@@ -277,6 +277,11 @@ table.table.table-download tbody > tr.row-title > td{background:#fff; color:#000
 .content-04 .box-wrapper{border:1px solid #fff;}
 
 
+/* Content 05 */
+.content-05 .filter{background:rgba(0,0,0,.45);}
+.content-05 .text-container{background:rgba(0,0,0,.8); color:#fff;}
+
+
 /* FAQ 01 */
 .faq-01 .question .ftag{background:#fff; color:#000;}
 .faq-01 .question > *:nth-child(2){color:#fff; border-color:#fff;}

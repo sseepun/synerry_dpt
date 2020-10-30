@@ -27,7 +27,7 @@
                     <?php for($i=0; $i<10; $i++){?>
                         <div class="slide">
                             <a class="wrapper" href="#">
-                                <div class="client lazy-bg" data-src="public/assets/app/images/client/01.jpg"></div>
+                                <div class="client" style="background-image:url('public/assets/app/images/client/01.jpg');"></div>
                                 <p>
                                     ศาลปกครอง <br>
                                     สาระดีดีจากศาลปกครอง

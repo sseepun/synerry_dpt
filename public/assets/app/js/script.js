@@ -279,6 +279,25 @@ $(function(){ 'use strict';
     });
 
 
+    // Shortcode
+    var shortcodes = $('.shortcode');
+    if(shortcodes.length){
+        shortcodes.each(function(){
+            var self = $(this),
+                target = self.find('input[type="text"]');
+            self.find('button').click(function(e){
+                e.preventDefault();
+                if(target.length){
+                    target[0].select();
+                    target[0].setSelectionRange(0, target[0].value.length);
+                    document.execCommand('copy');
+                    target.blur();
+                }
+            });
+        });
+    }
+
+
     // Swiper
     var swiperContainers = $('.swiper-container[data-swiper]');
     if(swiperContainers.length){

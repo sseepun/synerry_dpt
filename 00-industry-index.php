@@ -705,7 +705,7 @@
                         <?php for($i=0; $i<10; $i++){?>
                             <div class="slide">
                                 <div class="wrapper">
-                                    <div class="client lazy-bg" data-src="public/assets/app/images/client/01.jpg"></div>
+                                    <div class="client" style="background-image:url('public/assets/app/images/client/01.jpg');"></div>
                                 </div>
                             </div>
                         <?php }?>

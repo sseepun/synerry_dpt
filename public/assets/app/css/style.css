@@ -168,6 +168,19 @@ p, .p{font-size:1.125rem; margin:.625rem 0 0 0; font-weight:300;}
 .breadcrumb-custom-02 a:last-child{font-weight:600;}
 
 
+/* Book Container */
+.book-container{width:100%; height:540px; position:relative; border-radius:0; overflow:hidden;}
+@media screen and (max-width:1199.98px){
+    .book-container{height:475px;}
+}
+@media screen and (max-width:767.98px){
+    .book-container{height:400px;}
+}
+@media screen and (max-width:575.98px){
+    .book-container{height:320px;}
+}
+
+
 /* File Icons */
 .file-icon{position:relative; display:block; width:2.75rem; height:2.75rem;}
 .file-icon.file-icon-sm{width:2rem; height:2rem;}
@@ -212,8 +225,8 @@ p, .p{font-size:1.125rem; margin:.625rem 0 0 0; font-weight:300;}
 
 /* List Header */
 .list-header{
-    width:100%; display:flex; align-items:center; justify-content:space-between;
-    flex-wrap:wrap; padding:.125rem 0; margin:0;
+    position:relative; width:100%; display:flex; align-items:center;
+    justify-content:space-between; flex-wrap:wrap; padding:.125rem 0; margin:0;
 }
 .list-header > .block, .list-header form{display:flex; align-items:center;}
 .list-header .text-wrapper{text-align:center; font-size:1.25rem; padding:.375rem 0; font-weight:300;}
@@ -563,7 +576,7 @@ p, .p{font-size:1.125rem; margin:.625rem 0 0 0; font-weight:300;}
 }
 .shortcode label{width:6.5rem; margin:0; font-size:1rem; font-weight:400;}
 .shortcode input[type=text]{
-    width:calc(100% - 12.5rem); border-radius:0; padding:.3125rem 1rem;
+    width:calc(100% - 12.5rem); border-radius:0; padding:.3125rem 1rem; pointer-events:none;
 }
 .shortcode button{width:6rem; text-align:center; border-radius:0; font-size:1rem;}
 @media screen and (max-width:767.98px){
@@ -665,13 +678,15 @@ p, .p{font-size:1.125rem; margin:.625rem 0 0 0; font-weight:300;}
 .ss-img > .socials .social > img{display:block; height:2rem; width:auto;}
 
 .ss-img > .hover-text, .ss-img > .hover-container,
-.ss-video > .hover-text, .ss-video > .hover-container{
+.ss-video > .hover-text, .ss-video > .hover-container, 
+.ss-img > .card-hover-container, .ss-video > .card-hover-container{
     position:absolute; top:0; bottom:0; left:0; right:0; background:rgba(106,22,113,.4);
     display:flex; align-items:center; justify-content:center; opacity:0;
     pointer-events:none; transition:opacity .3s;
 }
 .ss-img:hover > .hover-text, .ss-img:hover > .hover-container,
-.ss-video:hover > .hover-text, .ss-video:hover > .hover-container{
+.ss-video:hover > .hover-text, .ss-video:hover > .hover-container, 
+.ss-img:hover > .card-hover-container, .ss-video:hover > .card-hover-container{
     opacity:1; pointer-events:auto;
 }
 .ss-img > .hover-text p, .ss-img > .hover-container p,
@@ -684,6 +699,32 @@ p, .p{font-size:1.125rem; margin:.625rem 0 0 0; font-weight:300;}
 }
 .ss-img > .hover-text > img, .ss-img > .hover-container > img.img-sm,
 .ss-video > .hover-text > img, .ss-video > .hover-container > img.img-sm{width:2.125rem;}
+
+.ss-img > .card-hover-container, .ss-video > .card-hover-container{
+    background:rgba(255,255,255,.9); color:#000;
+}
+.ss-img > .card-hover-container > .wrapper, .ss-video > .card-hover-container > .wrapper{
+    width:100%; height:100%; display:flex; align-items:stretch; flex-wrap:wrap; padding:1rem;
+}
+.ss-img > .card-hover-container .title, .ss-video > .card-hover-container .title{
+    font-size:1.125rem; font-weight:600; color:#000; margin:0;
+}
+.ss-img > .card-hover-container .btns, .ss-video > .card-hover-container .btns{
+    width:100%; margin:1.5rem 0 auto 0; text-align:center;
+}
+.ss-img > .card-hover-container .btn, .ss-video > .card-hover-container .btn{
+    width:2.75rem; height:2.75rem; border-radius:0; line-height:2.625rem; padding:0;
+    font-size:1.5rem; background:#502683; color:#fff;
+}
+.ss-img > .card-hover-container .btn:nth-child(2n), 
+.ss-video > .card-hover-container .btn:nth-child(2n){background:#832681;}
+.ss-img > .card-hover-container .stats, .ss-video > .card-hover-container .stats{
+    width:100%; margin:auto 0 0 0; color:#000; font-size:.875rem;
+}
+.ss-img > .card-hover-container .stats > .sep, .ss-video > .card-hover-container .stats > .sep{
+    display:inline-block; width:1px; height:.8125rem; margin:0 .3125rem;
+    transform:translateY(.125rem); background:#666;
+}
 
 .ss-img .tag, .ss-video .tag{
     position:absolute; top:0; right:0; padding:.3125rem 1rem .25rem 1rem; font-weight:300;
@@ -1010,8 +1051,8 @@ table.table.table-download td:nth-child(4){min-width:134px; text-align:right; pa
 .border-bottom-4{border-bottom:4px solid transparent!important;}
 
 .no-bradius{border-radius:0!important;}
-
 .no-padding{padding:0!important;}
+.box-shadow{box-shadow:0px 10px 15px 0px rgba(0,0,0,.25);}
 
 @media screen and (max-width:1199.98px){
     .lg-no-br > br{display:none;}
