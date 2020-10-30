@@ -310,6 +310,13 @@ table.table.table-download tbody > tr.row-title > td{background:#ffff00; color:#
 .sitemap-01 ul > li > a{color:#ffff00;}
 .sitemap-01 ul > li > a::before{background:#ffff00;}
 
+/* Sitemap 02 */
+.sitemap-02 .title{color:#ffff00; border-color:#ffff00;}
+.sitemap-02 a{color:#ffff00;}
+.sitemap-02 .grid .sitemap-title{color:#ffff00; border-color:#ffff00;}
+.sitemap-02 .grid ul > li > ul::before, .sitemap-02 .grid ul > li::before{background:#ffff00;}
+.sitemap-02 ul > li{border-color:#ffff00;}
+
 
 /* Tab Container 01 */
 .tab-container.tab-container-01 .tabs::before{background:#ffff00;}
