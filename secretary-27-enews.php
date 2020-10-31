@@ -67,10 +67,10 @@
 
                     <div class="btns mt-4">
                         <button type="submit" class="btn btn-round custom-btn-09">
-                            <i class="far fa-check-circle mr-2"></i> ตกลง
+                            <i class="far fa-check-circle mr-1"></i> ตกลง
                         </button>
                         <a class="btn btn-round custom-btn-sgray btn-form-clear" href="#">
-                            <i class="far fa-times-circle mr-2"></i> ล้างข้อมูล
+                            <i class="far fa-times-circle mr-1"></i> ล้างข้อมูล
                         </a>
                     </div>
                 </div>
