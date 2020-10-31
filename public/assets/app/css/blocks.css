@@ -76,7 +76,6 @@
 }
 .call-02 > .call-container{
     width:100%; padding:3rem 0 2rem 0; background-size:cover; background-position:center;
-   
 }
 .call-02 .call-text{position:relative; margin:0; font-weight:300;}
 .call-02 .call-text.title{font-size:2.125rem;}
@@ -117,7 +116,7 @@
 .call-03{padding:0;}
 .call-03 .top-container{padding:4rem 0 0 0; background-size:cover; background-position:center;}
 .call-03 .input-group{margin:1rem auto 0 auto;}
-.call-02 .subject{transform:translateY(3rem);}
+.call-03 .subject{transform:translateY(3rem);}
 .call-03 .call-container{padding:5.5rem 0 3rem 0;}
 .call-03 .slide > .wrapper{padding:0 .75rem;}
 .call-03 .slide-container .client{height:60px; border-radius:5px;}
@@ -561,12 +560,7 @@
     position:relative; width:100vw; height:240px; margin:0 calc(50% - 50vw);
     background-size:cover; background-position:center;
 }
-.tab-container.tab-container-02 .slide-container{
-    position:relative; width:100%; margin:0;
-    -webkit-mask-image: linear-gradient(to bottom, #000, #000, #000, #000, #000, 
-        #000, #000, #000, #000, #000, #000, #000, #000, #000, #000, #000,
-        rgba(0,0,0,.8), rgba(0,0,0,.5), rgba(0,0,0,0));
-}
+.tab-container.tab-container-02 .slide-container{position:relative; width:100%; margin:0;}
 .tab-container.tab-container-02 .post-card{padding-bottom:6.5rem; transition:background .3s;}
 .tab-container.tab-container-02 .btns{
     border-top:1px solid transparent; border-bottom:1px solid transparent;
@@ -579,8 +573,23 @@
 .tab-container.tab-container-02 .slide-container:hover .arrows > .slick-next{opacity:.75;}
 .tab-container.tab-container-02 .arrows > .slick-prev:hover, 
 .tab-container.tab-container-02 .arrows > .slick-next:hover{opacity:1;}
+.tab-container.tab-container-02 .slide{position:relative;}
+.tab-container.tab-container-02 .slide > .img-bg{
+    position:absolute; top:0; bottom:0; left:0; right:0; background-size:auto 100%;
+    background-position:center bottom; transition:opacity .3s;
+}
+.tab-container.tab-container-02 .slide.slick-current > .img-bg.on-default,
+.tab-container.tab-container-02 .slide > .img-bg.on-active{opacity:0;}
+.tab-container.tab-container-02 .slide.slick-current > .img-bg.on-active{opacity:1;}
+.tab-container.tab-container-02 .slide > .post-card{position:relative;}
 @media screen and (max-width:991.98px){
     .tab-container.tab-container-02 .arrows{left:-3.5rem; right:-3.5rem;}
+}
+@media screen and (max-width:767.98px){
+    .tab-container.tab-container-02 .slide.slick-current > .img-bg.on-default,
+    .tab-container.tab-container-02 .slide > .img-bg.on-default{opacity:1;}
+    .tab-container.tab-container-02 .slide.slick-current > .img-bg.on-active,
+    .tab-container.tab-container-02 .slide > .img-bg.on-active{opacity:0;}
 }
 @media screen and (max-width:575.98px){
     .tab-container.tab-container-02 .arrows{left:-2.5rem; right:-2.5rem;}

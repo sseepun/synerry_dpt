@@ -206,6 +206,10 @@ nav.footer.footer-gray .ss-list > li > a:hover{color:#1f9ad3;}
 .breadcrumb-custom-03 a:last-child i{background:#6c109d;}
 
 
+/* Contact Card */
+.chart-container .label p{color:#666;}
+
+
 /* Date Selector */
 .date-selectors label{color:#666666; border-color:#ddd;}
 .date-selectors .icon{color:#8539ae;}
@@ -275,6 +279,10 @@ nav.footer.footer-gray .ss-list > li > a:hover{color:#1f9ad3;}
 
 /* Post Topic */
 .post-topic > .icon{color:#fff;}
+
+
+/* Question Box */
+.question-box > .result-wrapper{background:#f4f4f4;}
 
 
 /* Shortcode */
@@ -483,12 +491,10 @@ table.table.table-download tbody > tr.row-title > td{background:#393939; color:#
 .tab-container.tab-container-02 .btns{border-color:#383737;}
 .tab-container.tab-container-02 .arrows > .slick-prev, 
 .tab-container.tab-container-02 .arrows > .slick-next{color:#383737;}
-.tab-container.tab-container-02 .slide .post-card{background:#fff;}
 .tab-container.tab-container-02 .tab .icon > .img-icon.theme-0{display:block;}
 .tab-container.tab-container-02 .tab .icon > .img-icon.theme-1{display:none;}
 .tab-container.tab-container-02 .tab .icon > .img-icon.theme-2{display:none;}
 @media screen and (min-width:768px){
-    .tab-container.tab-container-02 .slide.slick-current .post-card{background:#383737;}
     .tab-container.tab-container-02 .slide.slick-current .post-card *{color:#fff!important;}
     .tab-container.tab-container-02 .slide.slick-current .post-card .date{color:#8e5e9c!important;}
     .tab-container.tab-container-02 .slide.slick-current .btns{border-color:#fff;}

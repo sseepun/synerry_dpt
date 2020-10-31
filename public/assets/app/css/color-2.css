@@ -112,7 +112,7 @@ nav.footer > .footer-bottom .wrapper > .count-area{background:#ffff00; color:#00
 .btn.custom-btn-sgray > i,
 .btn.custom-btn-09 > i,
 .btn.custom-btn-10 > i{
-    color:#ffff00;
+    color:#000!important;
 }
 
 .btn.custom-btn-theme-0, .btn.custom-btn-theme-1, .btn.custom-btn-theme-2{border:1px solid #ffff00;}
@@ -141,6 +141,12 @@ nav.footer > .footer-bottom .wrapper > .count-area{background:#ffff00; color:#00
 /* Breadcrumb 03 */
 .breadcrumb-custom-03 a{color:#ffff00;}
 .breadcrumb-custom-03 a i{background:#ffff00; color:#000;}
+
+
+/* Contact Card */
+.contact-card{background:#ffff00!important;}
+.contact-card p{color:#000;}
+.contact-card h6, .contact-card a{color:#000;}
 
 
 /* Date Selector */
@@ -184,6 +190,11 @@ nav.footer > .footer-bottom .wrapper > .count-area{background:#ffff00; color:#00
 
 /* Post Topic */
 .post-topic > .icon{color:#000;}
+
+
+/* Question Box */
+.question-box > .result-wrapper{background:#ffff00;}
+.question-box > .result-wrapper *{color:#000!important;}
 
 
 /* Shortcode */
@@ -358,6 +369,7 @@ table.table.table-download tbody > tr.row-title > td{background:#ffff00; color:#
 .tab-container.tab-container-02 .tab .icon > .img-icon.theme-0{display:none;}
 .tab-container.tab-container-02 .tab .icon > .img-icon.theme-1{display:none;}
 .tab-container.tab-container-02 .tab .icon > .img-icon.theme-2{display:block;}
+.tab-container.tab-container-02 .slide > .img-bg{opacity:0!important;}
 @media screen and (min-width:768px){
     .tab-container.tab-container-02 .slide.slick-current .post-card{background:#ffff00;}
     .tab-container.tab-container-02 .slide.slick-current .post-card *{color:#000!important;}
