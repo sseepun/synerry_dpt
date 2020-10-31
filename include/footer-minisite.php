@@ -118,13 +118,13 @@
                     <div class="wrapper">
                         <h4>โซเชียลมีเดีย</h4>
                         <div class="social-btns pt-2 pb-1">
-                            <a class="btn-social" href="#" tabindex="0">
+                            <a class="btn-social" href="#">
                                 <img src="public/assets/app/images/social/fb.png" alt="Social Icon" />
                             </a>
-                            <a class="btn-social" href="#" tabindex="0">
+                            <a class="btn-social" href="#">
                                 <img src="public/assets/app/images/social/tw.png" alt="Social Icon" />
                             </a>
-                            <a class="btn-social" href="#" tabindex="0">
+                            <a class="btn-social" href="#">
                                 <img src="public/assets/app/images/social/ln.png" alt="Social Icon" />
                             </a>
                         </div>

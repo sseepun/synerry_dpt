@@ -288,18 +288,26 @@ $(function(){ 'use strict';
 
 
     // Shortcode
-    var shortcodes = $('.shortcode');
+    var shortcodeReady = true,
+        shortcodes = $('.shortcode');
     if(shortcodes.length){
         shortcodes.each(function(){
             var self = $(this),
                 target = self.find('input[type="text"]');
             self.find('button').click(function(e){
                 e.preventDefault();
-                if(target.length){
+                var thisBtn = $(this);
+                if(shortcodeReady && target.length){
+                    shortcodeReady = false;
+                    thisBtn.html('Copied!');
                     target[0].select();
                     target[0].setSelectionRange(0, target[0].value.length);
                     document.execCommand('copy');
                     target.blur();
+                    setTimeout(function(){
+                        shortcodeReady = true;
+                        thisBtn.html('Copy');
+                    }, 2000);
                 }
             });
         });
@@ -425,6 +433,21 @@ $(function(){ 'use strict';
                     { breakpoint: 991.98, settings: { slidesToShow: 2, } },
                     { breakpoint: 767.98, settings: { slidesToShow: 1, } },
                 ]
+            });
+        });
+    }
+
+
+    // Content 07
+    var content07 = $('.content-07');
+    if(content07.length){
+        content07.each(function(){
+            var self=  $(this);
+            self.find('.slides').slick({
+                centerMode: true, centerPadding: 0, slidesToShow: 1, 
+                focusOnSelect: true, autoplay: false,
+                arrows: true, appendArrows: self.find('.arrows'), 
+                dots: true, appendDots: self.find('.dots'),
             });
         });
     }

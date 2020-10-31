@@ -10,58 +10,25 @@
 .banner-01 h1{font-size:4.5rem; font-weight:600; margin:0; letter-spacing:.875rem; line-height:.75;}
 .banner-01 h2{font-size:3.25rem; font-weight:100; margin:0; letter-spacing:.0625rem;}
 .banner-01 h3{font-size:2.125rem; font-weight:300; margin:.5rem 0 0 0;}
-.banner-01 .dots{
-    position:absolute; bottom:0; left:0; right:0; display:flex; align-items:center; 
-    justify-content:center; padding:1.1875rem 1rem; height:3rem;
-}
-.banner-01 .dots::before{
-    content:''; position:absolute; bottom:100%; left:0; right:0; height:10vw;
-    background:rgba(0,0,0,.3);
-}
-.banner-01.no-filter .dots::before{display:none;}
-.banner-01 .dots > .slick-dots{
-    display:flex; position:relative; margin:0; padding:0; list-style:none; align-items:center;
-}
-.banner-01 .dots li{position:relative; display:block; margin:0 auto; padding:.5625rem;}
+.banner-01 .dots{padding:1.1875rem 1rem; height:3rem;}
+.banner-01 .dots li{padding:.5625rem;}
 .banner-01 .dots li > .desc{
-    position:absolute; bottom:100%; left:-7.5rem; width:16.5rem; text-align:center; padding:.25rem 1rem;
-    pointer-events:none; font-size:.9375rem; overflow:hidden; white-space:nowrap; text-overflow:ellipsis;
-    font-weight:300; border-radius:.25rem; opacity:0; transition:bottom .3s, opacity .3s;
+    position:absolute; bottom:100%; left:-7.5rem; width:16.5rem; text-align:center; 
+    padding:.25rem 1rem; pointer-events:none; font-size:.9375rem; overflow:hidden; 
+    white-space:nowrap; text-overflow:ellipsis; font-weight:300; border-radius:.25rem; 
+    opacity:0; transition:bottom .3s, opacity .3s;
 }
 .banner-01 .dots li:hover > .desc{bottom:calc(100% + .25rem); opacity:1;}
-.banner-01 .dots button{
-    position:relative; display:block; font-size:0; border:0; box-shadow:none;
-    border-radius:50%; cursor:pointer; padding:0; margin:0 auto; outline:none;
-    width:.5rem; height:.5rem; transition:width .3s, height .3s;
-}
 .banner-01 .dots li.slick-active > button{width:.6875rem; height:.6875rem;}
+
 .banner-01 .dots button:before{
     content:''; position:absolute; top:-.3125rem; left:-.3125rem; width:1.3125rem; height:1.3125rem;
     border-radius:50%; opacity:0; transition:opacity .3s;
 }
 .banner-01 .dots li.slick-active > button:before{opacity:1;}
-.banner-01 .arrows{
-    position:absolute; display:flex; justify-content:space-between; align-items:center;
-    top:0; bottom:calc(3rem + 10vw); left:0; right:0; padding:0 1rem; pointer-events:none;
-}
-.banner-01.no-filter .arrows{bottom:3rem;}
-.banner-01 .arrows > .slick-prev, .banner-01 .arrows > .slick-next{
-    display:block; width:2.5rem; height:2.5rem; pointer-events:auto; cursor:pointer; opacity:0;
-    text-align:center; line-height:2.75rem; outline:none; font-size:0; background:transparent;
-    box-shadow:none; border:0; transition:opacity .3s, transform .3s; 
-}
-.banner-01 .arrows > .slick-prev{transform:translateX(-.625rem);}
-.banner-01 .arrows > .slick-next{transform:translateX(.625rem);}
+.banner-01 .arrows{bottom:3rem; left:0; right:0; padding:0 1rem;}
 .banner-01 .slide-container:hover .arrows > .slick-prev, 
-.banner-01 .slide-container:hover .arrows > .slick-next{
-    opacity:.8; transform:translateX(0);
-}
-.banner-01 .arrows > .slick-prev:hover, .banner-01 .arrows > .slick-next:hover{opacity:1;}
-.banner-01 .arrows > .slick-prev::before, .banner-01 .arrows > .slick-next::before{
-    font-family:'Font Awesome 5 Free'; font-weight:900; font-size:2.5rem;
-}
-.banner-01 .arrows > .slick-prev::before{content:'\f053';}
-.banner-01 .arrows > .slick-next::before{content:'\f054';}
+.banner-01 .slide-container:hover .arrows > .slick-next{opacity:.8;}
 @media screen and (max-width:991.98px){
     .banner-01 .slide{height:440px;}
     .banner-01 h1{font-size:3.875rem; letter-spacing:.75rem;}
@@ -76,7 +43,6 @@
     .banner-01 h3{font-size:1.5rem; margin:.4375rem 0 0 0;}
     .banner-01 .dots{padding:1rem 1rem; height:2.625rem;}
     .banner-01 .dots li{padding:0 .5rem;}
-    .banner-01 .arrows{bottom:calc(2.625rem + 10vw);}
 }
 
 .banner-01 .slide .animate{
@@ -124,26 +90,15 @@
     display:block; width:100%; height:50px; border-radius:1000em;
     background-size:cover; background-position:center;
 }
-.call-02 .slide-container .arrows{
-    position:absolute; display:flex; justify-content:space-between; align-items:center;
-    top:calc(50% - 1.25rem); left:-4rem; right:-4rem; padding:0 1rem; pointer-events:none;
-}
+.call-02 .slide-container .arrows{left:-4rem; right:-4rem; padding:0 1rem;}
 .call-02 .slide-container  .arrows > .slick-prev, 
 .call-02 .slide-container  .arrows > .slick-next{
-    display:block; width:2.5rem; height:2.25rem; pointer-events:auto; cursor:pointer; opacity:1;
-    text-align:center; line-height:2.25rem; outline:none; font-size:0; background:transparent;
-    box-shadow:none; border:0; transition:opacity .3s, transform .3s; 
+    width:2.5rem; height:2.25rem; line-height:2.25rem;
 }
 .call-02 .slide-container  .slide-container:hover .arrows > .slick-prev, 
-.call-02 .slide-container  .slide-container:hover .arrows > .slick-next{opacity:.75;}
-.call-02 .slide-container  .arrows > .slick-prev:hover, 
-.call-02 .slide-container  .arrows > .slick-next:hover{opacity:1;}
+.call-02 .slide-container  .slide-container:hover .arrows > .slick-next{opacity:.8;}
 .call-02 .slide-container  .arrows > .slick-prev::before, 
-.call-02 .slide-container  .arrows > .slick-next::before{
-    font-family:'Font Awesome 5 Free'; font-weight:900; font-size:1.5rem;
-}
-.call-02 .slide-container  .arrows > .slick-prev::before{content:'\f053';}
-.call-02 .slide-container  .arrows > .slick-next::before{content:'\f054';}
+.call-02 .slide-container  .arrows > .slick-next::before{font-size:1.5rem;}
 .call-02 .input-group{width:100%; max-width:26rem; margin:0 auto 2rem auto;}
 .call-02 .input-group > input{
     border-radius:1000em!important; font-size:1rem; text-align:center; z-index:2;
@@ -269,35 +224,15 @@
 .content-03 .slide-container{position:relative; width:100%; padding:0;}
 .content-03 .slick-track{padding:1rem 0;}
 .content-03 .slide{padding:0 1rem;}
-.content-03 .arrows{
-    position:absolute; display:flex; justify-content:space-between; align-items:center;
-    top:0; bottom:0; left:-2.75rem; right:-2.75rem; pointer-events:none;
-}
-.content-03 .arrows > .slick-prev, .content-03 .arrows > .slick-next{
-    display:block; width:2.5rem; height:2.5rem; pointer-events:auto; cursor:pointer; opacity:0;
-    text-align:center; line-height:2.75rem; outline:none; font-size:0; background:transparent;
-    box-shadow:none; border:0; transition:opacity .3s, transform .3s; 
-}
-.content-03 .arrows > .slick-prev{transform:translateX(-.625rem);}
-.content-03 .arrows > .slick-next{transform:translateX(.625rem);}
-.content-03 .slide-container:hover .arrows > .slick-prev, 
-.content-03 .slide-container:hover .arrows > .slick-next{
-    opacity:.8; transform:translateX(0);
-}
-.content-03 .arrows > .slick-prev:hover, .content-03 .arrows > .slick-next:hover{opacity:1;}
-.content-03 .arrows > .slick-prev::before, .content-03 .arrows > .slick-next::before{
-    font-family:'Font Awesome 5 Free'; font-weight:900; font-size:2.5rem;
-}
-.content-03 .arrows > .slick-prev::before{content:'\f053';}
-.content-03 .arrows > .slick-next::before{content:'\f054';}
 
         
 /* Content 04 */
 .content-04{width:100%; padding:0 0 2rem 0;}
 .content-04 > .top-container{
-    width:100%; padding:4.5rem 0 0 0; background-size:cover; background-position:center;
+    width:100%; padding:4.5rem 0 0 0; background-size:100% auto; 
+    background-position:center top; background-repeat:no-repeat;
 }
-.content-04 > .top-container img{display:block; width:100%; height:auto;}
+.content-04 > .top-container img.img-content{display:block; width:100%; height:auto;}
 .content-04 .box-wrapper{display:block; position:relative; width:100%; padding:1.5rem;}
 @media screen and (max-width:767.98px){
     .content-04 .box-wrapper{padding:1rem;}
@@ -336,6 +271,17 @@
     position:absolute; top:0; bottom:0; left:0; right:0; background-size:100% auto;
     background-position:center top; background-repeat:no-repeat;
 }
+
+
+/* Content 07 */
+.content-07{position:relative; width:100%;}
+.content-07 .slide-container{
+    display:block; position:relative; width:100%; max-width:40rem; margin:0 auto;
+    padding:2rem 0 2.5rem 0;
+}
+.content-07 .arrows{left:-4.25rem; right:-4.25rem;}
+.content-07 .dots button{background:#fff;}
+.content-07 .dots li.slick-active button{width:.6875rem; height:.6875rem; background:#0478b6;}
 
 
 /* FAQ 01 */
@@ -623,28 +569,16 @@
 }
 .tab-container.tab-container-02 .post-card{padding-bottom:6.5rem; transition:background .3s;}
 .tab-container.tab-container-02 .btns{
-    border-top:1px solid transparent; border-bottom:1px solid transparent; transition:border-color .3s;
+    border-top:1px solid transparent; border-bottom:1px solid transparent;
+    transition:border-color .3s;
 }
-.tab-container.tab-container-02 .arrows{
-    position:absolute; display:flex; justify-content:space-between; align-items:center;
-    top:calc(50% - 6.25rem); left:-5rem; right:-5rem; padding:0 1rem; pointer-events:none;
-}
+.tab-container.tab-container-02 .arrows{left:-5rem; right:-5rem; padding:0 1rem;}
 .tab-container.tab-container-02 .arrows > .slick-prev, 
-.tab-container.tab-container-02 .arrows > .slick-next{
-    display:block; width:2.5rem; height:2.5rem; pointer-events:auto; cursor:pointer; opacity:1;
-    text-align:center; line-height:2.75rem; outline:none; font-size:0; background:transparent;
-    box-shadow:none; border:0; transition:opacity .3s, transform .3s; 
-}
+.tab-container.tab-container-02 .arrows > .slick-next{opacity:1; transform:none;}
 .tab-container.tab-container-02 .slide-container:hover .arrows > .slick-prev, 
 .tab-container.tab-container-02 .slide-container:hover .arrows > .slick-next{opacity:.75;}
 .tab-container.tab-container-02 .arrows > .slick-prev:hover, 
 .tab-container.tab-container-02 .arrows > .slick-next:hover{opacity:1;}
-.tab-container.tab-container-02 .arrows > .slick-prev::before, 
-.tab-container.tab-container-02 .arrows > .slick-next::before{
-    font-family:'Font Awesome 5 Free'; font-weight:900; font-size:2.5rem;
-}
-.tab-container.tab-container-02 .arrows > .slick-prev::before{content:'\f053';}
-.tab-container.tab-container-02 .arrows > .slick-next::before{content:'\f054';}
 @media screen and (max-width:991.98px){
     .tab-container.tab-container-02 .arrows{left:-3.5rem; right:-3.5rem;}
 }

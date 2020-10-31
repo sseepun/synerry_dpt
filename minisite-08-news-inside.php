@@ -35,10 +35,10 @@
     </section>
 
     <section class="content-04">
-        <div class="top-container" style="background-image:url('public/assets/app/images/bg/32.jpg')" 
-        data-aos="fade-up" data-aos-delay="300">
+        <div class="top-container" data-aos="fade-up" data-aos-delay="300" 
+        style="background:url('public/assets/app/images/bg/32.jpg') center/cover;">
             <div class="container">
-                <img src="public/assets/app/images/banner/01.jpg" alt="Content Image" />
+                <img class="img-content" src="public/assets/app/images/banner/01.jpg" alt="Content Image" />
             </div>
         </div>
         <div class="bottom-container" data-aos="fade-up" data-aos-delay="600">

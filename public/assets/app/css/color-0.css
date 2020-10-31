@@ -9,6 +9,7 @@ html, body{color:#000;}
 .color-dark{color:#212529!important;}
 .color-sgray{color:#f3f3f3!important;}
 .color-gray{color:#e9e9e9!important;}
+.color-dgray{color:#666!important;}
 .color-01{color:#422754!important;}
 .color-02{color:#59236e!important;}
 .color-03{color:#4a2d73!important;}
@@ -25,6 +26,7 @@ html, body{color:#000;}
 .bg-color-dark{background:#212529!important;}
 .bg-color-sgray{background:#f3f3f3!important;}
 .bg-color-gray{background:#e9e9e9!important;}
+.bg-color-dgray{background:#666!important;}
 .bg-color-01{background:#422754!important;}
 .bg-color-02{background:#59236e!important;}
 .bg-color-03{background:#4a2d73!important;}
@@ -267,7 +269,8 @@ nav.footer.footer-gray .ss-list > li > a:hover{color:#1f9ad3;}
 .post-stats .stat i{background:#6c109d; color:#fff;}
 .post-stats-02{color:#000;}
 .post-stats-02 .sep{background:#000;}
-.post-stats-02 .btn-float{background:#502683; color:#fff;}
+.post-stats-02 .btn-float{background:#666; color:#fff;}
+.post-card:hover .post-stats-02 .btn-float{background:#502683;}
 
 
 /* Post Topic */

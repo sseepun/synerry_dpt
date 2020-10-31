@@ -13,6 +13,12 @@
 .theme-2 .bg-color-blue{background:#ffff00!important;}
 
 
+/* Buttons */
+.btn.custom-btn-blue, .btn.custom-btn-blue:focus{color:#fff; background:#0081c5;}
+.btn.custom-btn-blue:hover, .btn.custom-btn-blue:active{background:#1f9ad3;}
+.btn.custom-btn-blue > i, .btn.custom-btn-blue:hover > i{color:#fff;}
+
+
 /* Topnav */
 nav.topnav > .top-container{padding:.375rem 0;}
 .theme-1 nav.topnav > .top-container{background:#000!important;}

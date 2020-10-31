@@ -5,46 +5,6 @@
     <?php include_once('include/style.php'); ?>
     <link rel="stylesheet" href="public/assets/app/css/style-minisite.css" />
     <link rel="stylesheet" type="text/css" href="public/assets/lib/wow_book/wow_book/wow_book.css" />
-    <style>
-        .block-wrapper {
-            padding: 1.5rem;
-            -webkit-box-shadow: 0px 10px 15px 0px rgba(0,0,0,0.5);
-            -moz-box-shadow: 0px 10px 15px 0px rgba(0,0,0,0.5);
-            box-shadow: 0px 10px 15px 0px rgba(0,0,0,0.5);
-        }
-        .block-wrapper .info-socials {display:flex; flex-wrap: wrap; align-items:center; justify-content: space-between; padding: 0 0 1rem 0; border-bottom: 1px solid transparent; border-color: #e7e7e7; }
-        .block-wrapper .info-socials .info .date, .block-wrapper .info-socials .info .view {
-            display:inline-block;  border-right: 1px solid transparent; border-color: var(--color2); margin: .5rem .5rem 0 0;  padding: 0 .5rem 0 0;
-        }
-        .block-wrapper .info-socials .info .pages {display:inline-block; margin: .5rem 0 0 0;}
-        .download-container {
-            margin: 2rem 0; 
-        }
-        .download-container a {
-            display:inline-block; text-decoration: none; background:#4494cb; padding: .625rem 4rem .625rem .625rem; margin: .5rem 1rem 0 0;  color:#fff; text-align:center;
-            transition: background .4s;
-        }
-        .download-container a:hover {background:#007bff; }
-        .download-container .file-size {margin: .5rem 0 0 0; display:inline-block;}
-        .download-container a i {padding: 0 1.25rem 0 0;}
-    
-
-        .block-wrapper .embed-form {padding: 1.5rem 2.5rem; background:#e1e1e1;}
-        .block-wrapper input[type="text"]{
-            border-radius:0; padding: .125rem .125rem .125rem .375rem; width:70%;
-        }
-        .block-wrapper button {border:none; padding: .25rem 3rem .25rem 2.5rem;}
-
-        .block-wrapper .embed-form > * {margin: .5rem 0 0 0;}
-
-        @media screen and (max-width:767.98px){
-            .block-wrapper input[type="text"]{width:100%;}
-        }
-
-        @media screen and (max-width: 575.98px){
-            .block-wrapper .embed-form { padding: 1.5rem;}
-        }
-    </style>
 </head>
 <body class="loading">
     <?php include_once('include/topnav-minisite.php'); ?>
@@ -109,48 +69,49 @@
 
     <section class="section-padding" data-aos="fade-up" data-aos-delay="0">
         <div class="container">
-            <div class="block-wrapper">
-                <h3 class="fw-100">รายงานประจำปีสำนักงานปลัดกระทรวงอุตสาหกรรม ประจำปีงบประมาณ พ.ศ. 2558</h3>
-                
-                <div class="info-socials">
-                    <div class="info color-02">
-                        <div class="date">
-                            24-08-2563
-                        </div>
-                        <div class="view">
-                            เปิดดู : 130
-                        </div>
-                        <div class="pages">
-                            77 หน้า
-                        </div>
-                    </div>
-                    <div class="icons mt-2">
-                        <img src="public/assets/app/images/social/fb.png" alt="social icon">
-                        <img src="public/assets/app/images/social/tw.png" alt="social icon">
-                        <img src="public/assets/app/images/social/ln.png" alt="social icon">
-                        <img src="public/assets/app/images/social/link.png" alt="social icon">
+            <div class="ss-box-02 box-shadow no-bradius width-full">
+                <h3 class="fw-200">
+                    รายงานประจำปีสำนักงานปลัดกระทรวงอุตสาหกรรม ประจำปีงบประมาณ พ.ศ. 2558
+                </h3>
+                <div class="d-flex jc-space-between ai-center fw-wrap border-bottom pb-2">
+                    <p class="mt-0 mr-3 color-dgray text-nm">
+                        24-08-2563
+                        <span class="sep">|</span>
+                        เปิดดู : 130
+                        <span class="sep">|</span>
+                        77 หน้า
+                    </p>
+                    <div class="social-btns mt-2">
+                        <a class="btn-social" href="#">
+                            <img src="public/assets/app/images/social/fb.png" alt="Social Icon">
+                        </a>
+                        <a class="btn-social" href="#">
+                            <img src="public/assets/app/images/social/tw.png" alt="Social Icon">
+                        </a>
+                        <a class="btn-social" href="#">
+                            <img src="public/assets/app/images/social/ln.png" alt="Social Icon">
+                        </a>
+                        <a class="btn-social" href="#">
+                            <img src="public/assets/app/images/social/link.png" alt="Social Icon">
+                        </a>
                     </div>
                 </div>
-
-                <div class="download-container fw-100">
-                    <a href="#">
-                        <i class="fas fa-arrow-down"></i>
-                        Download
+                <div class="d-flex ai-center fw-wrap py-3">
+                    <a class="btn custom-btn-blue btn-xl no-bradius mr-3" href="#">
+                        <i class="fas fa-download mr-2 text-2xs"></i>
+                        ดาวน์โหลด
                     </a>
-                    <div class="file-size">
-                        ขนาดไฟล์ : 81.91 MB
-                    </div>
-                    
+                    <p class="color-dgray mt-0">
+                        <span class="text-sm">ขนาดไฟล์ : 81.91 MB</span>
+                    </p>
                 </div>
-
-                <form>
-                    <div class="d-flex ai-center jc-start fw-wrap embed-form">
-                        <label class="font-01 text-md mr-2 mb-0 fw-100">embed code</label>
-                        <input type="text">
-                        <button class="bg-color-02 fw-100 color-white text-sm" href="#">copy</button>
+                <div class="shortcode bg-color-gray">
+                    <div class="wrapper">
+                        <label>Embed code</label>
+                        <input type="text" value="Test code" />
+                        <button class="btn">Copy</button>
                     </div>
-                </form>
-
+                </div>
             </div>
         </div>
     </section>
