@@ -344,6 +344,47 @@ $(function(){ 'use strict';
     }
 
 
+    // About 01
+    var about01 = $('.about-01');
+    if(about01.length){
+        var about01Ready = true;
+        about01.each(function(){
+            var self = $(this),
+                teamSelectors = self.find('.team-selector');
+            teamSelectors.click(function(e){
+                e.preventDefault();
+                var thisSelf = $(this);
+                if(about01Ready){
+                    about01Ready = false;
+                    
+                    var temp = $('.about-01-target[data-team="'+thisSelf.data('team')+'"]');
+                    $('.about-01-target.active').addClass('out');
+                    setTimeout(function(){
+                        $('.about-01-target').removeClass('active in out');
+                        temp.addClass('active in');
+                        setTimeout(function(){
+                            temp.removeClass('in');
+                            about01Ready = true;
+                        }, 50);
+                    }, 450);
+
+                    var k = teamSelectors.index(this),
+                        count = teamSelectors.length;
+                    teamSelectors.removeClass('pos-0 pos-1 pos-2 pos-3');
+                    thisSelf.addClass('pos-0');
+                    teamSelectors.each(function(i, d){
+                        if(i!=k){
+                            count--;
+                            $(d).addClass('pos-'+count);
+                        }
+                    });
+                }
+            });
+
+        });
+    }
+
+
     // Banner 01
     var banner01 = $('.banner-01');
     if(banner01.length){

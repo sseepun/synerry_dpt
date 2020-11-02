@@ -350,6 +350,12 @@ table.table.table-download tbody > tr.row-title > td{background:#393939; color:#
 }
 
 
+/* About 01 */
+.about-01 .about-row .border-bottom{border-color:#cccccc!important;}
+.about-01 .about-row .ss-list > li{color:#000;}
+.about-01 .about-row .ss-list > li:before{background:#50137e;}
+
+
 /* Banner 01 */
 .banner-01 .dots{background:rgba(85,43,116,.65);}
 .banner-01 .dots button{background:#fff;}
