@@ -68,7 +68,7 @@
                     <div class="post-img">
                         <img src="public/assets/app/images/bg/48.jpg" alt="Post Image" />
                     </div>
-                    <div class="post-stats mt-2">
+                    <div class="post-stats mt-3">
                         <div class="block">
                             <div class="stat mr-3">
                                 <img class="circle-icon" src="public/assets/app/images/icon/circle-calendar.png" alt="Icon" />

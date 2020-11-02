@@ -8,7 +8,6 @@
 <body class="loading">
     <?php include_once('include/topnav-secretary.php'); ?>
 
-
     <div class="intro-02 section-bg lazy-bg" data-src="public/assets/app/images/bg/33.jpg">
         <div class="container">
             <div class="text-container color-white" data-aos="fade-up" data-aos-delay="0">
@@ -34,7 +33,7 @@
                                 </a>
                             <?php }?>
                         </div>
-                        <img class="decor" src="public/assets/app/images/hero/05.png" alt="Decoration" />
+                        <img class="decor" src="public/assets/app/images/hero/08.png" alt="Decoration" />
                     </div>
                 </div>
 

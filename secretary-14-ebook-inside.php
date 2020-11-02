@@ -3,28 +3,11 @@
 <head>
     <?php include_once('include/header.php'); ?>
     <?php include_once('include/style.php'); ?>
+    <link rel="stylesheet" href="public/assets/app/css/style-secretary.css" />
     <link rel="stylesheet" type="text/css" href="public/assets/lib/wow_book/wow_book/wow_book.css" />
-    <style>
-    
-
-    .copy-link-container input {width:100%; border-radius:0; height:4rem; background:#f2f2f2;}
-    .copy-link-container a {text-decoration:none; display:block; background: #6c109d; text-align:center; color:#fff; height:3rem; line-height:3rem;}
-    .post-card.post-card-08 > .wrapper{padding:1.25rem;}
-    @media screen and (max-width:991.98px){
-        .post-card.post-card-08 > .wrapper{
-            padding:1.125rem;
-        }
-    }
-    @media screen and (max-width:767.98px){
-        .post-card.post-card-08 > .wrapper{
-            padding:1.125rem 1rem;
-        }
-    }
-    </style>
-
 </head>
 <body class="loading">
-    <?php include_once('include/topnav.php'); ?>
+    <?php include_once('include/topnav-secretary.php'); ?>
 
     <div class="intro-02 section-bg lazy-bg" data-src="public/assets/app/images/bg/33.jpg">
         <div class="container">
@@ -51,7 +34,7 @@
                                 </a>
                             <?php }?>
                         </div>
-                        <img class="decor" src="public/assets/app/images/hero/05.png" alt="Decoration" />
+                        <img class="decor" src="public/assets/app/images/hero/08.png" alt="Decoration" />
                     </div>
                 </div>
 
@@ -80,7 +63,7 @@
 
                     <div class="ss-icon-title" data-aos="fade-up" data-aos-delay="0">
                         <div class="icon bg-color-07"><i class="far fa-file-alt color-white"></i></div>
-                        <h4 class="fw-600">ดาวน์โหลดอัลบั้มรูปภาพ</h4>
+                        <h4 class="fw-600">ไฟล์เอกสารที่เกี่ยวข้อง</h4>
                     </div>
                     <div class="table-wrapper mt-1 border-bottom" data-simplebar data-aos="fade-up" data-aos-delay="300">
                         <table class="table table-file">
@@ -106,23 +89,11 @@
                                         </td>
                                         <td style="min-width:130px;">
                                             <div class="d-flex ai-center jc-end">
-                                                <a class="btn btn-sm btn-round custom-btn-09 mr-2" href="#">
-                                                    Embed <i class="fas fa-code"></i>
-                                                </a>
                                                 <a class="btn btn-sm btn-round custom-btn-09" href="#">
                                                     ดาวน์โหลด <i class="far fa-arrow-alt-circle-down"></i>
                                                 </a>
                                             </div>
                                         </td>
-                                    </tr>
-                                    <tr>
-                                        <td colspan="2" style="padding:0;">
-                                            <div class="copy-link-container">   
-                                                <input type="text">
-                                                <a href="#">คัดลอกโค้ด</a>
-                                            </div>
-                                        </td>
-                                          
                                     </tr>
                                 <?php }?>
                             </tbody>
@@ -144,6 +115,14 @@
                                         </div>
                                     </a>
                                     <div class="wrapper">
+                                        <div class="title-container">
+                                            <a class="title h4" href="#">
+                                                สุริยะฯ ดันแผนพัฒนาอุตฯ 
+                                                เครื่องจักรกลเต็มสูบ มุ่งสนับสนุน
+                                                เกษตรแปรรูป ชี้เป็นจุดเริ่มต้นการ
+                                                ปฏิรูปโครงสร้างศก
+                                            </a>
+                                        </div>
                                         <div class="d-flex ai-center jc-space-between stats">
                                             <div class="date">13.08.2563</div>
                                             <div class="d-flex view">
@@ -155,15 +134,6 @@
                                                 268
                                             </div>
                                         </div>
-                                        <div class="title-container">
-                                            <a class="title h4" href="#">
-                                                สุริยะฯ ดันแผนพัฒนาอุตฯ 
-                                                เครื่องจักรกลเต็มสูบ มุ่งสนับสนุน
-                                                เกษตรแปรรูป ชี้เป็นจุดเริ่มต้นการ
-                                                ปฏิรูปโครงสร้างศก
-                                            </a>
-                                        </div>
-                                        
                                     </div>
                                 </div>
                             </div>
@@ -175,7 +145,7 @@
         </div>
     </section>
 
-    <?php include_once('include/footer.php'); ?>
+    <?php include_once('include/footer-secretary.php'); ?>
     <?php include_once('include/script.php'); ?>
     <script src="public/assets/lib/wow_book/wow_book/wow_book.min.js"></script>
     <script>

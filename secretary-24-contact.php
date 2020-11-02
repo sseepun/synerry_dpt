@@ -33,7 +33,7 @@
                                 </a>
                             <?php }?>
                         </div>
-                        <img class="decor" src="public/assets/app/images/hero/05.png" alt="Decoration" />
+                        <img class="decor" src="public/assets/app/images/hero/08.png" alt="Decoration" />
                     </div>
                 </div>
 

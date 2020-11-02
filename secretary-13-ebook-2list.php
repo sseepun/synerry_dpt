@@ -4,16 +4,6 @@
     <?php include_once('include/header.php'); ?>
     <?php include_once('include/style.php'); ?>
     <link rel="stylesheet" href="public/assets/app/css/style-secretary.css" />
-    <style>
-        /* slightly different in design */
-        .post-card.post-card-06 {height:100%;}
-        .post-card.post-card-06 .btns {position:relative; top: calc(50% - 2rem);}
-
-        @media screen and (max-width: 767.98px) {
-            .post-card.post-card-06 .btns {top:0;}
-        }
-    </style>
-
 </head>
 <body class="loading">
     <?php include_once('include/topnav-secretary.php'); ?>
@@ -43,7 +33,7 @@
                                 </a>
                             <?php }?>
                         </div>
-                        <img class="decor" src="public/assets/app/images/hero/05.png" alt="Decoration" />
+                        <img class="decor" src="public/assets/app/images/hero/08.png" alt="Decoration" />
                     </div>
                 </div>
 
@@ -103,7 +93,6 @@
             </div>
         </div>
     </section>
-
 
     <?php include_once('include/footer-secretary.php'); ?>
     <?php include_once('include/script.php'); ?>
