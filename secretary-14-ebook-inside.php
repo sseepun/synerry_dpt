@@ -26,7 +26,7 @@
 <body class="loading">
     <?php include_once('include/topnav.php'); ?>
 
-    <div class="intro-02 section-bg lazy-bg" data-src="public/assets/app/images/bg/22.jpg">
+    <div class="intro-02 section-bg lazy-bg" data-src="public/assets/app/images/bg/33.jpg">
         <div class="container">
             <div class="text-container color-white" data-aos="fade-up" data-aos-delay="0">
                 <h2 class="fw-100 mb-0">วารสารออนไลน์</h2>
@@ -116,7 +116,7 @@
                                         </td>
                                     </tr>
                                     <tr>
-                                        <td colspan="2">
+                                        <td colspan="2" style="padding:0;">
                                             <div class="copy-link-container">   
                                                 <input type="text">
                                                 <a href="#">คัดลอกโค้ด</a>
