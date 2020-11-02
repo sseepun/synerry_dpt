@@ -28,9 +28,6 @@
     <div class="block">
         <div class="text-wrapper">
             <div class="options">
-                <!-- <a href="#" class="btn grid-view" data-grid-view="1">
-                    <i class="fas fa-th-large"></i>
-                </a> -->
                 <a href="#" class="btn grid-view active" data-grid-view="2">
                     <i class="fas fa-th"></i>
                 </a>

@@ -9,6 +9,7 @@ html, body{color:#000;}
 .color-dark{color:#212529!important;}
 .color-sgray{color:#f3f3f3!important;}
 .color-gray{color:#e9e9e9!important;}
+.color-dgray{color:#666!important;}
 .color-01{color:#422754!important;}
 .color-02{color:#59236e!important;}
 .color-03{color:#4a2d73!important;}
@@ -25,6 +26,7 @@ html, body{color:#000;}
 .bg-color-dark{background:#212529!important;}
 .bg-color-sgray{background:#f3f3f3!important;}
 .bg-color-gray{background:#e9e9e9!important;}
+.bg-color-dgray{background:#666!important;}
 .bg-color-01{background:#422754!important;}
 .bg-color-02{background:#59236e!important;}
 .bg-color-03{background:#4a2d73!important;}
@@ -192,9 +194,33 @@ nav.footer.footer-gray .ss-list > li > a:hover{color:#1f9ad3;}
 .breadcrumb-custom a:before{background:#9b9b9b;}
 .breadcrumb-custom a:last-child:before{background:#7d33b4;}
 
+/* Breadcrumb 02 */
+.breadcrumb-custom-02 a, .breadcrumb-custom-02 .date{color:#666666;}
+.breadcrumb-custom-02 a:hover, .breadcrumb-custom-02 a:last-child{color:#7d33b4;}
+.breadcrumb-custom-02 .sep{background:#666666;}
+
+/* Breadcrumb 03 */
+.breadcrumb-custom-03 a{color:#666666;}
+.breadcrumb-custom-03 a:last-child, .breadcrumb-custom-03 a:hover{color:#6c109d;}
+.breadcrumb-custom-03 a i{background:#e1e1e1; color:#fff;}
+.breadcrumb-custom-03 a:last-child i{background:#6c109d;}
+
+
+/* Contact Card */
+.chart-container .label p{color:#666;}
+
+
+/* Date Selector */
+.date-selectors label{color:#666666; border-color:#ddd;}
+.date-selectors .icon{color:#8539ae;}
+
+
+/* Form Group */
+.form-check label{color:#666;}
+
 
 /* List Header */
-.list-header .options > a{border-color:#ddd; color:#6a1771;}
+.list-header .options > a{border-color:#ddd; color:#6a1771; background:#fff;}
 .list-header .options > a:hover, .list-header .options > a.active{
     border-color:#6a1771; color:#fff; background:#6a1771;
 }
@@ -214,6 +240,7 @@ nav.footer.footer-gray .ss-list > li > a:hover{color:#1f9ad3;}
 .post-card:hover .title-container > .title,
 .ss-card:hover .post-card .title-container > .title,
 .ss-card-02:hover .post-card .title-container > .title{color:#88009b;}
+.post-card .date-tag{background:#6c109d; color:#fff;}
 .post-card .title-container > .by, .post-card .desc{color:#343a40;}
 .post-card .stats{color:#88009b;}
 .post-card.post-card-02{color:#fff;}
@@ -225,6 +252,7 @@ nav.footer.footer-gray .ss-list > li > a:hover{color:#1f9ad3;}
 .post-card.post-card-04 .date{color:#88009b;}
 .post-card.post-card-05, .post-card.post-card-06{border-color:#e1e1e1;}
 .post-card.post-card-06::before{background:#50137e;}
+.post-card.post-card-07{background:#6a1671;}
 .post-card.post-card-07 .title-container > .title{color:#fff;}
 .post-card.post-card-07:hover .title-container > .title,
 .ss-card:hover .post-card.post-card-07 .title-container > .title,
@@ -232,16 +260,40 @@ nav.footer.footer-gray .ss-list > li > a:hover{color:#1f9ad3;}
 .post-card.post-card-07 .stats{color:#fff;}
 .post-card.post-card-08{background:#f2f2f2;}
 .post-card.post-card-08:hover{background:#6a1671;}
-.post-card.post-card-08:hover .title-container > .title{color:#fff;}
+.post-card.post-card-08:hover .title-container > .title,
+.post-card.post-card-08:hover .color-black,
+.post-card.post-card-08:hover a.btn-action{color:#fff!important;}
 .post-card.post-card-08:hover .stats{color:#fff;}
 .post-card.post-card-09:hover{box-shadow:0px 10px 20px 0px rgba(0,0,0,.3);}
+.post-card.post-card-10 .post-stats-02{border-color:#e9e9e9;}
+.post-card.post-card-11 .btn-float{background:#0081c5; color:#fff;}
 
 
 /* Post Stats */
 .post-stats .stat i{background:#6c109d; color:#fff;}
 .post-stats-02{color:#000;}
 .post-stats-02 .sep{background:#000;}
-.post-stats-02 .btn-float{background:#502683; color:#fff;}
+.post-stats-02 .btn-float{background:#666; color:#fff;}
+.post-card:hover .post-stats-02 .btn-float{background:#502683;}
+
+
+/* Post Topic */
+.post-topic > .icon{color:#fff;}
+
+
+/* Question Box */
+.question-box > .result-wrapper{background:#f4f4f4;}
+
+
+/* Shortcode */
+.shortcode label{color:#4f4e4e;}
+.shortcode button{background:#59236e; color:#fff!important;}
+
+
+/* Special Card */
+.ss-card-03:hover{box-shadow:0px 10px 20px 0px rgba(0,0,0,.3);}
+.ss-card-04 > .block > .calendar-tag{background:#6c109d;}
+.ss-card-04 > .block > .calendar-tag .text-wrapper > *{color:#fff;}
 
 
 /* Special Image & Video */
@@ -262,11 +314,14 @@ nav.footer.footer-gray .ss-list > li > a:hover{color:#1f9ad3;}
 .ss-tag:hover{background:#5a0687; color:#fff;}
 
 
-/* Specia Search */
+/* Special Search */
 .ss-search button{background:#502683;}
 .ss-search .suggestion{border-color:#e9e9e9; background:#fff;}
 .ss-search .suggestion .item{color:#4f4e4e; border-color:#ddd;}
 .ss-search .suggestion .item:hover{background:#f3f3f3;}
+
+/* Special Checkbox */
+.ss-checkbox label{color:#666666;}
 
 
 /* Table */
@@ -288,10 +343,17 @@ table.table.table-download tbody > tr.row-title > td{background:#393939; color:#
 
 
 /* Utility */
+.border,
 .border-top, .border-top-4, 
 .border-bottom, .border-bottom-4{
     border-color:#e1e1e1!important;
 }
+
+
+/* About 01 */
+.about-01 .about-row .border-bottom{border-color:#cccccc!important;}
+.about-01 .about-row .ss-list > li{color:#000;}
+.about-01 .about-row .ss-list > li:before{background:#50137e;}
 
 
 /* Banner 01 */
@@ -355,6 +417,16 @@ table.table.table-download tbody > tr.row-title > td{background:#393939; color:#
 .content-02 .content:hover .icon{color:#fff;}
 
 
+/* Content 04 */
+.content-04 .box-wrapper{border:1px solid #eee; box-shadow:0px 0px 16px 8px rgba(0,0,0,.1);}
+
+
+/* Content 05 */
+.content-05 .filter{background:rgba(0,0,0,.45);}
+.content-05 .text-container{background:rgba(80,40,128,.8); color:#fff;}
+.content-05 .text-container-02{color:#fff;}
+
+
 /* FAQ 01 */
 .faq-01 .question .ftag{background:#6c109d; color:#fff;}
 .faq-01 .question > *:nth-child(2){color:#000; border-color:#e1e1e1;}
@@ -383,6 +455,30 @@ table.table.table-download tbody > tr.row-title > td{background:#393939; color:#
 .sitemap-01 ul > li:hover > a{color:#31b9c6;}
 .sitemap-01 ul > li > a::before{background:#31b9c6;}
 
+/* Sitemap 02 */
+.sitemap-02 .title{color:#5c358c; border-color:#5c358c;}
+.sitemap-02 a{color:#393839;}
+.sitemap-02 a:hover{color:#5c358c;}
+.sitemap-02 ul > li > ul > li > a{color:#99979b;}
+.sitemap-02 ul > li > ul > li > a:hover{color:#5c358c;}
+.sitemap-02 .grid:nth-child(5n+1) .sitemap-title{color:#502683; border-color:#502683;}
+.sitemap-02 .grid:nth-child(5n+1) ul > li > ul::before,
+.sitemap-02 .grid:nth-child(5n+1) ul > li::before{background:#502683;}
+.sitemap-02 .grid:nth-child(5n+2) .sitemap-title{color:#a65583; border-color:#a65583;}
+.sitemap-02 .grid:nth-child(5n+2) ul > li > ul::before,
+.sitemap-02 .grid:nth-child(5n+2) ul > li::before{background:#a65583;}
+.sitemap-02 .grid:nth-child(5n+3) .sitemap-title{color:#469e6c; border-color:#469e6c;}
+.sitemap-02 .grid:nth-child(5n+3) ul > li > ul::before,
+.sitemap-02 .grid:nth-child(5n+3) ul > li::before{background:#469e6c;}
+.sitemap-02 .grid:nth-child(5n+4) .sitemap-title{color:#469c9e; border-color:#469c9e;}
+.sitemap-02 .grid:nth-child(5n+4) ul > li > ul::before,
+.sitemap-02 .grid:nth-child(5n+4) ul > li::before{background:#469c9e;}
+.sitemap-02 .grid:nth-child(5n) .sitemap-title{color:#c99b1a; border-color:#c99b1a;}
+.sitemap-02 .grid:nth-child(5n) ul > li > ul::before,
+.sitemap-02 .grid:nth-child(5n) ul > li::before{background:#c99b1a;}
+.sitemap-02 ul > li{border-color:#c9c9c9;}
+.sitemap-02 ul > li > ul > li::before{background:#5e5e5e!important;}
+
 
 /* Tab Container 01 */
 .tab-container.tab-container-01 .tabs::before{
@@ -401,12 +497,10 @@ table.table.table-download tbody > tr.row-title > td{background:#393939; color:#
 .tab-container.tab-container-02 .btns{border-color:#383737;}
 .tab-container.tab-container-02 .arrows > .slick-prev, 
 .tab-container.tab-container-02 .arrows > .slick-next{color:#383737;}
-.tab-container.tab-container-02 .slide .post-card{background:#fff;}
 .tab-container.tab-container-02 .tab .icon > .img-icon.theme-0{display:block;}
 .tab-container.tab-container-02 .tab .icon > .img-icon.theme-1{display:none;}
 .tab-container.tab-container-02 .tab .icon > .img-icon.theme-2{display:none;}
 @media screen and (min-width:768px){
-    .tab-container.tab-container-02 .slide.slick-current .post-card{background:#383737;}
     .tab-container.tab-container-02 .slide.slick-current .post-card *{color:#fff!important;}
     .tab-container.tab-container-02 .slide.slick-current .post-card .date{color:#8e5e9c!important;}
     .tab-container.tab-container-02 .slide.slick-current .btns{border-color:#fff;}

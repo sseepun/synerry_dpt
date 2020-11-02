@@ -143,7 +143,7 @@
                         <div class="icon bg-color-07"><i class="fas fa-code color-white"></i></div>
                         <h4 class="fw-600">Embed</h4>
                     </div>
-                    <div class="ss-mp4" style="margin-top:1rem;"  data-aos="fade-up" data-aos-delay="300">
+                    <div class="ss-mp4 mt-3" data-aos="fade-up" data-aos-delay="300">
                         <div class="wrapper">
                             <video controls>
                                 <source src="public/assets/app/video/01.mp4" type="video/mp4">

@@ -15,7 +15,7 @@
                     <?php for($i=0; $i<10; $i++){?>
                         <div class="slide">
                             <div class="wrapper">
-                                <div class="client lazy-bg" data-src="public/assets/app/images/client/01.jpg"></div>
+                                <div class="client" style="background-image:url('public/assets/app/images/client/01.jpg');"></div>
                             </div>
                         </div>
                     <?php }?>
@@ -102,13 +102,13 @@
                     <div class="wrapper">
                         <h4>โซเชียลมีเดีย</h4>
                         <div class="social-btns pt-2 pb-1">
-                            <a class="btn-social" href="#" tabindex="0">
+                            <a class="btn-social" href="#">
                                 <img src="public/assets/app/images/social/fb.png" alt="Social Icon" />
                             </a>
-                            <a class="btn-social" href="#" tabindex="0">
+                            <a class="btn-social" href="#">
                                 <img src="public/assets/app/images/social/tw.png" alt="Social Icon" />
                             </a>
-                            <a class="btn-social" href="#" tabindex="0">
+                            <a class="btn-social" href="#">
                                 <img src="public/assets/app/images/social/ln.png" alt="Social Icon" />
                             </a>
                         </div>

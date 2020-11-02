@@ -232,6 +232,14 @@ $(function(){ 'use strict';
         var target = $(this).closest('.control').find('> input');
         if(target.length) target.val('');
     });
+    $('.btn-form-clear').click(function(e){
+        e.preventDefault();
+        var target = $(this).closest('form');
+        if(target.length){
+            target.find('input, select, textarea').val('');
+            target.find('input[type="checkbox"], input[type="radio"]').prop('checked', false);
+        }
+    });
 
     // Button Toggle
     $('.btn-toggle').click(function(e){
@@ -279,6 +287,33 @@ $(function(){ 'use strict';
     });
 
 
+    // Shortcode
+    var shortcodeReady = true,
+        shortcodes = $('.shortcode');
+    if(shortcodes.length){
+        shortcodes.each(function(){
+            var self = $(this),
+                target = self.find('input[type="text"]');
+            self.find('button').click(function(e){
+                e.preventDefault();
+                var thisBtn = $(this);
+                if(shortcodeReady && target.length){
+                    shortcodeReady = false;
+                    thisBtn.html('Copied!');
+                    target[0].select();
+                    target[0].setSelectionRange(0, target[0].value.length);
+                    document.execCommand('copy');
+                    target.blur();
+                    setTimeout(function(){
+                        shortcodeReady = true;
+                        thisBtn.html('Copy');
+                    }, 2000);
+                }
+            });
+        });
+    }
+
+
     // Swiper
     var swiperContainers = $('.swiper-container[data-swiper]');
     if(swiperContainers.length){
@@ -305,6 +340,47 @@ $(function(){ 'use strict';
                     el: '.swiper-pagination.'+dataClass,
                 },
             });
+        });
+    }
+
+
+    // About 01
+    var about01 = $('.about-01');
+    if(about01.length){
+        var about01Ready = true;
+        about01.each(function(){
+            var self = $(this),
+                teamSelectors = self.find('.team-selector');
+            teamSelectors.click(function(e){
+                e.preventDefault();
+                var thisSelf = $(this);
+                if(about01Ready){
+                    about01Ready = false;
+                    
+                    var temp = $('.about-01-target[data-team="'+thisSelf.data('team')+'"]');
+                    $('.about-01-target.active').addClass('out');
+                    setTimeout(function(){
+                        $('.about-01-target').removeClass('active in out');
+                        temp.addClass('active in');
+                        setTimeout(function(){
+                            temp.removeClass('in');
+                            about01Ready = true;
+                        }, 50);
+                    }, 450);
+
+                    var k = teamSelectors.index(this),
+                        count = teamSelectors.length;
+                    teamSelectors.removeClass('pos-0 pos-1 pos-2 pos-3');
+                    thisSelf.addClass('pos-0');
+                    teamSelectors.each(function(i, d){
+                        if(i!=k){
+                            count--;
+                            $(d).addClass('pos-'+count);
+                        }
+                    });
+                }
+            });
+
         });
     }
 
@@ -380,6 +456,39 @@ $(function(){ 'use strict';
                 contents.removeClass('active');
                 contents.filter('[data-id="'+$(this).data('id')+'"]').addClass('active');
                 AOS.refresh();
+            });
+        });
+    }
+
+
+    // Content 03
+    var content03 = $('.content-03');
+    if(content03.length){
+        content03.each(function(){
+            var self=  $(this);
+            self.find('.slides').slick({
+                centerMode: true, centerPadding: 0, slidesToShow: 3, 
+                focusOnSelect: true, autoplay: false,
+                arrows: true, appendArrows: self.find('.arrows'), dots: false,
+                responsive: [
+                    { breakpoint: 991.98, settings: { slidesToShow: 2, } },
+                    { breakpoint: 767.98, settings: { slidesToShow: 1, } },
+                ]
+            });
+        });
+    }
+
+
+    // Content 07
+    var content07 = $('.content-07');
+    if(content07.length){
+        content07.each(function(){
+            var self=  $(this);
+            self.find('.slides').slick({
+                centerMode: true, centerPadding: 0, slidesToShow: 1, 
+                focusOnSelect: true, autoplay: false,
+                arrows: true, appendArrows: self.find('.arrows'), 
+                dots: true, appendDots: self.find('.dots'),
             });
         });
     }

@@ -4,11 +4,12 @@ html, body{color:#fff; background:#000;}
 
 
 /* Colors */
-.color-white, .color-black, .color-dark, .color-sgray, .color-gray, .color-01, .color-02, .color-03, 
-.color-04, .color-05, .color-06, .color-07, .color-08, .color-09{color:#fff!important;}
+.color-white, .color-black, .color-dark, .color-sgray, .color-gray, .color-dgray, .color-01, 
+.color-02, .color-03, .color-04, .color-05, .color-06, .color-07, .color-08, 
+.color-09{color:#fff!important;}
 .bg-color-white, .bg-color-black, .bg-color-dark, .bg-color-sgray, .bg-color-gray,
-.bg-color-01, .bg-color-02, .bg-color-03, .bg-color-04, .bg-color-05, .bg-color-06, 
-.bg-color-07, .bg-color-08, .bg-color-09{background:#000!important;}
+.bg-color-dgray, .bg-color-01, .bg-color-02, .bg-color-03, .bg-color-04, .bg-color-05, 
+.bg-color-06, .bg-color-07, .bg-color-08, .bg-color-09{background:#000!important;}
 
 
 /* Input */
@@ -110,7 +111,7 @@ nav.footer > .footer-bottom .wrapper > .count-area{background:#fff; color:#000;}
 .btn.custom-btn-sgray > i,
 .btn.custom-btn-09 > i,
 .btn.custom-btn-10 > i{
-    color:#fff;
+    color:#000!important;
 }
 
 .btn.custom-btn-theme-0, .btn.custom-btn-theme-1, .btn.custom-btn-theme-2{border:1px solid #fff;}
@@ -132,6 +133,25 @@ nav.footer > .footer-bottom .wrapper > .count-area{background:#fff; color:#000;}
 .breadcrumb-custom a{color:#fff;}
 .breadcrumb-custom a:before{background:#fff;}
 
+/* Breadcrumb 02 */
+.breadcrumb-custom-02 a, .breadcrumb-custom-02 .date{color:#fff;}
+.breadcrumb-custom-02 .sep{background:#fff;}
+
+/* Breadcrumb 03 */
+.breadcrumb-custom-03 a{color:#fff;}
+.breadcrumb-custom-03 a i{background:#fff; color:#000;}
+
+
+/* Contact Card */
+.contact-card{background:#fff!important;}
+.contact-card p{color:#000;}
+.contact-card h6, .contact-card a{color:#000;}
+
+
+/* Date Selector */
+.date-selectors label{color:#fff; border-color:#fff;}
+.date-selectors .icon{color:#fff;}
+
 
 /* List Header */
 .list-header .options > a{border-color:#fff; color:#fff;}
@@ -149,11 +169,13 @@ nav.footer > .footer-bottom .wrapper > .count-area{background:#fff; color:#000;}
 
 /* Post Card */
 .post-card .title-container > .title{color:#fff;}
+.post-card .date-tag{color:#fff; border-top:1px solid #fff; border-bottom:1px solid #fff;}
 .post-card.post-card-04 .title-container > .title::before{background:#fff;}
 .post-card.post-card-05, .post-card.post-card-06{border-color:#fff;}
 .post-card.post-card-06::before{background:#fff;}
-.post-card.post-card-07, .post-card.post-card-08{border:1px solid #fff; border-bottom:0;}
+.post-card.post-card-07, .post-card.post-card-08{border:1px solid #fff;}
 .post-card.post-card-09{border:1px solid #fff;}
+.post-card.post-card-10 .post-stats-02{border-color:#fff;}
 
 
 /* Post Stats */
@@ -161,6 +183,27 @@ nav.footer > .footer-bottom .wrapper > .count-area{background:#fff; color:#000;}
 .post-stats-02{color:#fff;}
 .post-stats-02 .sep{background:#fff;}
 .post-stats-02 .btn-float{background:#fff; color:#000;}
+
+
+/* Post Topic */
+.post-topic > .icon{color:#000;}
+
+
+/* Question Box */
+.question-box > .result-wrapper{background:#fff;}
+.question-box > .result-wrapper *{color:#000!important;}
+
+
+/* Shortcode */
+.shortcode{border:1px solid #fff;}
+.shortcode label{color:#fff;}
+.shortcode button{background:#fff; color:#000;}
+
+
+/* Special Card */
+.ss-card-03{border:1px solid #fff;}
+.ss-card-04 > .block > .calendar-tag{background:#fff;}
+.ss-card-04 > .block > .calendar-tag .text-wrapper > *{color:#000;}
 
 
 /* Special Image & Video */
@@ -180,10 +223,18 @@ nav.footer > .footer-bottom .wrapper > .count-area{background:#fff; color:#000;}
 .ss-tag{background:#fff; color:#000;}
 
 
-/* Specia Search */
+/* Special Icon Title */
+.ss-icon-title > .icon{background:#fff!important; color:#000!important;}
+.ss-icon-title > .icon > i{color:#000!important;}
+
+
+/* Special Search */
 .ss-search button{background:#502683;}
 .ss-search .suggestion{border-color:#fff; background:#000;}
 .ss-search .suggestion .item{color:#fff; border-color:#fff;}
+
+/* Special Checkbox */
+.ss-checkbox label{color:#fff;}
 
 
 /* Table */
@@ -206,6 +257,7 @@ table.table.table-download tbody > tr.row-title > td{background:#fff; color:#000
 
 
 /* Utility */
+.border,
 .border-top, .border-top-4, 
 .border-bottom, .border-bottom-4{
     border-color:#fff!important;
@@ -255,6 +307,16 @@ table.table.table-download tbody > tr.row-title > td{background:#fff; color:#000
 .content-02 .content:hover .icon{color:#000;}
 
 
+/* Content 04 */
+.content-04 .box-wrapper{border:1px solid #fff;}
+
+
+/* Content 05 */
+.content-05 .filter{background:rgba(0,0,0,.45);}
+.content-05 .text-container{background:rgba(0,0,0,.8); color:#fff;}
+.content-05 .text-container-02{color:#fff;}
+
+
 /* FAQ 01 */
 .faq-01 .question .ftag{background:#fff; color:#000;}
 .faq-01 .question > *:nth-child(2){color:#fff; border-color:#fff;}
@@ -282,6 +344,13 @@ table.table.table-download tbody > tr.row-title > td{background:#fff; color:#000
 .sitemap-01 ul > li > a{color:#fff;}
 .sitemap-01 ul > li > a::before{background:#fff;}
 
+/* Sitemap 02 */
+.sitemap-02 .title{color:#fff; border-color:#fff;}
+.sitemap-02 a{color:#fff;}
+.sitemap-02 .grid .sitemap-title{color:#fff; border-color:#fff;}
+.sitemap-02 .grid ul > li > ul::before, .sitemap-02 .grid ul > li::before{background:#fff;}
+.sitemap-02 ul > li{border-color:#fff;}
+
 
 /* Tab Container 01 */
 .tab-container.tab-container-01 .tabs::before{background:#fff;}
@@ -297,6 +366,7 @@ table.table.table-download tbody > tr.row-title > td{background:#fff; color:#000
 .tab-container.tab-container-02 .tab .icon > .img-icon.theme-0{display:none;}
 .tab-container.tab-container-02 .tab .icon > .img-icon.theme-1{display:block;}
 .tab-container.tab-container-02 .tab .icon > .img-icon.theme-2{display:none;}
+.tab-container.tab-container-02 .slide > .img-bg{opacity:0!important;}
 @media screen and (min-width:768px){
     .tab-container.tab-container-02 .slide.slick-current .post-card{background:#fff;}
     .tab-container.tab-container-02 .slide.slick-current .post-card *{color:#000!important;}

@@ -4,11 +4,12 @@ html, body{color:#ffff00; background:#000;}
 
 
 /* Colors */
-.color-white, .color-black, .color-dark, .color-sgray, .color-gray, .color-01, .color-02, .color-03,
-.color-04, .color-05, .color-06, .color-07, .color-08, .color-09{color:#ffff00!important;}
+.color-white, .color-black, .color-dark, .color-sgray, .color-gray, .color-dgray, .color-01, 
+.color-02, .color-03, .color-04, .color-05, .color-06, .color-07, .color-08, 
+.color-09{color:#ffff00!important;}
 .bg-color-white, .bg-color-black, .bg-color-dark, .bg-color-sgray, .bg-color-gray,
-.bg-color-01, .bg-color-02, .bg-color-03, .bg-color-04, .bg-color-05, .bg-color-06, 
-.bg-color-07, .bg-color-08, .bg-color-09{background:#000!important;}
+.bg-color-dgray, .bg-color-01, .bg-color-02, .bg-color-03, .bg-color-04, .bg-color-05, 
+.bg-color-06, .bg-color-07, .bg-color-08, .bg-color-09{background:#000!important;}
 
 
 /* Input */
@@ -20,6 +21,7 @@ input[type=number], input[type=phone], input[type=submit], select, textarea{
 
 /* Topnav */
 nav.topnav > .top-container{background:#000!important;}
+nav.topnav > .top-container .block > .option{color:#ffff00;}
 nav.topnav .menu > .submenu-dropdown{
     background:#000; border-top:1px solid #ffff00; border-bottom:1px solid #ffff00;
 }
@@ -110,7 +112,7 @@ nav.footer > .footer-bottom .wrapper > .count-area{background:#ffff00; color:#00
 .btn.custom-btn-sgray > i,
 .btn.custom-btn-09 > i,
 .btn.custom-btn-10 > i{
-    color:#ffff00;
+    color:#000!important;
 }
 
 .btn.custom-btn-theme-0, .btn.custom-btn-theme-1, .btn.custom-btn-theme-2{border:1px solid #ffff00;}
@@ -132,6 +134,25 @@ nav.footer > .footer-bottom .wrapper > .count-area{background:#ffff00; color:#00
 .breadcrumb-custom a{color:#ffff00;}
 .breadcrumb-custom a:before{background:#ffff00;}
 
+/* Breadcrumb 02 */
+.breadcrumb-custom-02 a, .breadcrumb-custom-02 .date{color:#ffff00;}
+.breadcrumb-custom-02 .sep{background:#ffff00;}
+
+/* Breadcrumb 03 */
+.breadcrumb-custom-03 a{color:#ffff00;}
+.breadcrumb-custom-03 a i{background:#ffff00; color:#000;}
+
+
+/* Contact Card */
+.contact-card{background:#ffff00!important;}
+.contact-card p{color:#000;}
+.contact-card h6, .contact-card a{color:#000;}
+
+
+/* Date Selector */
+.date-selectors label{color:#ffff00; border-color:#ffff00;}
+.date-selectors .icon{color:#ffff00;}
+
 
 /* List Header */
 .list-header .options > a{border-color:#ffff00; color:#ffff00;}
@@ -149,11 +170,15 @@ nav.footer > .footer-bottom .wrapper > .count-area{background:#ffff00; color:#00
 
 /* Post Card */
 .post-card .title-container > .title{color:#ffff00;}
+.post-card .date-tag{
+    color:#ffff00; border-top:1px solid #ffff00; border-bottom:1px solid #ffff00;
+}
 .post-card.post-card-04 .title-container > .title::before{background:#ffff00;}
 .post-card.post-card-05, .post-card.post-card-06{border-color:#ffff00;}
 .post-card.post-card-06::before{background:#ffff00;}
-.post-card.post-card-07, .post-card.post-card-08{border:1px solid #ffff00; border-bottom:0;}
+.post-card.post-card-07, .post-card.post-card-08{border:1px solid #ffff00;}
 .post-card.post-card-09{border:1px solid #ffff00;}
+.post-card.post-card-10 .post-stats-02{border-color:#ffff00;}
 
 
 /* Post Stats */
@@ -161,6 +186,27 @@ nav.footer > .footer-bottom .wrapper > .count-area{background:#ffff00; color:#00
 .post-stats-02{color:#ffff00;}
 .post-stats-02 .sep{background:#ffff00;}
 .post-stats-02 .btn-float{background:#ffff00; color:#000;}
+
+
+/* Post Topic */
+.post-topic > .icon{color:#000;}
+
+
+/* Question Box */
+.question-box > .result-wrapper{background:#ffff00;}
+.question-box > .result-wrapper *{color:#000!important;}
+
+
+/* Shortcode */
+.shortcode{border:1px solid #ffff00;}
+.shortcode label{color:#ffff00;}
+.shortcode button{background:#ffff00; color:#000;}
+
+
+/* Special Card */
+.ss-card-03{border:1px solid #ffff00;}
+.ss-card-04 > .block > .calendar-tag{background:#ffff00;}
+.ss-card-04 > .block > .calendar-tag .text-wrapper > *{color:#000;}
 
 
 /* Special Image & Video */
@@ -180,10 +226,18 @@ nav.footer > .footer-bottom .wrapper > .count-area{background:#ffff00; color:#00
 .ss-tag{background:#ffff00; color:#000;}
 
 
-/* Specia Search */
+/* Special Icon Title */
+.ss-icon-title > .icon{background:#ffff00!important; color:#000!important;}
+.ss-icon-title > .icon > i{color:#000!important;}
+
+
+/* Special Search */
 .ss-search button{background:#502683;}
 .ss-search .suggestion{border-color:#ffff00; background:#000;}
 .ss-search .suggestion .item{color:#ffff00; border-color:#ffff00;}
+
+/* Special Checkbox */
+.ss-checkbox label{color:#ffff00;}
 
 
 /* Table */
@@ -206,6 +260,7 @@ table.table.table-download tbody > tr.row-title > td{background:#ffff00; color:#
 
 
 /* Utility */
+.border,
 .border-top, .border-top-4, 
 .border-bottom, .border-bottom-4{
     border-color:#ffff00!important;
@@ -255,6 +310,16 @@ table.table.table-download tbody > tr.row-title > td{background:#ffff00; color:#
 .content-02 .content:hover .icon{color:#000;}
 
 
+/* Content 04 */
+.content-04 .box-wrapper{border:1px solid #ffff00;}
+
+
+/* Content 05 */
+.content-05 .filter{background:rgba(0,0,0,.45);}
+.content-05 .text-container{background:rgba(0,0,0,.8); color:#ffff00;}
+.content-05 .text-container-02{color:#fff;}
+
+
 /* FAQ 01 */
 .faq-01 .question .ftag{background:#ffff00; color:#000;}
 .faq-01 .question > *:nth-child(2){color:#ffff00; border-color:#ffff00;}
@@ -282,6 +347,13 @@ table.table.table-download tbody > tr.row-title > td{background:#ffff00; color:#
 .sitemap-01 ul > li > a{color:#ffff00;}
 .sitemap-01 ul > li > a::before{background:#ffff00;}
 
+/* Sitemap 02 */
+.sitemap-02 .title{color:#ffff00; border-color:#ffff00;}
+.sitemap-02 a{color:#ffff00;}
+.sitemap-02 .grid .sitemap-title{color:#ffff00; border-color:#ffff00;}
+.sitemap-02 .grid ul > li > ul::before, .sitemap-02 .grid ul > li::before{background:#ffff00;}
+.sitemap-02 ul > li{border-color:#ffff00;}
+
 
 /* Tab Container 01 */
 .tab-container.tab-container-01 .tabs::before{background:#ffff00;}
@@ -297,6 +369,7 @@ table.table.table-download tbody > tr.row-title > td{background:#ffff00; color:#
 .tab-container.tab-container-02 .tab .icon > .img-icon.theme-0{display:none;}
 .tab-container.tab-container-02 .tab .icon > .img-icon.theme-1{display:none;}
 .tab-container.tab-container-02 .tab .icon > .img-icon.theme-2{display:block;}
+.tab-container.tab-container-02 .slide > .img-bg{opacity:0!important;}
 @media screen and (min-width:768px){
     .tab-container.tab-container-02 .slide.slick-current .post-card{background:#ffff00;}
     .tab-container.tab-container-02 .slide.slick-current .post-card *{color:#000!important;}

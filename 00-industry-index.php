@@ -460,6 +460,8 @@
                                 <div class="slides">
                                     <?php for($j=0; $j<5; $j++){?>
                                         <div class="slide">
+                                            <div class="img-bg on-active" style="background-image:url('public/assets/app/images/bg/51.png');"></div>
+                                            <div class="img-bg on-default" style="background-image:url('public/assets/app/images/bg/52.png');"></div>
                                             <div class="post-card post-card-03">
                                                 <div class="wrapper">
                                                     <div class="title-container">
@@ -705,7 +707,7 @@
                         <?php for($i=0; $i<10; $i++){?>
                             <div class="slide">
                                 <div class="wrapper">
-                                    <div class="client lazy-bg" data-src="public/assets/app/images/client/01.jpg"></div>
+                                    <div class="client" style="background-image:url('public/assets/app/images/client/01.jpg');"></div>
                                 </div>
                             </div>
                         <?php }?>
