@@ -22,6 +22,7 @@ html, body{color:#000;}
 .color-10{color:#5a0687!important;}
 
 .bg-color-white{background:#fff!important;}
+.bg-white-adaptive{background:#fff!important;}
 .bg-color-black{background:#000!important;}
 .bg-color-dark{background:#212529!important;}
 .bg-color-sgray{background:#f3f3f3!important;}
@@ -152,12 +153,17 @@ nav.footer.footer-gray .ss-list > li > a:hover{color:#1f9ad3;}
 .btn.custom-btn-10:active{background:#5a0687; color:#fff;}
 .btn.custom-btn-10 > i{color:#fff;}
 
+.btn.custom-btn-11, .btn.custom-btn-11:focus, .btn.custom-btn-11:hover,
+.btn.custom-btn-11:active{background:#832665; color:#fff;}
+.btn.custom-btn-11 > i{color:#fff;}
+
 .btn.custom-btn-warning:hover,
 .btn.custom-btn-dark:hover,
 .btn.custom-btn-gray:hover,
 .btn.custom-btn-sgray:hover,
 .btn.custom-btn-09:hover,
-.btn.custom-btn-10:hover{
+.btn.custom-btn-10:hover,
+.btn.custom-btn-11:hover{
     box-shadow:inset 0 0 0 100rem rgba(0,0,0,.05);
 }
 .btn.custom-btn-primary:active,
@@ -168,7 +174,8 @@ nav.footer.footer-gray .ss-list > li > a:hover{color:#1f9ad3;}
 .btn.custom-btn-gray:active,
 .btn.custom-btn-sgray:active,
 .btn.custom-btn-09:active,
-.btn.custom-btn-10:active{
+.btn.custom-btn-10:active,
+.btn.custom-btn-11:active{
     box-shadow:inset 0 0 0 100rem rgba(0,0,0,.10);
 }
 

@@ -4,23 +4,6 @@
     <?php include_once('include/header.php'); ?>
     <?php include_once('include/style.php'); ?>
     <link rel="stylesheet" href="public/assets/app/css/style-minisite.css" />
-    <style>
-        
-        .header{padding: 1.5rem 0;position:relative;}
-        .header h3{margin-bottom: 1rem; }
-        .header p { display:inline-block; margin:0; padding:1rem 0 0 0;  border-top: 1px solid transparent; border-color: #dcdcdc;}
-
-        .ss-card-custom { display:flex; flex-wrap:wrap; justify-content: space-between; border-bottom:1px solid transparent;  border-color:#d9d0e4;padding:1.5rem 0;}
-        .ss-card-custom .btn-container {margin-top:1rem;}
-        .ss-card-custom .btn-container a {display:flex; align-items:center; min-width: 6rem; justify-content: space-between; padding:.5rem .75rem; color:#fff; text-decoration:none; background: #73519c;}
-        .ss-card-custom .info-container { display:flex; align-items:flex-start; flex-wrap:wrap; }
-        .ss-card-custom .info-container .date-time {color:#999; margin:.5rem 0 0 0;}
-        .ss-card-custom .info-container i{margin:.5rem 1rem 0 0; width:1.5rem; font-size:1.25rem; height:1.5rem; ;line-height:1.5rem;  text-align:center; display:inline-block; }
-        .list-header.custom {position:absolute; bottom:1rem; left:-15px;}
-        @media screen and (max-width: 1199.98px){
-            .list-header.custom {position:relative; bottom:0; left:0; margin-top:1rem;}
-        }
-    </style>
 </head>
 <body class="loading">
     <?php include_once('include/topnav-minisite.php'); ?>
@@ -50,43 +33,41 @@
     <section class="content-06 section-padding" data-aos="fade-up" data-aos-delay="0">
         <div class="img-bg" style="background-image:url('public/assets/app/images/bg/32.jpg');"></div>
         <div class="container pb-4 position-relative">
-            <div class="header text-center color-white">
-                <h3 class="text-center color-white">
-                    RSS FEED SANOOK
-                </h3>
-                <p class="fw-500">
-                    สนุก ข่าวประจำวัน : เกาะติดทุกข่าวสารและเหตุการณ์ในรอบวัน อัพเดท 24 ชั่วโมง
-                </p>
-
-                <div class="search-container">
-                    <input type="text" name="search" placeholder="ค้นหา" required />
-                    <button type="submit">
-                        <img src="public/assets/app/images/icon/search.png" alt="Search icon" />
-                    </button>
+            <div class="d-flex jc-center mb-3">
+                <div class="text-center color-white">
+                    <h3 class="text-center color-white mb-2">
+                        RSS FEED SANOOK
+                    </h3>
+                    <p class="text-nm fw-500 border-top py-3">
+                        สนุก ข่าวประจำวัน : เกาะติดทุกข่าวสารและเหตุการณ์ในรอบวัน อัพเดท 24 ชั่วโมง
+                    </p>
                 </div>
             </div>
 
-            <div class="bg-white px-4">
+            <?php include_once('component/list-header.php'); ?>
+            <div class="ss-box-02 border box-shadow width-full bg-white-adaptive no-bradius py-0 mt-2">
                 <div class="grids">
                     <?php for($i=0; $i< 12; $i++){?>
                         <div class="grid sm-100 mt-0">
-                            <div class="ss-card ss-card-custom">
+                            <div class="ss-card ss-card-05 border-bottom">
                                 <div class="text-wrapper">
-                                    <h4 class="color-02">รวม ฟอร์ด-เจมส์ เยาวชนปลดแอก แล้ว! นำตัวสอบสวน สน.สำราญราษฎร์</h4>
-                                    <p class="desc font-01 fw-300 text-md">
-                                        ตำรวจจับกุม ฟอร์ด ทัตเทพ และเจมศ์ ภานุมาศ 2 แกนนำเยาวชนปลดแอก ไปสถานีตำรวจนครบาลสำราญราษฎร์แล้ว
+                                    <h5 class="color-02 mb-0">
+                                        รวม ฟอร์ด-เจมส์ เยาวชนปลดแอก แล้ว! นำตัวสอบสวน สน.สำราญราษฎร์
+                                    </h5>
+                                    <p class="text-nm color-dgray mt-1">
+                                        ตำรวจจับกุม ฟอร์ด ทัตเทพ และเจมศ์ ภานุมาศ 2 แกนนำเยาวชนปลดแอก 
+                                        ไปสถานีตำรวจนครบาลสำราญราษฎร์แล้ว
                                     </p>
-                                    <div class="info-container">
-                                        <i class="far fa-clock color-02"></i>
-                                        <div class="date-time">
+                                    <div class="d-flex ai-center fw-wrap text-nm mt-3">
+                                        <i class="far fa-clock color-02 text-xl"></i>
+                                        <div class="op-50 ml-2">
                                             WED, 26 AUG 2020 13:53:17 +0700
                                         </div>
                                     </div>
                                 </div>
-                                <div class="btn-container">
-                                    <a href="#">
-                                        เปิดดู
-                                        <i class="fas fa-link"></i>
+                                <div class="btn-container text-right">
+                                    <a class="btn custom-btn-09" href="#">
+                                        เปิดดู <i class="fas fa-link color-white ml-2"></i>
                                     </a>
                                 </div>
                             </div>

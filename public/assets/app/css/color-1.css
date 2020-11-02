@@ -10,6 +10,7 @@ html, body{color:#fff; background:#000;}
 .bg-color-white, .bg-color-black, .bg-color-dark, .bg-color-sgray, .bg-color-gray,
 .bg-color-dgray, .bg-color-01, .bg-color-02, .bg-color-03, .bg-color-04, .bg-color-05, 
 .bg-color-06, .bg-color-07, .bg-color-08, .bg-color-09{background:#000!important;}
+.bg-white-adaptive{background:#000!important;}
 
 
 /* Input */
@@ -77,7 +78,8 @@ nav.footer > .footer-bottom .wrapper > .count-area{background:#fff; color:#000;}
 .btn.custom-btn-gray, .btn.custom-btn-gray:focus,
 .btn.custom-btn-sgray, .btn.custom-btn-sgray:focus,
 .btn.custom-btn-09, .btn.custom-btn-09:focus,
-.btn.custom-btn-10, .btn.custom-btn-10:focus{
+.btn.custom-btn-10, .btn.custom-btn-10:focus,
+.btn.custom-btn-11, .btn.custom-btn-11:focus{
     background:#fff; color:#000;
 }
 .btn.custom-btn-primary:hover, 
@@ -88,7 +90,8 @@ nav.footer > .footer-bottom .wrapper > .count-area{background:#fff; color:#000;}
 .btn.custom-btn-gray:hover,
 .btn.custom-btn-sgray:hover,
 .btn.custom-btn-09:hover,
-.btn.custom-btn-10:hover{
+.btn.custom-btn-10:hover,
+.btn.custom-btn-11:hover{
     background:#fff; color:#000; box-shadow:inset 0 0 0 100rem rgba(0,0,0,.05);
 }
 .btn.custom-btn-primary:active, 
@@ -99,7 +102,8 @@ nav.footer > .footer-bottom .wrapper > .count-area{background:#fff; color:#000;}
 .btn.custom-btn-gray:active,
 .btn.custom-btn-sgray:active,
 .btn.custom-btn-09:active,
-.btn.custom-btn-10:active{
+.btn.custom-btn-10:active,
+.btn.custom-btn-11:active{
     background:#fff; color:#000; box-shadow:inset 0 0 0 100rem rgba(0,0,0,.10);
 }
 .btn.custom-btn-primary > i, 
@@ -110,7 +114,8 @@ nav.footer > .footer-bottom .wrapper > .count-area{background:#fff; color:#000;}
 .btn.custom-btn-gray > i,
 .btn.custom-btn-sgray > i,
 .btn.custom-btn-09 > i,
-.btn.custom-btn-10 > i{
+.btn.custom-btn-10 > i,
+.btn.custom-btn-11 > i{
     color:#000!important;
 }
 
