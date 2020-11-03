@@ -145,6 +145,10 @@ nav.footer.footer-gray .ss-list > li > a:hover{color:#1f9ad3;}
 .btn.custom-btn-sgray:active{background:#cccccc; color:#fff;}
 .btn.custom-btn-sgray > i{color:#fff;}
 
+.btn.custom-btn-white, .btn.custom-btn-white:focus, .btn.custom-btn-white:hover,
+.btn.custom-btn-white:active{background:#fff; color:#000;}
+.btn.custom-btn-white > i{color:#000;}
+
 .btn.custom-btn-09, .btn.custom-btn-09:focus, .btn.custom-btn-09:hover,
 .btn.custom-btn-09:active{background:#6c109d; color:#fff;}
 .btn.custom-btn-09 > i{color:#fff;}
@@ -161,6 +165,7 @@ nav.footer.footer-gray .ss-list > li > a:hover{color:#1f9ad3;}
 .btn.custom-btn-dark:hover,
 .btn.custom-btn-gray:hover,
 .btn.custom-btn-sgray:hover,
+.btn.custom-btn-white:hover,
 .btn.custom-btn-09:hover,
 .btn.custom-btn-10:hover,
 .btn.custom-btn-11:hover{
@@ -173,6 +178,7 @@ nav.footer.footer-gray .ss-list > li > a:hover{color:#1f9ad3;}
 .btn.custom-btn-dark:active,
 .btn.custom-btn-gray:active,
 .btn.custom-btn-sgray:active,
+.btn.custom-btn-white:active,
 .btn.custom-btn-09:active,
 .btn.custom-btn-10:active,
 .btn.custom-btn-11:active{
@@ -309,6 +315,13 @@ nav.footer.footer-gray .ss-list > li > a:hover{color:#1f9ad3;}
     border:4px solid #fff; background:#5f176e; color:#fff;
 }
 .ss-img .tag, .ss-video .tag{color:#fff;}
+.ss-img .calendar-tag, .ss-video .calendar-tag{background:#0081c5;}
+.ss-img .calendar-tag h6, .ss-video .calendar-tag h6,
+.ss-img .calendar-tag p, .ss-video .calendar-tag p{color:#fff;}
+.ss-img .calendar-banner, .ss-video .calendar-banner{
+    background:rgba(0,129,197,.85); color:#fff;
+}
+.ss-img .calendar-banner > .block, .ss-video .calendar-banner > .block{border-color:#fff;}
 
 
 /* Special List */
@@ -347,6 +360,11 @@ table.table.table-download tbody > tr.row-title > td{background:#393939; color:#
 
 /* Toggle Target */
 .toggle-target textarea{background:#e6e7e6; border-color:#e6e7e6;}
+
+
+/* Weblink */
+.weblink .hover-container{background:rgba(0,129,197,.85);}
+.weblink .hover-container p{width:100%; color:#fff;}
 
 
 /* Utility */

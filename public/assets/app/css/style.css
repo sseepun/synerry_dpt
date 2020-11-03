@@ -495,7 +495,9 @@ p.nm, .p-nm{font-size:1.0625rem; margin:.625rem 0 0 0; font-weight:300;}
     font-family:'TH Sarabun New'; margin:.125rem 0 .3125rem 0; font-size:1.25rem; font-weight:300;
 }
 .post-card .view{display:flex; align-items:center;}
-.post-card .view > .icon{font-size:55%; margin:.0625rem .25rem 0 0;}
+.post-card .view > .icon{
+    font-size:55%; margin:.0625rem .25rem 0 0; width:.875rem; text-align:center;
+}
 .post-card .desc{
     font-family:'TH Sarabun New'; font-size:1.3125rem; margin:.75rem 0 0 0; line-height:1.25;
     overflow:hidden!important; display:-webkit-box!important;
@@ -1022,6 +1024,43 @@ p.nm, .p-nm{font-size:1.0625rem; margin:.625rem 0 0 0; font-weight:300;}
     display:inline-block; margin:0 .5rem 0 0;
 }
 
+.ss-img .calendar-tag, .ss-video .calendar-tag{
+    position:absolute; bottom:0; right:0; text-align:center; padding:.25rem .5rem;
+}
+.ss-img .calendar-tag h6, .ss-video .calendar-tag h6{
+    font-size:1.5rem; font-weight:600; line-height:1; margin:0;
+}
+.ss-img .calendar-tag p, .ss-video .calendar-tag p{
+    font-size:.8125rem; font-weight:300; line-height:1; margin:0;
+}
+
+.ss-img .calendar-banner, .ss-video .calendar-banner{
+    position:absolute; bottom:0; left:0; right:0; padding:1.5rem .5rem;
+    display:flex; align-items:center;
+}
+.ss-img .calendar-banner > .block, .ss-video .calendar-banner > .block{
+    max-width:calc(100% / 2); padding:0 2.375rem; margin:.5rem 0;
+    border-right:2px solid transparent;
+}
+.ss-img .calendar-banner > .block:nth-child(1), 
+.ss-video .calendar-banner > .block:nth-child(1){text-align:center;}
+.ss-img .calendar-banner > .block:nth-child(3), 
+.ss-video .calendar-banner > .block:nth-child(3){border-right:0;}
+.ss-img .calendar-banner h1, .ss-video .calendar-banner h1{
+    font-size:5.25rem; font-weight:600; line-height:.75; margin:0;
+}
+.ss-img .calendar-banner h6, .ss-video .calendar-banner h6,
+.ss-img .calendar-banner h5, .ss-video .calendar-banner h5{
+    font-size:1.25rem; font-weight:300; margin:0;
+}
+.ss-img .calendar-banner h5, .ss-video .calendar-banner h5{font-size:1.3125rem;}
+.ss-img .calendar-banner p, .ss-video .calendar-banner p{
+    margin:.5rem 0 0 0; font-size:1.0625rem; line-height:1.6; font-weight:200;
+}
+.ss-img .calendar-banner p > span, .ss-video .calendar-banner p > span{
+    display:inline-block; min-width:3.125rem;
+}
+
 .ss-video .play-container{
     position:absolute; top:0; bottom:0; left:0; right:0;
     display:flex; align-items:center; justify-content:center;
@@ -1086,6 +1125,17 @@ p.nm, .p-nm{font-size:1.0625rem; margin:.625rem 0 0 0; font-weight:300;}
     display:block; width:auto; max-width:100%; height:auto; max-height:calc(100% - 1.5rem);
 }
 
+@media screen and (max-width:991.98px){
+    .ss-img .calendar-banner, .ss-video .calendar-banner{padding:.4375rem 0;}
+    .ss-img .calendar-banner > .block, .ss-video .calendar-banner > .block{padding:0 1.25rem;}
+    .ss-img .calendar-banner h1, .ss-video .calendar-banner h1{font-size:3rem; line-height:1;}
+    .ss-img .calendar-banner h5, .ss-video .calendar-banner h5{font-size:1.0625rem;}
+    .ss-img .calendar-banner h6, .ss-video .calendar-banner h6{font-size:.9375rem;}
+    .ss-img .calendar-banner p, .ss-video .calendar-banner p{
+        margin:.25rem 0 0 0; font-size:.875rem;
+    }
+    .ss-img .calendar-banner p > span, .ss-video .calendar-banner p > span{min-width:2.625rem;}
+}
 @media screen and (max-width:767.98px){
     .ss-img, .ss-video{padding:60% 0 0 0;}
     .ss-img.ss-img-content{padding:0 1rem;}
@@ -1100,6 +1150,25 @@ p.nm, .p-nm{font-size:1.0625rem; margin:.625rem 0 0 0; font-weight:300;}
     .ss-img.ss-img-content .content.content-text{height:260px;}
     .ss-img.ss-img-content .content.content-img{height:200px; justify-content:center;}
     .ss-img .content img{max-height:200px; margin:0 auto;}
+    .ss-img .calendar-banner, .ss-video .calendar-banner{
+        position:relative; flex-wrap:wrap; justify-content:space-evenly; padding:.5rem 0;
+    }
+    .ss-img .calendar-banner > .block, .ss-video .calendar-banner > .block{
+        padding:0 1rem; margin:.25rem 0;
+    }
+    .ss-img .calendar-banner > .block:nth-child(1),
+    .ss-img .calendar-banner > .block:nth-child(2),
+    .ss-video .calendar-banner > .block:nth-child(1),
+    .ss-video .calendar-banner > .block:nth-child(2){max-width:70%; border-right:0;}
+    .ss-img .calendar-banner > .block:nth-child(3),
+    .ss-video .calendar-banner > .block:nth-child(3){max-width:100%;}
+    .ss-img .calendar-banner h1, .ss-video .calendar-banner h1{font-size:2.25rem;}
+    .ss-img .calendar-banner h5, .ss-video .calendar-banner h5{font-size:.9375rem;}
+    .ss-img .calendar-banner h6, .ss-video .calendar-banner h6{font-size:.875rem;}
+    .ss-img .calendar-banner p, .ss-video .calendar-banner p{
+        margin:.125rem 0 0 0; font-size:.8125rem;
+    }
+    .ss-img .calendar-banner p > span, .ss-video .calendar-banner p > span{min-width:2.375rem;}
 }
 @media screen and (max-width:575.98px){
     .ss-img.square, .ss-video.square{padding:60% 0 0 0;}
@@ -1299,15 +1368,30 @@ table.table.va-baseline td{vertical-align:baseline;}
     display:block; position:relative; width:100%; height:100%; background:#f8f8f8;
     transition:box-shadow .3s;
 }
+.weblink.weblink-02{background:#fff; box-shadow:0px 10px 20px 0px rgba(0,0,0,.15);}
 .weblink:hover{box-shadow:0px 10px 20px 0px rgba(0,0,0,.15);}
 .weblink > .wrapper{width:100%; height:100%; padding:1rem; text-align:center;}
+.weblink.weblink-02 > .wrapper{position:relative; padding:100% 0 0 0;}
 .weblink .img-container{
     width:100%; height:6.5rem; display:flex; align-items:center; justify-content:center;
+}
+.weblink.weblink-02 .img-container{
+    height:100%; position:absolute; top:0; bottom:0; left:0; right:0;
 }
 .weblink .img-container > img{
     display:block; width:auto; max-width:100%; height:auto; max-height:100%;
 }
+.weblink.weblink .img-container > img{max-width:70%; max-height:70%;}
 .weblink p{width:100%; margin:.5rem 0 0 0; font-size:.875rem; font-weight:600; color:#000;}
+.weblink .hover-container{
+    position:absolute; top:0; bottom:0; left:0; right:0; padding:1.25rem; display:flex;
+    align-items:stretch; flex-wrap:wrap; opacity:0; pointer-events:none;
+    transition:opacity .3s;
+}
+.weblink:hover .hover-container{opacity:1; pointer-events:auto;}
+.weblink .hover-container p{width:100%;}
+.weblink .hover-container .btns{width:100%; margin:auto 0 0 0;}
+.weblink .hover-container .btn{width:100%;}
 
 
 /* Utility */

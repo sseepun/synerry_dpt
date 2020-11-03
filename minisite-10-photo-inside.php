@@ -39,7 +39,7 @@
         style="background-image:url('public/assets/app/images/bg/32.jpg')">
             <div class="container">
                 <div class="ss-box-02 width-full no-bradius box-shadow bg-color-white">
-                    <h3 class="fw-200">
+                    <h3 class="fw-200 mb-0">
                         รวมสถานที่ท่องเที่ยวจังหวัดเชียงราย วันที่ 8 กรกฎาคม 2563 
                     </h3>
                     <div class="d-flex jc-space-between ai-center fw-wrap pb-2">

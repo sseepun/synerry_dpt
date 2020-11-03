@@ -669,11 +669,17 @@
 
 /* Tab Container 04 */
 .tab-container.tab-container-04{display:flex; justify-content:space-between;}
+.tab-container.tab-container-04.vertical{display:block;}
 .tab-container.tab-container-04 .tabs{display:block; width:calc(38% - 2rem); margin:0 2rem 0 0;}
+.tab-container.tab-container-04.vertical .tabs{
+    display:flex; justify-content:space-between; width:100%; margin:0;
+}
 .tab-container.tab-container-04 .tab-contents{width:62%;}
+.tab-container.tab-container-04.vertical .tab-contents{width:100%;}
 .tab-container.tab-container-04 .tab{
     position:relative; width:100%; display:flex; align-items:center; margin:0 0 1rem 0;
 }
+.tab-container.tab-container-04.vertical .tab{width:calc(25% - .5rem);}
 .tab-container.tab-container-04 .tab::before, .tab-container.tab-container-04 .tab::after{
     content:''; position:absolute; top:100%; left:0; height:1px;
 }

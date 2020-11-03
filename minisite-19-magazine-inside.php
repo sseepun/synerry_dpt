@@ -70,7 +70,7 @@
     <section class="section-padding" data-aos="fade-up" data-aos-delay="0">
         <div class="container">
             <div class="ss-box-02 box-shadow no-bradius width-full">
-                <h3 class="fw-200">
+                <h3 class="fw-200 mb-0">
                     รายงานประจำปีสำนักงานปลัดกระทรวงอุตสาหกรรม ประจำปีงบประมาณ พ.ศ. 2558
                 </h3>
                 <div class="d-flex jc-space-between ai-center fw-wrap border-bottom pb-2">

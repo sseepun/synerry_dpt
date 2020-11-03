@@ -513,8 +513,8 @@ $(function(){ 'use strict';
     if(tabContainers.length){
         tabContainers.each(function(){
             var self = $(this),
-                tabs = self.find('> .tabs > .tab'),
-                tabContents = self.find('> .tab-contents > .tab-content');
+                tabs = self.find('.tabs > .tab'),
+                tabContents = self.find('.tab-contents > .tab-content');
             tabs.click(function(e){
                 e.preventDefault();
                 tabs.removeClass('active');

@@ -78,6 +78,7 @@ nav.footer > .footer-bottom .wrapper > .count-area{background:#ffff00; color:#00
 .btn.custom-btn-dark, .btn.custom-btn-dark:focus,
 .btn.custom-btn-gray, .btn.custom-btn-gray:focus,
 .btn.custom-btn-sgray, .btn.custom-btn-sgray:focus,
+.btn.custom-btn-white, .btn.custom-btn-white:focus,
 .btn.custom-btn-09, .btn.custom-btn-09:focus,
 .btn.custom-btn-10, .btn.custom-btn-10:focus,
 .btn.custom-btn-11, .btn.custom-btn-11:focus{
@@ -90,6 +91,7 @@ nav.footer > .footer-bottom .wrapper > .count-area{background:#ffff00; color:#00
 .btn.custom-btn-dark:hover,
 .btn.custom-btn-gray:hover,
 .btn.custom-btn-sgray:hover,
+.btn.custom-btn-white:hover,
 .btn.custom-btn-09:hover,
 .btn.custom-btn-10:hover,
 .btn.custom-btn-11:hover{
@@ -102,6 +104,7 @@ nav.footer > .footer-bottom .wrapper > .count-area{background:#ffff00; color:#00
 .btn.custom-btn-dark:active,
 .btn.custom-btn-gray:active,
 .btn.custom-btn-sgray:active,
+.btn.custom-btn-white:active,
 .btn.custom-btn-09:active,
 .btn.custom-btn-10:active,
 .btn.custom-btn-11:active{
@@ -114,6 +117,7 @@ nav.footer > .footer-bottom .wrapper > .count-area{background:#ffff00; color:#00
 .btn.custom-btn-dark > i,
 .btn.custom-btn-gray > i,
 .btn.custom-btn-sgray > i,
+.btn.custom-btn-white > i,
 .btn.custom-btn-09 > i,
 .btn.custom-btn-10 > i,
 .btn.custom-btn-11 > i{
@@ -220,6 +224,11 @@ nav.footer > .footer-bottom .wrapper > .count-area{background:#ffff00; color:#00
     border:4px solid #fff; background:#5f176e; color:#fff;
 }
 .ss-img .tag, .ss-video .tag{color:#ffff00;}
+.ss-img .calendar-tag, .ss-video .calendar-tag{background:#ffff00;}
+.ss-img .calendar-tag h6, .ss-video .calendar-tag h6,
+.ss-img .calendar-tag p, .ss-video .calendar-tag p{color:#000;}
+.ss-img .calendar-banner, .ss-video .calendar-banner{background:rgba(0,0,0,.85); color:#ffff00;}
+.ss-img .calendar-banner > .block, .ss-video .calendar-banner > .block{border-color:#ffff00;}
 
 
 /* Special List */
@@ -262,6 +271,11 @@ table.table.table-download tbody > tr.row-title > td{background:#ffff00; color:#
 
 /* Toggle Target */
 .toggle-target textarea{background:#000; border-color:#ffff00;}
+
+
+/* Weblink */
+.weblink .hover-container{background:rgba(0,0,0,.85);}
+.weblink .hover-container p{width:100%; color:#ffff00;}
 
 
 /* Utility */
