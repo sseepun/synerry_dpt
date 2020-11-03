@@ -46,3 +46,27 @@
 .tree .node.d-node > .desc ul{width:100%; text-align:left; margin:0; padding:0 0 0 1.5rem;}
 .tree .node.d-node.d-node-2 > .title{background:#61accf;}
 .tree .node.d-node.d-node-2 > .subtitle{background:#3c5964;}
+
+.tree .node.m-node{
+    display:block!important; width:180px; background:#fff; color:#000;
+    border:1px solid #ddd; border-radius:4px; box-shadow:none; cursor:pointer;
+    padding:10px 10px 5px 10px; transition:background .25s;
+}
+.tree .node.m-node:hover{background:#481b79;}
+.tree .node.m-node > .img-container{
+    width:100%; padding:100% 0 0 0; border-radius:4px; background-size:cover;
+    background-position:center;
+}
+.tree .node.m-node > .title{
+    width:100%; text-align:center; margin:5px 0 0 0; font-size:18px; font-weight:600;
+    color:#000; transition:color .25s;
+}
+.tree .node.m-node:hover > .title{color:#fff;}
+
+.tree .node.m-node.m-node-2{display:flex!important; align-items:center; padding:10px;}
+.tree .node.m-node.m-node-2 > .img-container{
+    width:35px; height:35px; padding:0; margin:0 10px 0 0;
+}
+.tree .node.m-node.m-node-2 > .title{
+    width:calc(100% - 45px); text-align:left; margin:0; font-size:16px; font-weight:300;
+}

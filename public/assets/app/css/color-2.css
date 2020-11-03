@@ -79,6 +79,7 @@ nav.footer > .footer-bottom .wrapper > .count-area{background:#ffff00; color:#00
 .btn.custom-btn-gray, .btn.custom-btn-gray:focus,
 .btn.custom-btn-sgray, .btn.custom-btn-sgray:focus,
 .btn.custom-btn-white, .btn.custom-btn-white:focus,
+.btn.custom-btn-04, .btn.custom-btn-04:focus,
 .btn.custom-btn-09, .btn.custom-btn-09:focus,
 .btn.custom-btn-10, .btn.custom-btn-10:focus,
 .btn.custom-btn-11, .btn.custom-btn-11:focus{
@@ -92,6 +93,7 @@ nav.footer > .footer-bottom .wrapper > .count-area{background:#ffff00; color:#00
 .btn.custom-btn-gray:hover,
 .btn.custom-btn-sgray:hover,
 .btn.custom-btn-white:hover,
+.btn.custom-btn-04:hover,
 .btn.custom-btn-09:hover,
 .btn.custom-btn-10:hover,
 .btn.custom-btn-11:hover{
@@ -105,6 +107,7 @@ nav.footer > .footer-bottom .wrapper > .count-area{background:#ffff00; color:#00
 .btn.custom-btn-gray:active,
 .btn.custom-btn-sgray:active,
 .btn.custom-btn-white:active,
+.btn.custom-btn-04:active,
 .btn.custom-btn-09:active,
 .btn.custom-btn-10:active,
 .btn.custom-btn-11:active{
@@ -118,6 +121,7 @@ nav.footer > .footer-bottom .wrapper > .count-area{background:#ffff00; color:#00
 .btn.custom-btn-gray > i,
 .btn.custom-btn-sgray > i,
 .btn.custom-btn-white > i,
+.btn.custom-btn-04 > i,
 .btn.custom-btn-09 > i,
 .btn.custom-btn-10 > i,
 .btn.custom-btn-11 > i{
@@ -161,6 +165,10 @@ nav.footer > .footer-bottom .wrapper > .count-area{background:#ffff00; color:#00
 /* Date Selector */
 .date-selectors label{color:#ffff00; border-color:#ffff00;}
 .date-selectors .icon{color:#ffff00;}
+
+
+/* Form Group */
+.select-wrapper::after{color:#ffff00;}
 
 
 /* List Header */

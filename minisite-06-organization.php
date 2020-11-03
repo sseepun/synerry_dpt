@@ -62,86 +62,198 @@
                 connectors: { type: 'step' },
             },
             nodeStructure: {
-                text: { name: 'กระทรวงอุตสาหกรรม' },
-                HTMLclass: 'm-root',
+                innerHTML: `<div class="img-container" style="background-image:url('public/assets/app/images/hero/02.png');"></div>
+                    <div class="title">CEO</div>`,
+                HTMLclass: 'm-node',
                 children: [
                     
                     {   
-                        text: { name: 'สำนักรัฐมนตรี' },
-                        HTMLclass: 'node-1',
-                        children: [ ],
+                        innerHTML: `<div class="img-container" style="background-image:url('public/assets/app/images/hero/02.png');"></div>
+                            <div class="title">CFO</div>`,
+                        HTMLclass: 'm-node',
+                        children: [
+                            {   
+                                innerHTML: `<div class="img-container" style="background-image:url('public/assets/app/images/hero/02.png');"></div>
+                                    <div class="title">Employee</div>`,
+                                HTMLclass: 'm-node m-node-2',
+                                children: [ 
+                                    {   
+                                        innerHTML: `<div class="img-container" style="background-image:url('public/assets/app/images/hero/02.png');"></div>
+                                            <div class="title">Employee</div>`,
+                                        HTMLclass: 'm-node m-node-2',
+                                        children: [
+                                            {   
+                                                innerHTML: `<div class="img-container" style="background-image:url('public/assets/app/images/hero/02.png');"></div>
+                                                    <div class="title">Employee</div>`,
+                                                HTMLclass: 'm-node m-node-2',
+                                                children: [
+                                                    {   
+                                                        innerHTML: `<div class="img-container" style="background-image:url('public/assets/app/images/hero/02.png');"></div>
+                                                            <div class="title">Employee</div>`,
+                                                        HTMLclass: 'm-node m-node-2',
+                                                        children: [
+                                                            {   
+                                                                innerHTML: `<div class="img-container" style="background-image:url('public/assets/app/images/hero/02.png');"></div>
+                                                                    <div class="title">Employee</div>`,
+                                                                HTMLclass: 'm-node m-node-2',
+                                                                children: [ ],
+                                                            },
+                                                        ],
+                                                    },
+                                                ],
+                                            },
+                                        ],
+                                    },
+                                ],
+                            },
+                        ],
                     },
                     
                     {   
-                        text: { name: 'สำนักงานปลัดกระทรวงอุตสาหกรรม' },
-                        HTMLclass: 'node-1',
-                        children: [ ],
-                    },
-
-                    {   
-                        text: { name: 'กลุ่มภารกิจด้านเศรษฐกิจอุตสาหกรรม' },
-                        HTMLclass: 'node-1',
+                        innerHTML: `<div class="img-container" style="background-image:url('public/assets/app/images/hero/02.png');"></div>
+                            <div class="title">VP Bus Dev</div>`,
+                        HTMLclass: 'm-node',
                         children: [
-                            {
-                                text: { name: 'สำนักงานเศรษฐกิจอุตสาหกรรม' },
-                                HTMLclass: 'node-2',
-                                children: [
-                                    {
-                                        text: { name: 'สำนักงานคณะกรรมการอ้อยและน้ำตาลทราย' },
-                                        HTMLclass: 'node-2',
-                                        children: [ ],
-                                    }
-                                ]
-                            }
-                        ]
+                            {   
+                                innerHTML: `<div class="img-container" style="background-image:url('public/assets/app/images/hero/02.png');"></div>
+                                    <div class="title">Employee</div>`,
+                                HTMLclass: 'm-node m-node-2',
+                                children: [ 
+                                    {   
+                                        innerHTML: `<div class="img-container" style="background-image:url('public/assets/app/images/hero/02.png');"></div>
+                                            <div class="title">Employee</div>`,
+                                        HTMLclass: 'm-node m-node-2',
+                                        children: [
+                                            {   
+                                                innerHTML: `<div class="img-container" style="background-image:url('public/assets/app/images/hero/02.png');"></div>
+                                                    <div class="title">Employee</div>`,
+                                                HTMLclass: 'm-node m-node-2',
+                                                children: [ ],
+                                            },
+                                        ],
+                                    },
+                                ],
+                            },
+                        ],
                     },
-
+                    
                     {   
-                        text: { name: 'กลุ่มภารกิจด้านกำกับตรวจสอบกระบวนการผลิต' },
-                        HTMLclass: 'node-1',
+                        innerHTML: `<div class="img-container" style="background-image:url('public/assets/app/images/hero/02.png');"></div>
+                            <div class="title">VP Div A</div>`,
+                        HTMLclass: 'm-node',
                         children: [
-                            {
-                                text: { name: 'กรมโรงงานอุตสาหกรรม' },
-                                HTMLclass: 'node-2',
-                                children: [
-                                    {
-                                        text: { name: 'กรมอุตสาหกรรมพื้นฐานและการเหมืองแร่' },
-                                        HTMLclass: 'node-2',
-                                        children: [ ],
-                                    }
-                                ]
-                            }
-                        ]
+                            {   
+                                innerHTML: `<div class="img-container" style="background-image:url('public/assets/app/images/hero/02.png');"></div>
+                                    <div class="title">Employee</div>`,
+                                HTMLclass: 'm-node m-node-2',
+                                children: [ 
+                                    {   
+                                        innerHTML: `<div class="img-container" style="background-image:url('public/assets/app/images/hero/02.png');"></div>
+                                            <div class="title">Employee</div>`,
+                                        HTMLclass: 'm-node m-node-2',
+                                        children: [
+                                            {   
+                                                innerHTML: `<div class="img-container" style="background-image:url('public/assets/app/images/hero/02.png');"></div>
+                                                    <div class="title">Employee</div>`,
+                                                HTMLclass: 'm-node m-node-2',
+                                                children: [
+                                                    {   
+                                                        innerHTML: `<div class="img-container" style="background-image:url('public/assets/app/images/hero/02.png');"></div>
+                                                            <div class="title">Employee</div>`,
+                                                        HTMLclass: 'm-node m-node-2',
+                                                        children: [ ],
+                                                    },
+                                                ],
+                                            },
+                                        ],
+                                    },
+                                ],
+                            },
+                        ],
                     },
-
+                    
                     {   
-                        text: { name: 'กลุ่มภารกิจด้านส่งเสริมอุตสาหกรรมและผู้ประกอบการ' },
-                        HTMLclass: 'node-1',
+                        innerHTML: `<div class="img-container" style="background-image:url('public/assets/app/images/hero/02.png');"></div>
+                            <div class="title">VP Div B</div>`,
+                        HTMLclass: 'm-node',
                         children: [
-                            {
-                                text: { name: 'กรมส่งเสริมอุตสาหกรรม' },
-                                HTMLclass: 'node-2',
-                                children: [
-                                    {
-                                        text: { name: 'สำนักงานมาตรฐานผลิตภัณฑ์อุตสาหกรรม' },
-                                        HTMLclass: 'node-2',
-                                        children: [ ],
-                                    }
-                                ]
-                            }
-                        ]
+                            {   
+                                innerHTML: `<div class="img-container" style="background-image:url('public/assets/app/images/hero/02.png');"></div>
+                                    <div class="title">Employee</div>`,
+                                HTMLclass: 'm-node m-node-2',
+                                children: [ 
+                                    {   
+                                        innerHTML: `<div class="img-container" style="background-image:url('public/assets/app/images/hero/02.png');"></div>
+                                            <div class="title">Employee</div>`,
+                                        HTMLclass: 'm-node m-node-2',
+                                        children: [
+                                            {   
+                                                innerHTML: `<div class="img-container" style="background-image:url('public/assets/app/images/hero/02.png');"></div>
+                                                    <div class="title">Employee</div>`,
+                                                HTMLclass: 'm-node m-node-2',
+                                                children: [
+                                                    {   
+                                                        innerHTML: `<div class="img-container" style="background-image:url('public/assets/app/images/hero/02.png');"></div>
+                                                            <div class="title">Employee</div>`,
+                                                        HTMLclass: 'm-node m-node-2',
+                                                        children: [
+                                                            {   
+                                                                innerHTML: `<div class="img-container" style="background-image:url('public/assets/app/images/hero/02.png');"></div>
+                                                                    <div class="title">Employee</div>`,
+                                                                HTMLclass: 'm-node m-node-2',
+                                                                children: [ ],
+                                                            },
+                                                        ],
+                                                    },
+                                                ],
+                                            },
+                                        ],
+                                    },
+                                ],
+                            },
+                        ],
                     },
-
+                    
                     {   
-                        text: { name: 'รัฐวิสาหกิจ' },
-                        HTMLclass: 'node-1',
+                        innerHTML: `<div class="img-container" style="background-image:url('public/assets/app/images/hero/02.png');"></div>
+                            <div class="title">VP HR</div>`,
+                        HTMLclass: 'm-node',
                         children: [
-                            {
-                                text: { name: 'การนิคมอุตสาหกรรมแห่งประเทศไทย' },
-                                HTMLclass: 'node-2',
-                                children: [ ],
-                            }
-                        ]
+                            {   
+                                innerHTML: `<div class="img-container" style="background-image:url('public/assets/app/images/hero/02.png');"></div>
+                                    <div class="title">Employee</div>`,
+                                HTMLclass: 'm-node m-node-2',
+                                children: [ 
+                                    {   
+                                        innerHTML: `<div class="img-container" style="background-image:url('public/assets/app/images/hero/02.png');"></div>
+                                            <div class="title">Employee</div>`,
+                                        HTMLclass: 'm-node m-node-2',
+                                        children: [
+                                            {   
+                                                innerHTML: `<div class="img-container" style="background-image:url('public/assets/app/images/hero/02.png');"></div>
+                                                    <div class="title">Employee</div>`,
+                                                HTMLclass: 'm-node m-node-2',
+                                                children: [
+                                                    {   
+                                                        innerHTML: `<div class="img-container" style="background-image:url('public/assets/app/images/hero/02.png');"></div>
+                                                            <div class="title">Employee</div>`,
+                                                        HTMLclass: 'm-node m-node-2',
+                                                        children: [
+                                                            {   
+                                                                innerHTML: `<div class="img-container" style="background-image:url('public/assets/app/images/hero/02.png');"></div>
+                                                                    <div class="title">Employee</div>`,
+                                                                HTMLclass: 'm-node m-node-2',
+                                                                children: [ ],
+                                                            },
+                                                        ],
+                                                    },
+                                                ],
+                                            },
+                                        ],
+                                    },
+                                ],
+                            },
+                        ],
                     },
 
                 ]

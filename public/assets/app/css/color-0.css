@@ -149,6 +149,10 @@ nav.footer.footer-gray .ss-list > li > a:hover{color:#1f9ad3;}
 .btn.custom-btn-white:active{background:#fff; color:#000;}
 .btn.custom-btn-white > i{color:#000;}
 
+.btn.custom-btn-04, .btn.custom-btn-04:focus, .btn.custom-btn-04:hover,
+.btn.custom-btn-04:active{background:#ba41ce; color:#fff;}
+.btn.custom-btn-04 > i{color:#fff;}
+
 .btn.custom-btn-09, .btn.custom-btn-09:focus, .btn.custom-btn-09:hover,
 .btn.custom-btn-09:active{background:#6c109d; color:#fff;}
 .btn.custom-btn-09 > i{color:#fff;}
@@ -230,6 +234,7 @@ nav.footer.footer-gray .ss-list > li > a:hover{color:#1f9ad3;}
 
 /* Form Group */
 .form-check label{color:#666;}
+.select-wrapper::after{color:#666;}
 
 
 /* List Header */

@@ -65,7 +65,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="btn-container text-right">
+                                <div class="btn-container">
                                     <a class="btn custom-btn-09" href="#">
                                         เปิดดู <i class="fas fa-link color-white ml-2"></i>
                                     </a>
