@@ -510,6 +510,11 @@ table.table.table-download tbody > tr.row-title > td{background:#393939; color:#
 .sitemap-02 ul > li > ul > li::before{background:#5e5e5e!important;}
 
 
+/* Stat 01 */
+.stat-01{background:#0081c5;}
+.stat-01 .grid{border-color:#fff; color:#fff;}
+
+
 /* Tab Container 01 */
 .tab-container.tab-container-01 .tabs::before{
     background-image:linear-gradient(to right, #548abf, #4ba4cd, #5d6daf, #63337e, #6d3e96, 

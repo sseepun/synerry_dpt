@@ -369,12 +369,12 @@ $(function(){ 'use strict';
                     }, 450);
 
                     var k = teamSelectors.index(this),
-                        count = teamSelectors.length;
+                        count = 0;
                     teamSelectors.removeClass('pos-0 pos-1 pos-2 pos-3');
                     thisSelf.addClass('pos-0');
                     teamSelectors.each(function(i, d){
                         if(i!=k){
-                            count--;
+                            count++;
                             $(d).addClass('pos-'+count);
                         }
                     });

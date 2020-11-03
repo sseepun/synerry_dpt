@@ -372,6 +372,11 @@ table.table.table-download tbody > tr.row-title > td{background:#fff; color:#000
 .sitemap-02 ul > li{border-color:#fff;}
 
 
+/* Stat 01 */
+.stat-01{border-top:1px solid #fff; background:#000;}
+.stat-01 .grid{border-color:#fff; color:#fff;}
+
+
 /* Tab Container 01 */
 .tab-container.tab-container-01 .tabs::before{background:#fff;}
 .tab-container.tab-container-01 .tab.active h5{color:#000; background:#fff;}
