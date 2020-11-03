@@ -248,6 +248,16 @@ nav.footer.footer-gray .ss-list > li > a:hover{color:#1f9ad3;}
 .pagination .page-btn.page-last{color:#fff; background:#c0bfbf;}
 
 
+/* Popup Container */
+.popup-container .popup-box .top-container .top-content::before{background:#512682;}
+.popup-container .popup-box .top-container h2{color:#fff;}
+.popup-container .popup-box .top-container p{color:#512682;}
+.popup-container .popup-box .middle-container .title-wrapper::before{background:#dfdfdf;}
+.popup-container .popup-box .middle-container .title-wrapper > *::before{background:#0081c5;}
+.popup-container .popup-box .middle-container table tr:nth-child(odd) > td{background:#efefef;}
+.popup-container .popup-box .middle-container table td:nth-child(1)::before{background:#0081c5;}
+
+
 /* Post Card */
 .post-card .title-container > .title{color:#000;}
 .post-card:hover .title-container > .title,

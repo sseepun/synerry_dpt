@@ -176,6 +176,15 @@ nav.footer > .footer-bottom .wrapper > .count-area{background:#fff; color:#000;}
 }
 
 
+/* Popup Container */
+.popup-container .popup-box.popup-profile{background:#000; border:1px solid #fff;}
+.popup-container .popup-box .top-container .top-content::before{background:#000;}
+.popup-container .popup-box .top-container h2{color:#fff;}
+.popup-container .popup-box .top-container p{color:#fff;}
+.popup-container .popup-box .middle-container .title-wrapper::before{background:#fff;}
+.popup-container .popup-box .middle-container table td:nth-child(1)::before{background:#fff;}
+
+
 /* Post Card */
 .post-card .title-container > .title{color:#fff;}
 .post-card .date-tag{color:#fff; border-top:1px solid #fff; border-bottom:1px solid #fff;}

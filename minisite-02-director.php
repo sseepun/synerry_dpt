@@ -49,8 +49,8 @@
             </div>
             <div class="grids jc-center mt-3 pb-5" data-aos="fade-up" data-aos-delay="0">
                 <div class="grid sm-100 md-50 lg-25">
-                    <div class="post-card post-card-08">
-                        <a class="ss-img bradius-0" href="#">
+                    <a class="post-card post-card-08 btn-popup-toggle" data-popup="profile">
+                        <div class="ss-img bradius-0">
                             <div class="img-bg lazy-bg" data-src="public/assets/app/images/hero/02.png"></div>
                             <div class="hover-container">
                                 <img src="public/assets/app/images/icon/search-02.png" alt="Hover Image" />
@@ -58,15 +58,19 @@
                             <div class="calendar-tag py-3 px-3">
                                 <div class="text-2xl color-white">+</div>
                             </div>
-                        </a>
-                        <div class="wrapper text-center px-2 py-3 bg-color-gray">
-                            <p class="mt-0 text-nm">นางกฤษนันท์ ทะวิชัย</p>
+                        </div>
+                        <div class="wrapper text-center px-2 py-3 bg-color-gray color-dark">
+                            <p class="mt-0 text-nm">
+                                นางกฤษนันท์ ทะวิชัย
+                            </p>
                             <p class="fw-600 mt-0 text-nm color-07">
                                 อุตสาหกรรมจังหวัดเชียงราย
                             </p>
-                            <p class="mt-0 text-nm">092-2607167</p>
+                            <p class="mt-0 text-nm">
+                                092-2607167
+                            </p>
                         </div>
-                    </div>
+                    </a>
                 </div>
                 <div class="sep mt-3"></div>
                 <?php for($i=0; $i<4; $i++){?>
@@ -74,8 +78,8 @@
                         <h6 class="text-center fw-600 mb-2">
                             <span class="text-sm">สำนักงานอุตสาหกรรมจังหวัดเชียงราย</span>
                         </h6>
-                        <div class="post-card post-card-08">
-                            <a class="ss-img bradius-0" href="#">
+                        <a class="post-card post-card-08 btn-popup-toggle" data-popup="profile">
+                            <div class="ss-img bradius-0">
                                 <div class="img-bg lazy-bg" data-src="public/assets/app/images/hero/02.png"></div>
                                 <div class="hover-container">
                                     <img src="public/assets/app/images/icon/search-02.png" alt="Hover Image" />
@@ -83,45 +87,54 @@
                                 <div class="calendar-tag px-2 py-3 px-3">
                                     <div class="text-2xl color-white">+</div>
                                 </div>
-                            </a>
-                            <div class="wrapper text-center py-3 bg-color-gray">
-                                <p class="mt-0 text-nm">นางกฤษนันท์ ทะวิชัย</p>
+                            </div>
+                            <div class="wrapper text-center py-3 bg-color-gray color-dark">
+                                <p class="mt-0 text-nm">
+                                    นางกฤษนันท์ ทะวิชัย
+                                </p>
                                 <p class="fw-600 mt-0 text-nm">
                                     อุตสาหกรรมจังหวัดเชียงราย
                                 </p>
-                                <p class="mt-0 text-nm">092-2607167</p>
+                                <p class="mt-0 text-nm">
+                                    092-2607167
+                                </p>
                             </div>
-                        </div>
+                        </a>
                     </div>
                 <?php }?>
             </div>
 
-            <?php for($j=0; $j<4; $j++){?>
+            <?php for($j=0; $j<2; $j++){?>
                 <div class="d-flex jc-center mt-5" data-aos="fade-up" data-aos-delay="0">
                     <div class="bg-color-blue py-3 px-4">
                         <p class="color-white mt-0">สำนักงานอุตสาหกรรมจังหวัดเชียงราย</p>
                     </div>
                 </div>
+
                 <div class="grids jc-center mt-3 pb-5" data-aos="fade-up" data-aos-delay="300">
                     <div class="grid sm-100 md-50 lg-25">
-                        <div class="post-card post-card-08">
-                            <a class="ss-img bradius-0" href="#">
+                        <a class="post-card post-card-08 btn-popup-toggle" data-popup="profile">
+                            <div class="ss-img bradius-0">
                                 <div class="img-bg lazy-bg" data-src="public/assets/app/images/hero/02.png"></div>
                                 <div class="hover-container">
                                     <img src="public/assets/app/images/icon/search-02.png" alt="Hover Image" />
                                 </div>
-                                <div class="calendar-tag py-3 px-3">
+                                <div class="calendar-tag px-2 py-3 px-3">
                                     <div class="text-2xl color-white">+</div>
                                 </div>
-                            </a>
-                            <div class="wrapper text-center px-2 py-3 bg-color-gray">
-                                <p class="mt-0 text-nm">นางกฤษนันท์ ทะวิชัย</p>
+                            </div>
+                            <div class="wrapper text-center py-3 bg-color-gray color-dark">
+                                <p class="mt-0 text-nm">
+                                    นางกฤษนันท์ ทะวิชัย
+                                </p>
                                 <p class="fw-600 mt-0 text-nm color-blue">
                                     อุตสาหกรรมจังหวัดเชียงราย
                                 </p>
-                                <p class="mt-0 text-nm">092-2607167</p>
+                                <p class="mt-0 text-nm">
+                                    092-2607167
+                                </p>
                             </div>
-                        </div>
+                        </a>
                     </div>
                     <div class="sep text-center">
                         <h6 class="mt-5 mb-2 text-dgray">
@@ -133,28 +146,33 @@
                     </div>
                     <?php for($i=0; $i<4; $i++){?>
                         <div class="grid sm-100 md-50 lg-25">
-                            <div class="post-card post-card-08">
-                                <a class="ss-img bradius-0" href="#">
+                            <a class="post-card post-card-08 btn-popup-toggle" data-popup="profile">
+                                <div class="ss-img bradius-0">
                                     <div class="img-bg lazy-bg" data-src="public/assets/app/images/hero/02.png"></div>
                                     <div class="hover-container">
                                         <img src="public/assets/app/images/icon/search-02.png" alt="Hover Image" />
                                     </div>
-                                    <div class="calendar-tag py-3 px-3">
+                                    <div class="calendar-tag px-2 py-3 px-3">
                                         <div class="text-2xl color-white">+</div>
                                     </div>
-                                </a>
-                                <div class="wrapper text-center px-2 py-3 bg-color-gray">
-                                    <p class="mt-0 text-nm">นางกฤษนันท์ ทะวิชัย</p>
+                                </div>
+                                <div class="wrapper text-center py-3 bg-color-gray color-dark">
+                                    <p class="mt-0 text-nm">
+                                        นางกฤษนันท์ ทะวิชัย
+                                    </p>
                                     <p class="fw-600 mt-0 text-nm">
                                         อุตสาหกรรมจังหวัดเชียงราย
                                     </p>
-                                    <p class="mt-0 text-nm">092-2607167</p>
+                                    <p class="mt-0 text-nm">
+                                        092-2607167
+                                    </p>
                                 </div>
-                            </div>
+                            </a>
                         </div>
                     <?php }?>
                 </div>
             <?php }?>
+
         </div>
     </section>
     
@@ -190,6 +208,66 @@
             </div>
         </div>                    
     </section>
+
+    <div class="popup-container" data-popup="profile">
+        <div class="wrapper">
+            <div class="close-filter btn-popup-toggle" data-popup="profile"></div>
+            <div class="popup-box popup-profile">
+                <div class="top-container">
+                    <div class="img-container">
+                        <div class="ss-img bradius-0 no-hover">
+                            <div class="img-bg lazy-bg" data-src="public/assets/app/images/hero/02.png"></div>
+                        </div>
+                    </div>
+                    <div class="content">
+                        <div class="top-content">
+                            <h2>นางกฤษนันท์ ทะวิชัย</h2>
+                            <h2 class="fw-600">
+                                <span class="text-md">อุตสาหกรรมจังหวัดเชียงราย</span>
+                            </h2>
+                            <h2>092-2607167</h2>
+                        </div>
+                        <div class="bottom-content">
+                            <p>เดือน ปี เกิด กุมภาพันธ์ 2485</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="middle-container">
+                    <div class="scroll-wrapper" data-simplebar>
+                        <?php for($i=0; $i<3; $i++){?>
+                            <div class="title-wrapper">
+                                <h6>ประวัติการศึกษา</h6>
+                            </div>
+                            <div class="table-wrapper">
+                                <table class="table">
+                                    <tbody>
+                                        <?php for($j=0; $j<3; $j++){?>
+                                            <tr>
+                                                <td style="min-width:10rem;">
+                                                    พ.ศ. 2505-2509
+                                                </td>
+                                                <td style="min-width:20rem;">
+                                                    วิศวกรรมศาสตร์บัณฑิต จากมหาวิทยาลัย แคลิฟอร์เนีย 
+                                                    เบิร์กลีย์ ประเทศสหรัฐอเมริกา
+                                                </td>
+                                            </tr>
+                                        <?php }?>
+                                    </tbody>
+                                </table>
+                            </div>
+                        <?php }?>
+                    </div>
+                </div>
+                <div class="bottom-container">
+                    <div class="btns bg-color-09 text-right">
+                        <a class="btn custom-btn-11 btn-xl no-bradius"href="#">
+                            พิมพ์ <i class="fas fa-print ml-2"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <?php include_once('include/footer-minisite.php'); ?>
     <?php include_once('include/script.php'); ?>
