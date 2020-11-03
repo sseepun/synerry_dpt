@@ -45,197 +45,138 @@
             </div>
         </div>
     </div>
-    <section style="padding:2rem 0 1rem 0;">
+    <section data-aos="fade-up" data-aos-delay="0">
         <div class="container">
             <?php
                 $breadcrumb = [
                     [ 'url' => '#', 'name' => 'หน้าแรก' ],
-                    [ 'url' => '#', 'name' => 'สถาบันเครือข่าย' ],
+                    [ 'url' => '#', 'name' => 'จัดซื้อจัดจ้าง' ],
+                    [ 'url' => '#', 'name' => 'ประกาศจัดซื้อจัดจ้าง' ],
                 ];
-                $dateTime = [
-                    'date' => '',
-                    'time' => ''
-                ];
-                include_once('component/breadcrumb-2.php');
+                include_once('component/breadcrumb-02.php');
             ?>
         </div>
     </section>
 
-
-    <style>
-        .post-card.post-card-custom .wrapper {padding:1rem; background: #fff; position:relative; }
-        .post-card.post-card-custom .ss-img {padding: 100% 0 0 0;}
-        .post-card.post-card-custom .wrapper .hover-container {display:flex;  align-content: space-between; flex-wrap:wrap; position:absolute; top:0; left:0; bottom:0; right:0; background:rgba(25, 141, 203, .9); padding:1rem; opacity:0; transition: opacity .4s;}
-        .post-card.post-card-custom:hover .wrapper .hover-container{opacity: 1;}
-        .post-card.post-card-custom .wrapper .hover-container a{display:flex; color:#198dca; justify-content:space-between; align-items:center; text-decoration:none; padding:1rem; background: #fff; width:100%;}
-    </style>
     <section class="section-padding" style="background-color:#dcdcdc; background-image:url('public/assets/app/images/bg/32.jpg'); background-size:contain; background-position:top center; background-repeat:no-repeat;">
-        <div class="container">
-            <h2 class="text-center color-white">ประกาศจัดซื้อจัดจ้าง</h2>
+        <div class="img-bg" style="background-image:url('public/assets/app/images/bg/32.jpg');"></div>
+        <div class="container pb-4 position-relative">
+            <h3 class="text-center color-white">
+                ประกาศจัดซื้อจัดจ้าง
+            </h3>
         </div>
-        <div class="list-header jc-center mt-4 mb-4 pt-4 pb-4 bg-white">
-            <div class="block">
-                <div class="text-wrapper">
-                    <div class="search-container">
-                        <input type="text" name="search" placeholder="ค้นหา" />
-                        <button type="submit" class="bg-color-02">
-                            <i class="fas fa-search color-white"></i>
-                            <!-- <img src="public/assets/app/images/icon/search.png" alt="Search icon" /> -->
+
+        <div class="ss-search-container bg-color-white pt-4 pb-1">
+            <div class="container">
+                <form action="" method="GET">
+                    <div class="ss-search">
+                        <input type="text" name="keyword" placeholder="ค้นหาข่าวประชาสัมพันธ์" autocomplete="off" required />
+                        <button type="submit">
+                            <img src="public/assets/app/images/icon/search-white-02.png" alt="Search Icon" />
                         </button>
+                        <div class="suggestion">
+                            <div class="scroll-wrapper" data-simplebar>
+                                <?php for($i=0; $i<8; $i++){?>
+                                    <a class="item" href="#">
+                                        <div class="img-bg lazy-bg" data-src="public/assets/app/images/banner/01.jpg"></div>
+                                        <h6 class="text">
+                                            วิทยากรการฝึกอบรมการยกระดับผู้ปร
+                                            กิจ หลักสูตร “การยกระดับมาตรฐาน...
+                                        </h6>
+                                    </a>
+                                <?php }?>
+                            </div>
+                        </div>
                     </div>
-                </div>
+                </form>
             </div>
         </div>
-
+        
         <style>
-            table.table-download td .icon i{width:2rem; height:2rem; text-align:center; line-height:2rem; font-size: 1.25rem; }
-            table.table-download td a.table-custom-btn{
-                display:flex; flex-wrap:wrap; justify-content: space-between; align-items:center; padding: .5rem; background:#007bff; text-decoration: none; color: #fff;
-            }
-            table.table.table-download tbody > tr.row-title > td {background: #63337d;}
+            .text-wrapper {width:calc(100% - 7.5rem);}
         </style>
         <!-- Tab Container 04 -->
-        <div class="tab-container tab-container-04 mt-3">
-            <div class="tabs bg-white pt-2 pb-2" data-aos="fade-up" data-aos-delay="300">
-                <div class="tab active" data-tab="1">
-                    <div class="tab-wrapper">
-                        <div class="index">01.</div>
-                        <h5 class="text-center text-sm fw-600">
-                            <span>ข่าวประกาศการจัดซื้อจัดจ้าง</span>
-                        </h5>
-                    </div>
-                </div>
-                <div class="tab" data-tab="2">
-                    <div class="tab-wrapper">
-                        <div class="index">02.</div>
-                        <h5 class="text-center text-sm fw-600">
-                            <span>TOR</span>
-                        </h5>
-                    </div>
-                    
-                </div>
-                <div class="tab" data-tab="3">
-                    <div class="tab-wrapper">
-                        <div class="index">03.</div>
-                        <h5 class="text-center text-sm fw-600">
-                            <span>ราคากลาง</span>
-                        </h5>
-                    </div>
-                </div>
-                <div class="tab" data-tab="4">
-                    <div class="tab-wrapper">
-                        <div class="index">04.</div>
-                        <h5 class="text-center text-sm fw-600">
-                            <span>ผลการจัดซื้อจัดจ้าง</span>
-                        </h5>
+        <div class="tab-container tab-container-04 vertical my-0">
+            <div class="bg-color-white pt-4 pb-3">
+                <div class="container">
+                    <div class="tabs">
+                        <div class="tab active" data-tab="0">
+                            <div class="num">01.</div>
+                            <p>ข่าวประกาศการจัดซื้อจัดจ้าง</p>
+                        </div>
+                        <div class="tab" data-tab="1">
+                            <div class="num">02.</div>
+                            <p>TOR</p>
+                        </div>
+                        <div class="tab" data-tab="2">
+                            <div class="num">03.</div>
+                            <p>ราคากลาง</p>
+                        </div>
+                        <div class="tab" data-tab="3">
+                            <div class="num">04.</div>
+                            <p>ผลการจัดซื้อจัดจ้าง</p>
+                        </div>
                     </div>
                 </div>
             </div>
             <div class="container">
                 <div class="tab-contents" data-aos="fade-up" data-aos-delay="600">
-                    <div class="table-wrapper mt-3" data-simplebar>
-                        <table class="table table-download">
-                            <tbody>
-                                <tr class="row-title">
-                                    <td>
-                                        <h6>เรื่อง</h6>
-                                    </td>
-                                    <td></td>
-                                    <td>
-                                        <h6>ดาวน์โหลด</h6>
-                                    </td>
-                                </tr>
-                                <?php for($i=0; $i < 8; $i++){?>
-                                    <tr class="bg-white">
-                                        <td style="text-align:center;">
-                                            <div class="file-icon pdf"></div>
-                                            <div class="icon mt-2"><i class="fas fa-clock color-02"></i></div>
-                                        </td>
-                                        <td style="padding:1rem 1.5rem 1rem 0;">
-                                            <div class="table-desc">
-                                                ประกาศจังหวัดเชียงราย เรื่อง ประกวดราคาเช่ารถยนต์บรรทุกขนาด 1 ตัน (ดีเซล) ดับเบิ้ลแคบ ขับเคลื่อน 2 กระบอกสูบไม่ต่ำกว่า 2,400 ซีซี หรือกำลังเครื่องยนต์สูงสุดไม่ต่ำกว่า 110 กิโลวัตต์ พร้อมหลังคาไฟเบอร์ จำนวน 1 คัน
+
+                    <style>
+                        .sep {margin:0 .5rem; width:1px; height: .8125rem; background:rgba(0,0,0,.3); transform: translateY(0); }
+                    </style>
+                    <div class="d-flex ai-center jc-space-between color-white mt-5 py-3" style="background:#2e1453; padding-left: 2rem; padding-right:2rem;">
+                        <h6 class="mb-0">เรื่อง</h6>
+                        <h6 class="mb-0">ดาวน์โหลด</h6>
+                    </div>
+                    <div class="ss-box-02 border box-shadow width-full bg-white-adaptive no-bradius py-0 mt-0">
+                        
+                        <div class="grids">
+                            
+                            <?php for($i=0; $i< 12; $i++){?>
+                                <div class="grid sm-100 mt-0">
+                                    <div class="ss-card ss-card-05 border-bottom">
+                                            <div class="d-flex ai-center">
+                                                <i class="text-xl fas fa-file-pdf mr-4" style="color:#ff6c54; "></i>
+                                                <div class="d-flex ai-center jc-space-between">
+                                                    <div class="text-wrapper">
+                                                        <p class="mb-0 mt-0 text-sm op-40">ประกาศจังหวัดเชียงราย เรื่อง ประกวดราคาเช่ารถยนต์บรรทุกขนาด 1 ตัน (ดีเซล) ดับเบิ้ลแคบ ขับเคลื่อน 2 กระบอกสูบไม่ต่ำกว่า 2,400 ซีซี หรือกำลังเครื่องยนต์สูงสุดไม่ต่ำกว่า 110 กิโลวัตต์ พร้อมหลังคาไฟเบอร์ จำนวน 1 คัน</p>
+                                                    </div>
+                                                    <div class="btn-container text-right">
+                                                        <a class="btn custom-btn-09 bg-color-blue" href="#">
+                                                            ดาวน์โหลด <i class="fas fa-arrow-down color-white ml-2"></i>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                                
                                             </div>
-                                            <div class="table-desc mt-4">
-                                                10 มิถุนายน 2562</span>
-                                                <span class="sep"></span>
-                                                ขนาด 2 MB
-                                                <span class="sep"></span>
-                                                <a class="text-sm" href="#">
-                                                    <i class="fas fa-exclamation-triangle color-04 text-2xs"></i> 
+                                           
+            
+                                            <div class="d-flex ai-center fw-wrap text-nm mt-2 width-full">
+                                                <i class="tetx-xl far fa-clock color-09 mr-4"></i>
+                                                <p class="mt-0 op-40 text-xs">10 มิถุนายน 2563</p>
+                                                <div class="sep"></div>
+                                                <p class="mt-0 op-40 text-xs">ขนาด 2 MB</p>
+                                                <div class="sep"></div>
+                                                <a class="text-xs" href="#" style="color:#9b9b9b;">
+                                                    <i class="fas fa-exclamation-circle" style="color:#f89e1d;"></i>
                                                     แจ้งไฟล์เสีย
                                                 </a>
+                                                <p class="mt-0 text-xs op-40" style="margin: 0 2rem 0 auto;">1374 ครั้ง</p>
+
                                             </div>
-                                        </td>
-                                        <td style="text-align:left;">
-                                            <a href="#" class="table-custom-btn">
-                                                ดาวน์โหลด 
-                                                <i class="fas fa-arrow-down"></i>
-                                            </a>
-                                            <div class="table-desc mt-1">1,374 ครั้ง</div>
-                                        </td>
-                                    </tr>
-                                <?php }?>
-                                
-                            </tbody>
-
-                        </table>
-
+                                        
+                                    </div>
+                                </div>
+                            <?php }?>
+                        </div>
                     </div>
                 </div>
+               
+                
             </div>
         </div>
     
-    </section>
-
-
-
-    <section class="call-02">
-        <div class="container">
-            <h1 class="text-center color-white mb-0" data-aos="fade-up" data-aos-delay="0">
-                เรารับฟังความคิดเห็นของคุณ
-            </h1>
-            <h4 class="text-center color-white fw-300 mt-0 mb-0" data-aos="fade-up" data-aos-delay="150">
-                เกี่ยวกับความรับผิดชอบของกระทรวงอุตสาหกรรม
-            </h4>
-            <div data-aos="fade-up" data-aos-delay="300">
-                <img class="subject lazy-img" data-src="public/assets/app/images/hero/03.png" alt="Call 02" />
-            </div>
-            <form action="/" method="POST" data-aos="fade-up" data-aos-delay="600">
-                <div class="input-group">
-                    <input type="email" class="form-control" placeholder="สมัครรับข่าวสารกับกระทรวงอุตสาหกรรม" required />
-                    <div class="input-group-append">
-                        <button class="btn custom-btn-warning" type="submit">
-                            สมัครรับข่าว
-                        </button>
-                    </div>
-                </div>
-            </form>
-        </div>
-        <div class="call-container mt-5" style="background-image:url('public/assets/app/images/bg/20.jpg');">
-            <div class="container" data-aos="fade-up" data-aos-delay="0">
-                <div class="call-text text-center title">
-                    ปฏิรูปอุตสาหกรรมสู่ 4.0
-                </div>
-                <div class="call-text text-center desc">
-                    เพิ่มมูลค่าเศรษฐกิจอุตสาหกรรมของไทยให้เติบโตไม่น้อยกว่าร้อยละ 4.5
-                </div>
-                <div class="call-text text-center desc desc-lg">
-                    ภายในปี พ.ศ.2564
-                </div>
-                <div class="slide-container mt-5">
-                    <div class="slides">
-                        <?php for($i=0; $i<10; $i++){?>
-                            <div class="slide">
-                                <div class="wrapper">
-                                    <div class="client lazy-bg" data-src="public/assets/app/images/client/01.jpg"></div>
-                                </div>
-                            </div>
-                        <?php }?>
-                    </div>
-                    <div class="arrows"></div>
-                </div>
-            </div>
-        </div>
     </section>
 
     <?php include_once('include/footer-minisite.php'); ?>
