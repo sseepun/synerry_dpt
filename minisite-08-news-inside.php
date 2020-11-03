@@ -207,10 +207,10 @@
                             <?php for($i=0; $i<8; $i++){?>
                                 <a class="item" href="#">
                                     <div class="img-bg lazy-bg" data-src="public/assets/app/images/banner/01.jpg"></div>
-                                    <div class="text">
+                                    <h6 class="text">
                                         วิทยากรการฝึกอบรมการยกระดับผู้ปร
                                         กิจ หลักสูตร “การยกระดับมาตรฐาน...
-                                    </div>
+                                    </h6>
                                 </a>
                             <?php }?>
                         </div>

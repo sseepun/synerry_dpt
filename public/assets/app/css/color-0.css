@@ -455,15 +455,20 @@ table.table.table-download tbody > tr.row-title > td{background:#393939; color:#
 /* FAQ 01 */
 .faq-01 .question .ftag{background:#6c109d; color:#fff;}
 .faq-01 .question > *:nth-child(2){color:#000; border-color:#e1e1e1;}
+.faq-01.faq-01-custom .question > *:nth-child(2){background:#fff;}
 .faq-01 .question.active > *:nth-child(2){color:#fff; background:#38144c; border-color:#38144c;}
-.faq-01 .question > *:nth-child(2)::before, .faq-01 .question > *:nth-child(2)::after{
-    background:#38144c;
-}
-.faq-01 .question.active > *:nth-child(2)::before, .faq-01 .question.active > *:nth-child(2)::after{
-    background:#fff;
-}
+.faq-01.faq-01-custom .question.active > *:nth-child(2){background:#8c4e96; border-color:#8c4e96;}
+.faq-01 .question > *:nth-child(2)::before, 
+.faq-01 .question > *:nth-child(2)::after{background:#38144c;}
+.faq-01.faq-01-custom .question > *:nth-child(2)::before, 
+.faq-01.faq-01-custom .question > *:nth-child(2)::after{background:#502683;}
+.faq-01 .question.active > *:nth-child(2)::before, 
+.faq-01 .question.active > *:nth-child(2)::after{background:#fff;}
+.faq-01.faq-01-custom .answer{background:#f1f1f1;}
 .faq-01 .answer .ftag{background:#58147d; color:#fff;}
+.faq-01.faq-01-custom .answer .ftag{background:#b33198;}
 .faq-01 .answer .content{background:#f2f2f2; color:#000;}
+.faq-01.faq-01-custom .answer .content{background:transparent;}
 .faq-01 .answer .content table td{border-color:#dbdbdb;}
 
 

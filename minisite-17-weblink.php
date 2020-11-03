@@ -38,10 +38,10 @@
             </h3>
         </div>
 
-        <div class="tab-container tab-container-04 vertical mt-0">
-            <div class="bg-color-white pt-4 pb-4 mb-4">
+        <div class="tab-container tab-container-04 vertical my-0">
+            <div class="bg-color-white pt-4 pb-3">
                 <div class="container">
-                    <div class="tabs" data-aos="fade-up" data-aos-delay="0">
+                    <div class="tabs">
                         <div class="tab active" data-tab="0">
                             <div class="num">01.</div>
                             <p>ข่าวประกาศการจัดซื้อจัดจ้าง</p>
@@ -62,7 +62,7 @@
                 </div>
             </div>
             <div class="container">
-                <div class="tab-contents" data-aos="fade-up" data-aos-delay="300">
+                <div class="tab-contents">
                     <?php for($k=0; $k<4; $k++){?>
                         <div class="tab-content <?php if($k==0)echo 'active'; ?>" data-tab="<?= $k ?>">
                             <div class="grids py-3">

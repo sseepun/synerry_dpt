@@ -342,16 +342,17 @@ table.table.table-download tbody > tr.row-title > td{background:#ffff00; color:#
 /* FAQ 01 */
 .faq-01 .question .ftag{background:#ffff00; color:#000;}
 .faq-01 .question > *:nth-child(2){color:#ffff00; border-color:#ffff00;}
+.faq-01.faq-01-custom .question > *:nth-child(2){background:#000;}
 .faq-01 .question.active > *:nth-child(2){color:#000; background:#ffff00;}
-.faq-01 .question > *:nth-child(2)::before, .faq-01 .question > *:nth-child(2)::after{
-    background:#ffff00;
-}
-.faq-01 .question.active > *:nth-child(2)::before, .faq-01 .question.active > *:nth-child(2)::after{
-    background:#000;
-}
+.faq-01 .question > *:nth-child(2)::before, 
+.faq-01 .question > *:nth-child(2)::after{background:#ffff00;}
+.faq-01 .question.active > *:nth-child(2)::before, 
+.faq-01 .question.active > *:nth-child(2)::after{background:#000;}
 .faq-01 .answer .ftag{background:#ffff00; color:#000;}
 .faq-01 .answer .content{border:1px solid #ffff00;}
 .faq-01 .answer .content table td{border-color:rgba(255,255,0,.4);}
+.faq-01.faq-01-custom .answer{background:#000;}
+.faq-01.faq-01-custom .answer .content{border:0;}
 
 
 /* Intro 02 */
