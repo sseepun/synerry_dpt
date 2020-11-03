@@ -93,7 +93,7 @@
         </div>
         
         <style>
-            .text-wrapper {width:calc(100% - 7.5rem);}
+            .text-wrapper {width:calc(100% - 7.5rem); padding: 0 .75rem 0 0;}
         </style>
         <!-- Tab Container 04 -->
         <div class="tab-container tab-container-04 vertical my-0">
@@ -162,7 +162,7 @@
                                                     <i class="fas fa-exclamation-circle" style="color:#f89e1d;"></i>
                                                     แจ้งไฟล์เสีย
                                                 </a>
-                                                <p class="mt-0 text-xs op-40" style="margin: 0 2rem 0 auto;">1374 ครั้ง</p>
+                                                <p class="mt-0 text-xs op-40" style="margin: 0 4rem 0 auto;">1374 ครั้ง</p>
 
                                             </div>
                                         
