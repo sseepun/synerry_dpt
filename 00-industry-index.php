@@ -270,21 +270,25 @@
                             <div class="hero lazy-bg" data-src="public/assets/app/images/bg/12.jpg"></div>
                             <div class="contents pl-0 bg-color-white">
                                 <div class="post-card post-card-03 pb-0">
-                                    <div class="title-container height-auto">
-                                        <a class="title h4 height-auto" href="#">
-                                            สุริยะฯ ดันแผนพัฒนาอุตฯ 
-                                            เครื่องจักรกลเต็มสูบ มุ่งสนับสนุน
-                                            เกษตรแปรรูป ชี้เป็นจุดเริ่มต้นการ
-                                            ปฏิรูปโครงสร้างศก
-                                        </a>
-                                        <p class="by">เขียนโดย : <strong>สำนักบริหารกลาง</strong></p>
+                                    <div class="wrapper pb-0">
+                                        <div class="title-container height-auto">
+                                            <a class="title h4 height-auto" href="#">
+                                                สุริยะฯ ดันแผนพัฒนาอุตฯ 
+                                                เครื่องจักรกลเต็มสูบ มุ่งสนับสนุน
+                                                เกษตรแปรรูป ชี้เป็นจุดเริ่มต้นการ
+                                                ปฏิรูปโครงสร้างศก
+                                            </a>
+                                            <p class="by">เขียนโดย : <strong>สำนักบริหารกลาง</strong></p>
+                                        </div>
+                                        <p class="date">21. 09.2563</p>
                                     </div>
-                                    <p class="date">21. 09.2563</p>
                                 </div>
                                 
                                 <div class="table-wrapper pr-4">
                                     <div class="post-card post-card-03 pt-0 pb-0">
-                                        <h4>เอกสารแนบ</h4>
+                                        <div class="wrapper py-0">
+                                            <h4>เอกสารแนบ</h4>
+                                        </div>
                                     </div>
                                     <table class="table table-gray">
                                         <tbody>
@@ -314,16 +318,18 @@
                                 </div>
                                 
                                 <div class="post-card post-card-03 pt-0">
-                                    <div class="title-container height-auto">
-                                        <a class="title h4 height-auto" href="#">
-                                            สุริยะฯ ดันแผนพัฒนาอุตฯ 
-                                            เครื่องจักรกลเต็มสูบ มุ่งสนับสนุน
-                                            เกษตรแปรรูป ชี้เป็นจุดเริ่มต้นการ
-                                            ปฏิรูปโครงสร้างศก
-                                        </a>
-                                        <p class="by">เขียนโดย : <strong>สำนักบริหารกลาง</strong></p>
+                                    <div class="wrapper py-3">
+                                        <div class="title-container height-auto">
+                                            <a class="title h4 height-auto" href="#">
+                                                สุริยะฯ ดันแผนพัฒนาอุตฯ 
+                                                เครื่องจักรกลเต็มสูบ มุ่งสนับสนุน
+                                                เกษตรแปรรูป ชี้เป็นจุดเริ่มต้นการ
+                                                ปฏิรูปโครงสร้างศก
+                                            </a>
+                                            <p class="by">เขียนโดย : <strong>สำนักบริหารกลาง</strong></p>
+                                        </div>
+                                        <p class="date">21. 09.2563</p>
                                     </div>
-                                    <p class="date">21. 09.2563</p>
                                 </div>
                             </div>
                         </div>
