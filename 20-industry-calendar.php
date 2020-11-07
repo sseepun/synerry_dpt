@@ -93,65 +93,52 @@
                         </a>
                     </div>
 
-                    <div class="grids">
-                        <?php for($i=0; $i<6; $i++){?>
-                            <div class="grid sm-100 mt-4">
-                                <div class="ss-card-04 btn-on-hover">
-                                    <div class="block">
-                                        <div class="calendar-tag">
-                                            <div class="text-wrapper">
-                                                <h1>5</h1>
-                                                <p>กรกฎาคม</p>
-                                                <p class="fw-600">2563</p>
-                                            </div>
+                    <div class="row pb-4" data-aos="fade-up" data-aos-delay="300">
+                        <?php for($i=0; $i<9; $i++){?>
+                            <div class="col-md-4 col-sm-6 mt-4">
+                                <div class="post-card post-card-08 pb-2">
+                                    <a class="ss-img square bradius-0" href="#">
+                                        <div class="img-bg lazy-bg" data-src="public/assets/app/images/banner/01.jpg"></div>
+                                        <div class="hover-container">
+                                            <img src="public/assets/app/images/icon/search-02.png" alt="Hover Image" />
                                         </div>
-                                        <div class="content">
-                                            <a class="ss-img square bradius-0" href="#">
-                                                <div class="img-bg lazy-bg" data-src="public/assets/app/images/banner/0<?= ($i%7) +1; ?>.jpg"></div>
-                                                <div class="hover-container">
-                                                    <img src="public/assets/app/images/icon/search-02.png" alt="Hover Image" />
-                                                </div>
+                                    </a>
+                                    <div class="date-tag">
+                                        <div class="date">9</div>
+                                        <p>กรกฎาคม <span class="fw-600">2563</span></p>
+                                    </div>
+                                    <div class="wrapper">
+                                        <div class="title-container height-auto">
+                                            <a class="title h4" href="#">
+                                                ภัยคุกคามไซเบอร์กับวิถีชีวิตรูปแบบใหม่ Cyber Threats 
+                                                in New Normal
                                             </a>
                                         </div>
-                                    </div>
-                                    <div class="block border-bottom-4">
-                                        <div class="post-card post-card-06 no-border">
-                                            <div class="title-container">
-                                                <a class="title h4" href="#">
-                                                    ภัยคุกคามไซเบอร์กับวิถีชีวิตรูปแบบใหม่ Cyber Threats in New Normal 
-                                                </a>
+                                        <div class="stats mt-2">
+                                            <div class="d-flex view">
+                                                <div class="icon"><i class="far fa-calendar-alt"></i></div>
+                                                <span class="color-black fw-500">
+                                                    5-8 กรกฎาคม 2563
+                                                </span>
                                             </div>
-                                            <div class="d-flex fw-wrap ai-center stats mt-2">
-                                                <div class="d-flex view mr-4">
-                                                    <div class="icon"><i class="far fa-calendar-alt"></i></div>
-                                                    <span class="color-black">
-                                                        5 กรกฎาคม 2563
-                                                    </span>
-                                                </div>
-                                                <div class="d-flex view mr-4">
-                                                    <div class="icon"><i class="far fa-clock"></i></div>
-                                                    <span class="color-black">
-                                                        11:00 - 19:00 น
-                                                    </span>
-                                                </div>
-                                                <div class="d-flex view">
-                                                    <div class="icon"><i class="fas fa-map-marker-alt"></i></div>
-                                                    <span class="color-black">
-                                                        facebook.com/hpmsocial
-                                                    </span>
-                                                </div>
+                                            <div class="d-flex view">
+                                                <div class="icon"><i class="far fa-clock"></i></div>
+                                                <span class="color-black fw-500">
+                                                    11:00 - 19:00 น
+                                                </span>
                                             </div>
-                                            <p class="desc mt-2">
-                                                เชิญรับฟังเสวนาออนไลน์ ในประเด็นร้อน "เมื่อหวยรีเทิร์น ... ความปกติใหม่หรือวังวนปัญหาเดิม?" 
-                                                พร้อมเปิดผลสำรวจ ในหัวข้อ "ประชาชนคิดอย่างไร ช่วงเว้นวรรคการออกหวย?" ในวันพฤหัสบดีที่ 
-                                                14 พฤษภาคม 2563 เวลา 10.30-12.00 น.
-                                            </p>
-                                            <div class="btns mt-2">
-                                                <a class="btn-action btn-action-primary" href="#">
-                                                    <i class="fas fa-chevron-right"></i>
-                                                    อ่านรายละเอียด
-                                                </a>
+                                            <div class="d-flex view">
+                                                <div class="icon"><i class="fas fa-map-marker-alt"></i></div>
+                                                <span class="color-black fw-500">
+                                                    thaibfconference.com
+                                                </span>
                                             </div>
+                                        </div>
+                                        <div class="btns mt-3">
+                                            <a class="btn-action btn-action-primary" href="#">
+                                                <i class="fas fa-chevron-right"></i>
+                                                อ่านรายละเอียด
+                                            </a>
                                         </div>
                                     </div>
                                 </div>
