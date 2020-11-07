@@ -61,6 +61,7 @@
                             <div class="grid md-25">
                                 <a class="ss-img bradius-0" href="public/assets/app/images/banner/01.jpg" data-fancybox="gallery">
                                     <div class="img-bg lazy-bg" data-src="public/assets/app/images/banner/01.jpg"></div>
+                                    <img class="d-none" src="public/assets/app/images/banner/01.jpg" alt="Hidden Preview" />
                                     <div class="hover-text <?php if($i==7)echo 'op-100'; ?>">
                                         <?php if($i<7){?>
                                             <img src="public/assets/app/images/icon/search-02.png" alt="Hover Image" />
