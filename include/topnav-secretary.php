@@ -32,11 +32,23 @@
                         <a class="btn custom-btn-warning btn-circle font-size-btn" href="#" data-size="0">ก</a>
                         <a class="btn custom-btn-primary btn-circle font-size-btn" href="#" data-size="1">+</a>
                     </div>
-                    <div class="option">
+                    <div class="option mr-3">
                         ความตัดกันของสี
                         <a class="btn custom-btn-theme-0 btn-circle ml-1 theme-btn" href="#" data-theme="0">C</a>
                         <a class="btn custom-btn-theme-1 btn-circle theme-btn" href="#" data-theme="1">C</a>
                         <a class="btn custom-btn-theme-2 btn-circle theme-btn" href="#" data-theme="2">C</a>
+                    </div>
+                    <div class="option" style="cursor:pointer;">
+                        ภาษาไทย
+                        <div class="flag-icon btn btn-circle ml-1" 
+                        style="background-image:url('public/assets/app/images/default/th_flag.png');"></div>
+                        <div class="dropdown">
+                            <a href="#">
+                                ภาษาอังกฤษ
+                                <div class="flag-icon btn btn-circle ml-2" 
+                                style="background-image:url('public/assets/app/images/default/us_flag.png');"></div>
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -134,7 +146,7 @@
                         <a href="#">ติดต่อเรา</a>
                     </div>
 
-                    <div class="menu menu-icon" style="background-image:url('public/assets/app/images/bg/07.jpg');">
+                    <!-- <div class="menu menu-icon" style="background-image:url('public/assets/app/images/bg/07.jpg');">
                         <a href="javascript:">
                             <div class="flag-icon" style="background-image:url('public/assets/app/images/default/th_flag.png');"></div>
                             <p>ภาษาไทย</p>
@@ -146,7 +158,7 @@
                                 <p>ภาษาอังกฤษ</p> 
                             </a>
                         </div>
-                    </div>
+                    </div> -->
                     <div class="menu menu-icon" style="background-image:url('public/assets/app/images/bg/06.jpg');">
                         <a class="global-search-toggle" href="#">
                             <img src="public/assets/app/images/icon/search-white-02.png" alt="Search Icon" />

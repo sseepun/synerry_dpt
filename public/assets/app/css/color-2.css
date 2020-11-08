@@ -30,6 +30,9 @@ nav.topnav .submenu-container{background:#000; border-right:1px solid #ffff00;}
 nav.topnav .submenu-container .submenu > a{color:#ffff00;}
 nav.topnav .submenu-container .submenu:hover > a{color:#000; background:#ffff00;}
 nav.topnav .menu-mobile .hamburger > *{background:#ffff00;}
+nav.topnav > .top-container .option > .dropdown{background:#000; border:1px solid #ffff00;}
+nav.topnav > .top-container .option > .dropdown > a{color:#ffff00;}
+nav.topnav > .top-container .option > .dropdown > a:hover{background:#ffff00; color:#000;}
 
 
 /* Sidenav */
