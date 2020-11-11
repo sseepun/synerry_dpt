@@ -147,7 +147,7 @@
         </div>
     </section>
 
-    <section class="content-01" data-aos="fade-up" data-aos-delay="0">
+    <section class="content-01 no-fading" data-aos="fade-up" data-aos-delay="0">
         <div class="content-header">
             <div class="container">
                 <div class="content-tabs">
@@ -221,8 +221,8 @@
                             <div class="tab-contents">
                                 <?php for($k=1; $k<=3; $k++){?>
                                     <div class="tab-content <?php if($k==1)echo 'active'; ?>" data-tab="<?= $k; ?>">
-                                        <div class="grids no-gap">
-                                            <div class="grid lg-50 sm-100 mt-0">
+                                        <div class="grids no-gap mb-3">
+                                            <div class="grid lg-50 sm-100 mt-0 pb-2">
                                                 <?php for($j=0; $j<2; $j++){?>
                                                     <div class="ss-card mb-3">
                                                         <div class="block">
@@ -253,7 +253,38 @@
                                                     </div>
                                                 <?php }?>
                                             </div>
-                                            <div class="grid lg-50 sm-100 bg-color-sgray mt-0">
+                                            <div class="grid lg-50 sm-100 bg-color-sgray mt-0 pb-2">
+                                                <?php for($j=0; $j<2; $j++){?>
+                                                    <div class="ss-card mb-3">
+                                                        <div class="block">
+                                                            <div class="ss-img square bradius-0">
+                                                                <div class="img-bg lazy-bg" data-src="public/assets/app/images/banner/0<?= $k; ?>.jpg"></div>
+                                                                <div class="hover-container">
+                                                                    <img src="public/assets/app/images/icon/search-02.png" alt="Hover Image" />
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="block">
+                                                            <div class="post-card post-card-04">
+                                                                <div class="title-container">
+                                                                    <a class="title h4" href="#">
+                                                                        สุริยะฯ ดันแผนพัฒนาอุตฯ 
+                                                                        เครื่องจักรกลเต็มสูบ มุ่งสนับสนุน
+                                                                        เกษตรแปรรูป 
+                                                                    </a>
+                                                                </div>
+                                                                <p class="date">21. 09.2563</p>
+                                                                <p class="desc">
+                                                                    กระทรวงอุตสาหกรรม (อก.) ผลักดันแผน
+                                                                    อุตสาหกรรมเครื่องจักรกลให้เป็นอุตสาหกรรม
+                                                                    สนับสนุนเพิ่มขีดความสามารถการผลิต...
+                                                                </p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                <?php }?>
+                                            </div>
+                                            <!-- <div class="grid lg-50 sm-100 bg-color-sgray mt-0 pb-2">
                                                 <?php for($j=0; $j<2; $j++){?>
                                                     <div class="post-card post-card-06 pb-3 no-border">
                                                         <div class="title-container">
@@ -277,7 +308,7 @@
                                                         </p>
                                                     </div>
                                                 <?php }?>
-                                            </div>
+                                            </div> -->
                                         </div>
                                         <div class="pagination pagination-02 mt-3">
                                             <div class="wrapper">

@@ -376,7 +376,7 @@
         </div>
     </section>
 
-    <section class="call-01 section-bg lazy-bg" data-src="public/assets/app/images/bg/14.jpg">
+    <!-- <section class="call-01 section-bg lazy-bg" data-src="public/assets/app/images/bg/14.jpg">
         <div class="container">
             <h1 class="text-center color-white fw-500 mb-0" data-aos="fade-up" data-aos-delay="0">
                 เปิดโอกาสให้สังคมและสิ่งแวดล้อม
@@ -388,6 +388,29 @@
                 <a class="btn btn-round custom-btn-secondary btn-popup-toggle" href="#" data-popup="subscribe">
                     หน้ารายงานกิจกรรมเพื่อสังคม
                 </a>
+            </div>
+        </div>
+    </section> -->
+    <section class="call-04">
+        <img class="img-bg" src="public/assets/app/images/bg/63.jpg" alt="Image BG" />
+        <div class="kite-container">
+            <img class="kite kite-1" src="public/assets/app/images/icon/kite-1.png" alt="Kite 1" />
+            <img class="kite kite-2" src="public/assets/app/images/icon/kite-2.png" alt="Kite 2" />
+            <img class="kite kite-3" src="public/assets/app/images/icon/kite-3.png" alt="Kite 3" />
+        </div>
+        <div class="text-container">
+            <div class="container">
+                <h1 class="text-center color-white fw-500 mb-0" data-aos="fade-up" data-aos-delay="0">
+                    เปิดโอกาสให้สังคมและสิ่งแวดล้อม
+                </h1>
+                <h4 class="text-center color-white fw-200 mt-0 mb-3" data-aos="fade-up" data-aos-delay="150">
+                    นี่แหละคืออุตสาหกรรมยุคใหม่ที่แท้จริง ร่วมสร้างแรงบันดาลใจดีดีไปกับเรา
+                </h4>
+                <div class="btns text-center" data-aos="fade-up" data-aos-delay="300">
+                    <a class="btn btn-round custom-btn-secondary btn-popup-toggle" href="#" data-popup="subscribe">
+                        หน้ารายงานกิจกรรมเพื่อสังคม
+                    </a>
+                </div>
             </div>
         </div>
     </section>
