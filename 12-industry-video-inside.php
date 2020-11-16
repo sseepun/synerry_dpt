@@ -50,8 +50,14 @@
                         โครงการจิตอาสา กระทรวงอุตสาหกรรม เราทำความดี ด้วยหัวใจ
                     </h2>
                     <?php include_once('component/post-header.php'); ?>
-                    
-                    <div class="ss-video horizontal bradius-0 mt-4 mb-3">
+
+                    <div class="video-js-container horizontal mt-4 mb-3">
+                        <video class="video-js" controls preload="auto" data-setup="{}"
+                        poster="public/assets/app/images/banner/01.jpg">
+                            <source src="public/assets/app/video/01.mp4" type="video/mp4" />
+                        </video>
+                    </div>
+                    <!-- <div class="ss-video horizontal bradius-0 mt-4 mb-3">
                         <div class="img-bg lazy-bg" data-src="public/assets/app/images/banner/01.jpg"></div>
                         <div class="hover-container"></div>
                         <div class="play-container">
@@ -59,7 +65,8 @@
                                 <i class="fas fa-play"></i>
                             </a>
                         </div>
-                    </div>
+                    </div> -->
+
                     <?php include_once('component/post-footer-embed.php'); ?>
 
                     <div class="ss-icon-title" data-aos="fade-up" data-aos-delay="0">

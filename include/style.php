@@ -13,6 +13,7 @@
 <link rel="stylesheet" href="public/assets/node_modules/@fortawesome/fontawesome-free/css/all.css" />
 <link rel="stylesheet" href="public/assets/node_modules/bootstrap/dist/css/bootstrap.min.css" />
 <link rel="stylesheet" href="public/assets/node_modules/slick-carousel/slick/slick.css" />
+<link rel="stylesheet" href="public/assets/node_modules/video.js/dist/video-js.min.css" />
 
 <link rel="stylesheet" href="public/assets/lib/fancybox-3.5.7/dist/jquery.fancybox.min.css" />
 <link rel="stylesheet" href="public/assets/lib/swiper/swiper-bundle.min.css" />
