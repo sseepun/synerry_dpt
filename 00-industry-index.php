@@ -484,7 +484,7 @@
                 <div class="tab-contents" data-aos="fade-up" data-aos-delay="600">
                     <?php for($i=1; $i<5; $i++){?>
                         <div class="tab-content <?php if($i==1)echo 'active'; ?>" data-tab="<?= $i; ?>">
-                            <div class="filter-bg lazy-bg" data-src="public/assets/app/images/bg/15.jpg"></div>
+                            <img class="filter-img" src="public/assets/app/images/hero/<?= 15+$i ?>.png" alt="Image BG" />
                             <div class="slide-container">
                                 <div class="slides">
                                     <?php for($j=0; $j<5; $j++){?>

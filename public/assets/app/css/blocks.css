@@ -708,6 +708,9 @@
     position:relative; width:100vw; height:240px; margin:0 calc(50% - 50vw);
     background-size:cover; background-position:center;
 }
+.tab-container.tab-container-02 .tab-content > .filter-img{
+    position:relative; display:block; width:100vw; height:auto; margin:0 calc(50% - 50vw);
+}
 .tab-container.tab-container-02 .slide-container{position:relative; width:100%; margin:0;}
 .tab-container.tab-container-02 .post-card{padding-bottom:6.5rem; transition:background .3s;}
 .tab-container.tab-container-02 .btns{
