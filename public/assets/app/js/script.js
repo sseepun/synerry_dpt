@@ -138,6 +138,21 @@ $(function(){ 'use strict';
         $('body').addClass('theme-'+$(this).data('theme'));
     });
 
+    // Theme Selector
+    if($('.theme-selector').length){
+        var themeTarget = $('#custom-theme');
+        if(!themeTarget.length){
+            $('head').append('<link rel="stylesheet" id="custom-theme" href="" />');
+            themeTarget = $('#custom-theme');
+        }
+        $('.theme-selector .color').click(function(e){
+            e.preventDefault();
+            themeTarget.attr('href', $(this).data('src'));
+            $('body').removeClass('theme-0 theme-1 theme-2');
+            $('body').addClass('theme-0');
+        });
+    }
+
 
     // Date Picker
     $('input.date-picker').each(function(){

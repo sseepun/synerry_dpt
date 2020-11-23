@@ -177,3 +177,14 @@
         </div>
     </div>
 </nav>
+
+<!-- Theme Selector -->
+<div class="theme-selector">
+    <div class="wrapper">
+        <a class="color color-0" href="#" data-src="public/assets/app/css/color-0.css"></a>
+        <?php for($i=1; $i<=10; $i++){?>
+            <a class="color color-<?= $i ?>" href="#" 
+            data-src="public/themes/color-<?= $i ?>/style.css"></a>
+        <?php }?>
+    </div>
+</div>

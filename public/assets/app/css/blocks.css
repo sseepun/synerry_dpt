@@ -814,3 +814,27 @@
 @media screen and (max-width:575.98px){
     .tab-container.tab-container-04.vertical .tab{width:100%;}
 }
+
+
+/* Theme Selector */
+.theme-selector{
+    position:fixed; top:10rem; right:0; border-radius:.25rem 0 0 .25rem; background:#fff;
+    box-shadow:0 0 12px 2px rgba(0,0,0,.15); padding:.25rem .25rem .5rem .5rem;
+}
+.theme-selector > .wrapper{
+    width:100%; max-width:8rem; position:relative; display:flex; align-items:center; flex-wrap:wrap;
+}
+.theme-selector .color{
+    display:block; width:1.75rem; height:1.75rem; border-radius:50%; margin:.25rem .25rem 0 0;
+}
+.theme-selector .color.color-0{background:#6d2b6b;}
+.theme-selector .color.color-1{background:#11505f;}
+.theme-selector .color.color-2{background:#272761;}
+.theme-selector .color.color-3{background:#235635;}
+.theme-selector .color.color-4{background:#3f0e1d;}
+.theme-selector .color.color-5{background:#dfcd01;}
+.theme-selector .color.color-6{background:#0984db;}
+.theme-selector .color.color-7{background:#36498b;}
+.theme-selector .color.color-8{background:#56d192;}
+.theme-selector .color.color-9{background:#a15d18;}
+.theme-selector .color.color-10{background:#e0bd5c;}
