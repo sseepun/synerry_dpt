@@ -86,11 +86,11 @@
                                                 <div class="post-card post-card-05 btn-on-hover no-border no-padding">
                                                     <a class="ss-img bradius-0" href="#">
                                                         <div class="img-bg lazy-bg" data-src="public/assets/app/images/banner/01.jpg"></div>
-                                                        <div class="tag bg-color-blue">
-                                                            สำนักบริหารภาคกลาง
-                                                        </div>
                                                         <div class="hover-container">
                                                             <img src="public/assets/app/images/icon/search-02.png" alt="Hover Image" />
+                                                        </div>
+                                                        <div class="tag bg-color-blue">
+                                                            สำนักบริหารภาคกลาง
                                                         </div>
                                                     </a>
                                                     <div class="title-container mt-2">
@@ -133,7 +133,7 @@
                                             <a href="#" class="page-btn">04</a>
                                             <a href="#" class="page-btn">05</a>
                                             <a href="#" class="page-btn page-next"></a>
-                                            <a class="btn btn-round custom-btn-dark btn-sm" href="#">
+                                            <a class="btn custom-btn-dark btn-sm" href="#">
                                                 อ่านข่าวทั้งหมด
                                             </a>
                                         </div>
@@ -148,11 +148,11 @@
                                                 <div class="post-card post-card-05 btn-on-hover no-border no-padding">
                                                     <a class="ss-img bradius-0" href="#">
                                                         <div class="img-bg lazy-bg" data-src="public/assets/app/images/banner/02.jpg"></div>
-                                                        <div class="tag bg-color-blue">
-                                                            สำนักบริหารภาคกลาง
-                                                        </div>
                                                         <div class="hover-container">
                                                             <img src="public/assets/app/images/icon/search-02.png" alt="Hover Image" />
+                                                        </div>
+                                                        <div class="tag bg-color-blue">
+                                                            สำนักบริหารภาคกลาง
                                                         </div>
                                                     </a>
                                                     <div class="title-container mt-2">
@@ -195,7 +195,7 @@
                                             <a href="#" class="page-btn">04</a>
                                             <a href="#" class="page-btn">05</a>
                                             <a href="#" class="page-btn page-next"></a>
-                                            <a class="btn btn-round custom-btn-dark btn-sm" href="#">
+                                            <a class="btn custom-btn-dark btn-sm" href="#">
                                                 อ่านข่าวทั้งหมด
                                             </a>
                                         </div>
@@ -210,11 +210,11 @@
                                                 <div class="post-card post-card-05 btn-on-hover no-border no-padding">
                                                     <a class="ss-img bradius-0" href="#">
                                                         <div class="img-bg lazy-bg" data-src="public/assets/app/images/banner/03.jpg"></div>
-                                                        <div class="tag bg-color-blue">
-                                                            สำนักบริหารภาคกลาง
-                                                        </div>
                                                         <div class="hover-container">
                                                             <img src="public/assets/app/images/icon/search-02.png" alt="Hover Image" />
+                                                        </div>
+                                                        <div class="tag bg-color-blue">
+                                                            สำนักบริหารภาคกลาง
                                                         </div>
                                                     </a>
                                                     <div class="title-container mt-2">
@@ -257,7 +257,7 @@
                                             <a href="#" class="page-btn">04</a>
                                             <a href="#" class="page-btn">05</a>
                                             <a href="#" class="page-btn page-next"></a>
-                                            <a class="btn btn-round custom-btn-dark btn-sm" href="#">
+                                            <a class="btn custom-btn-dark btn-sm" href="#">
                                                 อ่านข่าวทั้งหมด
                                             </a>
                                         </div>
@@ -272,11 +272,11 @@
                                                 <div class="post-card post-card-04 btn-on-hover no-border no-padding">
                                                     <a class="ss-img bradius-0" href="#">
                                                         <div class="img-bg lazy-bg" data-src="public/assets/app/images/banner/04.jpg"></div>
-                                                        <div class="tag bg-color-blue">
-                                                            สำนักบริหารภาคกลาง
-                                                        </div>
                                                         <div class="hover-container">
                                                             <img src="public/assets/app/images/icon/search-02.png" alt="Hover Image" />
+                                                        </div>
+                                                        <div class="tag bg-color-blue">
+                                                            สำนักบริหารภาคกลาง
                                                         </div>
                                                     </a>
                                                     <div class="title-container mt-2">
@@ -319,7 +319,7 @@
                                             <a href="#" class="page-btn">04</a>
                                             <a href="#" class="page-btn">05</a>
                                             <a href="#" class="page-btn page-next"></a>
-                                            <a class="btn btn-round custom-btn-dark btn-sm" href="#">
+                                            <a class="btn custom-btn-dark btn-sm" href="#">
                                                 อ่านข่าวทั้งหมด
                                             </a>
                                         </div>
@@ -387,7 +387,7 @@
                                             <a href="#" class="page-btn">04</a>
                                             <a href="#" class="page-btn">05</a>
                                             <a href="#" class="page-btn page-next"></a>
-                                            <a class="btn btn-round custom-btn-dark btn-sm" href="#">
+                                            <a class="btn custom-btn-dark btn-sm" href="#">
                                                 อ่านข่าวทั้งหมด
                                             </a>
                                         </div>

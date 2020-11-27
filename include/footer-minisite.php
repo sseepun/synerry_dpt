@@ -184,7 +184,7 @@
         <a class="color color-0" href="#" data-src="public/assets/app/css/color-0.css"></a>
         <?php for($i=1; $i<=10; $i++){?>
             <a class="color color-<?= $i ?>" href="#" 
-            data-src="public/themes/color-<?= $i ?>/style.css"></a>
+            data-src="public/themes/color-<?= $i ?>/css/style.css"></a>
         <?php }?>
     </div>
 </div>
