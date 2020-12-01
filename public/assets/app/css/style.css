@@ -420,6 +420,10 @@ p.nm, .p-nm{font-size:1.0625rem; margin:.625rem 0 0 0; font-weight:300;}
 .menu-column .decor{
     display:block; position:absolute; top:100%; left:0; right:0; width:100%; height:auto;
 }
+.menu-column::after{
+    content:''; position:absolute; top:calc(100% + 790px); left:0; right:0; height:20000px;
+    background:url('../images/hero/20.png') top center/100% auto repeat;
+}
 @media screen and (max-width:1199.98px){
     .menu-column{margin:0 0 44rem 0;}
     .menu-column.img-only{margin:0 0 76rem 0;}

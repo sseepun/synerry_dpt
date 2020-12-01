@@ -169,6 +169,10 @@ nav.topnav ~ .topnav-spacer{height:7.75rem;}
 .btn.custom-btn-theme-2, .btn.custom-btn-theme-2:focus{color:#68edf6;}
 
 
+/* Menu Column */
+.menu-column::after{display:none;}
+
+
 /* Pagination */
 .pagination .page-btn{
     border-radius:.25rem; width:1.9375rem; height:1.9375rem; line-height:1.75rem;
