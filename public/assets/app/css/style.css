@@ -128,9 +128,9 @@ p.nm, .p-nm{font-size:1.0625rem; margin:.625rem 0 0 0; font-weight:300;}
 }
 
 .btn-social{
-    display:inline-block; text-decoration:none; width:1.875rem; height:1.875rem; border-radius:50%;
-    color:#fff!important; text-align:center; line-height:2.25rem; font-size:.875rem;
-    margin:.125rem .25rem;
+    display:inline-block; text-decoration:none; width:1.875rem; height:1.875rem;
+    color:#fff!important; text-align:center; line-height:2.0625rem; font-size:.875rem;
+    margin:.125rem .25rem; border-radius:50%; transition:background .25s;
 }
 .btn-social.btn-social-fw{background:#3b5999;}
 .btn-social.btn-social-tw{background:#40cce5;}
@@ -143,6 +143,15 @@ p.nm, .p-nm{font-size:1.0625rem; margin:.625rem 0 0 0; font-weight:300;}
     font-family:'TH Sarabun New'; font-size:1.4375rem; font-weight:600; line-height:1.25;
     text-align:center;
 }
+
+.btn-social.dark{
+    background:#1e1a1b; border:1px solid #fff; width:2rem; height:2rem;
+    margin:.125rem 0; font-size:.8125rem; line-height:2.0625rem;
+}
+.btn-social.dark.btn-social-fw:hover{background:#466cb3;}
+.btn-social.dark.btn-social-tw:hover{background:#4ab6e7;}
+.btn-social.dark.btn-social-yt:hover{background:#f70000;}
+.btn-social.dark.btn-social-ln:hover{background:#5cd562;}
 
 .btn-icon{font-size:1.0625rem; transition:color .3s;}
 .btn-text-image{display:flex; align-items:center;}

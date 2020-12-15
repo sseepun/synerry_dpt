@@ -54,7 +54,7 @@
                                 ราชเทวี กรุงเทพมหานคร 10400
                             </p>
                             <div class="social-btns mb-1">
-                                <a class="btn-social" href="#">
+                                <!-- <a class="btn-social" href="#">
                                     <img src="public/assets/app/images/social/fb.png" alt="Social Icon" />
                                 </a>
                                 <a class="btn-social" href="#">
@@ -62,6 +62,18 @@
                                 </a>
                                 <a class="btn-social" href="#">
                                     <img src="public/assets/app/images/social/ln.png" alt="Social Icon" />
+                                </a> -->
+                                <a class="btn-social dark btn-social-fw" href="#">
+                                    <i class="fab fa-facebook-f"></i>
+                                </a>
+                                <a class="btn-social dark btn-social-tw" href="#">
+                                    <i class="fab fa-twitter"></i>
+                                </a>
+                                <a class="btn-social dark btn-social-yt" href="#">
+                                    <i class="fab fa-youtube"></i>
+                                </a>
+                                <a class="btn-social dark btn-social-ln" href="#">
+                                    <i class="fab fa-line"></i>
                                 </a>
                             </div>
                         </div>
