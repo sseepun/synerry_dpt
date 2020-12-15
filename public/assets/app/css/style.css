@@ -226,9 +226,9 @@ p.nm, .p-nm{font-size:1.0625rem; margin:.625rem 0 0 0; font-weight:300;}
 .contact-card a{position:relative; transition:opacity .3s;}
 .contact-card a:hover{opacity:.75;}
 .contact-card .tag{
-    position:absolute; bottom:-1.3125rem; right:-.625rem; transition:transform .45s;
+    position:absolute; bottom:-.625rem; right:0; transition:transform ease .5s;
 }
-.contact-card:hover .tag{transform:scale(1.4);}
+.contact-card:hover .tag{transform:scale(1.4)rotate(15deg);}
 .contact-card .tag > i{font-size:5rem; line-height:1;}
 
 

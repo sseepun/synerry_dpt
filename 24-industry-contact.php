@@ -98,7 +98,7 @@
                                 <div class="grid md-1-3">
                                     <!-- <div class="contact-card lazy-bg" data-src="public/assets/app/images/bg/55.jpg"> -->
                                     <div class="contact-card">
-                                        <div class="tag"><i class="fas fa-envelope"></i></div>
+                                        <div class="tag"><i class="fas fa-mail-bulk"></i></div>
                                         <p>อีเมล์</p>		
                                         <h6><a class="text-sm" href="mailto:info@industry.go.th">
                                             info@industry.go.th
