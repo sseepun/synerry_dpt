@@ -80,19 +80,25 @@
                         <div class="grid xl-2-3 sm-100 lg-mt-0 md-mt-0 sm-mt-0 xs-mt-0">
                             <div class="gallery-grids">
                                 <div class="grid md-1-3">
-                                    <div class="contact-card lazy-bg" data-src="public/assets/app/images/bg/53.jpg">
+                                    <!-- <div class="contact-card lazy-bg" data-src="public/assets/app/images/bg/53.jpg"> -->
+                                    <div class="contact-card">
+                                        <div class="tag"><i class="fas fa-phone"></i></div>
                                         <p>โทรศัพท์</p>		
                                         <h6><a href="tel:022023000">02-2023000</a></h6>
                                     </div>
                                 </div>
                                 <div class="grid md-1-3">
-                                    <div class="contact-card lazy-bg" data-src="public/assets/app/images/bg/54.jpg">
+                                    <!-- <div class="contact-card lazy-bg" data-src="public/assets/app/images/bg/54.jpg"> -->
+                                    <div class="contact-card">
+                                        <div class="tag"><i class="fas fa-fax"></i></div>
                                         <p>โทรสาร</p>		
                                         <h6><a href="tel:022023048">02-2023048</a></h6>
                                     </div>
                                 </div>
                                 <div class="grid md-1-3">
-                                    <div class="contact-card lazy-bg" data-src="public/assets/app/images/bg/55.jpg">
+                                    <!-- <div class="contact-card lazy-bg" data-src="public/assets/app/images/bg/55.jpg"> -->
+                                    <div class="contact-card">
+                                        <div class="tag"><i class="fas fa-envelope"></i></div>
                                         <p>อีเมล์</p>		
                                         <h6><a class="text-sm" href="mailto:info@industry.go.th">
                                             info@industry.go.th

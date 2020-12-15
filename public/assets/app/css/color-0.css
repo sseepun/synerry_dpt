@@ -228,8 +228,13 @@ nav.footer.footer-gray .ss-list > li > a:hover{color:#1f9ad3;}
 .breadcrumb-custom-03 a:last-child i{background:#6c109d;}
 
 
-/* Contact Card */
+/* Chart Container */
 .chart-container .label p{color:#666;}
+
+
+/* Contact Card */
+.contact-card{background:#f4f4f4;}
+.contact-card .tag > i{color:#d3c8d6;}
 
 
 /* Date Selector */

@@ -163,6 +163,7 @@ nav.footer > .footer-bottom .wrapper > .count-area{background:#ffff00; color:#00
 .contact-card{background:#ffff00!important;}
 .contact-card p{color:#000;}
 .contact-card h6, .contact-card a{color:#000;}
+.contact-card .tag > i{color:#d3c8d6;}
 
 
 /* Date Selector */
