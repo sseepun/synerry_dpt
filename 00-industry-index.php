@@ -581,10 +581,10 @@
                         <div class="img-bg" style="background-image:url('public/assets/app/images/bg/16.jpg');"></div>
                     </div>
                     <div class="container">
-                        <h2 class="color-white text-center mb-4">
+                        <h2 class="color-white text-center mb-4 d-none">
                             ร่วมถ่ายทอดเรื่องราวดีดีเกี่่ยวกับอุตสาหกรรม
                         </h2>
-                        <h4 class="color-white text-center font-02 fw-300 mt-3 mb-0 xs-no-br">
+                        <h4 class="color-white text-center font-02 fw-300 mt-3 mb-0 xs-no-br d-none">
                             ทั้ง <span class="text-xxxl font-01">7<?= $z; ?></span> 
                             จังหวัดทั่วประเทศไทยเพื่อแลกเปลี่ยนความรู้ความคิดเห็น 
                             <br>และนำไปสู่การต่อยอดเพื่อพัฒนาประชาติต่อไป
