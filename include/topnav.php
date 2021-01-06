@@ -1,4 +1,3 @@
-
 <!-- Topnav -->
 <div class="topnav-filter"></div>
 <nav class="topnav">
@@ -40,13 +39,11 @@
                     </div>
                     <div class="option" style="cursor:pointer;">
                         ภาษาไทย
-                        <div class="flag-icon btn btn-circle ml-1" 
-                        style="background-image:url('public/assets/app/images/default/th_flag.png');"></div>
+                        <div class="flag-icon btn btn-circle ml-1" style="background-image:url('public/assets/app/images/default/th_flag.png');"></div>
                         <div class="dropdown">
                             <a href="#">
                                 ภาษาอังกฤษ
-                                <div class="flag-icon btn btn-circle ml-2" 
-                                style="background-image:url('public/assets/app/images/default/us_flag.png');"></div>
+                                <div class="flag-icon btn btn-circle ml-2" style="background-image:url('public/assets/app/images/default/us_flag.png');"></div>
                             </a>
                         </div>
                     </div>
@@ -72,31 +69,31 @@
                             <div class="wrapper">
                                 <div class="hero" style="background-image:url('public/assets/app/images/bg/04.jpg');"></div>
                                 <div class="submenu-container">
-                                    <?php for($i=0; $i<3; $i++){?>
+                                    <?php for ($i = 0; $i < 3; $i++) { ?>
                                         <div class="submenu has-children">
                                             <a href="#">
                                                 e-Service กรมโรงงานอุตสาหกรรม <?= $i ?>
                                             </a>
                                             <div class="submenu-container level-1">
-                                                <?php for($j=0; $j<2; $j++){?>
+                                                <?php for ($j = 0; $j < 2; $j++) { ?>
                                                     <div class="submenu has-children">
                                                         <a href="#">
                                                             e-Service กรมโรงงานอุตสาหกรรม <?= $j ?>
                                                         </a>
                                                         <div class="submenu-container level-2">
-                                                            <?php for($k=0; $k<13; $k++){?>
+                                                            <?php for ($k = 0; $k < 13; $k++) { ?>
                                                                 <div class="submenu">
                                                                     <a href="#">
                                                                         e-Service กรมโรงงานอุตสาหกรรม <?= $k ?>
                                                                     </a>
                                                                 </div>
-                                                            <?php }?>
+                                                            <?php } ?>
                                                         </div>
                                                     </div>
-                                                <?php }?>
+                                                <?php } ?>
                                             </div>
                                         </div>
-                                    <?php }?>
+                                    <?php } ?>
                                 </div>
                             </div>
                         </div>
@@ -112,31 +109,31 @@
                             <div class="wrapper">
                                 <div class="hero" style="background-image:url('public/assets/app/images/bg/04.jpg');"></div>
                                 <div class="submenu-container">
-                                    <?php for($i=0; $i<3; $i++){?>
+                                    <?php for ($i = 0; $i < 3; $i++) { ?>
                                         <div class="submenu has-children">
                                             <a href="#">
                                                 e-Service กรมโรงงานอุตสาหกรรม <?= $i ?>
                                             </a>
                                             <div class="submenu-container level-1">
-                                                <?php for($j=0; $j<2; $j++){?>
+                                                <?php for ($j = 0; $j < 2; $j++) { ?>
                                                     <div class="submenu has-children">
                                                         <a href="#">
                                                             e-Service กรมโรงงานอุตสาหกรรม <?= $j ?>
                                                         </a>
                                                         <div class="submenu-container level-2">
-                                                            <?php for($k=0; $k<13; $k++){?>
+                                                            <?php for ($k = 0; $k < 13; $k++) { ?>
                                                                 <div class="submenu">
                                                                     <a href="#">
                                                                         e-Service กรมโรงงานอุตสาหกรรม <?= $k ?>
                                                                     </a>
                                                                 </div>
-                                                            <?php }?>
+                                                            <?php } ?>
                                                         </div>
                                                     </div>
-                                                <?php }?>
+                                                <?php } ?>
                                             </div>
                                         </div>
-                                    <?php }?>
+                                    <?php } ?>
                                 </div>
                             </div>
                         </div>
@@ -152,36 +149,70 @@
                             <div class="wrapper">
                                 <div class="hero" style="background-image:url('public/assets/app/images/bg/04.jpg');"></div>
                                 <div class="submenu-container">
-                                    <?php for($i=0; $i<3; $i++){?>
+                                    <?php for ($i = 0; $i < 3; $i++) { ?>
                                         <div class="submenu has-children">
                                             <a href="#">
                                                 e-Service กรมโรงงานอุตสาหกรรม <?= $i ?>
                                             </a>
                                             <div class="submenu-container level-1">
-                                                <?php for($j=0; $j<2; $j++){?>
+                                                <?php for ($j = 0; $j < 2; $j++) { ?>
                                                     <div class="submenu has-children">
                                                         <a href="#">
                                                             e-Service กรมโรงงานอุตสาหกรรม <?= $j ?>
                                                         </a>
                                                         <div class="submenu-container level-2">
-                                                            <?php for($k=0; $k<13; $k++){?>
+                                                            <?php for ($k = 0; $k < 13; $k++) { ?>
                                                                 <div class="submenu">
                                                                     <a href="#">
                                                                         e-Service กรมโรงงานอุตสาหกรรม <?= $k ?>
                                                                     </a>
                                                                 </div>
-                                                            <?php }?>
+                                                            <?php } ?>
                                                         </div>
                                                     </div>
-                                                <?php }?>
+                                                <?php } ?>
                                             </div>
                                         </div>
-                                    <?php }?>
+                                    <?php } ?>
                                 </div>
                             </div>
                         </div>
                     </div>
-
+                    <div class="menu has-children">
+                        <a href="#">บุคคลทั่วไป</a>
+                        <div class="submenu-dropdown">
+                            <div class="wrapper">
+                                <div class="hero" style="background-image:url('public/assets/app/images/bg/04.jpg');"></div>
+                                <div class="submenu-container">
+                                    <?php for ($i = 0; $i < 3; $i++) { ?>
+                                        <div class="submenu has-children">
+                                            <a href="#">
+                                                e-Service กรมโรงงานอุตสาหกรรม <?= $i ?>
+                                            </a>
+                                            <div class="submenu-container level-1">
+                                                <?php for ($j = 0; $j < 2; $j++) { ?>
+                                                    <div class="submenu has-children">
+                                                        <a href="#">
+                                                            e-Service กรมโรงงานอุตสาหกรรม <?= $j ?>
+                                                        </a>
+                                                        <div class="submenu-container level-2">
+                                                            <?php for ($k = 0; $k < 13; $k++) { ?>
+                                                                <div class="submenu">
+                                                                    <a href="#">
+                                                                        e-Service กรมโรงงานอุตสาหกรรม <?= $k ?>
+                                                                    </a>
+                                                                </div>
+                                                            <?php } ?>
+                                                        </div>
+                                                    </div>
+                                                <?php } ?>
+                                            </div>
+                                        </div>
+                                    <?php } ?>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                     <div class="menu menu-icon" style="background-image:url('public/assets/app/images/bg/06.jpg');">
                         <a class="global-search-toggle" href="#">
                             <img src="public/assets/app/images/icon/search-01.png" alt="Search Icon" />
@@ -192,7 +223,9 @@
                 <div class="menu-mobile">
                     <div class="sidenav-btn">
                         <div class="hamburger">
-                            <div></div><div></div><div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
                         </div>
                     </div>
                 </div>
@@ -207,7 +240,9 @@
     <div class="wrapper">
         <div class="sidenav-btn">
             <div class="hamburger">
-                <div></div><div></div><div></div>
+                <div></div>
+                <div></div>
+                <div></div>
             </div>
         </div>
         <div class="options">
@@ -250,7 +285,9 @@
 <div class="global-search-container use-gsap">
     <div class="wrapper">
         <div class="hamburger active global-search-toggle">
-            <div></div><div></div><div></div>
+            <div></div>
+            <div></div>
+            <div></div>
         </div>
         <div class="container">
             <form action="/" method="GET">
