@@ -26,7 +26,7 @@
                 ?>
             </div>
 
-            <div data-aos="fade-up" data-aos-delay="450">
+            <div class="mt-3 pt-2" data-aos="fade-up" data-aos-delay="450">
                 <div class="border-top bcolor-sgray">
                     <?php for($i=0; $i<10; $i++){?>
                         <div class="border-bottom bcolor-sgray">

@@ -124,7 +124,7 @@ input[type=submit].round, select.round, textarea.round{border-radius:1000em;}
 /* List Header */
 .list-header{
     position:relative; width:100%; display:flex; align-items:center;
-    justify-content:space-between; padding:.125rem 0; margin:0 0 2rem 0;
+    justify-content:space-between; padding:.125rem 0; margin:0;
 }
 .list-header > .block{display:block;}
 .list-header .option{
@@ -134,7 +134,7 @@ input[type=submit].round, select.round, textarea.round{border-radius:1000em;}
     transition:color .25s, border-color .25s, background .25s;
 }
 @media screen and (max-width:767.98px){
-    .list-header{flex-wrap:wrap; justify-content:center; margin:0 0 1.5rem 0;}
+    .list-header{flex-wrap:wrap; justify-content:center;}
     .list-header > .block{width:100%; text-align:center; margin:0 0 .4375rem 0;}
     .list-header .select-wrapper, .list-header .search-wrapper{
         display:block; width:100%; max-width:18rem; margin:0 auto .3125rem auto;
@@ -271,7 +271,7 @@ input[type=submit].round, select.round, textarea.round{border-radius:1000em;}
 .ss-img{display:block; position:relative; width:100%; padding:60% 0 0 0; overflow:hidden;}
 .ss-img.horizontal{padding:50% 0 0 0;}
 .ss-img.square{padding:100% 0 0 0;}
-.ss-img.vertical{padding:125% 0 0 0;}
+.ss-img.vertical{padding:140% 0 0 0;}
 .ss-img > .img-bg{
     position:absolute; top:0; bottom:0; left:0; right:0; background-size:cover;
     background-position:center; transition:transform .3s;

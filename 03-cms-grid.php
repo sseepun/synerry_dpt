@@ -39,7 +39,7 @@
                                 $listHeader = ['search', 'category', 'order', 'icon-grid', 'icon-rss'];
                                 include('component/list-header.php');
                             ?>
-                            <div class="grids">
+                            <div class="grids mt-2">
                                 <?php for($i=0; $i<12; $i++){?>
                                     <div class="grid xl-25 lg-1-3 sm-50">
                                         <div class="ss-card ss-card-02">
