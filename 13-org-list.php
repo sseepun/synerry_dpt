@@ -175,7 +175,7 @@
                             <div class="btns mt-4">
                                 <a class="btn btn-action btn-color-01 btn-round" href="#">
                                     เข้าสู่เว็บไซต์ 
-                                    <i class="zmdi zmdi-arrow-right icon-round ml-1"></i>
+                                    <em class="far fa-arrow-alt-circle-right ml-1"></em>
                                 </a>
                             </div>
                         </div>

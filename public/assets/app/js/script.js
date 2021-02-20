@@ -232,29 +232,8 @@ $(function(){ 'use strict';
                 $(this).addClass('active');
                 tabContents.removeClass('active');
                 tabContents.filter('[data-tab="'+$(this).data('tab')+'"]').addClass('active');
-
-                if(self.hasClass('tab-container-02')){
-                    self.find('.slides').slick('setPosition');
-                }
-                
                 AOS.refresh();
             });
-
-            // Tab Container 02
-            if(self.hasClass('tab-container-02')){
-                self.find('.slide-container').each(function(){
-                    var self2 = $(this);
-                    self2.find('> .slides').slick({
-                        centerMode: false, centerPadding: 0, slidesToShow: 3, slidesToScroll: 1,
-                        focusOnSelect: true, autoplay: false, swipeToSlide: true,
-                        arrows: true, appendArrows: self2.find('.arrows'), dots: false,
-                        responsive: [
-                            { breakpoint: 991.98, settings: { slidesToShow: 2, } },
-                            { breakpoint: 767.98, settings: { slidesToShow: 1, } },
-                        ]
-                    });
-                });
-            }
         });
     }
 

@@ -20,19 +20,13 @@
         <div class="container">
             
             <div data-aos="fade-up" data-aos-delay="300">
-                <form action="/" method="GET">
-                    <div class="search-wrapper">
-                        <input type="text" name="keyword" class="round" placeholder="ค้นหา" />
-                    </div>
-                    <div class="select-wrapper">
-                        <select name="order" class="round">
-                            <option value="">แบ่งตามหมวดหมู่</option>
-                        </select>
-                    </div>
-                </form>
+                <?php
+                    $listHeader = ['search', 'category'];
+                    include('component/list-header.php');
+                ?>
             </div>
 
-            <div class="mt-4 pt-2" data-aos="fade-up" data-aos-delay="450">
+            <div data-aos="fade-up" data-aos-delay="450">
                 <div class="border-top bcolor-sgray">
                     <?php for($i=0; $i<10; $i++){?>
                         <div class="border-bottom bcolor-sgray">
@@ -57,7 +51,10 @@
             </div>
 
             <div data-aos="fade-up" data-aos-delay="0">
-                <?php include('component/list-footer.php'); ?>
+                <?php
+                    $listFooter = ['total', 'pagination', 'pp'];
+                    include('component/list-footer.php');
+                ?>
             </div>
 
         </div>

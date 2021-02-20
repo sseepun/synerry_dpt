@@ -27,7 +27,6 @@ html, body, a, a:hover{color:#2b2b2a;}
 .btn.btn-color-01, .btn.btn-color-01:focus{color:#ffffff; background:#fe4d01;}
 .btn.btn-color-01:hover{box-shadow:inset 0 0 0 100rem rgba(0,0,0,.05);}
 .btn.btn-color-01:active{box-shadow:inset 0 0 0 100rem rgba(0,0,0,.10);}
-.btn.btn-color-01 .icon-round{border-color:#ffffff;}
 
 
 /* Inputs */
@@ -43,6 +42,13 @@ input[type=phone]:focus, input[type=submit]:focus, select:focus, textarea:focus{
 
 /* Input Wrapper */
 .select-wrapper::after, .search-wrapper::after{color:#fe4d01;}
+
+
+/* List Header */
+.list-header .option{color:#fe4d01; background:#ffffff; border-color:#e1e1e1;}
+.list-header .option:hover, .list-header .option.active{
+    color:#ffffff; background:#fe4d01; border-color:#fe4d01;
+}
 
 
 /* Pagination */
@@ -61,11 +67,28 @@ input[type=phone]:focus, input[type=submit]:focus, select:focus, textarea:focus{
 
 
 /* Special Card */
-.ss-card .title{color:#000000;}
+.ss-card .text-container .title{color:#000000;}
+.ss-card .text-container .desc{color:#606060;}
 
 /* Special Card 01 */
-.ss-card-01 > .icon-container .icon{background:#fe4d01; color:#ffffff;}
-.ss-card-01:hover > .text-container .title{color:#fe4d01;}
+.ss-card-01 .icon-container .icon{background:#fe4d01; color:#ffffff;}
+.ss-card-01:hover .text-container .title{color:#fe4d01;}
+
+/* Special Card 02 */
+.ss-card-02 .text-container{background:#f2f2f2;}
+.ss-card-02:hover .text-container{background:#fe4d01;}
+.ss-card-02 .text-container .arrow{color:#fe4d01;}
+.ss-card-02:hover .text-container .title, .ss-card-02:hover .text-container .desc,
+.ss-card-02:hover .text-container .ss-stat .stat,
+.ss-card-02:hover  .text-container .arrow{color:#ffffff;}
+
+
+/* Special Image */
+.ss-img .hover-container{background:rgba(255,77,1,.5);}
+
+
+/* Special Stat */
+.ss-stat .stat{color:#2a2a2a;}
 
 
 /* Org 01 */
@@ -97,3 +120,10 @@ input[type=phone]:focus, input[type=submit]:focus, select:focus, textarea:focus{
 .sitemap-01 .sitemap li > ul{border-color:#e1e1e1;}
 .sitemap-01 .sitemap a:hover{color:#fe4d01;}
 .sitemap-01 .sitemap li > ul > li::before{background:#fe4d01;}
+
+
+/* Tab Container - Tabs 01 */
+.tab-container .tabs.tabs-01 .tab{color:#b6b6b6;}
+.tab-container .tabs.tabs-01 .tab:hover, .tab-container .tabs.tabs-01 .tab.active{color:#fe4d01;}
+.tab-container .tabs.tabs-01 .tab::before{background:#e1e1e1;}
+.tab-container .tabs.tabs-01 .tab::after{background:#fe4d01;}

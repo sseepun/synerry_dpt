@@ -20,7 +20,6 @@ html, body, a, a:hover{color:#ffffff;}
 /* Buttons */
 .btn.btn-color-01, .btn.btn-color-01:focus, .btn.btn-color-01:hover, 
 .btn.btn-color-01:active{color:#000000; background:#ffffff;}
-.btn.btn-color-01 .icon-round{border-color:#000000;}
 
 
 /* Inputs */
@@ -31,6 +30,11 @@ input[type=number], input[type=phone], input[type=submit], select, textarea{
 
 /* Input Wrapper */
 .select-wrapper::after, .search-wrapper::after{color:#000000;}
+
+
+/* List Header */
+.list-header .option{color:#ffffff; background:#000000; border-color:#ffffff;}
+.list-header .option:hover, .list-header .option.active{color:#000000; background:#ffffff;}
 
 
 /* Pagination */
@@ -46,10 +50,26 @@ input[type=number], input[type=phone], input[type=submit], select, textarea{
 
 
 /* Special Card */
-.ss-card .title{color:#ffffff;}
+.ss-card .text-container .title, .ss-card .text-container .desc{color:#ffffff;}
 
 /* Special Card 01 */
-.ss-card-01 > .icon-container .icon{background:#ffffff; color:#000000;}
+.ss-card-01 .icon-container .icon{background:#ffffff; color:#000000;}
+
+/* Special Card 02 */
+.ss-card-02 .text-container{border:1px solid #ffffff;}
+.ss-card-02:hover .text-container{background:#ffffff;}
+.ss-card-02 .text-container .arrow{color:#ffffff;}
+.ss-card-02:hover .text-container .title, .ss-card-02:hover .text-container .desc,
+.ss-card-02:hover .text-container .ss-stat .stat,
+.ss-card-02:hover  .text-container .arrow{color:#000000;}
+
+
+/* Special Image */
+.ss-img .hover-container{background:rgba(255,77,1,.5);}
+
+
+/* Special Stat */
+.ss-stat .stat{color:#ffffff;}
 
 
 /* Org 01 */
@@ -66,3 +86,9 @@ input[type=number], input[type=phone], input[type=submit], select, textarea{
 .sitemap-01 .grid, .sitemap-01 .sitemap > .header, .sitemap-01 .sitemap a,
 .sitemap-01 .sitemap li > ul{border-color:#ffffff;}
 .sitemap-01 .sitemap li > ul > li::before{background:#ffffff;}
+
+
+/* Tab Container - Tabs 01 */
+.tab-container .tabs.tabs-01 .tab{color:#ffffff;}
+.tab-container .tabs.tabs-01 .tab::before{background:#ffffff;}
+.tab-container .tabs.tabs-01 .tab::after{background:#ffffff;}
