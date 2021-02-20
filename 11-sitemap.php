@@ -16,12 +16,12 @@
         include('component/breadcrumb.php');
     ?>
     
-    <section class="sitemap-01 section-padding">
+    <section class="sitemap-01 section-padding" data-aos="fade-up" data-aos-delay="300">
         <div class="container">
             <div class="grids">
                 <div class="grid lg-1-3 md-50 sm-100 mt-0">
 
-                    <div class="sitemap" data-aos="fade-up" data-aos-delay="0">
+                    <div class="sitemap">
                         <div class="header">
                             <div class="icon">
                                 <img src="public/assets/app/images/icon/sitemap-01.png" alt="Sitemap Icon" />
@@ -39,7 +39,7 @@
                         </ul>
                     </div>
 
-                    <div class="sitemap" data-aos="fade-up" data-aos-delay="0">
+                    <div class="sitemap">
                         <div class="header">
                             <div class="icon">
                                 <img src="public/assets/app/images/icon/sitemap-02.png" alt="Sitemap Icon" />
@@ -77,7 +77,7 @@
                 </div>
                 <div class="grid lg-1-3 md-50 sm-100 mt-0">
 
-                    <div class="sitemap" data-aos="fade-up" data-aos-delay="0">
+                    <div class="sitemap">
                         <div class="header">
                             <div class="icon">
                                 <img src="public/assets/app/images/icon/sitemap-03.png" alt="Sitemap Icon" />
@@ -119,7 +119,7 @@
                         </ul>
                     </div>
 
-                    <div class="sitemap" data-aos="fade-up" data-aos-delay="0">
+                    <div class="sitemap">
                         <div class="header">
                             <div class="icon">
                                 <img src="public/assets/app/images/icon/sitemap-04.png" alt="Sitemap Icon" />
@@ -137,7 +137,7 @@
                 </div>
                 <div class="grid lg-1-3 md-50 sm-100 mt-0">
 
-                    <div class="sitemap" data-aos="fade-up" data-aos-delay="0">
+                    <div class="sitemap">
                         <div class="header">
                             <div class="icon">
                                 <img src="public/assets/app/images/icon/sitemap-05.png" alt="Sitemap Icon" />
@@ -164,7 +164,7 @@
                         </ul>
                     </div>
 
-                    <div class="sitemap" data-aos="fade-up" data-aos-delay="0">
+                    <div class="sitemap">
                         <div class="header">
                             <div class="icon">
                                 <img src="public/assets/app/images/icon/sitemap-06.png" alt="Sitemap Icon" />

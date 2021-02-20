@@ -17,6 +17,27 @@ html, body, a, a:hover{color:#ffffff;}
 .bcolor-01{border-color:#ffffff!important;}
 
 
+/* Buttons */
+.btn.btn-color-01, .btn.btn-color-01:focus, .btn.btn-color-01:hover, 
+.btn.btn-color-01:active{color:#000000; background:#ffffff;}
+.btn.btn-color-01 .icon-round{border-color:#000000;}
+
+
+/* Popup */
+.popup-container .popup-box > .content-container{background:#000000; border-color:#ffffff;}
+.popup-container .popup-box > .btn-close{background:#ffffff; color:#000000;}
+
+
+/* Org 01 */
+.org-01 .node, .org-01 .node a{color:#000000;}
+.org-01 .node::before, .org-01 .node::after{background:#ffffff;}
+.org-01 .node > .node-container{background:#ffffff;}
+.org-01 .node .node-title{border-color:#000000;}
+.org-01 .node.node-01 .children{background:#ffffff;}
+.org-01 .node .child{background:#000000; color:#ffffff;}
+.org-01 .node .child:hover > *{background:#ffffff; color:#000000;}
+
+
 /* Sitemap 01 */
 .sitemap-01 .grid, .sitemap-01 .sitemap > .header, .sitemap-01 .sitemap a,
 .sitemap-01 .sitemap li > ul{border-color:#ffffff;}
