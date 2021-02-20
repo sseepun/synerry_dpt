@@ -6,19 +6,19 @@ html, body, a, a:hover{color:#2b2b2a;}
 /* Colors */
 .color-white{color:#ffffff!important;}
 .color-black{color:#000000!important;}
-.color-gray, .h-color-gray:hover{color:#444444!important;}
+.color-gray, .h-color-gray:hover{color:#606060!important;}
 .color-sgray, .h-color-sgray:hover{color:#e1e1e1!important;}
 .color-01, .h-color-01:hover{color:#fe4d01!important;}
 
 .bg-white{background:#ffffff!important;}
 .bg-black{background:#000000!important;}
-.bg-gray{background:#444444!important;}
+.bg-gray{background:#606060!important;}
 .bg-sgray{background:#e1e1e1!important;}
 .bg-01{background:#fe4d01!important;}
 
 .bcolor-white{border-color:#ffffff!important;}
 .bcolor-black{border-color:#000000!important;}
-.bcolor-gray{border-color:#444444!important;}
+.bcolor-gray{border-color:#606060!important;}
 .bcolor-sgray{border-color:#e1e1e1!important;}
 .bcolor-01{border-color:#fe4d01!important;}
 
@@ -30,10 +30,42 @@ html, body, a, a:hover{color:#2b2b2a;}
 .btn.btn-color-01 .icon-round{border-color:#ffffff;}
 
 
+/* Inputs */
+input[type=text], input[type=email], input[type=password], input[type=date], input[type=tel],
+input[type=number], input[type=phone], input[type=submit], select, textarea{
+    color:#000000; background:#ffffff; border-color:#e1e1e1;
+}
+input[type=text]:focus, input[type=email]:focus, input[type=password]:focus, 
+input[type=date]:focus, input[type=tel]:focus, input[type=number]:focus, 
+input[type=phone]:focus, input[type=submit]:focus, select:focus, textarea:focus{
+    border-color:#fe4d01;
+}
+
+/* Input Wrapper */
+.select-wrapper::after, .search-wrapper::after{color:#fe4d01;}
+
+
+/* Pagination */
+.pagination .page-btn{color:#fe4d01; border-color:#e1e1e1; background:#ffffff;}
+.pagination .page-btn:hover, .pagination .page-btn.active{
+    border-color:#fe4d01; background:#fe4d01!important; color:#ffffff;
+}
+.pagination .page-btn.page-first, .pagination .page-btn.page-prev, .pagination .page-btn.page-next,
+.pagination .page-btn.page-last{color:#ffffff; background:#e1e1e1;}
+
+
 /* Popup */
 .popup-container .popup-box > .content-container{background:#ffffff;}
 .popup-container .popup-box > .btn-close{background:#cd0101; color:#ffffff;}
 .popup-container .popup-box > .btn-close:hover{background:#fe4d01;}
+
+
+/* Special Card */
+.ss-card .title{color:#000000;}
+
+/* Special Card 01 */
+.ss-card-01 > .icon-container .icon{background:#fe4d01; color:#ffffff;}
+.ss-card-01:hover > .text-container .title{color:#fe4d01;}
 
 
 /* Org 01 */

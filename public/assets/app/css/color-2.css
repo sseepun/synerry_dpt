@@ -23,9 +23,33 @@ html, body, a, a:hover{color:#ffff00;}
 .btn.btn-color-01 .icon-round{border-color:#000000;}
 
 
+/* Inputs */
+input[type=text], input[type=email], input[type=password], input[type=date], input[type=tel],
+input[type=number], input[type=phone], input[type=submit], select, textarea{
+    color:#000000; background:#ffff00; border-color:#ffff00;
+}
+
+/* Input Wrapper */
+.select-wrapper::after, .search-wrapper::after{color:#000000;}
+
+
+/* Pagination */
+.pagination .page-btn{color:#000000; border-color:#ffff00; background:#ffff00;}
+.pagination .page-btn:hover, .pagination .page-btn.active{
+    background:#000000!important; color:#ffff00;
+}
+
+
 /* Popup */
 .popup-container .popup-box > .content-container{background:#000000; border-color:#ffff00;}
 .popup-container .popup-box > .btn-close{background:#ffff00; color:#000000;}
+
+
+/* Special Card */
+.ss-card .title{color:#ffff00;}
+
+/* Special Card 01 */
+.ss-card-01 > .icon-container .icon{background:#ffff00; color:#000000;}
 
 
 /* Org 01 */
