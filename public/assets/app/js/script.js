@@ -138,97 +138,12 @@ $(function(){ 'use strict';
         $('body').addClass('theme-'+$(this).data('theme'));
     });
 
-    // Theme Selector
-    if($('.theme-selector').length){
-        var themeTarget = $('#custom-theme');
-        if(!themeTarget.length){
-            $('head').append('<link rel="stylesheet" id="custom-theme" href="" />');
-            themeTarget = $('#custom-theme');
-        }
-        $('.theme-selector .color').click(function(e){
-            e.preventDefault();
-            themeTarget.attr('href', $(this).data('src'));
-            $('body').removeClass('theme-0 theme-1 theme-2');
-            $('body').addClass('theme-0');
-        });
-    }
-
 
     // Date Picker
     $('input.date-picker').each(function(){
         new Datepicker($(this)[0], {});
     });
-    
-    // Calendar
-    var calendar;
-    if($('.calendar-container > .calendar-wrapper').length){
-        if(!$('.banner-event').length){
-            $('.calendar-container > .calendar-wrapper').simpleCalendar({
-                months: [
-                    'มกราคม', 'กุมภาพันธ์', 'มีนาคม', 'เมษายน', 'พฤษภาคม', 'มิถุนายน', 
-                    'กรกฎาคม', 'สิงหาคม', 'กันยายน', 'ตุลาคม', 'พฤศจิกายน', 'ธันวาคม'
-                ],
-                days: ['อา', 'จ', 'อ', 'พ', 'พฤ', 'ศ', 'ส'],
-                displayYear: false,
-                fixedStartDay: 0,
-                displayEvent: true,
-                disableEventDetails: false,
-                disableEmptyDetails: true,
-                events: [
-                    {
-                        startDate: new Date('08-18-2020'),
-                        endDate: new Date('08-18-2020'),
-                        summary: 'กิจกรรมที่ 1'
-                    }
-                ]
-            });
-        }else{
-            calendar = $('.calendar-container > .calendar-wrapper').simpleCalendar({
-                months: [
-                    'มกราคม', 'กุมภาพันธ์', 'มีนาคม', 'เมษายน', 'พฤษภาคม', 'มิถุนายน', 
-                    'กรกฎาคม', 'สิงหาคม', 'กันยายน', 'ตุลาคม', 'พฤศจิกายน', 'ธันวาคม'
-                ],
-                days: ['อา', 'จ', 'อ', 'พ', 'พฤ', 'ศ', 'ส'],
-                displayYear: false,
-                fixedStartDay: 0,
-                displayEvent: true,
-                disableEventDetails: false,
-                disableEmptyDetails: true,
-                events: [
-                    {
-                        startDate: new Date('08-18-2020'),
-                        endDate: new Date('08-18-2020'),
-                        summary: 'กิจกรรมที่ 1'
-                    }
-                ],
-                onMonthChange: function(month, year){
-                    $('.banner-event').find('.slides').css('--month', month);
-                    $('.banner-event').find('.slide').removeClass('active');
-                    $('.banner-event').find('.slide[data-month="'+month+'"]').addClass('active');
-                }
-            });
-        }
-    }
 
-    // Banner Event
-    if($('.banner-event').length){
-        $('.banner-event').each(function(){
-            var bannerSlides = $(this).find('.slides'),
-                bannerEvents = bannerSlides.find('.slide');
-            bannerEvents.click(function(e){
-                e.preventDefault();
-                bannerSlides.css('--month', $(this).data('month'));
-                bannerEvents.removeClass('active');
-                $(this).addClass('active');
-                if(calendar!==undefined){
-                    var currentMonth = calendar.data('plugin_simpleCalendar').currentDate.getMonth();
-                    calendar.data('plugin_simpleCalendar').changeMonth(
-                        $(this).data('month') - currentMonth
-                    );
-                }
-            });
-        });
-    }
 
     // Toggle Box
     if($('.toggle-box').length){
@@ -241,20 +156,6 @@ $(function(){ 'use strict';
         });
     }
 
-    // Button Clear
-    $('.btn-clear').click(function(e){
-        e.preventDefault();
-        var target = $(this).closest('.control').find('> input');
-        if(target.length) target.val('');
-    });
-    $('.btn-form-clear').click(function(e){
-        e.preventDefault();
-        var target = $(this).closest('form');
-        if(target.length){
-            target.find('input, select, textarea').val('');
-            target.find('input[type="checkbox"], input[type="radio"]').prop('checked', false);
-        }
-    });
 
     // Button Toggle
     $('.btn-toggle').click(function(e){
@@ -294,13 +195,6 @@ $(function(){ 'use strict';
         }
     });
 
-    // ฺButton Clear Form
-    $('.btn-clear-form').click(function(e){
-        e.preventDefault();
-        var targetForm = $(this).closest('form');
-        targetForm.find('input, textarea').val('');
-    });
-
 
     // Shortcode
     var shortcodeReady = true,
@@ -324,200 +218,6 @@ $(function(){ 'use strict';
                         thisBtn.html('Copy');
                     }, 2000);
                 }
-            });
-        });
-    }
-
-
-    // Swiper
-    var swiperContainers = $('.swiper-container[data-swiper]');
-    if(swiperContainers.length){
-        swiperContainers.each(function(){
-            var self = $(this),
-                dataClass = 'swiper-'+self.data('swiper');
-            self.addClass(dataClass);
-            self.find('.swiper-pagination').addClass(dataClass);
-            new Swiper('.swiper-container.'+dataClass, {
-                effect: 'coverflow',
-                grabCursor: true,
-                centeredSlides: true,
-                slidesPerView: 'auto',
-                observer: true,
-                observeParents: true,
-                coverflowEffect: {
-                    rotate: 50,
-                    stretch: 0,
-                    depth: 100,
-                    modifier: 0.8,
-                    slideShadows: true,
-                },
-                pagination: {
-                    el: '.swiper-pagination.'+dataClass,
-                },
-            });
-        });
-    }
-
-
-    // About 01
-    var about01 = $('.about-01');
-    if(about01.length){
-        var about01Ready = true;
-        about01.each(function(){
-            var self = $(this),
-                teamSelectors = self.find('.team-selector');
-            teamSelectors.click(function(e){
-                e.preventDefault();
-                var thisSelf = $(this);
-                if(about01Ready){
-                    about01Ready = false;
-                    
-                    var temp = $('.about-01-target[data-team="'+thisSelf.data('team')+'"]');
-                    $('.about-01-target.active').addClass('out');
-                    setTimeout(function(){
-                        $('.about-01-target').removeClass('active in out');
-                        temp.addClass('active in');
-                        setTimeout(function(){
-                            temp.removeClass('in');
-                            about01Ready = true;
-                        }, 50);
-                    }, 450);
-
-                    var k = teamSelectors.index(this),
-                        count = 0;
-                    teamSelectors.removeClass('pos-0 pos-1 pos-2 pos-3');
-                    thisSelf.addClass('pos-0');
-                    teamSelectors.each(function(i, d){
-                        if(i!=k){
-                            count++;
-                            $(d).addClass('pos-'+count);
-                        }
-                    });
-                }
-            });
-
-        });
-    }
-
-
-    // Banner 01
-    var banner01 = $('.banner-01');
-    if(banner01.length){
-        banner01.each(function(){
-            var self = $(this),
-                options = {
-                    centerMode: true, centerPadding: 0, slidesToShow: 1, 
-                    focusOnSelect: true, autoplay: true, autoplaySpeed: 4000, speed: 800,
-                    arrows: false, dots: true, appendDots: self.find('.dots')
-                };
-            if(self.hasClass('img-only')){
-                options = {
-                    centerMode: true, centerPadding: 0, slidesToShow: 1, 
-                    focusOnSelect: true, autoplay: true, autoplaySpeed: 4000, speed: 800,
-                    arrows: true, appendArrows: self.find('.arrows'),
-                    dots: true, appendDots: self.find('.dots'),
-                    adaptiveHeight: false
-                };
-            }
-
-            var descObj = {};
-            self.find('.slide').each(function(i){
-                if($(this).data('desc')!==undefined){
-                    descObj[i] = $(this).data('desc');
-                }
-            });
-
-            self.find('.slides').slick(options);
-            self.find('.slick-dots > li').each(function(i){
-                if(descObj[i]!==undefined){
-                    $(this).append('<div class="desc">'+descObj[i]+'</div>');
-                }
-            });
-        });
-    }
-
-    
-    // Call to Action 02
-    var call02 = $('.call-02');
-    if(call02.length){
-        call02.find('.slide-container').each(function(){
-            var self = $(this);
-            self.find('> .slides').slick({
-                centerMode: true, centerPadding: 0, slidesToShow: 6, 
-                focusOnSelect: true, autoplay: true, autoplaySpeed: 4000, speed: 600,
-                arrows: true, appendArrows: self.find('.arrows'), dots: false,
-                responsive: [
-                    { breakpoint: 1199.98, settings: { slidesToShow: 5, } },
-                    { breakpoint: 991.98, settings: { slidesToShow: 4, } },
-                    { breakpoint: 767.98, settings: { slidesToShow: 3, } },
-                    { breakpoint: 575.98, settings: { slidesToShow: 2, } },
-                ]
-            });
-        });
-    }
-
-
-    // Content 01
-    var content01 = $('.content-01');
-    if(content01.length){
-        content01.each(function(){
-            var self = $(this),
-                contentTabs = self.find('.content-tabs > .tab'),
-                contents = self.find('.contents > .content');
-            contentTabs.click(function(e){
-                e.preventDefault();
-                contentTabs.removeClass('active');
-                $(this).addClass('active');
-                contents.removeClass('active');
-                contents.filter('[data-id="'+$(this).data('id')+'"]').addClass('active');
-                AOS.refresh();
-            });
-        });
-    }
-
-
-    // Content 03
-    var content03 = $('.content-03');
-    if(content03.length){
-        content03.each(function(){
-            var self=  $(this);
-            self.find('.slides').slick({
-                centerMode: true, centerPadding: 0, slidesToShow: 3, 
-                focusOnSelect: true, autoplay: false,
-                arrows: true, appendArrows: self.find('.arrows'), dots: false,
-                responsive: [
-                    { breakpoint: 991.98, settings: { slidesToShow: 2, } },
-                    { breakpoint: 767.98, settings: { slidesToShow: 1, } },
-                ]
-            });
-        });
-    }
-
-
-    // Content 07
-    var content07 = $('.content-07');
-    if(content07.length){
-        content07.each(function(){
-            var self=  $(this);
-            self.find('.slides').slick({
-                centerMode: true, centerPadding: 0, slidesToShow: 1, 
-                focusOnSelect: true, autoplay: false,
-                arrows: true, appendArrows: self.find('.arrows'), 
-                dots: true, appendDots: self.find('.dots'),
-            });
-        });
-    }
-
-    
-    // FAQ 01
-    var faq01 = $('.faq-01');
-    if(faq01.length){
-        faq01.each(function(){
-            $(this).find('.question').click(function(e){
-                e.preventDefault();
-                var self = $(this);
-                self.toggleClass('active');
-                self.next().slideToggle();
             });
         });
     }
@@ -578,6 +278,6 @@ $(function(){ 'use strict';
 
     
     // AOS Animation
-    AOS.init({ easing: 'ease-in-out-cubic', duration: 750, once: true, offset: 15 });
+    AOS.init({ easing: 'ease-in-out-cubic', duration: 750, once: true, offset: 10 });
 
 });

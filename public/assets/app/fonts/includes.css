@@ -2,7 +2,7 @@
 
 
 /* DB Ozone X */
-@font-face{
+/* @font-face{
     font-family:'DB Ozone X'; font-weight:100; font-style:normal;
     src:url('./DB-Ozone-X/DB-Ozone-X-UltraLi.ttf') format('truetype');
 }
@@ -41,11 +41,11 @@
 @font-face{
     font-family:'DB Ozone X'; font-weight:600; font-style:italic;
     src:url('./DB-Ozone-X/DB-Ozone-X-BdIt.ttf') format('truetype');
-}
+} */
 
 
 /* TH Sarabun New */
-@font-face{
+/* @font-face{
     font-family:'TH Sarabun New'; font-weight:300; font-style:normal;
     src:url('./THSarabunNew/THSarabunNew.ttf') format('truetype');
 }
@@ -60,7 +60,7 @@
 @font-face{
     font-family:'TH Sarabun New'; font-weight:600; font-style:italic;
     src:url('./THSarabunNew/THSarabunNew_BoldItalic.ttf') format('truetype');
-}
+} */
 
 
 /* Sukhumvit */
