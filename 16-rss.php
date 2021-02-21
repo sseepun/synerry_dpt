@@ -18,14 +18,12 @@
     
     <section class="section-padding">
         <div class="container">
-            
             <div data-aos="fade-up" data-aos-delay="300">
                 <?php
                     $listHeader = ['search', 'category'];
                     include('component/list-header.php');
                 ?>
             </div>
-
             <div class="mt-3 pt-2" data-aos="fade-up" data-aos-delay="450">
                 <div class="border-top bcolor-sgray">
                     <?php for($i=0; $i<10; $i++){?>
@@ -49,14 +47,12 @@
                     <?php }?>
                 </div>
             </div>
-
             <div data-aos="fade-up" data-aos-delay="0">
                 <?php
                     $listFooter = ['total', 'pagination', 'pp'];
                     include('component/list-footer.php');
                 ?>
             </div>
-
         </div>
     </section>
     

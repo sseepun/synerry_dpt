@@ -10,19 +10,25 @@ html, body, a, a:hover, table.table{color:#ffff00;}
 .color-mgray, .h-color-mgray:hover, 
 .color-sgray, .h-color-sgray:hover,
 .color-01, .h-color-01:hover,
-.color-02, .h-color-02:hover{color:#ffff00!important;}
+.color-02, .h-color-02:hover,
+.color-03, .h-color-03:hover,
+.color-04, .h-color-04:hover,
+.color-05, .h-color-05:hover,
+.color-06, .h-color-06:hover{color:#ffff00!important;}
 
 .bg-white, .bg-black, .bg-gray, .bg-mgray, .bg-sgray,
-.bg-01, .bg-02{background:#000000!important;}
+.bg-01, .bg-02, .bg-03, .bg-04, .bg-05, .bg-06{background:#000000!important;}
 
 .bcolor-white, .bcolor-black, .bcolor-gray, .bcolor-mgray, .bcolor-sgray, 
-.bcolor-01, .bcolor-02{border-color:#ffff00!important;}
+.bcolor-01, .bcolor-02, .bcolor-03, .bcolor-04, .bcolor-05, 
+.bcolor-06{border-color:#ffff00!important;}
 
 
 /* Buttons */
 .btn.btn-color-01, .btn.btn-color-01:focus, .btn.btn-color-01:hover, .btn.btn-color-01:active,
 .btn.btn-color-02, .btn.btn-color-02:focus, .btn.btn-color-02:hover, .btn.btn-color-02:active,
-.btn.btn-color-03, .btn.btn-color-03:focus, .btn.btn-color-03:hover, .btn.btn-color-03:active{
+.btn.btn-color-03, .btn.btn-color-03:focus, .btn.btn-color-03:hover, .btn.btn-color-03:active,
+.btn.btn-color-04, .btn.btn-color-04:focus, .btn.btn-color-04:hover, .btn.btn-color-04:active{
     color:#000000; background:#ffff00;
 }
 
@@ -32,11 +38,11 @@ html, body, a, a:hover, table.table{color:#ffff00;}
 /* Inputs */
 input[type=text], input[type=email], input[type=password], input[type=date], input[type=tel],
 input[type=number], input[type=phone], input[type=submit], select, textarea{
-    color:#000000; background:#ffff00; border-color:#ffff00;
+    color:#000000; background:#ffff00; border-color:#ffff00!important;
 }
 
 /* Input Wrapper */
-.select-wrapper::after, .search-wrapper::after{color:#000000;}
+.select-wrapper::after, .search-wrapper::after, .date-wrapper::after{color:#000000;}
 
 
 /* List Header */
@@ -98,6 +104,7 @@ input[type=number], input[type=phone], input[type=submit], select, textarea{
 /* Table */
 table.table td{border-color:#ffff00;}
 table.table .sep{background:#ffff00;}
+table.table .ticon{color:#000000!important; background:#ffff00!important;}
 
 
 /* Toggle Target */

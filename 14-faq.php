@@ -24,7 +24,7 @@
                     include('component/list-header.php');
                 ?>
             </div>
-            <div class="faq-01 mt-3 pt-2" data-aos="fade-up" data-aos-delay="450">
+            <div class="faq-01 mt-3 pt-2 pb-1" data-aos="fade-up" data-aos-delay="450">
                 <?php for($i=0; $i<10; $i++){?>
                     <div class="faq <?php if($i==0)echo 'active'; ?>">
                         <div class="question">
@@ -94,6 +94,81 @@
                     $listFooter = ['total', 'pagination', 'pp'];
                     include('component/list-footer.php');
                 ?>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="container">
+            <div class="section-padding border-top-2 bcolor-sgray">
+                <div class="ss-box-lg">
+                    <div data-aos="fade-up" data-aos-delay="0">
+                        <h6 class="h4 lg fw-600 text-center">
+                            แบบฟอร์มติดต่อเรา
+                        </h6>
+                        <p class="lg text-center mt-1">
+                            หากมีคำถาม คำติชม คำแนะนำ หรือพบปัญหากรุณากรอกแบบฟอร์มด้านล่างนี้ <br>
+                            ทางเจ้าหน้าที่จะคำเนินการตามคำขอโดยเร็วที่สุด 
+                        </p>
+                    </div>
+                    <p class="color-gray text-center mt-2 pt-1" data-aos="fade-up" data-aos-delay="150">
+                        กรุณากรอกข้อมูลที่จำเป็นให้ครบถ้วน โดยช่องเฉพาะที่มีเครื่องหมาย 
+                        <span class="text-danger">*</span> 
+                    </p>
+                    <div class="mt-4" data-aos="fade-up" data-aos-delay="300">
+                        <form action="/" method="POST">
+                            <div class="grids">
+                                <div class="grid sm-50 mt-0">
+                                    <div class="form-group">
+                                        <label class="p color-gray">เลือกหน่วยงาน <span class="text-danger">*</span></label>
+                                        <div class="select-wrapper">
+                                            <select name="department" class="form-control round" required>
+                                                <option value="">เลือกหน่วยงาน</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="grid sm-50 mt-0">
+                                    <div class="form-group">
+                                        <label class="p color-gray">ชื่อ-นามสกุล <span class="text-danger">*</span></label>
+                                        <input type="text" name="name" class="form-control round" required title="General Text Input" />
+                                    </div>
+                                </div>
+                                <div class="grid sm-50 mt-0">
+                                    <div class="form-group">
+                                        <label class="p color-gray">หมายเลขโทรศัพท์ <span class="text-danger">*</span></label>
+                                        <input type="text" name="phone" class="form-control round" required title="General Text Input" />
+                                    </div>
+                                </div>
+                                <div class="grid sm-50 mt-0">
+                                    <div class="form-group">
+                                        <label class="p color-gray">อีเมล <span class="text-danger">*</span></label>
+                                        <input type="email" name="email" class="form-control round" required title="General Text Input" />
+                                    </div>
+                                </div>
+                                <div class="grid sm-100 mt-0">
+                                    <div class="form-group">
+                                        <label class="p color-gray">ข้อความ <span class="text-danger">*</span></label>
+                                        <textarea name="message" rows="5" class="form-control round" required title="General Textarea"></textarea>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="d-flex ai-center jc-space-between fw-wrap mt-1 pb-1">
+                                <div class="captcha-container mt-3">
+                                    <img class="img" src="public/assets/app/images/misc/captcha.jpg" alt="CAPTCHA" />
+                                </div>
+                                <div class="btns width-auto mt-3">
+                                    <button type="submit" class="btn btn-action btn-color-01 btn-round">
+                                        ส่งข้อความ <em class="far fa-arrow-alt-circle-right ml-1"></em>
+                                    </button>
+                                    <button type="reset" class="btn btn-action btn-color-02 btn-round">
+                                        ล้างข้อมูล <em class="far fa-times-circle ml-1"></em>
+                                    </button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
             </div>
         </div>
     </section>

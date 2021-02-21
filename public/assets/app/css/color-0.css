@@ -11,6 +11,10 @@ html, body, a, a:hover, table.table{color:#2b2b2a;}
 .color-sgray, .h-color-sgray:hover{color:#e1e1e1!important;}
 .color-01, .h-color-01:hover{color:#fe4d01!important;}
 .color-02, .h-color-02:hover{color:#ffb739!important;}
+.color-03, .h-color-03:hover{color:#b6d0f2!important;}
+.color-04, .h-color-04:hover{color:#466289!important;}
+.color-05, .h-color-05:hover{color:#92a6b1!important;}
+.color-06, .h-color-06:hover{color:#a0e8d0!important;}
 
 .bg-white{background:#ffffff!important;}
 .bg-black{background:#000000!important;}
@@ -19,6 +23,10 @@ html, body, a, a:hover, table.table{color:#2b2b2a;}
 .bg-mgray{background:#e1e1e1!important;}
 .bg-01{background:#fe4d01!important;}
 .bg-02{background:#ffb739!important;}
+.bg-03{background:#b6d0f2!important;}
+.bg-04{background:#466289!important;}
+.bg-05{background:#92a6b1!important;}
+.bg-06{background:#a0e8d0!important;}
 
 .bcolor-white{border-color:#ffffff!important;}
 .bcolor-black{border-color:#000000!important;}
@@ -27,6 +35,10 @@ html, body, a, a:hover, table.table{color:#2b2b2a;}
 .bcolor-sgray{border-color:#e1e1e1!important;}
 .bcolor-01{border-color:#fe4d01!important;}
 .bcolor-02{border-color:#ffb739!important;}
+.bcolor-03{border-color:#b6d0f2!important;}
+.bcolor-04{border-color:#466289!important;}
+.bcolor-05{border-color:#92a6b1!important;}
+.bcolor-06{border-color:#a0e8d0!important;}
 
 
 /* Buttons */
@@ -42,6 +54,10 @@ html, body, a, a:hover, table.table{color:#2b2b2a;}
 .btn.btn-color-03:hover{box-shadow:inset 0 0 0 100rem rgba(0,0,0,.05);}
 .btn.btn-color-03:active{box-shadow:inset 0 0 0 100rem rgba(0,0,0,.10);}
 
+.btn.btn-color-04, .btn.btn-color-04:focus{color:#ffffff; background:#466289;}
+.btn.btn-color-04:hover{box-shadow:inset 0 0 0 100rem rgba(0,0,0,.05);}
+.btn.btn-color-04:active{box-shadow:inset 0 0 0 100rem rgba(0,0,0,.10);}
+
 .btn.btn-social.fw{background:#3b56a3; color:#ffffff;}
 .btn.btn-social.tw{background:#05b0f6; color:#ffffff;}
 .btn.btn-social.ln{background:#00c600; color:#ffffff;}
@@ -52,16 +68,16 @@ html, body, a, a:hover, table.table{color:#2b2b2a;}
 /* Inputs */
 input[type=text], input[type=email], input[type=password], input[type=date], input[type=tel],
 input[type=number], input[type=phone], input[type=submit], select, textarea{
-    color:#000000; background:#ffffff; border-color:#e1e1e1;
+    color:#000000; background:#ffffff; border-color:#dddddd!important;
 }
 input[type=text]:focus, input[type=email]:focus, input[type=password]:focus, 
 input[type=date]:focus, input[type=tel]:focus, input[type=number]:focus, 
 input[type=phone]:focus, input[type=submit]:focus, select:focus, textarea:focus{
-    border-color:#fe4d01;
+    border-color:#fe4d01!important;
 }
 
 /* Input Wrapper */
-.select-wrapper::after, .search-wrapper::after{color:#fe4d01;}
+.select-wrapper::after, .search-wrapper::after, .date-wrapper::after{color:#fe4d01;}
 
 /* Input Form Group */
 .form-group label{color:#000000;}
@@ -69,7 +85,7 @@ input[type=phone]:focus, input[type=submit]:focus, select:focus, textarea:focus{
 
 
 /* List Header */
-.list-header .option{color:#fe4d01; background:#ffffff; border-color:#e1e1e1;}
+.list-header .option{color:#fe4d01; background:#ffffff; border-color:#dddddd;}
 .list-header .option:hover, .list-header .option.active{
     color:#ffffff; background:#fe4d01; border-color:#fe4d01;
 }
@@ -136,6 +152,7 @@ input[type=phone]:focus, input[type=submit]:focus, select:focus, textarea:focus{
 /* Table */
 table.table td{border-color:#e1e1e1;}
 table.table .sep{background:#cccccc;}
+table.table .ticon{color:#ffffff;}
 
 
 /* Toggle Target */

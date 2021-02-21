@@ -26,10 +26,10 @@
                     หากท่านต้องการยกเลิกการรับช่าวสาร กรุณากรอกอีเมล์ที่ท่านต้องการยกเลิกด้านล่าง 
                 </p>
             </div>
-            <div class="ss-box mt-4 pt-2" data-aos="fade-up" data-aos-delay="600">
+            <div class="ss-box mt-4 pt-1" data-aos="fade-up" data-aos-delay="600">
                 <form action="/" method="POST">
                     <div class="form-group">
-                        <label class="p md">อีเมล <span class="text-danger">*</span></label>
+                        <label class="p">อีเมล <span class="text-danger">*</span></label>
                         <input type="email" class="form-control round" placeholder="กรุณากรอกอีเมลที่ต้องการรับข่าวสาร" 
                         required title="General Text Input" />
                     </div>
