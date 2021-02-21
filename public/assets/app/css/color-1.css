@@ -6,20 +6,25 @@ html, body, a, a:hover{color:#ffffff;}
 
 /* Colors */
 .color-white, .color-black, 
-.color-gray, .h-color-gray:hover 
-.color-sgray, .h-color-sgray:hover 
+.color-gray, .h-color-gray:hover, 
+.color-mgray, .h-color-mgray:hover, 
+.color-sgray, .h-color-sgray:hover,
 .color-01, .h-color-01:hover{color:#ffffff!important;}
 
-.bg-white, .bg-black, .bg-gray, .bg-sgray, 
+.bg-white, .bg-black, .bg-gray, .bg-mgray, .bg-sgray,
 .bg-01{background:#000000!important;}
 
-.bcolor-white, .bcolor-black, .bcolor-gray, .bcolor-sgray, 
+.bcolor-white, .bcolor-black, .bcolor-gray, .bcolor-mgray, .bcolor-sgray, 
 .bcolor-01{border-color:#ffffff!important;}
 
 
 /* Buttons */
-.btn.btn-color-01, .btn.btn-color-01:focus, .btn.btn-color-01:hover, 
-.btn.btn-color-01:active{color:#000000; background:#ffffff;}
+.btn.btn-color-01, .btn.btn-color-01:focus, .btn.btn-color-01:hover, .btn.btn-color-01:active,
+.btn.btn-color-02, .btn.btn-color-02:focus, .btn.btn-color-02:hover, .btn.btn-color-02:active{
+    color:#000000; background:#ffffff;
+}
+
+.btn.btn-social{background:#ffffff; color:#000000;}
 
 
 /* Inputs */
@@ -49,6 +54,10 @@ input[type=number], input[type=phone], input[type=submit], select, textarea{
 .popup-container .popup-box > .btn-close{background:#ffffff; color:#000000;}
 
 
+/* Post Stat */
+.post-stat .stat em{color:#000000; background:#ffffff;}
+
+
 /* Special Card */
 .ss-card .text-container .title, .ss-card .text-container .desc{color:#ffffff;}
 
@@ -64,12 +73,24 @@ input[type=number], input[type=phone], input[type=submit], select, textarea{
 .ss-card-02:hover  .text-container .arrow{color:#000000;}
 
 
+/* Special Icon Title */
+.ss-icon-title > em{background:#ffffff; color:#000000;}
+
+
 /* Special Image */
 .ss-img .hover-container{background:rgba(255,77,1,.5);}
 
 
 /* Special Stat */
 .ss-stat .stat{color:#ffffff;}
+
+/* Special Tag */
+.ss-tag{background:#ffffff; color:#000000;}
+
+
+/* Table */
+table.table td{border-color:#ffffff;}
+table.table .sep{background:#ffffff;}
 
 
 /* Org 01 */

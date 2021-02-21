@@ -160,10 +160,10 @@
                             </div>
                         </div>
                         <div class="grid md-60 sm-100 mt-md-0">
-                            <h5 class="h5 fw-600 lh-sm color-01">
+                            <h5 class="h5 fw-600 lh-xs color-01">
                                 กรมเชื้อเพลิงธรรมชาติ
                             </h5>
-                            <h6 class="fw-500 lh-sm color-black">
+                            <h6 class="fw-500 lh-xs color-black">
                                 กระทรวงพลังงาน
                             </h6>
                             <p class="sm lh-lg mt-3 op-80">

@@ -1,23 +1,27 @@
-<div class="post-footer border-bottom">
+
+<div class="post-footer">
     <div class="block">
         <span class="fw-900">TAGS:</span> 
         <div class="ss-tag ml-2">สำนักบริหารกลาง</div>
-        <div class="ss-tag ml-2">โรงงานอุตสาหกรรม</div>
+        <div class="ss-tag ml-1">ข่าวกิจกรรมและประชาสัมพันธ์</div>
     </div>
     <div class="block ai-start">
-        <a class="btn-social height-auto" href="#" tabindex="0">
-            <img src="public/assets/app/images/social/fb.png" alt="Social Icon">
-            <div class="count">10</div>
-        </a>
-        <a class="btn-social height-auto" href="#" tabindex="0">
-            <img src="public/assets/app/images/social/tw.png" alt="Social Icon">
-            <div class="count">10</div>
-        </a>
-        <a class="btn-social height-auto" href="#" tabindex="0">
-            <img src="public/assets/app/images/social/ln.png" alt="Social Icon">
-        </a>
-        <a class="btn-social height-auto" href="#" tabindex="0">
-            <img src="public/assets/app/images/social/link.png" alt="Social Icon">
-        </a>
+        <div class="text-center mr-2">
+            <a class="btn btn-social fw" href="#" tabindex="0">
+                <em class="fab fa-facebook-f"></em>
+            </a>
+            <div class="p fw-600">10</div>
+        </div>
+        <div class="text-center mr-2">
+            <a class="btn btn-social tw" href="#" tabindex="0">
+                <em class="fab fa-twitter"></em>
+            </a>
+            <div class="p fw-600">8</div>
+        </div>
+        <div class="text-center">
+            <a class="btn btn-social ln" href="#" tabindex="0">
+                <em class="fab fa-line"></em>
+            </a>
+        </div>
     </div>
 </div>

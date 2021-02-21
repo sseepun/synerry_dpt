@@ -1,26 +1,22 @@
-<div class="post-stats">
+
+<div class="post-stat">
     <div class="block">
-        <div class="stat mr-4">
-            <img src="public/assets/app/images/icon/user.png" alt="Icon" />
-            สำนักบริหารกลาง
+        <div class="stat">
+            <em class="far fa-user-circle"></em> สำนักบริหารกลาง
         </div>
         <div class="stat">
-            <img src="public/assets/app/images/icon/calendar.png" alt="Icon" />
-            7 เมษายน 2563
+            <em class="far fa-calendar-alt"></em> 19 กันยายน 2563
         </div>
     </div>
     <div class="block">
-        <div class="stat mr-3">
-            <img class="circle-icon" src="public/assets/app/images/icon/circle-view.png" alt="Icon" />
-            17
-        </div>
-        <div class="stat mr-3">
-            <img class="circle-icon" src="public/assets/app/images/icon/circle-star.png" alt="Icon" />
-            18
+        <div class="stat">
+            <em class="far fa-eye"></em> 17
         </div>
         <div class="stat">
-            <img class="circle-icon" src="public/assets/app/images/icon/circle-share.png" alt="Icon" />
-            231
+            <em class="far fa-star"></em> 18
+        </div>
+        <div class="stat">
+            <em class="fas fa-project-diagram"></em> 231
         </div>
     </div>
 </div>
