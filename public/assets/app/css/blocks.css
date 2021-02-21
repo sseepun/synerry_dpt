@@ -1,4 +1,31 @@
 
+/* About 01 */
+.about-01{width:100%; padding:3.5rem 0 6.5rem 0;}
+.about-01 h6, .about-01 .quote-container{color:#ffffff;}
+.about-01 .text-wrapper{width:calc(100% - 5rem); margin:0 auto 0 0;}
+.about-01.text-right .text-wrapper{margin:0 0 0 auto;}
+.about-01 .quote-container{margin:3.25rem 0 0 0;}
+.about-01 .quote-start, .about-01 .quote-end{position:relative;}
+.about-01 .quote-start::before, .about-01 .quote-end::before{
+    position:absolute; font-family:'Font Awesome 5 Free'; font-weight:900;
+    font-size:2.125rem; line-height:1; color:#ffffff;
+}
+.about-01 .quote-start::before{content:'\f10d'; bottom:calc(100% + .25rem); left:0;}
+.about-01 .quote-end::before{content:'\f10e'; top:calc(100% + .25rem); right:0;}
+@media screen and (max-width:1199.98px){
+    .about-01{padding:3.25rem 0 6.5rem 0;}
+    .about-01 .quote-start::before, .about-01 .quote-end::before{font-size:2rem;}
+}
+@media screen and (max-width:991.98px){
+    .about-01{padding:3rem 0 6.25rem 0;}
+    .about-01 .quote-start::before, .about-01 .quote-end::before{font-size:1.875rem;}
+}
+@media screen and (max-width:767.98px){
+    .about-01{padding:2.5rem 0 6rem 0;}
+    .about-01 .quote-start::before, .about-01 .quote-end::before{font-size:1.625rem;}
+}
+
+
 /* Breadcrumb 01 */
 .breadcrumb-01{width:100%; padding:1.5rem 0 3.75rem 0; box-shadow:0 0 16px 8px rgba(0,0,0,.15);}
 .breadcrumb-01 .wrapper{width:100%;}
