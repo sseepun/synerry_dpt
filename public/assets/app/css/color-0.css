@@ -56,6 +56,10 @@ input[type=phone]:focus, input[type=submit]:focus, select:focus, textarea:focus{
 /* Input Wrapper */
 .select-wrapper::after, .search-wrapper::after{color:#fe4d01;}
 
+/* Input Form Group */
+.form-group label{color:#000000;}
+.form-check > label{color:#666666;}
+
 
 /* List Header */
 .list-header .option{color:#fe4d01; background:#ffffff; border-color:#e1e1e1;}

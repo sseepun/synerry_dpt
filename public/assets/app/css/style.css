@@ -48,6 +48,7 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6, p, .p, li{
 h2, .h2{font-size:3rem;}
 /* h3, .h3{font-size:2.25rem;} */
 h4, .h4{font-size:1.75rem;} h4.xl, .h4.xl{font-size:2.125rem;}
+h4.lg, .h4.lg{font-size:2rem;}
 h5, .h5{font-size:1.625rem;} h5.sm, .h5.sm{font-size:1.5rem;}
 h6, .h6{font-size:1.3125rem;}
 p, .p, li{font-size:.9375rem;} p.lg, .p.lg{font-size:1.125rem;}
@@ -56,21 +57,25 @@ p.xs, .p.xs{font-size:.8125rem;}
 @media screen and (max-width:1199.98px){
     h2, .h2{font-size:2.875rem;}
     h4, .h4{font-size:1.6875rem;} h4.xl, .h4.xl{font-size:2rem;}
+    h4.lg, .h4.lg{font-size:1.875rem;}
 }
 @media screen and (max-width:991.98px){
     h2, .h2{font-size:2.75rem;}
     h4, .h4{font-size:1.625rem;} h4.xl, .h4.xl{font-size:1.875rem;}
+    h4.lg, .h4.lg{font-size:1.8125rem;}
     h5, .h5{font-size:1.5625rem;} h5.sm, .h5.sm{font-size:1.4375rem;}
 }
 @media screen and (max-width:767.98px){
     h2, .h2{font-size:2.5rem;}
     h4, .h4{font-size:1.5625rem;} h4.xl, .h4.xl{font-size:1.75rem;}
+    h4.lg, .h4.lg{font-size:1.625rem;}
     h5, .h5{font-size:1.5rem;}
     h6, .h6{font-size:1.25rem;} h5.sm, .h5.sm{font-size:1.375rem;}
 }
 @media screen and (max-width:575.98px){
     h2, .h2{font-size:2.25rem;}
     h4, .h4{font-size:1.4375rem;} h4.xl, .h4.xl{font-size:1.625rem;}
+    h4.lg, .h4.lg{font-size:1.5rem;}
     h5, .h5{font-size:1.375rem;} h5.sm, .h5.sm{font-size:1.25rem;}
     h6, .h6{font-size:1.125rem;}
     p, .p, li{font-size:.875rem;} p.lg, .p.lg{font-size:1.0625rem;} 
@@ -107,9 +112,9 @@ p.xs, .p.xs{font-size:.8125rem;}
 /* Inputs */
 input[type=text], input[type=email], input[type=password], input[type=date], input[type=tel],
 input[type=number], input[type=phone], input[type=submit], select, textarea{
-    border:1px solid transparent; border-radius:.25rem; box-shadow:none; outline:none;
+    border:1px solid transparent; border-radius:.25rem; box-shadow:none!important;
     padding:.4375rem .875rem; font-size:1rem; font-weight:300; margin:0; line-height:1.5;
-    transition:border-color .25s, color .25s;
+    outline:none!important; transition:border-color .25s, color .25s;
 }
 input[type=text].round, input[type=email].round, input[type=password].round, 
 input[type=date].round, input[type=tel].round, input[type=number].round, input[type=phone].round,
@@ -131,6 +136,38 @@ input[type=submit].round, select.round, textarea.round{border-radius:1000em;}
 .search-wrapper input, .search-wrapper select, .search-wrapper textarea{
     width:auto; max-width:100%; padding-right:2.25rem;
 }
+
+/* Input Form Group */
+.form-group{margin:.25rem 0 0 0;}
+.form-group label{margin:0 0 .125rem 0;}
+.form-group .select-wrapper, .form-group .search-wrapper{display:block; width:100%;}
+.form-group .form-control{width:100%; height:auto;}
+.form-check{margin:.5rem 0 0 0;}
+.form-check > label{
+    font-size:.875rem; font-weight:300; padding:0 0 0 .1875rem;
+    margin:.1875rem 0 0 0; cursor:pointer;
+}
+.form-check > input[type="checkbox"], .form-check > input[type="radio"]{
+    font-size:1rem; width:1rem; height:1rem; cursor:pointer
+}
+
+
+/* Book Container */
+.book-container{width:100%; height:580px; position:relative; border-radius:0; overflow:hidden;}
+@media screen and (max-width:1199.98px){
+    .book-container{height:500px;}
+}
+@media screen and (max-width:767.98px){
+    .book-container{height:420px;}
+}
+@media screen and (max-width:575.98px){
+    .book-container{height:320px;}
+}
+
+
+/* Captcha Container */
+.captcha-container{width:100%; max-width:17.5rem;}
+.captcha-container img{display:block; width:100%; height:auto;}
 
 
 /* List Header */
@@ -283,6 +320,10 @@ input[type=submit].round, select.round, textarea.round{border-radius:1000em;}
 .scroll-wrapper{width:100%; overflow:hidden;}
 .scroll-x-wrapper{width:100%; overflow-x:auto; overflow-y:hidden; padding:0 0 .875rem 0;}
 .scroll-y-wrapper{width:100%; overflow-x:hidden; overflow-y:auto; padding:0 .875rem 0 0;}
+
+
+/* Special Box */
+.ss-box{display:block; width:100%; max-width:30rem; margin:0 auto;}
 
 
 /* Special Card */
