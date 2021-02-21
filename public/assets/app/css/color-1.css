@@ -24,7 +24,13 @@ html, body, a, a:hover, table.table{color:#ffffff;}
 .bcolor-06{border-color:#ffffff!important;}
 
 
+/* Back to Top */
+.back-to-top{background:#000000; color:#ffffff!important; border-color:#ffffff;}
+
+
 /* Buttons */
+.btn.btn-color-black, .btn.btn-color-black:focus, 
+.btn.btn-color-black:hover, .btn.btn-color-black:active,
 .btn.btn-color-01, .btn.btn-color-01:focus, .btn.btn-color-01:hover, .btn.btn-color-01:active,
 .btn.btn-color-02, .btn.btn-color-02:focus, .btn.btn-color-02:hover, .btn.btn-color-02:active,
 .btn.btn-color-03, .btn.btn-color-03:focus, .btn.btn-color-03:hover, .btn.btn-color-03:active,

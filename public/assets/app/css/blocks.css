@@ -83,6 +83,44 @@
 }
 
 
+/* Intro 01 */
+.intro-01{display:block; position:relative; width:100%; height:100vh; overflow:hidden;}
+.intro-01 .intro-container{
+    position:relative; width:100%; height:calc(100% - 5rem); padding:1rem;
+    display:flex; align-items:center; justify-content:center;
+    background-size:cover; background-position:center;
+}
+.intro-01 .intro-logo{
+    display:block; width:7rem; height:auto; position:absolute; top:1rem; left:1rem;
+}
+.intro-01 h6{color:#000000;}
+.intro-01 .btns{display:flex; align-items:center; justify-content:center; height:5rem;}
+.intro-01 .btns > .btn{min-width:10rem; box-shadow:0 0 8px 4px rgba(0,0,0,.2);}
+
+.intro-01 .hero-01{display:block; width:100%; max-width:52rem; margin:0 auto 2rem auto;}
+.intro-01 .hero-02{
+    display:block; width:100%; max-width:27rem; position:absolute; top:14%; left:20%;
+}
+
+@media screen and (max-width:1199.98px){
+    .intro-01 .intro-logo{width:6.5rem;}
+}
+@media screen and (max-width:991.98px){
+    .intro-01 .intro-logo{width:6rem;}
+}
+@media screen and (max-width:767.98px){
+    .intro-01 .intro-container{padding-top:3rem;}
+    .intro-01 .intro-logo{width:5.5rem;}
+    .intro-01 .hero-02{
+        max-width:24rem; position:relative; top:auto; left:auto; margin:0 auto 4rem auto;
+    }
+}
+@media screen and (max-width:575.98px){
+    .intro-01 .intro-logo{width:5rem;}
+    .intro-01 .hero-02{max-width:20rem;}
+}
+
+
 /* Org 01 */
 .org-01 .tree{width:43rem; margin:0 auto 1.25rem auto;}
 .org-01 .node{position:relative; width:19rem; margin:1.25rem 0 0 0;}

@@ -177,33 +177,6 @@ $(function(){ 'use strict';
             }, 2000);
         }
     });
-
-
-    // Shortcode
-    var shortcodeReady = true,
-        shortcodes = $('.shortcode');
-    if(shortcodes.length){
-        shortcodes.each(function(){
-            var self = $(this),
-                target = self.find('input[type="text"]');
-            self.find('button').click(function(e){
-                e.preventDefault();
-                var thisBtn = $(this);
-                if(shortcodeReady && target.length){
-                    shortcodeReady = false;
-                    thisBtn.html('Copied!');
-                    target[0].select();
-                    target[0].setSelectionRange(0, target[0].value.length);
-                    document.execCommand('copy');
-                    target.blur();
-                    setTimeout(function(){
-                        shortcodeReady = true;
-                        thisBtn.html('Copy');
-                    }, 2000);
-                }
-            });
-        });
-    }
     
 
     // Tab Container
