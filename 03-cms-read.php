@@ -52,7 +52,10 @@
                 </p>
             </div>
             <div class="mt-2 mb-3">
-                <?php include('component/post-footer.php'); ?>
+                <?php
+                    $postFooter = ['icon-social'];
+                    include('component/post-footer.php');
+                ?>
             </div>
 
             <div class="ss-icon-title border-top bcolor-mgray">

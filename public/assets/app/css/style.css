@@ -96,6 +96,7 @@ p.xs, .p.xs{font-size:.8125rem;}
 .btn.btn-round{border-radius:1000em;}
 
 .btn.btn-sm{font-size:.875rem; padding:.5625rem 1.1875rem .4375rem 1.1875rem;}
+.btn.btn-xs{font-size:.8125rem; padding:.3125rem 1rem;}
 
 
 /* Clip Path */
@@ -247,7 +248,9 @@ input[type=submit].round, select.round, textarea.round{border-radius:1000em;}
     flex-wrap:wrap; padding:0; margin:2rem 0 0 0;
 }
 .post-footer > .block{display:flex; align-items:center; flex-wrap:wrap; margin:.1875rem 0;}
-@media screen and (max-width:575.98px){
+.post-footer .toggle-target{top:calc(100% + .5rem); left:0; width:13rem;}
+.post-footer .toggle-target textarea{width:100%; pointer-events:none;}
+@media screen and (max-width:767.98px){
     .post-footer > .block{width:100%; justify-content:center;}
 }
 
@@ -404,13 +407,22 @@ table.table .sep{
 }
 
 
+/* Toggle Target */
+.toggle-target{
+    display:block; opacity:0; pointer-events:none; transition:opacity .25s;
+    border:1px solid transparent; box-shadow:0 0 16px 8px rgba(0,0,0,.05);
+    padding:.5rem; position:absolute; z-index:10;
+}
+.toggle-target.active{opacity:1; pointer-events:auto;}
+
+
 /* Utility */
 .text-3xl{font-size:240%!important; line-height:.25;}
 .text-2xl{font-size:150%!important; line-height:.25;}
 .text-xl{font-size:128%!important;}
 .text-lg{font-size:114%!important;}
 .text-md{font-size:110%!important;}
-.text-nm{font-size:1.3125rem!important;}
+.text-nm{font-size:.9375rem!important;}
 .text-sm{font-size:90%!important;}
 .text-xs{font-size:80%!important;}
 .text-2xs{font-size:70%!important;}

@@ -93,6 +93,10 @@ table.table td{border-color:#ffff00;}
 table.table .sep{background:#ffff00;}
 
 
+/* Toggle Target */
+.toggle-target{background:#000000; border-color:#ffff00;}
+
+
 /* Org 01 */
 .org-01 .node, .org-01 .node a{color:#000000;}
 .org-01 .node::before, .org-01 .node::after{background:#ffff00;}

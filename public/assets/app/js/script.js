@@ -145,22 +145,10 @@ $(function(){ 'use strict';
     });
 
 
-    // Toggle Box
-    if($('.toggle-box').length){
-        $('.toggle-box').each(function(){
-            $(this).find('> .toggle-title').click(function(e){
-                e.preventDefault();
-                $(this).toggleClass('active');
-                $(this).next().slideToggle();
-            });
-        });
-    }
-
-
     // Button Toggle
     $('.btn-toggle').click(function(e){
         e.preventDefault();
-        $('.toggle-target[data-toggle="'+$(this).data('toggle')+'"]').slideToggle();
+        $('.toggle-target[data-toggle="'+$(this).data('toggle')+'"]').toggleClass('active');
     });
 
     // Button Popup
@@ -181,11 +169,10 @@ $(function(){ 'use strict';
             target[0].setSelectionRange(0, target[0].value.length);
             document.execCommand('copy');
             target.blur();
-            self.html('<i class="fas fa-check"></i> คัดลอกโค๊ดสำเร็จ');
+            self.html('<em class="fas fa-check mr-1"></em> คัดลอกโค๊ดสำเร็จ');
             setTimeout(function(){
                 copyReady = true;
-                self.closest('.toggle-target').slideUp();
-                self.closest('.toggle-target-02').removeClass('active');
+                self.closest('.toggle-target').removeClass('active');
                 self.html('คัดลอกโค้ด');
             }, 2000);
         }

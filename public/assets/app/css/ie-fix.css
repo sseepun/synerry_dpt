@@ -1,6 +1,10 @@
 
-/* Popup */
 @media screen and (-ms-high-contrast:active), (-ms-high-contrast:none){
+    /* Popup */
     .popup-container{display:none;}
     .popup-container.active{display:block;}
+
+    /* Toggle Target */
+    .toggle-target{display:none;}
+    .toggle-target.active{display:none;}
 }
