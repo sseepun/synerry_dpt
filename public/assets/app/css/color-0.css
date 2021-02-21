@@ -104,6 +104,11 @@ input[type=phone]:focus, input[type=submit]:focus, select:focus, textarea:focus{
 .ss-card-02:hover .text-container .ss-stat .stat,
 .ss-card-02:hover  .text-container .arrow{color:#ffffff;}
 
+/* Special Card 03 */
+.ss-card-03 .text-container{background:#f2f2f2;}
+.ss-card-03:hover .text-container{background:#fe4d01;}
+.ss-card-03:hover .text-container .title{color:#ffffff;}
+
 
 /* Special Icon Title */
 .ss-icon-title > em{background:#fe4d01; color:#ffffff;}

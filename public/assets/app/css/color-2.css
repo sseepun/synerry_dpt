@@ -72,6 +72,11 @@ input[type=number], input[type=phone], input[type=submit], select, textarea{
 .ss-card-02:hover .text-container .ss-stat .stat,
 .ss-card-02:hover  .text-container .arrow{color:#000000;}
 
+/* Special Card 03 */
+.ss-card-03 .text-container{border:1px solid #ffff00;}
+.ss-card-03:hover .text-container{background:#ffff00;}
+.ss-card-03:hover .text-container .title{color:#000000;}
+
 
 /* Special Icon Title */
 .ss-icon-title > em{background:#ffff00; color:#000000;}
