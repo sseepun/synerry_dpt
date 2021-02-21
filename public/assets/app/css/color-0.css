@@ -1,6 +1,6 @@
 
 /* Reset */
-html, body, a, a:hover{color:#2b2b2a;}
+html, body, a, a:hover, table.table{color:#2b2b2a;}
 
 
 /* Colors */
@@ -10,6 +10,7 @@ html, body, a, a:hover{color:#2b2b2a;}
 .color-mgray, .h-color-mgray:hover{color:#c6c6c6!important;}
 .color-sgray, .h-color-sgray:hover{color:#e1e1e1!important;}
 .color-01, .h-color-01:hover{color:#fe4d01!important;}
+.color-02, .h-color-02:hover{color:#ffb739!important;}
 
 .bg-white{background:#ffffff!important;}
 .bg-black{background:#000000!important;}
@@ -17,6 +18,7 @@ html, body, a, a:hover{color:#2b2b2a;}
 .bg-sgray{background:#c6c6c6!important;}
 .bg-mgray{background:#e1e1e1!important;}
 .bg-01{background:#fe4d01!important;}
+.bg-02{background:#ffb739!important;}
 
 .bcolor-white{border-color:#ffffff!important;}
 .bcolor-black{border-color:#000000!important;}
@@ -24,6 +26,7 @@ html, body, a, a:hover{color:#2b2b2a;}
 .bcolor-mgray{border-color:#c6c6c6!important;}
 .bcolor-sgray{border-color:#e1e1e1!important;}
 .bcolor-01{border-color:#fe4d01!important;}
+.bcolor-02{border-color:#ffb739!important;}
 
 
 /* Buttons */
@@ -34,6 +37,10 @@ html, body, a, a:hover{color:#2b2b2a;}
 .btn.btn-color-02, .btn.btn-color-02:focus{color:#ffffff; background:#a7a7a7;}
 .btn.btn-color-02:hover{background:#fe4d01;}
 .btn.btn-color-02:active{background:#fe4d01; box-shadow:inset 0 0 0 100rem rgba(0,0,0,.05);}
+
+.btn.btn-color-03, .btn.btn-color-03:focus{color:#ffffff; background:#ffb739;}
+.btn.btn-color-03:hover{box-shadow:inset 0 0 0 100rem rgba(0,0,0,.05);}
+.btn.btn-color-03:active{box-shadow:inset 0 0 0 100rem rgba(0,0,0,.10);}
 
 .btn.btn-social.fw{background:#3b56a3; color:#ffffff;}
 .btn.btn-social.tw{background:#05b0f6; color:#ffffff;}
@@ -133,6 +140,20 @@ table.table .sep{background:#cccccc;}
 
 /* Toggle Target */
 .toggle-target{background:#ffffff; border-color:#e1e1e1;}
+
+
+/* Faq 01 */
+.faq-01 .faq > .question{background:#f1f1f1; border-color:#e1e1e1;}
+.faq-01 .faq.active > .question{background:#fe4d01; border-color:#fe4d01;}
+.faq-01 .faq > .question h6{color:#000000;}
+.faq-01 .faq.active > .question h6{color:#ffffff;}
+.faq-01 .faq > .question .ftag{background:#fe4d01; color:#ffffff;}
+.faq-01 .faq.active > .question .ftag{background:#993300;}
+.faq-01 .faq > .question .arrow{background:#a0aec1;}
+.faq-01 .faq.active > .question .arrow{background:#993300;}
+.faq-01 .faq .arrow::before, .faq-01 .faq .arrow::after{background:#ffffff;}
+.faq-01 .faq > .answer .ftag{background:#ffb739; color:#ffffff;}
+.faq-01 .faq > .answer .content{background:#f1f1f1;}
 
 
 /* Org 01 */

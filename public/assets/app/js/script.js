@@ -224,6 +224,25 @@ $(function(){ 'use strict';
         });
     }
 
+    
+    // FAQ 01
+    var faq01 = $('.faq-01');
+    if(faq01.length){
+        faq01.each(function(){
+            $(this).find('.faq > .question').click(function(e){
+                e.preventDefault();
+                var parent = $(this).parent();
+                if(parent.hasClass('active')){
+                    parent.removeClass('active');
+                    parent.find('> .answer').slideUp();
+                }else{
+                    parent.addClass('active');
+                    parent.find('> .answer').slideDown();
+                }
+            });
+        });
+    }
+
 
     // Page Loader
     if($('.page-loader').length){

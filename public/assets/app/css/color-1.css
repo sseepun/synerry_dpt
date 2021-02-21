@@ -1,7 +1,7 @@
 
 /* Reset */
 html, body{background:#000000;}
-html, body, a, a:hover{color:#ffffff;}
+html, body, a, a:hover, table.table{color:#ffffff;}
 
 
 /* Colors */
@@ -9,18 +9,20 @@ html, body, a, a:hover{color:#ffffff;}
 .color-gray, .h-color-gray:hover, 
 .color-mgray, .h-color-mgray:hover, 
 .color-sgray, .h-color-sgray:hover,
-.color-01, .h-color-01:hover{color:#ffffff!important;}
+.color-01, .h-color-01:hover,
+.color-02, .h-color-02:hover{color:#ffffff!important;}
 
 .bg-white, .bg-black, .bg-gray, .bg-mgray, .bg-sgray,
-.bg-01{background:#000000!important;}
+.bg-01, .bg-02{background:#000000!important;}
 
 .bcolor-white, .bcolor-black, .bcolor-gray, .bcolor-mgray, .bcolor-sgray, 
-.bcolor-01{border-color:#ffffff!important;}
+.bcolor-01, .bcolor-02{border-color:#ffffff!important;}
 
 
 /* Buttons */
 .btn.btn-color-01, .btn.btn-color-01:focus, .btn.btn-color-01:hover, .btn.btn-color-01:active,
-.btn.btn-color-02, .btn.btn-color-02:focus, .btn.btn-color-02:hover, .btn.btn-color-02:active{
+.btn.btn-color-02, .btn.btn-color-02:focus, .btn.btn-color-02:hover, .btn.btn-color-02:active,
+.btn.btn-color-03, .btn.btn-color-03:focus, .btn.btn-color-03:hover, .btn.btn-color-03:active{
     color:#000000; background:#ffffff;
 }
 
@@ -100,6 +102,19 @@ table.table .sep{background:#ffffff;}
 
 /* Toggle Target */
 .toggle-target{background:#000000; border-color:#ffffff;}
+
+
+/* Faq 01 */
+.faq-01 .faq > .question{background:#000000; border-color:#ffffff;}
+.faq-01 .faq.active > .question{background:#ffffff;}
+.faq-01 .faq > .question h6{color:#ffffff;}
+.faq-01 .faq.active > .question h6{color:#000000;}
+.faq-01 .faq .ftag, .faq-01 .faq .arrow{background:#ffffff; color:#000000;}
+.faq-01 .faq.active .ftag, .faq-01 .faq.active .arrow{background:#000000; color:#ffffff;}
+.faq-01 .faq .arrow::before, .faq-01 .faq .arrow::after{background:#000000;}
+.faq-01 .faq.active .arrow::before, .faq-01 .faq.active .arrow::after{background:#ffffff;}
+.faq-01 .faq > .answer .ftag{background:#ffffff; color:#000000;}
+.faq-01 .faq > .answer .content{border-color:#ffffff;}
 
 
 /* Org 01 */

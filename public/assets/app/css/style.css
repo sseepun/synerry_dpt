@@ -538,6 +538,8 @@ table.table .sep{
 .ovf-hidden{overflow:hidden;}
 .clear-both{clear:both;}
 
+.va-baseline{vertical-align:baseline!important;}
+
 @media screen and (max-width:1199.98px){
     .lg-no-br > br{display:none;}
 }
