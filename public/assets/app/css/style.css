@@ -22,6 +22,8 @@ input[type=number], input[type=phone], input[type=submit], select, textarea, but
     font-family:'Sukhumvit', sans-serif;
 }
 
+html.topnav-dropdown-opened, body.topnav-dropdown-opened,
+html.global-search-opened, body.global-search-opened{overflow-y:hidden!important;}
 @media screen and (max-width:991.98px){
     html.sidenav-opened, body.sidenav-opened{overflow-y:hidden!important;}
 }
@@ -123,17 +125,13 @@ input[type=submit].round, select.round, textarea.round{border-radius:1.25rem;}
 /* Input Wrapper */
 .select-wrapper, .search-wrapper, .date-wrapper{display:inline-block; position:relative;}
 .select-wrapper::after, .search-wrapper::after, .date-wrapper::after{
-    font:normal normal normal 14px/1 'Material-Design-Iconic-Font'; 
+    font-family:'Font Awesome 5 Free'; font-size:1.125rem; font-weight:300;
     position:absolute; top:0; bottom:0; right:.375rem; width:1.75rem; pointer-events:none;
     display:flex; align-items:center; justify-content:center;
 }
-.select-wrapper::after{
-    content:'\f078'; font-family:'Font Awesome 5 Free'; font-size:.75rem; font-weight:900;
-}
-.search-wrapper::after{content:'\f1c3'; font-size:1.125rem;}
-.date-wrapper::after{
-    content:'\f073'; font-family:'Font Awesome 5 Free'; font-size:1.125rem; left:.375rem; right:auto;
-}
+.select-wrapper::after{content:'\f078'; font-size:.75rem; font-weight:900;}
+.search-wrapper::after{content:'\f002'; font-size:.875rem; font-weight:900;}
+.date-wrapper::after{content:'\f073'; font-size:1.125rem; left:.375rem; right:auto;}
 .select-wrapper select, .search-wrapper select, .date-wrapper select{
     -moz-appearance:none; -moz-appearance:none; -webkit-appearance:none; appearance:none;
 }
@@ -177,6 +175,23 @@ input[type=submit].round, select.round, textarea.round{border-radius:1.25rem;}
 /* Captcha Container */
 .captcha-container{width:100%; max-width:17.5rem;}
 .captcha-container img{display:block; width:100%; height:auto;}
+
+
+/* Hamburger */
+.hamburger{cursor:pointer;}
+.hamburger > *{
+    width:1.625rem; height:.125rem; transform:translateX(.375rem); transition:all .45s;
+}
+.hamburger > *:nth-child(2){margin:.4375rem 0; width:2rem; transform:none;}
+.hamburger.active > *:nth-child(1){
+    width:2rem; -webkit-transform:rotate(-45deg)translate(-.4rem, .4rem);
+    transform:rotate(-45deg)translate(-.4rem, .4rem);
+}
+.hamburger.active > *:nth-child(2){opacity:0; transform:translateX(2rem);}
+.hamburger.active > *:nth-child(3){
+    width:2rem; -webkit-transform:rotate(45deg)translate(-.4rem,-.4rem);
+    transform:rotate(45deg)translate(-.4rem, -.4rem);
+}
 
 
 /* List Header */

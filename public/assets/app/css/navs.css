@@ -1,4 +1,150 @@
 
+/* Topnav */
+nav.topnav{position:fixed; top:0; left:0; width:100%; transition:transform .25s; z-index:95;}
+nav.topnav .blocks{width:100%; display:flex; align-items:center; justify-content:space-between;}
+nav.topnav .block{display:flex; align-items:center;}
+nav.topnav .logo{
+    display:flex; align-items:center; justify-content:center;
+    border-right:1px solid transparent; transition:background .25s;
+}
+nav.topnav .logo > img{
+    display:block; width:auto; max-width:calc(100% - .875rem);
+    height:auto; max-height:calc(100% - .875rem);
+}
+nav.topnav .menu-container{display:flex; align-items:center;}
+nav.topnav .menu{display:block; position:relative;}
+nav.topnav .menu > a{
+    display:flex; align-items:flex-end; border-right:1px solid transparent;
+    padding:.3125rem .625rem; font-size:.9375rem; font-weight:100; white-space:nowrap;
+    transition:background .25s, color .25s;
+}
+nav.topnav .menu > a .num{
+    font-size:1.75rem; font-weight:600; line-height:1.1; margin:0 .25rem 0 0;
+}
+nav.topnav .option{
+    display:flex; align-items:center; justify-content:center; border-left:1px solid transparent;
+    font-size:2.25rem; transition:background .25s, color .25s;
+}
+nav.topnav .logo, nav.topnav .menu > a, nav.topnav .option{width:3.875rem; height:3.875rem;}
+nav.topnav .menu > a{width:auto;}
+nav.topnav + .topnav-spacer{display:block; width:100%; height:3.875rem;}
+@media screen and (max-width:1199.98px){
+    nav.topnav .menu-container{display:none;}
+    nav.topnav .option{font-size:2.125rem;}
+    nav.topnav .logo, nav.topnav .menu > a, nav.topnav .option{width:3.5rem; height:3.5rem;}
+    nav.topnav + .topnav-spacer{height:3.5rem;}
+}
+
+
+/* Topnav Option */
+.topnav-option{width:100%; display:block; background-size:cover; background-position:center;}
+.topnav-option .blocks{width:100%; display:flex; align-items:center; justify-content:flex-end;}
+.topnav-option .block{position:relative; margin:0 0 0 1.125rem; padding:.5625rem 0;}
+.topnav-option .text{
+    display:inline-block; font-size:.8125rem; font-weight:500; margin:0 .1875rem 0 0;
+}
+.topnav-option .btn.btn-circle{
+    display:inline-block; width:1.5rem; height:1.5rem; line-height:1.5rem;
+    padding:0; margin:0; font-size:.8125rem; text-align:center; border-radius:50%;
+}
+.topnav-option .btn.font-size-btn{font-size:1rem; font-weight:500; line-height:1.4375rem;}
+.topnav-option .btn.theme-btn{font-size:.8125rem; font-weight:600;}
+.topnav-option .flag-wrapper{
+    display:flex; align-items:center; padding:.125rem .375rem .125rem .125rem; width:5.5rem;
+    font-size:.8125rem; font-weight:500; cursor:pointer; transition:background .25s;
+}
+.topnav-option .flag-icon{
+    position:relative; display:block; width:1.25rem; height:1.25rem; border-radius:50%;
+    background-size:cover; background-position:center;
+}
+.topnav-option .flag-wrapper > .text{margin:.125rem .375rem 0 .375rem;}
+.topnav-option .flag-wrapper > em{
+    position:absolute; top:0; bottom:0; right:.3125rem; display:flex; align-items:center;
+    font-size:.5625rem; transform:translateY(.0625rem);
+}
+.topnav-option .dropdown .flag-wrapper{width:100;}
+.topnav-option .dropdown{
+    position:absolute; top:100%; left:0; border-radius:.25rem;
+    padding:.25rem 0; opacity:0; pointer-events:none; transition:opacity .25s;
+}
+.topnav-option .block:hover > .dropdown{opacity:1; pointer-events:auto;}
+.topnav-option .circular{border-radius:50% 0 50% 50%;}
+.topnav-option .flag-wrapper.circular{border-radius:.75rem 0 .75rem .75rem;}
+.topnav-option .shadow{box-shadow:2px 2px 10px 4px rgba(0,0,0,0.20);}
+@media screen and (max-width:767.98px){
+    .topnav-option{display:none;}
+}
+
+
+/* Topnav Dropdown */
+.topnav-dropdown{
+    display:block; position:fixed; top:0; left:0; width:100%; height:100vh; z-index:100;
+    opacity:0; pointer-events:none; background:rgba(0,0,0,.7); transition:opacity .45s;
+}
+.topnav-dropdown.active{opacity:1; pointer-events:all;}
+.topnav-dropdown > .wrapper{
+    position:relative; width:100%; height:100%; display:flex; justify-content:flex-end;
+    padding:0 3.875rem;
+}
+.topnav-dropdown .close-filter{
+    position:absolute; top:0; bottom:0; left:0; right:0; cursor:pointer;
+}
+.topnav-dropdown .btn-container{
+    display:flex; align-items:center; justify-content:center; width:3.875rem; height:3.875rem;
+    cursor:pointer; transition:background .25s;
+}
+.topnav-dropdown .content-container{
+    position:relative; width:calc(100% - 7.75rem); height:calc(100% - 4rem);
+    display:flex; align-items:center; justify-content:center; padding:1rem 4rem;
+}
+@media screen and (max-width:1199.98px){
+    .topnav-dropdown > .wrapper{padding:0 3.5rem;}
+    .topnav-dropdown .btn-container{width:3.5rem; height:3.5rem;}
+    .topnav-dropdown .content-container{width:calc(100% - 7rem);}
+}
+@media screen and (max-width:991.98px){
+    .topnav-dropdown > .wrapper{padding:0;}
+}
+@media screen and (max-width:767.98px){
+    .topnav-dropdown .content-container{padding:1rem 3rem;}
+}
+@media screen and (max-width:575.98px){
+    .topnav-dropdown .content-container{width:calc(100% - 3.5rem); padding:1rem;}
+}
+
+
+/* Global Search */
+.global-search-container{
+    display:block; position:fixed; top:0; left:0; width:100%; height:100vh; z-index:100;
+    opacity:0; pointer-events:none; background:rgba(0,0,0,.7); transition:opacity .45s;
+}
+.global-search-container.active{opacity:1; pointer-events:all;}
+.global-search-container > .wrapper{
+    position:relative; width:100%; height:100%; display:flex; justify-content:flex-end;
+}
+.global-search-container .close-filter{
+    position:absolute; top:0; bottom:0; left:0; right:0; cursor:pointer;
+}
+.global-search-container .btn-container{
+    display:flex; align-items:center; justify-content:center; width:3.875rem; height:3.875rem;
+    cursor:pointer; transition:background .25s;
+}
+.global-search-container .content-container{
+    position:relative; width:calc(100% - 7.75rem); height:calc(100% - 4rem);
+    display:flex; align-items:center; justify-content:center; padding:1rem 4rem;
+}
+@media screen and (max-width:1199.98px){
+    .global-search-container .btn-container{width:3.5rem; height:3.5rem;}
+    .global-search-container .content-container{width:calc(100% - 7rem);}
+}
+@media screen and (max-width:767.98px){
+    .global-search-container .content-container{padding:1rem 3rem;}
+}
+@media screen and (max-width:575.98px){
+    .global-search-container .content-container{width:calc(100% - 3.5rem); padding:1rem;}
+}
+
+
 /* Footer Pattern */
 .footer-pattern{width:100%; overflow:hidden; margin:2rem 0 0 0;}
 .footer-pattern > img{display:block; width:100%; height:auto;}

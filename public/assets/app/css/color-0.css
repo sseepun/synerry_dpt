@@ -41,6 +41,45 @@ html, body, a, a:hover, table.table{color:#2b2b2a;}
 .bcolor-06{border-color:#a0e8d0!important;}
 
 
+/* Topnav */
+nav.topnav{background:#152228;}
+nav.topnav .logo{background:#fe4d01;}
+nav.topnav .logo:hover{background:#993300;}
+nav.topnav .menu > a{color:#ffffff; border-color:#6c7073;}
+nav.topnav .menu > a:hover, nav.topnav .menu.active > a{background:#fe4d01;}
+nav.topnav .option{background:#000000; color:#ffffff;}
+nav.topnav .option:hover{background:#fe4d01;}
+nav.topnav .option.global-search-toggle{background:#fe4d01;}
+nav.topnav .option.global-search-toggle:hover{background:#993300;}
+nav.topnav .hamburger > *{background:#ffffff;}
+
+/* Topnav Option */
+.topnav-option .text{color:#000000;}
+.topnav-option .btn.btn-circle, .topnav-option .btn.btn-circle:focus{
+    background:#ffffff; color:#fe4d01;
+}
+.topnav-option .btn.btn-circle:hover{background:#fe4d01; color:#ffffff;}
+.topnav-option .btn.btn-circle:active{box-shadow:inset 0 0 0 100rem rgba(0,0,0,.10);}
+.topnav-option .btn.font-size-btn, .topnav-option .btn.theme-btn{color:#000000;}
+.topnav-option .btn.font-size-btn:hover, .topnav-option .btn.theme-btn:hover{color:#ffffff;}
+.topnav-option .flag-wrapper{background:#ffffff; color:#000000;}
+.topnav-option .flag-wrapper:hover{background:#eeeeee;}
+.topnav-option .dropdown{background:#ffffff;}
+.topnav-option .btn.theme-btn[data-theme="1"]{background:#000000; color:#ffff00;}
+.topnav-option .btn.theme-btn[data-theme="2"]{background:#000000; color:#00ffff;}
+
+/* Topnav Dropdown */
+.topnav-dropdown .btn-container{background:#fe4d01;}
+.topnav-dropdown .btn-container:hover{background:#993300;}
+.topnav-dropdown .hamburger > *{background:#ffffff;}
+.topnav-dropdown .content-container{background:#ffffff;}
+
+/* Global Search */
+.global-search-container .btn-container{background:#fe4d01;}
+.global-search-container .btn-container:hover{background:#993300;}
+.global-search-container .hamburger > *{background:#ffffff;}
+.global-search-container .content-container{background:#ffffff;}
+
 /* Back to Top */
 .back-to-top{background:rgba(254,77,1,.85); color:#ffffff!important; border-color:#ffffff;}
 

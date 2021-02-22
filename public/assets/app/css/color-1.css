@@ -24,6 +24,43 @@ html, body, a, a:hover, table.table{color:#ffffff;}
 .bcolor-06{border-color:#ffffff!important;}
 
 
+/* Topnav */
+nav.topnav{background:#000000; border-bottom:1px solid #ffffff;}
+nav.topnav .logo{background:#fe4d01;}
+nav.topnav .logo:hover{background:#993300;}
+nav.topnav .menu > a{color:#ffffff; border-color:#ffffff;}
+nav.topnav .menu > a:hover, nav.topnav .menu.active > a{background:#ffffff; color:#000000;}
+nav.topnav .option{background:#000000; color:#ffffff; border-color:#ffffff;}
+nav.topnav .option:hover{background:#ffffff; color:#000000;}
+nav.topnav .hamburger > *{background:#ffffff;}
+nav.topnav .option:hover .hamburger > *{background:#000000;}
+
+/* Topnav Option */
+.topnav-option{background:#000000!important; border-bottom:1px solid #ffffff;}
+.topnav-option .text{color:#ffffff;}
+.topnav-option .btn.btn-circle, .topnav-option .btn.btn-circle:focus,
+.topnav-option .btn.btn-circle:hover, .topnav-option .btn.btn-circle:active,
+.topnav-option .btn.font-size-btn, .topnav-option .btn.theme-btn{
+    background:#ffffff; color:#000000;
+}
+.topnav-option .flag-wrapper{background:#ffffff; color:#000000;}
+.topnav-option .flag-wrapper > .text{color:#000000;}
+.topnav-option .dropdown{background:#ffffff; border:1px solid #ffffff;}
+.topnav-option .btn.theme-btn{border:1px solid #ffffff;}
+.topnav-option .btn.theme-btn[data-theme="0"]{background:#ffffff; color:#000000;}
+.topnav-option .btn.theme-btn[data-theme="1"]{background:#000000; color:#ffff00;}
+.topnav-option .btn.theme-btn[data-theme="2"]{background:#000000; color:#00ffff;}
+
+/* Topnav Dropdown */
+.topnav-dropdown .btn-container{background:#ffffff;}
+.topnav-dropdown .hamburger > *{background:#000000;}
+.topnav-dropdown .content-container{background:#000000; border:1px solid #ffffff;}
+
+/* Global Search */
+.global-search-container .btn-container{background:#ffffff;}
+.global-search-container .hamburger > *{background:#000000;}
+.global-search-container .content-container{background:#000000; border:1px solid #ffffff;}
+
 /* Back to Top */
 .back-to-top{background:#000000; color:#ffffff!important; border-color:#ffffff;}
 

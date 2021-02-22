@@ -1,5 +1,14 @@
 
 @media screen and (-ms-high-contrast:active), (-ms-high-contrast:none){
+    
+    /* Topnav Option */
+    .topnav-option .dropdown{display:none;}
+    .topnav-option .block:hover > .dropdown{display:block;}
+    
+    /* Global Search */
+    .global-search-container{display:none;}
+    .global-search-container.active{display:block;}
+
     /* Popup */
     .popup-container{display:none;}
     .popup-container.active{display:block;}
@@ -7,4 +16,5 @@
     /* Toggle Target */
     .toggle-target{display:none;}
     .toggle-target.active{display:none;}
+
 }
