@@ -701,6 +701,8 @@ table.table.table-lg td:last-child{padding:.6875rem 0 .6875rem .625rem;}
 .border-bottom-3{border-bottom:3px solid transparent!important;}
 .border-bottom-4{border-bottom:4px solid transparent!important;}
 
+.bradius-round{border-radius:1rem!important;}
+
 .no-bradius{border-radius:0!important;}
 .no-padding{padding:0!important;}
 .box-shadow{box-shadow:0px 5px 20px 10px rgba(0,0,0,.1);}

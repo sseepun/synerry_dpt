@@ -17,8 +17,7 @@
         include('component/breadcrumb-secretary.php');
     ?>
     
-    <section class="section-padding section-pattern-01" data-aos="fade-up" data-aos-delay="300" 
-    style="background-image:url('public/assets/app/images/bg/pattern-01.png');">
+    <section class="section-padding section-pattern-01" style="background-image:url('public/assets/app/images/bg/pattern-01.png');" data-aos="fade-up" data-aos-delay="300">
         <div class="container">
             <?php
                 $categories = [

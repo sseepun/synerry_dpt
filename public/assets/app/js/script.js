@@ -56,11 +56,14 @@ $(function(){ 'use strict';
     
     // Check on Scroll
     function checkOnScroll(st){
-        if(st > 3.0625*bodySize){
+        if(st > 4*bodySize){
             backToTop.addClass('active');
-            topnavSecretary.addClass('sticky');
         }else{
             backToTop.removeClass('active');
+        }
+        if(st > 16*bodySize){
+            topnavSecretary.addClass('sticky');
+        }else{
             topnavSecretary.removeClass('sticky');
         }
     }
