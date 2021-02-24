@@ -165,6 +165,11 @@ table.table .ticon{color:#000000!important; background:#ffff00!important;}
 .toggle-target{background:#000000; border-color:#ffff00;}
 
 
+/* Contact Card 01 */
+.contact-card-01{background:#000000; border:1px solid #ffff00;}
+.contact-card-01 .contact-tag{color:#ffff00; opacity:.25;}
+
+
 /* Faq 01 */
 .faq-01 .faq > .question{background:#000000; border-color:#ffff00;}
 .faq-01 .faq.active > .question{background:#ffff00;}

@@ -59,6 +59,20 @@
 }
 
 
+/* Contact Card 01 */
+.contact-card-01{position:relative; width:100%; height:6.25rem; padding:1rem; overflow:hidden;}
+.contact-card-01 p, .contact-card-01 a{position:relative;}
+.contact-card-01 a:hover{opacity:.75;}
+.contact-card-01 .contact-tag{
+    position:absolute; bottom:-1.5rem; right:.5rem; opacity:.6; transition:transform ease .5s;
+}
+.contact-card-01:hover .contact-tag{transform:scale(1.4)rotate(15deg);}
+.contact-card-01 .contact-tag > em{font-size:6rem; line-height:1;}
+.contact-card-01 .contact-tag > img{
+    display:block; width:auto; max-width:6.875rem; height:auto; max-height:6.875rem;
+}
+
+
 /* Faq 01 */
 .faq-01{width:100%;}
 .faq-01 .faq{width:100%; margin:.4375rem 0 0 0;}

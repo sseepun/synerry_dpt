@@ -103,7 +103,7 @@
             <div class="section-padding border-top-2 bcolor-sgray">
                 <div class="ss-box-lg">
                     <div data-aos="fade-up" data-aos-delay="0">
-                        <h6 class="h4 lg fw-600 text-center">
+                        <h6 class="h4 lg fw-600 color-black text-center">
                             แบบฟอร์มติดต่อเรา
                         </h6>
                         <p class="lg text-center mt-1">

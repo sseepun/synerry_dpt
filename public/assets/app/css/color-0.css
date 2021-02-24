@@ -220,6 +220,11 @@ table.table .ticon{color:#ffffff;}
 .toggle-target{background:#ffffff; border-color:#e1e1e1;}
 
 
+/* Contact Card 01 */
+.contact-card-01{background:#dbe8f9;}
+.contact-card-01 .contact-tag{color:#ffffff;}
+
+
 /* Faq 01 */
 .faq-01 .faq > .question{background:#f1f1f1; border-color:#e1e1e1;}
 .faq-01 .faq.active > .question{background:#fe4d01; border-color:#fe4d01;}
