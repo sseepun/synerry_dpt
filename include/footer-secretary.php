@@ -5,11 +5,6 @@
 </a>
 
 <!-- Footer -->
-<?php if(!isset($footerNoPattern)){?>
-    <div class="footer-pattern">
-        <img src="public/assets/app/images/bg/footer.png" alt="Footer Pattern" />
-    </div>
-<?php }?>
 <nav class="footer">
     <div class="container">
         <div class="blocks">
@@ -48,20 +43,19 @@
                             <div class="info">
                                 <h6 class="p sm fw-400">โทรศัพท์</h6>
                                 <p>
-                                    <a href="#">02-140-7000</a>
+                                    <a href="#">02-140-6000</a>
+                                </p>
+                            </div>
+                            <div class="info">
+                                <h6 class="p sm fw-400">โทรสาร</h6>
+                                <p>
+                                    <a href="#">02-140-6228</a>
                                 </p>
                             </div>
                             <div class="info">
                                 <h6 class="p sm fw-400">อีเมล</h6>
                                 <p>
-                                    <a href="#">servicelink@energy.go.th</a>
-                                </p>
-                            </div>
-                            <div class="info">
-                                <h6 class="p sm fw-400">สำนักงานปลัดกระทรวงพลังงาน</h6>
-                                <p>
-                                    โทร <a href="#">02-140-5000</a> , 
-                                    โทรสาร <a href="#">02-140-6228</a> 
+                                    <a href="#">secretary@energy.go.th</a>
                                 </p>
                             </div>
                             <div class="info">

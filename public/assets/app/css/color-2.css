@@ -71,7 +71,8 @@ nav.topnav .option:hover .hamburger > *{background:#000000;}
 .btn.btn-color-01, .btn.btn-color-01:focus, .btn.btn-color-01:hover, .btn.btn-color-01:active,
 .btn.btn-color-02, .btn.btn-color-02:focus, .btn.btn-color-02:hover, .btn.btn-color-02:active,
 .btn.btn-color-03, .btn.btn-color-03:focus, .btn.btn-color-03:hover, .btn.btn-color-03:active,
-.btn.btn-color-04, .btn.btn-color-04:focus, .btn.btn-color-04:hover, .btn.btn-color-04:active{
+.btn.btn-color-04, .btn.btn-color-04:focus, .btn.btn-color-04:hover, .btn.btn-color-04:active,
+.btn.btn-color-05, .btn.btn-color-05:focus, .btn.btn-color-05:hover, .btn.btn-color-05:active{
     color:#000000; background:#ffff00;
 }
 
@@ -91,13 +92,6 @@ input[type=number], input[type=phone], input[type=submit], select, textarea{
 /* List Header */
 .list-header .option{color:#ffff00; background:#000000; border-color:#ffff00;}
 .list-header .option:hover, .list-header .option.active{color:#000000; background:#ffff00;}
-
-
-/* Pagination */
-.pagination .page-btn{color:#000000; border-color:#ffff00; background:#ffff00;}
-.pagination .page-btn:hover, .pagination .page-btn.active{
-    background:#000000!important; color:#ffff00;
-}
 
 
 /* Popup */
@@ -121,12 +115,29 @@ input[type=number], input[type=phone], input[type=submit], select, textarea{
 .ss-card-02 .text-container .arrow{color:#ffff00;}
 .ss-card-02:hover .text-container .title, .ss-card-02:hover .text-container .desc,
 .ss-card-02:hover .text-container .ss-stat .stat,
-.ss-card-02:hover  .text-container .arrow{color:#000000;}
+.ss-card-02:hover .text-container .arrow{color:#000000;}
 
 /* Special Card 03 */
 .ss-card-03 .text-container{border:1px solid #ffff00;}
 .ss-card-03:hover .text-container{background:#ffff00;}
 .ss-card-03:hover .text-container .title{color:#000000;}
+
+/* Special Card 04 */
+.ss-card-04 .text-container{background:#000000; border-color:#ffff00;}
+.ss-card-04:hover .text-container{background:#ffff00;}
+.ss-card-04 .text-container .card-tag{background:#ffff00; color:#000000;}
+.ss-card-04 .text-container .arrow{color:#ffff00;}
+.ss-card-04:hover .text-container .title, .ss-card-04:hover .text-container .ss-stat .stat,
+.ss-card-04:hover .text-container .arrow{color:#000000;}
+
+/* Special Card 05 */
+.ss-card-05 .text-container{background:#000000; border-color:#ffff00;}
+.ss-card-05:hover .text-container{background:#ffff00;}
+.ss-card-05 .text-container .card-tag{background:#ffff00; color:#000000;}
+.ss-card-05 .arrows .slick-arrow{color:#ffff00;}
+.ss-card-05:hover .text-container .title, .ss-card-05:hover .text-container .desc, 
+.ss-card-05:hover .text-container .ss-stat .stat,
+.ss-card-05:hover .arrows .slick-arrow{color:#000000;}
 
 
 /* Special Icon Title */
@@ -175,6 +186,13 @@ table.table .ticon{color:#000000!important; background:#ffff00!important;}
 .org-01 .node.node-01 .children{background:#ffff00;}
 .org-01 .node .child{background:#000000; color:#ffff00;}
 .org-01 .node .child:hover > *{background:#ffff00; color:#000000;}
+
+
+/* Pagination 01 */
+.pagination-01 .page-btn{color:#000000; border-color:#ffff00; background:#ffff00;}
+.pagination-01 .page-btn:hover, .pagination-01 .page-btn.active{
+    background:#000000!important; color:#ffff00;
+}
 
 
 /* Sitemap 01 */

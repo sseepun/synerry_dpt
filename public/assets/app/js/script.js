@@ -1,7 +1,8 @@
 $(function(){ 'use strict';
 
     // Topnav
-    var topnav = $('nav.topnav');
+    var topnav = $('nav.topnav'),
+        topnavSecretary = $('nav.topnav-secretary');
 
 
     // Topnav Dropdown
@@ -57,8 +58,10 @@ $(function(){ 'use strict';
     function checkOnScroll(st){
         if(st > 3.0625*bodySize){
             backToTop.addClass('active');
+            topnavSecretary.addClass('sticky');
         }else{
             backToTop.removeClass('active');
+            topnavSecretary.removeClass('sticky');
         }
     }
     checkOnScroll( $(window).scrollTop() );
@@ -126,9 +129,41 @@ $(function(){ 'use strict';
                 e.preventDefault();
                 tabs.removeClass('active');
                 $(this).addClass('active');
+
+                var target = tabContents.filter('[data-tab="'+$(this).data('tab')+'"]'),
+                    slideContainers = target.find('.slide-container');
+
                 tabContents.removeClass('active');
-                tabContents.filter('[data-tab="'+$(this).data('tab')+'"]').addClass('active');
+                target.addClass('active');
+                
+                if(slideContainers.length){
+                    slideContainers.each(function(){
+                        $(this).find('.slides').slick('setPosition');
+                    });
+                }
+
                 AOS.refresh();
+            });
+        });
+    }
+
+    
+    // Special Card 05
+    var ssCard05 = $('.ss-card-05.use-slick');
+    if(ssCard05.length){
+        ssCard05.each(function(){
+            var self = $(this),
+                slideContainer = self.find('.slide-container'),
+                slides = slideContainer.find('> .slides'),
+                imageWrappers = self.find('.img-wrapper');
+            slides.slick({
+                centerMode: false, infinity: true, centerPadding: 0, slidesToShow: 1, 
+                focusOnSelect: true, autoplay: false, autoplaySpeed: 4000, speed: 600,
+                arrows: true, appendArrows: slideContainer.find('.arrows'), dots: false
+            });
+            slides.on('beforeChange', function(e, s, c, i){
+                imageWrappers.removeClass('active');
+                imageWrappers.filter('[data-i="'+i+'"]').addClass('active');
             });
         });
     }

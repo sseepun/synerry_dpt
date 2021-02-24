@@ -17,4 +17,8 @@
     .toggle-target{display:none;}
     .toggle-target.active{display:none;}
 
+    /* Special Card 05 */
+    .ss-card-05 > .img-container .img-wrapper{display:none;}
+    .ss-card-05 > .img-container .img-wrapper.active{display:block;}
+
 }

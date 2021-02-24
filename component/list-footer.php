@@ -10,7 +10,7 @@
         <?php }?>
         <?php if(in_array('pagination', $listFooter)){?>
             <div class="block">
-                <div class="pagination">
+                <div class="pagination-01">
                     <div class="wrapper">
                         <a href="#" class="page-btn page-prev disabled">
                             <em class="zmdi zmdi-arrow-left"></em>
