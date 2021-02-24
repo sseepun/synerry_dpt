@@ -99,7 +99,7 @@
         </div>
     </section>
 
-    <section>
+    <section class="section-pattern-01" style="background-image:url('public/assets/app/images/bg/pattern-01.png');">
         <div class="container">
             <div class="section-padding border-top-2 bcolor-sgray">
                 <div class="ss-box-lg">
