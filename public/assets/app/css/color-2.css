@@ -29,7 +29,7 @@ nav.topnav{background:#000000; border-bottom:1px solid #ffff00;}
 nav.topnav .logo{background:#fe4d01;}
 nav.topnav .logo:hover{background:#993300;}
 nav.topnav .menu > a{color:#ffff00; border-color:#ffff00;}
-nav.topnav .menu > a:hover, nav.topnav .menu.active > a{background:#ffff00; color:#000000;}
+nav.topnav .menu:hover > a, nav.topnav .menu.active > a{background:#ffff00; color:#000000;}
 nav.topnav .option{background:#000000; color:#ffff00; border-color:#ffff00;}
 nav.topnav .option:hover{background:#ffff00; color:#000000;}
 nav.topnav .hamburger > *{background:#ffff00;}
@@ -56,10 +56,30 @@ nav.topnav .option:hover .hamburger > *{background:#000000;}
 .topnav-dropdown .hamburger > *{background:#000000;}
 .topnav-dropdown .content-container{background:#000000; border:1px solid #ffff00;}
 
-/* Global Search */
+/* Sidenav */
+nav.sidenav{background:#000000; border-left:1px solid #ffff00;}
+nav.sidenav .hamburger > *{background:#ffff00;}
+nav.sidenav .sidenav-toggle, nav.sidenav .options, nav.sidenav .options > .option, 
+nav.sidenav .option > .dropdown, nav.sidenav .option > .dropdown > *, 
+nav.sidenav .scroll-wrapper, nav.sidenav .menu > a{border-color:#ffff00;}
+nav.sidenav .submenu > a{border-color:#000000;}
+nav.sidenav .option > .dropdown{background:#000000;}
+nav.sidenav .menu > a{color:#ffff00;}
+nav.sidenav .submenu > a{color:#000000; background:#ffff00;}
+nav.sidenav .dropdown-toggle{color:#ffff00;}
+nav.sidenav .submenu .dropdown-toggle{color:#000000;}
+
+/* Global Search Container */
 .global-search-container .btn-container{background:#ffff00;}
 .global-search-container .hamburger > *{background:#000000;}
 .global-search-container .content-container{background:#000000; border:1px solid #ffff00;}
+
+/* Accessibility Container */
+.accessibility-container > .wrapper{background:#000000; border-color:#ffff00!important;}
+.accessibility-container .flag-wrapper{background:#000000; border:1px solid #ffff00;}
+.accessibility-container .btn{background:#ffff00; color:#000000; border-color:#ffff00;}
+.accessibility-container .dropdown{background:#000000; border-color:#ffff00!important;}
+.accessibility-container .dropdown .flag-wrapper{border:0;}
 
 /* Back to Top */
 .back-to-top{background:#000000; color:#ffff00!important; border-color:#ffff00;}

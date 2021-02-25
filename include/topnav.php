@@ -6,7 +6,7 @@
             <a class="logo" href="#">
                 <img src="public/assets/app/images/logo-white.png" alt="Website Logo" />
             </a>
-            <div class="menu-container">
+            <div class="menu-container" id="topnav-menu">
                 <?php
                     foreach([
                         'อัพเดทข่าวพลังงาน', 'สถิติพลังงาน', 'ข่าวสารพลังงานจังหวัด', 
@@ -286,7 +286,7 @@
     </div>
 </div>
 
-<!-- Global Search -->
+<!-- Global Search Container -->
 <div class="global-search-container">
     <div class="wrapper">
         <div class="close-filter global-search-toggle"></div>

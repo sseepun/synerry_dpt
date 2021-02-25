@@ -46,7 +46,7 @@ nav.topnav{background:#152228;}
 nav.topnav .logo{background:#fe4d01;}
 nav.topnav .logo:hover{background:#993300;}
 nav.topnav .menu > a{color:#ffffff; border-color:#6c7073;}
-nav.topnav .menu > a:hover, nav.topnav .menu.active > a{background:#fe4d01;}
+nav.topnav .menu:hover > a, nav.topnav .menu.active > a{background:#fe4d01;}
 nav.topnav .option{background:#000000; color:#ffffff;}
 nav.topnav .option:hover{background:#fe4d01;}
 nav.topnav .option.global-search-toggle{background:#fe4d01;}
@@ -74,11 +74,31 @@ nav.topnav .hamburger > *{background:#ffffff;}
 .topnav-dropdown .hamburger > *{background:#ffffff;}
 .topnav-dropdown .content-container{background:#ffffff;}
 
-/* Global Search */
+/* Sidenav */
+nav.sidenav{background:#ffffff;}
+nav.sidenav .hamburger > *{background:#000000;}
+nav.sidenav .sidenav-toggle, nav.sidenav .options, nav.sidenav .options > .option, 
+nav.sidenav .option > .dropdown, nav.sidenav .option > .dropdown > *, nav.sidenav .scroll-wrapper, 
+nav.sidenav .menu > a, nav.sidenav .submenu > a{border-color:#e1e1e1;}
+nav.sidenav .option > .dropdown{background:#ffffff;}
+nav.sidenav .menu > a{color:#000000;}
+nav.sidenav .menu:hover > a{color:#fe4d01;}
+nav.sidenav .submenu > a{color:#ffffff; background:#fe4d01;}
+nav.sidenav .submenu .submenu > a{color:#ffffff; background:#ffb739;}
+nav.sidenav .dropdown-toggle{color:#000000;}
+nav.sidenav .submenu .dropdown-toggle{color:#ffffff;}
+
+/* Global Search Container */
 .global-search-container .btn-container{background:#fe4d01;}
 .global-search-container .btn-container:hover{background:#993300;}
 .global-search-container .hamburger > *{background:#ffffff;}
 .global-search-container .content-container{background:#ffffff;}
+
+/* Accessibility Container */
+.accessibility-container > .wrapper{background:#ffb739;}
+.accessibility-container .flag-wrapper{background:#ffffff;}
+.accessibility-container .btn{background:#ffffff; color:#000000;}
+.accessibility-container .dropdown{background:#ffffff;}
 
 /* Back to Top */
 .back-to-top{background:rgba(254,77,1,.85); color:#ffffff!important; border-color:#ffffff;}
