@@ -224,6 +224,26 @@ $(function(){ 'use strict';
         });
     }
 
+
+    // Footer Minisite
+    var fooerMinisite = $('nav.footer-minisite');
+    if(fooerMinisite.length){
+        fooerMinisite.find('.slide-container').each(function(){
+            var self = $(this);
+            self.find('> .slides').slick({
+                centerMode: false, infinity: true, centerPadding: 0, slidesToShow: 5, 
+                focusOnSelect: true, autoplay: true, autoplaySpeed: 4000, speed: 600,
+                arrows: true, appendArrows: self.find('> .arrows'), dots: false,
+                swipeToSlide: true,
+                responsive: [
+                    { breakpoint: 1199.98, settings: { slidesToShow: 4, } },
+                    { breakpoint: 991.98, settings: { slidesToShow: 3, } },
+                    { breakpoint: 767.98, settings: { slidesToShow: 2, } },
+                ]
+            });
+        });
+    }
+
     
     // FAQ 01
     var faq01 = $('.faq-01');

@@ -240,6 +240,16 @@ table.table .ticon{color:#ffffff;}
 .toggle-target{background:#ffffff; border-color:#e1e1e1;}
 
 
+/* Breadcrumb 03 */
+.breadcrumb-03 > .bottom-container{background:#f2f2f2;}
+.breadcrumb-03 > .bottom-container a{color:#000000;}
+.breadcrumb-03 > .bottom-container a:hover, 
+.breadcrumb-03 > .bottom-container a:last-child{color:#fe4d01;}
+.breadcrumb-03 > .bottom-container em{color:#000000;}
+.breadcrumb-03 .search-wrapper::after{color:#959595;}
+.breadcrumb-03 .search-wrapper > input[type=text]{background:transparent;}
+
+
 /* Contact Card 01 */
 .contact-card-01{background:#dbe8f9;}
 .contact-card-01 .contact-tag{color:#ffffff;}
