@@ -182,23 +182,24 @@ $(function(){ 'use strict';
                 tabs = self.find('.tabs > .tab'),
                 tabContents = self.find('.tab-contents > .tab-content');
             tabs.click(function(e){
-                e.preventDefault();
-                tabs.removeClass('active');
-                $(this).addClass('active');
-
                 var target = tabContents.filter('[data-tab="'+$(this).data('tab')+'"]'),
                     slideContainers = target.find('.slide-container');
+                if(target.length){
+                    e.preventDefault();
+                    tabs.removeClass('active');
+                    $(this).addClass('active');
 
-                tabContents.removeClass('active');
-                target.addClass('active');
-                
-                if(slideContainers.length){
-                    slideContainers.each(function(){
-                        $(this).find('.slides').slick('setPosition');
-                    });
+                    tabContents.removeClass('active');
+                    target.addClass('active');
+                    
+                    if(slideContainers.length){
+                        slideContainers.each(function(){
+                            $(this).find('.slides').slick('setPosition');
+                        });
+                    }
+    
+                    AOS.refresh();
                 }
-
-                AOS.refresh();
             });
         });
     }

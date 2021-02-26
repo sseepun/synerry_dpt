@@ -175,6 +175,10 @@ input[type=phone]:focus, input[type=submit]:focus, select:focus, textarea:focus{
 .post-stat .stat em{color:#ffffff; background:#fe4d01;}
 
 
+/* Special Box Shadow */
+.ss-box-shadow::before{background:#ffffff;}
+
+
 /* Special Card */
 .ss-card .text-container .title{color:#000000;}
 .ss-card .text-container .desc{color:#666666;}
@@ -212,6 +216,13 @@ input[type=phone]:focus, input[type=submit]:focus, select:focus, textarea:focus{
 .ss-card-05:hover .text-container .title, .ss-card-05:hover .text-container .desc, 
 .ss-card-05:hover .text-container .ss-stat .stat,
 .ss-card-05:hover .arrows .slick-arrow{color:#ffffff;}
+
+/* Special Card 06 */
+.ss-card-06 .text-container{background:#ffffff;}
+.ss-card-06:hover .text-container{background:#212121;}
+.ss-card.ss-card-06 .text-container .title, .ss-card-06 .text-container .arrow{color:#fe4d01;}
+.ss-card-06:hover .text-container .desc, .ss-card-06:hover .text-container .ss-stat .stat,
+.ss-card-06:hover .text-container .arrow{color:#ffffff;}
 
 
 /* Special Icon Title */
@@ -304,6 +315,16 @@ table.table .ticon{color:#ffffff;}
 }
 
 
+/* Pagination 02 */
+.pagination-02 .page-btn:hover, 
+.pagination-02 .page-btn.active{background:#ff4917; color:#ffffff;}
+.pagination-02 .page-btn.page-first:hover, .pagination-02 .page-btn.page-prev:hover, 
+.pagination-02 .page-btn.page-next:hover, .pagination-02 .page-btn.page-last:hover{
+    background:none; color:#ff4917;
+}
+.pagination-02 .page-btn > em{color:#ff4917;}
+
+
 /* Sitemap 01 */
 .sitemap-01 .grid, .sitemap-01 .sitemap > .header, .sitemap-01 .sitemap a,
 .sitemap-01 .sitemap li > ul{border-color:#e1e1e1;}
@@ -316,3 +337,11 @@ table.table .ticon{color:#ffffff;}
 .tab-container .tabs.tabs-01 .tab:hover, .tab-container .tabs.tabs-01 .tab.active{color:#fe4d01;}
 .tab-container .tabs.tabs-01 .tab::before{background:#e1e1e1;}
 .tab-container .tabs.tabs-01 .tab::after{background:#fe4d01;}
+
+/* Tab Container - Tabs 02 */
+.tab-container .tabs.tabs-02{background:#ef4d34;}
+.tab-container .tabs.tabs-02 .tab{color:#ffffff;}
+.tab-container .tabs.tabs-02 .tab:hover, 
+.tab-container .tabs.tabs-02 .tab.active{background:#d6412a;}
+.tab-container .tabs.tabs-02 .tab.tab-header{background:#000000;}
+.tab-container .tabs.tabs-02 .hamburger > *{background:#ffffff;}

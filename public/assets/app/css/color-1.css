@@ -159,6 +159,13 @@ input[type=number], input[type=phone], input[type=submit], select, textarea{
 .ss-card-05:hover .text-container .ss-stat .stat,
 .ss-card-05:hover .arrows .slick-arrow{color:#000000;}
 
+/* Special Card 06 */
+.ss-card-06 .text-container{border:1px solid #ffffff;}
+.ss-card-06:hover .text-container{background:#ffffff;}
+.ss-card-06:hover .text-container .title, .ss-card-06:hover .text-container .desc,
+.ss-card-06:hover .text-container .ss-stat .stat,
+.ss-card-06:hover .text-container .arrow{color:#000000;}
+
 
 /* Special Icon Title */
 .ss-icon-title > em{background:#ffffff; color:#000000;}
@@ -224,6 +231,16 @@ table.table .ticon{color:#000000!important; background:#ffffff!important;}
 }
 
 
+/* Pagination 02 */
+.pagination-02 .page-btn:hover, 
+.pagination-02 .page-btn.active{background:#ffffff; color:#000000;}
+.pagination-02 .page-btn.page-first:hover, .pagination-02 .page-btn.page-prev:hover, 
+.pagination-02 .page-btn.page-next:hover, .pagination-02 .page-btn.page-last:hover{
+    background:none; color:#ffffff;
+}
+.pagination-02 .page-btn em{color:#ffffff;}
+
+
 /* Sitemap 01 */
 .sitemap-01 .grid, .sitemap-01 .sitemap > .header, .sitemap-01 .sitemap a,
 .sitemap-01 .sitemap li > ul{border-color:#ffffff;}
@@ -234,3 +251,10 @@ table.table .ticon{color:#000000!important; background:#ffffff!important;}
 .tab-container .tabs.tabs-01 .tab{color:#ffffff;}
 .tab-container .tabs.tabs-01 .tab::before{background:#ffffff;}
 .tab-container .tabs.tabs-01 .tab::after{background:#ffffff;}
+
+/* Tab Container - Tabs 02 */
+.tab-container .tabs.tabs-02{background:#000000; border:1px solid #ffffff;}
+.tab-container .tabs.tabs-02 .tab{color:#ffffff; border-color:#ffffff;}
+.tab-container .tabs.tabs-02 .tab:hover, 
+.tab-container .tabs.tabs-02 .tab.active{background:#ffffff; color:#000000;}
+.tab-container .tabs.tabs-02 .hamburger > *{background:#ffffff;}
