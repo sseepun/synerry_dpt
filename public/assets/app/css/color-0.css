@@ -238,6 +238,14 @@ input[type=phone]:focus, input[type=submit]:focus, select:focus, textarea:focus{
 .ss-file-01 > .icon-container{background:#eeeeee; color:#000000; border-color:#cccccc;}
 
 
+/* Special File 02 */
+.ss-file-02{background:#ffffff; border-color:#cccccc; color:#000000;}
+.ss-file-02:hover{background:#eeeeee;}
+.ss-file-02 > .icon-container{background:#eeeeee;}
+.ss-file-02 .btn-container:hover{background:#fe4d01;}
+.ss-file-02 .btn-container:hover *{color:#ffffff!important;}
+
+
 /* Special Icon Title */
 .ss-icon-title > em{background:#fe4d01; color:#ffffff;}
 

@@ -575,6 +575,47 @@ input[type=submit].round, select.round, textarea.round{border-radius:1.25rem;}
 }
 
 
+/* Special File 02 */
+.ss-file-02{
+    width:100%; display:flex; border-bottom:2px solid transparent;
+    border-right:1px solid transparent; transition:background .25s;
+}
+.ss-file-02 > .icon-container{
+    width:4.5rem; border-bottom:2px solid transparent; padding:.125rem .25rem;
+    margin:0; text-align:center;
+}
+.ss-file-02 .img-container{display:block; position:relative; width:100%; padding:100% 0 0 0;}
+.ss-file-02 .img-wrapper{
+    position:absolute; top:0; bottom:0; left:0; right:0;
+    display:flex; align-items:center; justify-content:center;
+}
+.ss-file-02 .img-wrapper > img{
+    display:block; width:auto; max-width:calc(100% - .75rem); 
+    height:auto; max-height:calc(100% - .75rem);
+}
+.ss-file-02 > .block{width:calc(100% - 4.25rem); display:flex; flex-wrap:wrap;}
+.ss-file-02 .text-container{
+    width:calc(100% - 14.75rem); display:flex; flex-wrap:wrap; align-items:center;
+    padding:.75rem 1rem;
+}
+.ss-file-02 .text-container > *{width:100%;}
+.ss-file-02 .btn-container{
+    width:8.5rem; display:flex; align-items:center; justify-content:center; font-size:.8125rem;
+    transition:background .25s, color .25s;
+}
+.ss-file-02 .btn-container:last-child{width:6.25rem;}
+@media screen and (max-width:991.98px){
+    .ss-file-02 .text-container{width:100%;}
+    .ss-file-02 .btn-container{width:60%; padding:.625rem 0;}
+    .ss-file-02 .btn-container:last-child{width:40%;}
+}
+@media screen and (max-width:575.98px){
+    .ss-file-02 .text-container{padding:.625rem .75rem;}
+    .ss-file-02 .btn-container{width:57%; padding:.5rem 0; font-size:.75rem;}
+    .ss-file-02 .btn-container:last-child{width:43%;}
+}
+
+
 /* Special Icon Title */
 .ss-icon-title{
     width:100%; display:flex; align-items:flex-start; margin:1rem 0 0 0; padding:1.625rem 0 0 0;

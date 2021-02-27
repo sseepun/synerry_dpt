@@ -173,6 +173,11 @@ input[type=number], input[type=phone], input[type=submit], select, textarea{
 .ss-file-01 > .icon-container{background:#ffffff; color:#000000;}
 
 
+/* Special File 02 */
+.ss-file-02{background:#000000; border-color:#ffffff; color:#ffffff;}
+.ss-file-02 > .icon-container{background:#ffffff; color:#000000;}
+
+
 /* Special Icon Title */
 .ss-icon-title > em{background:#ffffff; color:#000000;}
 
