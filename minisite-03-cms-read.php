@@ -120,9 +120,71 @@
                                 <?php }?>
                             </div>
                             
-                            <h6 class="fw-600 color-01 mt-4 pt-1">::: รูปภาพที่เกียวข้อง :::</h6>
+                            <h6 class="fw-600 color-01 mt-4 pt-2">::: รูปภาพที่เกียวข้อง :::</h6>
+                            <div class="gallery-grids mt-2">
+                                <div class="grid sm-40">
+                                    <a class="ss-img square" href="public/assets/app/images/content/01.jpg" data-fancybox="gallery">
+                                        <img class="d-none" src="public/assets/app/images/content/01.jpg" alt="Image Fancybox Preview" />
+                                        <div class="img-bg" style="background-image:url('public/assets/app/images/content/01.jpg');"></div>
+                                        <div class="hover-container">
+                                            <div class="icon">
+                                                <img src="public/assets/app/images/icon/plus.png" alt="Hover Icon" />
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="grid sm-60 mt-0">
+                                    <div class="gallery-grids">
+                                        <?php for($i=1; $i<7; $i++){?>
+                                            <div class="grid sm-1-3">
+                                                <a class="ss-img square" href="public/assets/app/images/content/0<?= $i%5+1 ?>.jpg" data-fancybox="gallery">
+                                                    <img class="d-none" src="public/assets/app/images/content/0<?= $i%5+1 ?>.jpg" alt="Image Fancybox Preview" />
+                                                    <div class="img-bg" style="background-image:url('public/assets/app/images/content/0<?= $i%5+1 ?>.jpg');"></div>
+                                                    <?php if($i==6){?>
+                                                        <div class="hover-container op-100">
+                                                            <p class="md color-white text-center">
+                                                                <span class="h4 fw-500 lh-xs">40</span>
+                                                                <br> ภาพ
+                                                            </p>
+                                                        </div>
+                                                    <?php }else{?>
+                                                        <div class="hover-container">
+                                                            <div class="icon">
+                                                                <img src="public/assets/app/images/icon/plus.png" alt="Hover Icon" />
+                                                            </div>
+                                                        </div>
+                                                    <?php }?>
+                                                </a>
+                                            </div>
+                                        <?php }?>
+                                    </div>
+                                </div>
+                            </div>
                             
-                            <h6 class="fw-600 color-01 mt-4 pt-1">::: วิดีโอไฮไลท์ :::</h6>
+                            <h6 class="fw-600 color-01 mt-4 pt-2">::: วิดีโอไฮไลท์ :::</h6>
+
+                            <div class="list-control ss-border color-black mt-4">
+                                <a class="list-btn color-black h-color-02" href="#">
+                                    <div class="btn btn-social btn-color-06 mr-2">
+                                        <em class="fas fa-arrow-left"></em>
+                                    </div>
+                                    <div class="text p sm lh-sm">
+                                        ก.พลังงานแจงไม่ได้ยกเลิกส่งเสริม‘พลังงานชุมชน’
+                                    </div>
+                                </a>
+                                <div class="list-icon color-01">
+                                    <em class="fas fa-th-large"></em>
+                                </div>
+                                <a class="list-btn color-black h-color-02" href="#">
+                                    <div class="text p sm lh-sm">
+                                        B10 ดีเซลพื้นฐานใหม่ ช่วยเกษตรกรไทย
+                                        ใส่ใจสิ่งแวดล้อม
+                                    </div>
+                                    <div class="btn btn-social btn-color-06 ml-2">
+                                        <em class="fas fa-arrow-right"></em>
+                                    </div>
+                                </a>
+                            </div>
 
                             <div class="ss-icon-title-02">
                                 <div class="text-icon color-01">R</div>

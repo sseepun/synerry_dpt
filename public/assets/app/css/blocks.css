@@ -116,10 +116,7 @@
 
 /* Contact 01 */
 .contact-01{width:100%;}
-.contact-01 .icon-container{
-    display:flex; justify-content:center; width:100%; padding:.5rem 0;
-    border-top:4px solid transparent; border-bottom:1px solid transparent;
-}
+.contact-01 .icon-container{display:flex; justify-content:center; width:100%; padding:.5rem 0;}
 .contact-01 .icon-card{display:flex; padding:.1875rem 0;}
 .contact-01 .icon-card .icon{width:2rem; margin:0 .5rem 0 0; text-align:center;}
 .contact-01 .icon-card .icon em{font-size:1.25rem;}

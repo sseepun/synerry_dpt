@@ -1,6 +1,6 @@
 
 <?php if(isset($listFooter)){?>
-    <div class="list-footer">
+    <div class="list-footer ss-border">
         <?php if(in_array('total', $listFooter)){?>
             <div class="block">
                 <div class="text-wrapper color-gray text-sm">

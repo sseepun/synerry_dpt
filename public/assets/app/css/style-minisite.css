@@ -206,9 +206,7 @@ nav.footer-minisite .visitor-count > *{background:#29292a; color:#ff4917;}
 }
 
 /* List Footer */
-.list-footer{
-    border-top:4px solid #363434; border-bottom:1px solid #afaeae; margin:2.5rem 0 0 0;
-}
+.list-footer{margin:2.5rem 0 0 0;}
 .list-footer .select-wrapper::after{right:0; width:1.25rem;}
 .list-footer select{
     padding:.18725rem 1.25rem .18725rem .5rem; font-size:.8125rem; margin:0 0 0 .25rem;
@@ -221,9 +219,6 @@ nav.footer-minisite .visitor-count > *{background:#29292a; color:#ff4917;}
     .list-footer > .block{width:100%;}
     .list-footer .text-wrapper{width:100%;}
 }
-
-.theme-1 .list-footer{border-top:4px solid #ffffff; border-bottom:1px solid #ffffff;}
-.theme-2 .list-footer{border-top:4px solid #ffff00; border-bottom:1px solid #ffff00;}
 
 
 /* Post Footer Minisite */

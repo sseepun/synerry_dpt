@@ -125,6 +125,10 @@ input[type=number], input[type=phone], input[type=submit], select, textarea{
 .post-stat .stat em{color:#000000; background:#ffffff;}
 
 
+/* Special Border */
+.ss-border{border-top:4px solid #ffffff!important; border-bottom:1px solid #ffffff!important;}
+
+
 /* Special Card */
 .ss-card .text-container .title, .ss-card .text-container .desc{color:#ffffff;}
 
@@ -205,10 +209,6 @@ table.table .ticon{color:#000000!important; background:#ffffff!important;}
 
 /* Breadcrumb 03 */
 .breadcrumb-03 > .bottom-container{background:#000000; border-bottom:1px solid #ffffff;}
-
-
-/* Contact 01 */
-.contact-01 .icon-container{border-color:#ffffff;}
 
 
 /* Contact Card 01 */

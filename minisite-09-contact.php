@@ -46,7 +46,7 @@
                                             อาคาร บี ศูนย์เอนเนอร์ยี่ คอมเพล็กซ์ 555/2 ถนนวิภาวดีรังสิต <br>
                                             แขวงจตุจักร เขตจตุจักร กรุงเทพฯ 10900
                                         </p>
-                                        <div class="icon-container mt-3">
+                                        <div class="icon-container ss-border mt-3">
                                             <div class="icon-wrapper">
                                                 <div class="icon-card">
                                                     <div class="icon">
