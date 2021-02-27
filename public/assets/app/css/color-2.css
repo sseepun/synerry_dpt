@@ -93,7 +93,8 @@ nav.sidenav .submenu .dropdown-toggle{color:#000000;}
 .btn.btn-color-02, .btn.btn-color-02:focus, .btn.btn-color-02:hover, .btn.btn-color-02:active,
 .btn.btn-color-03, .btn.btn-color-03:focus, .btn.btn-color-03:hover, .btn.btn-color-03:active,
 .btn.btn-color-04, .btn.btn-color-04:focus, .btn.btn-color-04:hover, .btn.btn-color-04:active,
-.btn.btn-color-05, .btn.btn-color-05:focus, .btn.btn-color-05:hover, .btn.btn-color-05:active{
+.btn.btn-color-05, .btn.btn-color-05:focus, .btn.btn-color-05:hover, .btn.btn-color-05:active,
+.btn.btn-color-06, .btn.btn-color-06:focus, .btn.btn-color-06:hover, .btn.btn-color-06:active{
     color:#000000; background:#ffff00;
 }
 
@@ -199,6 +200,10 @@ table.table .ticon{color:#000000!important; background:#ffff00!important;}
 
 /* Breadcrumb 03 */
 .breadcrumb-03 > .bottom-container{background:#000000; border-bottom:1px solid #ffff00;}
+
+
+/* Contact 01 */
+.contact-01 .icon-container{border-color:#ffff00;}
 
 
 /* Contact Card 01 */

@@ -134,6 +134,12 @@ nav.sidenav .submenu .dropdown-toggle{color:#ffffff;}
 .btn.btn-color-05:hover{background:#ffffff; color:#000000;}
 .btn.btn-color-05:active{box-shadow:inset 0 0 0 100rem rgba(0,0,0,.10);}
 
+.btn.btn-color-06, .btn.btn-color-06:focus{
+    color:#fe4d01; background:#ffffff; border:1px solid #fe4d01;
+}
+.btn.btn-color-06:hover{background:#fe4d01; color:#ffffff;}
+.btn.btn-color-06:active{box-shadow:inset 0 0 0 100rem rgba(0,0,0,.10);}
+
 .btn.btn-social.fw{background:#3b56a3; color:#ffffff;}
 .btn.btn-social.tw{background:#05b0f6; color:#ffffff;}
 .btn.btn-social.ln{background:#00c600; color:#ffffff;}
@@ -266,6 +272,10 @@ table.table .ticon{color:#ffffff;}
 .breadcrumb-03 > .bottom-container em{color:#000000;}
 .breadcrumb-03 .search-wrapper::after{color:#959595;}
 .breadcrumb-03 .search-wrapper > input[type=text]{background:transparent;}
+
+
+/* Contact 01 */
+.contact-01 .icon-container{border-color:#363434;}
 
 
 /* Contact Card 01 */

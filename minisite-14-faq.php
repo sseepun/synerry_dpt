@@ -36,7 +36,7 @@
                         </div>
                         <div class="grid lg-75 md-70 sm-100">
 
-                            <h6 class="h5 fw-600 color-01">คำถามที่พบบ่อย</h6>
+                            <h6 class="h5 fw-500 color-01">คำถามที่พบบ่อย</h6>
                             <div class="faq-02 mt-2">
                                 <?php for($i=0; $i<10; $i++){?>
                                     <div class="faq <?php if($i==0)echo 'active'; ?>">
@@ -128,9 +128,9 @@
                                 include('component/list-footer-minisite.php');
                             ?>
                             
-                            <div class="contact-01">
+                            <div class="contact-02">
                                 <img class="img-float" src="public/assets/app/images/misc/car.png" alt="Float Image" />
-                                <h6 class="h5 fw-600 color-01">แบบฟอร์มติดต่อ</h6>
+                                <h6 class="h5 fw-500 color-01">แบบฟอร์มติดต่อ</h6>
                                 <p class="color-black sm-no-br mt-1">
                                     หากมีคำถาม คำติชม คำแนะนำ หรือพบปัญหากรุณากรอกแบบฟอร์มด้านล่างนี้ <br>
                                     ทางเจ้าหน้าที่จะคำเนินการตามคำขอโดยเร็วที่สุด 
