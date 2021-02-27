@@ -115,7 +115,7 @@
                                     </div>
                                 <?php }?>
 
-                            </div>                        
+                            </div>
                             <?php
                                 $listFooter = ['pagination', 'pp'];
                                 include('component/list-footer-minisite.php');

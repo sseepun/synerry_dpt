@@ -107,7 +107,7 @@
                         <h6 class="h4 lg fw-600 color-black text-center">
                             แบบฟอร์มติดต่อเรา
                         </h6>
-                        <p class="lg text-center mt-1">
+                        <p class="lg text-center sm-no-br mt-1">
                             หากมีคำถาม คำติชม คำแนะนำ หรือพบปัญหากรุณากรอกแบบฟอร์มด้านล่างนี้ <br>
                             ทางเจ้าหน้าที่จะคำเนินการตามคำขอโดยเร็วที่สุด 
                         </p>

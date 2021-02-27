@@ -555,6 +555,23 @@ input[type=submit].round, select.round, textarea.round{border-radius:1.25rem;}
 }
 
 
+/* Special File 01 */
+.ss-file-01{width:100%; display:flex; align-items:flex-start;}
+.ss-file-01 > .icon-container{
+    width:4.5rem; border-bottom:2px solid transparent; padding:.125rem .25rem;
+    margin:0 .75rem 0 0; text-align:center;
+}
+.ss-file-01 > .text-container{width:calc(100% - 5.25rem); padding:.5rem 0 0 0;}
+.ss-file-01 .img-container{display:block; position:relative; width:100%; padding:100% 0 0 0;}
+.ss-file-01 .img-wrapper{
+    position:absolute; top:0; bottom:0; left:0; right:0;
+    display:flex; align-items:center; justify-content:center;
+}
+.ss-file-01 .img-wrapper > img{
+    display:block; width:auto; max-width:100%; height:auto; max-height:100%;
+}
+
+
 /* Special Icon Title */
 .ss-icon-title{
     width:100%; display:flex; align-items:flex-start; margin:1rem 0 0 0; padding:1.625rem 0 0 0;

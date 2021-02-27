@@ -79,11 +79,50 @@
                                 ?>
                             </div>
 
-                            <h6 class="fw-600 color-01 mt-3">::: ไฟล์เอกสารที่เกี่ยวข้อง :::</h6>
+                            <h6 class="fw-600 color-01 mt-4 pt-1">::: ไฟล์เอกสารที่เกี่ยวข้อง :::</h6>
+                            <div class="gallery-grids mt-1">
+                                <?php
+                                    foreach([
+                                        'pdf', 'doc', 'xls', 'ppt', 
+                                        'jpg', 'gif', 'png', 'zip'
+                                    ] as $d){
+                                ?>
+                                    <div class="grid lg-50 sm-100 mt-2">
+                                        <div class="ss-file-01">
+                                            <div class="icon-container">
+                                                <div class="img-container">
+                                                    <div class="img-wrapper">
+                                                        <img src="public/assets/app/images/icon/file-<?= $d ?>.png" alt="File Icon" />
+                                                    </div>
+                                                </div>
+                                                <p class="xs fw-200">
+                                                    <span class="fw-600">0.78</span> MB
+                                                </p>
+                                            </div>
+                                            <div class="text-container">
+                                                <p class="fw-500 lh-sm color-black">
+                                                    โครงการสนับสนุนการลงทุนติดตั้งใช้งาน
+                                                    ระบบอบแห้งพลังงานแสงอาทิตย์
+                                                </p>
+                                                <div class="p xs mt-2">
+                                                    <a class="color-01 h-color-02 fw-600 mr-3" href="#">
+                                                        <em class="fas fa-arrow-circle-down mr-1"></em> 
+                                                        ดาวน์โหลด ( <span class="color-black">109</span> )
+                                                    </a>
+                                                    <a class="color-gray h-color-02 fw-500" href="#">
+                                                        <em class="fas fa-exclamation-triangle color-02 mr-1"></em>
+                                                        แจ้งไฟล์เสีย
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                <?php }?>
+                            </div>
                             
-                            <h6 class="fw-600 color-01 mt-3">::: รูปภาพที่เกียวข้อง :::</h6>
+                            <h6 class="fw-600 color-01 mt-4 pt-1">::: รูปภาพที่เกียวข้อง :::</h6>
                             
-                            <h6 class="fw-600 color-01 mt-3">::: วิดีโอไฮไลท์ :::</h6>
+                            <h6 class="fw-600 color-01 mt-4 pt-1">::: วิดีโอไฮไลท์ :::</h6>
 
                             <div class="ss-icon-title-02">
                                 <div class="text-icon color-01">R</div>
