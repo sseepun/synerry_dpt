@@ -228,7 +228,7 @@ nav.footer-minisite .visitor-count > *{background:#29292a; color:#ff4917;}
 
 /* Post Footer Minisite */
 .post-footer-minisite{
-    display:block; width:100%; padding:1.5rem 1.25rem; margin:1.75rem 0 0 0;
+    display:block; width:100%; padding:1.5rem 1.25rem; margin:1.5rem 0 0 0;
     border:1px solid #e8e8e8; border-left:3px solid #000000;
 }
 .post-footer-minisite .block{display:flex; align-items:center; flex-wrap:wrap;}
@@ -246,7 +246,7 @@ nav.footer-minisite .visitor-count > *{background:#29292a; color:#ff4917;}
     .post-footer-minisite .tag{margin:.125rem 0 .125rem .625rem;}
 }
 @media screen and (max-width:991.98px){
-    .post-footer-minisite{padding:1rem 1rem; margin:1.5rem 0 0 0;}
+    .post-footer-minisite{padding:1rem 1rem; margin:1.25rem 0 0 0;}
     .post-footer-minisite .sep{width:3.25rem; margin:0 0 0 .5rem;}
     .post-footer-minisite .tag{margin:.125rem 0 .125rem .5rem;}
 }

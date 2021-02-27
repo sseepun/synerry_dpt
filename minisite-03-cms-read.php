@@ -48,7 +48,7 @@
                                 <img class="img" src="public/assets/app/images/content/10.jpg" alt="Post Content Image" />
                             </div>
                             <div class="post-content">
-                                <h6 class="fw-500">
+                                <h6 class="fw-300 color-01">
                                     “ทูตพลังงานรวมพลังพัฒนาและอนุรักษ์พลังงานสู่ความยั่งยืน รุ่นที่ 1” 
                                     จากสำนักงานพลังงานจังหวัดสมุทรปราการ สำนักงานปลัดกระทรวงพลังงาน
                                 </h6>
