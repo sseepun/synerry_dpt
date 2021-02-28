@@ -4,7 +4,7 @@
         <?php if(in_array('tags', $postFooter)){?>
             <div class="block">
                 <div class="p lg fw-600 color-01">แท็ก</div>
-                <div class="sep bg-01"></div>
+                <div class="sep"></div>
                 <a class="tag" href="#">สำนักบริหารกลาง</a>
                 <a class="tag" href="#">ข่าวกิจกรรมและประชาสัมพันธ์</a>
                 <a class="tag" href="#">โรงไฟฟ้าชุมชน</a>

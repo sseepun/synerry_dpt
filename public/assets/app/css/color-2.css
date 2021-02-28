@@ -208,6 +208,7 @@ table.table .ticon{color:#000000!important; background:#ffff00!important;}
 
 
 /* Breadcrumb 03 */
+.breadcrumb-03 .text-container{background:#000000; color:#ffff00; border:1px solid #ffff00;}
 .breadcrumb-03 > .bottom-container{background:#000000; border-bottom:1px solid #ffff00;}
 
 

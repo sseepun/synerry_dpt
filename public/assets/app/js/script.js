@@ -2,10 +2,11 @@ $(function(){ 'use strict';
 
     // Topnav
     var topnav = $('nav.topnav'),
-        topnavSecretary = $('nav.topnav-secretary');
+        topnavSecretary = $('nav.topnav-secretary'),
+        topnavMinisite = $('nav.topnav-minisite');
     var sidenav = $('nav.sidenav'),
         sidenavMenus = sidenav.find('.menu-container'),
-        sidenavToggle = $('nav.topnav .sidenav-toggle, nav.topnav-secretary .sidenav-toggle, nav.sidenav .sidenav-toggle');
+        sidenavToggle = $('nav .sidenav-toggle');
 
     if(topnav.length){
         // Topnav Dropdown
@@ -28,6 +29,21 @@ $(function(){ 'use strict';
     if(topnavSecretary.length){
         // Generate Sidenav
         sidenavMenus.html( topnavSecretary.find('#topnav-menu').html() );
+        sidenavMenus.find('.num, .title, .submenu-title').remove();
+        sidenavMenus.find('.has-children').each(function(){
+            $(this).append('<div class="dropdown-toggle"><em class="fas fa-chevron-right"></em></div>');
+        });
+        sidenavMenus.find('.dropdown-toggle').click(function(e){
+            e.preventDefault();
+            var self = $(this);
+            self.toggleClass('active');
+            self.prev().slideToggle();
+        });
+    }
+
+    if(topnavMinisite.length){
+        // Generate Sidenav
+        sidenavMenus.html( topnavMinisite.find('#topnav-menu').html() );
         sidenavMenus.find('.num, .title, .submenu-title').remove();
         sidenavMenus.find('.has-children').each(function(){
             $(this).append('<div class="dropdown-toggle"><em class="fas fa-chevron-right"></em></div>');

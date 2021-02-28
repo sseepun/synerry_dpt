@@ -277,6 +277,8 @@ table.table .ticon{color:#ffffff;}
 
 
 /* Breadcrumb 03 */
+.breadcrumb-03 .text-container{background:#242525; color:#ffffff;}
+.breadcrumb-03 .text-container h6{color:#fe4d01;}
 .breadcrumb-03 > .bottom-container{background:#f2f2f2;}
 .breadcrumb-03 > .bottom-container a{color:#000000;}
 .breadcrumb-03 > .bottom-container a:hover, 
