@@ -150,6 +150,14 @@ input[type=text].round, input[type=email].round, input[type=password].round,
 input[type=date].round, input[type=tel].round, input[type=number].round, input[type=phone].round,
 input[type=submit].round, select.round, textarea.round{border-radius:1.25rem;}
 
+textarea[data-copy]{pointer-events:none!important;}
+@media screen and (max-width:991.98px){
+    textarea[data-copy].adaptive{height:5.875rem;}
+}
+@media screen and (max-width:575.98px){
+    textarea[data-copy].adaptive{height:8.25rem;}
+}
+
 /* Input Wrapper */
 .select-wrapper, .search-wrapper, .date-wrapper{display:inline-block; position:relative;}
 .select-wrapper::after, .search-wrapper::after, .date-wrapper::after{

@@ -38,4 +38,9 @@
     .accessibility-container{display:none;}
     .accessibility-container.active{display:block;}
 
+
+    /* Topnav Minisite */
+    nav.topnav-minisite .submenu-dropdown{display:none;}
+    nav.topnav-minisite .menu:hover > .submenu-dropdown{display:block;}
+
 }

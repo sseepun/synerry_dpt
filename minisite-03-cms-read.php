@@ -162,6 +162,35 @@
                             </div>
                             
                             <h6 class="fw-600 color-01 mt-4 pt-2">::: วิดีโอไฮไลท์ :::</h6>
+                            <div class="grids mt-2 pb-4">
+                                <div class="grid xl-70 lg-2-3 sm-100 mt-0">
+                                    <div class="post-video">
+                                        <div class="wrapper">
+                                            <video class="fit" controls="">
+                                                <source src="public/assets/app/video/01.mp4" type="video/mp4" />
+                                                Your browser does not support the video tag.
+                                            </video>
+                                        </div>
+                                    </div>
+                                    <div class="bg-mgray px-3 pt-3 pb-2 border bcolor-mgray">
+                                        <p class="fw-300">
+                                            <span class="fw-600">ชื่อคลิป:</span>
+                                            วิดีโอแนะนำกระทรวงพลังงาน
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="grid xl-30 lg-1-3 sm-100 mt-2">
+                                    <p class="lg fw-500 color-01">EMBED</p>
+                                    <div class="mt-2">
+                                        <textarea name="message" class="adaptive p xs d-block bg-fgray width-full no-bradius" rows="11" data-copy="1"><iframe id="inlineFrameExample" title="Inline Frame Example" width="300" height="200" src="https://www.openstreetmap.org/export/embed.html?bbox=-0.004017949104309083%2C51.47612752641776%2C0.00030577182769775396%2C51.478569861898606&layer=mapnik"></iframe></textarea>
+                                        <div class="btns text-center">
+                                            <a class="btn btn-action btn-color-01 width-full no-bradius" data-copy="1" href="#">
+                                                คัดลอกโค๊ด
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
 
                             <div class="list-control ss-border color-black mt-4">
                                 <a class="list-btn color-black h-color-02" href="#">
