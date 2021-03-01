@@ -7,6 +7,7 @@ html, body, a, a:hover, table.table{color:#ffffff;}
 /* Colors */
 .color-white, .color-black, 
 .color-gray, .h-color-gray:hover, 
+.color-bgray, .h-color-bgray:hover, 
 .color-mgray, .h-color-mgray:hover, 
 .color-sgray, .h-color-sgray:hover,
 .color-fgray, .h-color-fgray:hover,
@@ -15,14 +16,17 @@ html, body, a, a:hover, table.table{color:#ffffff;}
 .color-03, .h-color-03:hover,
 .color-04, .h-color-04:hover,
 .color-05, .h-color-05:hover,
-.color-06, .h-color-06:hover{color:#ffffff!important;}
+.color-06, .h-color-06:hover,
+.color-07, .h-color-07:hover,
+.color-08, .h-color-08:hover{color:#ffffff!important;}
 
-.bg-white, .bg-black, .bg-gray, .bg-mgray, .bg-sgray, .bg-fgray,
-.bg-01, .bg-02, .bg-03, .bg-04, .bg-05, .bg-06{background:#000000!important;}
+.bg-white, .bg-black, .bg-gray, .bg-bgray, .bg-mgray, .bg-sgray, .bg-fgray,
+.bg-01, .bg-02, .bg-03, .bg-04, .bg-05, .bg-06, .bg-07, .bg-08{background:#000000!important;}
 
-.bcolor-white, .bcolor-black, .bcolor-gray, .bcolor-mgray, .bcolor-sgray, .bcolor-fgray, 
+.bcolor-white, .bcolor-black, .bcolor-gray, .bcolor-bgray, 
+.bcolor-mgray, .bcolor-sgray, .bcolor-fgray, 
 .bcolor-01, .bcolor-02, .bcolor-03, .bcolor-04, .bcolor-05, 
-.bcolor-06{border-color:#ffffff!important;}
+.bcolor-06, .bcolor-07, .bcolor-08{border-color:#ffffff!important;}
 
 
 /* Topnav */
@@ -114,6 +118,7 @@ input[type=number], input[type=phone], input[type=submit], select, textarea{
 /* List Header */
 .list-header .option{color:#ffffff; background:#000000; border-color:#ffffff;}
 .list-header .option:hover, .list-header .option.active{color:#000000; background:#ffffff;}
+.list-header .btn-icon em{background:#ffffff; color:#000000;}
 
 
 /* Popup */
@@ -123,6 +128,11 @@ input[type=number], input[type=phone], input[type=submit], select, textarea{
 
 /* Post Stat */
 .post-stat .stat em{color:#000000; background:#ffffff;}
+
+
+/* Special Box Header */
+.ss-box-header > .header{background:#ffffff!important; color:#000000!important;}
+.ss-box-header > .body{border:1px solid #ffffff;}
 
 
 /* Special Border */

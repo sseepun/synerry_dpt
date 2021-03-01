@@ -67,7 +67,8 @@
 .breadcrumb-02 .wrapper a{display:inline-block; color:#000000; font-weight:300;}
 .breadcrumb-02 .wrapper a:hover, .breadcrumb-02 .wrapper a:last-child{color:#fe4d01;}
 .breadcrumb-02 .wrapper em{
-    display:inline-block; color:#ffffff; margin:0 .3125rem; transform:translateY(.0625rem);
+    display:inline-block; color:#000000; margin:0 .3125rem; font-size:.375rem;
+    transform:translateY(-.125rem);
 }
 .breadcrumb-02 .title{margin:.375rem 0 0 0; color:#ffffff;}
 @media screen and (max-width:1199.98px){

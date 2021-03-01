@@ -18,14 +18,12 @@
     
     <section class="section-padding">
         <div class="container">
-            
             <div data-aos="fade-up" data-aos-delay="300">
                 <?php
                     $listHeader = ['search', 'category', 'order', 'icon-grid', 'icon-rss'];
                     include('component/list-header.php');
                 ?>
             </div>
-            
             <div class="grids mt-2" data-aos="fade-up" data-aos-delay="450">
                 <?php for($i=0; $i<12; $i++){?>
                     <div class="grid xl-25 lg-1-3 sm-50">
@@ -59,14 +57,12 @@
                     </div>
                 <?php }?>
             </div>
-
             <div data-aos="fade-up" data-aos-delay="0">
                 <?php
                     $listFooter = ['total', 'pagination', 'pp'];
                     include('component/list-footer.php');
                 ?>
             </div>
-
         </div>
     </section>
     

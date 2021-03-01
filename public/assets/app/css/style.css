@@ -133,6 +133,8 @@ p.xs, .p.xs{font-size:.8125rem;}
 .btn.btn-sm{font-size:.875rem; padding:.5625rem 1.1875rem .4375rem 1.1875rem;}
 .btn.btn-xs{font-size:.8125rem; padding:.3125rem 1rem;}
 
+.btn.btn-min-width{min-width:10rem;}
+
 
 /* Clip Path */
 .clip-path-01{clip-path:polygon(0 0, calc(100% - 1rem) 0, 100% 1rem, 100% 100%, 0 100%);}
@@ -178,6 +180,14 @@ textarea[data-copy]{pointer-events:none!important;}
 .date-wrapper input, .date-wrapper select, .date-wrapper textarea{
     width:auto; max-width:100%; padding-left:2.25rem;
 }
+
+/* Input Dropzone */
+.input-dropzone{
+    border-radius:.25rem; cursor:pointer; border:1px solid transparent;
+    padding:1.625rem 1rem 1.75rem 1rem;
+}
+.input-dropzone > *{pointer-events:none!important;}
+.input-dropzone .dz-preview{display:none!important;}
 
 /* Input Form Group */
 .form-group{margin:.5625rem 0 0 0;}
@@ -242,13 +252,24 @@ textarea[data-copy]{pointer-events:none!important;}
     border-radius:1000em; border:1px solid transparent;
     transition:color .25s, border-color .25s, background .25s;
 }
-@media screen and (max-width:767.98px){
+.list-header .btn-icon{display:inline-block; margin-left:1rem; font-size:.875rem;}
+.list-header .btn-icon:first-child{margin-left:0;}
+.list-header .btn-icon em{
+    display:inline-block; width:1.75rem; height:1.75rem; line-height:1.75rem;
+    border-radius:50%; text-align:center; font-size:1.125rem; margin:0 .1875rem 0 0;
+}
+@media screen and (max-width:991.98px){
     .list-header{flex-wrap:wrap; justify-content:center;}
     .list-header > .block{width:100%; text-align:center; margin:0 0 .4375rem 0;}
     .list-header .select-wrapper, .list-header .search-wrapper{
         display:block; width:100%; max-width:18rem; margin:0 auto .3125rem auto;
     }
     .list-header .select-wrapper > *, .list-header .search-wrapper > *{width:100%;}
+    .list-header .btn-icon{margin-left:.75rem;}
+}
+@media screen and (max-width:575.98px){
+    .list-header .btn-icon{margin-left:.625rem;}
+    .list-header .btn-icon em{margin:0 .125rem 0 0;}
 }
 
 /* List Footer */
@@ -351,6 +372,13 @@ textarea[data-copy]{pointer-events:none!important;}
 /* Post Content */
 .post-content{display:block; width:100%; max-width:54rem; margin:2rem auto 0 auto;}
 .post-content.sm{max-width:46rem;}
+.post-content img.img-content{
+    display:block; width:100%; max-width:20rem; height:auto; margin:0 auto;
+}
+@media screen and (max-width:991.98px){
+    .post-content img.img-content{max-width:16rem;}
+}
+
 
 /* Post Footer */
 .post-footer{
@@ -416,6 +444,26 @@ textarea[data-copy]{pointer-events:none!important;}
 .ss-box-full-grid > .box-content{position:relative; width:100%;}
 @media screen and (max-width:767.98px){
     .ss-box-full-grid{padding:0 1rem;}
+}
+
+/* Special Box Header */
+.ss-box-header{display:block; position:relative; width:100%; margin:1rem 0 0 0;}
+.ss-box-header > .header{width:100%; overflow:hidden; padding:.875rem 1.75rem;}
+.ss-box-header > .body{width:100%; overflow:hidden; padding:1.375rem 1.75rem;}
+.ss-box-header > .header > *:first-child, .ss-box-header > .body > *:first-child{margin-top:0;}
+.ss-box-header.bradius-round > .header{border-radius:1rem 1rem 0 0;}
+.ss-box-header.bradius-round > .body{border-radius:0 0 1rem 1rem;}
+@media screen and (max-width:991.98px){
+    .ss-box-header > .header{padding:.875rem 1.5rem;}
+    .ss-box-header > .body{padding:1.375rem 1.5rem;}
+}
+@media screen and (max-width:767.98px){
+    .ss-box-header > .header{padding:.75rem 1.25rem;}
+    .ss-box-header > .body{padding:1.25rem 1.25rem;}
+}
+@media screen and (max-width:575.98px){
+    .ss-box-header > .header{padding:.625rem 1rem;}
+    .ss-box-header > .body{padding:1rem 1rem;}
 }
 
 /* Special Box Shadow */
@@ -484,9 +532,11 @@ textarea[data-copy]{pointer-events:none!important;}
     font-weight:300; box-shadow:0px 2px 5px 2px rgba(0,0,0,.2);
 }
 .ss-card-04 .text-container .title{-webkit-line-clamp:3; min-height:4.6875rem;}
-.ss-card-04 .text-container .ss-stat{margin-top:.75rem;}
+.ss-card-04 .text-container .ss-stat{
+    width:calc(100% - 2.375rem); justify-content:space-between; margin-top:.75rem;
+}
 .ss-card-04 .text-container .arrow{
-    position:absolute; bottom:.625rem; right:1rem; font-size:1.875rem; line-height:.8;
+    position:absolute; bottom:.625rem; right:.75rem; font-size:1.875rem; line-height:.8;
     transition:color .25s;
 }
 @media screen and (min-width:992px){

@@ -37,5 +37,18 @@
                 </a>
             <?php }?>
         </div>
+        <?php if(in_array('crud', $listHeader)){?>
+            <div class="block">
+                <a class="btn-icon color-black h-color-01" href="#">
+                    <em class="zmdi zmdi-plus-circle-o"></em> ตั้งกระทู้ใหม่
+                </a>
+                <a class="btn-icon color-black h-color-01" href="#">
+                    <em class="zmdi zmdi-lock-outline"></em> เข้าสู่ระบบ
+                </a>
+                <a class="btn-icon color-black h-color-01" href="#">
+                    <em class="zmdi zmdi-account-o"></em> สมัครสมาชิก
+                </a>
+            </div>
+        <?php }?>
     </div>
 <?php }?>
