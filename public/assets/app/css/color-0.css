@@ -155,6 +155,20 @@ nav.sidenav .submenu .dropdown-toggle{color:#ffffff;}
 .btn.btn-social:hover{box-shadow:inset 0 0 0 100rem rgba(0,0,0,.10);}
 .btn.btn-social:active{box-shadow:inset 0 0 0 100rem rgba(0,0,0,.20);}
 
+/* Button Socials */
+.btn-socials .btn-social-custom.fw{background:#4668b7;}
+.btn-socials .btn-social-custom.fw:hover,
+.btn-socials .btn-social-custom.fw > em{background:#3157b0;}
+.btn-socials .btn-social-custom.gg{background:#eb4033;}
+.btn-socials .btn-social-custom.gg:hover,
+.btn-socials .btn-social-custom.gg > em{background:#b62c22;}
+.btn-socials .btn-social-custom.ln{background:#3ace01;}
+.btn-socials .btn-social-custom.ln:hover,
+.btn-socials .btn-social-custom.ln > em{background:#419d1e;}
+.btn-socials .btn-social-custom.tw{background:#2cafe9;}
+.btn-socials .btn-social-custom.tw:hover,
+.btn-socials .btn-social-custom.tw > em{background:#1796ce;}
+
 
 /* Inputs */
 input[type=text], input[type=email], input[type=password], input[type=date], input[type=tel],
@@ -181,6 +195,21 @@ input[type=phone]:focus, input[type=submit]:focus, select:focus, textarea:focus{
     color:#ffffff; background:#fe4d01; border-color:#fe4d01;
 }
 .list-header .btn-icon em{background:#fe4d01; color:#ffffff;}
+
+
+/* Password Level */
+.password-level > .levels > *{background:#ebebeb;}
+.password-level.level-1 > .levels > *:nth-child(1){background:#ff0000;}
+.password-level.level-1 > p > span{color:#ff0000;}
+.password-level.level-2 > .levels > *:nth-child(1),
+.password-level.level-2 > .levels > *:nth-child(2){background:#fe4d01;}
+.password-level.level-2 > p > span{color:#fe4d01;}
+.password-level.level-3 > .levels > *:nth-child(1),
+.password-level.level-3 > .levels > *:nth-child(2),
+.password-level.level-3 > .levels > *:nth-child(3){background:#ffb739;}
+.password-level.level-3 > p > span{color:#ffb739;}
+.password-level.level-4 > .levels > *{background:#466289;}
+.password-level.level-4 > p > span{color:#466289;}
 
 
 /* Popup */
@@ -268,6 +297,10 @@ input[type=phone]:focus, input[type=submit]:focus, select:focus, textarea:focus{
 .ss-img .hover-container{background:rgba(255,77,1,.5);}
 
 
+/* Special Separation 01 */
+.ss-sep-01 > *::before, .ss-sep-01 > *::after{background:#e1e1e1;}
+
+
 /* Special Stat */
 .ss-stat .stat{color:#2a2a2a;}
 
@@ -280,6 +313,25 @@ input[type=phone]:focus, input[type=submit]:focus, select:focus, textarea:focus{
 table.table td{border-color:#e1e1e1;}
 table.table .sep{background:#cccccc;}
 table.table .ticon{color:#ffffff;}
+
+/* Table 01 */
+table.table.table-01 th{background:#627894; color:#ffffff;}
+table.table.table-01 th:nth-child(6n+2){background:#a0aec1;}
+table.table.table-01 th:nth-child(6n+3){background:#466289;}
+table.table.table-01 th:nth-child(6n+4){background:#dbe8f9;}
+table.table.table-01 th:nth-child(6n+5){background:#fa6121;}
+table.table.table-01 th:nth-child(6n){background:#ffb739;}
+table.table.table-01 td{background:#ffffff; color:#383838; border-color:#d6d6d6!important;}
+table.table.table-01 td:nth-child(6n+1){background:#ebe8e8;}
+table.table.table-01 td:nth-child(6n+3){background:#f9f9f9;}
+table.table.table-01 td:nth-child(6n+5){background:#373737; color:#ffffff;}
+table.table.table-01 td:nth-child(6n){background:#696a6a; color:#ffffff;}
+table.table.table-01 tr:hover td{background:#b9bbbb!important; color:#ffffff!important;}
+table.table.table-01 td:nth-child(2)::before{background:#fe4d01;}
+table.table.table-01 tr:hover td:nth-child(2)::before{background:#ffffff;}
+table.table.table-01 .profile-card > .profile-icon{background:#ffffff;}
+table.table.table-01 .profile-card .date{color:#fe4d01;}
+table.table.table-01 tr:hover .profile-card .date{color:#ffffff;}
 
 
 /* Toggle Target */
@@ -340,18 +392,22 @@ table.table .ticon{color:#ffffff;}
 .org-01 .node.node-01 .child > *{background:#627894;}
 .org-01 .node.node-01 > .node-container, 
 .org-01 .node.node-01 .child:hover > *{background:#445467;}
+.org-01.round .node.node-01 > .node-container{background:#627894;}
 .org-01 .node.node-02 .node-title::before, .org-01 .node.node-02 .children, 
 .org-01 .node.node-02 .child > *{background:#a0aec1;}
 .org-01 .node.node-02 > .node-container, 
 .org-01 .node.node-02 .child:hover > *{background:#707987;}
+.org-01.round .node.node-02 > .node-container{background:#a0aec1;}
 .org-01 .node.node-03 .node-title::before, .org-01 .node.node-03 .children, 
 .org-01 .node.node-03 .child > *{background:#ffb739;}
 .org-01 .node.node-03 > .node-container, 
 .org-01 .node.node-03 .child:hover > *{background:#b28028;}
+.org-01.round .node.node-03 > .node-container{background:#ffb739;}
 .org-01 .node.node-04 .node-title::before, .org-01 .node.node-04 .children, 
 .org-01 .node.node-04 .child > *{background:#fe4d01;}
 .org-01 .node.node-04 > .node-container, 
 .org-01 .node.node-04 .child:hover > *{background:#b13601;}
+.org-01.round .node.node-04 > .node-container{background:#fe4d01;}
 
 
 /* Pagination 01 */

@@ -25,8 +25,7 @@
                 <form action="/" method="POST">
                     <div class="form-group">
                         <label class="p">อีเมล <span class="text-danger">*</span></label>
-                        <input type="email" class="form-control round" placeholder="กรุณากรอกอีเมลที่ต้องการรับข่าวสาร" 
-                        required title="General Text Input" />
+                        <input type="email" class="form-control round" placeholder="กรุณากรอกอีเมลที่ต้องการรับข่าวสาร" required title="General Text Input" />
                     </div>
                     <div class="form-group mt-3">
                         <p class="color-black">

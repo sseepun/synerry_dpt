@@ -104,6 +104,20 @@ nav.sidenav .submenu .dropdown-toggle{color:#000000;}
 
 .btn.btn-social{background:#ffff00; color:#000000;}
 
+/* Button Socials */
+.btn-socials .btn-social-custom.fw{background:#4668b7;}
+.btn-socials .btn-social-custom.fw:hover,
+.btn-socials .btn-social-custom.fw > em{background:#3157b0;}
+.btn-socials .btn-social-custom.gg{background:#eb4033;}
+.btn-socials .btn-social-custom.gg:hover,
+.btn-socials .btn-social-custom.gg > em{background:#b62c22;}
+.btn-socials .btn-social-custom.ln{background:#3ace01;}
+.btn-socials .btn-social-custom.ln:hover,
+.btn-socials .btn-social-custom.ln > em{background:#419d1e;}
+.btn-socials .btn-social-custom.tw{background:#2cafe9;}
+.btn-socials .btn-social-custom.tw:hover,
+.btn-socials .btn-social-custom.tw > em{background:#1796ce;}
+
 
 /* Inputs */
 input[type=text], input[type=email], input[type=password], input[type=date], input[type=tel],
@@ -119,6 +133,17 @@ input[type=number], input[type=phone], input[type=submit], select, textarea{
 .list-header .option{color:#ffff00; background:#000000; border-color:#ffff00;}
 .list-header .option:hover, .list-header .option.active{color:#000000; background:#ffff00;}
 .list-header .btn-icon em{background:#ffff00; color:#000000;}
+
+
+/* Password Level */
+.password-level > .levels > *{border:1px solid #ffff00;}
+.password-level.level-1 > .levels > *:nth-child(1){background:#ffff00;}
+.password-level.level-2 > .levels > *:nth-child(1),
+.password-level.level-2 > .levels > *:nth-child(2){background:#ffff00;}
+.password-level.level-3 > .levels > *:nth-child(1),
+.password-level.level-3 > .levels > *:nth-child(2),
+.password-level.level-3 > .levels > *:nth-child(3){background:#ffff00;}
+.password-level.level-4 > .levels > *{background:#ffff00;}
 
 
 /* Popup */
@@ -200,6 +225,10 @@ input[type=number], input[type=phone], input[type=submit], select, textarea{
 .ss-img .hover-container{background:rgba(255,77,1,.5);}
 
 
+/* Special Separation 01 */
+.ss-sep-01 > *::before, .ss-sep-01 > *::after{background:#ffff00;}
+
+
 /* Special Stat */
 .ss-stat .stat{color:#ffff00;}
 
@@ -211,6 +240,11 @@ input[type=number], input[type=phone], input[type=submit], select, textarea{
 table.table td{border-color:#ffff00;}
 table.table .sep{background:#ffff00;}
 table.table .ticon{color:#000000!important; background:#ffff00!important;}
+
+/* Table 01 */
+table.table.table-01 th{background:#ffff00; color:#000000;}
+table.table.table-01 td{color:#ffff00; border-color:#ffff00!important;}
+table.table.table-01 .profile-card > .profile-icon{background:#ffff00;}
 
 
 /* Toggle Target */

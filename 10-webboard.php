@@ -38,23 +38,25 @@
                         <h6 class="p lg fw-400">หมวดหมู่กระทู้</h6>
                     </div>
                     <div class="body bg-bgray">
-                        <div class="gallery-grids">
-                            <?php
-                                foreach([
-                                    'ข่าวประชาสัมพันธ์', 'สุขภาพช่องปาก', 'โภชนาการทันโรค', 'นานาทัศนะ',
-                                    'พรบ.สาธารณสุข 2535', 'บริหารทรัพยากรบุคคล', 'ออกกำลังกาย',
-                                    'เวทีวิชาการ', 'เมืองน่าอยู่', 'การพัฒนาระบบราชการ',
-                                    'โรงพยาบาลส่งเสริมสุขภาพ', 'ความรู้คอมพิวเตอร์'
-                                ] as $i=>$d){
-                            ?>
-                                <div class="grid lg-25 md-1-3 mt-0 mb-2">
-                                    <div class="form-check">
-                                        <input type="radio" name="category" id="category_<?= $i ?>" class="form-check-input" title="General Radio Input Input" />
-                                        <label for="category_<?= $i ?>" class="color-white"><?= $d ?></label>
+                        <fieldset>
+                            <div class="gallery-grids">
+                                <?php
+                                    foreach([
+                                        'ข่าวประชาสัมพันธ์', 'สุขภาพช่องปาก', 'โภชนาการทันโรค', 'นานาทัศนะ',
+                                        'พรบ.สาธารณสุข 2535', 'บริหารทรัพยากรบุคคล', 'ออกกำลังกาย',
+                                        'เวทีวิชาการ', 'เมืองน่าอยู่', 'การพัฒนาระบบราชการ',
+                                        'โรงพยาบาลส่งเสริมสุขภาพ', 'ความรู้คอมพิวเตอร์'
+                                    ] as $i=>$d){
+                                ?>
+                                    <div class="grid lg-25 md-1-3 mt-0 mb-2">
+                                        <div class="form-check">
+                                            <input type="radio" name="category" id="category_<?= $i ?>" class="form-check-input" title="General Radio Input Input" />
+                                            <label for="category_<?= $i ?>" class="color-white"><?= $d ?></label>
+                                        </div>
                                     </div>
-                                </div>
-                            <?php }?>
-                        </div>
+                                <?php }?>
+                            </div>
+                        </fieldset>
                     </div>
                 </div>
                 <div class="ss-box-header color-white">
