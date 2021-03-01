@@ -272,8 +272,10 @@ input[type=phone]:focus, input[type=submit]:focus, select:focus, textarea:focus{
 /* Special Card 06 */
 .ss-card-06 .text-container{background:#ffffff;}
 .ss-card-06:hover .text-container{background:#212121;}
-.ss-card.ss-card-06 .text-container .title, .ss-card-06 .text-container .arrow{color:#fe4d01;}
+.ss-card.ss-card-06 .text-container .title, .ss-card-06 .text-container .arrow,
+.ss-card-06 .text-container .ss-stat .stat > em{color:#fe4d01;}
 .ss-card-06:hover .text-container .desc, .ss-card-06:hover .text-container .ss-stat .stat,
+.ss-card-06:hover .text-container .ss-stat .stat > em,
 .ss-card-06:hover .text-container .arrow{color:#ffffff;}
 
 
