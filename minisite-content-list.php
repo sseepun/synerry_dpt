@@ -52,9 +52,9 @@
                                                     <div class="row">
                                                         <div class="col-12" style="">
                                                             <p style="font-size: 24px;">
-                                                              <a href="organization-structure">O1 - โครงสร้าง</a></p>
+                                                              <a href="#">O1 - โครงสร้าง</a></p>
                                                               <p style="font-size: 24px;">
-                                                              <a href="executives-management" target="_blank">O2 - ข้อมูลผู้บริหาร</a></p>
+                                                              <a href="#" target="_blank">O2 - ข้อมูลผู้บริหาร</a></p>
                                                         </div>
                                                     </div>
                                                 </div>
