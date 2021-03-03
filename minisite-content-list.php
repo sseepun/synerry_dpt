@@ -91,7 +91,7 @@
                                           <div aria-labelledby ="heading-1" class="collapse show" data-parent="accordion" id="collapse_1" style="">
                                               <div class="card-body">
                                                   <div class="row">
-                                                      <div class="col-12" style="">
+                                                      <div class="col-12">
                                                           <p style="font-size: 24px;">
                                                             <a href="#">O1 - โครงสร้าง</a></p>
                                                           <p style="font-size: 24px;">
@@ -132,7 +132,7 @@
                                           <div aria-labelledby ="heading-1" class="collapse show" data-parent="accordion" id="collapse_1" style="">
                                               <div class="card-body">
                                                   <div class="row">
-                                                      <div class="col-12" style="">
+                                                      <div class="col-12">
                                                           <p style="font-size: 24px;">
                                                             <a href="#">O1 - โครงสร้าง</a></p>
                                                           <p style="font-size: 24px;">
