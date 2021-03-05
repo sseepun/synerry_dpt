@@ -223,12 +223,29 @@ input[type=phone]:focus, input[type=submit]:focus, select:focus, textarea:focus{
 .post-stat .stat em{color:#ffffff; background:#fe4d01;}
 
 
-/* Special Box Shadow */
-.ss-box-shadow::before{background:#ffffff;}
-
-
 /* Special Border */
 .ss-border{border-top:4px solid #363434!important; border-bottom:1px solid #afaeae!important;}
+
+
+/* Special Box Webboard */
+.ss-box-webboard > .header{background:#3b3c3b; color:#ffffff;}
+.ss-box-webboard > .header::before{background:#3b3c3b;}
+.ss-box-webboard > .header .blocks{background:#333333; border-color:#999999;}
+.ss-box-webboard > .header .slot{border-color:#999999;}
+.ss-box-webboard .inner-wrapper{border-color:#e1e1e1;}
+.ss-box-webboard .btn.btn-icon{color:#fe4d01; border-color:#fe4d01;}
+.ss-box-webboard a.btn.btn-icon:hover{color:#ffffff; background:#fe4d01;}
+.ss-box-webboard .btn.btn-icon.btn-icon-02{
+    color:#ffffff; background:#ffb739; border-color:#ffb739;
+}
+.ss-box-webboard .btn.btn-icon.btn-icon-03{
+    color:#ffffff; background:#a0aec1; border-color:#a0aec1;
+}
+.ss-box-webboard a.btn.btn-icon.btn-icon-03:hover{border-color:#ffb739; background:#ffb739;}
+
+
+/* Special Box Shadow */
+.ss-box-shadow::before{background:#ffffff;}
 
 
 /* Special Card */
@@ -297,6 +314,10 @@ input[type=phone]:focus, input[type=submit]:focus, select:focus, textarea:focus{
 
 /* Special Image */
 .ss-img .hover-container{background:rgba(255,77,1,.5);}
+
+
+/* Special List 01 */
+.ss-list-01 > li::before{background:#fe4d01;}
 
 
 /* Special Separation 01 */
