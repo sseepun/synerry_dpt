@@ -189,6 +189,27 @@ input[type=phone]:focus, input[type=submit]:focus, select:focus, textarea:focus{
 .form-check > label{color:#666666;}
 
 
+/* Chat Container */
+.chat-container .chat > .profile-container{background:#ffffff;}
+.chat-container .chat .text-wrapper{
+    background:#ffffff; color:#3a3a39; border-color:#e7e7e6;
+}
+.chat-container .chat.chat-other .text-wrapper{background:#f3f5f5;}
+
+
+/* CK Editor */
+.ck.ck-editor__main>.ck-editor__editable{
+    border-color:#dddddd!important; transition:border-color .25s;
+}
+.ck.ck-editor__editable:not(.ck-editor__nested-editable).ck-focused{
+    border-color:#fe4d01!important;
+}
+.ck-rounded-corners .ck.ck-editor__top .ck-sticky-panel .ck-toolbar{background:#e1e1e1;}
+.ck.ck-dropdown .ck-button.ck-dropdown__button,
+.ck-rounded-corners .ck.ck-button{border-color:#ffffff;}
+.ck.ck-button.ck-on{background:#ffffff!important;}
+
+
 /* List Header */
 .list-header .option{color:#fe4d01; background:#ffffff; border-color:#dddddd;}
 .list-header .option:hover, .list-header .option.active{
@@ -233,6 +254,7 @@ input[type=phone]:focus, input[type=submit]:focus, select:focus, textarea:focus{
 .ss-box-webboard > .header .blocks{background:#333333; border-color:#999999;}
 .ss-box-webboard > .header .slot{border-color:#999999;}
 .ss-box-webboard .inner-wrapper{border-color:#e1e1e1;}
+.ss-box-webboard .webboard-profile > .profile-icon{background:#ffffff;}
 .ss-box-webboard .btn.btn-icon{color:#fe4d01; border-color:#fe4d01;}
 .ss-box-webboard a.btn.btn-icon:hover{color:#ffffff; background:#fe4d01;}
 .ss-box-webboard .btn.btn-icon.btn-icon-02{
@@ -355,6 +377,13 @@ table.table.table-01 tr:hover td:nth-child(2)::before{background:#ffffff;}
 table.table.table-01 .profile-card > .profile-icon{background:#ffffff;}
 table.table.table-01 .profile-card .date{color:#fe4d01;}
 table.table.table-01 tr:hover .profile-card .date{color:#ffffff;}
+
+table.table.table-01.cols-4 th:nth-child(4n+2){background:#a0aec1;}
+table.table.table-01.cols-4 th:nth-child(4n+3){background:#466289;}
+table.table.table-01.cols-4 th:nth-child(4n){background:#ffb739;}
+table.table.table-01.cols-4 td:nth-child(4n+1){background:#ebe8e8;}
+table.table.table-01.cols-4 td:nth-child(4n+3){background:#f9f9f9;}
+table.table.table-01.cols-4 td:nth-child(4n){background:#696a6a; color:#ffffff;}
 
 
 /* Toggle Target */
