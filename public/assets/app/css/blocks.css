@@ -271,12 +271,10 @@
 .intro-01 h6{color:#000000;}
 .intro-01 .btns{display:flex; align-items:center; justify-content:center; height:5rem;}
 .intro-01 .btns > .btn{min-width:10rem; box-shadow:0 0 8px 4px rgba(0,0,0,.2);}
-
 .intro-01 .hero-01{display:block; width:100%; max-width:52rem; margin:0 auto 2rem auto;}
 .intro-01 .hero-02{
     display:block; width:100%; max-width:27rem; position:absolute; top:14%; left:20%;
 }
-
 @media screen and (max-width:1199.98px){
     .intro-01 .intro-logo{width:6.5rem;}
 }
@@ -293,6 +291,41 @@
 @media screen and (max-width:575.98px){
     .intro-01 .intro-logo{width:5rem;}
     .intro-01 .hero-02{max-width:20rem;}
+}
+
+
+/* Intro 02 */
+.intro-02{display:block; position:relative; width:100%; height:100vh; overflow:hidden;}
+.intro-02 .intro-container{
+    position:relative; width:100%; height:calc(100% - 5rem); padding:1rem;
+    display:flex; align-items:center; justify-content:center;
+    background-size:cover; background-position:center;
+}
+.intro-02 .btns{display:flex; align-items:center; justify-content:center; height:5rem;}
+.intro-02 .btns > .btn{min-width:10rem; box-shadow:0 0 8px 4px rgba(0,0,0,.2);}
+.intro-02 .intro-img{display:block; width:100%; height:auto; margin:0 auto;}
+.intro-02 .intro-img-01{max-width:29rem;}
+.intro-02 .sep{display:block; width:100%; height:auto; margin:0 auto;}
+.intro-02 .sep-01{max-width:21rem;}
+.intro-02 .sep-02{max-width:24.5rem;}
+@media screen and (max-width:991.98px){
+    .intro-02{height:auto;}
+    .intro-02 .intro-container{height:auto; padding:2.5rem 1rem;}
+    .intro-02 .intro-img-01{max-width:22rem; margin-bottom:1rem;}
+    .intro-02 .sep-01{max-width:18rem;}
+    .intro-02 .sep-02{max-width:22rem;}
+}
+@media screen and (max-width:767.98px){
+    .intro-02 .intro-container{padding:2rem 1rem;}
+    .intro-02 .intro-img-01{max-width:19rem; margin-bottom:.75rem;}
+    .intro-02 .sep-01{max-width:16rem;}
+    .intro-02 .sep-02{max-width:19rem;}
+}
+@media screen and (max-width:575.98px){
+    .intro-02 .intro-container{padding:1.75rem 1rem;}
+    .intro-02 .intro-img-01{max-width:16rem;}
+    .intro-02 .sep-01{max-width:14rem;}
+    .intro-02 .sep-02{max-width:18rem;}
 }
 
 

@@ -317,6 +317,16 @@ input[type=phone]:focus, input[type=submit]:focus, select:focus, textarea:focus{
 .ss-card-06:hover .text-container .ss-stat .stat > em,
 .ss-card-06:hover .text-container .arrow{color:#ffffff;}
 
+/* Special Card 07 */
+.ss-card-07{background:#f2f2f2;}
+.ss-card-07:hover{background:#fe4d01;}
+.ss-card-07 .text-container .arrow{color:#fe4d01;}
+.ss-card-07:hover .text-container .title, .ss-card-07:hover .text-container .desc,
+.ss-card-07:hover .text-container .ss-stat .stat,
+.ss-card-07:hover .text-container .arrow{color:#ffffff;}
+.ss-card-07 .text-container .card-tag{background:#fe4d01; color:#ffffff;}
+.ss-card-07:hover .text-container .card-tag{background:#000000;}
+
 
 /* Special File 01 */
 .ss-file-01 > .icon-container{background:#eeeeee; color:#000000; border-color:#cccccc;}
