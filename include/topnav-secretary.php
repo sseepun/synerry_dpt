@@ -1,6 +1,6 @@
 
 <!-- Topnav Secretary -->
-<nav class="topnav-secretary">
+<nav class="topnav-secretary <?php if(!empty($topnavClass))echo $topnavClass; ?>">
     <div class="blocks">
         <div class="block ai-unset">
             <a class="logo" href="#">

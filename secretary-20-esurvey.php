@@ -97,6 +97,7 @@
     
     <?php include_once('include/footer-secretary.php'); ?>
     <?php include_once('include/script.php'); ?>
+    
     <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
     <script>
         var options = {

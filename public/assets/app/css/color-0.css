@@ -189,6 +189,21 @@ input[type=phone]:focus, input[type=submit]:focus, select:focus, textarea:focus{
 .form-check > label{color:#666666;}
 
 
+/* Calendar - Month */
+.calendar-month .fc-day-header{color:#666666;}
+.calendar-month .fc-day-top > span{background:#fe4d01; color:#ffffff;}
+.calendar-month .fc-day-top.fc-other-month > span{background:#cccccc;}
+.calendar-month .fc-unthemed td.fc-today{background:#666666; color:#ffffff;}
+.calendar-month .custom-event{color:#666666;}
+.calendar-month .custom-event:hover .title{color:#fe4d01;}
+.calendar-month .custom-event.today{color:#ffffff;}
+.calendar-month .custom-event .time{color:#fe4d01;}
+.calendar-month a.fc-more{color:#999999; border-color:#cccccc;}
+.calendar-month a.fc-more:hover{color:#fe4d01;}
+.calendar-month .fc-day:hover{background:rgba(254,77,1,.25);}
+.calendar-month .fc-event-container{background:#f5f5f5;}
+
+
 /* Chat Container */
 .chat-container .chat > .profile-container{background:#ffffff;}
 .chat-container .chat .text-wrapper{
@@ -327,6 +342,28 @@ input[type=phone]:focus, input[type=submit]:focus, select:focus, textarea:focus{
 .ss-card-07 .text-container .card-tag{background:#fe4d01; color:#ffffff;}
 .ss-card-07:hover .text-container .card-tag{background:#000000;}
 
+/* Special Card 08 */
+.ss-card-08{background:#f2f2f2;}
+.ss-card-08:hover{background:#fe4d01;}
+.ss-card-08 .text-container > .info-content{border-color:#cccccc;}
+.ss-card-08:hover .text-container > .info-content{border-color:#ffffff;}
+.ss-card-08 .text-container .arrow{color:#fe4d01;}
+.ss-card-08:hover .text-container .title, .ss-card-08:hover .text-container .desc,
+.ss-card-08:hover .text-container .ss-stat .stat, .ss-card-08:hover .text-container .arrow,
+.ss-card-08:hover .info-content p{color:#ffffff;}
+.ss-card-08 .info-content .text-icon em{background:#fe4d01; color:#ffffff;}
+.ss-card-08:hover .info-content .text-icon em{background:#ffffff; color:#fe4d01;}
+
+/* Special Card 09 */
+.ss-card-09{background:#f2f2f2;}
+
+/* Special Card 10 */
+.ss-card-10{background:#f2f2f2;}
+
+
+/* Special Date */
+.ss-date{background:#fe4d01; color:#ffffff;}
+
 
 /* Special File 01 */
 .ss-file-01 > .icon-container{background:#eeeeee; color:#000000; border-color:#cccccc;}
@@ -358,6 +395,7 @@ input[type=phone]:focus, input[type=submit]:focus, select:focus, textarea:focus{
 
 /* Special Stat */
 .ss-stat .stat{color:#2a2a2a;}
+.ss-stat .stat .icon-round{background:#fe4d01; color:#ffffff;}
 
 /* Special Tag */
 .ss-tag{background:#999999; color:#ffffff;}
