@@ -368,6 +368,14 @@ table.table.table-01 .profile-card > .profile-icon{background:#ffffff;}
 .sitemap-01 .sitemap li > ul > li::before{background:#ffffff;}
 
 
+/* Survey 01 */
+.survey-01 .survey > .header .icon{background:#ffffff; color:#000000;}
+
+
+/* Survey 02 */
+.survey-02 .survey > .num{background:#ffffff; color:#000000;}
+
+
 /* Tab Container - Tabs 01 */
 .tab-container .tabs.tabs-01 .tab{color:#ffffff;}
 .tab-container .tabs.tabs-01 .tab::before{background:#ffffff;}

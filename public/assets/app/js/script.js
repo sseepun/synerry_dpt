@@ -313,6 +313,25 @@ $(function(){ 'use strict';
         });
     }
 
+    
+    // Survey 01
+    var survey01 = $('.survey-01');
+    if(survey01.length){
+        survey01.each(function(){
+            $(this).find('.survey .survey-toggle').click(function(e){
+                e.preventDefault();
+                var parent = $(this).closest('.survey');
+                if(parent.hasClass('active')){
+                    parent.removeClass('active');
+                    parent.find('> .body').slideUp();
+                }else{
+                    parent.addClass('active');
+                    parent.find('> .body').slideDown();
+                }
+            });
+        });
+    }
+
 
     // Page Loader
     if($('.page-loader').length){

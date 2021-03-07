@@ -500,6 +500,14 @@ table.table.table-01.cols-4 td:nth-child(4n){background:#696a6a; color:#ffffff;}
 .sitemap-01 .sitemap li > ul > li::before{background:#fe4d01;}
 
 
+/* Survey 01 */
+.survey-01 .survey > .header .icon{background:#fe4d01; color:#ffffff;}
+
+
+/* Survey 02 */
+.survey-02 .survey > .num{background:#393939; color:#ffffff;}
+
+
 /* Tab Container - Tabs 01 */
 .tab-container .tabs.tabs-01 .tab{color:#b6b6b6;}
 .tab-container .tabs.tabs-01 .tab:hover, .tab-container .tabs.tabs-01 .tab.active{color:#fe4d01;}
