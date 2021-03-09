@@ -18,15 +18,17 @@ html, body, a, a:hover, table.table{color:#ffffff;}
 .color-05, .h-color-05:hover,
 .color-06, .h-color-06:hover,
 .color-07, .h-color-07:hover,
-.color-08, .h-color-08:hover{color:#ffffff!important;}
+.color-08, .h-color-08:hover,
+.color-09, .h-color-09:hover{color:#ffffff!important;}
 
 .bg-white, .bg-black, .bg-gray, .bg-bgray, .bg-mgray, .bg-sgray, .bg-fgray,
-.bg-01, .bg-02, .bg-03, .bg-04, .bg-05, .bg-06, .bg-07, .bg-08{background:#000000!important;}
+.bg-01, .bg-02, .bg-03, .bg-04, .bg-05, .bg-06, .bg-07, .bg-08,
+.bg-09{background:#000000!important;}
 
 .bcolor-white, .bcolor-black, .bcolor-gray, .bcolor-bgray, 
 .bcolor-mgray, .bcolor-sgray, .bcolor-fgray, 
 .bcolor-01, .bcolor-02, .bcolor-03, .bcolor-04, .bcolor-05, 
-.bcolor-06, .bcolor-07, .bcolor-08{border-color:#ffffff!important;}
+.bcolor-06, .bcolor-07, .bcolor-08, .bcolor-09{border-color:#ffffff!important;}
 
 
 /* Topnav */
@@ -282,9 +284,20 @@ input[type=number], input[type=phone], input[type=submit], select, textarea{
 /* Special Card 10 */
 .ss-card-10{border:1px solid #ffffff;}
 
+/* Special Card 11 */
+.ss-card-11{border:1px solid #ffffff;}
+.ss-card-11 .text-container .title{color:#ffffff;}
+.ss-card-11 > .info-content{border-color:#ffffff;}
+
+/* Special Card 12 */
+.ss-card-12{border:1px solid #ffffff;}
+.ss-card-12:hover{background:#ffffff;}
+.ss-card-12:hover .text-container .title,
+.ss-card-12:hover .text-container .date{color:#000000;}
+
 
 /* Special Date */
-.ss-date{background:#ffffff; color:#000000;}
+.ss-date, .ss-date-sm{background:#ffffff; color:#000000;}
 
 
 /* Special File 01 */
@@ -330,9 +343,40 @@ table.table.table-01 th{background:#ffffff; color:#000000;}
 table.table.table-01 td{color:#ffffff; border-color:#ffffff!important;}
 table.table.table-01 .profile-card > .profile-icon{background:#ffffff;}
 
+/* Table 02 */
+table.table.table-02{border-color:#ffffff;}
+
+/* Table 03 */
+table.table.table-03, table.table.table-03 tfoot th,
+table.table.table-03 td{border-color:#ffffff;}
+
+/* Table 04 */
+table.table.table-04 thead th, table.table.table-04 td{border-color:#ffffff;}
+
 
 /* Toggle Target */
 .toggle-target{background:#000000; border-color:#ffffff;}
+
+
+/* About 03 */
+.about-03 > .img-bg{background:none!important;}
+.about-03 .slick-dots button{background:#ffffff;}
+.about-03 .arrows button{color:#ffffff;}
+
+
+/* About 04 */
+.about-04 > .img-bg{background:none!important;}
+.about-04 .about-box{border:1px solid #ffffff;}
+
+
+/* About 05 */
+.about-05 .about-container > .wrapper::before{border:1px solid #ffffff;}
+
+
+/* Banner 01 */
+.banner-01 .slick-dots button{background:#ffffff;}
+.banner-01 .arrows button{background:#ffffff; color:#000000;}
+.banner-01 .arrows button:hover{background:#000000; color:#ffffff;}
 
 
 /* Breadcrumb 03 */
@@ -424,3 +468,13 @@ table.table.table-01 .profile-card > .profile-icon{background:#ffffff;}
 .tab-container .tabs.tabs-02 .tab:hover, 
 .tab-container .tabs.tabs-02 .tab.active{background:#ffffff; color:#000000;}
 .tab-container .tabs.tabs-02 .hamburger > *{background:#ffffff;}
+
+/* Tab Container - Tabs 03 */
+.tab-container .tabs.tabs-03 .tab{color:#ffffff;}
+.tab-container .tabs.tabs-03 .tab::before{background:#ffffff;}
+.tab-container .tabs.tabs-03 .tab::after{background:#ffffff;}
+
+/* Tab Container - Tabs 04 */
+.tab-container .tabs.tabs-04 .tab{color:#ffffff;}
+.tab-container .tabs.tabs-04 .tab::before{background:#ffffff;}
+.tab-container .tabs.tabs-04 .tab::after{background:#ffffff;}

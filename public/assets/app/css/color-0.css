@@ -19,6 +19,7 @@ html, body, a, a:hover, table.table{color:#2b2b2a;}
 .color-06, .h-color-06:hover{color:#a0e8d0!important;}
 .color-07, .h-color-07:hover{color:#627894!important;}
 .color-08, .h-color-08:hover{color:#a0aec1!important;}
+.color-09, .h-color-09:hover{color:#ffff00!important;}
 
 .bg-white{background:#ffffff!important;}
 .bg-black{background:#000000!important;}
@@ -35,6 +36,7 @@ html, body, a, a:hover, table.table{color:#2b2b2a;}
 .bg-06{background:#a0e8d0!important;}
 .bg-07{background:#627894!important;}
 .bg-08{background:#a0aec1!important;}
+.bg-09{background:#ffff00!important;}
 
 .bcolor-white{border-color:#ffffff!important;}
 .bcolor-black{border-color:#000000!important;}
@@ -51,6 +53,7 @@ html, body, a, a:hover, table.table{color:#2b2b2a;}
 .bcolor-06{border-color:#a0e8d0!important;}
 .bcolor-07{border-color:#627894!important;}
 .bcolor-08{border-color:#a0aec1!important;}
+.bcolor-09{border-color:#ffff00!important;}
 
 
 /* Topnav */
@@ -360,9 +363,23 @@ input[type=phone]:focus, input[type=submit]:focus, select:focus, textarea:focus{
 /* Special Card 10 */
 .ss-card-10{background:#f2f2f2;}
 
+/* Special Card 11 */
+.ss-card-11{background:#7f2600;}
+.ss-card-11 .text-container .title{color:#ffffff;}
+.ss-card-11:hover .text-container .title{color:#fe4d01;}
+.ss-card-11 > .info-content{border-color:#ffffff;}
+
+/* Special Card 12 */
+.ss-card-12{background:#ffffff;}
+.ss-card-12:hover{background:#fe4d01;}
+.ss-card-12 .text-container .date{color:#fe4d01;}
+.ss-card-12:hover .text-container .title,
+.ss-card-12:hover .text-container .date{color:#ffffff;}
+
 
 /* Special Date */
 .ss-date{background:#fe4d01; color:#ffffff;}
+.ss-date-sm{background:none; color:#ffffff; border:2px solid #ffffff;}
 
 
 /* Special File 01 */
@@ -433,9 +450,36 @@ table.table.table-01.cols-4 td:nth-child(4n+1){background:#ebe8e8;}
 table.table.table-01.cols-4 td:nth-child(4n+3){background:#f9f9f9;}
 table.table.table-01.cols-4 td:nth-child(4n){background:#696a6a; color:#ffffff;}
 
+/* Table 02 */
+table.table.table-02{border-color:#e1e1e1;}
+
+/* Table 03 */
+table.table.table-03, table.table.table-03 tfoot th{border-color:#ffffff;}
+table.table.table-03 td{border-color:rgba(255,255,255,.3);}
+
+/* Table 04 */
+table.table.table-04 thead th{border-color:#ffffff;}
+table.table.table-04 td{border-color:rgba(255,255,255,.3);}
+
 
 /* Toggle Target */
 .toggle-target{background:#ffffff; border-color:#e1e1e1;}
+
+
+/* About 03 */
+.about-03 .slick-dots button{background:#ffffff;}
+.about-03 .arrows button{color:#ffffff;}
+.about-03 .arrows button:hover{color:#fe4d01;}
+
+
+/* About 05 */
+.about-05 .about-container > .wrapper::before{background:#2d2b2d;}
+
+
+/* Banner 01 */
+.banner-01 .slick-dots button{background:#ffffff;}
+.banner-01 .arrows button{background:#ffffff; color:#000000;}
+.banner-01 .arrows button:hover{background:#fe4d01; color:#ffffff;}
 
 
 /* Breadcrumb 03 */
@@ -559,3 +603,20 @@ table.table.table-01.cols-4 td:nth-child(4n){background:#696a6a; color:#ffffff;}
 .tab-container .tabs.tabs-02 .tab.active{background:#d6412a;}
 .tab-container .tabs.tabs-02 .tab.tab-header{background:#000000;}
 .tab-container .tabs.tabs-02 .hamburger > *{background:#ffffff;}
+
+/* Tab Container - Tabs 03 */
+.tab-container .tabs.tabs-03 .tab{color:#b6b6b6;}
+.tab-container .tabs.tabs-03 .tab:hover, .tab-container .tabs.tabs-03 .tab.active{color:#fe4d01;}
+.tab-container .tabs.tabs-03 .tab::before{background:#e1e1e1;}
+.tab-container .tabs.tabs-03 .tab::after{background:#fe4d01;}
+.tab-container .tabs.tabs-03.white .tab{color:#2d2b2d;}
+.tab-container .tabs.tabs-03.white .tab:hover,
+.tab-container .tabs.tabs-03.white .tab.active{color:#ffffff;}
+.tab-container .tabs.tabs-03.white .tab::before{background:rgba(255,255,255,.3);}
+.tab-container .tabs.tabs-03.white .tab::after{background:#ffffff;}
+
+/* Tab Container - Tabs 04 */
+.tab-container .tabs.tabs-04 .tab{color:#ffffff;}
+.tab-container .tabs.tabs-04 .tab:hover, .tab-container .tabs.tabs-04 .tab.active{color:#fe4d01;}
+.tab-container .tabs.tabs-04 .tab::before{background:#ffffff;}
+.tab-container .tabs.tabs-04 .tab::after{background:#fe4d01;}

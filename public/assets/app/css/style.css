@@ -42,7 +42,7 @@ html.global-search-opened, body.global-search-opened{overflow-y:hidden!important
     }
 }
 @media screen and (max-width:991.98px){
-    .section-padding{padding:3rem 0;}
+    .section-padding{padding:3.5rem 0;}
     .section-pattern-01{
         background-size:1100px auto; background-position:bottom calc(50vw - 550px);
         padding-bottom:8rem;
@@ -73,7 +73,7 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6, p, .p, li{
 }
 /* h1, .h1{font-size:4.5625rem;} */
 h2, .h2{font-size:3rem;} h2.lg, .h2.lg{font-size:3.25rem;}
-/* h3, .h3{font-size:2.25rem;} */
+h3, .h3{font-size:2.5rem;}
 h4, .h4{font-size:1.75rem;} h4.xl, .h4.xl{font-size:2.125rem;}
 h4.lg, .h4.lg{font-size:2rem;}
 h5, .h5{font-size:1.625rem;} h5.sm, .h5.sm{font-size:1.5rem;}
@@ -83,17 +83,20 @@ p.md, .p.md{font-size:1.0625rem;} p.sm, .p.sm{font-size:.875rem;}
 p.xs, .p.xs{font-size:.8125rem;}
 @media screen and (max-width:1199.98px){
     h2, .h2{font-size:2.875rem;} h2.lg, .h2.lg{font-size:3.0625rem;}
+    h3, .h3{font-size:2.375rem;}
     h4, .h4{font-size:1.6875rem;} h4.xl, .h4.xl{font-size:2rem;}
     h4.lg, .h4.lg{font-size:1.875rem;}
 }
 @media screen and (max-width:991.98px){
     h2, .h2{font-size:2.75rem;} h2.lg, .h2.lg{font-size:3rem;}
+    h3, .h3{font-size:2.25rem;}
     h4, .h4{font-size:1.625rem;} h4.xl, .h4.xl{font-size:1.875rem;}
     h4.lg, .h4.lg{font-size:1.8125rem;}
     h5, .h5{font-size:1.5625rem;} h5.sm, .h5.sm{font-size:1.4375rem;}
 }
 @media screen and (max-width:767.98px){
     h2, .h2{font-size:2.5rem;} h2.lg, .h2.lg{font-size:2.75rem;}
+    h3, .h3{font-size:2rem;}
     h4, .h4{font-size:1.5625rem;} h4.xl, .h4.xl{font-size:1.75rem;}
     h4.lg, .h4.lg{font-size:1.625rem;}
     h5, .h5{font-size:1.5rem;} h5.sm, .h5.sm{font-size:1.375rem;}
@@ -101,6 +104,7 @@ p.xs, .p.xs{font-size:.8125rem;}
 }
 @media screen and (max-width:575.98px){
     h2, .h2{font-size:2.25rem;} h2.lg, .h2.lg{font-size:2.4375rem;}
+    h3, .h3{font-size:1.75rem;}
     h4, .h4{font-size:1.4375rem;} h4.xl, .h4.xl{font-size:1.625rem;}
     h4.lg, .h4.lg{font-size:1.5rem;}
     h5, .h5{font-size:1.375rem;} h5.sm, .h5.sm{font-size:1.25rem;}
@@ -172,6 +176,10 @@ input[type=number], input[type=phone], input[type=submit], select, textarea{
 input[type=text].round, input[type=email].round, input[type=password].round, 
 input[type=date].round, input[type=tel].round, input[type=number].round, input[type=phone].round,
 input[type=submit].round, select.round, textarea.round{border-radius:1.25rem;}
+
+input[type=text].sm, input[type=email].sm, input[type=password].sm, 
+input[type=date].sm, input[type=tel].sm, input[type=number].sm, input[type=phone].sm,
+input[type=submit].sm, select.sm, textarea.sm{font-size:.875rem; padding:.25rem .875rem;}
 
 textarea[data-copy]{pointer-events:none!important;}
 @media screen and (max-width:991.98px){
@@ -254,13 +262,21 @@ textarea[data-copy]{pointer-events:none!important;}
     width:100%; max-width:32rem; display:flex; align-items:center; justify-content:space-between;
     flex-wrap:wrap; margin:0 auto;
 }
+.chart-container.adaptive-01{height:12.875rem;}
 .chart-container .chart{width:calc(100% - 12rem);}
+.chart-container.no-label .chart{width:100%;}
 .chart-container .labels{width:12rem;}
 .chart-container .label{width:100%; display:flex; align-items:center; margin:.375rem 0;}
 .chart-container .label > .dot{
     display:block; width:.75rem; height:.75rem; border-radius:50%; margin:0 .5rem 0 0;
 }
 .chart-container .label > *:nth-child(2){width:calc(100% - 1.25rem);}
+@media screen and (max-width:991.98px){
+    .chart-container.adaptive-01{height:11.5rem;}
+}
+@media screen and (max-width:767.98px){
+    .chart-container.adaptive-01{height:13rem;}
+}
 @media screen and (max-width:575.98px){
     .chart-container{justify-content:center;}
     .chart-container .chart{width:100%;}
@@ -663,7 +679,7 @@ textarea[data-copy]{pointer-events:none!important;}
 
 
 /* Special Card */
-.ss-card{width:100%;}
+.ss-card{display:block; width:100%;}
 .ss-card .text-container .title, .ss-card .text-container .desc{
     display:block; display:-webkit-box; text-overflow:ellipsis; overflow:hidden;
     -webkit-box-orient:vertical; transition:color .25s;
@@ -690,16 +706,14 @@ textarea[data-copy]{pointer-events:none!important;}
     margin:1rem 0 0 0; font-size:1.875rem; line-height:.8; transition:color .25s;
 }
 @media screen and (max-width:575.98px){
-    .ss-card-02 .text-container .title, .ss-card-02 .text-container .desc{
-        -webkit-line-clamp:unset; min-height:0;
-    }
+    .ss-card-02 .text-container .title, .ss-card-02 .text-container .desc{min-height:0;}
 }
 
 /* Special Card 03 */
 .ss-card-03 .text-container{padding:1rem; transition:background .25s;}
 .ss-card-03 .text-container .title{-webkit-line-clamp:2; min-height:2.1825rem;}
 @media screen and (max-width:575.98px){
-    .ss-card-03 .text-container .title{-webkit-line-clamp:unset; min-height:0;}
+    .ss-card-03 .text-container .title{min-height:0;}
 }
 
 /* Special Card 04 */
@@ -728,10 +742,10 @@ textarea[data-copy]{pointer-events:none!important;}
     }
 }
 @media screen and (max-width:991.98px){
-    .ss-card-04.adaptive .text-container .title{-webkit-line-clamp:unset; min-height:0;}
+    .ss-card-04.adaptive .text-container .title{min-height:0;}
 }
 @media screen and (max-width:575.98px){
-    .ss-card-04 .text-container .title{-webkit-line-clamp:unset; min-height:0;}
+    .ss-card-04 .text-container .title{min-height:0;}
 }
 
 /* Special Card 05 */
@@ -813,9 +827,7 @@ textarea[data-copy]{pointer-events:none!important;}
     margin:.875rem 0 0 0; font-size:1.875rem; line-height:.8; transition:color .25s;
 }
 @media screen and (max-width:575.98px){
-    .ss-card-06 .text-container .title, .ss-card-06 .text-container .desc{
-        -webkit-line-clamp:unset; min-height:0;
-    }
+    .ss-card-06 .text-container .title, .ss-card-06 .text-container .desc{min-height:0;}
 }
 
 /* Special Card 07 */
@@ -913,14 +925,45 @@ textarea[data-copy]{pointer-events:none!important;}
     .ss-card-10 .text-container .title{min-height:0;}
 }
 
+/* Special Card 11 */
+.ss-card-11{
+    width:100%; padding:.25rem; margin:.25rem 0 0 0; display:flex; align-items:center;
+    min-height:5.5rem;
+}
+.ss-card-11 > .text-container{width:calc(100% - 8.5rem); padding:.375rem .75rem;}
+.ss-card-11 .text-container .title{-webkit-line-clamp:3;}
+.ss-card-11 > .info-content{
+    width:5.5rem; padding:0 0 0 .375rem; border-left:2px solid transparent;
+}
+.ss-card-11 > .info-content p{font-size:.6875rem; font-weight:500;}
+
+/* Special Card 12 */
+.ss-card-12{
+    width:100%; padding:.25rem; margin:.375rem 0 0 0; display:flex; align-items:center;
+    border-radius:2.1875rem; overflow:hidden; transition:background .25s;
+}
+.ss-card-12 > .video-container{width:3.875rem; border-radius:1.9375rem; overflow:hidden;}
+.ss-card-12 > .video-container .hover-container{background:transparent;}
+.ss-card-12 > .video-container .hover-container .icon{width:2rem;}
+.ss-card-12 > .text-container{width:calc(100% - 3.875rem); padding:0 1.125rem 0 .75rem;}
+.ss-card-12 .text-container .title{-webkit-line-clamp:2; min-height:2.375rem;}
+.ss-card-12 .text-container .date{font-size:.75rem; margin-top:.125rem; transition:color .25s;}
+
 
 /* Special Date */
 .ss-date-container{position:relative; display:flex;}
 .ss-date-container.position-top-left{position:absolute; top:0; left:0;}
-.ss-date{display:block; width:4rem; padding:.625rem .125rem .5rem .125rem; text-align:center;}
+.ss-date{
+    display:block; width:4rem; height:5.5rem; padding:.625rem .125rem .5rem .125rem;
+    text-align:center;
+}
 .ss-date .date{font-size:3rem; font-weight:600; line-height:.8;}
 .ss-date .month{font-size:.875rem; font-weight:300; line-height:.8;}
 .ss-date .year{font-size:1.25rem; font-weight:600; line-height:.8; margin:.25rem 0 0 0;}
+.ss-date-sm{display:block; width:3rem; padding:.4375rem .125rem; text-align:center;}
+.ss-date-sm .date{font-size:1.75rem; font-weight:500; line-height:.8;}
+.ss-date-sm .month{font-size:1.0625rem; font-weight:300; line-height:1;}
+.ss-date-sm .year{font-size:.8125rem; font-weight:600; line-height:.8; margin:.25rem 0 0 0;}
 
 
 /* Special File 01 */
@@ -1053,6 +1096,8 @@ textarea[data-copy]{pointer-events:none!important;}
     font-size:2.25rem; text-align:center; line-height:4rem;
 }
 
+.ss-img .short-desc{position:absolute; bottom:0; left:0; padding:.5rem .625rem;}
+
 @media screen and (max-width:991.98px){
     .ss-img.adaptive{padding:calc(50% + 1.5rem) 0 0 0; height:auto;}
 }
@@ -1157,10 +1202,33 @@ table.table.table-01 .profile-card > .text-container{
 }
 table.table.table-01 .profile-card .date{transition:color .25s;}
 
+/* Table 02 */
+table.table.table-02{border-top:1px solid transparent; border-bottom:1px solid transparent;}
+table.table.table-02 img{
+    display:block; width:auto; max-width:5.25rem; height:auto; max-height:2rem;
+}
+
+/* Table 03 */
+table.table.table-03{border-top:1px solid transparent; border-bottom:1px solid transparent;}
+table.table.table-03 tfoot th{border-top:1px solid transparent;}
+
+/* Table 04 */
+table.table.table-04 thead th{
+    border-top:1px solid transparent; border-bottom:1px solid transparent;
+}
+
 /* Table Sizes */
-table.table.table-lg td{padding:.6875rem .625rem;}
-table.table.table-lg td:first-child{padding:.6875rem .625rem .6875rem 0;}
-table.table.table-lg td:last-child{padding:.6875rem 0 .6875rem .625rem;}
+table.table.table-lg td, table.table.table-lg th{padding:.6875rem .625rem;}
+table.table.table-lg td:first-child,
+table.table.table-lg th:first-child{padding:.6875rem .625rem .6875rem 0;}
+table.table.table-lg td:last-child,
+table.table.table-lg th:last-child{padding:.6875rem 0 .6875rem .625rem;}
+
+table.table.table-sm td, table.table.table-sm th{padding:.4375rem .5625rem;}
+table.table.table-sm td:first-child,
+table.table.table-sm th:first-child{padding:.4375rem .5625rem .4375rem 0;}
+table.table.table-sm td:last-child,
+table.table.table-sm th:last-child{padding:.4375rem 0 .4375rem .5625rem;}
 
 
 /* Toggle Target */
@@ -1274,8 +1342,9 @@ table.table.table-lg td:last-child{padding:.6875rem 0 .6875rem .625rem;}
 .no-padding{padding:0!important;}
 .box-shadow{box-shadow:0px 5px 20px 10px rgba(0,0,0,.1);}
 
-.ovf-hidden{overflow:hidden;}
-.clear-both{clear:both;}
+.ovf-hidden{overflow:hidden!important;}
+.ovf-visible{overflow:visible!important;}
+.clear-both{clear:both!important;}
 
 .va-baseline{vertical-align:baseline!important;}
 

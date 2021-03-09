@@ -275,6 +275,50 @@ $(function(){ 'use strict';
         });
     }
 
+
+    // About 03
+    var about03 = $('.about-03');
+    if(about03.length){
+        about03.find('.slide-container').each(function(){
+            var self = $(this);
+            self.find('> .slides').slick({
+                centerMode: true, centerPadding: 0, slidesToShow: 3, swipeToSlide: true,
+                focusOnSelect: true, autoplay: true, autoplaySpeed: 4000, speed: 800,
+                arrows: true, appendArrows: self.find('.arrows'), 
+                dots: true, appendDots: self.find('.dots'),
+                responsive: [
+                    { breakpoint: 991.98, settings: { slidesToShow: 2, } },
+                    { breakpoint: 575.98, settings: { slidesToShow: 1, } },
+                ]
+            });
+        });
+    }
+
+
+    // Banner 01
+    var banner01 = $('.banner-01');
+    if(banner01.length){
+        banner01.each(function(){
+            var self = $(this),
+                options = {
+                    centerMode: true, centerPadding: 0, slidesToShow: 1, 
+                    focusOnSelect: true, autoplay: true, autoplaySpeed: 4000, speed: 800,
+                    arrows: true, appendArrows: self.find('.arrows'),
+                    dots: true, appendDots: self.find('.dots')
+                };
+            if(self.hasClass('img-only')){
+                options = {
+                    centerMode: true, centerPadding: 0, slidesToShow: 1, 
+                    focusOnSelect: true, autoplay: true, autoplaySpeed: 4000, speed: 800,
+                    arrows: true, appendArrows: self.find('.arrows'),
+                    dots: true, appendDots: self.find('.dots'),
+                    adaptiveHeight: false
+                };
+            }
+            self.find('.slides').slick(options);
+        });
+    }
+
     
     // FAQ 01
     var faq01 = $('.faq-01');
