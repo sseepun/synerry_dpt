@@ -3,10 +3,9 @@
 <head>
     <?php include_once('include/header.php'); ?>
     <?php include_once('include/style.php'); ?>
-    <link rel="stylesheet" href="public/assets/app/css/style-secretary.css" />
 </head>
 <body class="loading">
-    <?php $topnavClass = 'fade-in'; include_once('include/topnav-secretary.php'); ?>
+    <?php include_once('include/topnav.php'); ?>
 
     <section class="banner-01">
         <div class="slide-container">
@@ -724,7 +723,7 @@
         </div>
     </div>
     
-    <?php include_once('include/footer-secretary.php'); ?>
+    <?php include_once('include/footer.php'); ?>
     <?php include_once('include/script.php'); ?>
     
     <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>

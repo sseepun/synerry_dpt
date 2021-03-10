@@ -494,6 +494,9 @@ textarea[data-copy]{pointer-events:none!important;}
 }
 .popup-container.round .popup-box > .content-container{width:100%;}
 .popup-container.round .popup-box > .btn-close{position:absolute; top:0; right:0;}
+.popup-container.simple .popup-box{display:block;}
+.popup-container.simple .popup-box .img-container{width:100%; max-width:100%; height:auto;}
+.popup-container.simple .popup-box .img-container > img{display:block; width:100%; height:auto;}
 
 
 /* Post Content */
