@@ -5,24 +5,15 @@
     <?php include_once('include/style.php'); ?>
     <link rel="stylesheet" href="public/assets/app/css/style-minisite.css" />
     <style>
-        /* Overriding ss-card-07 */
-        .ss-card-07 {background:#fff; box-shadow:0 0 10px 2px rgb(0 0 0 / 15%); transition:background .25s;}
-        .ss-card-07:hover{background: #212121;} 
-        .ss-card-07 .img-container{width:30%;}
-        .ss-card-07 .text-container{width:50%;}
-        .ss-card-07 .stat-container {
-            width:20%; padding:1.25rem 1rem; display:flex; flex-direction:column; justify-content:space-between; border-left:.0625rem solid transparent; border-color: #efefef;
-        }
-
-        .ss-card.ss-card-07 .text-container .title, .ss-card-07 .stat-container .arrow, .ss-card-07 .stat-container .ss-stat .stat > em{
-            color: #fe4d01;
-        }
-        .ss-card-07:hover .stat-container .ss-stat .stat{
-            color: #fff;
-        }
-        .ss-card-07 .stat-container .arrow{
-            font-size:1.875rem;
-            line-height: .8;
+        /* Little customization for preview */
+        .ss-card-08 {background:#fff;}
+        .ss-card-08 .info-content .text-icon em,  .ss-card-08:hover .info-content .text-icon em{color:#fe4d01; background:transparent;}
+        .ss-card-08 .info-content .arrow {color:#fe4d01;}
+        .ss-card-08 .info-content {display:flex; flex-direction: column; justify-content:space-between;}
+        .ss-card-08:hover .info-content .arrow {color:#fe4d01;}
+        .ss-card-08:hover{background:#212121;}
+        .ss-card.ss-card-08 .text-container .title {
+            color:#fe4d01;
         }
     </style>
 </head>
@@ -65,52 +56,15 @@
                             <div class="grids">
 
                                 <div class="grid sm-100">
-                                    <div class="ss-card ss-card-07">
-                                        <div class="img-container">
-                                            <a class="ss-img adaptive-list" href="#">
-                                                <div class="img-bg" style="background-image:url('public/assets/app/images/content/0<?= ($i+$j)%5+1 ?>.jpg');"></div>
-                                                <div class="hover-container">
-                                                    <div class="icon">
-                                                        <img src="public/assets/app/images/icon/plus.png" alt="Hover Icon" />
-                                                    </div>
-                                                </div>
-                                            </a>
-                                        </div>
-                                        <div class="text-container">
-                                            <a class="title p md fw-600" href="#">
-                                                สำนักงานปลัดกระทรวงพลังงานได้รับรางวัลเลิศรัฐ 
-                                                สาขาการบริหารราชการแบบมีส่วนร่วม ประจำปี พ.ศ. 2562
-                                            </a>
-                                            <p class="xs desc">
-                                                กระทรวงดิจิทัลเพื่อเศรษฐกิจและสังคม (MDES) ร่วมกับ สมาคมผู้ใช้ดิจิทัลไทย 
-                                                (DUGA) กำหนดจัดงานอบรมสัมมนา eGovernment Forum 2020, Digital 
-                                                HR Forum 2020, Big Data
-                                            </p>
-                                        </div>
-                                        <div class="stat-container">
-                                            <div class="ss-stat">
-                                                <div class="stat">
-                                                    <em class="far fa-clock mr-1"></em> 8 มกราคม 2020
-                                                </div>
-                                                <div class="stat">
-                                                    <em class="far fa-eye mr-1"></em> 178
-                                                </div>
-                                            </div>
-
-                                            <div class="arrow">
-                                                <em class="far fa-arrow-alt-circle-right"></em>
-                                            </div>
-                                        </div>
-                                    </div>
+                                    <!-- TODO -->
                                 </div>
 
                                 <?php for($i=1; $i<5; $i++){?>
                                     <div class="grid sm-100">
-
-                                        <div class="ss-card ss-card-07">
+                                        <div class="ss-card ss-card-08">
                                             <div class="img-container">
                                                 <a class="ss-img adaptive-list" href="#">
-                                                    <div class="img-bg" style="background-image:url('public/assets/app/images/content/0<?= ($i+$j)%5+1 ?>.jpg');"></div>
+                                                    <div class="img-bg" style="background-image:url('public/assets/app/images/content/0<?= $i%5+1 ?>.jpg');"></div>
                                                     <div class="hover-container">
                                                         <div class="icon">
                                                             <img src="public/assets/app/images/icon/plus.png" alt="Hover Icon" />
@@ -119,32 +73,31 @@
                                                 </a>
                                             </div>
                                             <div class="text-container">
-                                                <a class="title p md fw-600" href="#">
-                                                    สำนักงานปลัดกระทรวงพลังงานได้รับรางวัลเลิศรัฐ 
-                                                    สาขาการบริหารราชการแบบมีส่วนร่วม ประจำปี พ.ศ. 2562
-                                                </a>
-                                                <p class="xs desc">
-                                                    กระทรวงดิจิทัลเพื่อเศรษฐกิจและสังคม (MDES) ร่วมกับ สมาคมผู้ใช้ดิจิทัลไทย 
-                                                    (DUGA) กำหนดจัดงานอบรมสัมมนา eGovernment Forum 2020, Digital 
-                                                    HR Forum 2020, Big Data
-                                                </p>
-                                            </div>
-                                            <div class="stat-container">
-                                                <div class="ss-stat">
-                                                    <div class="stat">
-                                                        <em class="far fa-clock mr-1"></em> 8 มกราคม 2020
-                                                    </div>
-                                                    <div class="stat">
-                                                        <em class="far fa-eye mr-1"></em> 178
-                                                    </div>
+                                                <div class="text-content">
+                                                    <a class="title p md fw-600" href="#">
+                                                        สำนักงานปลัดกระทรวงพลังงานได้รับรางวัลเลิศรัฐ สาขาการบริหารราชการแบบมีส่วนร่วม ประจำปี พ.ศ. 2562
+                                                    </a>
+                                                    <p class="xs desc mt-2">
+                                                        กระทรวงดิจิทัลเพื่อเศรษฐกิจและสังคม (MDES) ร่วมกับ สมาคมผู้ใช้ดิจิทัลไทย 
+                                                        (DUGA) กำหนดจัดงานอบรมสัมมนา eGovernment Forum 2020, Digital 
+                                                        HR Forum 2020, Big Data
+                                                    </p>
                                                 </div>
-
-                                                <div class="arrow">
-                                                    <em class="far fa-arrow-alt-circle-right"></em>
+                                                <div class="info-content">
+                                                    <div>
+                                                        <p class="text-icon xs fw-600 mt-2">
+                                                            <em class="far fa-clock mr-1"></em> 8 มกราคม 2020
+                                                        </p>
+                                                        <p class="text-icon xs fw-600">
+                                                            <em class="far fa-eye mr-1"></em> 178
+                                                        </p>
+                                                    </div>
+                                                    <div class="arrow">
+                                                        <em class="far fa-arrow-alt-circle-right"></em>
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
-
                                     </div>
                                 <?php }?>
 

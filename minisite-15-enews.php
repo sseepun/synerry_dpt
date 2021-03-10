@@ -45,7 +45,7 @@
                                     เมื่อมีข่าวสารที่เกี่ยวกับหน่วยงาน ที่ประกาศผ่านเว็บไซต์นี้
                                 </p>
                             </div>
-                            <div class="ss-box mt-4 pt-1" data-aos="fade-up" data-aos-delay="600">
+                            <div class="mt-4 pt-1" data-aos="fade-up" data-aos-delay="600">
                                 <form action="/" method="POST">
                                     <div class="form-group">
                                         <label class="p">ระบุอีเมล์ของคุณ <span class="text-danger">*</span></label>
@@ -61,19 +61,25 @@
                                                 <div class="form-check">
                                                     <input type="checkbox" class="form-check-input" id="c_3" value="3" title="General Checkbox Input" />
                                                     <label for="c_3">ข่าวประชาสัมพันธ์</label>
-                                                </div>
-                                                <div class="ml-4 d-flex jc-space-between">
-                                                    <div class="form-check mt-0">
-                                                        <input type="checkbox" class="form-check-input" id="c_4" value="4" title="General Checkbox Input" />
-                                                        <label for="c_4">ข่าวสารผู้บริหาร</label>
-                                                    </div>
-                                                    <div class="form-check mt-0">
-                                                        <input type="checkbox" class="form-check-input" id="c_5" value="5" title="General Checkbox Input" />
-                                                        <label for="c_5">ข่าวกิจกรรมประชาสัมพันธ์</label>
-                                                    </div>
-                                                    <div class="form-check mt-0">
-                                                        <input type="checkbox" class="form-check-input" id="c_6" value="6" title="General Checkbox Input" />
-                                                        <label for="c_6">ข่าวสารรัฐมนตรี</label>
+                                                    <div class="gallery-grids">
+                                                        <div class="grid sm-100 md-1-3">
+                                                            <div class="form-check mt-0">
+                                                                <input type="checkbox" class="form-check-input" id="c_4" value="4" title="General Checkbox Input" />
+                                                                <label for="c_4">ข่าวสารผู้บริหาร</label>
+                                                            </div>
+                                                        </div>
+                                                        <div class="grid sm-100 md-1-3">
+                                                            <div class="form-check mt-0">
+                                                                <input type="checkbox" class="form-check-input" id="c_5" value="5" title="General Checkbox Input" />
+                                                                <label for="c_5">ข่าวกิจกรรมประชาสัมพันธ์</label>
+                                                            </div>
+                                                        </div>
+                                                        <div class="grid sm-100 md-1-3">
+                                                            <div class="form-check mt-0">
+                                                                <input type="checkbox" class="form-check-input" id="c_6" value="6" title="General Checkbox Input" />
+                                                                <label for="c_6">ข่าวสารรัฐมนตรี</label>
+                                                            </div>
+                                                        </div>
                                                     </div>
                                                 </div>
                                                 <div class="form-check">
