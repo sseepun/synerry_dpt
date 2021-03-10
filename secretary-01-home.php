@@ -14,7 +14,7 @@
                 <?php for($i=0; $i<4; $i++){?>
                     <div class="slide" style="background-image:url('public/assets/app/images/banner/01.jpg');">
                         <div class="container">
-                        
+                            <img class="img-text animate" src="public/assets/app/images/misc/text-01.png" alt="Banner Image Text" style="--delay:.75s;" />
                         </div>
                     </div>
                 <?php }?>
@@ -24,6 +24,41 @@
                     <div class="bullet-wrapper">
                         <div class="dots"></div>
                         <div class="arrows"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="intro-03">
+        <div class="wrapper">
+            <div class="intro-cards">
+                <div class="intro-card bradius-round bg-02">
+                    <div class="wrapper color-black">
+                        <img class="img-pattern" src="public/assets/app/images/icon/give.png" alt="Image Pattern" />
+                        <h6 class="p sm fw-600">ราคาหุ้น</h6>
+                        <p class="xs fw-600 margin-01">ราคาล่าสุด</p>
+                        <p class="h3 fw-600 lh-2xs">39.25</p>
+                    </div>
+                </div>
+                <div class="intro-card bradius-round bg-01">
+                    <div class="wrapper color-white">
+                        <img class="img-pattern" src="public/assets/app/images/icon/fire.png" alt="Image Pattern" />
+                        <h6 class="p sm fw-500">ราคาเชื้อเพลิง</h6>
+                        <p class="xs fw-600 margin-01">PTTNGV</p>
+                        <p class="h3 fw-600 lh-2xs">15.31</p>
+                    </div>
+                </div>
+                <div class="intro-card bradius-round">
+                    <div class="wrapper color-white">
+                        <div class="img-bg bradius-round" style="background-image:url('public/assets/app/images/misc/card-01.jpg');"></div>
+                        <img class="img-content" src="public/assets/app/images/misc/rep-01.png" alt="Image Content" />
+                        <div class="position-relative text-center">
+                            <p class="fw-400 margin-02 lh-sm">
+                                ขณะนี้เจ้าหน้าที่ <span class="fw-600">Online</span> 
+                                เชิญสอบถามข้อมูลได้เลยค่ะ
+                            </p>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -627,6 +662,45 @@
                     </div>
 
                 </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="client-01 bg-mgray">
+        <div class="container">
+            <div class="slide-container">
+                <div class="slides">
+                    <?php for($i=0; $i<2; $i++){?>
+                        <div class="slide">
+                            <a class="content-container bradius-round" href="#" style="background-image:url('public/assets/app/images/client/05.jpg');">
+                                <div class="wrapper">
+                                    <p class="xs fw-600 color-white">
+                                        ศูนย์ปฏิบัติการต่อต้านการทุจริต
+                                    </p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="slide">
+                            <a class="content-container bradius-round" href="#" style="background-image:url('public/assets/app/images/client/06.jpg');">
+                                <div class="wrapper">
+                                    <p class="xs fw-600 color-white">
+                                        สำนักงานกองทุนน้ำมันเชื้อเพลิง
+                                    </p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="slide">
+                            <a class="content-container bradius-round" href="#" style="background-image:url('public/assets/app/images/client/07.jpg');">
+                                <div class="wrapper">
+                                    <p class="xs fw-600 color-white">
+                                        สำนักงานคณะกรรมการกำกับกิจการพลังงาน
+                                    </p>
+                                </div>
+                            </a>
+                        </div>
+                    <?php }?>
+                </div>
+                <div class="arrows"></div>
             </div>
         </div>
     </section>

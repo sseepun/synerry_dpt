@@ -303,7 +303,6 @@ input[type=number], input[type=phone], input[type=submit], select, textarea{
 /* Special File 01 */
 .ss-file-01 > .icon-container{background:#ffff00; color:#000000;}
 
-
 /* Special File 02 */
 .ss-file-02{background:#000000; border-color:#ffff00; color:#ffff00;}
 .ss-file-02 > .icon-container{background:#ffff00; color:#000000;}
@@ -363,11 +362,9 @@ table.table.table-04 thead th, table.table.table-04 td{border-color:#ffff00;}
 .about-03 .slick-dots button{background:#ffff00;}
 .about-03 .arrows button{color:#ffff00;}
 
-
 /* About 04 */
 .about-04 > .img-bg{background:none!important;}
 .about-04 .about-box{border:1px solid #ffff00;}
-
 
 /* About 05 */
 .about-05 .about-container > .wrapper::before{border:1px solid #ffff00;}
@@ -384,9 +381,17 @@ table.table.table-04 thead th, table.table.table-04 td{border-color:#ffff00;}
 .breadcrumb-03 > .bottom-container{background:#000000; border-bottom:1px solid #ffff00;}
 
 
+/* Client 01 */
+.client-01 .arrows button{color:#ffff00;}
+
+
 /* Contact Card 01 */
 .contact-card-01{background:#000000; border:1px solid #ffff00;}
 .contact-card-01 .contact-tag{color:#ffff00; opacity:.25;}
+
+
+/* Intro 03 */
+.intro-03 .intro-card{border:1px solid #ffff00;}
 
 
 /* Faq 01 */
@@ -400,7 +405,6 @@ table.table.table-04 thead th, table.table.table-04 td{border-color:#ffff00;}
 .faq-01 .faq.active .arrow::before, .faq-01 .faq.active .arrow::after{background:#ffff00;}
 .faq-01 .faq > .answer .ftag{background:#ffff00; color:#000000;}
 .faq-01 .faq > .answer .content{border-color:#ffff00;}
-
 
 /* Faq 02 */
 .faq-02 .faq > .question .ftag{background:#ffff00; color:#000000;}
@@ -432,7 +436,6 @@ table.table.table-04 thead th, table.table.table-04 td{border-color:#ffff00;}
     background:#000000!important; color:#ffff00;
 }
 
-
 /* Pagination 02 */
 .pagination-02 .page-btn:hover, 
 .pagination-02 .page-btn.active{background:#ffff00; color:#000000;}
@@ -451,7 +454,6 @@ table.table.table-04 thead th, table.table.table-04 td{border-color:#ffff00;}
 
 /* Survey 01 */
 .survey-01 .survey > .header .icon{background:#ffff00; color:#000000;}
-
 
 /* Survey 02 */
 .survey-02 .survey > .num{background:#ffff00; color:#000000;}

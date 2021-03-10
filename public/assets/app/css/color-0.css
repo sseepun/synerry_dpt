@@ -385,7 +385,6 @@ input[type=phone]:focus, input[type=submit]:focus, select:focus, textarea:focus{
 /* Special File 01 */
 .ss-file-01 > .icon-container{background:#eeeeee; color:#000000; border-color:#cccccc;}
 
-
 /* Special File 02 */
 .ss-file-02{background:#ffffff; border-color:#cccccc; color:#000000;}
 .ss-file-02:hover{background:#eeeeee;}
@@ -471,7 +470,6 @@ table.table.table-04 td{border-color:rgba(255,255,255,.3);}
 .about-03 .arrows button{color:#ffffff;}
 .about-03 .arrows button:hover{color:#fe4d01;}
 
-
 /* About 05 */
 .about-05 .about-container > .wrapper::before{background:#2d2b2d;}
 
@@ -494,6 +492,10 @@ table.table.table-04 td{border-color:rgba(255,255,255,.3);}
 .breadcrumb-03 .search-wrapper > input[type=text]{background:transparent;}
 
 
+/* Client 01 */
+.client-01 .arrows button{color:#2d2d2d;}
+
+
 /* Contact Card 01 */
 .contact-card-01{background:#dbe8f9;}
 .contact-card-01 .contact-tag{color:#ffffff;}
@@ -511,7 +513,6 @@ table.table.table-04 td{border-color:rgba(255,255,255,.3);}
 .faq-01 .faq .arrow::before, .faq-01 .faq .arrow::after{background:#ffffff;}
 .faq-01 .faq > .answer .ftag{background:#ffb739; color:#ffffff;}
 .faq-01 .faq > .answer .content{background:#f1f1f1;}
-
 
 /* Faq 02 */
 .faq-02 .faq > .question .ftag{background:#ffb739; color:#000000;}
@@ -564,7 +565,6 @@ table.table.table-04 td{border-color:rgba(255,255,255,.3);}
     color:#ffffff; background:#e1e1e1;
 }
 
-
 /* Pagination 02 */
 .pagination-02 .page-btn:hover, 
 .pagination-02 .page-btn.active{background:#ff4917; color:#ffffff;}
@@ -584,7 +584,6 @@ table.table.table-04 td{border-color:rgba(255,255,255,.3);}
 
 /* Survey 01 */
 .survey-01 .survey > .header .icon{background:#fe4d01; color:#ffffff;}
-
 
 /* Survey 02 */
 .survey-02 .survey > .num{background:#393939; color:#ffffff;}

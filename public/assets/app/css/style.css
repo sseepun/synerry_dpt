@@ -1292,6 +1292,8 @@ table.table.table-sm th:last-child{padding:.4375rem 0 .4375rem .5625rem;}
 .lh-nm{line-height:1.50;}
 .lh-sm{line-height:1.40;}
 .lh-xs{line-height:1.25;}
+.lh-2xs{line-height:1.00;}
+.lh-3xs{line-height:.80;}
 
 .op-100{opacity:1!important;} .op-0{opacity:0!important;}
 .op-10{opacity:.1!important;} .op-20{opacity:.2!important;} .op-30{opacity:.3!important;}
