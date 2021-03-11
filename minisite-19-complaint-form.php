@@ -4,7 +4,6 @@
     <?php include_once('include/header.php'); ?>
     <?php include_once('include/style.php'); ?>
     <link rel="stylesheet" href="public/assets/app/css/style-minisite.css" />
-
 </head>
 <body class="loading">
     <?php include_once('include/topnav-minisite.php'); ?>
@@ -75,12 +74,15 @@
                                                             <select class="form-control no-bradius" required>
                                                                 <option value="">นางสาว</option>
                                                             </select>
+                                                            <p class="sm mt-1">ชื่อนำหน้า</p>
                                                         </div>
                                                         <div class="grid sm-40 mt-0">
-                                                            <input type="text" class="form-control no-bradius" required title="General Text Input" />
+                                                            <input type="text" class="form-control no-bradius text-under" required title="General Text Input" />
+                                                            <p class="sm mt-1">ชื่อ</p>
                                                         </div>
                                                         <div class="grid sm-40 mt-0">
-                                                            <input type="text" class="form-control no-bradius" required title="General Text Input" />
+                                                            <input type="text" class="form-control no-bradius text-under" required title="General Text Input" />
+                                                            <p class="sm mt-1">นามสกุล</p>
                                                         </div>
                                                     </div>
 
@@ -104,7 +106,7 @@
                                         <div class="form-group">
                                             <div class="grids">
                                                 <div class="grid sm-20">
-                                                    <label class="p color-black mt-2">อีเมล</label>
+                                                    <label class="p color-black mt-2">อีเมล <span class="text-danger">*</span></label>
                                                 </div>
                                                 <div class="grid sm-50">
                                                     <input type="text" class="form-control no-bradius" required title="General Text Input" />
@@ -116,7 +118,7 @@
                                         <div class="form-group">
                                             <div class="grids">
                                                 <div class="grid sm-20">
-                                                    <label class="p color-black mt-2">ข้อความ</label>
+                                                    <label class="p color-black mt-2">ข้อความ <span class="text-danger">*</span></label>
                                                 </div>
                                                 <div class="grid sm-80">
                                                     <textarea class="form-control no-bradius" rows="4" title="General Textarea" required></textarea>
@@ -131,7 +133,7 @@
                                                     <label class="p color-black mt-2">อัพโหลดไฟล์</label>
                                                 </div>
                                                 <div class="grid sm-80">
-                                                    <div class="upload-container mt-3 mb-2">
+                                                    <div class="upload-container">
                                                         <div class="file-container">
                                                             <div class="icon-container">
                                                                 <div class="h4 lg color-01 text-center">
