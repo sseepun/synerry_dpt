@@ -423,6 +423,8 @@ input[type=phone]:focus, input[type=submit]:focus, select:focus, textarea:focus{
 
 
 /* Special Image */
+.ss-img .mag-bg{background:#d3d5d8;}
+.ss-img .mag-bg::before{background:#fe4d01;}
 .ss-img .hover-container{background:rgba(255,77,1,.5);}
 .ss-img .video-info .duration{background:rgba(0,0,0,.5); color:#ffffff;}
 .ss-img .video-info > em{color:#fe4d01;}
@@ -499,6 +501,11 @@ table.table.table-04 td{border-color:rgba(255,255,255,.3);}
 
 /* About 05 */
 .about-05 .about-container > .wrapper::before{background:#2d2b2d;}
+
+/* About 06 */
+.about-06 .info .count-container{background:#fe4d01;}
+.about-06 .info .count-container::before,
+.about-06 .info .count-container > .wrapper{background:#ffffff;}
 
 
 /* Banner 01 */

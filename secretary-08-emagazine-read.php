@@ -135,6 +135,7 @@
     
     <?php include_once('include/footer-secretary.php'); ?>
     <?php include_once('include/script.php'); ?>
+    
     <script src="public/assets/lib/wow_book/wow_book/wow_book.min.js"></script>
     <script>
         $('#wow-book').wowBook({

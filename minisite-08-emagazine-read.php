@@ -4,15 +4,16 @@
     <?php include_once('include/header.php'); ?>
     <?php include_once('include/style.php'); ?>
     <link rel="stylesheet" href="public/assets/app/css/style-minisite.css" />
+    <link rel="stylesheet" type="text/css" href="public/assets/lib/wow_book/wow_book/wow_book.css" />
 </head>
 <body class="loading">
     <?php include_once('include/topnav-minisite.php'); ?>
     <?php
         $breadcrumb = [
-            [ 'url' => '#', 'display' => 'วิดีทัศน์' ],
-            [ 'url' => '#', 'display' => 'วิดีทัศน์เกี่ยวกับองค์กร' ],
+            [ 'url' => '#', 'display' => 'วารสารออนไลน์' ],
+            [ 'url' => '#', 'display' => 'วารสารรายเดือน' ],
         ];
-        $breadcrumbTitle = 'วิดีทัศน์';
+        $breadcrumbTitle = 'วารสารออนไลน์';
         $breadcrumbDesc = 'ด้วยการติดตามกิจกรรมข่าวสาร และข้อมูลอัพเดทต่างๆ';
         $breadcrumbBg = 'public/assets/app/images/bg/minisite-01.jpg';
         include('component/breadcrumb-minisite.php');
@@ -30,30 +31,37 @@
                                     <a class="tab tab-header" href="#">
                                         เมนู <div class="hamburger"><div></div><div></div><div></div></div>
                                     </a>
-                                    <a class="tab active" href="#">วิดีทัศน์เกี่ยวกับองค์กร</a>
-                                    <a class="tab" href="#">วิดีทัศน์กิจกรรม</a>
-                                    <a class="tab" href="#">วิดีทัศน์ CSR</a>
+                                    <a class="tab active" href="#">วารสารรายเดือน</a>
+                                    <a class="tab" href="#">วารสารฉบับพิเศษ</a>
                                 </div>
                             </div>
                         </div>
                         <div class="grid lg-75 md-70 sm-100">
                             <div class="post-content sm">
                                 <h6 class="h5 fw-500 lh-sm color-01 text-center sm-no-br">
-                                    รัฐมนตรีว่าการกระทรวงพลังงาน ได้เข้าร่วมและรับเชิญเป็นหนึ่งในผู้กล่าวนำในการประชุม 
-                                    LNG Producer-Consumer Conference ครั้งที่ 8 <br>
-                                    ที่กรุงโตเกียว ประเทศญี่ปุ่น
+                                    Energy Plus ฉบับเดือน กรกฎาคม – กันยายน 2556
                                 </h6>
                                 <div class="mt-3 mb-3">
                                     <?php include('component/post-header.php'); ?>
                                 </div>
-                                <div class="post-video width-full">
-                                    <div class="wrapper">
-                                        <video class="fit" controls="">
-                                            <source src="public/assets/app/video/01.mp4" type="video/mp4" />
-                                            Your browser does not support the video tag.
-                                        </video>
+                                <div class="book-container minisite">
+                                    <div class="wow-book" id="wow-book">
+                                        <?php for($i=0; $i<4; $i++){?>
+                                            <div><img class="img" src="public/assets/app/images/content/0<?= $i+6 ?>.jpg" alt="Page <?= $i ?>" /></div>
+                                        <?php }?>
                                     </div>
                                 </div>
+                            </div>
+                            <div class="post-content">
+                                <p class="lh-lg">
+                                    ในขณะที่การใช้พลังงานนั้นไม่มีที่ท่าว่าจะลดลงแต่อย่างใด มีแต่ความต้องการปริมาณน้ำมันที่สูงขึ้น 
+                                    ทั้งการใช้งานเพื่อการค้า การอยู่อาศัย เป็นแหล่งพลังงานต่างๆ สถานการณ์เช่นนี้ทำให้ประทศต่างๆ 
+                                    ต้องมุ่งศึกษาและใช้พลังงานทดแทนแบบใหม่ เพื่อกดแทนการใช้น้ำมันจากรายงานมีโอกาสที่จะหมดจากโลกนี้ไปในอีก 
+                                    50 ปีข้างหน้า พลังงานตัวหนึ่งที่เราสามารถหยิบจับมาใช้ปล่าได้โดยไม่มีค่ใช้จ่ายใดๆ เลยคือ พลังงานแสงอาทิดย์ 
+                                    ซึ่งการจะปลี่ยนพลังงานแสงอาทิตย์ให้อยู่ในรูปแสงแดดกลายเป็นพลังงานได้นั้นเราทำผ่านอุปกรณ์ที่เรียกว่า 
+                                    Solar Cell สิ่งประดิษฐ์ทางอิเล็กทรอนิกส์ ที่สร้างจากสารกึ่งตัวนำซึ่งสามารถเปลี่ยน 
+                                    พลังงานแสงอาทิตย์ให้เป็นพลังงานไพฟ้าได้โดยตรง
+                                </p>
                             </div>
                             <div class="mt-3 mb-3">
                                 <?php
@@ -62,9 +70,9 @@
                                 ?>
                             </div>
 
-                            <h6 class="fw-600 color-01 mt-4 pt-1">::: ไฟล์วิดีโอดาวน์โหลด :::</h6>
-                            <div class="gallery-grids mt-1">
-                                <?php foreach(['vdo', 'vdo', 'vdo', 'vdo'] as $d){?>
+                            <h6 class="fw-600 color-01 mt-4 pt-1">::: ไฟล์เอกสารที่เกี่ยวข้อง :::</h6>
+                            <div class="gallery-grids mt-1 pb-4">
+                                <?php foreach(['pdf', 'pdf'] as $d){?>
                                     <div class="grid lg-50 sm-100 mt-2">
                                         <div class="ss-file-01">
                                             <div class="icon-container">
@@ -79,8 +87,7 @@
                                             </div>
                                             <div class="text-container">
                                                 <p class="fw-500 lh-sm color-black">
-                                                    โครงการสนับสนุนการลงทุนติดตั้งใช้งาน
-                                                    ระบบอบแห้งพลังงานแสงอาทิตย์
+                                                    Energy Plus ฉบับเดือน กรกฎาคม – กันยายน 2556
                                                 </p>
                                                 <div class="p xs mt-2">
                                                     <a class="color-01 h-color-02 fw-600 mr-3" href="#">
@@ -96,16 +103,6 @@
                                         </div>
                                     </div>
                                 <?php }?>
-                            </div>
-                            
-                            <h6 class="fw-600 color-01 mt-4 pt-2">::: EMBED :::</h6>
-                            <div class="mt-2 pb-4">
-                                <textarea name="message" class="adaptive p xs d-block bg-fgray width-full no-bradius" rows="4" data-copy="1"><iframe id="inlineFrameExample" title="Inline Frame Example" width="300" height="200" src="https://www.openstreetmap.org/export/embed.html?bbox=-0.004017949104309083%2C51.47612752641776%2C0.00030577182769775396%2C51.478569861898606&layer=mapnik"></iframe></textarea>
-                                <div class="btns text-center">
-                                    <a class="btn btn-action btn-color-01 width-full no-bradius" data-copy="1" href="#">
-                                        คัดลอกโค๊ด
-                                    </a>
-                                </div>
                             </div>
 
                             <div class="list-control ss-border color-black mt-4">
@@ -134,8 +131,8 @@
                             <div class="ss-icon-title-02">
                                 <div class="text-icon color-01">R</div>
                                 <div class="text-wrapper">
-                                    <div class="title color-01">ELATED VIDEOS</div>
-                                    <div class="desc color-black">วิดีทัศน์ที่เกี่ยวข้อง</div>
+                                    <div class="title color-01">ELATED BOOKS</div>
+                                    <div class="desc color-black">วารสารที่เกี่ยวข้อง</div>
                                 </div>
                             </div>
                             <div class="grids mt-2">
@@ -143,15 +140,9 @@
                                     <div class="grid xl-1-3 lg-50 sm-50">
                                         <div class="ss-card ss-card-06">
                                             <a class="ss-img square" href="#">
-                                                <div class="img-bg" style="background-image:url('public/assets/app/images/content/0<?= $i%5+1 ?>.jpg');"></div>
-                                                <div class="hover-container">
-                                                    <div class="icon">
-                                                        <img src="public/assets/app/images/icon/play.png" alt="Hover Icon" />
-                                                    </div>
-                                                </div>
-                                                <div class="video-info">
-                                                    <div class="duration">10:20:08</div>
-                                                    <em class="fas fa-play-circle"></em>
+                                                <div class="img-bg mag-bg"></div>
+                                                <div class="mag-container">
+                                                    <img src="public/assets/app/images/content/0<?= $i%4+6 ?>.jpg" alt="Magazine Cover" />
                                                 </div>
                                             </a>
                                             <div class="text-container">
@@ -164,8 +155,7 @@
                                                     </div>
                                                 </div>
                                                 <a class="title p md fw-600" href="#">
-                                                    สำนักงานปลัดกระทรวงพลังงานได้รับรางวัลเลิศรัฐ 
-                                                    สาขาการบริหารราชการแบบมีส่วนร่วม ประจำปี พ.ศ. 2562
+                                                    Energy Plus ฉบับเดือน ตุลาคม – ธันวาคม 2556 
                                                 </a>
                                                 <div class="arrow">
                                                     <em class="far fa-arrow-alt-circle-right"></em>
@@ -185,5 +175,21 @@
     
     <?php include_once('include/footer-minisite.php'); ?>
     <?php include_once('include/script.php'); ?>
+    
+    <script src="public/assets/lib/wow_book/wow_book/wow_book.min.js"></script>
+    <script>
+        $('#wow-book').wowBook({
+            height: 500,
+            width: 800,
+            container: true,
+            containerBackground: '#777',
+            containerWidth: '100%',
+            containerHeight: '100%',
+            containerPadding: '20px',
+            toolbarPosition: 'bottom',
+            thumbnails: true,
+            toolbar: 'first, back, next, last, zoomin, zoomout, slideshow, flipsound, fullscreen',
+        });
+    </script>
 </body>
 </html>

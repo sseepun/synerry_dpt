@@ -30,10 +30,8 @@
                                     <a class="tab tab-header" href="#">
                                         เมนู <div class="hamburger"><div></div><div></div><div></div></div>
                                     </a>
-                                    <a class="tab active" href="#">ข่าวประชาสัมพันธ์</a>
-                                    <a class="tab" href="#">เรื่องเด่นประเด็นดัง</a>
-                                    <a class="tab" href="#">ข่าวสารรัฐมนตรี</a>
-                                    <a class="tab" href="#">ข่าวสารผู้บริหาร</a>
+                                    <a class="tab active" href="#">ภาพข่าวประชาสัมพันธ์</a>
+                                    <a class="tab" href="#">ภาพงานอีเว้นท์</a>
                                 </div>
                             </div>
                         </div>

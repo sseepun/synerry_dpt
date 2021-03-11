@@ -9,9 +9,10 @@
     <?php include_once('include/topnav-minisite.php'); ?>
     <?php
         $breadcrumb = [
-            [ 'url' => '#', 'display' => 'ข่าวประชาสัมพันธ์' ],
+            [ 'url' => '#', 'display' => 'วารสารออนไลน์' ],
+            [ 'url' => '#', 'display' => 'วารสารรายเดือน' ],
         ];
-        $breadcrumbTitle = 'ผู้บริหารระดับสูง';
+        $breadcrumbTitle = 'วารสารออนไลน์';
         $breadcrumbDesc = 'ด้วยการติดตามกิจกรรมข่าวสาร และข้อมูลอัพเดทต่างๆ';
         $breadcrumbBg = 'public/assets/app/images/bg/minisite-01.jpg';
         include('component/breadcrumb-minisite.php');
@@ -29,8 +30,8 @@
                                     <a class="tab tab-header" href="#">
                                         เมนู <div class="hamburger"><div></div><div></div><div></div></div>
                                     </a>
-                                    <a class="tab active" href="#">ผู้บริหารระดับสูง</a>
-                                    <a class="tab" href="#">โครงสร้างองค์กร</a>
+                                    <a class="tab active" href="#">วารสารรายเดือน</a>
+                                    <a class="tab" href="#">วารสารฉบับพิเศษ</a>
                                 </div>
                             </div>
                         </div>
@@ -41,19 +42,27 @@
                             ?>
                             <div class="grids">
 
-                                <?php for($i=1; $i<10; $i++){?>
+                                <?php for($i=0; $i<9; $i++){?>
                                     <div class="grid xl-1-3 lg-50 sm-50">
                                         <div class="ss-card ss-card-06">
                                             <a class="ss-img square" href="#">
-                                                <div class="img-bg" style="background-image:url('public/assets/app/images/team/03.jpg')"></div>
+                                                <div class="img-bg mag-bg"></div>
+                                                <div class="mag-container">
+                                                    <img src="public/assets/app/images/content/0<?= $i%4+6 ?>.jpg" alt="Magazine Cover" />
+                                                </div>
                                             </a>
                                             <div class="text-container">
-                                                <a class="color-01 p md fw-600" href="#">
-                                                    นายอรรถพล ฤกษ์พิบูลย์
+                                                <div class="ss-stat jc-space-between">
+                                                    <div class="stat">
+                                                        <em class="far fa-clock mr-1"></em> 8 มกราคม 2020
+                                                    </div>
+                                                    <div class="stat">
+                                                        <em class="far fa-eye mr-1"></em> 178
+                                                    </div>
+                                                </div>
+                                                <a class="title p md fw-600" href="#">
+                                                    Energy Plus ฉบับเดือน ตุลาคม – ธันวาคม 2556 
                                                 </a>
-                                                <p class="desc p sm fw-400 sm-no-br">
-                                                    ประธานเจ้าหน้าที่บริหารและกรรมการผู้จัดการใหญ่ บริษัท ปตท.จำกัด (มหาชน)
-                                                </p>
                                                 <div class="arrow">
                                                     <em class="far fa-arrow-alt-circle-right"></em>
                                                 </div>
@@ -63,6 +72,10 @@
                                 <?php }?>
 
                             </div>
+                            <?php
+                                $listFooter = ['pagination', 'pp'];
+                                include('component/list-footer-minisite.php');
+                            ?>
                         </div>
                     </div>
                 </div>

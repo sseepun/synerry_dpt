@@ -9,10 +9,10 @@
     <?php include_once('include/topnav-minisite.php'); ?>
     <?php
         $breadcrumb = [
-            [ 'url' => '#', 'display' => 'วิดีทัศน์' ],
-            [ 'url' => '#', 'display' => 'วิดีทัศน์เกี่ยวกับองค์กร' ],
+            [ 'url' => '#', 'display' => 'วารสารออนไลน์' ],
+            [ 'url' => '#', 'display' => 'วารสารรายเดือน' ],
         ];
-        $breadcrumbTitle = 'วิดีทัศน์';
+        $breadcrumbTitle = 'วารสารออนไลน์';
         $breadcrumbDesc = 'ด้วยการติดตามกิจกรรมข่าวสาร และข้อมูลอัพเดทต่างๆ';
         $breadcrumbBg = 'public/assets/app/images/bg/minisite-01.jpg';
         include('component/breadcrumb-minisite.php');
@@ -30,9 +30,8 @@
                                     <a class="tab tab-header" href="#">
                                         เมนู <div class="hamburger"><div></div><div></div><div></div></div>
                                     </a>
-                                    <a class="tab active" href="#">วิดีทัศน์เกี่ยวกับองค์กร</a>
-                                    <a class="tab" href="#">วิดีทัศน์กิจกรรม</a>
-                                    <a class="tab" href="#">วิดีทัศน์ CSR</a>
+                                    <a class="tab active" href="#">วารสารรายเดือน</a>
+                                    <a class="tab" href="#">วารสารฉบับพิเศษ</a>
                                 </div>
                             </div>
                         </div>
@@ -47,28 +46,17 @@
                                     <div class="ss-card ss-card-13 img-full">
                                         <div class="img-container">
                                             <a class="ss-img adaptive-list" href="#">
-                                                <div class="img-bg" style="background-image:url('public/assets/app/images/content/05.jpg');"></div>
-                                                <div class="hover-container">
-                                                    <div class="icon">
-                                                        <img src="public/assets/app/images/icon/play.png" alt="Hover Icon" />
-                                                    </div>
-                                                </div>
-                                                <div class="video-info">
-                                                    <div class="duration">10:20:08</div>
-                                                    <em class="fas fa-play-circle"></em>
+                                                <div class="img-bg mag-bg"></div>
+                                                <div class="mag-container">
+                                                    <img src="public/assets/app/images/content/06.jpg" alt="Magazine Cover" />
                                                 </div>
                                             </a>
                                         </div>
                                         <div class="text-container">
                                             <div class="text-content">
                                                 <a class="title p md fw-600" href="#">
-                                                    สำนักงานปลัดกระทรวงพลังงานได้รับรางวัลเลิศรัฐ สาขาการบริหารราชการแบบมีส่วนร่วม ประจำปี พ.ศ. 2562
+                                                    Energy Plus ฉบับเดือน ตุลาคม – ธันวาคม 2556
                                                 </a>
-                                                <p class="xs desc mt-2">
-                                                    กระทรวงดิจิทัลเพื่อเศรษฐกิจและสังคม (MDES) ร่วมกับ สมาคมผู้ใช้ดิจิทัลไทย 
-                                                    (DUGA) กำหนดจัดงานอบรมสัมมนา eGovernment Forum 2020, Digital 
-                                                    HR Forum 2020, Big Data
-                                                </p>
                                             </div>
                                             <div class="info-content">
                                                 <div class="ss-stat">
@@ -93,23 +81,17 @@
                                         <div class="ss-card ss-card-08 minisite">
                                             <div class="img-container">
                                                 <a class="ss-img adaptive-list" href="#">
-                                                    <div class="img-bg" style="background-image:url('public/assets/app/images/content/0<?= $i%5+1 ?>.jpg');"></div>
-                                                    <div class="hover-container">
-                                                        <div class="icon">
-                                                            <img src="public/assets/app/images/icon/play.png" alt="Hover Icon" />
-                                                        </div>
+                                                    <div class="img-bg mag-bg"></div>
+                                                    <div class="mag-container">
+                                                        <img src="public/assets/app/images/content/0<?= $i%4+6 ?>.jpg" alt="Magazine Cover" />
                                                     </div>
                                                 </a>
                                             </div>
                                             <div class="text-container">
                                                 <div class="text-content">
                                                     <a class="title p md fw-600" href="#">
-                                                        สำนักงานปลัดกระทรวงพลังงานได้รับรางวัลเลิศรัฐ สาขาการบริหารราชการแบบมีส่วนร่วม ประจำปี พ.ศ. 2562
+                                                        Energy Plus ฉบับเดือน ตุลาคม – ธันวาคม 2556
                                                     </a>
-                                                    <div class="video-info">
-                                                        <div class="duration">10:20:08</div>
-                                                        <em class="fas fa-play-circle"></em>
-                                                    </div>
                                                 </div>
                                                 <div class="info-content">
                                                     <div>

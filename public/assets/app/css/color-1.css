@@ -329,6 +329,8 @@ input[type=number], input[type=phone], input[type=submit], select, textarea{
 
 /* Special Image */
 .ss-img .hover-container{background:rgba(255,77,1,.5);}
+.ss-img .mag-bg{background:#000000;}
+.ss-img .mag-bg::before{background:#ffffff;}
 .ss-img .video-info .duration{background:rgba(0,0,0,.5); color:#ffffff;}
 .ss-img .video-info > em{color:#000000;}
 
@@ -386,6 +388,13 @@ table.table.table-04 thead th, table.table.table-04 td{border-color:#ffffff;}
 
 /* About 05 */
 .about-05 .about-container > .wrapper::before{border:1px solid #ffffff;}
+
+/* About 06 */
+.about-06{padding:0 0 2.5rem 0!important;}
+.about-06 > .img-bg{display:none;}
+.about-06 .info .count-container{background:#ffffff;}
+.about-06 .info .count-container::before,
+.about-06 .info .count-container > .wrapper{background:#000000;}
 
 
 /* Banner 01 */
