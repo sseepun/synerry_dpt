@@ -49,7 +49,7 @@
                         <p class="h3 fw-600 lh-2xs">15.31</p>
                     </div>
                 </div>
-                <div class="intro-card bradius-round" data-aos="fade-up" data-aos-delay="300">
+                <a class="intro-card bradius-round" href="#" data-aos="fade-up" data-aos-delay="300">
                     <div class="wrapper color-white">
                         <div class="img-bg bradius-round" style="background-image:url('public/assets/app/images/misc/card-01.jpg');"></div>
                         <img class="img-content" src="public/assets/app/images/misc/rep-01.png" alt="Image Content" />
@@ -60,7 +60,7 @@
                             </p>
                         </div>
                     </div>
-                </div>
+                </a>
             </div>
         </div>
     </section>

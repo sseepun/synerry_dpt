@@ -19,16 +19,17 @@ html, body, a, a:hover, table.table{color:#ffff00;}
 .color-06, .h-color-06:hover,
 .color-07, .h-color-07:hover,
 .color-08, .h-color-08:hover,
-.color-09, .h-color-09:hover{color:#ffff00!important;}
+.color-09, .h-color-09:hover,
+.color-10, .h-color-10:hover{color:#ffff00!important;}
 
 .bg-white, .bg-black, .bg-gray, .bg-bgray, .bg-mgray, .bg-sgray, .bg-fgray,
-.bg-01, .bg-02, .bg-03, .bg-04, .bg-05, .bg-06, .bg-07, .bg-08,
-.bg-09{background:#000000!important;}
+.bg-01, .bg-02, .bg-03, .bg-04, .bg-05, .bg-06, .bg-07, .bg-08, .bg-09, 
+.bg-10{background:#000000!important;}
 
 .bcolor-white, .bcolor-black, .bcolor-gray, .bcolor-bgray, 
 .bcolor-mgray, .bcolor-sgray, .bcolor-fgray, 
-.bcolor-01, .bcolor-02, .bcolor-03, .bcolor-04, .bcolor-05, 
-.bcolor-06, .bcolor-07, .bcolor-08, .bcolor-09{border-color:#ffff00!important;}
+.bcolor-01, .bcolor-02, .bcolor-03, .bcolor-04, .bcolor-05, .bcolor-06, .bcolor-07, 
+.bcolor-08, .bcolor-09, .bcolor-10{border-color:#ffff00!important;}
 
 
 /* Topnav */
@@ -36,7 +37,8 @@ nav.topnav{background:#000000; border-bottom:1px solid #ffff00;}
 nav.topnav .logo{background:#fe4d01;}
 nav.topnav .logo:hover{background:#993300;}
 nav.topnav .menu > a{color:#ffff00; border-color:#ffff00;}
-nav.topnav .menu:hover > a, nav.topnav .menu.active > a{background:#ffff00; color:#000000;}
+nav.topnav .menu:hover > a, nav.topnav .menu.active > a,
+nav.topnav .menu > a.active{background:#ffff00; color:#000000;}
 nav.topnav .option{background:#000000; color:#ffff00; border-color:#ffff00;}
 nav.topnav .option:hover{background:#ffff00; color:#000000;}
 nav.topnav .hamburger > *{background:#ffff00;}
@@ -226,6 +228,7 @@ input[type=number], input[type=phone], input[type=submit], select, textarea{
 .ss-card-02:hover .text-container .title, .ss-card-02:hover .text-container .desc,
 .ss-card-02:hover .text-container .ss-stat .stat,
 .ss-card-02:hover .text-container .arrow{color:#000000;}
+.ss-card-02 .text-container .card-tag{background:#ffff00; color:#000000;}
 
 /* Special Card 03 */
 .ss-card-03 .text-container{border:1px solid #ffff00;}
@@ -358,6 +361,7 @@ table.table.table-04 thead th, table.table.table-04 td{border-color:#ffff00;}
 
 
 /* About 03 */
+.about-03{background:none!important;}
 .about-03 > .img-bg{background:none!important;}
 .about-03 .slick-dots button{background:#ffff00;}
 .about-03 .arrows button{color:#ffff00;}
@@ -389,9 +393,9 @@ table.table.table-04 thead th, table.table.table-04 td{border-color:#ffff00;}
 .contact-card-01{background:#000000; border:1px solid #ffff00;}
 .contact-card-01 .contact-tag{color:#ffff00; opacity:.25;}
 
-
-/* Intro 03 */
-.intro-03 .intro-card{border:1px solid #ffff00;}
+/* Contact Card 02 */
+.contact-card-02{border:1px solid #ffff00;}
+.contact-card-02::before{background:#ffff00;}
 
 
 /* Faq 01 */
@@ -418,6 +422,16 @@ table.table.table-04 thead th, table.table.table-04 td{border-color:#ffff00;}
 .faq-02 .faq > .answer .ftag{
     background:#ffff00; color:#000000; border-top:1px solid #000000;
 }
+
+
+/* Intro 03 */
+.intro-03 .intro-card{border:1px solid #ffff00;}
+.intro-03.pos-main .intro-card{background:#ffff00;}
+.intro-03 .arrows button{background:#ffff00; color:#000000;}
+.intro-03 .arrows button::after{background:#ffff00;}
+
+/* Intro 04 */
+.intro-04{background:none!important;}
 
 
 /* Org 01 */

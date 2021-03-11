@@ -3,7 +3,7 @@
 <nav class="topnav">
     <div class="blocks">
         <div class="block">
-            <a class="logo" href="#">
+            <a class="logo ss-page-btn" href="01-home.php#0" data-page="0">
                 <img src="public/assets/app/images/logo-white.png" alt="Website Logo" />
             </a>
             <div class="menu-container" id="topnav-menu">
@@ -14,7 +14,7 @@
                     ] as $i=>$d){
                 ?>
                     <div class="menu">
-                        <a href="#" data-dropdown="<?= $i ?>">
+                        <a class="ss-page-btn" href="01-home.php#<?= $i+1 ?>" data-page="<?= $i+1 ?>">
                             <div class="num">0<?= $i+1 ?></div>
                             <?= $d ?>
                         </a>

@@ -20,6 +20,7 @@ html, body, a, a:hover, table.table{color:#2b2b2a;}
 .color-07, .h-color-07:hover{color:#627894!important;}
 .color-08, .h-color-08:hover{color:#a0aec1!important;}
 .color-09, .h-color-09:hover{color:#ffff00!important;}
+.color-10, .h-color-10:hover{color:#00a69a!important;}
 
 .bg-white{background:#ffffff!important;}
 .bg-black{background:#000000!important;}
@@ -37,6 +38,7 @@ html, body, a, a:hover, table.table{color:#2b2b2a;}
 .bg-07{background:#627894!important;}
 .bg-08{background:#a0aec1!important;}
 .bg-09{background:#ffff00!important;}
+.bg-10{background:#00a69a!important;}
 
 .bcolor-white{border-color:#ffffff!important;}
 .bcolor-black{border-color:#000000!important;}
@@ -54,6 +56,7 @@ html, body, a, a:hover, table.table{color:#2b2b2a;}
 .bcolor-07{border-color:#627894!important;}
 .bcolor-08{border-color:#a0aec1!important;}
 .bcolor-09{border-color:#ffff00!important;}
+.bcolor-10{border-color:#00a69a!important;}
 
 
 /* Topnav */
@@ -61,7 +64,8 @@ nav.topnav{background:#152228;}
 nav.topnav .logo{background:#fe4d01;}
 nav.topnav .logo:hover{background:#993300;}
 nav.topnav .menu > a{color:#ffffff; border-color:#6c7073;}
-nav.topnav .menu:hover > a, nav.topnav .menu.active > a{background:#fe4d01;}
+nav.topnav .menu:hover > a, nav.topnav .menu.active > a,
+nav.topnav .menu > a.active{background:#fe4d01;}
 nav.topnav .option{background:#000000; color:#ffffff;}
 nav.topnav .option:hover{background:#fe4d01;}
 nav.topnav .option.global-search-toggle{background:#fe4d01;}
@@ -303,6 +307,7 @@ input[type=phone]:focus, input[type=submit]:focus, select:focus, textarea:focus{
 .ss-card-02:hover .text-container .title, .ss-card-02:hover .text-container .desc,
 .ss-card-02:hover .text-container .ss-stat .stat,
 .ss-card-02:hover .text-container .arrow{color:#ffffff;}
+.ss-card-02 .text-container .card-tag{background:#fe4d01; color:#ffffff;}
 
 /* Special Card 03 */
 .ss-card-03 .text-container{background:#f2f2f2;}
@@ -368,6 +373,10 @@ input[type=phone]:focus, input[type=submit]:focus, select:focus, textarea:focus{
 .ss-card-11 .text-container .title{color:#ffffff;}
 .ss-card-11:hover .text-container .title{color:#fe4d01;}
 .ss-card-11 > .info-content{border-color:#ffffff;}
+.ss-card-11.white{background:rgba(255,255,255,.9);}
+.ss-card-11.white .text-container .title{color:#000000;}
+.ss-card-11.white:hover .text-container .title{color:#fe4d01;}
+.ss-card-11.white > .info-content{border-color:#a4a5a4;}
 
 /* Special Card 12 */
 .ss-card-12{background:#ffffff;}
@@ -380,6 +389,7 @@ input[type=phone]:focus, input[type=submit]:focus, select:focus, textarea:focus{
 /* Special Date */
 .ss-date{background:#fe4d01; color:#ffffff;}
 .ss-date-sm{background:none; color:#ffffff; border:2px solid #ffffff;}
+.ss-date-sm.white{background:#fe4d01; color:#ffffff; border:0;}
 
 
 /* Special File 01 */
@@ -500,6 +510,9 @@ table.table.table-04 td{border-color:rgba(255,255,255,.3);}
 .contact-card-01{background:#dbe8f9;}
 .contact-card-01 .contact-tag{color:#ffffff;}
 
+/* Contact Card 02 */
+.contact-card-02::before{background:#000000;}
+
 
 /* Faq 01 */
 .faq-01 .faq > .question{background:#f1f1f1; border-color:#e1e1e1;}
@@ -525,6 +538,15 @@ table.table.table-04 td{border-color:rgba(255,255,255,.3);}
     border-color:#cccccc; background:#ffffff; border-right:1px solid #e8e8e8;
 }
 .faq-02 .faq > .answer .ftag{background:#eeeeee; color:#000000;}
+
+
+/* Intro 03 */
+.intro-03 .arrows button{background:#888888; color:#ffffff;}
+.intro-03 .arrows button:hover{background:#fe4d01;}
+.intro-03 .arrows button::after{background:#e1e1e1;}
+@media screen and (max-width:1199.98px){
+    .intro-03 .intro-card.lg{border-color:#e1e1e1!important;}
+}
 
 
 /* Org 01 */

@@ -1,3 +1,4 @@
+
 $(function(){ 'use strict';
 
     // Topnav
@@ -301,17 +302,42 @@ $(function(){ 'use strict';
         banner01.each(function(){
             var self = $(this),
                 options = {
-                    centerMode: true, centerPadding: 0, slidesToShow: 1, 
+                    centerMode: true, centerPadding: 0, slidesToShow: 1, swipeToSlide: true,
                     focusOnSelect: true, autoplay: true, autoplaySpeed: 4000, speed: 800,
                     arrows: true, appendArrows: self.find('.arrows'),
                     dots: true, appendDots: self.find('.dots')
                 };
             if(self.hasClass('img-only')){
                 options = {
-                    centerMode: true, centerPadding: 0, slidesToShow: 1, 
+                    centerMode: true, centerPadding: 0, slidesToShow: 1, swipeToSlide: true,
                     focusOnSelect: true, autoplay: true, autoplaySpeed: 4000, speed: 800,
                     arrows: true, appendArrows: self.find('.arrows'),
                     dots: true, appendDots: self.find('.dots'),
+                    adaptiveHeight: false
+                };
+            }
+            self.find('.slides').slick(options);
+        });
+    }
+
+    // Banner 02
+    var banner02 = $('.banner-02');
+    if(banner02.length){
+        banner02.each(function(){
+            var self = $(this),
+                options = {
+                    centerMode: true, centerPadding: 0, slidesToShow: 1, swipeToSlide: true,
+                    focusOnSelect: true, autoplay: true, autoplaySpeed: 4000, speed: 800,
+                    prevArrow: self.find('.arrow-prev'),
+                    nextArrow: self.find('.arrow-next')
+                    
+                };
+            if(self.hasClass('img-only')){
+                options = {
+                    centerMode: true, centerPadding: 0, slidesToShow: 1, swipeToSlide: true,
+                    focusOnSelect: true, autoplay: true, autoplaySpeed: 4000, speed: 800,
+                    prevArrow: self.find('.arrow-prev'),
+                    nextArrow: self.find('.arrow-next'),
                     adaptiveHeight: false
                 };
             }
@@ -333,6 +359,20 @@ $(function(){ 'use strict';
                     { breakpoint: 991.98, settings: { slidesToShow: 3, } },
                     { breakpoint: 767.98, settings: { slidesToShow: 2, } },
                 ]
+            });
+        });
+    }
+
+
+    // Intro 03
+    var intro03 = $('.intro-03');
+    if(intro03.length){
+        intro03.find('.slide-container').each(function(){
+            var self = $(this);
+            self.find('.slides').slick({
+                centerMode: true, centerPadding: 0, slidesToShow: 1, swipeToSlide: true,
+                focusOnSelect: true, autoplay: true, autoplaySpeed: 4000, speed: 800,
+                dots: false, arrows: true, appendArrows: self.find('.arrows')
             });
         });
     }
@@ -412,3 +452,43 @@ $(function(){ 'use strict';
     AOS.init({ easing: 'ease-in-out-cubic', duration: 750, once: true, offset: 10 });
 
 });
+
+function ssPageProcess(){
+    var ssPages = $('.ss-page');
+    if(ssPages.length){
+        var ssPageBtns = $('.ss-page-btn');
+        var hash = window.location.hash;
+
+        if(hash){
+            var pageId = hash.replace('#', '');
+            var activePage = ssPages.filter('[data-page="'+pageId+'"]');
+            if(activePage.length){
+                ssPages.removeClass('active');
+                activePage.addClass('active');
+                ssPageBtns.removeClass('active');
+                ssPageBtns.filter('[data-page="'+pageId+'"]').addClass('active');
+            }
+        }
+    
+        ssPageBtns.click(function(e){
+            var target = $('.ss-page[data-page="'+$(this).data('page')+'"]');
+            if(target.length){
+                e.preventDefault();
+
+                ssPages.removeClass('active');
+                target.addClass('active');
+                ssPageBtns.removeClass('active');
+                $(this).addClass('active');
+                
+                var slideContainers = target.find('.slide-container');
+                if(slideContainers.length){
+                    slideContainers.each(function(){
+                        $(this).find('.slides').slick('setPosition');
+                    });
+                }
+
+                AOS.refresh();
+            }
+        });
+    }
+}
