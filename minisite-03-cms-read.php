@@ -42,7 +42,7 @@
                                     กระทรวงพลังงาน เร่งเครื่อง พลังงานเพื่อทุกคน <br>
                                     (Energy for All) ปี2563
                                 </h6>
-                                <div class="mt-2 mb-3">
+                                <div class="mt-3 mb-3">
                                     <?php include('component/post-header.php'); ?>
                                 </div>
                                 <img class="img" src="public/assets/app/images/content/10.jpg" alt="Post Content Image" />
@@ -162,7 +162,7 @@
                                 <div class="grid sm-60 mt-0">
                                     <div class="gallery-grids">
                                         <?php for($i=1; $i<7; $i++){?>
-                                            <div class="grid sm-1-3">
+                                            <div class="grid sm-1-3 xs-50">
                                                 <a class="ss-img square" href="public/assets/app/images/content/0<?= $i%5+1 ?>.jpg" data-fancybox="gallery">
                                                     <img class="d-none" src="public/assets/app/images/content/0<?= $i%5+1 ?>.jpg" alt="Image Fancybox Preview" />
                                                     <div class="img-bg" style="background-image:url('public/assets/app/images/content/0<?= $i%5+1 ?>.jpg');"></div>

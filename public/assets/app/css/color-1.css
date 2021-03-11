@@ -280,6 +280,8 @@ input[type=number], input[type=phone], input[type=submit], select, textarea{
 .ss-card-08:hover .info-content p{color:#000000;}
 .ss-card-08 .info-content .text-icon em{background:#ffffff; color:#000000;}
 .ss-card-08:hover .info-content .text-icon em{background:#000000; color:#ffffff;}
+.ss-card-08 .video-info .duration{background:rgba(0,0,0,.5); color:#ffffff;}
+.ss-card-08 .video-info > em{color:#000000;}
 
 /* Special Card 09 */
 .ss-card-09{border:1px solid #ffffff;}
@@ -297,6 +299,16 @@ input[type=number], input[type=phone], input[type=submit], select, textarea{
 .ss-card-12:hover{background:#ffffff;}
 .ss-card-12:hover .text-container .title,
 .ss-card-12:hover .text-container .date{color:#000000;}
+
+/* Special Card 13 */
+.ss-card-13 .text-container{background:#000000; border:1px solid #ffffff;}
+.ss-card-13:hover .text-container{background:#ffffff;}
+.ss-card-13:hover .text-container .title, .ss-card-13:hover .text-container .desc, 
+.ss-card-13:hover .text-container .ss-stat .stat{color:#000000;}
+@media screen and (max-width:991.98px){
+    .ss-card-13{border:1px solid #ffffff;}
+    .ss-card-13 .text-container{border:0;}
+}
 
 
 /* Special Date */
@@ -317,6 +329,8 @@ input[type=number], input[type=phone], input[type=submit], select, textarea{
 
 /* Special Image */
 .ss-img .hover-container{background:rgba(255,77,1,.5);}
+.ss-img .video-info .duration{background:rgba(0,0,0,.5); color:#ffffff;}
+.ss-img .video-info > em{color:#000000;}
 
 
 /* Special List 01 */

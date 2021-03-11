@@ -9,9 +9,10 @@
     <?php include_once('include/topnav-minisite.php'); ?>
     <?php
         $breadcrumb = [
-            [ 'url' => '#', 'display' => 'ข่าวประชาสัมพันธ์' ],
+            [ 'url' => '#', 'display' => 'วิดีทัศน์' ],
+            [ 'url' => '#', 'display' => 'วิดีทัศน์เกี่ยวกับองค์กร' ],
         ];
-        $breadcrumbTitle = 'ข่าวประชาสัมพันธ์';
+        $breadcrumbTitle = 'วิดีทัศน์';
         $breadcrumbDesc = 'ด้วยการติดตามกิจกรรมข่าวสาร และข้อมูลอัพเดทต่างๆ';
         $breadcrumbBg = 'public/assets/app/images/bg/minisite-01.jpg';
         include('component/breadcrumb-minisite.php');
@@ -44,14 +45,18 @@
                             <div class="grids">
 
                                 <div class="grid sm-100">
-                                    <div class="ss-card ss-card-13">
+                                    <div class="ss-card ss-card-13 img-full">
                                         <div class="img-container">
                                             <a class="ss-img adaptive-list" href="#">
                                                 <div class="img-bg" style="background-image:url('public/assets/app/images/content/05.jpg');"></div>
                                                 <div class="hover-container">
                                                     <div class="icon">
-                                                        <img src="public/assets/app/images/icon/plus.png" alt="Hover Icon" />
+                                                        <img src="public/assets/app/images/icon/play.png" alt="Hover Icon" />
                                                     </div>
+                                                </div>
+                                                <div class="video-info">
+                                                    <div class="duration">10:20:08</div>
+                                                    <em class="fas fa-play-circle"></em>
                                                 </div>
                                             </a>
                                         </div>
@@ -92,7 +97,7 @@
                                                     <div class="img-bg" style="background-image:url('public/assets/app/images/content/0<?= $i%5+1 ?>.jpg');"></div>
                                                     <div class="hover-container">
                                                         <div class="icon">
-                                                            <img src="public/assets/app/images/icon/plus.png" alt="Hover Icon" />
+                                                            <img src="public/assets/app/images/icon/play.png" alt="Hover Icon" />
                                                         </div>
                                                     </div>
                                                 </a>
@@ -102,11 +107,10 @@
                                                     <a class="title p md fw-600" href="#">
                                                         สำนักงานปลัดกระทรวงพลังงานได้รับรางวัลเลิศรัฐ สาขาการบริหารราชการแบบมีส่วนร่วม ประจำปี พ.ศ. 2562
                                                     </a>
-                                                    <p class="xs desc mt-2">
-                                                        กระทรวงดิจิทัลเพื่อเศรษฐกิจและสังคม (MDES) ร่วมกับ สมาคมผู้ใช้ดิจิทัลไทย 
-                                                        (DUGA) กำหนดจัดงานอบรมสัมมนา eGovernment Forum 2020, Digital 
-                                                        HR Forum 2020, Big Data
-                                                    </p>
+                                                    <div class="video-info">
+                                                        <div class="duration">10:20:08</div>
+                                                        <em class="fas fa-play-circle"></em>
+                                                    </div>
                                                 </div>
                                                 <div class="info-content">
                                                     <div>

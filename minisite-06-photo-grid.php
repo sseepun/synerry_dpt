@@ -9,9 +9,10 @@
     <?php include_once('include/topnav-minisite.php'); ?>
     <?php
         $breadcrumb = [
-            [ 'url' => '#', 'display' => 'ข่าวประชาสัมพันธ์' ],
+            [ 'url' => '#', 'display' => 'คล้งภาพ' ],
+            [ 'url' => '#', 'display' => 'ภาพข่าวประชาสัมพันธ์' ],
         ];
-        $breadcrumbTitle = 'ข่าวประชาสัมพันธ์';
+        $breadcrumbTitle = 'คล้งภาพ';
         $breadcrumbDesc = 'ด้วยการติดตามกิจกรรมข่าวสาร และข้อมูลอัพเดทต่างๆ';
         $breadcrumbBg = 'public/assets/app/images/bg/minisite-01.jpg';
         include('component/breadcrumb-minisite.php');
@@ -29,10 +30,8 @@
                                     <a class="tab tab-header" href="#">
                                         เมนู <div class="hamburger"><div></div><div></div><div></div></div>
                                     </a>
-                                    <a class="tab active" href="#">ข่าวประชาสัมพันธ์</a>
-                                    <a class="tab" href="#">เรื่องเด่นประเด็นดัง</a>
-                                    <a class="tab" href="#">ข่าวสารรัฐมนตรี</a>
-                                    <a class="tab" href="#">ข่าวสารผู้บริหาร</a>
+                                    <a class="tab active" href="#">ภาพข่าวประชาสัมพันธ์</a>
+                                    <a class="tab" href="#">ภาพงานอีเว้นท์</a>
                                 </div>
                             </div>
                         </div>

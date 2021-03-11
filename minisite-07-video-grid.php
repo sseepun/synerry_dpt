@@ -9,9 +9,10 @@
     <?php include_once('include/topnav-minisite.php'); ?>
     <?php
         $breadcrumb = [
-            [ 'url' => '#', 'display' => 'ข่าวประชาสัมพันธ์' ],
+            [ 'url' => '#', 'display' => 'วิดีทัศน์' ],
+            [ 'url' => '#', 'display' => 'วิดีทัศน์เกี่ยวกับองค์กร' ],
         ];
-        $breadcrumbTitle = 'ข่าวประชาสัมพันธ์';
+        $breadcrumbTitle = 'วิดีทัศน์';
         $breadcrumbDesc = 'ด้วยการติดตามกิจกรรมข่าวสาร และข้อมูลอัพเดทต่างๆ';
         $breadcrumbBg = 'public/assets/app/images/bg/minisite-01.jpg';
         include('component/breadcrumb-minisite.php');
@@ -29,10 +30,9 @@
                                     <a class="tab tab-header" href="#">
                                         เมนู <div class="hamburger"><div></div><div></div><div></div></div>
                                     </a>
-                                    <a class="tab active" href="#">ข่าวประชาสัมพันธ์</a>
-                                    <a class="tab" href="#">เรื่องเด่นประเด็นดัง</a>
-                                    <a class="tab" href="#">ข่าวสารรัฐมนตรี</a>
-                                    <a class="tab" href="#">ข่าวสารผู้บริหาร</a>
+                                    <a class="tab active" href="#">วิดีทัศน์เกี่ยวกับองค์กร</a>
+                                    <a class="tab" href="#">วิดีทัศน์กิจกรรม</a>
+                                    <a class="tab" href="#">วิดีทัศน์ CSR</a>
                                 </div>
                             </div>
                         </div>
@@ -49,8 +49,12 @@
                                             <div class="img-bg" style="background-image:url('public/assets/app/images/content/01.jpg');"></div>
                                             <div class="hover-container">
                                                 <div class="icon">
-                                                    <img src="public/assets/app/images/icon/plus.png" alt="Hover Icon" />
+                                                    <img src="public/assets/app/images/icon/play.png" alt="Hover Icon" />
                                                 </div>
+                                            </div>
+                                            <div class="video-info">
+                                                <div class="duration">10:20:08</div>
+                                                <em class="fas fa-play-circle"></em>
                                             </div>
                                         </a>
                                         <div class="text-container">
@@ -81,56 +85,19 @@
                                     </div>
                                 </div>
 
-                                <div class="grid xl-1-3 lg-50 sm-50">
-                                    <div class="ss-card ss-card-06 stat-bottom">
-                                        <a class="ss-img square" href="#">
-                                            <div class="img-bg" style="background-image:url('public/assets/app/images/content/02.jpg');"></div>
-                                            <div class="hover-container">
-                                                <div class="icon">
-                                                    <img src="public/assets/app/images/icon/plus.png" alt="Hover Icon" />
-                                                </div>
-                                            </div>
-                                        </a>
-                                        <div class="text-container">
-                                            <div class="ss-stat jc-space-between">
-                                                <div class="stat">
-                                                    <em class="far fa-clock mr-1"></em> 8 มกราคม 2020
-                                                </div>
-                                                <div class="stat">
-                                                    <em class="far fa-eye mr-1"></em> 178
-                                                </div>
-                                            </div>
-                                            <a class="title p md fw-600" href="#">
-                                                สำนักงานปลัดกระทรวงพลังงานได้รับรางวัลเลิศรัฐ 
-                                                สาขาการบริหารราชการแบบมีส่วนร่วม ประจำปี พ.ศ. 2562
-                                            </a>
-                                            <p class="xs desc">
-                                                กระทรวงดิจิทัลเพื่อเศรษฐกิจและสังคม (MDES) ร่วมกับ สมาคมผู้ใช้ดิจิทัลไทย 
-                                                (DUGA) กำหนดจัดงานอบรมสัมมนา eGovernment Forum 2020, Digital 
-                                                HR Forum 2020, Big Data
-                                            </p>
-                                            <div class="ss-stat">
-                                                <div class="stat">
-                                                    <em class="fas fa-images mr-1"></em> 600
-                                                </div>
-                                                <a class="stat" href="#">
-                                                    ข้อมูลเพิ่มเติม
-                                                    <em class="far fa-arrow-alt-circle-right h6 ml-1"></em>
-                                                </a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <?php for($i=2; $i<8; $i++){?>
+                                <?php for($i=1; $i<8; $i++){?>
                                     <div class="grid xl-1-3 lg-50 sm-50">
                                         <div class="ss-card ss-card-06">
                                             <a class="ss-img square" href="#">
                                                 <div class="img-bg" style="background-image:url('public/assets/app/images/content/0<?= $i%5+1 ?>.jpg');"></div>
                                                 <div class="hover-container">
                                                     <div class="icon">
-                                                        <img src="public/assets/app/images/icon/plus.png" alt="Hover Icon" />
+                                                        <img src="public/assets/app/images/icon/play.png" alt="Hover Icon" />
                                                     </div>
+                                                </div>
+                                                <div class="video-info">
+                                                    <div class="duration">10:20:08</div>
+                                                    <em class="fas fa-play-circle"></em>
                                                 </div>
                                             </a>
                                             <div class="text-container">

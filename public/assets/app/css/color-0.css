@@ -336,9 +336,8 @@ input[type=phone]:focus, input[type=submit]:focus, select:focus, textarea:focus{
 .ss-card-06:hover .text-container{background:#212121;}
 .ss-card.ss-card-06 .text-container .title, .ss-card-06 .text-container .arrow,
 .ss-card-06 .text-container .ss-stat .stat > em{color:#fe4d01;}
-.ss-card-06:hover .text-container .desc, .ss-card-06:hover .text-container .ss-stat .stat,
-.ss-card-06:hover .text-container .ss-stat .stat > em,
-.ss-card-06:hover .text-container .arrow{color:#ffffff;}
+.ss-card-06:hover .text-container .desc, 
+.ss-card-06:hover .text-container .ss-stat .stat{color:#ffffff;}
 
 /* Special Card 07 */
 .ss-card-07{background:#f2f2f2;}
@@ -361,6 +360,14 @@ input[type=phone]:focus, input[type=submit]:focus, select:focus, textarea:focus{
 .ss-card-08:hover .info-content p{color:#ffffff;}
 .ss-card-08 .info-content .text-icon em{background:#fe4d01; color:#ffffff;}
 .ss-card-08:hover .info-content .text-icon em{background:#ffffff; color:#fe4d01;}
+.ss-card-08 .video-info .duration{background:rgba(0,0,0,.5); color:#ffffff;}
+.ss-card-08 .video-info > em{color:#fe4d01;}
+.ss-card-08.minisite{background:#ffffff;}
+.ss-card-08.minisite:hover{background:#212121;}
+.ss-card-08.minisite .text-container::before{background:#fe4d01;}
+.ss-card-08.minisite .text-container .title{color:#fe4d01;}
+.ss-card-08.minisite .text-container .arrow{color:#fe4d01;}
+.ss-card-08.minisite .info-content .text-icon em{background:none; color:#fe4d01;}
 
 /* Special Card 09 */
 .ss-card-09{background:#f2f2f2;}
@@ -384,6 +391,14 @@ input[type=phone]:focus, input[type=submit]:focus, select:focus, textarea:focus{
 .ss-card-12 .text-container .date{color:#fe4d01;}
 .ss-card-12:hover .text-container .title,
 .ss-card-12:hover .text-container .date{color:#ffffff;}
+
+/* Special Card 13 */
+.ss-card-13 .text-container{background:#ffffff;}
+.ss-card-13:hover .text-container{background:#212121;}
+.ss-card-13 .text-container .title{color:#fe4d01;}
+.ss-card-13 .info-content .ss-stat .stat em{color:#fe4d01;}
+.ss-card-13:hover .text-container .desc, 
+.ss-card-13:hover .text-container .ss-stat .stat{color:#ffffff;}
 
 
 /* Special Date */
@@ -409,6 +424,8 @@ input[type=phone]:focus, input[type=submit]:focus, select:focus, textarea:focus{
 
 /* Special Image */
 .ss-img .hover-container{background:rgba(255,77,1,.5);}
+.ss-img .video-info .duration{background:rgba(0,0,0,.5); color:#ffffff;}
+.ss-img .video-info > em{color:#fe4d01;}
 
 
 /* Special List 01 */

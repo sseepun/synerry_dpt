@@ -9,9 +9,10 @@
     <?php include_once('include/topnav-minisite.php'); ?>
     <?php
         $breadcrumb = [
-            [ 'url' => '#', 'display' => 'ข่าวประชาสัมพันธ์' ],
+            [ 'url' => '#', 'display' => 'คล้งภาพ' ],
+            [ 'url' => '#', 'display' => 'ภาพข่าวประชาสัมพันธ์' ],
         ];
-        $breadcrumbTitle = 'ข่าวประชาสัมพันธ์';
+        $breadcrumbTitle = 'คล้งภาพ';
         $breadcrumbDesc = 'ด้วยการติดตามกิจกรรมข่าวสาร และข้อมูลอัพเดทต่างๆ';
         $breadcrumbBg = 'public/assets/app/images/bg/minisite-01.jpg';
         include('component/breadcrumb-minisite.php');
