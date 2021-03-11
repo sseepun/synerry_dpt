@@ -18,6 +18,9 @@
             .faq-02 .faq > .question .stat{
                 margin: 0 0 .5rem 1rem;
             }
+            .faq-02 .faq > .question h6{
+                width: 100%;
+            }
         }
 
     </style>
