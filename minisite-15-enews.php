@@ -35,7 +35,7 @@
                             </div>
                         </div>
                         <div class="grid lg-75 md-70 sm-100 mt-3" style="position:relative;">
-                            <div class="img-bg" style="display:block; width:100%; padding:52% 0 0 0; background-position:center; background-size:cover; background-repeat:no-repeat; background-image: url('public/assets/app/images/bg/23.jpg');"></div>
+                            <div class="img-bg img-fill" style="display:block; width:100%; padding:52% 0 0 0; background-image:url('public/assets/app/images/bg/minisite-05.jpg');"></div>
                             <div style="position:absolute; top:0; left:0;">
                                 <h6 class="h4 lg fw-800">
                                     สมัครรับข่าวสารทางอีเมล
