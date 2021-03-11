@@ -721,6 +721,25 @@
             </div>
         </section>
     </div>
+
+    <div class="popup-container simple active" data-popup="subscribe">
+        <div class="wrapper">
+            <div class="popup-box border bcolor-white bg-white px-2 py-2">
+                <div class="img-container">
+                    <img src="public/assets/app/images/misc/popup-01.jpg" alt="Popup Banner">
+                </div>
+                <div class="d-flex ai-center jc-center mt-2">
+                    <div class="form-check sm mr-4">
+                        <input type="checkbox" class="form-check-input" id="show-toggle" value="1" title="General Checkbox Input" />
+                        <label for="show-toggle">ไม่ต้องแสดงอีก</label>
+                    </div>
+                    <a class="btn btn-action btn-color-01 btn-round btn-sm btn-popup-toggle px-5" href="#" data-popup="subscribe">
+                        <i class="far fa-times-circle color-white mr-1"></i> ปิด
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
     
     <?php $footerNoPattern = true; include_once('include/footer.php'); ?>
     <?php include_once('include/script.php'); ?>
