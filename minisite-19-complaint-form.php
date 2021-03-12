@@ -61,32 +61,30 @@
                                         </div>
                                     </div>
                                     <div class="grid sm-100">
-                                        <div class="form-group">
-                                            <div class="grids mt-0">
-                                                <div class="grid sm-20 mt-0">
-                                                    <label class="p color-black mt-2">
-                                                        ชื่อและนามสกุล
-                                                    </label>
-                                                </div>
-                                                <div class="grid sm-80 mt-0">
-                                                    <div class="gallery-grids mt-0">
-                                                        <div class="grid sm-20 mt-0">
-                                                            <select class="form-control no-bradius" required>
-                                                                <option value="">นางสาว</option>
-                                                            </select>
-                                                            <p class="sm mt-1">ชื่อนำหน้า</p>
-                                                        </div>
-                                                        <div class="grid sm-40 mt-0">
-                                                            <input type="text" class="form-control no-bradius text-under" required title="General Text Input" />
-                                                            <p class="sm mt-1">ชื่อ</p>
-                                                        </div>
-                                                        <div class="grid sm-40 mt-0">
-                                                            <input type="text" class="form-control no-bradius text-under" required title="General Text Input" />
-                                                            <p class="sm mt-1">นามสกุล</p>
-                                                        </div>
+                                        <div class="grids mt-0">
+                                            <div class="grid sm-20 mt-0">
+                                                <label class="p color-black mt-2">
+                                                    ชื่อและนามสกุล
+                                                </label>
+                                            </div>
+                                            <div class="grid sm-80 mt-0">
+                                                <div class="gallery-grids mt-0">
+                                                    <div class="grid sm-20 mt-0">
+                                                        <select class="form-control no-bradius" required>
+                                                            <option value="">นางสาว</option>
+                                                        </select>
+                                                        <p class="sm mt-1">ชื่อนำหน้า</p>
                                                     </div>
-
+                                                    <div class="grid sm-40 mt-0">
+                                                        <input type="text" class="form-control no-bradius" required title="General Text Input" />
+                                                        <p class="sm mt-1">ชื่อ</p>
+                                                    </div>
+                                                    <div class="grid sm-40 mt-0">
+                                                        <input type="text" class="form-control no-bradius" required title="General Text Input" />
+                                                        <p class="sm mt-1">นามสกุล</p>
+                                                    </div>
                                                 </div>
+
                                             </div>
                                         </div>
                                     </div>
