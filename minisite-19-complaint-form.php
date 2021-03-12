@@ -49,14 +49,12 @@
                             <form action="/" method="POST">
                                 <div class="grids mt-1">
                                     <div class="grid sm-100 mt-0">
-                                        <div class="form-group">
-                                            <div class="grids">
-                                                <div class="grid sm-20">
-                                                    <label class="p color-black mt-2">หัวข้อเรื่อง <span class="text-danger">*</span></label>
-                                                </div>
-                                                <div class="grid sm-80">
-                                                    <input type="text" class="form-control no-bradius" required title="General Text Input" />
-                                                </div>
+                                        <div class="grids">
+                                            <div class="grid sm-20">
+                                                <label class="p color-black mt-2">หัวข้อเรื่อง <span class="text-danger">*</span></label>
+                                            </div>
+                                            <div class="grid sm-80">
+                                                <input type="text" class="form-control no-bradius" required title="General Text Input" />
                                             </div>
                                         </div>
                                     </div>
@@ -89,106 +87,98 @@
                                         </div>
                                     </div>
                                     <div class="grid sm-100 mt-0">
-                                        <div class="form-group">
-                                            <div class="grids">
-                                                <div class="grid sm-20">
-                                                    <label class="p color-black mt-2">หมายเลขโทรศัพท์</label>
-                                                </div>
-                                                <div class="grid sm-60">
-                                                    <input type="text" class="form-control no-bradius" required title="General Text Input" />
-                                                </div>
+                                        <div class="grids">
+                                            <div class="grid sm-20">
+                                                <label class="p color-black mt-2">หมายเลขโทรศัพท์</label>
+                                            </div>
+                                            <div class="grid sm-60">
+                                                <input type="text" class="form-control no-bradius" required title="General Text Input" />
                                             </div>
                                         </div>
                                     </div>
                                     <div class="grid sm-100 mt-0">
-                                        <div class="form-group">
-                                            <div class="grids">
-                                                <div class="grid sm-20">
-                                                    <label class="p color-black mt-2">อีเมล <span class="text-danger">*</span></label>
-                                                </div>
-                                                <div class="grid sm-50">
-                                                    <input type="text" class="form-control no-bradius" required title="General Text Input" />
-                                                </div>
+                                        <div class="grids">
+                                            <div class="grid sm-20">
+                                                <label class="p color-black mt-2">อีเมล <span class="text-danger">*</span></label>
+                                            </div>
+                                            <div class="grid sm-50">
+                                                <input type="text" class="form-control no-bradius" required title="General Text Input" />
                                             </div>
                                         </div>
                                     </div>
                                     <div class="grid sm-100 mt-0">
-                                        <div class="form-group">
-                                            <div class="grids">
-                                                <div class="grid sm-20">
-                                                    <label class="p color-black mt-2">ข้อความ <span class="text-danger">*</span></label>
-                                                </div>
-                                                <div class="grid sm-80">
-                                                    <textarea class="form-control no-bradius" rows="4" title="General Textarea" required></textarea>
-                                                </div>
+                                        <div class="grids">
+                                            <div class="grid sm-20">
+                                                <label class="p color-black mt-2">ข้อความ <span class="text-danger">*</span></label>
+                                            </div>
+                                            <div class="grid sm-80">
+                                                <textarea class="form-control no-bradius" rows="4" title="General Textarea" required></textarea>
                                             </div>
                                         </div>
                                     </div>
                                     <div class="grid sm-100 mt-0">
-                                        <div class="form-group">
-                                            <div class="grids">
-                                                <div class="grid sm-20">
-                                                    <label class="p color-black mt-2">อัพโหลดไฟล์</label>
-                                                </div>
-                                                <div class="grid sm-80">
-                                                    <div class="upload-container">
-                                                        <div class="file-container">
-                                                            <div class="icon-container">
-                                                                <div class="h4 lg color-01 text-center">
-                                                                    <em class="far fa-file-image"></em>
-                                                                </div>
-                                                            </div>
-                                                            <div class="text-container color-black">
-                                                                <p class="sm fw-500">
-                                                                    ลากหรือวางไฟล์ไว้ที่นี่
-                                                                </p>
-                                                                <p class="xs fw-400">
-                                                                    ชนิดไฟล์ที่อนุญาติ .jpg .gif .jpeg .png .zip .rar
-                                                                    ไฟล์ทั้งหมดรวมกันไม่เกินไม่เกิน 5 MB
-                                                                </p>
+                                        <div class="grids">
+                                            <div class="grid sm-20">
+                                                <label class="p color-black mt-2">อัพโหลดไฟล์</label>
+                                            </div>
+                                            <div class="grid sm-80">
+                                                <div class="upload-container">
+                                                    <div class="file-container">
+                                                        <div class="icon-container">
+                                                            <div class="h4 lg color-01 text-center">
+                                                                <em class="far fa-file-image"></em>
                                                             </div>
                                                         </div>
-                                                        <div class="btns">
-                                                            <a class="btn btn-action btn-color-black btn-round btn-xs" href="#">
-                                                                เพิ่มไฟล์
+                                                        <div class="text-container color-black">
+                                                            <p class="sm fw-500">
+                                                                ลากหรือวางไฟล์ไว้ที่นี่
+                                                            </p>
+                                                            <p class="xs fw-400">
+                                                                ชนิดไฟล์ที่อนุญาติ .jpg .gif .jpeg .png .zip .rar
+                                                                ไฟล์ทั้งหมดรวมกันไม่เกินไม่เกิน 5 MB
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="btns">
+                                                        <a class="btn btn-action btn-color-black btn-round btn-xs" href="#">
+                                                            เพิ่มไฟล์
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                                <?php
+                                                    foreach([
+                                                        'pdf', 'doc'
+                                                    ] as $d){
+                                                ?>
+                                                    <div class="ss-file-02">
+                                                        <div class="icon-container">
+                                                            <div class="img-container">
+                                                                <div class="img-wrapper">
+                                                                    <img src="public/assets/app/images/icon/file-<?= $d ?>.png" alt="File Icon" />
+                                                                </div>
+                                                            </div>
+                                                            <p class="xs fw-200">
+                                                                <span class="fw-600">0.78</span> MB
+                                                            </p>
+                                                        </div>
+                                                        <div class="block jc-space-between">
+                                                            <div class="text-container">
+                                                                <div class="wrapper">
+                                                                    <p class="sm fw-100">20 กุมภาพันธ์ 2564</p>
+                                                                    <p class="fw-500 lh-sm color-black">
+                                                                        โครงการสนับสนุนการลงทุนติดตั้งใช้งานระบบอบแห้งพลังงานแสงอาทิตย์
+                                                                    </p>
+                                                                </div>
+                                                            </div>
+                                                            <a class="btn-container">
+                                                                <div class="fw-500">
+                                                                    <em class="far fa-times-circle color-02 mr-1"></em> 
+                                                                    ลบไฟล์
+                                                                </div>
                                                             </a>
                                                         </div>
                                                     </div>
-                                                    <?php
-                                                        foreach([
-                                                            'pdf', 'doc'
-                                                        ] as $d){
-                                                    ?>
-                                                        <div class="ss-file-02">
-                                                            <div class="icon-container">
-                                                                <div class="img-container">
-                                                                    <div class="img-wrapper">
-                                                                        <img src="public/assets/app/images/icon/file-<?= $d ?>.png" alt="File Icon" />
-                                                                    </div>
-                                                                </div>
-                                                                <p class="xs fw-200">
-                                                                    <span class="fw-600">0.78</span> MB
-                                                                </p>
-                                                            </div>
-                                                            <div class="block jc-space-between">
-                                                                <div class="text-container">
-                                                                    <div class="wrapper">
-                                                                        <p class="sm fw-100">20 กุมภาพันธ์ 2564</p>
-                                                                        <p class="fw-500 lh-sm color-black">
-                                                                            โครงการสนับสนุนการลงทุนติดตั้งใช้งานระบบอบแห้งพลังงานแสงอาทิตย์
-                                                                        </p>
-                                                                    </div>
-                                                                </div>
-                                                                <a class="btn-container">
-                                                                    <div class="fw-500">
-                                                                        <em class="far fa-times-circle color-02 mr-1"></em> 
-                                                                        ลบไฟล์
-                                                                    </div>
-                                                                </a>
-                                                            </div>
-                                                        </div>
-                                                    <?php }?>
-                                                </div>
+                                                <?php }?>
                                             </div>
                                         </div>
                                     </div>
