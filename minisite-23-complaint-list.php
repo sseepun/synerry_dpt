@@ -4,14 +4,6 @@
     <?php include_once('include/header.php'); ?>
     <?php include_once('include/style.php'); ?>
     <link rel="stylesheet" href="public/assets/app/css/style-minisite.css" />
-    <style>
-        /* Color pallette for table */
-        /* Light brown: #8b6e70 */
-        /* Dark brown:  #6f5254 */
-        .status-dot {
-            width: .5rem; height:.5rem; border-radius:50%;
-        }
-    </style>
 </head>
 <body class="loading">
     <?php include_once('include/topnav-minisite.php'); ?>
@@ -44,25 +36,22 @@
                             </div>
                         </div>
                         <div class="grid lg-75 md-70 sm-100">
-
                             <div class="d-flex fw-wrap jc-space-between">
-                                <h6 class="h4 fw-300 color-01">
+                                <h6 class="h5 fw-600 color-01 mr-2">
                                     เรื่องร้องเรียน
                                 </h6>
                                 <button class="btn btn-action btn-color-01 btn-round">
                                     แจ้งเรื่อง <em class="far fa-arrow-alt-circle-right ml-1"></em>
                                 </button>
                             </div>
-
-
-                            <div class="scroll-x-wrapper mt-4">
-                                <table class="table table-01 cols-4">
+                            <div class="scroll-x-wrapper mt-4" data-simplebar>
+                                <table class="table table-05">
                                     <thead>
                                         <tr>
                                             <th style="min-width:2.75rem;">หมายเลข</th>
                                             <th style="min-width:20rem;">หัวข้อเรื่อง</th>
-                                            <th style="min-width:6rem;">สถานะ</th>
-                                            <th style="min-width:6rem;">อัพเดท</th>
+                                            <th style="min-width:8rem;">สถานะ</th>
+                                            <th style="min-width:8.25rem;">อัพเดท</th>
                                         </tr>
                                     </thead>
                                     <tbody>
@@ -71,8 +60,9 @@
                                                 <td><?= sprintf('%2d', 219-$i*2+1) ?></td>
                                                 <td>ขอสนับสนุน สมุดบันทึกสุขภาพ</td>
                                                 <td>
-                                                    <div class="d-flex ai-center jc-center">
-                                                        <div class="status-dot bg-<?= sprintf('%02d', $i+1); ?> mr-2"></div> รอดำเนินการ
+                                                    <div class="status-dot">
+                                                        <div class="dot bg-<?= sprintf('%02d', $i%10+1); ?>"></div>
+                                                        <div class="text">รอดำเนินการ</div>
                                                     </div>
                                                 </td>
                                                 <td>
@@ -83,8 +73,9 @@
                                                 <td><?= sprintf('%2d', 217-$i*2+2) ?></td>
                                                 <td>สอบถามตำแหน่งพนักงานราชการเจ้าพนักงานธุรการ</td>
                                                 <td>
-                                                    <div class="d-flex ai-center jc-center">
-                                                        <div class="status-dot bg-<?= sprintf('%02d', ($i+3) % 10); ?> mr-2"></div> รอดำเนินการ
+                                                    <div class="status-dot">
+                                                        <div class="dot bg-<?= sprintf('%02d', ($i+1)%10+1); ?>"></div>
+                                                        <div class="text">รอดำเนินการ</div>
                                                     </div>
                                                 </td>
                                                 <td>
@@ -95,18 +86,27 @@
                                     </tbody>
                                 </table>
                             </div>
-
                             <?php
                                 $listFooter = ['pagination', 'pp'];
                                 include('component/list-footer-minisite.php');
                             ?>
-
-                            <div class="mt-4">
-                                <h6 class="p fw-600">เงื่อนไขการร้องทุกข์ออนไลน์</h6>
-                                <p class="sm">ผู้ร้องเรียนกรุณาอ่านและปฏิบัติตามข้อตกลงด้านล่างนี้โดยละเอียด เพื่อรักษาสิทธิประโยชน์ในการร้องเรียนของท่าน</p>
-                                <ol class="mt-3" style="padding-left:14.28px;">
+                            <div class="color-black mt-5">
+                                <h6 class="p md fw-600">
+                                    เงื่อนไขการร้องทุกข์ออนไลน์
+                                </h6>
+                                <p class="sm mt-1">
+                                    ผู้ร้องเรียนกรุณาอ่านและปฏิบัติตามข้อตกลงด้านล่างนี้โดยละเอียด 
+                                    เพื่อรักษาสิทธิประโยชน์ในการร้องเรียนของท่าน
+                                </p>
+                                <ol class="mt-3 pl-3">
                                     <?php for($i=0; $i<5; $i++){?>
-                                        <li class="p sm">ศิลปากรนู้ด วีนเซ่นไหว้บ๊อบ แจ็กเก็ตรีไทร์ แจ๊ส คาปูชิโนคาร์โฮสเตสเจี๊ยว วิลเลจสโรชาไฮแจ็คเฟรช นอมินีวาทกรรมดาวน์ ช็อปเปอร์วิดีโอเวสต์วิว ซูเปอร์สปายปูอัดอึ๋ม สเตชันฮ็อตกาญจน์สกรัม พุดดิ้งช็อปปิ้งระโงกซันตาคลอส พรีเมียร์น็อก แครกเกอร์ มอคคาราสเบอร์รี เบลอแต๋วเตี๊ยมเลิฟวาไรตี้ แรงใจเบลอ</li>
+                                        <li class="p xs fw-500 mt-2 pl-2">
+                                            ศิลปากรนู้ด วีนเซ่นไหว้บ๊อบ แจ็กเก็ตรีไทร์ แจ๊ส คาปูชิโนคาร์โฮสเตสเจี๊ยว 
+                                            วิลเลจสโรชาไฮแจ็คเฟรช นอมินีวาทกรรมดาวน์ ช็อปเปอร์วิดีโอเวสต์วิว 
+                                            ซูเปอร์สปายปูอัดอึ๋ม สเตชันฮ็อตกาญจน์สกรัม พุดดิ้งช็อปปิ้งระโงกซันตาคลอส 
+                                            พรีเมียร์น็อก แครกเกอร์ มอคคาราสเบอร์รี เบลอแต๋วเตี๊ยมเลิฟวาไรตี้ 
+                                            แรงใจเบลอ
+                                        </li>
                                     <?php }?>
                                 </ol>
                             </div>

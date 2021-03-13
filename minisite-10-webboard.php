@@ -4,18 +4,6 @@
     <?php include_once('include/header.php'); ?>
     <?php include_once('include/style.php'); ?>
     <link rel="stylesheet" href="public/assets/app/css/style-minisite.css" />
-    <style>
-        .title-custom .title{
-            width: calc(100% - 6.5rem); padding-left:1.5rem;
-        }
-        .title-custom .btn {
-            width:6.5rem;
-        }
-        @media screen and (max-width:767.98px){
-            .title-custom {margin-left: -1rem;}
-            .title-custom .title {padding-left: 2.5rem;}
-        }
-    </style>
 </head>
 <body class="loading">
     <?php include_once('include/topnav-minisite.php'); ?>
@@ -32,48 +20,50 @@
 
     <section class="section-minisite section-padding pt-0" style="background-image:url('public/assets/app/images/bg/pattern-02.png');">
         <div class="container">
-            <div class="ss-box full-grid position-relative" data-aos="fade-up" data-aos-delay="600">
+            <div class="ss-box full-grid eq-padding position-relative" data-aos="fade-up" data-aos-delay="600">
                 <div class="ss-box-shadow xl"></div>
                 <div class="box-content">
-                    <div class="title-custom d-flex">
-                        <div class="title d-flex ai-center color-white bg-black py-3">
-                            <h6 class="p lg">สร้างกระทู้ใหม่</h6>
+                    <div class="title-container">
+                        <div class="title-wrapper">
+                            <h6 class="p lg fw-500">สร้างกระทู้ใหม่</h6>
                         </div>
-                        <div class="btn d-flex ai-center">
-                            <p class="sm">ย้อนกลับ</p>
-                            <em class="far fa-arrow-alt-circle-left ml-1 text-2xl color-01"></em>
+                        <div class="btn-wrapper">
+                            <a class="d-flex ai-center p sm color-black h-color-01" href="#">
+                                ย้อนกลับ
+                                <em class="far fa-arrow-alt-circle-left ml-1 h4 color-01"></em>
+                            </a>
                         </div>
                     </div>
-                    <form action="/" method="POST" class="ml-4 mt-2">
-                        <div class="grids">
+                    <form action="/" method="POST">
+                        <div class="grids mt-4">
                             <div class="grid sm-100 mt-0">
                                 <div class="form-group">
                                     <label class="p fw-500 color-black">หัวข้อกระทู้ <span class="text-danger">*</span></label>
                                     <div class="border-bottom-2 bcolor-01">
-                                        <input type="text" class="form-control no-bradius" required title="General Text Input" />
+                                        <input type="text" class="form-control no-bradius fgray" required title="General Text Input" />
                                     </div>
                                 </div>
                             </div>
-                            <div class="grid sm-30 mt-0">
+                            <div class="grid sm-40 mt-0">
                                 <div class="form-group">
                                     <label class="p fw-500 color-black">เลือกประเภท</label>
                                     <div class="select-wrapper">
-                                        <select class="form-control no-bradius" required>
+                                        <select class="form-control no-bradius fgray" required>
                                             <option value="">หน่วยงานที่เกี่ยวข้อง</option>
                                         </select>
                                     </div>
                                 </div>
                             </div>
-                            <div class="grid sm-70 mt-0">
+                            <div class="grid sm-60 mt-0">
                                 <div class="form-group">
                                     <label class="p fw-500 color-black">เพิ่มแท็ก</label>
-                                    <input type="email" class="form-control no-bradius" title="General Text Input" placeholder="ตัวอย่างเช่น สนับสนุนโครงการ, กระทรวงพลังงาน"/>
+                                    <input type="email" class="form-control no-bradius fgray" title="General Text Input" placeholder="ตัวอย่างเช่น สนับสนุนโครงการ, กระทรวงพลังงาน"/>
                                 </div>
                             </div>
                             <div class="grid sm-100 mt-0">
                                 <div class="form-group">
                                     <label class="p fw-500 color-black">ข้อความ</label>
-                                    <div class="ckeditor" id="ckeditor"></div>
+                                    <div class="ckeditor fgray" id="ckeditor"></div>
                                 </div>
                             </div>
                         </div>

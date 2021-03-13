@@ -197,6 +197,10 @@ input[type=number], input[type=phone], input[type=submit], select, textarea{
 .ss-border{border-top:4px solid #ffffff!important; border-bottom:1px solid #ffffff!important;}
 
 
+/* Spacial Box */
+.ss-box .title-container > .title-wrapper{background:#ffffff; color:#000000;}
+.ss-box .input-group{border-color:#ffffff!important;}
+
 /* Special Box Header */
 .ss-box-header > .header{background:#ffffff!important; color:#000000!important;}
 .ss-box-header > .body{border:1px solid #ffffff;}
@@ -370,6 +374,10 @@ table.table.table-03 td{border-color:#ffffff;}
 
 /* Table 04 */
 table.table.table-04 thead th, table.table.table-04 td{border-color:#ffffff;}
+
+/* Table 05 */
+table.table.table-05 th{background:#ffffff; color:#000000;}
+table.table.table-05 td{background:#000000; color:#ffffff; border-color:#ffffff!important;}
 
 
 /* Toggle Target */

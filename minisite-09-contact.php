@@ -130,7 +130,7 @@
                                                 <div class="form-group">
                                                     <label class="p fw-400 color-black">เลือกหน่วยงาน <span class="text-danger">*</span></label>
                                                     <div class="select-wrapper">
-                                                        <select name="department" class="form-control no-bradius bg-fgray" required>
+                                                        <select name="department" class="form-control no-bradius fgray" required>
                                                             <option value="">เลือกหน่วยงาน</option>
                                                         </select>
                                                     </div>
@@ -139,26 +139,27 @@
                                             <div class="grid sm-50 mt-0">
                                                 <div class="form-group">
                                                     <label class="p fw-400 color-black">ชื่อ-นามสกุล <span class="text-danger">*</span></label>
-                                                    <input type="text" name="name" class="form-control no-bradius bg-fgray" required title="General Text Input" />
+                                                    <input type="text" name="name" class="form-control no-bradius fgray" required title="General Text Input" />
                                                 </div>
                                             </div>
                                             <div class="grid sm-50 mt-0">
                                                 <div class="form-group">
                                                     <label class="p fw-400 color-black">หมายเลขโทรศัพท์ <span class="text-danger">*</span></label>
-                                                    <input type="text" name="phone" class="form-control no-bradius bg-fgray" required title="General Text Input" />
+                                                    <input type="text" name="phone" class="form-control no-bradius fgray" required title="General Text Input" />
                                                 </div>
                                             </div>
                                             <div class="grid sm-50 mt-0">
                                                 <div class="form-group">
                                                     <label class="p fw-400 color-black">อีเมล <span class="text-danger">*</span></label>
-                                                    <input type="email" name="email" class="form-control no-bradius bg-fgray" required title="General Text Input" />
+                                                    <input type="email" name="email" class="form-control no-bradius fgray" required title="General Text Input" />
                                                 </div>
                                             </div>
                                             <div class="grid sm-100 mt-0">
                                                 <div class="form-group">
                                                     <label class="p fw-400 color-black">ข้อความ <span class="text-danger">*</span></label>
-                                                    <textarea name="message" rows="5" class="form-control no-bradius bg-fgray" required title="General Textarea" 
-                                                    style="border-top-color:#fe4d01!important;"></textarea>
+                                                    <div class="border-top-2 bcolor-01">
+                                                        <textarea name="message" rows="5" class="form-control no-bradius fgray" required title="General Textarea"></textarea>
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>

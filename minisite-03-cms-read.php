@@ -208,7 +208,7 @@
                                 <div class="grid xl-30 lg-1-3 sm-100 mt-2">
                                     <p class="lg fw-500 color-01">EMBED</p>
                                     <div class="mt-2">
-                                        <textarea name="message" class="adaptive p xs d-block bg-fgray width-full no-bradius" rows="11" data-copy="1"><iframe id="inlineFrameExample" title="Inline Frame Example" width="300" height="200" src="https://www.openstreetmap.org/export/embed.html?bbox=-0.004017949104309083%2C51.47612752641776%2C0.00030577182769775396%2C51.478569861898606&layer=mapnik"></iframe></textarea>
+                                        <textarea name="message" class="adaptive p xs d-block fgray width-full no-bradius" rows="11" data-copy="1"><iframe id="inlineFrameExample" title="Inline Frame Example" width="300" height="200" src="https://www.openstreetmap.org/export/embed.html?bbox=-0.004017949104309083%2C51.47612752641776%2C0.00030577182769775396%2C51.478569861898606&layer=mapnik"></iframe></textarea>
                                         <div class="btns text-center">
                                             <a class="btn btn-action btn-color-01 width-full no-bradius" data-copy="1" href="#">
                                                 คัดลอกโค๊ด

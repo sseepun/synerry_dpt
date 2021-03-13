@@ -177,9 +177,13 @@ input[type=text].round, input[type=email].round, input[type=password].round,
 input[type=date].round, input[type=tel].round, input[type=number].round, input[type=phone].round,
 input[type=submit].round, select.round, textarea.round{border-radius:1.25rem;}
 
-input[type=text].sm, input[type=email].sm, input[type=password].sm, 
-input[type=date].sm, input[type=tel].sm, input[type=number].sm, input[type=phone].sm,
-input[type=submit].sm, select.sm, textarea.sm{font-size:.875rem; padding:.25rem .875rem;}
+input[type=text].md, input[type=email].md, input[type=password].md, input[type=date].md, 
+input[type=tel].md, input[type=number].md, input[type=phone].md, input[type=submit].md, 
+select.md, textarea.md{font-size:1rem; padding:.625rem 1rem; height:auto;}
+
+input[type=text].sm, input[type=email].sm, input[type=password].sm, input[type=date].sm, 
+input[type=tel].sm, input[type=number].sm, input[type=phone].sm, input[type=submit].sm, 
+select.sm, textarea.sm{font-size:.875rem; padding:.25rem .875rem; height:auto;}
 
 textarea[data-copy]{pointer-events:none!important;}
 @media screen and (max-width:991.98px){
@@ -208,6 +212,12 @@ textarea[data-copy]{pointer-events:none!important;}
 }
 .date-wrapper input, .date-wrapper select, .date-wrapper textarea{
     width:auto; max-width:100%; padding-left:2.25rem;
+}
+.message-wrapper{display:block; position:relative; box-shadow:0px 4px 8px 4px rgba(0,0,0,.08);}
+.message-wrapper input{width:100%; max-width:100%; padding-right:3.75rem;}
+.message-wrapper button.btn.btn-action{
+    position:absolute; top:.25rem; bottom:.25rem; right:.25rem; width:3rem; padding:0;
+    font-size:1.25rem;
 }
 
 /* Input Dropzone */
@@ -578,10 +588,36 @@ textarea[data-copy]{pointer-events:none!important;}
 .ss-box.md{max-width:34rem;}
 .ss-box.lg{max-width:38rem;}
 .ss-box.xl{max-width:44rem;}
-.ss-box.full-grid{width:100%; max-width:100%; padding:0 1.5rem 0 0;}
 .ss-box > .box-content{position:relative; width:100%;}
+.ss-box .title-container{width:100%; display:flex; align-items:center;}
+.ss-box .title-container > .title-wrapper{width:calc(100% - 8rem); padding:.75rem 1.5rem;}
+.ss-box .title-container > .btn-wrapper{
+    width:8rem; display:flex; justify-content:flex-end; padding:.5rem 1.5rem .5rem 1rem;
+}
+
+.ss-box.full-grid{width:100%; max-width:100%; padding:0 1.5rem 0 0;}
+.ss-box.full-grid.eq-padding{width:100%; max-width:100%; padding:0 1.5rem;}
+.ss-box.full-grid .title-container{width:calc(100% + 1.5rem); margin:0 -1.5rem 0 0;}
+.ss-box.full-grid.eq-padding .title-container{width:calc(100% + 3rem); margin:0 -1.5rem;}
+
+.ss-box .input-group{
+    display:block; width:100%; padding:1.5rem 1.5rem 1.625rem 1.5rem;
+    border:1px solid transparent; border-bottom:0;
+}
+.ss-box .input-group:first-child{border-top:2px solid transparent;}
+.ss-box .input-group:last-child{border-bottom:1px solid transparent;}
+
+@media screen and (max-width:991.98px){
+    .ss-box .input-group{padding:1rem 1rem 1.125rem 1rem;}
+}
 @media screen and (max-width:767.98px){
-    .ss-box.full-grid{padding:0 1rem;}
+    .ss-box .title-container > .title-wrapper{width:calc(100% - 7rem); padding:.75rem 1rem;}
+    .ss-box .title-container > .btn-wrapper{width:7rem; padding:.5rem 1rem;}
+    
+    .ss-box.full-grid, .ss-box.full-grid.eq-padding{padding:0 1rem;}
+    .ss-box.full-grid .title-container, .ss-box.full-grid.eq-padding .title-container{
+        width:calc(100% + 2rem); margin:0 -1rem;
+    }
 }
 
 /* Special Box Header */
@@ -1352,6 +1388,29 @@ table.table.table-03 tfoot th{border-top:1px solid transparent;}
 table.table.table-04 thead th{
     border-top:1px solid transparent; border-bottom:1px solid transparent;
 }
+
+/* Table 05 */
+table.table.table-05 th{
+    padding:.9375rem .25rem; text-align:center; font-size:1rem; font-weight:400; border:0;
+    white-space:nowrap;
+}
+table.table.table-05 td{
+    padding:.75rem .5rem; text-align:center; font-size:.9375rem; font-weight:300;
+    border:0; border-bottom:1px solid transparent!important;
+    transition:background .25s, color .25s;
+}
+table.table.table-05 td:nth-child(2){position:relative; text-align:left; padding-left:1.5rem;}
+table.table.table-05 td:nth-child(2)::before{
+    content:''; position:absolute; top:calc(50% - .3125rem); left:1rem;
+    width:.5rem; height:.5rem; transition:background .25s;
+}
+table.table.table-05 .status-dot{
+    width:100%; display:flex; align-items:center; padding:0 0 0 .5rem;
+}
+table.table.table-05 .status-dot > .dot{
+    width:.5rem; height:.5rem; border-radius:50%; margin:0 .625rem 0 0;
+}
+table.table.table-05 .status-dot > .text{width:calc(100% - 1.125rem); text-align:left;}
 
 /* Table Sizes */
 table.table.table-lg td, table.table.table-lg th{padding:.6875rem .625rem;}
