@@ -25,7 +25,7 @@ color:#FFB739;
     <section class="section-minisite section-padding pt-0"
         style="background-image:url('public/assets/app/images/bg/pattern-02.png');">
         <div class="container">
-            <div class="ss-box-full-grid position-relative" data-aos="fade-up" data-aos-delay="600">
+            <div class="ss-box full-grid position-relative" data-aos="fade-up" data-aos-delay="600">
                 <div class="ss-box-shadow lg"></div>
                 <div class="box-content">
                     <div class="grids">

@@ -102,7 +102,7 @@
     <section class="section-pattern-01" style="background-image:url('public/assets/app/images/bg/pattern-01.png');">
         <div class="container">
             <div class="section-padding border-top-2 bcolor-sgray">
-                <div class="ss-box-lg">
+                <div class="ss-box lg">
                     <div data-aos="fade-up" data-aos-delay="0">
                         <h6 class="h4 lg fw-600 color-black text-center">
                             แบบฟอร์มติดต่อเรา

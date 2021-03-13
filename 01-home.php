@@ -556,7 +556,7 @@
                     <div class="tab-contents" data-aos="fade-up" data-aos-delay="150">
                         <?php foreach($categories as $j=>$k){?>
                             <div class="tab-content <?php if($j==0)echo 'active'; ?>" data-tab="<?= $j ?>">
-                                <div class="ss-box-md mt-3">
+                                <div class="ss-box md mt-3">
                                     <div class="px-2 py-2 bg-white border bcolor-white">
                                         <a class="ss-img" href="https://www.youtube.com/watch?v=u3VFzuUiTGw" data-fancybox>
                                             <div class="img-bg" style="background-image:url('public/assets/app/images/content/0<?= $i%5+1 ?>.jpg');"></div>

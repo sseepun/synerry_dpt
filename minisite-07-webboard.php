@@ -32,9 +32,8 @@
 
     <section class="section-minisite section-padding pt-0" style="background-image:url('public/assets/app/images/bg/pattern-02.png');">
         <div class="container">
-
-            <div class="ss-box-full-grid position-relative" data-aos="fade-up" data-aos-delay="600">
-                <div class="ss-box-shadow"></div>
+            <div class="ss-box full-grid position-relative" data-aos="fade-up" data-aos-delay="600">
+                <div class="ss-box-shadow xl"></div>
                 <div class="box-content">
                     <div class="title-custom d-flex">
                         <div class="title d-flex ai-center color-white bg-black py-3">
@@ -49,13 +48,15 @@
                         <div class="grids">
                             <div class="grid sm-100 mt-0">
                                 <div class="form-group">
-                                    <label class="p color-black">หัวข้อกระทู้ <span class="text-danger">*</span></label>
-                                    <input type="text" class="form-control no-bradius" required title="General Text Input" />
+                                    <label class="p fw-500 color-black">หัวข้อกระทู้ <span class="text-danger">*</span></label>
+                                    <div class="border-bottom-2 bcolor-01">
+                                        <input type="text" class="form-control no-bradius" required title="General Text Input" />
+                                    </div>
                                 </div>
                             </div>
                             <div class="grid sm-30 mt-0">
                                 <div class="form-group">
-                                    <label class="p color-black">เลือกประเภท</label>
+                                    <label class="p fw-500 color-black">เลือกประเภท</label>
                                     <div class="select-wrapper">
                                         <select class="form-control no-bradius" required>
                                             <option value="">หน่วยงานที่เกี่ยวข้อง</option>
@@ -65,13 +66,13 @@
                             </div>
                             <div class="grid sm-70 mt-0">
                                 <div class="form-group">
-                                    <label class="p color-black">เพิ่มแท็ก</label>
+                                    <label class="p fw-500 color-black">เพิ่มแท็ก</label>
                                     <input type="email" class="form-control no-bradius" title="General Text Input" placeholder="ตัวอย่างเช่น สนับสนุนโครงการ, กระทรวงพลังงาน"/>
                                 </div>
                             </div>
                             <div class="grid sm-100 mt-0">
                                 <div class="form-group">
-                                    <label class="p color-black">ข้อความ</label>
+                                    <label class="p fw-500 color-black">ข้อความ</label>
                                     <div class="ckeditor" id="ckeditor"></div>
                                 </div>
                             </div>
@@ -81,21 +82,23 @@
                                 <img class="img" src="public/assets/app/images/misc/captcha.jpg" alt="CAPTCHA" />
                             </div>
                             <div class="btns width-auto mt-3">
-                                <button type="reset" class="btn btn-action btn-sm btn-color-02 btn-round">
+                                <button type="reset" class="btn btn-action btn-sm btn-color-02 btn-round btn-min-width">
                                     ยกเลิก
                                 </button>
-                                <button type="submit" class="btn btn-action btn-sm btn-color-01 btn-round">
+                                <button type="submit" class="btn btn-action btn-sm btn-color-01 btn-round btn-min-width">
                                     ตั้งกระทู้ใหม่ <em class="far fa-check-circle ml-1"></em>
                                 </button>
                             </div>
                         </div>
                     </form>
                 </div>
+            </div>
         </div>
     </section>
     
     <?php include_once('include/footer-minisite.php'); ?>
     <?php include_once('include/script.php'); ?>
+
     <script src="https://cdn.ckeditor.com/ckeditor5/26.0.0/classic/ckeditor.js"></script>
     <script>
         ClassicEditor

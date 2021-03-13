@@ -19,7 +19,7 @@
     
     <section class="section-padding section-pattern-01" style="background-image:url('public/assets/app/images/bg/pattern-01.png');">
         <div class="container">
-            <div class="ss-box-lg" data-aos="fade-up" data-aos-delay="600">
+            <div class="ss-box lg" data-aos="fade-up" data-aos-delay="600">
                 <div class="ss-icon-title width-auto mt-0 pt-0">
                     <em class="far fa-address-card"></em>
                     <div class="text-wrapper">

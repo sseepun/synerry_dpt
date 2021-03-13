@@ -18,7 +18,7 @@
     
     <section class="section-padding">
         <div class="container">
-            <div class="ss-box-xl" data-aos="fade-up" data-aos-delay="300">
+            <div class="ss-box xl" data-aos="fade-up" data-aos-delay="300">
                 <div class="ss-icon-title mt-0 pt-0">
                     <em class="far fa-bell"></em>
                     <div class="text-wrapper">
