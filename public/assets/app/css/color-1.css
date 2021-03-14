@@ -314,6 +314,10 @@ input[type=number], input[type=phone], input[type=submit], select, textarea{
     .ss-card-13 .text-container{border:0;}
 }
 
+/* Special Card 14 */
+.ss-card-14{border:1px solid #ffffff;}
+.ss-card-14 .text-container{border-color:#ffffff;}
+
 
 /* Special Date */
 .ss-date, .ss-date-sm{background:#ffffff; color:#000000;}

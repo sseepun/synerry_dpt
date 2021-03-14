@@ -416,6 +416,10 @@ select.fgray, textarea.fgray{background:#f8f9fa!important;}
 .ss-card-13:hover .text-container .desc, 
 .ss-card-13:hover .text-container .ss-stat .stat{color:#ffffff;}
 
+/* Special Card 14 */
+.ss-card-14{background:#ffffff;}
+.ss-card-14 .text-container{border-color:#f2f2f2;}
+
 
 /* Special Date */
 .ss-date{background:#fe4d01; color:#ffffff;}

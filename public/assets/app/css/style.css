@@ -741,6 +741,14 @@ textarea[data-copy]{pointer-events:none!important;}
 }
 .ss-card-01 .text-container{width:calc(100% - 3rem);}
 .ss-card-01 .text-container .title{margin:0 0 .25rem 0;}
+
+.ss-card-01.lg .icon-container{width:3rem; margin:0 1rem 0 .5rem;}
+.ss-card-01.lg .text-container{width:calc(100% - 4.5rem);}
+.ss-card-01.lg .icon-container .icon{
+    width:3rem; height:3rem; line-height:3.25rem; border-radius:0; text-align:center; 
+    font-size:1.75rem; margin:0; border-bottom:3px solid transparent;
+}
+
 @media screen and (max-width:767.98px){
     .ss-card-01{padding:.625rem 0;}
 }
@@ -1085,6 +1093,20 @@ textarea[data-copy]{pointer-events:none!important;}
     .ss-card-13 .text-container > .text-content{width:100%; padding:0; margin:0 0 .5rem 0;}
 }
 
+/* Special Card 14 */
+.ss-card-14{
+    position:relative; padding:0 0 2.75rem 0; box-shadow:0px 6px 12px 6px rgba(0,0,0,.1);
+    transition:background .25s;
+}
+.ss-card-14 .img-container{padding:1rem 1rem 0 1rem;}
+.ss-card-14 .text-container{
+    padding:1rem; border-bottom:1px solid transparent; transition:border-color .25s;
+}
+.ss-card-14 .icon-container{
+    position:absolute; bottom:0; left:0; right:0; height:2.75rem; display:flex;
+    justify-content:center; align-items:center;
+}
+
 
 /* Special Date */
 .ss-date-container{position:relative; display:flex;}
@@ -1230,7 +1252,7 @@ textarea[data-copy]{pointer-events:none!important;}
     content:''; position:absolute; bottom:0; left:0; right:0; height:4rem;
     clip-path:polygon(0 30%, 100% 0, 100% 100%, 0 100%);
 }
-.ss-img .mag-container{
+.ss-img .mag-container, .ss-img .logo-container{
     position:absolute; top:0; bottom:0; left:0; right:0; display:flex; align-items:center;
     justify-content:center;
 }
@@ -1238,6 +1260,10 @@ textarea[data-copy]{pointer-events:none!important;}
     display:block; width:auto; max-width:calc(100% - 1.5rem);
     height:auto; max-height:calc(100% - 1.5rem);
     box-shadow:0px 6px 12px 6px rgba(0,0,0,.1);
+}
+.ss-img .logo-container > img{
+    display:block; width:auto; max-width:calc(100% - 4rem);
+    height:auto; max-height:calc(100% - 2rem);
 }
 
 .ss-img .play-container{
