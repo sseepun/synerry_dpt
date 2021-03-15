@@ -604,6 +604,16 @@ table.table.table-05 tr:hover td{background:#eeeeee!important;}
 }
 .faq-02 .faq > .answer .ftag{background:#eeeeee; color:#000000;}
 
+.faq-02.style-custom .faq > .question .ftag{
+    color:#000000; background:#ecca50; border-color:#fe4d01;
+}
+.faq-02.style-custom .faq > .question .text-container{border-color:#ddebf1;}
+
+
+/* History 01 */
+.history-01 .info::before{background:#afaeae;}
+.history-01 .info > .dot{background:#fe4d01; border-color:#ffffff;}
+
 
 /* Intro 03 */
 .intro-03 .arrows button{background:#888888; color:#ffffff;}
@@ -660,6 +670,12 @@ table.table.table-05 tr:hover td{background:#eeeeee!important;}
     background:none; color:#ff4917;
 }
 .pagination-02 .page-btn > em{color:#ff4917;}
+
+
+/* Progress 01 */
+.progress-01 .track{background:#ebebeb;}
+.progress-01 .track::after{background:#fe4d01;}
+.progress-01 .dot{background:#fe4d01; color:#ffffff; border-color:#ffffff;}
 
 
 /* Sitemap 01 */

@@ -4,26 +4,6 @@
     <?php include_once('include/header.php'); ?>
     <?php include_once('include/style.php'); ?>
     <link rel="stylesheet" href="public/assets/app/css/style-minisite.css" />
-    <style>
-
-        .faq-02 .faq > .question .stat{
-            text-align:left; width:auto;
-        }
-        @media screen and (min-width:992px){
-            .faq-02 .faq > .question h6{
-                width: calc(100% - 10rem);
-            }
-        }
-        @media screen and (max-width:991.98px){
-            .faq-02 .faq > .question .stat{
-                margin: 0 0 .5rem 1rem;
-            }
-            .faq-02 .faq > .question h6{
-                width: 100%;
-            }
-        }
-
-    </style>
 </head>
 <body class="loading">
     <?php include_once('include/topnav-minisite.php'); ?>
@@ -56,19 +36,21 @@
                         </div>
                         <div class="grid lg-75 md-70 sm-100">
                             <?php
-                                $listHeader = ['total', 'view', 'order', 'icon-rss'];
+                                $listHeader = ['total', 'order', 'icon-rss'];
                                 include('component/list-header-minisite.php');
                             ?>
-                            <div class="faq-02 mt-2">
+                            <div class="faq-02 style-custom mt-2">
                                 <?php for($i=0; $i<10; $i++){?>
-                                    <div class="faq">
+                                    <a class="faq" href="#">
                                         <div class="question">
                                             <div class="ftag text-center">
-                                                <p class="sm fw-400 lh-xs">หมายเลข</p>
-                                                <p class="h6 fw-500 lh-xs"><?= '022'.$i ?></p>
+                                                <div class="wrapper">
+                                                    <p class="sm fw-600 lh-xs">หมายเลข</p>
+                                                    <p class="h6 fw-600 lh-xs"><?= '022'.$i ?></p>
+                                                </div>
                                             </div>
                                             <div class="text-container fw-wrap">
-                                                <h6 class="p fw-200">
+                                                <h6 class="p fw-500">
                                                     แบบสำรวจเพื่อจัดการทำข้อเสนอการบริหารและพัฒนาผู้ปฎิบัติงานด้านเทคโนโลยรดิจิทัลภาครัฐ (ระดับบุคคล)
                                                 </h6>
                                                 <div class="stat ml-3">
@@ -81,15 +63,13 @@
                                                 </div>
                                             </div>
                                         </div>
-                                    </div>
+                                    </a>
                                 <?php }?>
                             </div>
                             <?php
                                 $listFooter = ['pagination', 'pp'];
                                 include('component/list-footer-minisite.php');
                             ?>
-                            
-
                         </div>
                     </div>
                 </div>

@@ -401,14 +401,17 @@ $(function(){ 'use strict';
     if(faq02.length){
         faq02.each(function(){
             $(this).find('.faq > .question').click(function(e){
-                e.preventDefault();
-                var parent = $(this).parent();
-                if(parent.hasClass('active')){
-                    parent.removeClass('active');
-                    parent.find('> .answer').slideUp();
-                }else{
-                    parent.addClass('active');
-                    parent.find('> .answer').slideDown();
+                var parent = $(this).parent(),
+                    target = parent.find('> .answer');
+                if(target.length){
+                    e.preventDefault();
+                    if(parent.hasClass('active')){
+                        parent.removeClass('active');
+                        target.slideUp();
+                    }else{
+                        parent.addClass('active');
+                        target.slideDown();
+                    }
                 }
             });
         });

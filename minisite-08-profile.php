@@ -9,7 +9,7 @@
     <?php include_once('include/topnav-minisite.php'); ?>
     <?php
         $breadcrumb = [
-            [ 'url' => '#', 'display' => 'ข่าวประชาสัมพันธ์' ],
+            [ 'url' => '#', 'display' => 'ผู้บริหารระดับสูง' ],
         ];
         $breadcrumbTitle = 'ผู้บริหารระดับสูง';
         $breadcrumbDesc = 'ด้วยการติดตามกิจกรรมข่าวสาร และข้อมูลอัพเดทต่างๆ';
@@ -35,17 +35,18 @@
                             </div>
                         </div>
                         <div class="grid lg-75 md-70 sm-100 mt-3">
-                            <?php
-                                $listHeader = ['total', 'view', 'order', 'icon-rss'];
-                                include('component/list-header-minisite.php');
-                            ?>
+                            <h6 class="h5 sm fw-600 color-01 mt-2">
+                                ผู้บริหารระดับสูง
+                            </h6>
                             <div class="grids">
-
                                 <?php for($i=1; $i<10; $i++){?>
                                     <div class="grid xl-1-3 lg-50 sm-50">
                                         <div class="ss-card ss-card-06">
                                             <a class="ss-img square" href="#">
-                                                <div class="img-bg" style="background-image:url('public/assets/app/images/team/03.jpg')"></div>
+                                                <div class="img-bg mag-bg"></div>
+                                                <div class="profile-container">
+                                                    <img src="public/assets/app/images/team/hero-0<?= $i%3+1 ?>.png" alt="Profile Image" />
+                                                </div>
                                             </a>
                                             <div class="text-container">
                                                 <a class="color-01 p md fw-600" href="#">
@@ -61,7 +62,6 @@
                                         </div>
                                     </div>
                                 <?php }?>
-
                             </div>
                         </div>
                     </div>

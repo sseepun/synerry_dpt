@@ -463,6 +463,15 @@ table.table.table-05 td{background:#000000; color:#ffff00; border-color:#ffff00!
 .faq-02 .faq > .answer .ftag{
     background:#ffff00; color:#000000; border-top:1px solid #000000;
 }
+.faq-02.style-custom .faq > .question .ftag{
+    color:#000000; background:#ffff00; border-color:#ffff00;
+}
+.faq-02.style-custom .faq > .question .text-container{border-color:#ffff00;}
+
+
+/* History 01 */
+.history-01 .info::before{background:#ffff00;}
+.history-01 .info > .dot{background:#000000; border-color:#ffff00;}
 
 
 /* Intro 03 */
@@ -499,6 +508,12 @@ table.table.table-05 td{background:#000000; color:#ffff00; border-color:#ffff00!
     background:none; color:#ffff00;
 }
 .pagination-02 .page-btn em{color:#ffff00;}
+
+
+/* Progress 01 */
+.progress-01 .track{background:#000000; border:1px solid #ffff00;}
+.progress-01 .track::after{background:#ffff00;}
+.progress-01 .dot{background:#000000; color:#ffff00; border-color:#ffff00;}
 
 
 /* Sitemap 01 */

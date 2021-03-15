@@ -1272,7 +1272,7 @@ textarea[data-copy]{pointer-events:none!important;}
     content:''; position:absolute; bottom:0; left:0; right:0; height:4rem;
     clip-path:polygon(0 30%, 100% 0, 100% 100%, 0 100%);
 }
-.ss-img .mag-container, .ss-img .logo-container{
+.ss-img .mag-container, .ss-img .logo-container, .ss-img .profile-container{
     position:absolute; top:0; bottom:0; left:0; right:0; display:flex; align-items:center;
     justify-content:center;
 }
@@ -1284,6 +1284,11 @@ textarea[data-copy]{pointer-events:none!important;}
 .ss-img .logo-container > img{
     display:block; width:auto; max-width:calc(100% - 4rem);
     height:auto; max-height:calc(100% - 2rem);
+}
+.ss-img .profile-container{align-items:flex-end;}
+.ss-img .profile-container > img{
+    display:block; width:auto; max-width:calc(100% - 2rem);
+    height:auto; max-height:calc(100% - 1rem);
 }
 
 .ss-img .play-container{

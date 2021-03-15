@@ -136,34 +136,23 @@
                                                         </label>
                                                     </div>
                                                     <div class="grid lg-80 sm-75 mt-0">
-                                                        <div class="upload-container">
-                                                            <div class="file-container">
-                                                                <div class="icon-container">
-                                                                    <div class="h4 lg color-01 text-center">
-                                                                        <em class="far fa-file-image"></em>
+                                                        <div class="form-group mt-0 mb-2">
+                                                            <div class="input-dropzone bcolor-sgray bg-fgray no-bradius">
+                                                                <div class="wrapper text-center color-gray">
+                                                                    <div class="h3 color-01 lh-xs">
+                                                                        <em class="fas fa-cloud-upload-alt"></em>
+                                                                    </div>
+                                                                    <div class="p md fw-500 color-black">
+                                                                        ลากไฟล์ หรือ <u class="color-01">ค้นหาไฟล์</u> 
+                                                                        เพื่ออัพโหลด
+                                                                    </div>
+                                                                    <div class="p fw-400 color-black">
+                                                                        ไฟล์ทั้งหมดรวมกันไม่เกิน 5 MB
                                                                     </div>
                                                                 </div>
-                                                                <div class="text-container color-black">
-                                                                    <p class="sm fw-500">
-                                                                        ลากหรือวางไฟล์ไว้ที่นี่
-                                                                    </p>
-                                                                    <p class="xs fw-400">
-                                                                        ชนิดไฟล์ที่อนุญาติ .jpg .gif .jpeg .png .zip .rar
-                                                                        ไฟล์ทั้งหมดรวมกันไม่เกินไม่เกิน 5 MB
-                                                                    </p>
-                                                                </div>
-                                                            </div>
-                                                            <div class="btns">
-                                                                <a class="btn btn-action btn-color-black btn-round btn-xs" href="#">
-                                                                    เพิ่มไฟล์
-                                                                </a>
                                                             </div>
                                                         </div>
-                                                        <?php
-                                                            foreach([
-                                                                'pdf', 'doc'
-                                                            ] as $d){
-                                                        ?>
+                                                        <?php foreach(['pdf', 'doc'] as $d){?>
                                                             <div class="ss-file-02">
                                                                 <div class="icon-container">
                                                                     <div class="img-container">
