@@ -283,13 +283,6 @@
         .intro-08 .title-container h6{
             line-height: 1rem;
         }
-        .tab-container .tabs.tabs-05{
-            display:flex; flex-wrap:wrap; 
-        }
-        .tab-container .tabs.tabs-05 .tab {
-            display:block; position:relative; white-space:nowrap; margin:0 1.5rem .875rem 0;
-            padding:.125rem 0; font-size:.9375rem; font-weight:300; transition:color .25s;
-        }
     </style>
     <section class="intro-08">
         <div class="container">
