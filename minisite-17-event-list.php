@@ -41,9 +41,21 @@
                                 $listHeader = ['total', 'order', 'icon-rss'];
                                 include('component/list-header-minisite.php');
                             ?>
-                            <h6 class="h5 sm fw-600 color-01 mt-2">
-                                งานกิจกรรมเร็วๆนี้
-                            </h6>
+                            <div class="position-relative mt-2">
+                                <div class="float-choice-wrapper color-black">
+                                    <div class="wrapper">
+                                        <p class="xs fw-500 mr-1">มุมมอง</p>
+                                        <div class="select-wrapper">
+                                            <select class="no-bradius">
+                                                <option value="">ดูทั้งหมด</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                                <h6 class="h5 sm fw-600 color-01 text-center">
+                                    งานกิจกรรมเร็วๆนี้
+                                </h6>
+                            </div>
                             <div class="grids">
                                 <?php for($i=0; $i<8; $i++){?>
                                     <div class="grid xl-1-3 lg-50 sm-50">

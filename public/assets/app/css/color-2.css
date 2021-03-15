@@ -389,6 +389,10 @@ table.table.table-05 td{background:#000000; color:#ffff00; border-color:#ffff00!
 .toggle-target{background:#000000; border-color:#ffff00;}
 
 
+/* Upload Container */
+.upload-container{background:#000000;}
+
+
 /* About 03 */
 .about-03{background:none!important;}
 .about-03 > .img-bg{background:none!important;}

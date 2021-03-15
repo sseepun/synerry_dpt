@@ -530,6 +530,10 @@ table.table.table-05 tr:hover td{background:#eeeeee!important;}
 .toggle-target{background:#ffffff; border-color:#e1e1e1;}
 
 
+/* Upload Container */
+.upload-container{background:#e1e1e1;}
+
+
 /* About 03 */
 .about-03 .slick-dots button{background:#ffffff;}
 .about-03 .arrows button{color:#ffffff;}
