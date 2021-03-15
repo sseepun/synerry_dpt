@@ -92,7 +92,7 @@
                                                     </div>
                                                 </div>
                                             </div>
-                                            <div class="grid sm-100">
+                                            <div class="grid sm-100 xs-mt-0">
                                                 <div class="grids">
                                                     <div class="grid lg-20 sm-25 mt-0">
                                                         <label class="p sm fw-500 color-black mt-2">
@@ -104,7 +104,7 @@
                                                     </div>
                                                 </div>
                                             </div>
-                                            <div class="grid sm-100">
+                                            <div class="grid sm-100 xs-mt-0">
                                                 <div class="grids">
                                                     <div class="grid lg-20 sm-25 mt-0">
                                                         <label class="p sm fw-500 color-black mt-2">
@@ -116,7 +116,7 @@
                                                     </div>
                                                 </div>
                                             </div>
-                                            <div class="grid sm-100">
+                                            <div class="grid sm-100 xs-mt-0">
                                                 <div class="grids">
                                                     <div class="grid lg-20 sm-25 mt-0">
                                                         <label class="p sm fw-500 color-black mt-2">
@@ -128,7 +128,7 @@
                                                     </div>
                                                 </div>
                                             </div>
-                                            <div class="grid sm-100">
+                                            <div class="grid sm-100 xs-mt-0">
                                                 <div class="grids">
                                                     <div class="grid lg-20 sm-25 mt-0">
                                                         <label class="p sm fw-500 color-black mt-2">

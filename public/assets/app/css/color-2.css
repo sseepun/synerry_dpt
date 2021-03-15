@@ -199,6 +199,7 @@ input[type=number], input[type=phone], input[type=submit], select, textarea{
 
 /* Spacial Box */
 .ss-box .title-container > .title-wrapper{background:#ffff00; color:#000000;}
+.ss-box .title-container.with-active > .active-wrapper{background:#ffff00; color:#000000;}
 .ss-box .input-group{border-color:#ffff00!important;}
 
 /* Special Box Header */
@@ -409,6 +410,11 @@ table.table.table-05 td{background:#000000; color:#ffff00; border-color:#ffff00!
 .about-06 .info .count-container > .wrapper{background:#000000;}
 
 
+/* Auth 01 */
+.auth-01 .auth-sep > .wrapper::before, 
+.auth-01 .auth-sep > .wrapper::after{background:#ffff00;}
+
+
 /* Banner 01 */
 .banner-01 .slick-dots button{background:#ffff00;}
 .banner-01 .arrows button{background:#ffff00; color:#000000;}
@@ -499,6 +505,9 @@ table.table.table-05 td{background:#000000; color:#ffff00; border-color:#ffff00!
 .sitemap-01 .grid, .sitemap-01 .sitemap > .header, .sitemap-01 .sitemap a,
 .sitemap-01 .sitemap li > ul{border-color:#ffff00;}
 .sitemap-01 .sitemap li > ul > li::before{background:#ffff00;}
+
+/* Sitemap 02 */
+.sitemap-02 .sitemap li::before{background:#ffff00;}
 
 
 /* Survey 01 */

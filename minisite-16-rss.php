@@ -19,7 +19,7 @@
 
     <section class="section-minisite section-padding pt-0">
         <div class="container">
-        <div class="ss-box full-grid position-relative" data-aos="fade-up" data-aos-delay="600">
+            <div class="ss-box full-grid position-relative" data-aos="fade-up" data-aos-delay="600">
                 <div class="ss-box-shadow lg"></div>
                 <div class="box-content">
                     <div class="grids">
@@ -48,12 +48,16 @@
                                             </div>
                                         </div>
                                         <div class="text-container border-bottom bcolor-sgray">
-                                            <a class="title p fw-600" href="#">
-                                                ประกาศกระทรวงพลังงาน NO GIFT POLICY “งดรับ งดให้ ของขวัญ ของกำนัลทุกชนิด”
+                                            <a class="title p lg fw-500" href="#">
+                                                อาเซียนกับการเป็นผู้นำระดับภูมิภาคด้านระบบพลังงานต่อการเปลี่ยนแปลงสู่อนาคต
                                             </a>
-                                            <h6 class="p sm fw-600 color-01">
-                                                20.01.2564
-                                            </h6>
+                                            <p class="desc sm color-black">
+                                                จากพระราชปณิธานที่หมายมั่นของสมเด็จพระเจ้าอยู่หัว ที่จะสืบสาน รักษา 
+                                                ต่อยอดพระราชกรณียกิจของสมเด็จพระบูรพมหากษัตริยาธิราช 
+                                                ที่จะทรงบำบัดทุกข์ บำรุงสุข ให้กับอาณาประชาราษฎร์ 
+                                                ให้อยู่รอดปลอดภัยจากภยันตรายนานัปการ 
+                                                มีผืนแผ่นดินให้ประชาราษฏร์ได้อยู่
+                                            </p>
                                         </div>
                                     </div>
                                 <?php }?>

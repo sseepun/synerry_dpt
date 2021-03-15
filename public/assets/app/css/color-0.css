@@ -157,6 +157,7 @@ nav.sidenav .submenu .dropdown-toggle{color:#ffffff;}
 .btn.btn-color-06:active{box-shadow:inset 0 0 0 100rem rgba(0,0,0,.10);}
 
 .btn.btn-social.fw{background:#3b56a3; color:#ffffff;}
+.btn.btn-social.gg{background:#b62c22; color:#ffffff;}
 .btn.btn-social.tw{background:#05b0f6; color:#ffffff;}
 .btn.btn-social.ln{background:#00c600; color:#ffffff;}
 .btn.btn-social:hover{box-shadow:inset 0 0 0 100rem rgba(0,0,0,.10);}
@@ -283,6 +284,7 @@ select.fgray, textarea.fgray{background:#f8f9fa!important;}
 
 /* Spacial Box */
 .ss-box .title-container > .title-wrapper{background:#000000; color:#ffffff;}
+.ss-box .title-container.with-active > .active-wrapper{background:#8b6e70; color:#ffffff;}
 .ss-box .input-group{border-color:#e9e9e9!important;}
 .ss-box .input-group:first-child{border-top-color:#fe4d01!important;}
 
@@ -315,6 +317,11 @@ select.fgray, textarea.fgray{background:#f8f9fa!important;}
 /* Special Card 01 */
 .ss-card-01 .icon-container .icon{background:#fe4d01; color:#ffffff;}
 .ss-card-01:hover .text-container .title{color:#fe4d01;}
+.ss-card-01.lg .text-container .title{color:#fe4d01;}
+.ss-card-01.lg:hover .text-container .title{color:#ffb739;}
+.ss-card-01.lg .icon-container .icon{
+    color:#fe4d01; background:#f0f0f0; border-color:#fe4d01;
+}
 
 /* Special Card 02 */
 .ss-card-02 .text-container{background:#f2f2f2;}
@@ -537,6 +544,11 @@ table.table.table-05 tr:hover td{background:#eeeeee!important;}
 .about-06 .info .count-container > .wrapper{background:#ffffff;}
 
 
+/* Auth 01 */
+.auth-01 .auth-sep > .wrapper::before, 
+.auth-01 .auth-sep > .wrapper::after{background:#afaeae;}
+
+
 /* Banner 01 */
 .banner-01 .slick-dots button{background:#ffffff;}
 .banner-01 .arrows button{background:#ffffff; color:#000000;}
@@ -655,6 +667,11 @@ table.table.table-05 tr:hover td{background:#eeeeee!important;}
 .sitemap-01 .sitemap li > ul{border-color:#e1e1e1;}
 .sitemap-01 .sitemap a:hover{color:#fe4d01;}
 .sitemap-01 .sitemap li > ul > li::before{background:#fe4d01;}
+
+/* Sitemap 02 */
+.sitemap-02 .sitemap a:hover{color:#fe4d01;}
+.sitemap-02 .sitemap li::before{background:#fe4d01;}
+.sitemap-02 .sitemap li > ul > li::before{background:#121212;}
 
 
 /* Survey 01 */
