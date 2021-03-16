@@ -133,18 +133,47 @@ input[type=number], input[type=phone], input[type=submit], select, textarea{
 .select-wrapper::after, .search-wrapper::after, .date-wrapper::after{color:#000000;}
 
 
+/* Calendar Wrapper */
+.calendar-wrapper.minisite{border:#ffffff!important;}
+
 /* Calendar - Month */
-.calendar-month .fc-day-header{color:#fff;}
-.calendar-month .fc-day-top > span{background:#fff; color:#000;}
+.calendar-month .fc-day-header{color:#ffffff;}
+.calendar-month .fc-day-top > span{background:#ffffff; color:#000000;}
 .calendar-month .fc-unthemed td.fc-today{background:rgba(255,255,255,.18);}
 .calendar-month .fc-day-top.fc-other-month > span{opacity:.4;}
-.calendar-month .custom-event{color:#fff;}
-.calendar-month a.fc-more{color:#fff; border-color:#fff;}
-.calendar-month .fc-unthemed .fc-popover{border:1px solid #fff; background:#000;}
+.calendar-month .custom-event{color:#ffffff;}
+.calendar-month a.fc-more{color:#ffffff; border-color:#ffffff;}
+.calendar-month .fc-unthemed .fc-popover{border:1px solid #ffffff; background:#000000;}
 .calendar-month .fc-unthemed .fc-popover .fc-header{
-    border-bottom:1px solid #fff; background:#000;
+    border-bottom:1px solid #ffffff; background:#000000;
 }
 .calendar-month .fc-day:hover{background:rgba(255,255,255,.2);}
+.calendar-month.minisite .fc-day-header > span{
+    color:#ffffff; border-top-color:#ffffff!important;
+    border-bottom-color:#ffffff!important;
+}
+
+/* Calendar - Week */
+.calendar-week .fc-view-container{border-color:#ffffff!important;}
+.calendar-week .fc-day-grid .fc-day.fc-widget-content{color:#ffffff;} 
+.calendar-week .fc-day-grid .fc-day.fc-widget-content.fc-today{
+    background:#ffffff; color:#000000;
+} 
+.calendar-week .fc-day-grid td.fc-widget-content{border-color:#ffffff!important;}
+.calendar-week .fc-row.fc-week.fc-widget-content .fc-axis.fc-widget-content:first-child,
+.calendar-week .fc-axis.fc-time.fc-widget-content{background:#ffffff; color:#000000;}
+.calendar-week .fc-time-grid .fc-event{
+    background:#ffffff; color:#000000; border:2px solid #000000!important;
+}
+.calendar-week .fc-toolbar.fc-header-toolbar .fc-button{color:#ffffff;}
+
+/* Calendar - Day */
+.calendar-day .fc-view-container{border-color:#ffffff!important;}
+.calendar-day td.fc-axis.fc-widget-content:first-child{background:#ffffff; color:#000000;}
+.calendar-day .fc-axis.fc-time.fc-widget-content{background:#ffffff; color:#000000;}
+.calendar-day .fc-time-grid .fc-event{
+    background:#ffffff; color:#000000; border:2px solid #000000!important;
+}
 
 
 /* Chat Container */
@@ -387,6 +416,10 @@ table.table.table-05 td{background:#000000; color:#ffffff; border-color:#ffffff!
 
 /* Toggle Target */
 .toggle-target{background:#000000; border-color:#ffffff;}
+
+
+/* Upload Container */
+.upload-container{background:#000000;}
 
 
 /* About 03 */

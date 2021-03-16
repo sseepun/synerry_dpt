@@ -41,9 +41,24 @@
                                 $listHeader = ['total', 'order', 'icon-rss'];
                                 include('component/list-header-minisite.php');
                             ?>
-                            <h6 class="h5 sm fw-600 color-01 mt-2">
-                                งานกิจกรรมเร็วๆนี้
-                            </h6>
+                            <div class="position-relative mt-2">
+                                <div class="float-choice-wrapper color-black">
+                                    <div class="wrapper">
+                                        <p class="xs fw-500 mr-1">มุมมอง</p>
+                                        <div class="select-wrapper">
+                                            <select class="no-bradius">
+                                                <option value="0" selected>ดูทั้งหมด</option>
+                                                <option value="1">รายเดือน</option>
+                                                <option value="2">รายสัปดาห์</option>
+                                                <option value="3">รายวัน</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                                <h6 class="h5 sm fw-600 color-01 text-center">
+                                    งานกิจกรรมเร็วๆนี้
+                                </h6>
+                            </div>
                             <div class="grids">
                                 <?php for($i=0; $i<8; $i++){?>
                                     <div class="grid xl-1-3 lg-50 sm-50">
@@ -61,7 +76,7 @@
                                                     โครงการอบรม เรื่อง การจัดทำระบบบัญชีข้อมูล (Data Catalog) 
                                                     เพื่อนำไปสู่การเปิดเผยข้อมูลภาครัฐ (Open Data)
                                                 </a>
-                                                <div class="ss-stat style-calendar mt-2 mb-0">
+                                                <div class="ss-stat style-calendar d-block mt-2 mb-0">
                                                     <div class="stat">
                                                         <em class="far fa-calendar mr-2"></em> 
                                                         <span class="fw-500">12 เมษายน 2564</span>
@@ -83,7 +98,6 @@
                                         </div>
                                     </div>
                                 <?php }?>
-
                             </div>
                             <?php
                                 $listFooter = ['pagination', 'pp'];

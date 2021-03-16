@@ -133,6 +133,9 @@ input[type=number], input[type=phone], input[type=submit], select, textarea{
 .select-wrapper::after, .search-wrapper::after, .date-wrapper::after{color:#000000;}
 
 
+/* Calendar Wrapper */
+.calendar-wrapper.minisite{border:#ffff00!important;}
+
 /* Calendar - Month */
 .calendar-month .fc-day-header{color:#ffff00;}
 .calendar-month .fc-day-top > span{background:#ffff00; color:#000;}
@@ -145,6 +148,32 @@ input[type=number], input[type=phone], input[type=submit], select, textarea{
     border-bottom:1px solid #ffff00; background:#000;
 }
 .calendar-month .fc-day:hover{background:rgba(255,255,0,.2);}
+.calendar-month.minisite .fc-day-header > span{
+    color:#ffff00; border-top-color:#ffff00!important;
+    border-bottom-color:#ffff00!important;
+}
+
+/* Calendar - Week */
+.calendar-week .fc-view-container{border-color:#ffff00!important;}
+.calendar-week .fc-day-grid .fc-day.fc-widget-content{color:#ffff00;} 
+.calendar-week .fc-day-grid .fc-day.fc-widget-content.fc-today{
+    background:#ffff00; color:#000000;
+} 
+.calendar-week .fc-day-grid td.fc-widget-content{border-color:#ffff00!important;}
+.calendar-week .fc-row.fc-week.fc-widget-content .fc-axis.fc-widget-content:first-child,
+.calendar-week .fc-axis.fc-time.fc-widget-content{background:#ffff00; color:#000000;}
+.calendar-week .fc-time-grid .fc-event{
+    background:#ffff00; color:#000000; border:2px solid #000000!important;
+}
+.calendar-week .fc-toolbar.fc-header-toolbar .fc-button{color:#ffff00;}
+
+/* Calendar - Day */
+.calendar-day .fc-view-container{border-color:#ffff00!important;}
+.calendar-day td.fc-axis.fc-widget-content:first-child{background:#ffff00; color:#000000;}
+.calendar-day .fc-axis.fc-time.fc-widget-content{background:#ffff00; color:#000000;}
+.calendar-day .fc-time-grid .fc-event{
+    background:#ffff00; color:#000000; border:2px solid #000000!important;
+}
 
 
 /* Chat Container */
@@ -387,6 +416,10 @@ table.table.table-05 td{background:#000000; color:#ffff00; border-color:#ffff00!
 
 /* Toggle Target */
 .toggle-target{background:#000000; border-color:#ffff00;}
+
+
+/* Upload Container */
+.upload-container{background:#000000;}
 
 
 /* About 03 */

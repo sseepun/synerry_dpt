@@ -202,6 +202,9 @@ select.fgray, textarea.fgray{background:#f8f9fa!important;}
 .form-check > label{color:#666666;}
 
 
+/* Calendar Wrapper */
+.calendar-wrapper.minisite{border:#363434!important;}
+
 /* Calendar - Month */
 .calendar-month .fc-day-header{color:#666666;}
 .calendar-month .fc-day-top > span{background:#fe4d01; color:#ffffff;}
@@ -215,6 +218,29 @@ select.fgray, textarea.fgray{background:#f8f9fa!important;}
 .calendar-month a.fc-more:hover{color:#fe4d01;}
 .calendar-month .fc-day:hover{background:rgba(254,77,1,.25);}
 .calendar-month .fc-event-container{background:#f5f5f5;}
+.calendar-month.minisite .fc-day-header > span{
+    color:#000000; border-top-color:#363434!important;
+    border-bottom-color:#afaeae!important;
+}
+
+/* Calendar - Week */
+.calendar-week .fc-view-container{border-color:#363434!important;}
+.calendar-week .fc-day-grid .fc-day.fc-widget-content{color:#fe4d01;} 
+.calendar-week .fc-day-grid .fc-day.fc-widget-content.fc-today{background:#000000;} 
+.calendar-week .fc-day-grid td.fc-widget-content{border-color:#afaeae!important;}
+.calendar-week .fc-row.fc-week.fc-widget-content .fc-axis.fc-widget-content:first-child,
+.calendar-week .fc-axis.fc-time.fc-widget-content{background:#5c5c5c; color:#ffffff;}
+.calendar-week .fc-time-grid .fc-event{background:#d6412a; color:#ffffff;}
+.calendar-week .fc-time-grid .fc-event:hover{background:#ef4d34;}
+.calendar-week .fc-time-grid .fc-event .fc-time{color:#eecc51;}
+
+/* Calendar - Day */
+.calendar-day .fc-view-container{border-color:#363434!important;}
+.calendar-day td.fc-axis.fc-widget-content:first-child{background:#5c5c5c; color:#ffffff;}
+.calendar-day .fc-axis.fc-time.fc-widget-content{background:#eeeeee; color:#000000;}
+.calendar-day .fc-time-grid .fc-event{background:#d6412a; color:#ffffff;}
+.calendar-day .fc-time-grid .fc-event:hover{background:#ef4d34;}
+.calendar-day .fc-time-grid .fc-event .fc-time{color:#eecc51;}
 
 
 /* Chat Container */
@@ -528,6 +554,10 @@ table.table.table-05 tr:hover td{background:#eeeeee!important;}
 
 /* Toggle Target */
 .toggle-target{background:#ffffff; border-color:#e1e1e1;}
+
+
+/* Upload Container */
+.upload-container{background:#e1e1e1;}
 
 
 /* About 03 */
