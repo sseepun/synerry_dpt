@@ -38,16 +38,16 @@
                         </div>
                         <div class="grid lg-75 md-70 sm-100 mt-3">
 
-                            <!-- Calendar Header Minisite - Month -->
-                            <div class="calendar-header-minisite month mb-3">
+                            <!-- Calendar Header Minisite - Week -->
+                            <div class="calendar-header-minisite week mb-3">
                                 <div class="float-choice-wrapper color-black">
                                     <div class="wrapper">
                                         <p class="xs fw-500 mr-1">มุมมอง</p>
                                         <div class="select-wrapper">
                                             <select class="no-bradius">
                                                 <option value="0">ดูทั้งหมด</option>
-                                                <option value="1" selected>รายเดือน</option>
-                                                <option value="2">รายสัปดาห์</option>
+                                                <option value="1">รายเดือน</option>
+                                                <option value="2" selected>รายสัปดาห์</option>
                                                 <option value="3">รายวัน</option>
                                             </select>
                                         </div>
@@ -67,11 +67,11 @@
                                 </div>
                             </div>
 
-                            <!-- Calendar Month -->
+                            <!-- Calendar Week -->
                             <div class="scroll-x-wrapper" data-simplebar>
                                 <div class="calendar-wrapper minisite">
-                                    <div class="calendar-month minisite">
-                                        <div id="calendar-month"></div>
+                                    <div class="calendar-week minisite">
+                                        <div id="calendar-week"></div>
                                     </div>
                                 </div>
                             </div>
@@ -91,6 +91,7 @@
     <script src="https://cdn.jsdelivr.net/npm/@fullcalendar/core@4.4.0/main.min.js"></script>
     <script src="https://unpkg.com/@fullcalendar/daygrid@4.4.0/main.min.js"></script>
     <script src="https://unpkg.com/@fullcalendar/interaction@4.4.0/main.min.js"></script>
+    <script src="https://unpkg.com/@fullcalendar/timegrid@4.4.0/main.min.js"></script>
     <script>
         $(function(){ 'use strict';
 
@@ -114,127 +115,79 @@
                 template.innerHTML = html;
                 return template.content.firstChild;
             }
-            function updateCalendarHeaderMonth(month, year){
-                var prevMonth = 0;
-                var nextMonth = 0;
-
-                if(months[month - 1]) prevMonth = months[month - 1];
-                else prevMonth = months[months.length - 1];
-
-                if(months[month + 1]) nextMonth = months[month + 1];
-                else nextMonth = months[0];
-
-                calendarTitle.find('.month').html(months[month]);
-                calendarTitle.find('.year').html(year+543);
-                prevMonthBtn.find('> span').html(prevMonth);
-                nextMonthBtn.find('> span').html(nextMonth);
+            function updateCalendarHeaderWeek(view){
+                var title = view.title;
+                calendarTitle.find('.month').html(title.substr(0, title.length - 5));
+                calendarTitle.find('.year').html(title.substr(title.length - 5));
             }
 
-            const calendarMonth = new FullCalendar.Calendar($('#calendar-month')[0], {
-                plugins: [ 'interaction', 'dayGrid' ],
-                defaultView: 'dayGridMonth',
-                firstDay: 0,
+            const calendarWeek = new FullCalendar.Calendar($('#calendar-week')[0], {
+                plugins: [ 'interaction', 'timeGrid'],
+                header: {
+                    left: 'prev',
+                    center: 'title',
+                    right: 'next'
+                },
+                defaultView: 'timeGridWeek',
+                firstDay: 1,
                 locale: 'th',
                 contentHeight: 'auto',
-                eventLimit: true,
-                eventLimitText: 'กิจกรรม',
-                views: {dayGrid: {eventLimit: 2}},
+                slotDuration: '01:00:00',
                 events: [
                     {
-                        title: 'วาระการประชุม ดึงเอกชนร่วมพีพีพีจัดระเบียบสายสื่อสาร',
-                        start: '2021-03-08',
-                        customStartTime: '12:45 น.',
-                        end: '2021-03-08',
-                        customEndTime: '15:00 น.',
-                        url: '#',
-                    },
-                    {
-                        title: 'วาระการประชุม ดึงเอกชนร่วมพีพีพีจัดระเบียบสายสื่อสาร',
-                        start: '2021-03-08',
-                        customStartTime: '12:45 น.',
-                        end: '2021-03-08',
-                        customEndTime: '15:00 น.',
-                        url: '#',
-                    },
-                    {
-                        title: 'วาระการประชุม ดึงเอกชนร่วมพีพีพีจัดระเบียบสายสื่อสาร',
-                        start: '2021-03-09',
-                        customStartTime: '12:45 น.',
-                        end: '2021-03-09',
-                        customEndTime: '15:00 น.',
-                        url: '#',
-                    },
-                    {
                         title: 'บอร์ด กนอ.เคาะศึกษาจัดระเบียบสายสื่อสารลงดินปรับสู่ 5G ปักหมุด 14 มกราคม 2564',
-                        start: '2021-03-09',
-                        customStartTime: '09:00 น.',
-                        end: '2021-03-09',
-                        customEndTime: '20:00 น.',
+                        start: '2021-03-16T10:00:00',
+                        end: '2021-03-16T18:00:00',
                         url: '#',
                     },
                     {
-                        title: 'บอร์ด กนอ.เคาะศึกษาจัดระเบียบสายสื่อสารลงดินปรับสู่ 5G ปักหมุด 14 มกราคม 2564',
-                        start: '2021-03-09',
-                        customStartTime: '09:00 น.',
-                        end: '2021-03-09',
-                        customEndTime: '20:00 น.',
+                        title: 'บอร์ด กนอ.เคาะศึกษาจัดระเบียบสายสื่อสารลงดินปรับสู่ 5G ปักหมุด 14 มกราคม 2564 2',
+                        start: '2021-03-17T12:00:00',
+                        end: '2021-03-17T21:00:00',
                         url: '#',
                     },
                     {
-                        title: 'บอร์ด กนอ.เคาะศึกษาจัดระเบียบสายสื่อสารลงดินปรับสู่ 5G ปักหมุด 14 มกราคม 2564',
-                        start: '2021-03-10',
-                        customStartTime: '09:00 น.',
-                        end: '2021-03-10',
-                        customEndTime: '20:00 น.',
-                        url: '#',
-                    },
-                    {
-                        title: 'บอร์ด กนอ.เคาะศึกษาจัดระเบียบสายสื่อสารลงดินปรับสู่ 5G ปักหมุด 14 มกราคม 2564',
-                        start: '2021-03-10',
-                        customStartTime: '09:00 น.',
-                        end: '2021-03-10',
-                        customEndTime: '20:00 น.',
+                        title: 'บอร์ด กนอ.เคาะศึกษาจัดระเบียบสายสื่อสารลงดินปรับสู่ 5G ปักหมุด 14 มกราคม 2564 3',
+                        start: '2021-03-20T12:00:00',
+                        end: '2021-03-20T21:00:00',
                         url: '#',
                     },
                 ],
-                columnHeaderText: function(date){
-                    return days[date.getDay()];
+                eventSourceSuccess: function(content, xhr){
+                    return content.eventArray;
                 },
                 datesRender: function(info){
-                    var date = new Date(info.view.currentStart);
-                    updateCalendarHeaderMonth(date.getMonth(), date.getFullYear());
+                    updateCalendarHeaderWeek(info.view);
                 },
-                eventRender: function(info, d){
-                    var event = info.event,
-                        date = new Date(event.start),
-                        classer = '';
-                    if(date.getFullYear()===today.getFullYear() 
-                    && date.getMonth()===today.getMonth() 
-                    && date.getDate()===today.getDate()){
-                        classer = 'today';
+                dayRender: function(info){
+                    if(!($(info.el).closest('.fc-scroller').length)){
+                        const date = new Date(info.date);
+                        if(info.el.classList.contains('fc-today')){
+                            info.el.innerHTML = `<div class="custom-date active">
+                                    ${date.getDate()} ${days[date.getDay()]}
+                                </div>`;
+                        }else{
+                            info.el.innerHTML = `<div class="custom-date">
+                                    ${date.getDate()} ${days[date.getDay()]}
+                                </div>`;
+                        }
+                        if(info.el.classList.contains('fc-other-month')){
+                            info.el.style.opacity = 0.3;
+                        }
                     }
-                    info.el.innerHTML = '<div class="custom-event '+classer+'">'
-                            +'<div class="time">'
-                                +event.extendedProps.customStartTime
-                                +' - '
-                                +event.extendedProps.customEndTime
-                            +'</div>'
-                            +'<div class="title">'+event.title+'</div>'
-                        +'</div>';
-                    return true;
-                }
+                },
             });
-            calendarMonth.render();
+            calendarWeek.render();
 
 
             // Events
             prevMonthBtn.click(function(e){
                 e.preventDefault();
-                calendarMonth.prev();
+                calendarWeek.prev();
             });
             nextMonthBtn.click(function(e){
                 e.preventDefault();
-                calendarMonth.next();
+                calendarWeek.next();
             });
 
         });

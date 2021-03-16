@@ -493,12 +493,10 @@ nav.footer-minisite .visitor-count > *{background:#29292a; color:#ff4917;}
     margin:0 0 0 .3125rem; font-size:1.25rem; text-align:center; cursor:pointer;
     transition:background .25s;
 }
-.calendar-header-minisite .arrows > .arrow:first-child{margin-left:0;}
 @media screen and (max-width:575.98px){
     .calendar-header-minisite{padding:.5rem;}
-    .calendar-header-minisite .calendar-title{width:100%; text-align:center; margin:.875rem 0;}
+    .calendar-header-minisite .calendar-title{margin:.75rem 0 0 0;}
     .calendar-header-minisite .float-choice-wrapper{width:100%; justify-content:center;}
-    .calendar-header-minisite .arrows{width:100%; justify-content:center;}
 }
 
 .calendar-header-minisite{border-color:#e8e8e8;}
@@ -508,7 +506,7 @@ nav.footer-minisite .visitor-count > *{background:#29292a; color:#ff4917;}
 .theme-1 .calendar-header-minisite{border-color:#ffffff;}
 .theme-1 .calendar-header-minisite .arrows > .arrow{background:#ffffff; color:#000000;}
 
-.theme-1 .calendar-header-minisite{border-color:#ffff00;}
+.theme-2 .calendar-header-minisite{border-color:#ffff00;}
 .theme-2 .calendar-header-minisite .arrows > .arrow{background:#ffff00; color:#000000;}
 
 /* Calendar - Month */

@@ -153,6 +153,28 @@ input[type=number], input[type=phone], input[type=submit], select, textarea{
     border-bottom-color:#ffffff!important;
 }
 
+/* Calendar - Week */
+.calendar-week .fc-view-container{border-color:#ffffff!important;}
+.calendar-week .fc-day-grid .fc-day.fc-widget-content{color:#ffffff;} 
+.calendar-week .fc-day-grid .fc-day.fc-widget-content.fc-today{
+    background:#ffffff; color:#000000;
+} 
+.calendar-week .fc-day-grid td.fc-widget-content{border-color:#ffffff!important;}
+.calendar-week .fc-row.fc-week.fc-widget-content .fc-axis.fc-widget-content:first-child,
+.calendar-week .fc-axis.fc-time.fc-widget-content{background:#ffffff; color:#000000;}
+.calendar-week .fc-time-grid .fc-event{
+    background:#ffffff; color:#000000; border:2px solid #000000!important;
+}
+.calendar-week .fc-toolbar.fc-header-toolbar .fc-button{color:#ffffff;}
+
+/* Calendar - Day */
+.calendar-day .fc-view-container{border-color:#ffffff!important;}
+.calendar-day td.fc-axis.fc-widget-content:first-child{background:#ffffff; color:#000000;}
+.calendar-day .fc-axis.fc-time.fc-widget-content{background:#ffffff; color:#000000;}
+.calendar-day .fc-time-grid .fc-event{
+    background:#ffffff; color:#000000; border:2px solid #000000!important;
+}
+
 
 /* Chat Container */
 .chat-container .chat > .profile-container{background:#ffffff;}

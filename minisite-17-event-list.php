@@ -49,6 +49,8 @@
                                             <select class="no-bradius">
                                                 <option value="0" selected>ดูทั้งหมด</option>
                                                 <option value="1">รายเดือน</option>
+                                                <option value="2">รายสัปดาห์</option>
+                                                <option value="3">รายวัน</option>
                                             </select>
                                         </div>
                                     </div>
