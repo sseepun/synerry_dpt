@@ -172,13 +172,13 @@
             background: transparent; transform: scale(1.35);
         }
         /* Intro08: Part 2 */
-        .intro-07 .title-container .lead {
+        .title-container .lead {
             float: left; font-size: 4.5rem; line-height:1;
         }
-        .intro-07 .title-container h4{
+        .title-container h4{
             font-size: 2.5rem; line-height:1.125;
         }
-        .intro-07 .title-container p{
+        .title-container p{
             font-size: 1rem; line-height:1; font-weight: 500;
         }
         .intro-07 .tabs {
@@ -213,10 +213,10 @@
             opacity:.7;
         }
         @media screen and (max-width: 1198.98px){
-            .intro-07 .title-container .lead{ 
+            .title-container .lead{ 
                 font-size: 4rem; line-height: 4rem;
             }
-            .intro-07 .title-container h4{
+            .title-container h4{
                 font-size: 2.25rem; line-height:1.1;
             }
         }
@@ -406,8 +406,90 @@
                 </div>
             </div>
         </div>
-
     </section>
+    <section class="section-minisite section-padding" style="background-image:url('public/assets/app/images/bg/pattern-02.png');">
+        <div class="container">
+            <div class="title-container">
+                <div class="lead color-01">E</div>
+                <h4 class="color-01">NERGY STATISTICS</h4>
+                <p class="color-black">สถิติพลังงาน</p>
+            </div>
+
+            <div class="gallery-grids">
+                <div class="grid md-50 sm-100">
+                </div>
+                <div class="grid md-50 sm-100">
+                </div>
+                <div class="grid md-100 sm-100">
+                </div>
+            </div>
+        </div>
+    </section>
+    <style>
+        .announcement-01 .grids.cards{
+            justify-content: flex-end;
+        }
+        .announcement-01 .grids > .grid.card{
+            margin: 0 0 0 auto; border-left: 2px solid #000;
+        }
+        @media screen and (max-width: 991.98px){
+            .announcement-01 .grids > .grid.card{
+                margin-left:0;
+            }
+            .announcement-01 .grids.cards{
+                justify-content: flex-start;
+            }
+        }
+    </style>
+    <section class="section-minisite section-padding announcement-01" style="background-image:url('public/assets/app/images/bg/minisite-09.jpg');">
+        <div class="container">
+            <div class="grids">
+                <div class="grid lg-60 sm-100">
+                    <div class="title-container">
+                        <div class="lead color-01 mr-1">A</div>
+                        <h4 class="color-01">NNOUNCEMENTS</h4>
+                        <p class="color-black">ข่าวประกาศ</p>
+                    </div>
+                </div>
+                <div class="grid lg-40 sm-100">
+                    <div class="btns">
+                        <a href="#" class="btn btn-round btn-sm bcolor-sgray">
+                            สมัครงาน
+                        </a>
+                        <a href="#" class="btn btn-round btn-sm bcolor-sgray">
+                            ประกาศจัดซื้อจัดจ้าง
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="grids cards">
+                <?php for($i=0; $i < 5; $i++){?>
+                    <div class="grid xl-60 lg-70 md-100 sm-100 card pt-3 pb-2 pl-5 pr-2 mt-2">
+                        <p>
+                            <em class="far fa-clock color-01 mr-1"></em> 8 มกราคม 2020
+                        </p>
+                        <div class="grids no-gap ai-center">
+                            <div class="grid md-50 sm-100 mt-0">
+                                <p class="fw-600 color-01">ช่างเทคนิค-สัญญาจ้าง (ประจำโครงการในกรุงเทพ)</h6>
+                            </div>
+                            <div class="grid md-30 sm-100 mt-0">
+                                <p class="fw-400">จำนวน <span class="color-01 fw-600 mx-1">10</span> ตำแหน่ง</p>
+                            </div>
+                            <div class="grid md-20 sm-100 mt-0">
+                                <a href="#" class="d-flex ai-center p fw-300">
+                                    ข้อมูลเพิ่มเติม
+                                    <em class="far fa-arrow-alt-circle-right color-01 h4 ml-2"></em>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                <?php }?>
+            </div>
+        </div>
+    </section>
+
+
 
     <?php include_once('include/footer-minisite.php'); ?>
     <?php include_once('include/script.php'); ?>
