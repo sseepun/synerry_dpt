@@ -47,7 +47,8 @@
                                         <p class="xs fw-500 mr-1">มุมมอง</p>
                                         <div class="select-wrapper">
                                             <select class="no-bradius">
-                                                <option value="">ดูทั้งหมด</option>
+                                                <option value="0" selected>ดูทั้งหมด</option>
+                                                <option value="1">รายเดือน</option>
                                             </select>
                                         </div>
                                     </div>
@@ -73,7 +74,7 @@
                                                     โครงการอบรม เรื่อง การจัดทำระบบบัญชีข้อมูล (Data Catalog) 
                                                     เพื่อนำไปสู่การเปิดเผยข้อมูลภาครัฐ (Open Data)
                                                 </a>
-                                                <div class="ss-stat style-calendar mt-2 mb-0">
+                                                <div class="ss-stat style-calendar d-block mt-2 mb-0">
                                                     <div class="stat">
                                                         <em class="far fa-calendar mr-2"></em> 
                                                         <span class="fw-500">12 เมษายน 2564</span>
@@ -95,7 +96,6 @@
                                         </div>
                                     </div>
                                 <?php }?>
-
                             </div>
                             <?php
                                 $listFooter = ['pagination', 'pp'];

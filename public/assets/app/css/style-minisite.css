@@ -479,6 +479,42 @@ nav.footer-minisite .visitor-count > *{background:#29292a; color:#ff4917;}
 .theme-2 .post-footer-minisite .sep{background:#ffff00;}
 
 
+/* Calendar Header Minisite - Month */
+.calendar-header-minisite{
+    display:block; position:relative; width:100%; border:1px solid transparent; padding:1rem;
+    display:flex; align-items:center; justify-content:space-between; flex-wrap:wrap;
+}
+.calendar-header-minisite .float-choice-wrapper{
+    width:auto; margin:0; position:relative; top:unset; left:unset;
+}
+.calendar-header-minisite .arrows{display:flex; align-items:center; justify-content:flex-end;}
+.calendar-header-minisite .arrows > .arrow{
+    display:block; width:1.75rem; height:1.75rem; line-height:2rem; border-radius:50%;
+    margin:0 0 0 .3125rem; font-size:1.25rem; text-align:center; cursor:pointer;
+    transition:background .25s;
+}
+.calendar-header-minisite .arrows > .arrow:first-child{margin-left:0;}
+@media screen and (max-width:575.98px){
+    .calendar-header-minisite{padding:.5rem;}
+    .calendar-header-minisite .calendar-title{width:100%; text-align:center; margin:.875rem 0;}
+    .calendar-header-minisite .float-choice-wrapper{width:100%; justify-content:center;}
+    .calendar-header-minisite .arrows{width:100%; justify-content:center;}
+}
+
+.calendar-header-minisite{border-color:#e8e8e8;}
+.calendar-header-minisite .arrows > .arrow{background:#fe4d01; color:#ffffff;}
+.calendar-header-minisite .arrows > .arrow:hover{background:#ffb739;}
+
+.theme-1 .calendar-header-minisite{border-color:#ffffff;}
+.theme-1 .calendar-header-minisite .arrows > .arrow{background:#ffffff; color:#000000;}
+
+.theme-1 .calendar-header-minisite{border-color:#ffff00;}
+.theme-2 .calendar-header-minisite .arrows > .arrow{background:#ffff00; color:#000000;}
+
+/* Calendar - Month */
+.calendar-month .custom-event .time{font-size:.75rem!important;}
+
+
 /* Float Choice Wrapper */
 .float-choice-wrapper{position:absolute; top:-.3125rem; left:0;}
 .float-choice-wrapper > .wrapper{position:relative; display:flex; align-items:center;}
