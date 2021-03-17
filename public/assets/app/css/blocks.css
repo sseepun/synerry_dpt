@@ -1085,3 +1085,6 @@
 @media screen and (max-width:767.98px){
     .tab-container .tabs.tabs-04 .tab:last-child::before{width:calc(100% + 1.5rem);}
 }
+
+/* Tab Container - Tabs 05 */
+.tab-container .tabs.tabs-05 .tab{border:1px solid transparent!important;}
