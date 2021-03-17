@@ -126,7 +126,8 @@
         .intro-06 .slide-container .slides .slide {
             display:flex;
         }
-        /* Intro 07 */
+
+        /* Intro 08: Part 1 */
         .intro-07{
             display:block; position:relative; width:100%; 
         }
@@ -170,12 +171,65 @@
         .intro-07 .blocks .block:hover .img-icon {
             background: transparent; transform: scale(1.35);
         }
+        /* Intro08: Part 2 */
+        .title-container .lead {
+            float: left; font-size: 4.5rem; line-height:1;
+        }
+        .title-container h4{
+            font-size: 2.5rem; line-height:1.125;
+        }
+        .title-container p{
+            font-size: 1rem; line-height:1; font-weight: 500;
+        }
+        .intro-07 .tabs {
+            display:flex; flex-wrap:wrap; justify-content: flex-end; align-items: center; height: 100%;
+            margin-top: -.5rem;
+        }
+        .intro-07 .tabs .tab{
+            margin: 1rem 1rem 0 0;
+        }
+        .intro-07 .tabs .tab.active, .intro-07 .tabs .tab:hover {
+            background: #fe4d01; color:#fff;
+        }
+        .intro-07 .tab-content.active{
+            display:block;
+        }
+        .intro-07 .tab-content {
+            display: none;
+        }
+        .intro-07 .btn-container {
+            display: flex; justify-content: flex-end; position:relative;
+            border-bottom: .25rem solid transparent; 
+        }
+        .intro-07 .btn-container .arrows {
+            position: absolute; top: -.5rem; left: calc(50% - 2.75rem);
+            display:flex; justify-content: center; align-items: center;
+        }
+        .intro-07 .btn-container .arrows .arrow-next, .intro-07 .btn-container .arrows .arrow-prev{
+            width: 2.25rem; height: 2.25rem; border-radius: 50%; display: block; line-height: 2.25rem;
+            text-align: center; border: 0; color: #fff; 
+        }
+        .intro-07 .btn-container .arrows .arrow-next:hover, .intro-07 .btn-container .arrows .arrow-prev:hover{
+            opacity:.7;
+        }
+        @media screen and (max-width: 1198.98px){
+            .title-container .lead{ 
+                font-size: 4rem; line-height: 4rem;
+            }
+            .title-container h4{
+                font-size: 2.25rem; line-height:1.1;
+            }
+        }
+
         @media screen and (max-width:991.98px){
             .intro-07 .blocks .block {
                 width: calc(100% / 5);
             }
             .intro-07 .blocks .block:nth-child(5){
                 border-right: 1px solid transparent;
+            }
+            .intro-07 .tabs {
+                justify-content: flex-start;
             }
         }
         @media screen and (max-width:767.98px){
@@ -257,8 +311,8 @@
             </div>
         </div>
     </section>
-    <section class="intro-07 bg-white">
-        <div class="container">
+    <section class="intro-07 bg-white pb-5">
+        <div class="container  position-relative box-shadow">
             <div class="blocks">
                 <?php for($i=1; $i<8; $i++){?>
                     <div class="block text-center border-top border-bottom bcolor-sgray">
@@ -273,34 +327,169 @@
                     </div>
                 <?php }?>
             </div>
+            <div class="px-4 py-4">
+                <div class="grids">
+                    <div class="grid lg-30 md-100 sm-100">
+                        <div class="title-container">
+                            <div class="lead color-01">E</div>
+                            <h4 class="color-01">NERGY NEWS</h4>
+                            <p class="color-black">อัพเดทข่าวพลังงาน</p>
+                        </div>
+                    </div>
+                    <div class="grid lg-70 md-100 sm-100">
+                        <div class="tabs">
+                            <?php $categories = ['ข่าวประชาสัมพันธ์', 'เรื่องเด่นประเด็นดัง', 'ข่าวสารรัฐมนตรี', 'ข่าวสารผู้บริหาร']; ?>
+                            <?php foreach($categories as $j=>$k){?>
+                                <a class="btn btn-round btn-sm bcolor-sgray tab <?php if($j==0)echo 'active'; ?>" data-tab="<?= $j ?>" href="#">
+                                    <?= $k ?>
+                                </a>
+                            <?php }?>
+                        </div>
+                    </div>
+                    <div class="grid sm-100">
+                        <?php foreach($categories as $j=>$k){?>
+                            <div class="tab-content <?php if($j==0)echo 'active'; ?>" data-tab="<?= $j ?>">
+                                <div class="grids">
+                                    <?php for($i=0; $i<4;$i++){?>
+                                        <div class="grid lg-25 md-50 sm-100">
+                                            <div class="ss-card ss-card-06 stat-bottom">
+                                                <a class="ss-img square" href="#">
+                                                    <div class="img-bg" style="background-image:url('public/assets/app/images/content/02.jpg');"></div>
+                                                    <div class="hover-container">
+                                                        <div class="icon">
+                                                            <img src="public/assets/app/images/icon/plus.png" alt="Hover Icon" />
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                                <div class="text-container">
+                                                    <div class="ss-stat jc-space-between">
+                                                        <div class="stat">
+                                                            <em class="far fa-clock mr-1"></em> 28 เมษายน 2564
+                                                        </div>
+                                                        <div class="stat">
+                                                            <em class="far fa-eye mr-1"></em> 200
+                                                        </div>
+                                                    </div>
+                                                    <a class="title p md fw-600" href="#">
+                                                        สำนักงานปลัดกระทรวงพลังงานได้รับรางวัลเลิศรัฐ 
+                                                        สาขาการบริหารราชการแบบมีส่วนร่วม ประจำปี พ.ศ. 2562
+                                                    </a>
+                                                    <p class="xs desc">
+                                                        กระทรวงดิจิทัลเพื่อเศรษฐกิจและสังคม (MDES) ร่วมกับ สมาคมผู้ใช้ดิจิทัลไทย 
+                                                        (DUGA) กำหนดจัดงานอบรมสัมมนา eGovernment Forum 2020, Digital 
+                                                        HR Forum 2020, Big Data
+                                                    </p>
+                                                    <div class="arrow">
+                                                        <em class="far fa-arrow-alt-circle-right"></em>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    <?php }?>
+                                </div>
+                            </div>
+                        <?php }?>
+                    </div>
+                </div>
+                <div class="btn-container mt-4 bcolor-black">
+                    <div class="arrows">
+                        <a href="#" class="arrow-prev bg-01 mr-3">
+                            <em class="fas fa-chevron-left"></em>
+                        </a>
+                        <a href="#" class="arrow-next bg-01">
+                            <em class="fas fa-chevron-right"></em>
+                        </a>
+                    </div>
+                    <div class="px-2 py-2">
+                        <a href="#" class="color-black fw-400">ดูทั้งหมด</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section-minisite section-padding" style="background-image:url('public/assets/app/images/bg/pattern-02.png');">
+        <div class="container">
+            <div class="title-container">
+                <div class="lead color-01">E</div>
+                <h4 class="color-01">NERGY STATISTICS</h4>
+                <p class="color-black">สถิติพลังงาน</p>
+            </div>
+
+            <div class="gallery-grids">
+                <div class="grid md-50 sm-100">
+                </div>
+                <div class="grid md-50 sm-100">
+                </div>
+                <div class="grid md-100 sm-100">
+                </div>
+            </div>
         </div>
     </section>
     <style>
-        .intro-08 .title-container .big{ 
-            float:left; font-size: 5rem; line-height: 5rem;
-            font-weight:600;
+        .announcement-01 .grids.cards{
+            justify-content: flex-end;
         }
-        .intro-08 .title-container h6{
-            line-height: 1rem;
+        .announcement-01 .grids > .grid.card{
+            margin: 0 0 0 auto; border-left: 2px solid #000;
+        }
+        @media screen and (max-width: 991.98px){
+            .announcement-01 .grids > .grid.card{
+                margin-left:0;
+            }
+            .announcement-01 .grids.cards{
+                justify-content: flex-start;
+            }
         }
     </style>
-    <section class="intro-08">
+    <section class="section-minisite section-padding announcement-01" style="background-image:url('public/assets/app/images/bg/minisite-09.jpg');">
         <div class="container">
             <div class="grids">
-                <div class="grid sm-30">
+                <div class="grid lg-60 sm-100">
                     <div class="title-container">
-                        <div class="big color-01">E</div>
-                        <h4 class="color-01 lg fw-400">NERGY NEWS</h4>
-                        <h6 class="color-black fw-400">อัพเดทข่าวพลังงาน</h6>
+                        <div class="lead color-01 mr-1">A</div>
+                        <h4 class="color-01">NNOUNCEMENTS</h4>
+                        <p class="color-black">ข่าวประกาศ</p>
                     </div>
                 </div>
-                <div class="grid sm-70">
+                <div class="grid lg-40 sm-100">
+                    <div class="btns">
+                        <a href="#" class="btn btn-round btn-sm bcolor-sgray">
+                            สมัครงาน
+                        </a>
+                        <a href="#" class="btn btn-round btn-sm bcolor-sgray">
+                            ประกาศจัดซื้อจัดจ้าง
+                        </a>
+                    </div>
                 </div>
+            </div>
 
+            <div class="grids cards">
+                <?php for($i=0; $i < 5; $i++){?>
+                    <div class="grid xl-60 lg-70 md-100 sm-100 card pt-3 pb-2 pl-5 pr-2 mt-2">
+                        <p>
+                            <em class="far fa-clock color-01 mr-1"></em> 8 มกราคม 2020
+                        </p>
+                        <div class="grids no-gap ai-center">
+                            <div class="grid md-50 sm-100 mt-0">
+                                <p class="fw-600 color-01">ช่างเทคนิค-สัญญาจ้าง (ประจำโครงการในกรุงเทพ)</h6>
+                            </div>
+                            <div class="grid md-30 sm-100 mt-0">
+                                <p class="fw-400">จำนวน <span class="color-01 fw-600 mx-1">10</span> ตำแหน่ง</p>
+                            </div>
+                            <div class="grid md-20 sm-100 mt-0">
+                                <a href="#" class="d-flex ai-center p fw-300">
+                                    ข้อมูลเพิ่มเติม
+                                    <em class="far fa-arrow-alt-circle-right color-01 h4 ml-2"></em>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                <?php }?>
             </div>
         </div>
-
     </section>
+
+
 
     <?php include_once('include/footer-minisite.php'); ?>
     <?php include_once('include/script.php'); ?>
