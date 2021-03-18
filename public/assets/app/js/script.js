@@ -345,6 +345,19 @@ $(function(){ 'use strict';
         });
     }
     
+    // Banner 03
+    var banner03 = $('.banner-03');
+    if(banner03.length){
+        banner03.each(function(){
+            var self = $(this);
+            self.find('.slides').slick({
+                centerMode: true, centerPadding: 0, slidesToShow: 1, swipeToSlide: true,
+                focusOnSelect: true, autoplay: true, autoplaySpeed: 4000, speed: 800,
+                arrows: true, appendArrows: self.find('.arrows'), dots: false,
+            });
+        });
+    }
+    
 
     // Client 01
     var client01 = $('.client-01');
@@ -373,6 +386,44 @@ $(function(){ 'use strict';
                 centerMode: true, centerPadding: 0, slidesToShow: 1, swipeToSlide: true,
                 focusOnSelect: true, autoplay: true, autoplaySpeed: 4000, speed: 800,
                 dots: false, arrows: true, appendArrows: self.find('.arrows')
+            });
+        });
+    }
+    
+    // Intro 06
+    var intro06 = $('.intro-06');
+    if(intro06.length){
+        intro06.each(function(){
+            var self = $(this);
+            self.find('.slides').slick({
+                slidesToShow: 7, focusOnSelect: false, infinite: true,
+                autoplay: true, autoplaySpeed: 0, speed: 1200,
+                cssEase: 'linear', arrows: false, dots: false,
+                responsive: [
+                    { breakpoint: 1199.98, settings: { slidesToShow: 6, } },
+                    { breakpoint: 1099.98, settings: { slidesToShow: 5, } },
+                    { breakpoint: 991.98, settings: { slidesToShow: 4, } },
+                    { breakpoint: 767.98, settings: { slidesToShow: 2, } },
+                    { breakpoint: 575.98, settings: { slidesToShow: 1, } },
+                ]
+            });
+        });
+    }
+    
+    // Intro 07
+    var intro07 = $('.intro-07');
+    if(intro07.length){
+        intro07.find('.slide-container').each(function(){
+            var self = $(this);
+            self.find('> .slides').slick({
+                centerMode: true, centerPadding: 0, slidesToShow: 4, swipeToSlide: true,
+                focusOnSelect: true, autoplay: true, autoplaySpeed: 4000, speed: 800,
+                arrows: true, appendArrows: self.find('.arrows'), dots: false,
+                responsive: [
+                    { breakpoint: 991.98, settings: { slidesToShow: 3, } },
+                    { breakpoint: 767.98, settings: { slidesToShow: 2, } },
+                    { breakpoint: 575.98, settings: { slidesToShow: 1, } },
+                ]
             });
         });
     }

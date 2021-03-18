@@ -18,9 +18,8 @@ img.img{display:block; width:100%; height:auto;}
 .img-fill{background-size:cover; background-position:center; background-repeat:no-repeat;}
 
 input[type=text], input[type=email], input[type=password], input[type=date], input[type=tel],
-input[type=number], input[type=phone], input[type=submit], select, textarea, button{
-    font-family:'Sukhumvit', sans-serif;
-}
+input[type=number], input[type=phone], input[type=submit], nput[type=file], select, 
+textarea, button{font-family:'Sukhumvit', sans-serif;}
 
 html.topnav-dropdown-opened, body.topnav-dropdown-opened,
 html.global-search-opened, body.global-search-opened{overflow-y:hidden!important;}
@@ -137,7 +136,7 @@ p.xs, .p.xs{font-size:.8125rem;}
 .btn.btn-sm{font-size:.875rem; padding:.5625rem 1.1875rem .4375rem 1.1875rem;}
 .btn.btn-xs{font-size:.8125rem; padding:.3125rem 1rem;}
 
-.btn.btn-min-width{min-width:10rem;}
+.btn.btn-min-width{min-width:9rem;}
 
 /* Button Socials */
 .btn-socials{
@@ -168,22 +167,23 @@ p.xs, .p.xs{font-size:.8125rem;}
 
 /* Inputs */
 input[type=text], input[type=email], input[type=password], input[type=date], input[type=tel],
-input[type=number], input[type=phone], input[type=submit], select, textarea{
+input[type=number], input[type=phone], input[type=submit], input[type=file], select, textarea{
     border:1px solid transparent; border-radius:.25rem; box-shadow:none!important;
     padding:.4375rem .875rem; font-size:1rem; font-weight:300; margin:0; line-height:1.5;
     outline:none!important; transition:border-color .25s, color .25s;
 }
-input[type=text].round, input[type=email].round, input[type=password].round, 
-input[type=date].round, input[type=tel].round, input[type=number].round, input[type=phone].round,
-input[type=submit].round, select.round, textarea.round{border-radius:1.25rem;}
+input[type=text].round, input[type=email].round, input[type=password].round, input[type=date].round, 
+input[type=tel].round, input[type=number].round, input[type=phone].round, input[type=submit].round, 
+input[type=file].round, select.round, textarea.round{border-radius:1.25rem;}
+input[type=file]{padding:.1875rem .875rem .1875rem .1875rem;}
 
 input[type=text].md, input[type=email].md, input[type=password].md, input[type=date].md, 
 input[type=tel].md, input[type=number].md, input[type=phone].md, input[type=submit].md, 
-select.md, textarea.md{font-size:1rem; padding:.625rem 1rem; height:auto;}
+input[type=file].md, select.md, textarea.md{font-size:1rem; padding:.625rem 1rem; height:auto;}
 
 input[type=text].sm, input[type=email].sm, input[type=password].sm, input[type=date].sm, 
 input[type=tel].sm, input[type=number].sm, input[type=phone].sm, input[type=submit].sm, 
-select.sm, textarea.sm{font-size:.875rem; padding:.25rem .875rem; height:auto;}
+input[type=file].sm, select.sm, textarea.sm{font-size:.875rem; padding:.25rem .875rem; height:auto;}
 
 textarea[data-copy]{pointer-events:none!important;}
 @media screen and (max-width:991.98px){
@@ -609,11 +609,13 @@ textarea[data-copy]{pointer-events:none!important;}
     display:block; width:100%; padding:1.5rem 1.5rem 1.625rem 1.5rem;
     border:1px solid transparent; border-bottom:0;
 }
+.ss-box .input-group.header{padding:1rem 1.5rem;}
 .ss-box .input-group:first-child{border-top:2px solid transparent;}
 .ss-box .input-group:last-child{border-bottom:1px solid transparent;}
 
 @media screen and (max-width:991.98px){
     .ss-box .input-group{padding:1rem 1rem 1.125rem 1rem;}
+    .ss-box .input-group.header{padding:.875rem 1rem;}
 }
 @media screen and (max-width:767.98px){
     .ss-box .title-container > *{height:3rem;}
@@ -898,7 +900,7 @@ textarea[data-copy]{pointer-events:none!important;}
 }
 
 /* Special Card 06 */
-.ss-card-06{box-shadow:0px 6px 12px 6px rgba(0,0,0,.08);}
+.ss-card-06{box-shadow:0px 4px 8px 4px rgba(0,0,0,.08);}
 .ss-card-06 .text-container{padding:1rem; transition:background .25s;}
 .ss-card-06 .text-container .ss-stat{margin:0 0 .375rem 0;}
 .ss-card-06 .text-container .title{-webkit-line-clamp:3; min-height:4.6875rem;}
@@ -1177,6 +1179,24 @@ textarea[data-copy]{pointer-events:none!important;}
     }
 }
 
+/* Special Card 16 */
+.ss-card-16{
+    width:100%; border:1px solid transparent; border-left:3px solid transparent;
+    margin:.625rem 0 0 0;
+}
+.ss-card-16 > .wrapper{width:100%; padding:1rem 1.25rem;}
+.ss-card-16 .info-container{width:100%; display:flex; align-items:center; flex-wrap:wrap;}
+.ss-card-16 .info-container > .info:nth-child(1){width:calc(100% - 18rem);}
+.ss-card-16 .info-container > .info:nth-child(2){width:10.5rem; text-align:center;}
+.ss-card-16 .info-container > .info:nth-child(3){width:7.5rem; transform:translateY(.125rem);}
+@media screen and (max-width:991.98px){
+    .ss-card-16 > .wrapper{padding:.875rem 1rem;}
+    .ss-card-16 .info-container{margin:.625rem 0 0 0;}
+    .ss-card-16 .info-container > .info:nth-child(1){width:100%;}
+    .ss-card-16 .info-container > .info:nth-child(2){width:50%; text-align:left;}
+    .ss-card-16 .info-container > .info:nth-child(3){width:50%;}
+}
+
 
 /* Special Date */
 .ss-date-container{position:relative; display:flex;}
@@ -1447,6 +1467,20 @@ table.table .ticon{
     display:block; width:2rem; height:2rem; line-height:2.125rem; border-radius:50%;
     text-align:center; font-size:1rem; margin:.3125rem 0 0 0;
 }
+table.table .profile-card{display:flex; align-items:center;}
+table.table .profile-card > .profile-icon{
+    position:relative; display:block; width:2.375rem; height:2.375rem; border-radius:50%;
+    padding:.0625rem; margin:0 .5rem 0 0;
+}
+table.table .profile-card .img-bg{
+    display:block; width:100%; height:100%; border-radius:50%; background-size:cover;
+    background-position:center; background-repeat:no-repeat;
+}
+table.table .profile-card > .text-container{
+    width:calc(100% - 3rem); text-align:left; font-size:.8125rem; font-weight:400;
+    white-space:nowrap;
+}
+table.table .profile-card .date{transition:color .25s;}
 
 /* Table 01 */
 table.table.table-01 th{
@@ -1463,20 +1497,6 @@ table.table.table-01 td:nth-child(2)::before{
     content:''; position:absolute; top:calc(50% - .3125rem); left:1rem;
     width:.5rem; height:.5rem; transition:background .25s;
 }
-table.table.table-01 .profile-card{display:flex; align-items:center;}
-table.table.table-01 .profile-card > .profile-icon{
-    position:relative; display:block; width:2.375rem; height:2.375rem; border-radius:50%;
-    padding:.0625rem; margin:0 .5rem 0 0;
-}
-table.table.table-01 .profile-card .img-bg{
-    display:block; width:100%; height:100%; border-radius:50%; background-size:cover;
-    background-position:center; background-repeat:no-repeat;
-}
-table.table.table-01 .profile-card > .text-container{
-    width:calc(100% - 3rem); text-align:left; font-size:.8125rem; font-weight:400;
-    white-space:nowrap;
-}
-table.table.table-01 .profile-card .date{transition:color .25s;}
 
 /* Table 02 */
 table.table.table-02{border-top:1px solid transparent; border-bottom:1px solid transparent;}
@@ -1515,6 +1535,10 @@ table.table.table-05 .status-dot > .dot{
     width:.5rem; height:.5rem; border-radius:50%; margin:0 .625rem 0 0;
 }
 table.table.table-05 .status-dot > .text{width:calc(100% - 1.125rem); text-align:left;}
+table.table.table-05 td.col-ribbon{vertical-align:top; font-weight:600;}
+table.table.table-05 td.col-ribbon > img{
+    display:block; width:.625rem; height:auto; margin:0 auto;
+}
 
 /* Table Sizes */
 table.table.table-lg td, table.table.table-lg th{padding:.6875rem .625rem;}
@@ -1638,6 +1662,14 @@ table.table.table-sm th:last-child{padding:.4375rem 0 .4375rem .5625rem;}
 .border-bottom-2{border-bottom:2px solid transparent!important;}
 .border-bottom-3{border-bottom:3px solid transparent!important;}
 .border-bottom-4{border-bottom:4px solid transparent!important;}
+.border-left{border-left:1px solid transparent!important;}
+.border-left-2{border-left:2px solid transparent!important;}
+.border-left-3{border-left:3px solid transparent!important;}
+.border-left-4{border-left:4px solid transparent!important;}
+.border-right{border-right:1px solid transparent!important;}
+.border-right-2{border-right:2px solid transparent!important;}
+.border-right-3{border-right:3px solid transparent!important;}
+.border-right-4{border-right:4px solid transparent!important;}
 
 .bradius-round{border-radius:1rem!important;}
 

@@ -21,16 +21,17 @@ html, body, a, a:hover, table.table{color:#ffffff;}
 .color-08, .h-color-08:hover,
 .color-09, .h-color-09:hover,
 .color-10, .h-color-10:hover,
-.color-11, .h-color-11:hover{color:#ffffff!important;}
+.color-11, .h-color-11:hover,
+.color-12, .h-color-12:hover{color:#ffffff!important;}
 
 .bg-white, .bg-black, .bg-gray, .bg-bgray, .bg-mgray, .bg-sgray, .bg-fgray,
 .bg-01, .bg-02, .bg-03, .bg-04, .bg-05, .bg-06, .bg-07, .bg-08, .bg-09, 
-.bg-10, .bg-11{background:#000000!important;}
+.bg-10, .bg-11, .bg-12{background:#000000!important;}
 
 .bcolor-white, .bcolor-black, .bcolor-gray, .bcolor-bgray, 
 .bcolor-mgray, .bcolor-sgray, .bcolor-fgray, 
 .bcolor-01, .bcolor-02, .bcolor-03, .bcolor-04, .bcolor-05, .bcolor-06, .bcolor-07, 
-.bcolor-08, .bcolor-09, .bcolor-10, .bcolor-11{border-color:#ffffff!important;}
+.bcolor-08, .bcolor-09, .bcolor-10, .bcolor-11, .bcolor-12{border-color:#ffffff!important;}
 
 
 /* Topnav */
@@ -126,7 +127,7 @@ nav.sidenav .submenu .dropdown-toggle{color:#000000;}
 
 /* Inputs */
 input[type=text], input[type=email], input[type=password], input[type=date], input[type=tel],
-input[type=number], input[type=phone], input[type=submit], select, textarea{
+input[type=number], input[type=phone], input[type=submit], input[type=file], select, textarea{
     color:#000000; background:#ffffff; border-color:#ffffff!important;
 }
 
@@ -360,6 +361,9 @@ input[type=number], input[type=phone], input[type=submit], select, textarea{
 .ss-card-15:hover .ss-stat .stat, .ss-card-15:hover .ss-stat .stat em, .ss-card-15:hover .arrow,
 .ss-card-15:hover .info-content p, .ss-card-15:hover .text-container p{color:#000000;}
 
+/* Special Card 16 */
+.ss-card-16{border-color:#ffffff;}
+
 
 /* Special Date */
 .ss-date, .ss-date-sm{background:#ffffff; color:#000000;}
@@ -405,11 +409,11 @@ input[type=number], input[type=phone], input[type=submit], select, textarea{
 table.table td{border-color:#ffffff;}
 table.table .sep{background:#ffffff;}
 table.table .ticon{color:#000000!important; background:#ffffff!important;}
+table.table .profile-card > .profile-icon{background:#ffffff;}
 
 /* Table 01 */
 table.table.table-01 th{background:#ffffff; color:#000000;}
 table.table.table-01 td{color:#ffffff; border-color:#ffffff!important;}
-table.table.table-01 .profile-card > .profile-icon{background:#ffffff;}
 
 /* Table 02 */
 table.table.table-02{border-color:#ffffff;}
@@ -464,6 +468,9 @@ table.table.table-05 td{background:#000000; color:#ffffff; border-color:#ffffff!
 .banner-01 .slick-dots button{background:#ffffff;}
 .banner-01 .arrows button{background:#ffffff; color:#000000;}
 .banner-01 .arrows button:hover{background:#000000; color:#ffffff;}
+
+/* Banner 03 */
+.banner-03 .arrows button{background:#ffffff; color:#000000;}
 
 
 /* Breadcrumb 03 */
@@ -527,6 +534,21 @@ table.table.table-05 td{background:#000000; color:#ffffff; border-color:#ffffff!
 
 /* Intro 04 */
 .intro-04{background:none!important;}
+
+/* Intro 06 */
+.intro-06{border-top:1px solid #ffffff; border-bottom:1px solid #ffffff;}
+.intro-06 .info{background:#000000;}
+.intro-06 .slide-container::after{
+    background:linear-gradient(to right, rgba(0,0,0,1), rgba(0,0,0,0));
+}
+
+/* Intro 07 */
+.intro-07 .icon-blocks .block::before{background:#ffffff;}
+.intro-07 .icon-blocks .block:hover p{color:#000000;}
+.intro-07 .icon-blocks .block .img-icon{background:#000000;}
+.intro-07 .slide-container .arrows{border-color:#ffffff;}
+.intro-07 .slide-container > .arrows button{background:#ffffff; color:#000000;}
+.intro-07 .box-content{border-left:1px solid #ffffff; border-right:1px solid #ffffff;}
 
 
 /* Org 01 */
@@ -604,3 +626,19 @@ table.table.table-05 td{background:#000000; color:#ffffff; border-color:#ffffff!
 .tab-container .tabs.tabs-05 .tab:not(.active){
     color:#ffffff!important; background:#000000!important; border-color:#ffffff!important;
 }
+.tab-container .tabs.tabs-05 .tab:hover{
+    color:#000000!important; background:#ffffff!important; border-color:#ffffff!important;
+}
+
+
+/* Webboard 01 */
+.webboard-01 .webboard-header{border:1px solid #ffffff;}
+.webboard-01 .webboard-header .comment{background:#ffffff; color:#000000;}
+.webboard-01 .webboard-header .comment::before{background:#ffffff;}
+.webboard-01 .toolbar{
+    color:#ffffff; border-top:1px solid #ffffff; border-bottom:1px solid #ffffff;
+}
+.webboard-01 .profile-icon .profile{border-color:#ffffff;}
+.webboard-01 .webboard-card{border-color:#ffffff; border-bottom-color:#ffffff;}
+.webboard-01 .webboard-card > .info-container{background:#ffffff; color:#000000;}
+.webboard-01 .webboard-card.white > .info-container{border-color:#ffffff;}

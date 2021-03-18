@@ -17,7 +17,7 @@
         include('component/breadcrumb-minisite.php');
     ?>
 
-    <section class="section-minisite section-padding pt-0">
+    <section class="section-minisite section-padding pt-0" style="background-image:url('public/assets/app/images/bg/pattern-02.png');">
         <div class="container">
             <div class="ss-box full-grid position-relative" data-aos="fade-up" data-aos-delay="600">
                 <div class="ss-box-shadow lg"></div>
@@ -42,7 +42,9 @@
                                 </h6>
                                 <a class="d-flex ai-center p sm color-black h-color-01" href="#">
                                     ย้อนกลับ
-                                    <em class="far fa-arrow-alt-circle-left ml-1 h4 color-01"></em>
+                                    <div class="h4 color-01 ml-1">
+                                        <em class="far fa-arrow-alt-circle-left"></em>
+                                    </div>
                                 </a>
                             </div>
                             <form action="/" method="POST">

@@ -17,7 +17,7 @@
         include('component/breadcrumb-minisite.php');
     ?>
 
-    <section class="section-minisite section-padding pt-0">
+    <section class="section-minisite section-padding pt-0" style="background-image:url('public/assets/app/images/bg/pattern-02.png');">
         <div class="container">
         <div class="ss-box full-grid position-relative" data-aos="fade-up" data-aos-delay="600">
                 <div class="ss-box-shadow lg"></div>
@@ -40,24 +40,26 @@
                                 <h6 class="h5 fw-600 color-01 mr-2">
                                     เรื่องร้องเรียน
                                 </h6>
-                                <button class="btn btn-action btn-color-01 btn-round">
+                                <button class="btn btn-action btn-color-01 btn-round btn-sm">
                                     แจ้งเรื่อง <em class="far fa-arrow-alt-circle-right ml-1"></em>
                                 </button>
                             </div>
-                            <div class="scroll-x-wrapper mt-4" data-simplebar>
-                                <table class="table table-05">
+                            <div class="scroll-x-wrapper mt-3" data-simplebar>
+                                <table class="table table-05 color-black">
                                     <thead>
                                         <tr>
-                                            <th style="min-width:2.75rem;">หมายเลข</th>
+                                            <th style="min-width:3rem;">หมายเลข</th>
                                             <th style="min-width:20rem;">หัวข้อเรื่อง</th>
                                             <th style="min-width:8rem;">สถานะ</th>
                                             <th style="min-width:8.25rem;">อัพเดท</th>
                                         </tr>
                                     </thead>
                                     <tbody>
-                                        <?php for($i=0; $i<10; $i++){?>
+                                        <?php for($i=0; $i<5; $i++){?>
                                             <tr>
-                                                <td><?= sprintf('%2d', 219-$i*2+1) ?></td>
+                                                <td class="fw-600">
+                                                    <?= sprintf('%2d', 219-$i*2+1) ?>
+                                                </td>
                                                 <td>ขอสนับสนุน สมุดบันทึกสุขภาพ</td>
                                                 <td>
                                                     <div class="status-dot">
@@ -70,7 +72,9 @@
                                                 </td>
                                             </tr>
                                             <tr>
-                                                <td><?= sprintf('%2d', 217-$i*2+2) ?></td>
+                                                <td class="fw-600">
+                                                    <?= sprintf('%2d', 217-$i*2+2) ?>
+                                                </td>
                                                 <td>สอบถามตำแหน่งพนักงานราชการเจ้าพนักงานธุรการ</td>
                                                 <td>
                                                     <div class="status-dot">
