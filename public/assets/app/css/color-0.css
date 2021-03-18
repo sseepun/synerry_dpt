@@ -589,6 +589,20 @@ table.table.table-06 th{background:#e9e9e9;}
 .toggle-target{background:#ffffff; border-color:#e1e1e1;}
 
 
+/* Tree */
+.tree .node-container{border-color:#fe4d01;}
+.tree .node-container > .wrapper::after{background:#fe4d01;}
+.tree .root .node-container{
+    color:#ffffff; background-image:linear-gradient(to bottom, #2b2b2b, #000000);
+}
+.tree .node-1 .node-container{
+    color:#ffffff; background-image:linear-gradient(to bottom, #666666, #3c3c3c);
+}
+.tree .node-2 .node-container{
+    color:#000000; background-image:linear-gradient(to bottom, #f9f9f9, #d5d5d5);
+}
+
+
 /* Upload Container */
 .upload-container{background:#e1e1e1;}
 
@@ -609,6 +623,10 @@ table.table.table-06 th{background:#e9e9e9;}
 /* About 07 */
 .about-07 .about-box{background:#ffffff;}
 .about-07 .about-box > .box-header .left-container{background:#fe4d01; color:#ffffff;}
+
+/* About 08 */
+.about-08 .job-container::before{border-color:#000000;}
+.about-08 .job-container .ss-card::before{background:#000000;}
 
 
 /* Auth 01 */

@@ -230,7 +230,16 @@
 .about-08 .img-container > img{
     position:absolute; bottom:0; left:-16rem; display:block; width:70rem; height:auto;
 }
-.about-08 .job-container{display:block; position:relative; padding:.75rem 0 1.25rem 0;}
+.about-08 .job-container{display:block; position:relative; padding:.75rem 0 1.25rem 3rem;}
+.about-08 .job-container::before{
+    content:''; position:absolute; top:0; bottom:0; left:1rem;
+    border-left:1px dotted transparent;
+}
+.about-08 .job-container .ss-card{position:relative;}
+.about-08 .job-container .ss-card::before{
+    content:''; position:absolute; top:calc(50% - .375rem); left:-2.5625rem;
+    width:.75rem; height:.75rem; border-radius:50%;
+}
 .about-08 .call-container{width:100%;}
 .about-08 .call-container > .wrapper{
     width:100%; display:flex; align-items:center; justify-content:center; flex-wrap:wrap;
@@ -247,12 +256,16 @@
 }
 @media screen and (max-width:991.98px){
     .about-08 .img-container{display:none;}
-    .about-08 .job-container{padding:.5rem 0 1rem 0;}
+    .about-08 .job-container{padding:.5rem 0 1rem 2rem;}
+    .about-08 .job-container::before{bottom:0; left:.75rem;}
+    .about-08 .job-container .ss-card::before{left:-1.75rem;}
     .about-08 .call-container > .wrapper{justify-content:center; padding:1rem 1rem 2rem 1rem;}
-    .about-08 .call-container .text-container{
-        width:100%; text-align:center; margin:1rem 0 0 0;
-    }
+    .about-08 .call-container .text-container{width:100%; text-align:center; margin:1rem 0 0 0;}
     .about-08 .call-container .form-container{width:100%;}
+}
+@media screen and (max-width:575.98px){
+    .about-08 .job-container{padding:.5rem 0 1rem 0;}
+    .about-08 .job-container::before, .about-08 .job-container .ss-card::before{display:none;}
 }
 
 

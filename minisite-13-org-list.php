@@ -22,7 +22,7 @@
     <section class="section-minisite section-padding pt-0" style="background-image:url('public/assets/app/images/bg/pattern-02.png');">
         <div class="container">
             <div class="ss-box full-grid position-relative" data-aos="fade-up" data-aos-delay="600">
-                <div class="ss-box-shadow lg"></div>
+                <div class="ss-box-shadow xl"></div>
                 <div class="box-content">
                     <div class="grids">
                         <div class="grid lg-25 md-30 sm-100 mt-0">
@@ -40,8 +40,7 @@
                             <h6 class="h5 sm fw-600 color-01 mt-2">
                                 โครงสร้างองค์กร
                             </h6>
-                            <div class="mt-4">
-                                <img class="icon" src="public/assets/app/images/logo-text.png" alt="Tree Root Icon" />
+                            <div class="mt-3 pb-4">
                                 <div class="tree" id="tree"></div>
                             </div>
                         </div>
@@ -61,8 +60,9 @@
             chart: {
                 container: '#tree',
                 siblingSeparation: 15,
-                levelSeparation: 25,
+                levelSeparation: 15,
                 subTeeSeparation: 15,
+                subTeeSeparation: 10,
                 connectors: {
                     type: 'step',
                     stackIndent: 20
@@ -71,292 +71,158 @@
             },
             nodeStructure: {
                 HTMLclass: 'root',
-                text: { name: 'คณะกรรมการ กนอ.' },
+                innerHTML: `
+                    <div class="header-wrapper">
+                        <div class="icon">
+                            <img src="public/assets/app/images/logo-text-square.png" alt="Tree Root Icon" />
+                        </div>
+                        <div class="text-container">
+                            <h6 class="p fw-300 lh-xs color-black">สำนักงานพลังงาน</h6>
+                            <p class="h5 sm fw-400 lh-xs color-01">สุราษฎร์ธานี</p>
+                        </div>
+                    </div>
+                    <div class="node-container">
+                        <div class="wrapper">
+                            สำนักงานปลัด<br>กระทรวงพลังงาน
+                        </div>
+                    </div>
+                `,
                 children: [
+
                     {
-                        HTMLclass: 'node-1',
-                        text: { name: 'คณะกรรมการตรวจสอบ' },
-                    },
-                    {
-                        HTMLclass: 'node-2',
-                        text: { name: 'ผู้ว่าการ กนอ.' },
+                        HTMLclass: 'node-empty',
+                        pseudo: true,
+                        stackChildren: true,
                         children: [
                             {
-                                HTMLclass: 'node-3',
-                                innerHTML: `<p>ฝ่ายตรวจสอบภายใน</p>
-                                    <ul>
-                                        <li>กองตรวจสอบ 1</li>
-                                        <li>กองตรวจสอบ 2</li>
-                                    </ul>`,
+                                HTMLclass: 'node-1',
+                                innerHTML: `
+                                    <div class="node-container">
+                                        <div class="wrapper">
+                                            กลุ่มพัฒนา<br>ระบบบริหาร
+                                        </div>
+                                    </div>
+                                `
                             },
                             {
-                                HTMLclass: 'node-4',
-                                innerHTML: `<p>ศูนย์ปฏิบัติการ กนอ.</p>
-                                    <ul>
-                                        <li>กองกำกับการปฏิบัติการ</li>
-                                        <li>กองสนับสนุนการปฏิบัติการ</li>
-                                    </ul>`,
-                            },
-
-                            {
-                                pseudo: true,
-                                childrenDropLevel: 1,
-                                children: [
-
-                                    {
-                                        HTMLclass: 'node-5',
-                                        innerHTML: `
-                                            <p>รองผู้ว่าการ <br> <span>(ฝ่ายบริหาร)</span></p>
-                                            <div class="node-wrapper">
-                                                <div class="node node-6">
-                                                    <p>ฝ่ายบริการ</p>
-                                                    <ul>
-                                                        <li>กองกลาง</li>
-                                                        <li>กองการประชุม</li>
-                                                        <li>กองพัสดุ</li>
-                                                    </ul>
-                                                </div>
-                                                <div class="node node-6">
-                                                    <p>ฝ่ายทรัพยากรบุคคล</p>
-                                                    <ul>
-                                                        <li>กองบริหารทรัพยากรบุคคล</li>
-                                                        <li>กองพัฒนาทรัพยากรบุคคล</li>
-                                                    </ul>
-                                                </div>
-                                                <div class="node node-6">
-                                                    <p>ฝ่ายกฎหมาย</p>
-                                                    <ul>
-                                                        <li>กองกฎหมายและระเบียบ</li>
-                                                        <li>กองนิติกรรมและกรรมสิทธ์ที่ดิน</li>
-                                                        <li>กองคดี</li>
-                                                    </ul>
-                                                </div>
-                                                <div class="node node-6">
-                                                    <p>ฝ่ายการเงินและบัญชี</p>
-                                                    <ul>
-                                                        <li>กองการเงิน</li>
-                                                        <li>กองบัญชีการเงิน</li>
-                                                        <li>กองบัญชีบริหารและงบประมาณ</li>
-                                                    </ul>
-                                                </div>
-                                            </div>
-                                        `,
-                                    },
-
-                                    {
-                                        HTMLclass: 'node-5',
-                                        innerHTML: `
-                                            <p>รองผู้ว่าการ <br> <span>(ยุทธศาสตร์และพัฒนา)</span></p>
-                                            <div class="node-wrapper">
-                                                <div class="node node-6">
-                                                    <p>ฝ่ายยุทธศาสตร์</p>
-                                                    <ul>
-                                                        <li>กองนยบายและแผน</li>
-                                                        <li>กองบริหารความเสี่ยงและควบคุมภายใน</li>
-                                                        <li>กองนวัตกรรมและพัฒนาองค์กร</li>
-                                                    </ul>
-                                                </div>
-                                                <div class="node node-6">
-                                                    <p>ฝ่ายพัฒนา</p>
-                                                    <ul>
-                                                        <li>กองพัฒนาธุรกิจ</li>
-                                                        <li>กองวิศวกรรม</li>
-                                                        <li>กองบริการและกำกับดูแลโครงการนิคมอุตสาหกรรม</li>
-                                                    </ul>
-                                                </div>
-                                                <div class="node node-6">
-                                                    <p>ฝ่ายสิ่งแวดล้อม</p>
-                                                    <ul>
-                                                        <li>กองสิ่งแวดล้อมและพลังงาน</li>
-                                                        <li>กองความปลอดภัย และอาชีวะอนามัย</li>
-                                                    </ul>
-                                                </div>
-                                                <div class="node node-6">
-                                                    <p>ฝ่ายชุมชนสัมพันธ์</p>
-                                                    <ul>
-                                                        <li>กองพัฒนาชุมชนสัมพันธ์</li>
-                                                        <li>กองบริหารงานชุมชนสัมพันธ์</li>
-                                                    </ul>
-                                                </div>
-                                            </div>
-                                        `,
-                                    },
-                                    
-                                    {
-                                        HTMLclass: 'node-5',
-                                        innerHTML: `
-                                            <p>รองผู้ว่าการ <br> <span>(บริการและลูกค้าสัมพันธ์)</span></p>
-                                            <div class="node-wrapper">
-                                                <div class="node node-6">
-                                                    <p>ฝ่ายบริการผู้ประกอบการ</p>
-                                                    <ul>
-                                                        <li>กองอรุญาตผู้ประกอบกิจการ</li>
-                                                        <li>กองอรุญาตก่อสร้าง</li>
-                                                        <li>กองสิทธิประโยชน์</li>
-                                                    </ul>
-                                                </div>
-                                                <div class="node node-6">
-                                                    <p>ฝ่ายการตลาด</p>
-                                                    <ul>
-                                                        <li>กองการตลาดและลูกค้าสัมพันธ์</li>
-                                                        <li>กองประชาสัมพันธ์</li>
-                                                    </ul>
-                                                </div>
-                                                <div class="node node-6">
-                                                    <p>ฝ่ายเทคโนโลยีสารสนเทศ</p>
-                                                    <ul>
-                                                        <li>กองพัฒนาระบบสาระสนเทศ</li>
-                                                        <li>กองปฏิบัติการเทคโนโลยีสาระสนเทศ</li>
-                                                    </ul>
-                                                </div>
-                                            </div>
-                                        `,
-                                    },
-                                    
-                                    {
-                                        HTMLclass: 'node-5',
-                                        innerHTML: `
-                                            <p>รองผู้ว่าการ <br> <span>(ปฏิบัติการ 1)</span></p>
-                                            <div class="node-wrapper">
-                                                <div class="node node-6">
-                                                    <p>ฝ่ายอำนวยการปฏิบัติการ 1</p>
-                                                    <ul>
-                                                        <li>กองอำนวยการปฏิบัติการ 1</li>
-                                                        <li>สำนักงานนิคมฯ บางขัน</li>
-                                                        <li>สำนักงานนิคมฯ พิจิตร</li>
-                                                        <li>สำนักงานนิคมฯ แก่งคอย</li>
-                                                        <li>สำนักงานนิคมฯ หนองแค</li>
-                                                        <li>สำนักงานนิคมฯ อัญธานี</li>
-                                                        <li>สำนักงานนิคมฯ บ้านหว้า</li>
-                                                        <li>สำนักงานนิคมฯ บางปะอิน</li>
-                                                        <li>สำนักงานนิคมฯ สหรัตนนคร</li>
-                                                        <li>สำนักงานนิคมฯ สินสาคร</li>
-                                                        <li>สำนักงานนิคมฯ มหาราชนคร</li>
-                                                        <li>สำนักงานนิคมฯ ราชบุรี</li>
-                                                    </ul>
-                                                </div>
-                                                <div class="node node-6">
-                                                    <p>สำนักงานนิคมฯ ลาดกระบัง</p>
-                                                </div>
-                                                <div class="node node-6">
-                                                    <p>สำนักงานนิคมฯ สมุทรสาคร</p>
-                                                </div>
-                                                <div class="node node-6">
-                                                    <p>สำนักงานนิคมฯ ภาคเหนือ</p>
-                                                </div>
-                                                <div class="node node-6">
-                                                    <p>สำนักงานนิคมฯ ภาคใต้</p>
-                                                </div>
-                                            </div>
-                                        `,
-                                    },
-                                    
-                                    {
-                                        HTMLclass: 'node-5',
-                                        innerHTML: `
-                                            <p>รองผู้ว่าการ <br> <span>(ปฏิบัติการ 2)</span></p>
-                                            <div class="node-wrapper">
-                                                <div class="node node-6">
-                                                    <p>ฝ่ายอำนวยการปฏิบัติการ 2</p>
-                                                    <ul>
-                                                        <li>กองอำนวยการปฏิบัติการ 2</li>
-                                                        <li>สำนักงานนิคมฯ บางพลี</li>
-                                                        <li>สำนักงานนิคมฯ เอเชีย (สุวรรณภูมิ)</li>
-                                                        <li>สำนักงานนิคมฯ เวลโทรว์</li>
-                                                        <li>สำนักงานนิคมฯ เกตเวย์ซิตี้</li>
-                                                        <li>สำนักงานนิคมฯ ทีเอฟดี</li>
-                                                        <li>สำนักงานนิคมฯ ปิ่นทอง</li>
-                                                        <li>สำนักงานนิคมฯ ปิ่นทอง (แหลมฉบัง)</li>
-                                                        <li>สำนักงานนิคมฯ ปิ่นทอง 3</li>
-                                                        <li>สำนักงานนิคมฯ ปิ่นทอง 4</li>
-                                                        <li>สำนักงานนิคมฯ ปิ่นทอง 5</li>
-                                                        <li>สำนักงานนิคมฯ เหมราชชลบุรี</li>
-                                                        <li>สำนักงานนิคมฯ เหมราชชลบุรี 2</li>
-                                                        <li>สำนักงานนิคมฯ เหมราชชลบุรี อีสเทิร์นซีบอร์ด</li>
-                                                        <li>สำนักงานนิคมฯ เหมราชชลบุรี อีสเทิร์นซีบอร์ด 2</li>
-                                                        <li>สำนักงานนิคมฯ อมตะซิตี้</li>
-                                                        <li>สำนักงานนิคมฯ ไฮเทค ถมินทร์</li>
-                                                    </ul>
-                                                </div>
-                                                <div class="node node-6">
-                                                    <p>สำนักงานนิคมฯ บางปู</p>
-                                                </div>
-                                                <div class="node node-6">
-                                                    <p>สำนักงานนิคมฯ แหลมฉบัง</p>
-                                                </div>
-                                                <div class="node node-6">
-                                                    <p>สำนักงานนิคมฯ อมตะนคร</p>
-                                                </div>
-                                                <div class="node node-6">
-                                                    <p>สำนักงานนิคมฯ อีสเทิร์นซีบอร์ด<br><span>(ระยอง)</span></p>
-                                                </div>
-                                            </div>
-                                        `,
-                                    },
-
-                                    {
-                                        HTMLclass: 'node-5',
-                                        innerHTML: `
-                                            <p>รองผู้ว่าการ <br> <span>(ปฏิบัติการ 3)</span></p>
-                                            <div class="node-wrapper">
-                                                <div class="node node-6">
-                                                    <p>ฝ่ายอำนวยการปฏิบัติการ 3<br><span>อุตสาหกรรมเชิงนิเวศ</span></p>
-                                                    <ul>
-                                                        <li>กองอำนวยการปฏิบัติการ 3</li>
-                                                        <li>กองพัฒนาท่าเรือ</li>
-                                                    </ul>
-                                                </div>
-                                                <div class="node node-6">
-                                                    <p>สำนักงานนิคมอุตสาหกรรม<br><span>บานตาพุด</span></p>
-                                                </div>
-                                                <div class="node node-6">
-                                                    <p>สำนักงานนิคมอุตสาหกรรม<br><span>ร่วมดำเนินงานกลุ่มบานตาพุด</span></p>
-                                                    <ul>
-                                                        <li>สำนักงานนิคมอุตสาหกรรมเหมราชตะวันออก (บานตาพุด)</li>
-                                                        <li>สำนักงานนิคมอุตสาหกรรมผาแดง</li>
-                                                        <li>สำนักงานนิคมอุตสาหกรรมเอเชีย</li>
-                                                        <li>สำนักงานนิคมอุตสาหกรรมอาร์โอแอล</li>
-                                                    </ul>
-                                                </div>
-                                                <div class="node node-6">
-                                                    <p>สำนักงานท่าเรืออุตสาหกรรม<br><span>บานตาพุด</span></p>
-                                                </div>
-                                            </div>
-                                        `,
-                                    },
-
-                                    {
-                                        HTMLclass: 'node-5',
-                                        innerHTML: `
-                                            <p>รองผู้ว่าการ <br> <span>(กิจการพิเศษ)</span></p>
-                                            <div class="node-wrapper">
-                                                <div class="node node-6">
-                                                    <p>สำนักงานโครงการพิเศษ</p>
-                                                </div>
-                                                <div class="node node-6">
-                                                    <p>ฝ่ายพัฒนาเมือง<br><span>อุตสาหกรรมเชิงนิเวศ</span></p>
-                                                    <ul>
-                                                        <li>กองพัฒนาเมืองอุตสาหกรรมเชิงนิเวศ</li>
-                                                        <li>กองบริหารเมืองอุตสาหกรรมเชิงนิเวศ</li>
-                                                    </ul>
-                                                </div>
-                                            </div>
-                                        `,
-                                    },
-
-                                ],
-                            },
-
-                            {
-                                HTMLclass: 'node-3',
-                                text: { name: 'ผู้เชี่ยวชาญ 11' },
+                                HTMLclass: 'node-1',
+                                innerHTML: `
+                                    <div class="node-container">
+                                        <div class="wrapper">
+                                            กลุ่มตรวจสอบ<br>ภายใน
+                                        </div>
+                                    </div>
+                                `
                             },
                             {
-                                HTMLclass: 'node-3',
-                                text: { name: 'ผู้เชี่ยวชาญ 11' },
-                            },
-                        ],
+                                HTMLclass: 'node-1',
+                                innerHTML: `
+                                    <div class="node-container">
+                                        <div class="wrapper">
+                                            ศูนย์ปฏิบัติการ<br>ต่อต้านการทุจริต
+                                        </div>
+                                    </div>
+                                `
+                            }
+                        ]
                     },
+
+                    {
+                        HTMLclass: 'node-empty',
+                        pseudo: true,
+                        stackChildren: true,
+                        children: [
+                            {
+                                HTMLclass: 'node-2',
+                                innerHTML: `
+                                    <div class="node-container">
+                                        <div class="wrapper">
+                                            สำนักบริหารกลาง
+                                        </div>
+                                    </div>
+                                `
+                            },
+                            {
+                                HTMLclass: 'node-2',
+                                innerHTML: `
+                                    <div class="node-container">
+                                        <div class="wrapper">
+                                            สำนักนโยบายและ<br>ยุทธศาสตร์
+                                        </div>
+                                    </div>
+                                `
+                            },
+                            {
+                                HTMLclass: 'node-2',
+                                innerHTML: `
+                                    <div class="node-container">
+                                        <div class="wrapper">
+                                            ศูนย์เทคโนโลยีสารสนเทศ<br>และการสื่อสาร
+                                        </div>
+                                    </div>
+                                `
+                            },
+                            {
+                                HTMLclass: 'node-2',
+                                innerHTML: `
+                                    <div class="node-container">
+                                        <div class="wrapper">
+                                            สำนักงานความร่วมมือ<br>ระหว่างประเทศ
+                                        </div>
+                                    </div>
+                                `
+                            }
+                        ]
+                    },
+
+                    {
+                        HTMLclass: 'node-empty',
+                        pseudo: true,
+                        stackChildren: true,
+                        children: [
+                            {
+                                HTMLclass: 'node-2',
+                                innerHTML: `
+                                    <div class="node-container">
+                                        <div class="wrapper">
+                                            กองตรวจและ<br>ประเมินผล
+                                        </div>
+                                    </div>
+                                `
+                            },
+                            {
+                                HTMLclass: 'node-2',
+                                innerHTML: `
+                                    <div class="node-container">
+                                        <div class="wrapper">
+                                            กองศึกษาและประสานงาน<br>พลังงานนิวเคลียร์
+                                        </div>
+                                    </div>
+                                `
+                            },
+                            {
+                                HTMLclass: 'node-2',
+                                innerHTML: `
+                                    <div class="node-container">
+                                        <div class="wrapper">
+                                            สำนักส่งเสริมการมี<br>ส่วนร่วมของประชาชน
+                                        </div>
+                                    </div>
+                                `
+                            },
+                            {
+                                HTMLclass: 'node-2',
+                                innerHTML: `
+                                    <div class="node-container">
+                                        <div class="wrapper">
+                                            สำนักงานพลังงาน<br>จังหวัด(76 จังหวัด)
+                                        </div>
+                                    </div>
+                                `
+                            }
+                        ]
+                    },
+
                 ]
             }
         };
