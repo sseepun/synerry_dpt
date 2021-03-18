@@ -198,6 +198,63 @@
     .about-06.img-middle{padding:0 0 30% 0;}
 }
 
+/* About 07 */
+.about-07{
+    width:100%; background-size:cover; background-position:bottom center;
+    padding-bottom:16rem;
+}
+.about-07 .about-box{display:block; position:relative; width:100%;}
+.about-07 .about-box > .box-header{width:100%; display:flex; align-items:center;}
+.about-07 .about-box > .box-header .left-container, 
+.about-07 .about-box > .box-header .right-container{
+    height:4.25rem; display:flex; align-items:center;
+}
+.about-07 .about-box > .box-header .left-container{padding:.5rem 1rem .5rem 1.25rem;}
+.about-07 .about-box > .box-header .right-container{padding:.5rem 1rem;}
+@media screen and (max-width:1199.98px){
+    .about-07{padding-bottom:12rem; background-position:center;}
+}
+@media screen and (max-width:991.98px){
+    .about-07{padding-bottom:3.5rem;}
+    .about-07 .about-box > .box-header .left-container{padding:.5rem 1rem;}
+}
+@media screen and (max-width:767.98px){
+    .about-07{padding-bottom:3rem;}
+}
+@media screen and (max-width:575.98px){
+    .about-07{padding-bottom:2.5rem;}
+}
+
+/* About 08 */
+.about-08 .img-container{position:relative; display:block; width:100%; height:100%;}
+.about-08 .img-container > img{
+    position:absolute; bottom:0; left:-16rem; display:block; width:70rem; height:auto;
+}
+.about-08 .job-container{display:block; position:relative; padding:.75rem 0 1.25rem 0;}
+.about-08 .call-container{width:100%;}
+.about-08 .call-container > .wrapper{
+    width:100%; display:flex; align-items:center; justify-content:center; flex-wrap:wrap;
+    padding:1.5rem 1rem 2.5rem 1rem;
+}
+.about-08 .call-container .text-container{margin:1rem 3rem 0 0; white-space:nowrap;}
+.about-08 .call-container .form-container{width:100%; max-width:27rem; margin:1rem 0 0 0;}
+.about-08 .call-container .call-input-container{width:100%; display:block; position:relative; }
+.about-08 .call-container .call-input-container > input{
+    width:100%; max-width:100%; padding-right:10rem;
+}
+.about-08 .call-container .call-input-container > button{
+    position:absolute; top:0; bottom:0; right:0;
+}
+@media screen and (max-width:991.98px){
+    .about-08 .img-container{display:none;}
+    .about-08 .job-container{padding:.5rem 0 1rem 0;}
+    .about-08 .call-container > .wrapper{justify-content:center; padding:1rem 1rem 2rem 1rem;}
+    .about-08 .call-container .text-container{
+        width:100%; text-align:center; margin:1rem 0 0 0;
+    }
+    .about-08 .call-container .form-container{width:100%;}
+}
+
 
 /* Auth 01 */
 .auth-01{width:100%; padding:3rem 0 5rem 0;}

@@ -84,7 +84,7 @@
         </div>
     </section>
     
-    <section class="intro-07 section-minisite section-padding pt-0" data-aos="fade-up" data-aos-delay="0">
+    <section class="intro-07 section-padding pt-0" data-aos="fade-up" data-aos-delay="0">
         <div class="container">
             <div class="ss-box width-full position-relative px-0">
                 <div class="ss-box-shadow xl"></div>
@@ -185,93 +185,368 @@
         </div>
     </section>
 
-    <section class="intro-08 section-padding" style="background-image:url('public/assets/app/images/bg/minisite-09.jpg');">
+    <section class="about-07 section-padding" style="background-image:url('public/assets/app/images/bg/minisite-09.jpg');">
         <div class="container">
-            <div class="ss-icon-title-02 ws-nowrap mt-0">
+            <div class="ss-icon-title-02 ws-nowrap mt-0" data-aos="fade-up" data-aos-delay="0">
                 <div class="text-icon color-01">E</div>
                 <div class="text-wrapper">
                     <div class="title color-01">NERGY STATISTICS</div>
                     <div class="desc color-black">สถิติพลังงาน</div>
                 </div>
             </div>
-            <div class="gallery-grids">
-                <div class="grid md-50 sm-100">
-                </div>
-                <div class="grid md-50 sm-100">
-                </div>
-                <div class="grid md-100 sm-100">
-                </div>
-            </div>
-        </div>
-    </section>
+            <div class="gallery-grids mt-3" data-aos="fade-up" data-aos-delay="150">
+                <div class="grid lg-50 sm-100">
 
-    <style>
-        .announcement-01 .grids.cards{
-            justify-content: flex-end;
-        }
-        .announcement-01 .grids > .grid.card{
-            margin: 0 0 0 auto; border-left: 2px solid #000;
-        }
-        @media screen and (max-width: 991.98px){
-            .announcement-01 .grids > .grid.card{
-                margin-left:0;
-            }
-            .announcement-01 .grids.cards{
-                justify-content: flex-start;
-            }
-        }
-    </style>
-    <section class="section-minisite section-padding announcement-01" style="background-image:url('public/assets/app/images/bg/minisite-09.jpg');">
-        <div class="container">
-            <div class="ss-icon-title-02 ws-nowrap mt-0">
-                <div class="text-icon color-01">A</div>
-                <div class="text-wrapper">
-                    <div class="title color-01">NNOUNCEMENTS</div>
-                    <div class="desc color-black">ข่าวประกาศ</div>
-                </div>
-            </div>
-
-            <div class="grids">
-                <div class="grid lg-40 sm-100">
-                    <div class="btns">
-                        <a href="#" class="btn btn-round btn-sm bcolor-sgray">
-                            สมัครงาน
-                        </a>
-                        <a href="#" class="btn btn-round btn-sm bcolor-sgray">
-                            ประกาศจัดซื้อจัดจ้าง
-                        </a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="grids cards">
-                <?php for($i=0; $i < 5; $i++){?>
-                    <div class="grid xl-60 lg-70 md-100 sm-100 card pt-3 pb-2 pl-5 pr-2 mt-2">
-                        <p>
-                            <em class="far fa-clock color-01 mr-1"></em> 8 มกราคม 2020
-                        </p>
-                        <div class="grids no-gap ai-center">
-                            <div class="grid md-50 sm-100 mt-0">
-                                <p class="fw-600 color-01">ช่างเทคนิค-สัญญาจ้าง (ประจำโครงการในกรุงเทพ)</h6>
+                    <div class="about-box">
+                        <div class="box-header">
+                            <div class="left-container">
+                                <h6 class="sm fw-600 lh-xs">
+                                    ราคาขายปลีก <br> น้ำมัน 
+                                    <span class="fw-200 text-2xs">(บาท/ ลิตร)</span>
+                                </h6>
                             </div>
-                            <div class="grid md-30 sm-100 mt-0">
-                                <p class="fw-400">จำนวน <span class="color-01 fw-600 mx-1">10</span> ตำแหน่ง</p>
+                            <div class="right-container">
+                                <p class="lg fw-500 lh-xs color-black">
+                                    15 มกราคม 2564
+                                </p>
                             </div>
-                            <div class="grid md-20 sm-100 mt-0">
-                                <a href="#" class="d-flex ai-center p fw-300">
-                                    ข้อมูลเพิ่มเติม
-                                    <em class="far fa-arrow-alt-circle-right color-01 h4 ml-2"></em>
-                                </a>
+                        </div>
+                        <div class="box-body">
+                            <div class="scroll-x-wrapper pb-0" data-simplebar>
+                                <table class="table table-06">
+                                    <thead>
+                                        <tr>
+                                            <th class="p fw-500 color-01 ws-nowrap">
+                                                <div class="pl-2">ปั้มน้ำมัน</div>
+                                            </th>
+                                            <th class="p fw-500 color-01 text-center ws-nowrap">เบนซิล 95</th>
+                                            <th class="p fw-500 color-01 text-center ws-nowrap">แก็สโซฮอลล์ 95</th>
+                                            <th class="p fw-500 color-01 text-center ws-nowrap">แก็สโซฮอลล์ 91</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <?php
+                                            foreach([
+                                                'ปตท.', 'บางจาก', 'เชลล์', 'เอสโซ่', 'คาลเท็กซ์', 
+                                                'ไออาร์พีซี', 'พีที', 'ซัสโก้', 'เพียว'
+                                            ] as $i=>$d){
+                                        ?>
+                                            <tr>
+                                                <td class="py-1">
+                                                    <div class="icon-container">
+                                                        <div class="icon-wrapper">
+                                                            <img src="public/assets/app/images/icon/gas-<?= $i+10 ?>.jpg" alt="Gas Icon" />
+                                                        </div>
+                                                        <div class="text p sm fw-500">
+                                                            <?= $d ?>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                                <td class="p sm fw-500 text-center">31.46</td>
+                                                <td class="p sm fw-500 text-center">24.05</td>
+                                                <td class="p sm fw-500 text-center">23.78</td>
+                                            </tr>
+                                        <?php }?>
+                                    </tbody>
+                                </table>
                             </div>
                         </div>
                     </div>
-                <?php }?>
+
+                </div>
+                <div class="grid lg-50 sm-100 mt-0">
+                    <div class="gallery-grids">
+                        <div class="grid sm-100">
+
+                            <div class="about-box">
+                                <div class="box-header">
+                                    <div class="left-container">
+                                        <h6 class="sm fw-600 lh-xs">
+                                            การใช้ไฟฟ้า ณ ปัจจุบัน
+                                        </h6>
+                                    </div>
+                                    <div class="right-container">
+                                        <p class="lg fw-500 lh-xs color-black">
+                                            15 มกราคม 2564 <br>
+                                            เวลา 19:00  น.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="box-body">
+                                    <div class="chart-container no-label width-full adaptive-02">
+                                        <div class="chart bradius-round"></div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="grid sm-100">
+
+                            <div class="about-box">
+                                <div class="box-header">
+                                    <div class="left-container">
+                                        <h6 class="sm fw-600 lh-xs">
+                                            ฐานะกองทุนน้ำมัน <br>
+                                            <span class="fw-200 text-2xs">(บาท/ ลิตร)</span>
+                                        </h6>
+                                    </div>
+                                    <div class="right-container">
+                                        <p class="lg fw-500 lh-xs color-black">
+                                            <span class="text-xs">สิ้นสุด ณ วันที่</span> <br>
+                                            10 มกราคม 2564
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="box-body">
+                                    <div class="scroll-x-wrapper pb-0" data-simplebar>
+                                        <table class="table table-06">
+                                            <thead>
+                                                <tr>
+                                                    <th></th>
+                                                    <th class="p fw-500 color-01 text-center ws-nowrap">น้ำมัน</th>
+                                                    <th class="p fw-500 color-01 text-center ws-nowrap">LPG</th>
+                                                    <th class="p fw-500 color-01 text-center ws-nowrap">รวม</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td class="p sm fw-600 ws-nowrap text-right">
+                                                        สินทรัพย์รวม
+                                                    </td>
+                                                    <td class="p sm fw-400 text-center">54.11</td>
+                                                    <td class="p sm fw-400 text-center">54.11</td>
+                                                    <td class="p sm fw-400 text-center">54.11</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="p sm fw-600 ws-nowrap text-right">
+                                                        หนี้สินรวม
+                                                    </td>
+                                                    <td class="p sm fw-400 text-center">54.11</td>
+                                                    <td class="p sm fw-400 text-center">54.11</td>
+                                                    <td class="p sm fw-400 text-center">54.11</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="p fw-600 ws-nowrap text-right">
+                                                        ฐานะกองทุนสุทธิ
+                                                    </td>
+                                                    <td class="p fw-500 text-center">54.11</td>
+                                                    <td class="p fw-500 text-center">54.11</td>
+                                                    <td class="p fw-500 text-center">54.11</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+                <div class="grid md-100 sm-100">
+
+                    <div class="about-box">
+                        <div class="box-header">
+                            <div class="left-container">
+                                <h6 class="sm fw-600 lh-xs">
+                                    โครงสร้างราคาขายปลีก <br>
+                                    <span class="fw-200 text-2xs">(บาท/ ลิตร)</span>
+                                </h6>
+                            </div>
+                            <div class="right-container">
+                                <p class="lg fw-500 lh-xs color-black">
+                                    15 มกราคม 2564
+                                </p>
+                            </div>
+                        </div>
+                        <div class="box-body">
+                            <div class="scroll-x-wrapper pb-0" data-simplebar>
+                                <table class="table table-06">
+                                    <thead>
+                                        <tr>
+                                            <th class="p fw-500 color-01 text-center ws-nowrap">หน่วย</th>
+                                            <th class="p fw-500 color-01 text-center ws-nowrap">Ex-Refin<br>(AVG)</th>
+                                            <th class="p fw-500 color-01 text-center ws-nowrap">Tax<br>B/Litre</th>
+                                            <th class="p fw-500 color-01 text-center ws-nowrap">M.Tax<br>B/Litre</th>
+                                            <th class="p fw-500 color-01 text-center ws-nowrap">Oil<br>Fund</th>
+                                            <th class="p fw-500 color-01 text-center ws-nowrap">Consv.<br>Fund</th>
+                                            <th class="p fw-500 color-01 text-center ws-nowrap">Wholesale<br>Prices (WS)</th>
+                                            <th class="p fw-500 color-01 text-center ws-nowrap">VAT</th>
+                                            <th class="p fw-500 color-01 text-center ws-nowrap">WS & VAT</th>
+                                            <th class="p fw-500 color-01 text-center ws-nowrap">Marketing<br>Magin</th>
+                                            <th class="p fw-500 color-01 text-center ws-nowrap">VAT</th>
+                                            <th class="p fw-500 color-01 text-center ws-nowrap">Retail</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td class="p fw-600 ws-nowrap text-right">
+                                                LPG (UNIT:<br>BAHT/KILO)
+                                            </td>
+                                            <td class="p sm fw-400 text-center">19.0692</td>
+                                            <td class="p sm fw-400 text-center">2.1700</td>
+                                            <td class="p sm fw-400 text-center">0.2170</td>
+                                            <td class="p sm fw-400 text-center">-7.0804</td>
+                                            <td class="p sm fw-400 text-center">0.000</td>
+                                            <td class="p sm fw-400 text-center">14.3758</td>
+                                            <td class="p sm fw-400 text-center">1.0063</td>
+                                            <td class="p sm fw-400 text-center">15.3821</td>
+                                            <td class="p sm fw-400 text-center">3.2566</td>
+                                            <td class="p sm fw-400 text-center">0.2280</td>
+                                            <td class="p fw-500 text-center">31.45</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
             </div>
         </div>
     </section>
 
+    <section class="about-08 section-padding" data-aos="fade-up" data-aos-delay="0">
+        <div class="container">
+            <div class="gallery-grids">
+                <div class="grid lg-30 sm-100 mt-0">
+                    <div class="img-container">
+                        <img src="public/assets/app/images/bg/minisite-10.jpg" alt="Hero Image" />
+                    </div>
+                </div>
+                <div class="grid lg-70 sm-100 mt-0 position-relative">
+
+                    <?php $categories = ['สมัครงาน', 'ประกาศจัดซื้อจัดจ้าง']; ?>
+                    <div class="tab-container">
+                        <div class="d-flex ai-center jc-space-between fw-wrap">
+                            <div class="ss-icon-title-02 ws-nowrap mt-0">
+                                <div class="text-icon color-01">A</div>
+                                <div class="text-wrapper">
+                                    <div class="title color-01">NNOUNCEMENTS</div>
+                                    <div class="desc color-black">ข่าวประกาศ</div>
+                                </div>
+                            </div>
+                            <div class="tabs tabs-05 width-auto my-2">
+                                <?php foreach($categories as $j=>$k){?>
+                                    <a class="tab <?php if($j==0)echo 'active'; ?> btn btn-action btn-color-01 btn-sm btn-round mt-1" 
+                                    href="#" data-tab="<?= $j ?>">
+                                        <?= $k ?>
+                                    </a>
+                                <?php }?>
+                            </div>
+                        </div>
+                        <div class="tab-contents">
+                            <?php foreach($categories as $j=>$k){?>
+                                <div class="tab-content <?php if($j==0)echo 'active'; ?>" data-tab="<?= $j ?>">
+                                    <div class="text-right mt-1">
+                                        <a class="p fw-600 color-black h-color-1" href="#">
+                                            ดูทั้งหมด
+                                        </a>
+                                    </div>
+                                    <div class="job-container">
+                                        <?php for($i=0; $i<5; $i++){?>
+                                            <div class="ss-card ss-card-16">
+                                                <div class="wrapper color-black">
+                                                    <div class="ss-stat my-0">
+                                                        <div class="stat my-0">
+                                                            <em class="far fa-clock color-01 mr-2"></em> 
+                                                            <span class="fw-500">22 มกราคม  2564</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="info-container">
+                                                        <div class="info">
+                                                            <a class="p lg fw-600 color-01 h-color-02 lh-xs" href="#">
+                                                                ช่างเทคนิค-สัญญาจ้าง (ประจำโครงการในกรุงเทพ)
+                                                            </a>
+                                                        </div>
+                                                        <div class="info">
+                                                            <p class="sm fw-500">
+                                                                จำนวน 
+                                                                <span class="fw-600 color-01 text-xl mx-1">10</span> 
+                                                                ตำแหน่ง
+                                                            </p>
+                                                        </div>
+                                                        <div class="info">
+                                                            <a class="d-flex ai-center jc-end p sm fw-500 h-color-01" href="#">
+                                                                ข้อมูลเพิ่มเติม
+                                                                <span class="h5 color-01 ml-2">
+                                                                    <em class="far fa-arrow-alt-circle-right"></em>
+                                                                </span>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        <?php }?>
+                                    </div>
+                                </div>
+                            <?php }?>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="call-container img-fill" style="background-image:url('public/assets/app/images/bg/minisite-11.jpg');">
+                <div class="wrapper">
+                    <div class="text-container">
+                        <h6 class="h5 sm fw-600 lh-xs color-01">ลงทะเบียนรับข้อมูลข่าวสาร</h6>
+                        <p class="fw-400 color-white">ติดตามกิจกรรมข่าวสาร และ ข้อมูลอัพเดทต่างๆ</p>
+                    </div>
+                    <div class="form-container">
+                        <form action="/" method="GET">
+                            <div class="call-input-container">
+                                <input type="email" class="form-control round" placeholder="กรอกอีเมลเพื่อสมัครรับจดหมายข่าว" required title="General Text Input" />
+                                <button type="submit" class="btn btn-action btn-color-01 btn-round btn-sm">
+                                    สมัครรับจดหมายข่าว
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
     <?php include_once('include/footer-minisite.php'); ?>
     <?php include_once('include/script.php'); ?>
+    
+    <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+    <script>
+        var options = {
+            chart: {
+                type: 'area',
+                toolbar: { show: false },
+                height: '100%'
+            },
+            stroke: { curve: 'smooth', width: 1 },
+            legend: { show: false },
+            dataLabels: { enabled: false },
+            series: [
+                {
+                    name: 'Data 1',
+                    data: [0, 5, 2, 5, 7, 10, 20, 12, 25, 35, 20, 0]
+                },
+                {
+                    name: 'Data 2',
+                    data: [0, 10, 5, 15, 10, 20, 30, 45, 20, 15, 10, 0]
+                },
+                {
+                    name: 'Data 3',
+                    data: [0, 2, 5, 5, 3, 15, 35, 10, 5, 10, 15, 0]
+                },
+            ],
+            colors: ['rgba(254,77,1,.7)', 'rgba(255,183,57,.7)', 'rgba(160,232,208,.7)'],
+            fill: { type: 'solid' },
+            xaxis: {
+                categories: [
+                    'JAN', 'FEB', 'MAR', 'APR', 'MAY', 'JUN',
+                    'JUL', 'AUG', 'SEP', 'OCT', 'NOV', 'DEC'
+                ]
+            },
+        }
+        $('.chart').each(function(){
+            var apexChart = new ApexCharts($(this)[0], options);
+            apexChart.render();
+        });
+    </script>
 </body>
 </html>

@@ -362,7 +362,12 @@ input[type=number], input[type=phone], input[type=submit], input[type=file], sel
 .ss-card-15:hover .info-content p, .ss-card-15:hover .text-container p{color:#000000;}
 
 /* Special Card 16 */
-.ss-card-16{border-color:#ffffff;}
+.ss-card-16{background:#000000; border-color:#ffffff;}
+
+/* Special Card 17 */
+.ss-card-17{border-color:#ffffff;}
+.ss-card-17 .info-container > .info:nth-child(1),
+.ss-card-17.cols-3 .info-container > .info:nth-child(2){border-color:#ffffff;}
 
 
 /* Special Date */
@@ -429,6 +434,9 @@ table.table.table-04 thead th, table.table.table-04 td{border-color:#ffffff;}
 table.table.table-05 th{background:#ffffff; color:#000000;}
 table.table.table-05 td{background:#000000; color:#ffffff; border-color:#ffffff!important;}
 
+/* Table 06 */
+table.table.table-06 th{border-color:#ffffff;}
+
 
 /* Toggle Target */
 .toggle-target{background:#000000; border-color:#ffffff;}
@@ -457,6 +465,12 @@ table.table.table-05 td{background:#000000; color:#ffffff; border-color:#ffffff!
 .about-06 .info .count-container{background:#ffffff;}
 .about-06 .info .count-container::before,
 .about-06 .info .count-container > .wrapper{background:#000000;}
+
+/* About 07 */
+.about-07{background:none!important;}
+.about-07 .about-box{background:#000000; border:1px solid #ffffff;;}
+.about-07 .about-box > .box-header .left-container{background:#ffffff; color:#000000;}
+.about-07 .about-box > .box-header{border-bottom:1px solid #ffffff;}
 
 
 /* Auth 01 */

@@ -46,8 +46,33 @@
                                     </div>
                                 </a>
                             </div>
+                            <div class="ss-card ss-card-17">
+                                <div class="wrapper color-black">
+                                    <div class="info-container">
+                                        <div class="info">
+                                            <p class="sm fw-600">ตำแหน่งงาน</p>
+                                            <p class="lg fw-600 color-01 lh-xs">
+                                                ช่างเทคนิค-สัญญาจ้าง (ประจำโครงการในกรุงเทพ)
+                                            </p>
+                                        </div>
+                                        <div class="info">
+                                            <div class="ss-stat my-0">
+                                                <div class="stat my-0">
+                                                    <em class="far fa-clock color-01 mr-2"></em> 
+                                                    <span class="fw-500">22 มกราคม  2564</span>
+                                                </div>
+                                            </div>
+                                            <p class="sm fw-500">
+                                                จำนวน 
+                                                <span class="fw-600 color-01 text-xl mx-1">10</span> 
+                                                ตำแหน่ง
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                             <form action="/" method="POST">
-                                <div class="mt-2 pt-1">
+                                <div class="mt-0">
 
                                     <div class="input-group header color-white bg-12 border bcolor-12">
                                         <p class="md fw-400">1. ข้อมูลส่วนตัว</p>
