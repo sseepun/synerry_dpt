@@ -2,49 +2,14 @@
 $(function(){ 'use strict';
 
     // Topnav
-    var topnav = $('nav.topnav'),
-        topnavSecretary = $('nav.topnav-secretary'),
-        topnavMinisite = $('nav.topnav-minisite');
+    var topnav = $('nav.topnav');
     var sidenav = $('nav.sidenav'),
         sidenavMenus = sidenav.find('.menu-container'),
         sidenavToggle = $('nav .sidenav-toggle');
 
     if(topnav.length){
-        // Topnav Dropdown
-        var topnavDropdown = $('.topnav-dropdown'),
-            topnavDropdownToggle = $('.topnav-dropdown-toggle');
-        topnavDropdownToggle.click(function(e){
-            e.preventDefault();
-            if(topnavDropdown.hasClass('active')){
-                topnavDropdown.removeClass('active');
-                topnavDropdownToggle.find('.hamburger').removeClass('active');
-                $('html, body').removeClass('topnav-dropdown-opened');
-            }else{
-                topnavDropdown.addClass('active');
-                topnavDropdownToggle.find('.hamburger').addClass('active');
-                $('html, body').addClass('topnav-dropdown-opened');
-            }
-        });
-    }
-
-    if(topnavSecretary.length){
         // Generate Sidenav
-        sidenavMenus.html( topnavSecretary.find('#topnav-menu').html() );
-        sidenavMenus.find('.num, .title, .submenu-title').remove();
-        sidenavMenus.find('.has-children').each(function(){
-            $(this).append('<div class="dropdown-toggle"><em class="fas fa-chevron-right"></em></div>');
-        });
-        sidenavMenus.find('.dropdown-toggle').click(function(e){
-            e.preventDefault();
-            var self = $(this);
-            self.toggleClass('active');
-            self.prev().slideToggle();
-        });
-    }
-
-    if(topnavMinisite.length){
-        // Generate Sidenav
-        sidenavMenus.html( topnavMinisite.find('#topnav-menu').html() );
+        sidenavMenus.html( topnav.find('#topnav-menu').html() );
         sidenavMenus.find('.num, .title, .submenu-title').remove();
         sidenavMenus.find('.has-children').each(function(){
             $(this).append('<div class="dropdown-toggle"><em class="fas fa-chevron-right"></em></div>');
@@ -101,17 +66,6 @@ $(function(){ 'use strict';
         });
     }
 
-    // Accessibility Container
-    var accessibilityContainer = $('.accessibility-container'),
-        accessibilityToggles = $('.accessibility-toggle');
-    if(accessibilityContainer.length && accessibilityToggles.length){
-        accessibilityToggles.click(function(e){
-            e.preventDefault();
-            accessibilityToggles.toggleClass('active');
-            accessibilityContainer.toggleClass('active');
-        });
-    }
-
     // Font Sizes
     var bodySize = 16;
     $('.btn.font-size-btn').click(function(e){
@@ -139,10 +93,10 @@ $(function(){ 'use strict';
         }else{
             backToTop.removeClass('active');
         }
-        if(st > 16*bodySize){
-            topnavSecretary.addClass('sticky');
+        if(st > 2.9375*bodySize){
+            topnav.addClass('sticky');
         }else{
-            topnavSecretary.removeClass('sticky');
+            topnav.removeClass('sticky');
         }
     }
     checkOnScroll( $(window).scrollTop() );

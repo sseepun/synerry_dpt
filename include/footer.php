@@ -5,105 +5,102 @@
 </a>
 
 <!-- Footer -->
-<?php if(!isset($footerNoPattern)){?>
-    <div class="footer-pattern">
-        <img src="public/assets/app/images/bg/footer.png" alt="Footer Pattern" />
-    </div>
-<?php }?>
-<nav class="footer">
+<nav class="footer bg-t border-top bcolor-t">
     <div class="container">
         <div class="blocks">
-            <div class="block left-block">
-                <div class="desc-container">
-                    <div class="logo-container">
-                        <a class="logo" href="#">
-                            <img src="public/assets/app/images/logo.png" alt="Website Logo" />
-                        </a>
+            <div class="block block-left">
+                <a class="logo" href="#">
+                    <img src="public/assets/app/images/logo.png" alt="Website Logo" />
+                    <div class="text-wrapper">
+                        <h6 class="color-p">
+                            สำนักงานผู้ดูแลนักเรียนในสหรัฐอเมริกา
+                        </h6>
+                        <p class="color-white">
+                            Office of Educational Affairs <br>
+                            Royal Thai Embassy, Washington DC
+                        </p>
                     </div>
-                    <div class="text-container">
-                        <h6 class="p fw-500">กระทรวงพลังงาน</h6>
-                        <p>
-                            อาคาร บี ศูนย์เอนเนอร์ยี่ คอมเพล็กซ์ <br>
-                            555/2 ถนนวิภาวดีรังสิต <br>
-                            แขวงจตุจักร เขตจตุจักร กรุงเทพฯ 10900
-                        </p>
-                        <p class="mt-2">
-                            สงวนลิขสิทธิ์ 2020 กระทรวงพลังงาน
-                        </p>
+                </a>
+                <div class="slot">
+                    <p class="xs color-white op-80">
+                        1906 23rd Street, N.W. <br>
+                        Washington D.C. 20008
+                    </p>
+                </div>
+                <div class="slot">
+                    <div class="btns">
+                        <a class="btn btn-social btn-color-p" href="#">
+                            <em class="fab fa-facebook-f"></em>
+                        </a>
+                        <a class="btn btn-social btn-color-p" href="#">
+                            <em class="fas fa-phone-alt"></em>
+                        </a>
+                        <a class="btn btn-social btn-color-p" href="#">
+                            <em class="fas fa-sitemap"></em>
+                        </a>
                     </div>
                 </div>
             </div>
-            <div class="block right-block">
-                <div class="blocks">
-                    <div class="block info-block">
-                        <div class="links">
-                            <a href="#">หน้าแรก</a>
-                            <a href="#">เกี่ยวกับกระทรวง</a>
-                            <a href="#">การให้บริการ</a>
-                            <a href="#">ข่าว/ประกาศ</a>
-                            <a href="#">แผน/ผลการดำเนินงาน</a>
-                            <a href="#">ติดต่อเรา</a>
-                        </div>
-                        <div class="info-container">
-                            <div class="info">
-                                <h6 class="p sm fw-400">โทรศัพท์</h6>
-                                <p>
-                                    <a href="#">02-140-7000</a>
-                                </p>
-                            </div>
-                            <div class="info">
-                                <h6 class="p sm fw-400">อีเมล</h6>
-                                <p>
-                                    <a href="#">servicelink@energy.go.th</a>
-                                </p>
-                            </div>
-                            <div class="info">
-                                <h6 class="p sm fw-400">สำนักงานปลัดกระทรวงพลังงาน</h6>
-                                <p>
-                                    โทร <a href="#">02-140-5000</a> , 
-                                    โทรสาร <a href="#">02-140-6228</a> 
-                                </p>
-                            </div>
-                            <div class="info">
-                                <h6 class="p sm fw-400">ศูนย์บริการร่วม</h6>
-                                <p>
-                                    โทร <a href="#">02-140-7000</a>
-                                </p>
-                            </div>
-                            <div class="info">
-                                <h6 class="p sm fw-400">ศูนย์ข้อมูล LPG</h6>
-                                <p>
-                                    โทร <a href="#">02-239-9898</a>
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="block social-block">
-                        <div class="btns">
-                            <a class="btn btn-social" href="#">
-                                <em class="fab fa-facebook-f"></em>
+            <div class="block block-right">
+                <div class="grids">
+                    <?php for($i=0; $i<4; $i++){?>
+                        <div class="grid md-25 xs-50">
+                            <a class="p xs fw-400 color-white h-color-p" href="#">
+                                เครือข่ายเวปที่น่าสนใจ
                             </a>
-                            <a class="btn btn-social" href="#">
-                                <em class="fab fa-youtube"></em>
-                            </a>
+                            <ul class="links">
+                                <?php
+                                    foreach([
+                                        'สำนักงาน ก.พ.', 'สนร. อังกฤษ', 'สนร. ฝรั่งเศส', 'สนร. เยอรมนี',
+                                        'สนร. ออสเตรเลีย', 'สนร. ญี่ปุ่น', 'สถานเอกอัครราชทูต ณ กรุงวอชิงตัน',
+                                        'กระทรวงต่างประเทศ'
+                                    ] as $k){
+                                ?>
+                                    <li>
+                                        <a class="p xxs fw-300 color-white h-color-p" href="#">
+                                            <?= $k ?>
+                                        </a>
+                                    </li>
+                                <?php }?>
+                            </ul>
                         </div>
-                        <div class="visitor-count">
-                            <div>3</div>
-                            <div>8</div>
-                            <div>4</div>
-                            <div>6</div>
-                            <div>7</div>
-                            <div>1</div>
-                            <div>2</div>
-                        </div>
+                    <?php }?>
+                </div>
+            </div>
+        </div>
+    </div>
+</nav>
+
+<!-- Super Footer -->
+<nav class="sfooter color-white bg-black border-top bcolor-black">
+    <div class="container">
+        <div class="blocks">
+            <div class="block">
+                <p class="xxs">
+                    1906 23rd Street, N.W., Washington D.C. 20008
+                </p>
+                <div class="d-flex ai-center mt-1">
+                    <p class="xxs">จำนวนผู้เข้าชม</p>
+                    <div class="visitor-count">
+                        <div>3</div>
+                        <div>8</div>
+                        <div>4</div>
+                        <div>6</div>
+                        <div>7</div>
+                        <div>1</div>
+                        <div>2</div>
                     </div>
                 </div>
+            </div>
+            <div class="block">
+                <p class="xxs op-70">
+                    &copy; 2021 by Office of Educational Affairs.
+                    All rights reserved.
+                </p>
                 <div class="quicklinks">
-                    <a href="#">นโยบายเว็บไซต์</a>
-                    <a href="#">นโยบายการคุ้มครองข้อมูลส่วนบุคคล</a>
-                    <a href="#">นโยบายการรักษาความมั่นคงปลอดภัยเว็บไซต์</a>
-                    <a href="#">การปฏิเสธความรับผิด</a>
-                    <a href="#">นโยบายคุ้กกี้</a>
+                    <a class="h-color-p" href="#">นโยบายเว็บไซต์</a>
+                    <a class="h-color-p" href="#">นโยบายการคุ้มครองข้อมูลส่วนบุคคล</a>
+                    <a class="h-color-p" href="#">นโยบายคุ้กกี้</a>
                 </div>
             </div>
         </div>

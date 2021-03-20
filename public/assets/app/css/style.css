@@ -2,7 +2,7 @@
 html, body{
     padding:0; margin:0; overflow-x:hidden; overflow-y:auto;
     font-size:16px; font-weight:300; line-height:1.50;
-    font-family:'Sukhumvit', sans-serif;
+    font-family:'Prompt', sans-serif;
 }
 body.loading{height:100vh!important; overflow-y:hidden!important;}
 
@@ -19,7 +19,7 @@ img.img{display:block; width:100%; height:auto;}
 
 input[type=text], input[type=email], input[type=password], input[type=date], input[type=tel],
 input[type=number], input[type=phone], input[type=submit], nput[type=file], select, 
-textarea, button{font-family:'Sukhumvit', sans-serif;}
+textarea, button{font-family:'Prompt', sans-serif;}
 
 html.topnav-dropdown-opened, body.topnav-dropdown-opened,
 html.global-search-opened, body.global-search-opened{overflow-y:hidden!important;}
@@ -77,9 +77,9 @@ h4, .h4{font-size:1.75rem;} h4.xl, .h4.xl{font-size:2.125rem;}
 h4.lg, .h4.lg{font-size:2rem;}
 h5, .h5{font-size:1.625rem;} h5.sm, .h5.sm{font-size:1.5rem;}
 h6, .h6{font-size:1.3125rem;} h6.sm, .h6.sm{font-size:1.25rem;}
-p, .p{font-size:.9375rem;} p.lg, .p.lg{font-size:1.125rem;}
-p.md, .p.md{font-size:1.0625rem;} p.sm, .p.sm{font-size:.875rem;} 
-p.xs, .p.xs{font-size:.8125rem;}
+p, .p{font-size:1rem;} p.lg, .p.lg{font-size:1.125rem;}
+p.md, .p.md{font-size:1.0625rem;} p.sm, .p.sm{font-size:.9375rem;} 
+p.xs, .p.xs{font-size:.875rem;} p.xxs, .p.xxs{font-size:.8125rem;}
 @media screen and (max-width:1199.98px){
     h2, .h2{font-size:2.875rem;} h2.lg, .h2.lg{font-size:3.0625rem;}
     h3, .h3{font-size:2.375rem;}
@@ -108,8 +108,8 @@ p.xs, .p.xs{font-size:.8125rem;}
     h4.lg, .h4.lg{font-size:1.5rem;}
     h5, .h5{font-size:1.375rem;} h5.sm, .h5.sm{font-size:1.25rem;}
     h6, .h6{font-size:1.125rem;} h6.sm, .h6.sm{font-size:1.0625rem;}
-    p, .p{font-size:.875rem;} p.lg, .p.lg{font-size:1.0625rem;} 
-    p.md, .p.md{font-size:1rem;} p.sm, .p.sm{font-size:.8125rem;}
+    p, .p{font-size:.9375rem;} p.lg, .p.lg{font-size:1.0625rem;} 
+    p.md, .p.md{font-size:1rem;} p.sm, .p.sm{font-size:.875rem;}
 }
 
 
@@ -118,15 +118,16 @@ p.xs, .p.xs{font-size:.8125rem;}
 .btn{display:inline-block; width:auto; height:auto; line-height:1.5; transition:all .25s;}
 
 .btn.btn-action{
-    font-size:.9375rem; font-weight:200; outline:none; box-shadow:none; text-decoration:none;
-    padding:.625rem 2.125rem .5rem 2.125rem; border:0; white-space:nowrap;
+    font-size:1rem; font-weight:500; outline:none; box-shadow:none;
+    padding:.5625rem 1.625rem .5rem 1.625rem; border:0; white-space:nowrap;
+    text-decoration:none; border:.125rem solid transparent;
 }
 .btn.btn-action em{transform:translateY(.0625rem);}
 .btn.btn-action em.text-2xl{transform:translate(.125rem,.125rem);}
 
 .btn.btn-social{
-    font-size:.9375rem; width:1.875rem; height:1.875rem; padding:0; margin:0; border-radius:50%;
-    line-height:2rem; text-align:center;
+    font-size:.875rem; width:1.875rem; height:1.875rem; line-height:1.875rem; padding:0;
+    margin:0; border-radius:50%; border:.125rem solid transparent; text-align:center;
 }
 .btn.btn-social.btn-social-lg{
     font-size:1.0625rem; width:2.125em; height:2.125rem; line-height:2.25rem;
@@ -134,31 +135,12 @@ p.xs, .p.xs{font-size:.8125rem;}
 
 .btn.btn-round{border-radius:1000em;}
 
-.btn.btn-sm{font-size:.875rem; padding:.5625rem 1.1875rem .4375rem 1.1875rem;}
-.btn.btn-xs{font-size:.8125rem; padding:.3125rem 1rem;}
+.btn.btn-md{font-size:1.0625rem; padding:.625rem 1.75rem .5625rem 1.75rem;}
+.btn.btn-sm{font-size:.9375rem; padding:.4375rem 1.25rem .375rem 1.25rem;}
+.btn.btn-xs{font-size:.875rem; padding:.3125rem 1rem;}
+.btn.btn-2xs{font-size:.8125rem; padding:.25rem .75rem;}
 
 .btn.btn-min-width{min-width:9rem;}
-
-/* Button Socials */
-.btn-socials{
-    width:100%; display:flex; align-items:center; justify-content:space-between;
-    flex-wrap:wrap;
-}
-.btn-socials .btn-social-custom{
-    display:flex; align-items:center; width:calc(50% - .375rem); margin:.75rem 0 0 0;
-    border-radius:.1875rem; font-size:.875rem; font-weight:300; padding:0 .5rem 0 0;
-    color:#ffffff; transition:background .25s;
-}
-.btn-socials .btn-social-custom > em{
-    display:block; width:2.5rem; height:2.5rem; line-height:2.5rem; margin:0 .5rem 0 0;
-    text-align:center; font-size:1.25rem;
-}
-.btn-socials .btn-social-custom > .text{
-    width:calc(100% - 3rem); margin:.25rem 0 0 0; white-space:nowrap;
-}
-@media screen and (max-width:575.98px){
-    .btn-socials .btn-social-custom{width:100%; margin:.5rem 0 0 0;}
-}
 
 
 /* Clip Path */
@@ -170,7 +152,7 @@ p.xs, .p.xs{font-size:.8125rem;}
 input[type=text], input[type=email], input[type=password], input[type=date], input[type=tel],
 input[type=number], input[type=phone], input[type=submit], input[type=file], select, textarea{
     border:1px solid transparent; border-radius:.25rem; box-shadow:none!important;
-    padding:.4375rem .875rem; font-size:1rem; font-weight:300; margin:0; line-height:1.5;
+    padding:.4375rem .875rem; font-size:1rem; font-weight:400; margin:0; line-height:1.5;
     outline:none!important; transition:border-color .25s, color .25s;
 }
 input[type=text].round, input[type=email].round, input[type=password].round, input[type=date].round, 
@@ -202,7 +184,7 @@ textarea[data-copy]{pointer-events:none!important;}
     display:flex; align-items:center; justify-content:center;
 }
 .select-wrapper::after{content:'\f078'; font-size:.75rem; font-weight:900;}
-.search-wrapper::after{content:'\f002'; font-size:.875rem; font-weight:900;}
+.search-wrapper::after{content:'\f002'; font-size:1.125rem; font-weight:900;}
 .date-wrapper::after{content:'\f073'; font-size:1.125rem; left:.375rem; right:auto;}
 .select-wrapper select, .search-wrapper select, .date-wrapper select{
     -moz-appearance:none; -moz-appearance:none; -webkit-appearance:none; appearance:none;
@@ -230,7 +212,7 @@ textarea[data-copy]{pointer-events:none!important;}
 .input-dropzone .dz-preview{display:none!important;}
 
 /* Input Form Group */
-.form-group{margin:.5625rem 0 0 0;}
+.form-group{margin:.625rem 0 0 0;}
 .form-group label{margin:0 0 .125rem 0;}
 .form-group .select-wrapper, .form-group .search-wrapper, 
 .form-group .date-wrapper{display:block; width:100%;}
@@ -582,7 +564,7 @@ textarea[data-copy]{pointer-events:none!important;}
 }
 
 /* Special Ads 01 */
-.ss-ads-01{border-radius:1rem; padding:1rem; overflow:hidden;}
+.ss-ads-01{border-radius:.375rem; padding:1rem; overflow:hidden;}
 .ss-ads-01 > .wrapper{display:flex; flex-wrap:wrap; width:100%; height:100%; min-height:12rem;}
 .ss-ads-01 > .wrapper > *{width:100%;}
 .ss-ads-01 .btns{margin:auto 0 0 0;}
@@ -804,10 +786,10 @@ textarea[data-copy]{pointer-events:none!important;}
 }
 
 /* Special Card 04 */
-.ss-card-04{border-radius:1rem; overflow:hidden;}
+.ss-card-04{border-radius:.375rem; overflow:hidden;}
 .ss-card-04 .text-container{
     position:relative; padding:1.75rem 1rem .375rem 1rem; border:1px solid transparent;
-    border-radius:1rem; margin:-1rem 0 0 0; transition:background .25s, border-color .25s;
+    border-radius:.375rem; margin:-1rem 0 0 0; transition:background .25s, border-color .25s;
 }
 .ss-card-04 .text-container .card-tag{
     position:absolute; top:-1.125rem; left:0; padding:.375rem 1rem; font-size:.8125rem;
@@ -839,7 +821,7 @@ textarea[data-copy]{pointer-events:none!important;}
 .ss-card-05{position:relative; display:block; width:100%; padding:2rem 0 1rem;}
 .ss-card-05 > .img-container{
     display:block; position:absolute; top:0; bottom:0; left:0; right:13.5rem;
-    border-radius:1rem; overflow:hidden;
+    border-radius:.375rem; overflow:hidden;
 }
 .ss-card-05 > .img-container .wrapper{position:relative; width:100%; height:100%;}
 .ss-card-05 > .img-container .img-wrapper{
@@ -848,7 +830,7 @@ textarea[data-copy]{pointer-events:none!important;}
 }
 .ss-card-05 > .img-container .img-wrapper.active{opacity:1; pointer-events:auto;}
 .ss-card-05 .text-container{
-    position:relative; display:block; width:100%; max-width:16.625rem; border-radius:1rem;
+    position:relative; display:block; width:100%; max-width:16.625rem; border-radius:.375rem;
     margin:0 0 0 auto; border:1px solid transparent; box-shadow:0px 2px 5px 2px rgba(0,0,0,.1);
 }
 .ss-card-05 .text-container .card-tag{
@@ -1716,7 +1698,7 @@ table.table.table-sm th:last-child{padding:.4375rem 0 .4375rem .5625rem;}
 .border-right-3{border-right:3px solid transparent!important;}
 .border-right-4{border-right:4px solid transparent!important;}
 
-.bradius-round{border-radius:1rem!important;}
+.bradius-round{border-radius:.375rem!important;}
 
 .no-bradius{border-radius:0!important;}
 .no-padding{padding:0!important;}

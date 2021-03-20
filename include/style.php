@@ -3,14 +3,20 @@
 
 <link rel="stylesheet" href="public/assets/node_modules/bootstrap/dist/css/bootstrap.min.css" />
 <link rel="stylesheet" href="public/assets/node_modules/slick-carousel/slick/slick.css" />
-
 <link rel="stylesheet" href="public/assets/node_modules/@fortawesome/fontawesome-free/css/all.css" />
-<link rel="stylesheet" href="public/assets/lib/material-design-iconic-font-2.2.0/css/material-design-iconic-font.min.css" />
 
 <link rel="stylesheet" href="public/assets/lib/fancybox-3.5.7/dist/jquery.fancybox.min.css" />
 <link rel="stylesheet" href="public/assets/lib/simplebar/simplebar.css" />
 <link rel="stylesheet" href="public/assets/lib/vanilla-datepicker/dist/css/datepicker.min.css" />
 <link rel="stylesheet" href="public/assets/lib/aos-2.3.1/aos.min.css" />
+
+<style>
+    :root{
+        --pcolor:#ffb739;
+        --scolor:#fe4d01;
+        --tcolor:#2d2b2d;
+    }
+</style>
 
 <link rel="stylesheet" href="public/assets/app/css/grids.css" />
 <link rel="stylesheet" href="public/assets/app/css/style.css" />
