@@ -94,18 +94,19 @@ nav.sfooter .quicklinks > a{color:#ffff00;}
 .btn.btn-social{background:#ffff00; color:#000000;}
 
 /* Button Socials */
-.btn-socials .btn-social-custom.fw{background:#4668b7;}
-.btn-socials .btn-social-custom.fw:hover,
-.btn-socials .btn-social-custom.fw > em{background:#3157b0;}
-.btn-socials .btn-social-custom.gg{background:#eb4033;}
-.btn-socials .btn-social-custom.gg:hover,
-.btn-socials .btn-social-custom.gg > em{background:#b62c22;}
-.btn-socials .btn-social-custom.ln{background:#3ace01;}
-.btn-socials .btn-social-custom.ln:hover,
-.btn-socials .btn-social-custom.ln > em{background:#419d1e;}
-.btn-socials .btn-social-custom.tw{background:#2cafe9;}
-.btn-socials .btn-social-custom.tw:hover,
-.btn-socials .btn-social-custom.tw > em{background:#1796ce;}
+.btn-social-custom{color:#ffffff!important;}
+.btn-social-custom.fw{background:#4668b7;}
+.btn-social-custom.fw:hover,
+.btn-social-custom.fw > em{background:#3157b0;}
+.btn-social-custom.gg{background:#eb4033;}
+.btn-social-custom.gg:hover,
+.btn-social-custom.gg > em{background:#b62c22;}
+.btn-social-custom.ln{background:#3ace01;}
+.btn-social-custom.ln:hover,
+.btn-social-custom.ln > em{background:#419d1e;}
+.btn-social-custom.tw{background:#2cafe9;}
+.btn-social-custom.tw:hover,
+.btn-social-custom.tw > em{background:#1796ce;}
 
 
 /* Inputs */

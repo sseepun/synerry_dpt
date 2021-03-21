@@ -14,7 +14,7 @@
     :root{
         --pcolor:#ffb739;
         --scolor:#fe4d01;
-        --tcolor:#2d2b2d;
+        --tcolor:#181818;
     }
 </style>
 

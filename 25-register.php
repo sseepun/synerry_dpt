@@ -3,10 +3,9 @@
 <head>
     <?php include_once('include/header.php'); ?>
     <?php include_once('include/style.php'); ?>
-    <link rel="stylesheet" href="public/assets/app/css/style-secretary.css" />
 </head>
 <body class="loading">
-    <?php include_once('include/topnav-secretary.php'); ?>
+    <?php include_once('include/topnav.php'); ?>
     <?php
         $breadcrumb = [
             [ 'url' => '#', 'display' => 'เกี่ยวกับกระทรวง' ],
@@ -14,10 +13,10 @@
         ];
         $breadcrumbTitle = 'สมัครสมาชิก';
         $breadcrumbBg = 'public/assets/app/images/bg/secretary-15.jpg';
-        include('component/breadcrumb-secretary.php');
+        include('component/breadcrumb.php');
     ?>
     
-    <section class="section-padding section-pattern-01" style="background-image:url('public/assets/app/images/bg/pattern-01.png');">
+    <section class="section-padding">
         <div class="container">
             <div class="ss-box" data-aos="fade-up" data-aos-delay="600">
                 <div class="d-flex ai-center jc-space-between fw-wrap">
@@ -29,25 +28,25 @@
                             </h6>
                         </div>
                     </div>
-                    <p class="color-gray my-2 ws-nowrap">
+                    <p class="fw-400 color-gray my-2 ws-nowrap">
                         เป็นสมาชิกแล้ว? 
-                        <a class="color-01 h-color-02" href="#">
+                        <a class="color-p h-color-s" href="#">
                             เข้าสู่ระบบ
                         </a>
                     </p>
                 </div>
                 <form action="/" method="POST">
-                    <div class="form-group mt-3">
-                        <label class="p">ชื่อ <span class="text-danger">*</span></label>
+                    <div class="form-group mt-4">
+                        <label class="p fw-400">ชื่อ <span class="text-danger">*</span></label>
                         <input type="text" class="form-control no-bradius" required title="General Text Input" />
                     </div>
                     <div class="form-group">
-                        <label class="p">นามสกุล <span class="text-danger">*</span></label>
+                        <label class="p fw-400">นามสกุล <span class="text-danger">*</span></label>
                         <input type="text" class="form-control no-bradius" required title="General Text Input" />
                     </div>
                     <div class="form-group">
                         <div class="d-flex ai-center jc-space-between fw-wrap">
-                            <label class="p ws-nowrap mr-2">รหัสผ่าน <span class="text-danger">*</span></label>
+                            <label class="p fw-400 ws-nowrap mr-2">รหัสผ่าน <span class="text-danger">*</span></label>
                             <p class="xs fw-400 color-gray">
                                 รหัสผ่านจะต้องมีตัวอักษรอย่างน้อย 8 ตัวอักษร
                             </p>
@@ -65,20 +64,17 @@
                     <fieldset>
                         <div class="form-check sm mt-4">
                             <input type="checkbox" class="form-check-input" id="c_0" value="0" title="General Checkbox Input" />
-                            <label for="c_0" class="color-gray">
+                            <label for="c_0">
                                 ข้าพเจ้ายอมรับ และได้อ่านข้อความในข้อตกลงและเงื่อนไขนี้เข้าใจโดยละเอียดแล้ว
                             </label>
                         </div>
                     </fieldset>
-                    <div class="captcha-container mt-4 pt-1">
-                        <img class="img" src="public/assets/app/images/misc/captcha.jpg" alt="CAPTCHA" />
-                    </div>
                     <div class="btns mt-4">
-                        <button type="submit" class="btn btn-action btn-color-01 btn-round btn-min-width">
-                            <em class="far fa-check-circle mr-1"></em> ยืนยันการลงทะเบียน
+                        <button type="submit" class="btn btn-action btn-color-p btn-min-width">
+                            ยืนยันการลงทะเบียน
                         </button>
-                        <button type="reset" class="btn btn-action btn-color-02 btn-round btn-min-width">
-                            <em class="far fa-times-circle mr-1"></em> ล้างข้อมูล
+                        <button type="reset" class="btn btn-action btn-color-p-inverse btn-min-width">
+                            ล้างข้อมูล
                         </button>
                     </div>
                 </form>
@@ -86,7 +82,7 @@
         </div>
     </section>
     
-    <?php include_once('include/footer-secretary.php'); ?>
+    <?php include_once('include/footer.php'); ?>
     <?php include_once('include/script.php'); ?>
 </body>
 </html>

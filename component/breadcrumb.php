@@ -8,7 +8,7 @@
                     หน้าหลัก
                 </a>
                 <?php foreach($breadcrumb as $b){?>
-                    <em class="zmdi zmdi-chevron-right p sm"></em>
+                    <em class="fas fa-chevron-right"></em>
                     <a class="p sm" href="<?= $b['url'] ?>">
                         <?= $b['display'] ?>
                     </a>

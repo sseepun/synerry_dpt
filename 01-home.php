@@ -115,33 +115,30 @@
                             <div class="grids">
                                 <div class="grid sm-50 mt-0">
                                     <div class="form-group">
-                                        <label class="p sm fw-400">ชื่อ-นามสกุล <span class="text-danger">*</span></label>
+                                        <label class="p fw-400">ชื่อ-นามสกุล <span class="text-danger">*</span></label>
                                         <input type="text" name="name" class="form-control" required title="General Text Input" />
                                     </div>
                                 </div>
                                 <div class="grid sm-50 mt-0">
                                     <div class="form-group">
-                                        <label class="p sm fw-400">อีเมล <span class="text-danger">*</span></label>
+                                        <label class="p fw-400">อีเมล <span class="text-danger">*</span></label>
                                         <input type="email" name="email" class="form-control" required title="General Text Input" />
                                     </div>
                                 </div>
                                 <div class="grid sm-100 mt-0">
                                     <div class="form-group">
-                                        <label class="p sm fw-400">เนื้อเรื่อง <span class="text-danger">*</span></label>
+                                        <label class="p fw-400">เนื้อเรื่อง <span class="text-danger">*</span></label>
                                         <input type="text" name="subject" class="form-control" required title="General Text Input" />
                                     </div>
                                 </div>
                                 <div class="grid sm-100 mt-0">
                                     <div class="form-group">
-                                        <label>ข้อความ <span class="text-danger">*</span></label>
+                                        <label class="p fw-400">ข้อความ <span class="text-danger">*</span></label>
                                         <textarea name="message" rows="5" class="form-control" required title="General Textarea"></textarea>
                                     </div>
                                 </div>
                             </div>
-                            <div class="captcha-container my-3">
-                                <img class="img" src="public/assets/app/images/misc/captcha.jpg" alt="CAPTCHA" />
-                            </div>
-                            <div class="btns">
+                            <div class="btns mt-3">
                                 <button type="submit" class="btn btn-action btn-color-p btn-min-width">
                                     ส่งข้อความ
                                 </button>

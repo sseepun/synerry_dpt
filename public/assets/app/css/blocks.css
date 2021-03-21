@@ -313,7 +313,9 @@
     width:100%; background-size:cover; background-position:center; padding:0 0 2rem 0;
 }
 .banner-01 .bullet{position:absolute; bottom:1.5rem; left:0; right:0;}
-.banner-01 .bullet .bullet-wrapper{width:100%; display:flex; align-items:center; flex-wrap:wrap;}
+.banner-01 .bullet .bullet-wrapper{
+    width:100%; display:flex; align-items:center; justify-content:flex-end; flex-wrap:wrap;
+}
 .banner-01 .slick-dots{
     display:flex; width:100%; align-items:center; justify-content:center;
     list-style:none; padding:0; margin:0; margin:0 .5rem 0 0;
@@ -331,7 +333,7 @@
     border-radius:50%; transition:background .25s, color .25s;
 }
 .banner-01 .arrows button::before{
-    font-family:'Font Awesome 5 Free'; font-weight:900; font-size:1rem;
+    font-family:'Font Awesome 5 Free'; font-weight:900; font-size:.875rem;
 }
 .banner-01 .arrows button.slick-prev::before{content:'\f053';}
 .banner-01 .arrows button.slick-next::before{content:'\f054';}
@@ -476,67 +478,12 @@
 .breadcrumb-01{width:100%; padding:1.5rem 0 3.75rem 0; box-shadow:0 0 16px 8px rgba(0,0,0,.15);}
 .breadcrumb-01 .wrapper{width:100%;}
 .breadcrumb-01 .wrapper a{display:inline-block; color:#ffffff; font-weight:400;}
-.breadcrumb-01 .wrapper a:hover, .breadcrumb-01 .wrapper a:last-child{color:#fe4d01;}
+.breadcrumb-01 .wrapper a:hover, 
+.breadcrumb-01 .wrapper a:last-child{color:#ffb739; color:var(--pcolor);}
 .breadcrumb-01 .wrapper em{
-    display:inline-block; color:#ffffff; margin:0 .3125rem; transform:translateY(.0625rem);
+    display:inline-block; color:#ffffff; margin:0 .3125rem; font-size:.625rem;
 }
 .breadcrumb-01 .title{margin:.375rem 0 0 0; color:#ffffff;}
-
-/* Breadcrumb 02 */
-.breadcrumb-02{width:100%; padding:6.25rem 0 3.75rem 0;}
-.breadcrumb-02 .outter-wrapper{display:flex; width:100%;}
-.breadcrumb-02 .wrapper{
-    width:auto; padding:.4375rem 1.125rem .375rem 1.125rem; border-radius:1000em;
-    background:#ffffff;
-}
-.breadcrumb-02 .wrapper a{display:inline-block; color:#000000; font-weight:300;}
-.breadcrumb-02 .wrapper a:hover, .breadcrumb-02 .wrapper a:last-child{color:#fe4d01;}
-.breadcrumb-02 .wrapper em{
-    display:inline-block; color:#000000; margin:0 .3125rem; font-size:.375rem;
-    transform:translateY(-.125rem);
-}
-.breadcrumb-02 .title{margin:.375rem 0 0 0; color:#ffffff;}
-@media screen and (max-width:1199.98px){
-    .breadcrumb-02{padding:5.5rem 0 3.75rem 0;}
-}
-@media screen and (max-width:991.98px){
-    .breadcrumb-02 .wrapper{padding:.4375rem 1rem .375rem 1rem;}
-}
-
-/* Breadcrumb 03 */
-.breadcrumb-03{width:100%;}
-.breadcrumb-03 > .top-container{
-    position:relative; width:100%; padding:4rem 0 8rem 0;
-    background-size:cover; background-position:center; background-repeat:no-repeat;
-}
-.breadcrumb-03 > .bottom-container{width:100%;}
-.breadcrumb-03 .text-wrapper{width:100%; display:flex; justify-content:flex-end; color:#000000;}
-.breadcrumb-03 .text-wrapper h6{color:#fe4d01;}
-.breadcrumb-03 .text-container{
-    position:absolute; bottom:0; left:0; padding:.75rem 2rem .625rem 2rem;
-    border-left:0!important;
-}
-.breadcrumb-03 .blocks{
-    display:flex; align-items:center; justify-content:space-between; flex-wrap:wrap;
-    width:100%; padding:.125rem 0;
-}
-.breadcrumb-03 .block{padding:.125rem 0; display:flex; align-items:center;}
-.breadcrumb-03 > .bottom-container a{display:inline-block; font-weight:300;}
-.breadcrumb-03 > .bottom-container em{display:inline-block; margin:0 .5rem;}
-.breadcrumb-03 > .bottom-container a > em{margin:0; transform:translateY(-.0625rem);}
-.breadcrumb-03 .search-wrapper > input[type=text]{
-    border-radius:0; border-top:0; border-left:0; border-right:0;
-}
-@media screen and (max-width:991.98px){
-    .breadcrumb-03 > .top-container{padding:3.5rem 0 7.5rem 0;}
-    .breadcrumb-03 .text-container{padding:.625rem 1.5rem .5rem 1.5rem;}
-}
-@media screen and (max-width:767.98px){
-    .breadcrumb-03 > .top-container{padding:3.25rem 0 6.75rem 0;}
-    .breadcrumb-03 .text-container{padding:.625rem 1rem .5rem 1rem;}
-    .breadcrumb-03 .blocks{padding:.5rem 0 .3125rem 0;}
-    .breadcrumb-03 .block{width:100%; justify-content:center;}
-}
 
 
 /* Client 01 */
