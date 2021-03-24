@@ -1034,40 +1034,17 @@
 }
 .pagination-01 .page-btn{
     display:inline-block; text-decoration:none; height:1.8375rem; width:1.8375rem;
-    line-height:1.6875rem; font-size:.875rem; border-radius:.25rem; font-weight:400; padding:0;
+    line-height:1.75rem; font-size:.875rem; border-radius:.25rem; font-weight:600; padding:0;
     margin:.125rem; border:1.8px solid transparent; border-radius:50%; text-align:center;
     transition:background .25s, color .25s, border-color .25s;
 }
 .pagination-01 .page-btn.active{font-weight:500;}
 .pagination-01 .page-btn.page-first, .pagination-01 .page-btn.page-prev, 
-.pagination-01 .page-btn.page-next, .pagination-01 .page-btn.page-last{line-height:1.75rem;}
+.pagination-01 .page-btn.page-next, .pagination-01 .page-btn.page-last{
+    line-height:1.75rem; font-size:.8125rem;
+}
 .pagination-01 .page-btn.disabled{opacity:.5; pointer-events:none;}
 .pagination-01 .btn{margin:0 0 0 .375rem;}
-
-/* Pagination 02 */
-.pagination-02{width:100%; padding:.625rem 0; text-align:center;}
-.pagination-02 > .wrapper{
-    display:flex; width:100%; align-items:center; justify-content:center; flex-wrap:wrap;
-}
-.pagination-02 .page-btn{
-    display:inline-block; text-decoration:none; height:1.8375rem; width:1.8375rem;
-    line-height:1.6875rem; font-size:.875rem; border-radius:.25rem; font-weight:400; padding:0;
-    margin:.0625rem; border:1.8px solid transparent; border-radius:50%; text-align:center;
-    transition:background .25s, color .25s, border-color .25s;
-}
-.pagination-02 .page-btn.active{font-weight:500;}
-.pagination-02 .page-btn > em{
-    display:inline-block; font-size:1rem; line-height:1; margin:0 .0625rem;
-    letter-spacing:-.3125rem; transform:translateY(.125rem);
-}
-.pagination-02 .page-btn.page-first, .pagination-02 .page-btn.page-prev, 
-.pagination-02 .page-btn.page-next, .pagination-02 .page-btn.page-last{
-    width:auto; border-radius:.25rem; font-size:.8125rem; height:auto; padding:0 .125rem;
-}
-.pagination-02 .page-btn.disabled{opacity:.5; pointer-events:none;}
-@media screen and (max-width:575.98px){
-    .pagination-02 .page-btn.page-first, .pagination-02 .page-btn.page-last{display:none;}
-}
 
 
 /* Progress 01 */
@@ -1089,7 +1066,6 @@
 
 
 /* Sitemap 01 */
-.sitemap-01 .grid{border-left:1px solid transparent;}
 .sitemap-01 .sitemap{width:100%; margin:0 0 .75rem 0;}
 .sitemap-01 .sitemap > .header{
     padding:.625rem 0 .625rem .625rem; border-bottom:1px solid transparent;
@@ -1108,6 +1084,11 @@
     content:''; position:absolute; top:1.0625rem; left:1.25rem; width:.375rem; height:.375rem;
 }
 .sitemap-01 .sitemap li > ul > li > a{border-bottom:0;}
+.sitemap-01 .sitemap-card{
+    display:block; width:100%; border:1px solid transparent; border-radius:.375rem;
+}
+.sitemap-01 .sitemap-card .text-container{width:100%; text-align:center; padding:.75rem;}
+.sitemap-01 .sitemap-card .title{transition:color .25s;}
 
 
 /* Sitemap 02 */

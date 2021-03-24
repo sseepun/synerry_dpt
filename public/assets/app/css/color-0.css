@@ -278,13 +278,13 @@ input[type=file].fgray, select.fgray, textarea.fgray{background:#f8f9fa!importan
 
 /* Popup */
 .popup-container .popup-box > .content-container{background:#ffffff;}
-.popup-container .popup-box > .btn-close{background:#cd0101; color:#ffffff;}
-.popup-container .popup-box > .btn-close:hover{background:#fe4d01;}
+.popup-container .popup-box > .btn-close{background:#ffb739; background:var(--pcolor);}
+.popup-container .popup-box .hamburger > *{background:#181818; background:var(--tcolor);}
 
 
 /* Post Stat */
 .post-stat .stat{color:#000000;}
-.post-stat .stat em{color:#ffffff; background:#fe4d01;}
+.post-stat .stat em{color:#ffffff; background:#ffb739; background:var(--pcolor);}
 
 
 /* Special Border */
@@ -494,7 +494,7 @@ input[type=file].fgray, select.fgray, textarea.fgray{background:#f8f9fa!importan
 
 
 /* Special List 01 */
-.ss-list-01 > li::before{background:#fe4d01;}
+.ss-list-01 > li::before{background:#ffb739; background:var(--pcolor);}
 
 
 /* Special Separation 01 */
@@ -740,23 +740,17 @@ table.table.table-06 th{background:#e9e9e9;}
 
 
 /* Pagination 01 */
-.pagination-01 .page-btn{color:#fe4d01; border-color:#e1e1e1; background:#ffffff;}
+.pagination-01 .page-btn{
+    color:#ffb739; color:var(--pcolor); border-color:#e1e1e1; background:#ffffff;
+}
 .pagination-01 .page-btn:hover, .pagination-01 .page-btn.active{
-    border-color:#fe4d01; background:#fe4d01!important; color:#ffffff;
+    border-color:#ffb739; border-color:var(--pcolor); color:#ffffff;
+    background:#ffb739!important; background:var(--pcolor)!important;
 }
 .pagination-01 .page-btn.page-first, .pagination-01 .page-btn.page-prev, 
 .pagination-01 .page-btn.page-next, .pagination-01 .page-btn.page-last{
     color:#ffffff; background:#e1e1e1;
 }
-
-/* Pagination 02 */
-.pagination-02 .page-btn:hover, 
-.pagination-02 .page-btn.active{background:#ff4917; color:#ffffff;}
-.pagination-02 .page-btn.page-first:hover, .pagination-02 .page-btn.page-prev:hover, 
-.pagination-02 .page-btn.page-next:hover, .pagination-02 .page-btn.page-last:hover{
-    background:none; color:#ff4917;
-}
-.pagination-02 .page-btn > em{color:#ff4917;}
 
 
 /* Progress 01 */
@@ -770,6 +764,9 @@ table.table.table-06 th{background:#e9e9e9;}
 .sitemap-01 .sitemap li > ul{border-color:#e1e1e1;}
 .sitemap-01 .sitemap a:hover{color:#fe4d01;}
 .sitemap-01 .sitemap li > ul > li::before{background:#fe4d01;}
+.sitemap-01 .sitemap-card{border-color:#e1e1e1;}
+.sitemap-01 .sitemap-card .title{color:#000000;}
+.sitemap-01 .sitemap-card:hover .title{color:#ffb739; color:var(--pcolor);}
 
 /* Sitemap 02 */
 .sitemap-02 .sitemap a:hover{color:#fe4d01;}

@@ -202,6 +202,7 @@ input[type=number], input[type=phone], input[type=submit], input[type=file], sel
 /* Popup */
 .popup-container .popup-box > .content-container{background:#000000; border-color:#ffffff;}
 .popup-container .popup-box > .btn-close{background:#ffffff; color:#000000;}
+.popup-container .popup-box .hamburger > *{background:#000000;}
 
 
 /* Post Stat */
@@ -574,15 +575,6 @@ table.table.table-06 th{border-color:#ffffff;}
 .pagination-01 .page-btn:hover, .pagination-01 .page-btn.active{
     background:#000000!important; color:#ffffff;
 }
-
-/* Pagination 02 */
-.pagination-02 .page-btn:hover, 
-.pagination-02 .page-btn.active{background:#ffffff; color:#000000;}
-.pagination-02 .page-btn.page-first:hover, .pagination-02 .page-btn.page-prev:hover, 
-.pagination-02 .page-btn.page-next:hover, .pagination-02 .page-btn.page-last:hover{
-    background:none; color:#ffffff;
-}
-.pagination-02 .page-btn em{color:#ffffff;}
 
 
 /* Progress 01 */

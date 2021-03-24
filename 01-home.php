@@ -66,7 +66,7 @@
                                                 </div>
                                             </a>
                                             <div class="text-container">
-                                                <div class="card-tag">ข่าวประชาสัมพันธ์</div>
+                                                <div class="card-tag"><?= $k ?></div>
                                                 <a class="title p md fw-600" href="#">
                                                     สำนักงานปลัดกระทรวงพลังงานได้รับรางวัลเลิศรัฐ 
                                                     สาขาการบริหารราชการแบบมีส่วนร่วม ประจำปี พ.ศ. 2562

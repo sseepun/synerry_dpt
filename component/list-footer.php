@@ -4,7 +4,7 @@
         <?php if(in_array('total', $listFooter)){?>
             <div class="block">
                 <div class="text-wrapper color-gray text-sm">
-                    จำนวนทั้งหมด <span class="fw-600 color-01">400 รายการ</span> 
+                    จำนวนทั้งหมด <span class="fw-600 color-p">400 รายการ</span> 
                 </div>
             </div>
         <?php }?>
@@ -13,7 +13,7 @@
                 <div class="pagination-01">
                     <div class="wrapper">
                         <a href="#" class="page-btn page-prev disabled">
-                            <em class="zmdi zmdi-arrow-left"></em>
+                            <em class="fas fa-chevron-left"></em>
                         </a>
                         <a href="#" class="page-btn active">01</a>
                         <a href="#" class="page-btn">02</a>
@@ -21,7 +21,7 @@
                         <a href="#" class="page-btn">04</a>
                         <a href="#" class="page-btn">05</a>
                         <a href="#" class="page-btn page-next">
-                            <em class="zmdi zmdi-arrow-right"></em>
+                            <em class="fas fa-chevron-right"></em>
                         </a>
                     </div>
                 </div>
@@ -32,7 +32,7 @@
                 <div class="text-wrapper color-gray text-sm">
                     แสดงผลต่อหน้า
                     <div class="select-wrapper">
-                        <select class="pp color-01 fw-600 round">
+                        <select class="pp color-p fw-600">
                             <option value="10">10</option>
                             <option value="25">25</option>
                             <option value="50">50</option>

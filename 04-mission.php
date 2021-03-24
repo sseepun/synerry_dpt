@@ -3,18 +3,17 @@
 <head>
     <?php include_once('include/header.php'); ?>
     <?php include_once('include/style.php'); ?>
-    <link rel="stylesheet" href="public/assets/app/css/style-secretary.css" />
 </head>
 <body class="loading">
-    <?php include_once('include/topnav-secretary.php'); ?>
+    <?php include_once('include/topnav.php'); ?>
     <?php
         $breadcrumb = [
             [ 'url' => '#', 'display' => 'เกี่ยวกับกระทรวง' ],
             [ 'url' => '#', 'display' => 'วิสัยทัศน์ พันธกิจ' ],
         ];
         $breadcrumbTitle = 'วิสัยทัศน์ พันธกิจ';
-        $breadcrumbBg = 'public/assets/app/images/bg/secretary-02.jpg';
-        include('component/breadcrumb-secretary.php');
+        $breadcrumbBg = 'public/assets/app/images/bg/02.jpg';
+        include('component/breadcrumb.php');
     ?>
     
     <section class="about-01 img-fill" style="background-image:url('public/assets/app/images/bg/mission-01.jpg');">
@@ -51,13 +50,7 @@
         </div>
     </section>
     
-    <section class="section-padding section-pattern-01 pt-0" style="background-image:url('public/assets/app/images/bg/pattern-01.png');">
-        <div class="container">
-            <h6 class="d-none">Placeholder Text</h6>
-        </div>
-    </section>
-    
-    <?php include_once('include/footer-secretary.php'); ?>
+    <?php include_once('include/footer.php'); ?>
     <?php include_once('include/script.php'); ?>
 </body>
 </html>
