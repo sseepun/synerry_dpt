@@ -3,31 +3,27 @@
 <head>
     <?php include_once('include/header.php'); ?>
     <?php include_once('include/style.php'); ?>
-    <link rel="stylesheet" href="public/assets/app/css/style-secretary.css" />
 </head>
 <body class="loading">
-    <?php include_once('include/topnav-secretary.php'); ?>
+    <?php include_once('include/topnav.php'); ?>
     <?php
         $breadcrumb = [
             [ 'url' => '#', 'display' => 'เกี่ยวกับกระทรวง' ],
             [ 'url' => '#', 'display' => 'แผนผังเว็บไซต์' ],
         ];
         $breadcrumbTitle = 'แผนผังเว็บไซต์';
-        $breadcrumbBg = 'public/assets/app/images/bg/secretary-09.jpg';
-        include('component/breadcrumb-secretary.php');
+        $breadcrumbBg = 'public/assets/app/images/bg/09.jpg';
+        include('component/breadcrumb.php');
     ?>
     
-    <section class="sitemap-01 section-padding section-pattern-01" style="background-image:url('public/assets/app/images/bg/pattern-01.png');">
+    <section class="sitemap-01 section-padding">
         <div class="container">
             <div class="grids" data-aos="fade-up" data-aos-delay="300">
-                <div class="grid lg-1-3 md-50 sm-100 mt-0">
+                <div class="grid lg-1-3 md-50 sm-100 mt-0 border-left">
 
                     <div class="sitemap">
                         <div class="header">
-                            <div class="icon">
-                                <img src="public/assets/app/images/icon/sitemap-01.png" alt="Sitemap Icon" />
-                            </div>
-                            <h6 class="p md fw-600 color-black">
+                            <h6 class="fw-600 color-black">
                                 หน้าหลัก
                             </h6>
                         </div>
@@ -42,10 +38,7 @@
 
                     <div class="sitemap">
                         <div class="header">
-                            <div class="icon">
-                                <img src="public/assets/app/images/icon/sitemap-02.png" alt="Sitemap Icon" />
-                            </div>
-                            <h6 class="p md fw-600 color-black">
+                            <h6 class="fw-600 color-black">
                                 เกี่ยวกับกระทรวง
                             </h6>
                         </div>
@@ -76,14 +69,11 @@
                     </div>
 
                 </div>
-                <div class="grid lg-1-3 md-50 sm-100 mt-0">
+                <div class="grid lg-1-3 md-50 sm-100 mt-0 border-left">
 
                     <div class="sitemap">
                         <div class="header">
-                            <div class="icon">
-                                <img src="public/assets/app/images/icon/sitemap-03.png" alt="Sitemap Icon" />
-                            </div>
-                            <h6 class="p md fw-600 color-black">
+                            <h6 class="fw-600 color-black">
                                 แผน/ผลการดำเนินงาน
                             </h6>
                         </div>
@@ -122,10 +112,7 @@
 
                     <div class="sitemap">
                         <div class="header">
-                            <div class="icon">
-                                <img src="public/assets/app/images/icon/sitemap-04.png" alt="Sitemap Icon" />
-                            </div>
-                            <h6 class="p md fw-600 color-black">
+                            <h6 class="fw-600 color-black">
                                 ติดต่อเรา
                             </h6>
                         </div>
@@ -136,14 +123,11 @@
                     </div>
                 
                 </div>
-                <div class="grid lg-1-3 md-50 sm-100 mt-0">
+                <div class="grid lg-1-3 md-50 sm-100 mt-0 border-left">
 
                     <div class="sitemap">
                         <div class="header">
-                            <div class="icon">
-                                <img src="public/assets/app/images/icon/sitemap-05.png" alt="Sitemap Icon" />
-                            </div>
-                            <h6 class="p md fw-600 color-black">
+                            <h6 class="fw-600 color-black">
                                 การให้บริการ
                             </h6>
                         </div>
@@ -167,10 +151,7 @@
 
                     <div class="sitemap">
                         <div class="header">
-                            <div class="icon">
-                                <img src="public/assets/app/images/icon/sitemap-06.png" alt="Sitemap Icon" />
-                            </div>
-                            <h6 class="p md fw-600 color-black">
+                            <h6 class="fw-600 color-black">
                                 ข่าว/ประกาศ
                             </h6>
                         </div>
@@ -207,7 +188,7 @@
         </div>
     </section>
     
-    <?php include_once('include/footer-secretary.php'); ?>
+    <?php include_once('include/footer.php'); ?>
     <?php include_once('include/script.php'); ?>
 </body>
 </html>

@@ -3,21 +3,20 @@
 <head>
     <?php include_once('include/header.php'); ?>
     <?php include_once('include/style.php'); ?>
-    <link rel="stylesheet" href="public/assets/app/css/style-secretary.css" />
 </head>
 <body class="loading">
-    <?php include_once('include/topnav-secretary.php'); ?>
+    <?php include_once('include/topnav.php'); ?>
     <?php
         $breadcrumb = [
             [ 'url' => '#', 'display' => 'ข่าว/ประกาศ' ],
             [ 'url' => '#', 'display' => 'ปฏิทินกิจกรรม' ],
         ];
         $breadcrumbTitle = 'ปฏิทินกิจกรรม';
-        $breadcrumbBg = 'public/assets/app/images/bg/secretary-21.jpg';
-        include('component/breadcrumb-secretary.php');
+        $breadcrumbBg = 'public/assets/app/images/bg/21.jpg';
+        include('component/breadcrumb.php');
     ?>
     
-    <section class="section-padding section-pattern-01" style="background-image:url('public/assets/app/images/bg/pattern-01.png');">
+    <section class="section-padding">
         <div class="container">
             <div data-aos="fade-up" data-aos-delay="300">
                 <?php
@@ -28,29 +27,25 @@
             <div class="mt-4" data-aos="fade-up" data-aos-delay="450">
                 <div class="d-flex ai-center jc-space-between fw-wrap">
                     <h6 class="h5 sm fw-600 ws-nowrap mr-3">
-                        กิจกรรมในสัปดาห์นี้
+                        กิจกรรมทั้งหมด
                     </h6>
                     <div class="btns width-auto my-1">
-                        <a class="btn btn-action btn-color-04 btn-sm btn-round" href="#">
-                            กิจกรรมในเดือนนี้ <em class="far fa-calendar-alt ml-1"></em>
-                        </a>
-                        <a class="btn btn-action btn-color-01 btn-sm btn-round" href="#">
-                            กิจกรรมทั้งหมด <em class="far fa-arrow-alt-circle-right ml-1"></em>
+                        <a class="btn btn-action btn-color-p btn-sm" href="#">
+                            ปฏิทินกิจกรรม <em class="far fa-calendar-alt ml-1"></em>
                         </a>
                     </div>
                 </div>
-
                 <?php for($i=0; $i<12; $i++){?>
-                    <div class="ss-card ss-card-09 bradius-round ovf-hidden">
+                    <div class="ss-card ss-card-09 bradius-round">
                         <div class="ss-date-container">
-                            <div class="ss-date bradius-round ovf-hidden">
+                            <div class="ss-date bradius-round">
                                 <div class="date">22</div>
                                 <div class="month">มกราคม</div>
                                 <div class="year">2564</div>
                             </div>
                         </div>
                         <div class="img-container bradius-round ovf-hidden">
-                            <a class="ss-img adaptive-list clip-path-01" href="#">
+                            <a class="ss-img adaptive-list" href="#">
                                 <div class="img-bg" style="background-image:url('public/assets/app/images/content/0<?= $i%5+1 ?>.jpg');"></div>
                                 <div class="hover-container">
                                     <div class="icon">
@@ -83,7 +78,7 @@
                                 HR Forum 2020, Big Data
                             </p>
                             <div class="btns mt-3">
-                                <a class="btn btn-action btn-color-01 btn-xs btn-round" href="#">
+                                <a class="btn btn-action btn-color-p btn-xs" href="#">
                                     รายละเอียดเพิ่มเติม
                                 </a>
                             </div>
@@ -100,7 +95,7 @@
         </div>
     </section>
     
-    <?php include_once('include/footer-secretary.php'); ?>
+    <?php include_once('include/footer.php'); ?>
     <?php include_once('include/script.php'); ?>
 </body>
 </html>

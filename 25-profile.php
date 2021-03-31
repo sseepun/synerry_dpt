@@ -12,7 +12,7 @@
             [ 'url' => '#', 'display' => 'ข้อมูลของฉัน' ],
         ];
         $breadcrumbTitle = 'ข้อมูลของฉัน';
-        $breadcrumbBg = 'public/assets/app/images/bg/secretary-15.jpg';
+        $breadcrumbBg = 'public/assets/app/images/bg/15.jpg';
         include('component/breadcrumb.php');
     ?>
     

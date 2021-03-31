@@ -12,7 +12,7 @@
             [ 'url' => '#', 'display' => 'เข้าสู่ระบบ' ],
         ];
         $breadcrumbTitle = 'เข้าสู่ระบบ';
-        $breadcrumbBg = 'public/assets/app/images/bg/secretary-15.jpg';
+        $breadcrumbBg = 'public/assets/app/images/bg/15.jpg';
         include('component/breadcrumb.php');
     ?>
     

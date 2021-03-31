@@ -3,32 +3,31 @@
 <head>
     <?php include_once('include/header.php'); ?>
     <?php include_once('include/style.php'); ?>
-    <link rel="stylesheet" href="public/assets/app/css/style-secretary.css" />
 </head>
 <body class="loading">
-    <?php include_once('include/topnav-secretary.php'); ?>
+    <?php include_once('include/topnav.php'); ?>
     <?php
         $breadcrumb = [
             [ 'url' => '#', 'display' => 'ข่าว/ประกาศ' ],
             [ 'url' => '#', 'display' => 'ปฏิทินกิจกรรม' ],
         ];
         $breadcrumbTitle = 'ปฏิทินกิจกรรม';
-        $breadcrumbBg = 'public/assets/app/images/bg/secretary-21.jpg';
-        include('component/breadcrumb-secretary.php');
+        $breadcrumbBg = 'public/assets/app/images/bg/21.jpg';
+        include('component/breadcrumb.php');
     ?>
     
-    <section class="section-padding section-pattern-01" style="background-image:url('public/assets/app/images/bg/pattern-01.png');">
+    <section class="section-padding">
         <div class="container">
             
             <!-- Calendar Header - Month -->
             <div class="calendar-header month mb-4" data-aos="fade-up" data-aos-delay="300">
                 <div class="month-selector">
-                    <div class="calendar-btn p md fw-500 color-01 h-color-02" id="prev-month-btn">
+                    <div class="calendar-btn p md fw-500 color-p h-color-s" id="prev-month-btn">
                         <em class="zmdi zmdi-chevron-left h6 mr-2"></em>
                         <span>&nbsp;</span>
                     </div>
                     <h6 class="calendar-title h4 xl fw-500" id="calendar-title">&nbsp;</h6>
-                    <div class="calendar-btn p md fw-500 color-01 h-color-02" id="next-month-btn">
+                    <div class="calendar-btn p md fw-500 color-p h-color-s" id="next-month-btn">
                         <span>&nbsp;</span>
                         <em class="zmdi zmdi-chevron-right h6 ml-2"></em>
                     </div>
@@ -58,7 +57,7 @@
         </div>
     </section>
     
-    <?php include_once('include/footer-secretary.php'); ?>
+    <?php include_once('include/footer.php'); ?>
     <?php include_once('include/script.php'); ?>
 
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/@fullcalendar/core@4.4.0/main.min.css" />
@@ -121,17 +120,17 @@
                 events: [
                     {
                         title: 'วาระการประชุม ดึงเอกชนร่วมพีพีพีจัดระเบียบสายสื่อสาร',
-                        start: '2021-03-08',
+                        start: '2021-03-31',
                         customStartTime: '12:45 น.',
-                        end: '2021-03-08',
+                        end: '2021-03-31',
                         customEndTime: '15:00 น.',
                         url: '#',
                     },
                     {
                         title: 'วาระการประชุม ดึงเอกชนร่วมพีพีพีจัดระเบียบสายสื่อสาร',
-                        start: '2021-03-08',
+                        start: '2021-03-31',
                         customStartTime: '12:45 น.',
-                        end: '2021-03-08',
+                        end: '2021-03-31',
                         customEndTime: '15:00 น.',
                         url: '#',
                     },

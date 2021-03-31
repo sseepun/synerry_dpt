@@ -119,9 +119,6 @@ input[type=number], input[type=phone], input[type=submit], input[type=file], sel
 .select-wrapper::after, .search-wrapper::after, .date-wrapper::after{color:#000000;}
 
 
-/* Calendar Wrapper */
-.calendar-wrapper.minisite{border:#ffffff!important;}
-
 /* Calendar - Month */
 .calendar-month .fc-day-header{color:#ffffff;}
 .calendar-month .fc-day-top > span{background:#ffffff; color:#000000;}
@@ -134,10 +131,6 @@ input[type=number], input[type=phone], input[type=submit], input[type=file], sel
     border-bottom:1px solid #ffffff; background:#000000;
 }
 .calendar-month .fc-day:hover{background:rgba(255,255,255,.2);}
-.calendar-month.minisite .fc-day-header > span{
-    color:#ffffff; border-top-color:#ffffff!important;
-    border-bottom-color:#ffffff!important;
-}
 
 /* Calendar - Week */
 .calendar-week .fc-view-container{border-color:#ffffff!important;}
@@ -397,30 +390,12 @@ input[type=number], input[type=phone], input[type=submit], input[type=file], sel
 
 /* Table */
 table.table td{border-color:#ffffff;}
-table.table .sep{background:#ffffff;}
-table.table .ticon{color:#000000!important; background:#ffffff!important;}
-table.table .profile-card > .profile-icon{background:#ffffff;}
 
 /* Table 01 */
 table.table.table-01 th{background:#ffffff; color:#000000;}
 table.table.table-01 td{color:#ffffff; border-color:#ffffff!important;}
-
-/* Table 02 */
-table.table.table-02{border-color:#ffffff;}
-
-/* Table 03 */
-table.table.table-03, table.table.table-03 tfoot th,
-table.table.table-03 td{border-color:#ffffff;}
-
-/* Table 04 */
-table.table.table-04 thead th, table.table.table-04 td{border-color:#ffffff;}
-
-/* Table 05 */
-table.table.table-05 th{background:#ffffff; color:#000000;}
-table.table.table-05 td{background:#000000; color:#ffffff; border-color:#ffffff!important;}
-
-/* Table 06 */
-table.table.table-06 th{border-color:#ffffff;}
+table.table.table-01 td.header{border-color:#ffffff!important;}
+table.table.table-01 .status{color:#ffffff;}
 
 
 /* Toggle Target */
@@ -512,23 +487,6 @@ table.table.table-06 th{border-color:#ffffff;}
 .faq-01 .faq > .answer .ftag{background:#ffffff; color:#000000;}
 .faq-01 .faq > .answer .content{border-color:#ffffff;}
 
-/* Faq 02 */
-.faq-02 .faq > .question .ftag{background:#ffffff; color:#000000;}
-.faq-02 .faq > .question .text-container{
-    background:#000000; color:#ffffff; border-color:#ffffff;
-}
-.faq-02 .faq .arrow::before, .faq-02 .faq .arrow::after{background:#ffffff;}
-.faq-02 .faq > .answer > .wrapper{
-    border-color:#ffffff; background:#000000; border-right:1px solid #ffffff;
-}
-.faq-02 .faq > .answer .ftag{
-    background:#ffffff; color:#000000; border-top:1px solid #000000;
-}
-.faq-02.style-custom .faq > .question .ftag{
-    color:#000000; background:#ffffff; border-color:#ffffff;
-}
-.faq-02.style-custom .faq > .question .text-container{border-color:#ffffff;}
-
 
 /* History 01 */
 .history-01 .info::before{background:#ffffff;}
@@ -550,14 +508,6 @@ table.table.table-06 th{border-color:#ffffff;}
 .intro-06 .slide-container::after{
     background:linear-gradient(to right, rgba(0,0,0,1), rgba(0,0,0,0));
 }
-
-/* Intro 07 */
-.intro-07 .icon-blocks .block::before{background:#ffffff;}
-.intro-07 .icon-blocks .block:hover p{color:#000000;}
-.intro-07 .icon-blocks .block .img-icon{background:#000000;}
-.intro-07 .slide-container .arrows{border-color:#ffffff;}
-.intro-07 .slide-container > .arrows button{background:#ffffff; color:#000000;}
-.intro-07 .box-content{border-left:1px solid #ffffff; border-right:1px solid #ffffff;}
 
 
 /* Org 01 */
@@ -585,11 +535,8 @@ table.table.table-06 th{border-color:#ffffff;}
 
 /* Sitemap 01 */
 .sitemap-01 .grid, .sitemap-01 .sitemap > .header, .sitemap-01 .sitemap a,
-.sitemap-01 .sitemap li > ul{border-color:#ffffff;}
+.sitemap-01 .sitemap li > ul{border-color:#ffffff!important;}
 .sitemap-01 .sitemap li > ul > li::before{background:#ffffff;}
-
-/* Sitemap 02 */
-.sitemap-02 .sitemap li::before{background:#ffffff;}
 
 
 /* Survey 01 */

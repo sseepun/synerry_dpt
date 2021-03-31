@@ -3,47 +3,46 @@
 <head>
     <?php include_once('include/header.php'); ?>
     <?php include_once('include/style.php'); ?>
-    <link rel="stylesheet" href="public/assets/app/css/style-secretary.css" />
 </head>
 <body class="loading">
-    <?php include_once('include/topnav-secretary.php'); ?>
+    <?php include_once('include/topnav.php'); ?>
     <?php
         $breadcrumb = [
             [ 'url' => '#', 'display' => 'ผลการค้นหา' ],
         ];
         $breadcrumbTitle = 'ผลการค้นหา';
-        $breadcrumbBg = 'public/assets/app/images/bg/secretary-20.jpg';
-        include('component/breadcrumb-secretary.php');
+        $breadcrumbBg = 'public/assets/app/images/bg/20.jpg';
+        include('component/breadcrumb.php');
     ?>
     
-    <section class="section-padding section-pattern-01" style="background-image:url('public/assets/app/images/bg/pattern-01.png');">
+    <section class="section-padding">
         <div class="container">
 
             <h6 class="sm color-black" data-aos="fade-up" data-aos-delay="300">
-                <span class="h6 fw-600 color-01 mr-2">“พลังงานสะอาด”</span>
+                <span class="h6 fw-600 color-p mr-2">“พลังงานสะอาด”</span>
                 <span class="p lg fw-400">ผลลัพธ์การค้นหา</span> 
-                <span class="fw-600 color-01">28 รายการ</span>
+                <span class="fw-600 color-p">28 รายการ</span>
             </h6>
 
             <div class="mt-2" data-aos="fade-up" data-aos-delay="450">
-                <div class="list-header">
+                <div class="list-header list-header-search">
                     <div class="block" style="min-width:20rem;">
                         <div class="search-wrapper width-full" style="max-width:21.5rem!important;">
-                            <input type="text" class="width-full round" placeholder="ค้นหา" />
+                            <input type="text" class="width-full" placeholder="ค้นหา" />
                         </div>
                     </div>
                     <div class="block">
                         <span class="p sm">ช่วงเวลา</span>
-                        <div class="date-wrapper" style="width:8.75rem;">
-                            <input type="text" class="date-picker form-control round" required title="General Text Input" />
+                        <div class="date-wrapper">
+                            <input type="text" class="date-picker form-control" required title="General Text Input" />
                         </div> -
-                        <div class="date-wrapper" style="width:8.75rem;">
-                            <input type="text" class="date-picker form-control round" required title="General Text Input" />
+                        <div class="date-wrapper">
+                            <input type="text" class="date-picker form-control" required title="General Text Input" />
                         </div>
                     </div>
                     <div class="block">
                         <div class="select-wrapper">
-                            <select class="round">
+                            <select title="General Select">
                                 <option value="">เรียงลำดับข้อมูล</option>
                             </select>
                         </div>
@@ -61,7 +60,7 @@
                             ] as $i=>$d){
                         ?>
                             <div class="grid md-25 sm-50 mt-0">
-                                <div class="form-check px-0">
+                                <div class="form-check sm px-0 mt-1">
                                     <input type="checkbox" name="c_<?= $k ?>[]" id="c_<?= $k ?>_<?= $i ?>" value="<?= $i ?>" title="General Radio Input" />
                                     <label for="c_<?= $k ?>_<?= $i ?>" class="color-gray pl-1"><?= $d ?></label>
                                 </div>
@@ -94,8 +93,10 @@
                                     (DUGA) กำหนดจัดงานอบรมสัมมนา eGovernment Forum 2020, Digital 
                                     HR Forum 2020, Big Data
                                 </p>
-                                <div class="arrow">
-                                    <em class="far fa-arrow-alt-circle-right"></em>
+                                <div class="btns mt-3">
+                                    <a class="btn btn-action btn-color-t btn-xs" href="#">
+                                        รายละเอียดเพิ่มเติม
+                                    </a>
                                 </div>
                             </div>
                             <div class="info-content">
@@ -123,7 +124,7 @@
         </div>
     </section>
     
-    <?php include_once('include/footer-secretary.php'); ?>
+    <?php include_once('include/footer.php'); ?>
     <?php include_once('include/script.php'); ?>
 </body>
 </html>

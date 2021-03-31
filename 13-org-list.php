@@ -3,31 +3,30 @@
 <head>
     <?php include_once('include/header.php'); ?>
     <?php include_once('include/style.php'); ?>
-    <link rel="stylesheet" href="public/assets/app/css/style-secretary.css" />
 </head>
 <body class="loading">
-    <?php include_once('include/topnav-secretary.php'); ?>
+    <?php include_once('include/topnav.php'); ?>
     <?php
         $breadcrumb = [
             [ 'url' => '#', 'display' => 'เกี่ยวกับกระทรวง' ],
             [ 'url' => '#', 'display' => 'โครงสร้างส่วนราชการ' ],
         ];
         $breadcrumbTitle = 'โครงสร้างส่วนราชการ';
-        $breadcrumbBg = 'public/assets/app/images/bg/secretary-14.jpg';
-        include('component/breadcrumb-secretary.php');
+        $breadcrumbBg = 'public/assets/app/images/bg/14.jpg';
+        include('component/breadcrumb.php');
     ?>
     
-    <section class="org-01 round section-padding section-pattern-01" style="background-image:url('public/assets/app/images/bg/pattern-01.png');" data-aos="fade-up" data-aos-delay="300">
+    <section class="org-01 round section-padding" data-aos="fade-up" data-aos-delay="300">
         <div class="container">
             <div class="scroll-x-wrapper" data-simplebar>
                 <div class="tree">
 
                     <div class="node root">
-                        <img class="icon" src="public/assets/app/images/logo-text.png" alt="Tree Root Icon" />
+                        <img class="icon" src="public/assets/app/images/logo.png" alt="Tree Root Icon" />
                         <div class="node-container bradius-round ovf-hidden">
                             <div class="node-title text-center">
                                 <h6 class="p md fw-400">
-                                    รัฐมนตรีว่าการกระทรวงพลังงาน
+                                    สำนักงานผู้ดูแลนักเรียนในสหรัฐอเมริกา
                                 </h6>
                             </div>
                         </div>
@@ -174,22 +173,23 @@
                                 พร้อมทั้งแสวงหาความร่วมมือด้านพลังงานกับประเทศเพื่อนบ้านด้วยความมุ่งมั่น
                             </p>
                             <div class="btns mt-4">
-                                <a class="btn btn-action btn-color-01 btn-round" href="#">
+                                <a class="btn btn-action btn-color-p" href="#">
                                     เข้าสู่เว็บไซต์ 
-                                    <em class="far fa-arrow-alt-circle-right ml-1"></em>
                                 </a>
                             </div>
                         </div>
                     </div>
                 </div>
-                <a class="btn-close btn-popup-toggle bradius-round" data-popup="0" href="#">
-                    <em class="zmdi zmdi-close"></em>
+                <a class="btn-close btn-popup-toggle" data-popup="0" href="#">
+                    <div class="hamburger active">
+                        <div></div><div></div><div></div>
+                    </div>
                 </a>
             </div>
         </div>
     </div>
     
-    <?php include_once('include/footer-secretary.php'); ?>
+    <?php include_once('include/footer.php'); ?>
     <?php include_once('include/script.php'); ?>
 </body>
 </html>
