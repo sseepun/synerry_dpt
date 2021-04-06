@@ -91,28 +91,11 @@ nav.sfooter .quicklinks > a{color:#ffff00;}
 
 
 /* Buttons */
-.btn.btn-color-p, .btn.btn-color-p:focus, .btn.btn-color-p:hover, .btn.btn-color-p:active,
-.btn.btn-color-p-inverse, .btn.btn-color-p-inverse:focus, 
-.btn.btn-color-p-inverse:hover, .btn.btn-color-p-inverse:active{
+.btn.btn-color-01, .btn.btn-color-01:focus, .btn.btn-color-01:hover, .btn.btn-color-01:active,
+.btn.btn-color-02, .btn.btn-color-02:focus, .btn.btn-color-02:hover, .btn.btn-color-02:active,
+.btn.btn-color-03, .btn.btn-color-03:focus, .btn.btn-color-03:hover, .btn.btn-color-03:active{
     color:#000000; background:#ffff00; border-color:#ffff00;
 }
-
-.btn.btn-social{background:#ffff00; color:#000000;}
-
-/* Button Socials */
-.btn-social-custom{color:#ffffff!important;}
-.btn-social-custom.fw{background:#4668b7;}
-.btn-social-custom.fw:hover,
-.btn-social-custom.fw > em{background:#3157b0;}
-.btn-social-custom.gg{background:#eb4033;}
-.btn-social-custom.gg:hover,
-.btn-social-custom.gg > em{background:#b62c22;}
-.btn-social-custom.ln{background:#3ace01;}
-.btn-social-custom.ln:hover,
-.btn-social-custom.ln > em{background:#419d1e;}
-.btn-social-custom.tw{background:#2cafe9;}
-.btn-social-custom.tw:hover,
-.btn-social-custom.tw > em{background:#1796ce;}
 
 
 /* Inputs */
@@ -235,125 +218,6 @@ input[type=number], input[type=phone], input[type=submit], input[type=file], sel
 .ss-box-webboard .ss-icon-title > em{background:#ffff00!important;}
 
 
-/* Special Card */
-.ss-card .text-container .title, .ss-card .text-container .desc{color:#ffff00;}
-
-/* Special Card 01 */
-.ss-card-01 .icon-container .icon{background:#ffff00; color:#000000;}
-
-/* Special Card 02 */
-.ss-card-02 .text-container{border:1px solid #ffff00;}
-.ss-card-02:hover .text-container{background:#ffff00;}
-.ss-card-02 .text-container .arrow{color:#ffff00;}
-.ss-card-02:hover .text-container .title, .ss-card-02:hover .text-container .desc,
-.ss-card-02:hover .text-container .ss-stat .stat,
-.ss-card-02:hover .text-container .arrow{color:#000000;}
-.ss-card-02 .text-container .card-tag{background:#ffff00; color:#000000;}
-
-/* Special Card 03 */
-.ss-card-03 .text-container{border:1px solid #ffff00;}
-.ss-card-03:hover .text-container{background:#ffff00;}
-.ss-card-03:hover .text-container .title{color:#000000;}
-
-/* Special Card 04 */
-.ss-card-04 .text-container{background:#000000; border-color:#ffff00;}
-.ss-card-04:hover .text-container{background:#ffff00;}
-.ss-card-04 .text-container .card-tag{background:#ffff00; color:#000000;}
-.ss-card-04 .text-container .arrow{color:#ffff00;}
-.ss-card-04:hover .text-container .title, .ss-card-04:hover .text-container .ss-stat .stat,
-.ss-card-04:hover .text-container .arrow{color:#000000;}
-
-/* Special Card 05 */
-.ss-card-05 .text-container{background:#000000; border-color:#ffff00;}
-.ss-card-05:hover .text-container{background:#ffff00;}
-.ss-card-05 .text-container .card-tag{background:#ffff00; color:#000000;}
-.ss-card-05 .arrows .slick-arrow{color:#ffff00;}
-.ss-card-05:hover .text-container .title, .ss-card-05:hover .text-container .desc, 
-.ss-card-05:hover .text-container .ss-stat .stat,
-.ss-card-05:hover .arrows .slick-arrow{color:#000000;}
-
-/* Special Card 06 */
-.ss-card-06 .text-container{border:1px solid #ffff00;}
-.ss-card-06:hover .text-container{background:#ffff00;}
-.ss-card-06:hover .text-container .title, .ss-card-06:hover .text-container .desc,
-.ss-card-06:hover .text-container .ss-stat .stat,
-.ss-card-06:hover .text-container .arrow{color:#000000;}
-
-/* Special Card 07 */
-.ss-card-07{border:1px solid #ffff00;}
-.ss-card-07:hover{background:#ffff00;}
-.ss-card-07 .text-container .arrow{color:#ffff00;}
-.ss-card-07:hover .text-container .title, .ss-card-07:hover .text-container .desc,
-.ss-card-07:hover .text-container .ss-stat .stat,
-.ss-card-07:hover .text-container .arrow{color:#000000;}
-.ss-card-07 .text-container .card-tag{background:#ffff00; color:#000000;}
-.ss-card-07:hover .text-container .card-tag{background:#000000; color:#ffff00;}
-
-/* Special Card 08 */
-.ss-card-08{border:1px solid #ffff00;}
-.ss-card-08:hover{background:#ffff00;}
-.ss-card-08 .text-container > .info-content{border-color:#ffff00;}
-.ss-card-08:hover .text-container > .info-content{border-color:#000000;}
-.ss-card-08 .text-container .arrow{color:#ffff00;}
-.ss-card-08:hover .text-container .title, .ss-card-08:hover .text-container .desc,
-.ss-card-08:hover .text-container .ss-stat .stat, .ss-card-08:hover .text-container .arrow,
-.ss-card-08:hover .info-content p{color:#000000;}
-.ss-card-08 .info-content .text-icon em{background:#ffff00; color:#000000;}
-.ss-card-08:hover .info-content .text-icon em{background:#000000; color:#ffff00;}
-.ss-card-08 .video-info .duration{background:rgba(0,0,0,.5); color:#ffff00;}
-.ss-card-08 .video-info > em{color:#000000;}
-
-/* Special Card 09 */
-.ss-card-09{border:1px solid #ffff00;}
-
-/* Special Card 10 */
-.ss-card-10{border:1px solid #ffff00;}
-
-/* Special Card 11 */
-.ss-card-11{border:1px solid #ffff00;}
-.ss-card-11 .text-container .title{color:#ffff00;}
-.ss-card-11 > .info-content{border-color:#ffff00;}
-
-/* Special Card 12 */
-.ss-card-12{border:1px solid #ffff00;}
-.ss-card-12:hover{background:#ffff00;}
-.ss-card-12:hover .text-container .title,
-.ss-card-12:hover .text-container .date{color:#000000;}
-
-/* Special Card 13 */
-.ss-card-13 .text-container{background:#000000; border:1px solid #ffff00;}
-.ss-card-13:hover .text-container{background:#ffff00;}
-.ss-card-13:hover .text-container .title, .ss-card-13:hover .text-container .desc, 
-.ss-card-13:hover .text-container .ss-stat .stat{color:#000000;}
-@media screen and (max-width:991.98px){
-    .ss-card-13{border:1px solid #ffff00;}
-    .ss-card-13 .text-container{border:0;}
-}
-
-/* Special Card 14 */
-.ss-card-14{background:#000000; border:1px solid #ffff00;}
-.ss-card-14 .text-container{border-color:#ffff00;}
-
-/* Special Card 15 */
-.ss-card-15{background:#000000; border:1px solid #ffff00;}
-.ss-card-15:hover{background:#ffff00;}
-.ss-card-15 .text-container > .info-content,
-.ss-card-15 .info-content .header{border-color:#ffff00;}
-.ss-card-15:hover .text-container > .info-content,
-.ss-card-15:hover .info-content .header{border-color:#000000;}
-.ss-card-15:hover .text-container .title, .ss-card-15:hover .text-container .desc,
-.ss-card-15:hover .ss-stat .stat, .ss-card-15:hover .ss-stat .stat em, .ss-card-15:hover .arrow,
-.ss-card-15:hover .info-content p, .ss-card-15:hover .text-container p{color:#000000;}
-
-/* Special Card 16 */
-.ss-card-16{background:#000000; border-color:#ffff00;}
-
-/* Special Card 17 */
-.ss-card-17{border-color:#ffff00;}
-.ss-card-17 .info-container > .info:nth-child(1),
-.ss-card-17.cols-3 .info-container > .info:nth-child(2){border-color:#ffff00;}
-
-
 /* Special Date */
 .ss-date, .ss-date-sm{background:#ffff00; color:#000000;}
 
@@ -366,32 +230,24 @@ input[type=number], input[type=phone], input[type=submit], input[type=file], sel
 .ss-file-02 > .icon-container{background:#ffff00; color:#000000;}
 
 
-/* Special Icon Title */
-.ss-icon-title > em{background:#ffff00; color:#000000;}
+/* Special Icon Title 01 */
+.ss-icon-title-01 > .text-icon::before{background:#ffff00;}
 
 
 /* Special Image */
-.ss-img .hover-container{background:rgba(255,183,57,.5);}
-.ss-img .mag-bg{background:#000000;}
-.ss-img .mag-bg::before{background:#ffff00;}
-.ss-img .video-info .duration{background:rgba(0,0,0,.5); color:#ffff00;}
-.ss-img .video-info > em{color:#000000;}
+.ss-img .hover-container{border-color:#ffff00!important; background:rgba(0,0,0,.4);}
 
 
 /* Special List 01 */
 .ss-list-01 > li::before{background:#ffff00;}
 
 
-/* Special Separation 01 */
-.ss-sep-01 > *::before, .ss-sep-01 > *::after{background:#ffff00;}
-
-
 /* Special Stat */
 .ss-stat .stat{color:#ffff00;}
 .ss-stat .stat .icon-round{background:#ffff00; color:#000000;}
 
-/* Special Tag */
-.ss-tag{background:#ffff00; color:#000000;}
+/* Special Tags */
+.ss-tags> .tag{background:#ffff00; color:#000000;}
 
 
 /* Table */
@@ -418,35 +274,8 @@ table.table.table-01 .status{color:#ffff00;}
 .upload-container{background:#000000;}
 
 
-/* About 03 */
-.about-03{background:none!important;}
-.about-03 > .img-bg{background:none!important;}
-.about-03 .slick-dots button{background:#ffff00;}
-.about-03 .arrows button{color:#ffff00;}
-
-/* About 04 */
-.about-04 > .img-bg{background:none!important;}
-.about-04 .about-box{border:1px solid #ffff00;}
-
-/* About 05 */
-.about-05 .about-container > .wrapper::before{border:1px solid #ffff00;}
-
-/* About 06 */
-.about-06{padding:0 0 2.5rem 0!important;}
-.about-06 > .img-bg{display:none;}
-.about-06 .info .count-container{background:#ffff00;}
-.about-06 .info .count-container::before,
-.about-06 .info .count-container > .wrapper{background:#000000;}
-
-/* About 07 */
-.about-07{background:none!important;}
-.about-07 .about-box{background:#000000; border:1px solid #ffff00;;}
-.about-07 .about-box > .box-header .left-container{background:#ffff00; color:#000000;}
-.about-07 .about-box > .box-header{border-bottom:1px solid #ffff00;}
-
-/* About 08 */
-.about-08 .job-container::before{border-color:#ffff00;}
-.about-08 .job-container .ss-card::before{background:#ffff00;}
+/* About 01 */
+.about-01{color:#000000;}
 
 
 /* Auth 01 */
@@ -525,10 +354,8 @@ table.table.table-01 .status{color:#ffff00;}
 
 
 /* Pagination 01 */
-.pagination-01 .page-btn{color:#000000; border-color:#ffff00; background:#ffff00;}
-.pagination-01 .page-btn:hover, .pagination-01 .page-btn.active{
-    background:#000000!important; color:#ffff00;
-}
+.pagination-01 .page-btn{color:#ffff00;}
+.pagination-01 .page-btn.active{color:#000000; background:#ffff00;}
 
 
 /* Progress 01 */
