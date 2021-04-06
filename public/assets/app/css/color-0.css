@@ -1,6 +1,6 @@
 
 /* Reset */
-html, body, a, a:hover, table.table{color:#232323;}
+html, body, a, a:hover, table.table{color:#000000;}
 
 
 /* Colors */
@@ -14,6 +14,7 @@ html, body, a, a:hover, table.table{color:#232323;}
 .color-fgray, .h-color-fgray:hover{color:#f8f9fa!important;}
 .color-01, .h-color-01:hover{color:#fdcd05!important;}
 .color-02, .h-color-02:hover{color:#270108!important;}
+.color-03, .h-color-03:hover{color:#682d2f!important;}
 
 .bg-white{background:#ffffff!important;}
 .bg-black{background:#000000!important;}
@@ -25,6 +26,7 @@ html, body, a, a:hover, table.table{color:#232323;}
 .bg-fgray{background:#f8f9fa!important;}
 .bg-01{background:#fdcd05!important;}
 .bg-02{background:#270108!important;}
+.bg-03{background:#682d2f!important;}
 
 .bcolor-white{border-color:#ffffff!important;}
 .bcolor-black{border-color:#000000!important;}
@@ -36,6 +38,7 @@ html, body, a, a:hover, table.table{color:#232323;}
 .bcolor-fgray{border-color:#f8f9fa!important;}
 .bcolor-01{border-color:#fdcd05!important;}
 .bcolor-02{border-color:#270108!important;}
+.bcolor-03{border-color:#682d2f!important;}
 
 
 /* Super Topnav */
@@ -441,8 +444,8 @@ input[type=file].fgray, select.fgray, textarea.fgray{background:#f8f9fa!importan
 .ss-file-02 .btn-container:hover *{color:#ffffff!important;}
 
 
-/* Special Icon Title */
-.ss-icon-title > em{color:#ffffff; background:#fdcd05; background:var(--pcolor);}
+/* Special Icon Title 01 */
+.ss-icon-title-01 > .text-icon::before{background:#682d2f;}
 
 
 /* Special Image */
@@ -532,13 +535,10 @@ table.table.table-01 .status{color:#181818;}
 
 
 /* Banner 01 */
-.banner-01 .slick-dots button{background:#ffffff;}
-.banner-01 .arrows button{color:#000000; background:#ffffff;}
-.banner-01 .arrows button:hover{color:#ffffff; background:#fdcd05; background:var(--pcolor);}
-
-/* Banner 03 */
-.banner-03 .arrows button{background:#fe4d01; color:#ffffff;}
-.banner-03 .arrows button.slick-prev{background:#8b8b8b;}
+.banner-01 .bullet .bullet-wrapper{background:#ffffff;}
+.banner-01 .slick-dots li::after{background:#552b26;}
+.banner-01 .slick-dots li button{color:#552b26;}
+.banner-01 .arrows button{color:#552b26;}
 
 
 /* Breadcrumb 03 */
@@ -589,20 +589,21 @@ table.table.table-01 .status{color:#181818;}
 .history-01 .info > .dot{background:#fe4d01; border-color:#ffffff;}
 
 
-/* Intro 03 */
-.intro-03 .arrows button{background:#888888; color:#ffffff;}
-.intro-03 .arrows button:hover{background:#fe4d01;}
-.intro-03 .arrows button::after{background:#e1e1e1;}
-@media screen and (max-width:1199.98px){
-    .intro-03 .intro-card.lg{border-color:#e1e1e1!important;}
+/* Intro 01 */
+.intro-01 .content .num{color:#ffffff;}
+.intro-01 .content .title{color:#ffffff;}
+.intro-01 .content .gross{
+    background-image:linear-gradient(to left, rgba(255,255,255,.4), rgba(255,255,255,.2),
+        rgba(0,0,0,0), rgba(0,0,0,0), rgba(0,0,0,0), rgba(0,0,0,0), rgba(0,0,0,0),
+        rgba(0,0,0,0), rgba(0,0,0,0), rgba(0,0,0,0), rgba(0,0,0,0), rgba(0,0,0,0),
+        rgba(255,255,255,.2), rgba(255,255,255,.4));
 }
-
-/* Intro 06 */
-.intro-06{background:#000000;}
-.intro-06 .info{background:linear-gradient(to right, #000000, #000000, #222222, #454545, #454545);}
-.intro-06 .slide-container::after{
-    background:linear-gradient(to right, rgba(0,0,0,1), rgba(0,0,0,0));
-}
+.intro-01 .content:nth-child(6n+1) .filter{background:#264075;}
+.intro-01 .content:nth-child(6n+2) .filter{background:#4f2e68;}
+.intro-01 .content:nth-child(6n+3) .filter{background:#e6a904;}
+.intro-01 .content:nth-child(6n+4) .filter{background:#422e21;}
+.intro-01 .content:nth-child(6n+5) .filter{background:#6a0f1e;}
+.intro-01 .content:nth-child(6n) .filter{background:#196649;}
 
 
 /* Org 01 */
@@ -671,53 +672,6 @@ table.table.table-01 .status{color:#181818;}
 
 
 /* Tab Container - Tabs 01 */
-.tab-container .tabs.tabs-01 .tab{color:#b6b6b6;}
-.tab-container .tabs.tabs-01 .tab:hover, .tab-container .tabs.tabs-01 .tab.active{color:#fe4d01;}
-.tab-container .tabs.tabs-01 .tab::before{background:#e1e1e1;}
-.tab-container .tabs.tabs-01 .tab::after{background:#fe4d01;}
-
-/* Tab Container - Tabs 02 */
-.tab-container .tabs.tabs-02{background:#ef4d34;}
-.tab-container .tabs.tabs-02 .tab{color:#ffffff;}
-.tab-container .tabs.tabs-02 .tab:hover, 
-.tab-container .tabs.tabs-02 .tab.active{background:#d6412a;}
-.tab-container .tabs.tabs-02 .tab.tab-header{background:#000000;}
-.tab-container .tabs.tabs-02 .hamburger > *{background:#ffffff;}
-
-/* Tab Container - Tabs 03 */
-.tab-container .tabs.tabs-03 .tab{color:#b6b6b6;}
-.tab-container .tabs.tabs-03 .tab:hover, 
-.tab-container .tabs.tabs-03 .tab.active{color:#fdcd05; color:var(--pcolor);}
-.tab-container .tabs.tabs-03 .tab::before{background:#e1e1e1;}
-.tab-container .tabs.tabs-03 .tab::after{background:#fdcd05; background:var(--pcolor);}
-.tab-container .tabs.tabs-03.white .tab{color:#181818;}
-.tab-container .tabs.tabs-03.white .tab:hover,
-.tab-container .tabs.tabs-03.white .tab.active{color:#ffffff;}
-.tab-container .tabs.tabs-03.white .tab::before{background:rgba(255,255,255,.3);}
-.tab-container .tabs.tabs-03.white .tab::after{background:#ffffff;}
-
-/* Tab Container - Tabs 04 */
-.tab-container .tabs.tabs-04 .tab{color:#ffffff;}
-.tab-container .tabs.tabs-04 .tab:hover, .tab-container .tabs.tabs-04 .tab.active{color:#fe4d01;}
-.tab-container .tabs.tabs-04 .tab::before{background:#ffffff;}
-.tab-container .tabs.tabs-04 .tab::after{background:#fe4d01;}
-
-/* Tab Container - Tabs 05 */
-.tab-container .tabs.tabs-05 .tab{border-color:#fe4d01!important;}
-.tab-container .tabs.tabs-05 .tab:not(.active){
-    color:#000000!important; background:#ffffff!important; border-color:#e9e9e9!important;
-}
-.tab-container .tabs.tabs-05 .tab:hover{
-    color:#ffffff!important; background:#fe4d01!important; border-color:#fe4d01!important;
-}
-
-
-/* Webboard 01 */
-.webboard-01 .webboard-header .comment{background:#ffffff; color:#fe4d01;}
-.webboard-01 .webboard-header .comment::before{background:#ffffff;}
-.webboard-01 .toolbar{background:#eeeeee; color:#000000;}
-.webboard-01 .toolbar.white{background:#ffffff; border-color:#cccccc;}
-.webboard-01 .profile-icon .profile{border-color:#ffffff;}
-.webboard-01 .webboard-card{border-color:#cccccc; border-bottom-color:#cccccc;}
-.webboard-01 .webboard-card > .info-container{background:#eeeeee; color:#000000;}
-.webboard-01 .webboard-card.white > .info-container{border-color:#dddddd;}
+.tab-container .tabs.tabs-01 .tab{background:#ffd000; color:#290b07;}
+.tab-container .tabs.tabs-01 .tab:hover,
+.tab-container .tabs.tabs-01 .tab.active{background:#363635; color:#ffffff;}

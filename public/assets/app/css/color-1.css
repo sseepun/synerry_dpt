@@ -455,12 +455,10 @@ table.table.table-01 .status{color:#ffffff;}
 
 
 /* Banner 01 */
-.banner-01 .slick-dots button{background:#ffffff;}
-.banner-01 .arrows button{background:#ffffff; color:#000000;}
-.banner-01 .arrows button:hover{background:#000000; color:#ffffff;}
-
-/* Banner 03 */
-.banner-03 .arrows button{background:#ffffff; color:#000000;}
+.banner-01 .bullet .bullet-wrapper{background:#000000;}
+.banner-01 .slick-dots li::after{background:#ffffff;}
+.banner-01 .slick-dots li button{color:#ffffff;}
+.banner-01 .arrows button{color:#ffffff;}
 
 
 /* Breadcrumb 03 */
@@ -499,21 +497,21 @@ table.table.table-01 .status{color:#ffffff;}
 .history-01 .info > .dot{background:#000000; border-color:#ffffff;}
 
 
-/* Intro 03 */
-.intro-03 .intro-card{border:1px solid #ffffff;}
-.intro-03.pos-main .intro-card{background:#000000;}
-.intro-03 .arrows button{background:#ffffff; color:#000000;}
-.intro-03 .arrows button::after{background:#ffffff;}
-
-/* Intro 04 */
-.intro-04{background:none!important;}
-
-/* Intro 06 */
-.intro-06{border-top:1px solid #ffffff; border-bottom:1px solid #ffffff;}
-.intro-06 .info{background:#000000;}
-.intro-06 .slide-container::after{
-    background:linear-gradient(to right, rgba(0,0,0,1), rgba(0,0,0,0));
+/* Intro 01 */
+.intro-01 .content .num{color:#ffffff;}
+.intro-01 .content .title{color:#ffffff;}
+.intro-01 .content .gross{
+    background-image:linear-gradient(to left, rgba(255,255,255,.4), rgba(255,255,255,.2),
+        rgba(0,0,0,0), rgba(0,0,0,0), rgba(0,0,0,0), rgba(0,0,0,0), rgba(0,0,0,0),
+        rgba(0,0,0,0), rgba(0,0,0,0), rgba(0,0,0,0), rgba(0,0,0,0), rgba(0,0,0,0),
+        rgba(255,255,255,.2), rgba(255,255,255,.4));
 }
+.intro-01 .content:nth-child(6n+1) .filter{background:#264075;}
+.intro-01 .content:nth-child(6n+2) .filter{background:#4f2e68;}
+.intro-01 .content:nth-child(6n+3) .filter{background:#e6a904;}
+.intro-01 .content:nth-child(6n+4) .filter{background:#422e21;}
+.intro-01 .content:nth-child(6n+5) .filter{background:#6a0f1e;}
+.intro-01 .content:nth-child(6n) .filter{background:#196649;}
 
 
 /* Org 01 */
@@ -553,45 +551,4 @@ table.table.table-01 .status{color:#ffffff;}
 
 
 /* Tab Container - Tabs 01 */
-.tab-container .tabs.tabs-01 .tab{color:#ffffff;}
-.tab-container .tabs.tabs-01 .tab::before{background:#ffffff;}
-.tab-container .tabs.tabs-01 .tab::after{background:#ffffff;}
-
-/* Tab Container - Tabs 02 */
-.tab-container .tabs.tabs-02{background:#000000; border:1px solid #ffffff;}
-.tab-container .tabs.tabs-02 .tab{color:#ffffff; border-color:#ffffff;}
-.tab-container .tabs.tabs-02 .tab:hover, 
-.tab-container .tabs.tabs-02 .tab.active{background:#ffffff; color:#000000;}
-.tab-container .tabs.tabs-02 .hamburger > *{background:#ffffff;}
-
-/* Tab Container - Tabs 03 */
-.tab-container .tabs.tabs-03 .tab{color:#ffffff;}
-.tab-container .tabs.tabs-03 .tab::before{background:#ffffff;}
-.tab-container .tabs.tabs-03 .tab::after{background:#ffffff;}
-
-/* Tab Container - Tabs 04 */
-.tab-container .tabs.tabs-04 .tab{color:#ffffff;}
-.tab-container .tabs.tabs-04 .tab::before{background:#ffffff;}
-.tab-container .tabs.tabs-04 .tab::after{background:#ffffff;}
-
-/* Tab Container - Tabs 05 */
-.tab-container .tabs.tabs-05 .tab{border-color:#ffffff!important;}
-.tab-container .tabs.tabs-05 .tab:not(.active){
-    color:#ffffff!important; background:#000000!important; border-color:#ffffff!important;
-}
-.tab-container .tabs.tabs-05 .tab:hover{
-    color:#000000!important; background:#ffffff!important; border-color:#ffffff!important;
-}
-
-
-/* Webboard 01 */
-.webboard-01 .webboard-header{border:1px solid #ffffff;}
-.webboard-01 .webboard-header .comment{background:#ffffff; color:#000000;}
-.webboard-01 .webboard-header .comment::before{background:#ffffff;}
-.webboard-01 .toolbar{
-    color:#ffffff; border-top:1px solid #ffffff; border-bottom:1px solid #ffffff;
-}
-.webboard-01 .profile-icon .profile{border-color:#ffffff;}
-.webboard-01 .webboard-card{border-color:#ffffff; border-bottom-color:#ffffff;}
-.webboard-01 .webboard-card > .info-container{background:#ffffff; color:#000000;}
-.webboard-01 .webboard-card.white > .info-container{border-color:#ffffff;}
+.tab-container .tabs.tabs-01 .tab{background:#ffffff; color:#000000;}
