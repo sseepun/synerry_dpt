@@ -1,165 +1,155 @@
 
 <!-- Super Topnav -->
-<nav class="stopnav color-white bcolor-t bg-t">
-    <div class="blocks">
-        <div class="block hide-mobile mr-3">
-            <span class="text">ขนาดตัวอักษร</span>
-            <a class="btn font-size-btn btn-circle" href="#" data-size="-1">-</a>
-            <a class="btn font-size-btn btn-circle" href="#" data-size="0">ก</a>
-            <a class="btn font-size-btn btn-circle" href="#" data-size="1">+</a>
-        </div>
-        <div class="block hide-mobile mr-3">
-            <span class="text">ความตัดกันของสี</span>
-            <a class="btn theme-btn btn-circle" href="#" data-theme="0">C</a>
-            <a class="btn theme-btn btn-circle" href="#" data-theme="1">C</a>
-            <a class="btn theme-btn btn-circle" href="#" data-theme="2">C</a>
-        </div>
-        <div class="block hide-mobile mr-3">
-            <div class="flag-wrapper">
-                <div class="flag-icon" style="background-image:url('public/assets/app/images/misc/th-flag.png');"></div>
-                <div class="text">ไทย</div>
-                <em class="fas fa-chevron-down"></em>
+<nav class="stopnav color-sgray bcolor-02 bg-02">
+    <div class="container">
+        <div class="blocks">
+            <div class="block right color-white">
+                <div class="text-wrapper">
+                    บัญชีของ 
+                    <a class="color-01 h-color-white" href="#">
+                        คุณจักรพงษ
+                    </a>
+                    <span class="sep">|</span>
+                    <a class="color-white h-color-01" href="#">
+                        ออกจากระบบ
+                    </a>
+                </div>
             </div>
-            <div class="dropdown">
-                <a class="flag-wrapper" href="#">
-                    <div class="flag-icon" style="background-image:url('public/assets/app/images/misc/us-flag.png');"></div>
-                    <div class="text">อังกฤษ</div>
-                </a>
-            </div>
-        </div>
-        <div class="block right mr-3">
-            <a class="btn btn-circle" href="#">
-                <em class="fab fa-facebook-f"></em>
-            </a>
-            <a class="btn btn-circle" href="#">
-                <em class="fas fa-phone-alt"></em>
-            </a>
-            <a class="btn btn-circle" href="#">
-                <em class="fas fa-sitemap"></em>
-            </a>
-        </div>
-        <div class="block">
-            <a class="btn btn-action btn-color-p btn-2xs" href="#">
-                เข้าสู่ระบบ <em class="fas fa-lock ml-1"></em>
-            </a>
         </div>
     </div>
 </nav>
 
 <!-- Topnav -->
 <nav class="topnav">
-    <div class="blocks">
-        <div class="block ai-unset">
-            <a class="logo" href="#">
-                <img src="public/assets/app/images/logo.png" alt="Website Logo" />
-                <div class="text-wrapper">
-                    <h6 class="color-t">
-                        สำนักงานผู้ดูแลนักเรียนในสหรัฐอเมริกา
-                    </h6>
-                    <p class="color-p">
-                        Office of Educational Affairs <br>
-                        Royal Thai Embassy, Washington DC
-                    </p>
-                </div>
-            </a>
-        </div>
-        <div class="menu-container hide-mobile" id="topnav-menu">
-            <?php
-                foreach([
-                    'หน้าแรก', 'ข่าวสาร', 'ระเบียบ', 'ดาวน์โหลดแบบคำขอ', 
-                    'บริการ สนร.', 'รู้จัก สนร.', 'สาระน่ารู้'
-                ] as $i=>$d){
-            ?>
-                <div class="menu has-children">
-                    <a href="#" data-dropdown="<?= $i ?>">
-                        <?= $d ?>
-                    </a>
-
-                    <div class="submenu-dropdown <?php
-                        if($i>3)echo 'anchor-right';
-                        else if($i>1)echo 'anchor-middle';
-                    ?>">
-                        <div class="submenu-blocks">
-                            <div class="submenu-block">
-                                <h6 class="submenu-title p lg fw-600"><?= $d ?></h6>
-                                <div class="submenu">
-                                    <a href="#">ประวัติกระทรวงพลังงาน</a>
+    <div class="container">
+        <div class="blocks">
+            <div class="block ai-unset">
+                <a class="logo" href="#">
+                    <div class="img-container">
+                        <img src="public/assets/app/images/logo.png" alt="Website Logo" />
+                    </div>
+                    <div class="text-wrapper">
+                        <h6 class="color-02">
+                            <span class="font-01">
+                                กรมโยธาธิการและผังเมือง
+                            </span>
+                        </h6>
+                        <p class="color-dark">
+                            <span class="font-02">
+                                DEPARTMENT OF PUBLIC WORKS <br>
+                                AND TOWN & COUNTRY PLANNING
+                            </span>
+                        </p>
+                    </div>
+                </a>
+            </div>
+            <div class="menu-container hide-mobile" id="topnav-menu">
+                <?php
+                    foreach([
+                        'แนะนำกรม', 'หน่วยงานในสังกัดกรม', 'หน่วยงานในมท.', 
+                        'ศูนย์ข้อมูล', 'ติดตอสื่อสาร'
+                    ] as $i=>$d){
+                ?>
+                    <div class="menu has-children">
+                        <a href="#" data-dropdown="<?= $i ?>">
+                            <?= $d ?> <em class="fas fa-chevron-down"></em>
+                        </a>
+                        <div class="submenu-dropdown <?php
+                            if($i>3)echo 'anchor-right';
+                            else if($i>1)echo 'anchor-middle';
+                        ?>">
+                            <div class="submenu-blocks">
+                                <div class="submenu-block">
+                                    <h6 class="submenu-title p lg fw-600"><?= $d ?></h6>
+                                    <div class="submenu">
+                                        <a href="#">ประวัติกระทรวงพลังงาน</a>
+                                    </div>
+                                    <div class="submenu">
+                                        <a href="#">วิสัยทัศน์ พันธกิจ และตราสัญลักษณ์</a>
+                                    </div>
+                                    <div class="submenu">
+                                        <a href="#">ผู้บริหารระดับสูง</a>
+                                    </div>
+                                    <div class="submenu">
+                                        <a href="#">ผู้บริหารเทคโนโลยีสารสนเทศระดับสูง (CIO)</a>
+                                    </div>
+                                    <div class="submenu">
+                                        <a href="#">โครงสร้างส่วนราชการ</a>
+                                    </div>
+                                    <div class="submenu">
+                                        <a href="#">อำนาจหน้าที่</a>
+                                    </div>
+                                    <div class="submenu">
+                                        <a href="#">เจตจำนงสุจริตของผู้บริหาร</a>
+                                    </div>
+                                    <div class="submenu">
+                                        <a href="#">การมีส่วนร่วมของผู้บริหาร</a>
+                                    </div>
+                                    <div class="submenu">
+                                        <a href="#">แผนยุทธศาสตร์หรือแผนพัฒนาหน่วยงาน</a>
+                                    </div>
+                                    <div class="submenu">
+                                        <a href="#">กฎหมาย/พรบ.ด้านพลังงาน</a>
+                                    </div>
                                 </div>
-                                <div class="submenu">
-                                    <a href="#">วิสัยทัศน์ พันธกิจ และตราสัญลักษณ์</a>
-                                </div>
-                                <div class="submenu">
-                                    <a href="#">ผู้บริหารระดับสูง</a>
-                                </div>
-                                <div class="submenu">
-                                    <a href="#">ผู้บริหารเทคโนโลยีสารสนเทศระดับสูง (CIO)</a>
-                                </div>
-                                <div class="submenu">
-                                    <a href="#">โครงสร้างส่วนราชการ</a>
-                                </div>
-                                <div class="submenu">
-                                    <a href="#">อำนาจหน้าที่</a>
-                                </div>
-                                <div class="submenu">
-                                    <a href="#">เจตจำนงสุจริตของผู้บริหาร</a>
-                                </div>
-                                <div class="submenu">
-                                    <a href="#">การมีส่วนร่วมของผู้บริหาร</a>
-                                </div>
-                                <div class="submenu">
-                                    <a href="#">แผนยุทธศาสตร์หรือแผนพัฒนาหน่วยงาน</a>
-                                </div>
-                                <div class="submenu">
-                                    <a href="#">กฎหมาย/พรบ.ด้านพลังงาน</a>
-                                </div>
-                            </div>
-                            <div class="submenu-block">
-                                <h6 class="submenu-title p lg fw-600"><?= $d ?></h6>
-                                <div class="submenu">
-                                    <a href="#">การเสริมสร้างวัฒนธรรมองค์กร</a>
-                                </div>
-                                <div class="submenu">
-                                    <a href="#">สำนักงานพลังงานจังหวัด</a>
-                                </div>
-                                <div class="submenu">
-                                    <a href="#">ข้อมูลพลังงาน</a>
-                                </div>
-                                <div class="submenu has-children">
-                                    <a href="#">นโยบายพลังงาน</a>
-                                    <div class="submenu-block">
-                                        <div class="submenu">
-                                            <a href="#">นโยบายด้านพลังงานของรัฐบาล</a>
-                                        </div>
-                                        <div class="submenu">
-                                            <a href="#">คำแถลงนโยบายของคณะรัฐมนตรี</a>
-                                        </div>
-                                        <div class="submenu">
-                                            <a href="#">ยุทธศาสตร์ด้านพลังงาน</a>
-                                        </div>
-                                        <div class="submenu">
-                                            <a href="#">มติคณะ กพช./กบง.</a>
-                                        </div>
-                                        <div class="submenu">
-                                            <a href="#">แผนการบริหารราชการแผ่นดิน</a>
+                                <div class="submenu-block">
+                                    <h6 class="submenu-title p lg fw-600"><?= $d ?></h6>
+                                    <div class="submenu">
+                                        <a href="#">การเสริมสร้างวัฒนธรรมองค์กร</a>
+                                    </div>
+                                    <div class="submenu">
+                                        <a href="#">สำนักงานพลังงานจังหวัด</a>
+                                    </div>
+                                    <div class="submenu">
+                                        <a href="#">ข้อมูลพลังงาน</a>
+                                    </div>
+                                    <div class="submenu has-children">
+                                        <a href="#">นโยบายพลังงาน</a>
+                                        <div class="submenu-block">
+                                            <div class="submenu">
+                                                <a href="#">นโยบายด้านพลังงานของรัฐบาล</a>
+                                            </div>
+                                            <div class="submenu">
+                                                <a href="#">คำแถลงนโยบายของคณะรัฐมนตรี</a>
+                                            </div>
+                                            <div class="submenu">
+                                                <a href="#">ยุทธศาสตร์ด้านพลังงาน</a>
+                                            </div>
+                                            <div class="submenu">
+                                                <a href="#">มติคณะ กพช./กบง.</a>
+                                            </div>
+                                            <div class="submenu">
+                                                <a href="#">แผนการบริหารราชการแผ่นดิน</a>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-
+                <?php }?>
+            </div>
+            <div class="block mobile-right">
+                <a class="option sidenav-toggle" href="#">
+                    <div class="hamburger">
+                        <div></div><div></div><div></div>
+                    </div>
+                </a>
+                <div class="option pr-1">
+                    <div class="flag-wrapper">
+                        <div class="flag-icon" style="background-image:url('public/assets/app/images/misc/th-flag.png');"></div>
+                        <em class="fas fa-chevron-down"></em>
+                    </div>
+                    <div class="dropdown">
+                        <a class="flag-wrapper" href="#">
+                            <div class="flag-icon" style="background-image:url('public/assets/app/images/misc/us-flag.png');"></div>
+                        </a>
+                    </div>
                 </div>
-            <?php }?>
-        </div>
-        <div class="block mobile-right">
-            <a class="option global-search-toggle" href="#">
-                <em class="fas fa-search"></em>
-            </a>
-            <a class="option sidenav-toggle show-mobile" href="#">
-                <div class="hamburger">
-                    <div></div><div></div><div></div>
-                </div>
-            </a>
+                <a class="option global-search-toggle" href="#">
+                    <em class="fas fa-search"></em>
+                </a>
+            </div>
         </div>
     </div>
 </nav>

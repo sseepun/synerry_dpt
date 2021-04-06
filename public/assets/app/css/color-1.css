@@ -44,16 +44,22 @@ nav.stopnav .flag-wrapper{background:#ffffff; color:#000000;}
 
 /* Topnav */
 nav.topnav{background:#000000; color:#ffffff; border-bottom:1px solid #ffffff;}
-nav.topnav .menu, nav.topnav .option, nav.topnav .submenu-block{border-color:#ffffff;}
-nav.topnav .menu > a{color:#ffffff;}
-nav.topnav .menu:hover > a, nav.topnav .menu.active{background:#ffffff; color:#000000;}
-nav.topnav .hamburger > *{background:#ffffff;}
-nav.topnav .submenu-dropdown{background:#000000; border:1px solid #ffffff;}
+nav.topnav .logo .img-container{background:#ffffff;}
+nav.topnav .menu::before, nav.topnav .option::before{background:#ffffff!important;}
+nav.topnav .menu::after{background:#ffffff;}
+nav.topnav .menu > a, nav.topnav .option{color:#ffffff;}
+nav.topnav .menu:hover > a, nav.topnav .menu.active > a,
+nav.topnav .option:hover, nav.topnav .option.active{color:#000000;}
+nav.topnav .option.sidenav-toggle{background:#ffffff;}
+nav.topnav .hamburger > *{background:#000000;}
+nav.topnav .submenu-dropdown,
+nav.topnav .option > .dropdown{background:#000000; border:1px solid #ffffff;}
 nav.topnav .submenu-title{color:#ffffff;}
 nav.topnav .submenu-block:first-child > .submenu-title{color:#ffffff; border-color:#ffffff;}
 nav.topnav .submenu > a{color:#ffffff;}
 nav.topnav .submenu .submenu > a::before{background:#ffffff;}
 nav.topnav .submenu > a::after{background:#ffffff;}
+nav.topnav .option > .dropdown .flag-wrapper:hover{background:#ffffff;}
 
 /* Sidenav */
 nav.sidenav{background:#000000; border-left:1px solid #ffffff;}

@@ -1,8 +1,8 @@
 /* Reset */
 html, body{
     padding:0; margin:0; overflow-x:hidden; overflow-y:auto;
-    font-size:16px; font-weight:300; line-height:1.50;
-    font-family:'Prompt', sans-serif;
+    font-size:16px; font-weight:300; line-height:1.25;
+    font-family:'Sukhumvit', sans-serif;
 }
 body.loading{height:100vh!important; overflow-y:hidden!important;}
 
@@ -19,13 +19,20 @@ img.img{display:block; width:100%; height:auto;}
 
 input[type=text], input[type=email], input[type=password], input[type=date], input[type=tel],
 input[type=number], input[type=phone], input[type=submit], nput[type=file], select, 
-textarea, button{font-family:'Prompt', sans-serif;}
+textarea, button{font-family:'Sukhumvit', sans-serif;}
 
 html.topnav-dropdown-opened, body.topnav-dropdown-opened,
 html.global-search-opened, body.global-search-opened{overflow-y:hidden!important;}
 @media screen and (max-width:1199.98px){
     html.sidenav-opened, body.sidenav-opened{overflow-y:hidden!important;}
 }
+
+.font-01{
+    font-family:'TH Sarabun', sans-serif!important; font-size:140%!important;
+    line-height:1.00;
+}
+.font-02{font-family:'Sukhumvit', sans-serif!important;}
+.font-03{font-family:'Prompt', sans-serif!important;}
 
 
 /* Section & Container */
@@ -68,7 +75,7 @@ html.global-search-opened, body.global-search-opened{overflow-y:hidden!important
 
 /* Typography */
 h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6, p, .p, li{
-    margin:0; font-weight:300; line-height:1.50;
+    margin:0; font-weight:300; line-height:1.25;
 }
 /* h1, .h1{font-size:4.5625rem;} */
 h2, .h2{font-size:3rem;} h2.lg, .h2.lg{font-size:3.25rem;}
@@ -346,7 +353,8 @@ textarea[data-copy]{pointer-events:none!important;}
 /* Hamburger */
 .hamburger{cursor:pointer;}
 .hamburger > *{
-    width:1.625rem; height:.125rem; transform:translateX(.375rem); transition:all .45s;
+    position:relative; width:1.625rem; height:.125rem;
+    transform:translateX(.375rem); transition:all .45s;
 }
 .hamburger > *:nth-child(2){margin:.4375rem 0; width:2rem; transform:none;}
 .hamburger.active > *:nth-child(1){

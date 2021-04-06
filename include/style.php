@@ -10,14 +10,6 @@
 <link rel="stylesheet" href="public/assets/lib/vanilla-datepicker/dist/css/datepicker.min.css" />
 <link rel="stylesheet" href="public/assets/lib/aos-2.3.1/aos.min.css" />
 
-<style>
-    :root{
-        --pcolor:#ffb739;
-        --scolor:#fe4d01;
-        --tcolor:#181818;
-    }
-</style>
-
 <link rel="stylesheet" href="public/assets/app/css/grids.css" />
 <link rel="stylesheet" href="public/assets/app/css/style.css" />
 <link rel="stylesheet" href="public/assets/app/css/navs.css" />

@@ -6,7 +6,7 @@
 
 
 /* Sukhumvit */
-/* @font-face{
+@font-face{
     font-family:'Sukhumvit'; font-weight:100; font-style:normal;
     src:url('./Sukhumvit/SukhumvitSet-Thin.ttf') format('truetype');
 }
@@ -29,4 +29,23 @@
 @font-face{
     font-family:'Sukhumvit'; font-weight:600; font-style:normal;
     src:url('./Sukhumvit/SukhumvitSet-Bold.ttf') format('truetype');
-} */
+}
+
+
+/* TH Sarabun */
+@font-face{
+    font-family:'TH Sarabun'; font-weight:300; font-style:normal;
+    src:url('./THSarabunNew/THSarabunNew.ttf') format('truetype');
+}
+@font-face{
+    font-family:'TH Sarabun'; font-weight:300; font-style:italic;
+    src:url('./THSarabunNew/THSarabunNew_Italic.ttf') format('truetype');
+}
+@font-face{
+    font-family:'TH Sarabun'; font-weight:600; font-style:normal;
+    src:url('./THSarabunNew/THSarabunNew_Bold.ttf') format('truetype');
+}
+@font-face{
+    font-family:'TH Sarabun'; font-weight:600; font-style:italic;
+    src:url('./THSarabunNew/THSarabunNew_BoldItalic.ttf') format('truetype');
+}

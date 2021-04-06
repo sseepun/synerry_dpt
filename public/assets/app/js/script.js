@@ -10,6 +10,7 @@ $(function(){ 'use strict';
     if(topnav.length){
         // Generate Sidenav
         sidenavMenus.html( topnav.find('#topnav-menu').html() );
+        sidenavMenus.find('em').remove();
         sidenavMenus.find('.num, .title, .submenu-title').remove();
         sidenavMenus.find('.has-children').each(function(){
             $(this).append('<div class="dropdown-toggle"><em class="fas fa-chevron-right"></em></div>');
@@ -93,7 +94,7 @@ $(function(){ 'use strict';
         }else{
             backToTop.removeClass('active');
         }
-        if(st > 2.9375*bodySize){
+        if(st > 2.375*bodySize){
             topnav.addClass('sticky');
         }else{
             topnav.removeClass('sticky');
