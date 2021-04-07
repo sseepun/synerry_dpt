@@ -83,7 +83,10 @@ nav.sidenav .submenu .dropdown-toggle{color:#000000;}
 .back-to-top{background:#000000; color:#ffff00!important; border-color:#ffff00;}
 
 /* Footer */
-nav.footer .links li::before{background:#ffff00;}
+nav.footer{background:#000000;}
+nav.footer .btn-footer{background:#000000; color:#ffff00; border:1px solid #ffff00;}
+nav.footer ul > li::before{background:#ffff00;}
+nav.footer ul > li > a{color:#ffff00;}
 
 /* Super Footer */
 nav.sfooter .visitor-count > *{background:#ffff00; color:#000000;}
@@ -96,6 +99,8 @@ nav.sfooter .quicklinks > a{color:#ffff00;}
 .btn.btn-color-03, .btn.btn-color-03:focus, .btn.btn-color-03:hover, .btn.btn-color-03:active{
     color:#000000; background:#ffff00; border-color:#ffff00;
 }
+.btn.btn-more{color:#ffff00;}
+.btn.btn-more::after{background:#ffff00;}
 
 
 /* Inputs */
@@ -191,6 +196,10 @@ input[type=number], input[type=phone], input[type=submit], input[type=file], sel
 .post-stat .stat em{color:#000000; background:#ffff00;}
 
 
+/* Slide Container 01 */
+.slide-container-01 .slick-dots button{background:#ffff00;}
+
+
 /* Special Border */
 .ss-border{border-top:4px solid #ffff00!important; border-bottom:1px solid #ffff00!important;}
 
@@ -205,17 +214,13 @@ input[type=number], input[type=phone], input[type=submit], input[type=file], sel
 .ss-box-header > .body{border:1px solid #ffff00;}
 
 
-/* Special Box Webboard */
-.ss-box-webboard > .header{border:1px solid #ffff00;}
-.ss-box-webboard > .header .blocks{border-color:#ffff00;}
-.ss-box-webboard > .header .slot{border-color:#ffff00;}
-.ss-box-webboard > .body{border:1px solid #ffff00; border-top:0;}
-.ss-box-webboard .body-section{border-color:#ffff00;}
-.ss-box-webboard .inner-wrapper{border-color:#ffff00;}
-.ss-box-webboard .webboard-profile > .profile-icon{background:#ffff00;}
-.ss-box-webboard .btn.btn-icon{color:#ffff00; border-color:#ffff00;}
-.ss-box-webboard a.btn.btn-icon:hover{color:#000000; background:#ffff00;}
-.ss-box-webboard .ss-icon-title > em{background:#ffff00!important;}
+/* Special Card 02 */
+.ss-card-02:hover{border-color:#ffff00!important;}
+.ss-card-02 .date-container, .ss-card-02 .download-container{border:1px solid #ffff00;}
+.ss-card-02 .text-container{border-top:1px solid #ffff00; border-bottom:1px solid #ffff00;}
+
+/* Special Card 03 */
+.ss-card-03{border:1px solid #ffff00;}
 
 
 /* Special Date */
@@ -245,6 +250,11 @@ input[type=number], input[type=phone], input[type=submit], input[type=file], sel
 /* Special Stat */
 .ss-stat .stat{color:#ffff00;}
 .ss-stat .stat .icon-round{background:#ffff00; color:#000000;}
+
+
+/* Special Tab */
+.ss-tab{background:#ffff00; color:#000000;}
+
 
 /* Special Tags */
 .ss-tags> .tag{background:#ffff00; color:#000000;}
@@ -379,3 +389,7 @@ table.table.table-01 .status{color:#ffff00;}
 
 /* Tab Container - Tabs 01 */
 .tab-container .tabs.tabs-01 .tab{background:#ffff00; color:#000000;}
+
+/* Tab Container - Tabs 02 */
+.tab-container .tabs.tabs-02 .tab{color:#ffff00;}
+.tab-container .tabs.tabs-02 .tab.active{background:#ffff00; color:#000000;}

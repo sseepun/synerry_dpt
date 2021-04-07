@@ -145,7 +145,7 @@
         <div class="container">
             <div class="grids">
 
-                <div class="grid md-50">
+                <div class="grid md-50 sm-100 mt-0" data-aos="fade-up" data-aos-delay="0">
                     <div class="tab-container">
                         <div class="tabs tabs-02">
                             <a class="tab active" href="#" data-tab="0">
@@ -158,13 +158,132 @@
                         <div class="tab-contents">
                             <?php for($i=0; $i<2; $i++){?>
                                 <div class="tab-content <?php if($i==0)echo 'active'; ?>" data-tab="<?= $i ?>">
-                                    Hello
+                                    <?php for($j=0; $j<8; $j++){?>
+                                        <?php include('component/ss-card-02.php'); ?>
+                                    <?php }?>
                                 </div>
                             <?php }?>
+                            <div class="btns text-right mt-3">
+                                <a class="btn btn-more" href="#">
+                                    ดูทั้งหมด
+                                </a>
+                            </div>
                         </div>
                     </div>
                 </div>
 
+                <div class="grid md-50 sm-100 mt-0" data-aos="fade-up" data-aos-delay="150">
+                    <div class="grids">
+                        <div class="grid md-100 lg-50 mt-0">
+                            <div class="grids">
+                                <div class="grid sm-100 xl-mt-0 lg-mt-0 md-mt-0">
+                                    <div class="ss-slot clip-path-01 border bg-04 bcolor-04">
+                                        <div class="wrapper color-white">
+                                            <p class="xxs fw-100">กรมโยธาธิการและผังเมือง</p>
+                                            <p class="md fw-200">ปิดประกาศ</p>
+                                            <p class="h6 fw-600 mt-4">
+                                                <span class="color-01 text-4xl">60</span> วัน
+                                            </p>
+                                        </div>
+                                        <div class="pattern-container">
+                                            <img src="public/assets/app/images/icon/pattern-01.png" alt="Image Pattern" />
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="grid sm-100">
+                                    <div class="ss-slot clip-path-01 border bg-05 bcolor-04">
+                                        <div class="wrapper color-white">
+                                            <p class="xxs fw-100">กรมโยธาธิการและผังเมือง</p>
+                                            <p class="md fw-200">ปิดประกาศ</p>
+                                            <p class="h6 fw-600 mt-4">
+                                                <span class="color-01 text-4xl">15</span> วัน
+                                            </p>
+                                        </div>
+                                        <div class="pattern-container">
+                                            <img src="public/assets/app/images/icon/pattern-02.png" alt="Image Pattern" />
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="grid md-100 lg-50 xl-mt-0 lg-mt-0">
+                            <div class="ss-slot adaptive clip-path-01 border bg-06 bcolor-06">
+                                <div class="wrapper color-white">
+                                    <p class="sm fw-100">กรมโยธาธิการและผังเมือง</p>
+                                    <p class="h6 sm fw-200">ปิดประกาศ</p>
+                                    <p class="h4 fw-600 mt-4">
+                                        <span class="color-01 text-4xl">90</span>
+                                    </p>
+                                    <p class="h6 fw-200">วัน</p>
+                                </div>
+                                <div class="pattern-container">
+                                    <img src="public/assets/app/images/icon/pattern-03.png" alt="Image Pattern" />
+                                </div>
+                            </div>
+                        </div>
+                        <div class="grid sm-100">
+                            <div class="d-flex">
+                                <div class="ss-tab">ชวนดูวีดีโอ</div>
+                            </div>
+                            <div class="slide-container slide-container-01">
+                                <div class="slides">
+                                    <?php for($j=0; $j<4; $j++){?>
+                                        <div class="slide">
+                                            <?php include('component/ss-card-03.php'); ?>
+                                        </div>
+                                    <?php }?>
+                                </div>
+                                <div class="dots"></div>
+                                <div class="btns-absolute">
+                                    <a class="btn btn-more" href="#">
+                                        ดูทั้งหมด
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="pt-4">
+        <div class="tab-container">
+            <div class="container">
+                <div class="tabs jc-start tabs-01" data-aos="fade-up" data-aos-delay="0">
+                    <a class="tab active" href="#" data-tab="0">
+                        หน่วยงานภายใน
+                    </a>
+                    <a class="tab" href="#" data-tab="1">
+                        หน่วยงานภายนอก
+                    </a>
+                </div>
+            </div>
+            <div class="tab-contents"data-aos="fade-up" data-aos-delay="150">
+                <?php for($i=0; $i<6; $i++){?>
+                    <div class="tab-content <?php if($i==0)echo 'active'; ?>" data-tab="<?= $i ?>">
+                        <div class="slide-container slide-container-02">
+                            <div class="slides">
+                                <?php for($j=0; $j<8; $j++){?>
+                                    <div class="slide">
+                                        <a class="ss-card ss-card-04" href="#">
+                                            <div class="img-bg" style="background-image:url('public/assets/app/images/client/<?= sprintf('%02d', $j%6+1) ?>.jpg');"></div>
+                                            <div class="text-container">
+                                                <h6 class="p xs fw-400 color-white">
+                                                    ระเบียบกรมโยธาธิการ <br> และผังเมืองว่าด้วยการ
+                                                </h6>
+                                                <p class="xxs fw-200 color-white mt-1">
+                                                    ให้บริการวิเคราะห์วิจัยและทดสอบวัสดุ
+                                                </p>
+                                            </div>
+                                        </a>
+                                    </div>
+                                <?php }?>
+                            </div>
+                        </div>
+                    </div>
+                <?php }?>
             </div>
         </div>
     </section>
