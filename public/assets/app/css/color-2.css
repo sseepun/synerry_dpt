@@ -96,7 +96,8 @@ nav.sfooter .quicklinks > a{color:#ffff00;}
 /* Buttons */
 .btn.btn-color-01, .btn.btn-color-01:focus, .btn.btn-color-01:hover, .btn.btn-color-01:active,
 .btn.btn-color-02, .btn.btn-color-02:focus, .btn.btn-color-02:hover, .btn.btn-color-02:active,
-.btn.btn-color-03, .btn.btn-color-03:focus, .btn.btn-color-03:hover, .btn.btn-color-03:active{
+.btn.btn-color-03, .btn.btn-color-03:focus, .btn.btn-color-03:hover, .btn.btn-color-03:active,
+.btn.btn-color-04, .btn.btn-color-04:focus, .btn.btn-color-04:hover, .btn.btn-color-04:active{
     color:#000000; background:#ffff00; border-color:#ffff00;
 }
 .btn.btn-more{color:#ffff00;}

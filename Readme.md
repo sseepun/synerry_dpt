@@ -1,5 +1,5 @@
 
-# Energy HTML
+# DPT HTML
 Need PHP server to run this project.
 
 # Install

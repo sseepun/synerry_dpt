@@ -251,25 +251,32 @@ nav.footer li ul > li::before{display:none;}
 
 
 /* Super Footer */
-nav.sfooter{display:block; width:100%; padding:0 0 4rem 0; overflow:hidden;}
-nav.sfooter .blocks{
-    width:100%; display:flex; align-items:center; justify-content:space-between;
-    flex-wrap:wrap;
+nav.sfooter{display:block; width:100%; overflow:hidden;}
+nav.sfooter .grids{padding-bottom:2rem;}
+nav.sfooter .grid{padding-top:1.5rem;}
+nav.sfooter table{width:100%;}
+nav.sfooter table td{vertical-align:top; padding:0 .875rem .375rem 0;}
+nav.sfooter table td:last-child{padding-right:0;}
+nav.sfooter table tr:last-child > td{padding-bottom:0;}
+nav.sfooter table img{
+    display:block; width:auto; max-width:.875rem; height:auto; max-height:.875rem;
 }
-nav.sfooter .block{margin:1rem 0 0 0;}
-nav.sfooter .block:nth-child(2){text-align:right;}
+nav.sfooter .copyright-container{position:relative; width:100%; padding:1rem 0 0 0;}
+nav.sfooter img.img-stat{
+    display:block; width:9rem; height:auto; position:absolute; top:50%; right:0;
+}
 nav.sfooter .visitor-count{
-    display:flex; align-items:center; justify-content:flex-end; margin:0 0 0 .5rem;
+    display:block; padding:.25rem .3125rem .5rem .3125rem; margin:.75rem 0 0 0;
 }
-nav.sfooter .visitor-count > *{
-    display:inline-block; width:1.125rem; height:1.5rem; line-height:1.5rem; text-align:center;
-    font-size:.875rem; font-weight:500; margin:0 0 0 .0625rem;
+nav.sfooter .visitor-count .count{
+    display:flex; align-items:center; justify-content:center; margin:0 0 .125rem 0;
 }
-nav.sfooter .quicklinks{width:100%; font-size:.8125rem; text-align:right; margin:0;}
-nav.sfooter .quicklinks > a{display:inline-block; margin:.25rem 0 0 .875rem;}
+nav.sfooter .visitor-count .count > *{
+    display:block; width:1.4375rem; height:1.75rem; line-height:1.75rem; text-align:center;
+    font-size:1.125rem; font-weight:300;
+}
 @media screen and (max-width:767.98px){
-    nav.sfooter .blocks, nav.sfooter .d-flex{justify-content:center;}
-    nav.sfooter .block:nth-child(2){width:100%; text-align:center;}
-    nav.sfooter .quicklinks{text-align:center;}
-    nav.sfooter .quicklinks > a{margin:.25rem .25rem 0 .25rem;}
+    nav.sfooter img.img-stat{
+        position:relative; top:unset; right:unset; margin:1rem auto .125rem auto;
+    }
 }

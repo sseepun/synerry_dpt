@@ -124,16 +124,104 @@
 </nav>
 
 <!-- Super Footer -->
-<nav class="sfooter color-white bg-black border-top bcolor-black">
+<nav class="sfooter color-white bg-07 border-top bcolor-07">
     <div class="container">
-        <div class="blocks">
-            <div class="block">
-                <p class="xxs">
-                    1906 23rd Street, N.W., Washington D.C. 20008
+        <div class="grids border-bottom-2 bcolor-white">
+            <div class="grid xl-40 lg-50 sm-100 mt-0">
+                <h6 class="h5 sm color-01 fw-200">
+                    กรมโยธาธิการและผังเมือง กระทรวงมหาดไทย
+                </h6>
+                <p>
+                    <span class="font-01 color-white">
+                        224 ถนนพระราม 9 แขวงห้วยขวาง เขตห้วยขวาง กรุงเทพฯ 10320
+                    </span>
                 </p>
-                <div class="d-flex ai-center mt-1">
-                    <p class="xxs">จำนวนผู้เข้าชม</p>
-                    <div class="visitor-count">
+                <div class="btns mt-2">
+                    <a class="btn btn-social btn-color-04 no-bradius mr-1" href="#">
+                        <em class="fab fa-facebook-f"></em>
+                    </a>
+                    <a class="btn btn-social btn-color-04 no-bradius mr-1" href="#">
+                        <em class="fab fa-instagram"></em>
+                    </a>
+                    <a class="btn btn-social btn-color-04 no-bradius" href="#">
+                        <em class="fab fa-twitter"></em>
+                    </a>
+                </div>
+            </div>
+            <div class="grid xl-30 lg-25 sm-50 mt-0">
+                <table>
+                    <tbody>
+                        <tr>
+                            <td><img src="public/assets/app/images/icon/footer-01.png" alt="Image Icon" /></td>
+                            <td><p class="xs color-01"><span class="font-01">โทรศัพท์</span></p></td>
+                            <td><a href="#" class="p xs color-white h-color-01">
+                                <span class="font-01">0 2207 3599</span>
+                            </a></td>
+                        </tr>
+                        <tr>
+                            <td><img src="public/assets/app/images/icon/footer-02.png" alt="Image Icon" /></td>
+                            <td><p class="xs color-01">
+                                <span class="font-01">โทรสาร</span>
+                            </p></td>
+                            <td><a href="#" class="p xs color-white h-color-01">
+                                <span class="font-01">0 2207 3506</span>
+                            </a></td>
+                        </tr>
+                        <tr>
+                            <td><img src="public/assets/app/images/icon/footer-03.png" alt="Image Icon" /></td>
+                            <td><p class="xs color-01">
+                                <span class="font-01">อีเมล</span>
+                            </p></td>
+                            <td><a href="#" class="p xs color-white h-color-01">
+                                <span class="font-01">support@erc.or.th</span>
+                            </a></td>
+                        </tr>
+                        <tr>
+                            <td><img src="public/assets/app/images/icon/footer-04.png" alt="Image Icon" /></td>
+                            <td><p class="xs color-01">
+                                <span class="font-01">หน่วยงาน<br>บริการ</span>
+                            </p></td>
+                            <td><a href="#" class="h3 fw-600 color-white h-color-01">
+                                <span class="font-01 lh-3xs">1204</span>
+                            </a></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="grid xl-30 lg-25 sm-50 mt-0 op-90">
+                <a class="d-block p xxs color-white h-color-01" href="#">
+                    <span class="font-01">
+                        การปฏิเสธความรับผิด (Disclaimer)
+                    </span>
+                </a>
+                <a class="d-block p xxs color-white h-color-01 mt-2" href="#">
+                    <span class="font-01">
+                        นโยบายเว็บไซต์ (Website Policy)
+                    </span>
+                </a>
+                <a class="d-block p xxs color-white h-color-01 mt-2" href="#">
+                    <span class="font-01">
+                        นโยบายการคุ้มครองข้อมูลส่วนบุคคล (Privacy Policy)
+                    </span>
+                </a>
+                <a class="d-block p xxs color-white h-color-01 mt-2" href="#">
+                    <span class="font-01">
+                        นโยบายการรักษาความมั่นคงปลอดภัยของเว็บไซต์ 
+                        (Website Security Policy)
+                    </span>
+                </a>
+            </div>
+        </div>
+        <div class="copyright-container">
+            <p class="xxs color-white text-center op-90">
+                <span class="font-01">
+                    สงวนลิขสิทธิ์ © 2564 โดย กรมโยธาธิการและผังเมือง กระทรวงมหาดไทย
+                </span>
+            </p>
+            <img class="img-stat" src="public/assets/app/images/misc/stat.png" alt="Image Icon" />
+            <div class="d-flex jc-center">
+                <div class="visitor-count">
+                    <div class="count">
                         <div>3</div>
                         <div>8</div>
                         <div>4</div>
@@ -142,17 +230,9 @@
                         <div>1</div>
                         <div>2</div>
                     </div>
-                </div>
-            </div>
-            <div class="block">
-                <p class="xxs op-70">
-                    &copy; 2021 by Office of Educational Affairs.
-                    All rights reserved.
-                </p>
-                <div class="quicklinks">
-                    <a class="h-color-p" href="#">นโยบายเว็บไซต์</a>
-                    <a class="h-color-p" href="#">นโยบายการคุ้มครองข้อมูลส่วนบุคคล</a>
-                    <a class="h-color-p" href="#">นโยบายคุ้กกี้</a>
+                    <p class="xxxs color-white text-center">
+                        <span class="font-01">จำนวนผู้เยี่ยมชมเว็บ</span>
+                    </p>
                 </div>
             </div>
         </div>
