@@ -89,8 +89,7 @@ nav.footer ul > li::before{background:#ffff00;}
 nav.footer ul > li > a{color:#ffff00;}
 
 /* Super Footer */
-nav.sfooter .visitor-count > *{background:#ffff00; color:#000000;}
-nav.sfooter .quicklinks > a{color:#ffff00;}
+nav.sfooter .visitor-count{border:1px solid #ffff00;}
 
 
 /* Buttons */
