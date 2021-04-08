@@ -62,37 +62,37 @@
                                 <div class="submenu-block">
                                     <h6 class="submenu-title p lg fw-600"><?= $d ?></h6>
                                     <div class="submenu">
-                                        <a href="#">ประวัติกระทรวงพลังงาน</a>
+                                        <a href="#">ทิศทางองค์กร</a>
                                     </div>
                                     <div class="submenu">
-                                        <a href="#">วิสัยทัศน์ พันธกิจ และตราสัญลักษณ์</a>
+                                        <a href="#">ภารกิจ 4 ด้าน</a>
                                     </div>
                                     <div class="submenu">
-                                        <a href="#">ผู้บริหารระดับสูง</a>
+                                        <a href="#">การแบ่งส่วนราชการกรมโยธาธิการและผังเมือง</a>
                                     </div>
                                     <div class="submenu">
-                                        <a href="#">ผู้บริหารเทคโนโลยีสารสนเทศระดับสูง (CIO)</a>
+                                        <a href="#">อำนาจหน้าที่ของกรมและส่วนราชการ</a>
                                     </div>
                                     <div class="submenu">
-                                        <a href="#">โครงสร้างส่วนราชการ</a>
+                                        <a href="#">ประวัติความเป็นมาและตราสัญลักษณ์</a>
                                     </div>
                                     <div class="submenu">
-                                        <a href="#">อำนาจหน้าที่</a>
+                                        <a href="#">โครงสร้างองค์กร</a>
                                     </div>
                                     <div class="submenu">
-                                        <a href="#">เจตจำนงสุจริตของผู้บริหาร</a>
+                                        <a href="#">ทำเนียบผู้บริหารกรมฯ</a>
                                     </div>
                                     <div class="submenu">
-                                        <a href="#">การมีส่วนร่วมของผู้บริหาร</a>
+                                        <a href="#">ผู้บริหารเทคโนโลยีสารสนเทศระดับสูง</a>
                                     </div>
                                     <div class="submenu">
-                                        <a href="#">แผนยุทธศาสตร์หรือแผนพัฒนาหน่วยงาน</a>
+                                        <a href="#">รายงานผล</a>
                                     </div>
                                     <div class="submenu">
-                                        <a href="#">กฎหมาย/พรบ.ด้านพลังงาน</a>
+                                        <a href="#">แผนงาน</a>
                                     </div>
                                 </div>
-                                <div class="submenu-block">
+                                <!-- <div class="submenu-block">
                                     <h6 class="submenu-title p lg fw-600"><?= $d ?></h6>
                                     <div class="submenu">
                                         <a href="#">การเสริมสร้างวัฒนธรรมองค์กร</a>
@@ -123,7 +123,7 @@
                                             </div>
                                         </div>
                                     </div>
-                                </div>
+                                </div> -->
                             </div>
                         </div>
                     </div>
