@@ -12,13 +12,14 @@
 
     <?php
         $breadcrumb = [
-            'leading' => 'แ',
-            'title' => 'ผนผังเว็บไซต์',
+            'leading' => 'คำ',
+            'leading_class' => 'stripe-bottom',
+            'title' => 'ถามที่พบบ่อย',
             'desc' => 'กรมโยธาธิการและผังเมืองพร้อมให้ข้อมูลข่าวสาร <br> ที่เป็นประโยชน์ สำหรับคุณ',
-            'image' => 'public/assets/app/images/bg/breadcrumb-01.jpg',
-            'show_search' => false,
+            'image' => 'public/assets/app/images/bg/breadcrumb-02.jpg',
+            'show_search' => true,
             'structure' => [
-                [ 'name' => 'แผนผังเว็บไซต์', 'url' => '#' ]
+                [ 'name' => 'คำถามที่พบบ่อย', 'url' => '#' ]
             ]
         ];
         include_once('component/breadcrumb-01.php');
@@ -29,26 +30,9 @@
             <div class="section-bg" style="background-image:url('public/assets/app/images/bg/section-01.jpg');"></div>
             <div class="ss-box width-full position-relative" data-aos="fade-up" data-aos-delay="300">
                 <div class="ss-box-shadow xl"></div>
-                <div class="options">
-                    <a class="option" href="#">
-                        <p class="fw-200 px-3">แชร์</p>
-                    </a>
-                    <a class="option" href="#">
-                        <em class="fab fa-facebook-f"></em>
-                    </a>
-                    <a class="option" href="#">
-                        <em class="fab fa-twitter"></em>
-                    </a>
-                    <a class="option" href="#">
-                        <em class="fab fa-line"></em>
-                    </a>
-                    <a class="option option-search" href="#">
-                        <em class="fas fa-search"></em>
-                    </a>
-                </div>
                 <div class="header bg-01">
                     <h6 class="p lg fw-500 color-03 text-center">
-                        แผนผังเว็บไซต์
+                        คำถามที่พบบ่อย
                     </h6>
                 </div>
                 <div class="body pb-5">

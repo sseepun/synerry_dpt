@@ -138,7 +138,7 @@
 /* Breadcrumb 01 */
 .breadcrumb-01{width:100%; overflow:hidden;}
 .breadcrumb-01 .breadcrumb-container{
-    width:100%; min-height:26rem; padding:10rem 0 2.75rem 0; background-size:cover;
+    width:100%; padding:10rem 0 6.25rem 0; background-size:cover;
     background-position:center;
 }
 .breadcrumb-01 .breadcrumb-wrapper{
@@ -146,7 +146,7 @@
 }
 .breadcrumb-01 .breadcrumb-wrapper img{display:block; height:.8125rem; width:auto;}
 .breadcrumb-01 .breadcrumb-wrapper a{
-    display:block; margin:.375rem .875rem 0 0; font-size:.875rem; font-weight:300;
+    display:block; margin:.375rem .875rem 0 0; font-size:.875rem; font-weight:200;
 }
 .breadcrumb-01 .breadcrumb-wrapper em{margin:.375rem .875rem 0 0; font-size:.625rem;}
 .breadcrumb-01 .pattern-container{display:block; width:100%; height:2rem;}
@@ -156,19 +156,19 @@
 }
 .breadcrumb-01 .ss-icon-title-01{min-height:5.3125rem;}
 @media screen and (max-width:1199.98px){
-    .breadcrumb-01 .breadcrumb-container{min-height:24.625rem; padding:9rem 0 2.75rem 0;}
+    .breadcrumb-01 .breadcrumb-container{padding:9rem 0 6.25rem 0;}
     .breadcrumb-01 .breadcrumb-wrapper{margin:2.75rem 0 0 0;}
 }
 @media screen and (max-width:991.98px){
-    .breadcrumb-01 .breadcrumb-container{min-height:23.125rem; padding:8rem 0 2.75rem 0;}
+    .breadcrumb-01 .breadcrumb-container{padding:8rem 0 6.25rem 0;}
     .breadcrumb-01 .breadcrumb-wrapper{margin:2.5rem 0 0 0;}
 }
 @media screen and (max-width:767.98px){
-    .breadcrumb-01 .breadcrumb-container{min-height:21.75rem; padding:7rem 0 2.75rem 0;}
+    .breadcrumb-01 .breadcrumb-container{padding:7rem 0 6.25rem 0;}
     .breadcrumb-01 .breadcrumb-wrapper{margin:2.25rem 0 0 0;}
 }
 @media screen and (max-width:575.98px){
-    .breadcrumb-01 .breadcrumb-container{min-height:20rem; padding:6rem 0 2.75rem 0;}
+    .breadcrumb-01 .breadcrumb-container{padding:6rem 0 6.25rem 0;}
     .breadcrumb-01 .breadcrumb-wrapper{margin:2rem 0 0 0;}
     .breadcrumb-01 .ss-icon-title-01 .desc br{display:none;}
 }
@@ -429,6 +429,28 @@
     .pagination-01 > .btns{width:100%; margin:.25rem 0 0 0; text-align:center;}
 }
 
+/* Pagination 02 */
+.pagination-02 > .wrapper{
+    display:flex; align-items:center; justify-content:center; flex-wrap:wrap;
+}
+.pagination-02 .page-btn{
+    display:inline-block; text-decoration:none; height:2.125rem; width:2.125rem;
+    line-height:1.875rem; font-size:.875rem; font-weight:600; padding:0; text-align:center;
+    margin:.0625rem .1875rem; border-radius:50%; border:.1875rem solid transparent;
+    transition:background .25s, color .25s, border-color .25s;
+}
+.pagination-02 .page-btn.page-first, .pagination-02 .page-btn.page-prev, 
+.pagination-02 .page-btn.page-next, .pagination-02 .page-btn.page-last{
+    font-size:1rem; line-height:1.9375rem;
+}
+.pagination-02 .page-btn.disabled{opacity:.5; pointer-events:none;}
+.pagination-02 .dots{
+    font:1rem; font-weight:600; margin:0 .75rem; transform:translateY(-.1875rem);
+}
+@media screen and (max-width:575.98px){
+    .pagination-02 > .btns{width:100%; margin:.25rem 0 0 0; text-align:center;}
+}
+
 
 /* Progress 01 */
 .progress-01{
@@ -565,4 +587,29 @@
 .tab-container .tabs.tabs-02 .tab{
     display:block; position:relative; padding:.75rem 1rem; white-space:nowrap;
     font-size:.875rem; font-weight:500; transition:all .25s;
+}
+
+/* Tab Container - Tabs 03 */
+.tab-container .tabs.tabs-03{width:100%; display:flex; flex-wrap:wrap; overflow:hidden;}
+.tab-container .tabs.tabs-03 .tab{
+    display:block; position:relative; padding:1.125rem 1.5rem; white-space:nowrap;
+    font-size:.875rem; font-weight:400; transition:all .25s;
+}
+.tab-container .tabs.tabs-03 .tab::before{
+    content:''; position:absolute; top:0; bottom:0; left:0; right:0; opacity:0;
+    background:url('../images/misc/tab-bg.jpg') center/cover; transition:opacity .25s;
+}
+.tab-container .tabs.tabs-03 .tab.active::before,
+.tab-container .tabs.tabs-03 .tab:hover::before{opacity:1;}
+.tab-container .tabs.tabs-03 .tab span{position:relative;}
+.tab-container .tabs.tabs-03 .btn-setting{
+    display:flex; justify-content:center; align-items:center; width:2.75rem;
+    margin:0 0 0 auto; transition:background .25s;
+}
+.tab-container .tabs.tabs-03 .btn-setting img{display:block; height:1.5rem; width:auto;}
+@media screen and (max-width:991.98px){
+    .tab-container .tabs.tabs-03 .tab{padding:1rem 1.25rem;}
+}
+@media screen and (max-width:767.98px){
+    .tab-container .tabs.tabs-03 .tab{padding:1rem 1rem;}
 }

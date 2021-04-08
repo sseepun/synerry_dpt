@@ -1,6 +1,10 @@
 <div class="ss-card ss-card-01">
     <div class="ss-img">
         <div class="img-bg" style="background-image:url('public/assets/app/images/content/<?= empty($j)? '01': sprintf('%02d', $j%4+1) ?>.jpg');"></div>
+        <div class="tag-count">
+            <img src="public/assets/app/images/icon/book.png" alt="Image Icon" />
+            255
+        </div>
         <div class="hover-container">
             <div class="btns text-center">
                 <a class="btn btn-social btn-color-02 no-bradius" href="#">

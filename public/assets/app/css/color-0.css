@@ -480,6 +480,19 @@ table.table.table-01 .status{color:#181818;}
 .pagination-01 .page-btn:hover{color:#fdcd05;}
 .pagination-01 .page-btn.active{color:#ffffff; background:#444342;}
 
+/* Pagination 02 */
+.pagination-02 .page-btn{background:#f0f0f0; color:#363635; border-color:#ffffff;}
+.pagination-02 .page-btn:hover{background:#2e1213; color:#ffffff;}
+.pagination-02 .page-btn.active{background:#2e1213; color:#fdcd05; border-color:#fdcd05;}
+.pagination-02 .page-btn.page-first, .pagination-02 .page-btn.page-prev, 
+.pagination-02 .page-btn.page-next, .pagination-02 .page-btn.page-last{
+    color:#682d2f; background:transparent; border-color:transparent;
+}
+.pagination-02 .page-btn.page-first:hover, .pagination-02 .page-btn.page-prev:hover, 
+.pagination-02 .page-btn.page-next:hover, .pagination-02 .page-btn.page-last:hover{
+    color:#fdcd05; background:transparent; border-color:transparent;
+}
+
 
 /* Progress 01 */
 .progress-01 .track{background:#ebebeb;}
@@ -513,3 +526,9 @@ table.table.table-01 .status{color:#181818;}
 .tab-container .tabs.tabs-02 .tab{color:#290b07;}
 .tab-container .tabs.tabs-02 .tab:hover{color:#ffd000;}
 .tab-container .tabs.tabs-02 .tab.active{background:#ffd000; color:#290b07;}
+
+/* Tab Container - Tabs 03 */
+.tab-container .tabs.tabs-03 .tab{color:#290b07;}
+.tab-container .tabs.tabs-03 .tab:hover,
+.tab-container .tabs.tabs-03 .tab.active{color:#ffffff;}
+.tab-container .tabs.tabs-03 .btn-setting:hover{background:rgba(0,0,0,.1);}

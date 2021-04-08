@@ -212,6 +212,7 @@ input[type=number], input[type=phone], input[type=submit], input[type=file], sel
 
 /* Spacial Box */
 .ss-box{border:1px solid #ffffff; background:#000000;}
+.ss-box > .header{border-top:1px solid #ffffff; border-bottom:1px solid #ffffff;}
 .ss-box > .body{background:#000000;}
 .ss-box > .options > .option{background:#000000; color:#ffffff;}
 .ss-box > .options > .option:hover{background:#ffffff; color:#000000;}
@@ -378,6 +379,11 @@ table.table.table-01 .status{color:#ffffff;}
 .pagination-01 .page-btn{color:#ffffff;}
 .pagination-01 .page-btn.active{color:#000000; background:#ffffff;}
 
+/* Pagination 02 */
+.pagination-02 .page-btn{color:#ffffff;}
+.pagination-02 .page-btn:hover{background:#ffffff; color:#000000;}
+.pagination-02 .page-btn.active{background:#ffffff; color:#000000;}
+
 
 /* Progress 01 */
 .progress-01 .track{background:#000000; border:1px solid #ffffff;}
@@ -404,3 +410,11 @@ table.table.table-01 .status{color:#ffffff;}
 /* Tab Container - Tabs 02 */
 .tab-container .tabs.tabs-02 .tab{color:#ffffff;}
 .tab-container .tabs.tabs-02 .tab.active{background:#ffffff; color:#000000;}
+
+/* Tab Container - Tabs 03 */
+.tab-container .tabs.tabs-03 .tab{color:#ffffff;}
+.tab-container .tabs.tabs-03 .tab:hover,
+.tab-container .tabs.tabs-03 .tab.active{background:#ffffff; color:#000000;}
+.tab-container .tabs.tabs-03 .tab::before{display:none;}
+.tab-container .tabs.tabs-03 .btn-setting{background:#ffffff;}
+.tab-container .tabs.tabs-03 .btn-setting:hover{background:rgba(255,255,255,.9);}
