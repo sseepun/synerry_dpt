@@ -61,6 +61,8 @@ nav.topnav .submenu .submenu > a::before{background:#ffffff;}
 nav.topnav .submenu > a::after{background:#ffffff;}
 nav.topnav .option > .dropdown .flag-wrapper:hover{background:#ffffff;}
 
+nav.topnav.clear:not(.sticky){background:transparent; border-color:transparent;}
+
 /* Sidenav */
 nav.sidenav{background:#000000; border-left:1px solid #ffffff;}
 nav.sidenav .hamburger > *{background:#ffffff;}
@@ -90,6 +92,10 @@ nav.footer ul > li > a{color:#ffffff;}
 
 /* Super Footer */
 nav.sfooter .visitor-count{border:1px solid #ffffff;}
+
+
+/* Section & Container */
+.section-01 .section-bg{background:transparent!important;}
 
 
 /* Buttons */
@@ -205,13 +211,12 @@ input[type=number], input[type=phone], input[type=submit], input[type=file], sel
 
 
 /* Spacial Box */
-.ss-box .title-container > .title-wrapper{background:#ffffff; color:#000000;}
-.ss-box .title-container.with-active > .active-wrapper{background:#ffffff; color:#000000;}
-.ss-box .input-group{border-color:#ffffff!important;}
+.ss-box{border:1px solid #ffffff; background:#000000;}
+.ss-box > .body{background:#000000;}
+.ss-box > .options > .option{background:#000000; color:#ffffff;}
+.ss-box > .options > .option:hover{background:#ffffff; color:#000000;}
 
-/* Special Box Header */
-.ss-box-header > .header{background:#ffffff!important; color:#000000!important;}
-.ss-box-header > .body{border:1px solid #ffffff;}
+/* Special Box Shadow */
 
 
 /* Special Card 02 */
@@ -243,8 +248,8 @@ input[type=number], input[type=phone], input[type=submit], input[type=file], sel
 .ss-img .hover-container{border-color:#ffffff!important; background:rgba(0,0,0,.4);}
 
 
-/* Special List 01 */
-.ss-list-01 > li::before{background:#ffffff;}
+/* Special List */
+.ss-list > li::before{background:#ffffff;}
 
 
 /* Special Stat */
@@ -300,9 +305,15 @@ table.table.table-01 .status{color:#ffffff;}
 .banner-01 .arrows button{color:#ffffff;}
 
 
-/* Breadcrumb 03 */
-.breadcrumb-03 .text-container{background:#000000; color:#ffffff; border:1px solid #ffffff;}
-.breadcrumb-03 > .bottom-container{background:#000000; border-bottom:1px solid #ffffff;}
+/* Breadcrumb 01 */
+.breadcrumb-01{color:#ffffff;}
+.breadcrumb-01 .ss-icon-title-01 > .text-icon,
+.breadcrumb-01 .ss-icon-title-01 .title,
+.breadcrumb-01 .breadcrumb-wrapper a:hover,
+.breadcrumb-01 .breadcrumb-wrapper em{color:#fdcd05;}
+.breadcrumb-01 .ss-icon-title-01 > .text-icon::before{background:#fdcd05;}
+.breadcrumb-01 .ss-icon-title-01 .desc,
+.breadcrumb-01 .breadcrumb-wrapper a{color:#ffffff;}
 
 
 /* Client 01 */

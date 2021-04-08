@@ -20,7 +20,7 @@
 </nav>
 
 <!-- Topnav -->
-<nav class="topnav">
+<nav class="topnav <?php if(!empty($topnavClass))echo $topnavClass; ?>">
     <div class="container">
         <div class="blocks">
             <div class="block ai-unset">

@@ -13,17 +13,17 @@
         <div class="container">
             <div class="grids">
                 <div class="grid md-1-3 mt-0">
-                    <ul>
+                    <ul class="ss-list">
                         <li>
                             <a href="#">หน่วยงานในสังกัดกรม</a>
-                            <ul>
+                            <ul class="pb-3">
                                 <li><a href="#">ส่วนกลาง</a></li>
                                 <li><a href="#">ส่วนภูมิภาค</a></li>
                             </ul>
                         </li>
                         <li>
                             <a href="#">ศูนย์ข้อมูล</a>
-                            <ul>
+                            <ul class="pb-3">
                                 <li><a href="#">ศูนย์ประสานงานแก้ไขปัญหา ผักตบชวา</a></li>
                                 <li><a href="#">ศูนย์ข้อมูลข่าวสารกรมฯ</a></li>
                                 <li><a href="#">ศูนย์ปฏิบัติการกรมโยธาธิการและผังเมือง</a></li>
@@ -32,7 +32,7 @@
                         </li>
                         <li>
                             <a href="#">ติดต่อสอบถาม</a>
-                            <ul>
+                            <ul class="pb-3">
                                 <li><a href="#">ปรึกษากฏหมาย</a></li>
                                 <li><a href="#">ปรึกษาการตรวจสอบโรงมหรสพ</a></li>
                                 <li><a href="#">ร้องเรียนศูนย์ดำรงธรรม</a></li>
@@ -47,10 +47,10 @@
                     </ul>
                 </div>
                 <div class="grid md-1-3 mt-0">
-                    <ul>
+                    <ul class="ss-list">
                         <li>
                             <a href="#">Service (การบริการประชาชน)</a>
-                            <ul>
+                            <ul class="pb-3">
                                 <li><a href="#">บริการข้อมูลผังเมือง</a></li>
                                 <li><a href="#">แบบแปลนก่อสร้าง</a></li>
                                 <li><a href="#">จัดซื้อจัดจ้าง</a></li>
@@ -63,21 +63,21 @@
                         </li>
                         <li>
                             <a href="#">กฏหมาย/แบบฟอร์ม</a>
-                            <ul>
+                            <ul class="pb-3">
                                 <li><a href="#">กฏหมายด้านโยธาธิการและผังเมือง</a></li>
                                 <li><a href="#">แบบฟอร์มเอกสารราชการ</a></li>
                             </ul>
                         </li>
                         <li>
                             <a href="#">สำหรับเจ้าหน้าที่</a>
-                            <ul>
+                            <ul class="pb-3">
                                 <li><a href="#">จดหมายอิเล็กทรอนิกส์ Mail.go.th</a></li>
                                 <li><a href="#">ระบบเครือข่ายภายในกรมฯ (Intranet)</a></li>
                             </ul>
                         </li>
                         <li>
                             <a href="#">แผนงาน/รายงานผล</a>
-                            <ul>
+                            <ul class="pb-3">
                                 <li><a href="#">รายงานผล</a></li>
                                 <li><a href="#">แผนงาน</a></li>
                             </ul>
@@ -85,10 +85,10 @@
                     </ul>
                 </div>
                 <div class="grid md-1-3 mt-0">
-                    <ul>
+                    <ul class="ss-list">
                         <li>
                             <a href="#">เผยแพร่ความรู้</a>
-                            <ul>
+                            <ul class="pb-3">
                                 <li><a href="#">เผยแพร่ข้อมูลโครงการ</a></li>
                                 <li><a href="#">มาตรฐานกรมโยธาธิการและผังเมือง</a></li>
                                 <li><a href="#">e-Document (ข้อมูลเผยแพร่)</a></li>
@@ -102,7 +102,7 @@
                         </li>
                         <li>
                             <a href="#">ข้อมูลข่าวสารประชาสัมพันธ์</a>
-                            <ul>
+                            <ul class="pb-3">
                                 <li><a href="#">ข่าวกิจกรรม</a></li>
                                 <li><a href="#">ข่าวประชาสัมพันธ์</a></li>
                                 <li><a href="#">ข่าวตัดจากหนังสือพิมพ์</a></li>

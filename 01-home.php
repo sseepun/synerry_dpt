@@ -83,7 +83,7 @@
                 <div class="ss-icon-title-01">
                     <div class="text-icon fw-400 color-03">ข้</div>
                     <div class="text-wrapper">
-                        <div class="title fw-400 color-03">อมูลขาวสารประชาสัมพันธ์</div>
+                        <div class="title fw-400 color-03">อมูลข่าวสารประชาสัมพันธ์</div>
                         <div class="desc fw-200 color-dark">
                             กรมโยธาธิการและผังเมืองพร้อมให้ข้อมูลข่าวสารที่เป็นประโยชน์ สำหรับคุณ
                         </div>

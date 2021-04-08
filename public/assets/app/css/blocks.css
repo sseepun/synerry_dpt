@@ -136,15 +136,42 @@
 
 
 /* Breadcrumb 01 */
-.breadcrumb-01{width:100%; padding:1.5rem 0 3.75rem 0; box-shadow:0 0 16px 8px rgba(0,0,0,.15);}
-.breadcrumb-01 .wrapper{width:100%;}
-.breadcrumb-01 .wrapper a{display:inline-block; color:#ffffff; font-weight:400;}
-.breadcrumb-01 .wrapper a:hover, 
-.breadcrumb-01 .wrapper a:last-child{color:#ffb739; color:var(--pcolor);}
-.breadcrumb-01 .wrapper em{
-    display:inline-block; color:#ffffff; margin:0 .3125rem; font-size:.625rem;
+.breadcrumb-01{width:100%; overflow:hidden;}
+.breadcrumb-01 .breadcrumb-container{
+    width:100%; min-height:26rem; padding:10rem 0 2.75rem 0; background-size:cover;
+    background-position:center;
 }
-.breadcrumb-01 .title{margin:.375rem 0 0 0; color:#ffffff;}
+.breadcrumb-01 .breadcrumb-wrapper{
+    display:flex; align-items:center; flex-wrap:wrap; margin:3rem 0 0 0;
+}
+.breadcrumb-01 .breadcrumb-wrapper img{display:block; height:.8125rem; width:auto;}
+.breadcrumb-01 .breadcrumb-wrapper a{
+    display:block; margin:.375rem .875rem 0 0; font-size:.875rem; font-weight:300;
+}
+.breadcrumb-01 .breadcrumb-wrapper em{margin:.375rem .875rem 0 0; font-size:.625rem;}
+.breadcrumb-01 .pattern-container{display:block; width:100%; height:2rem;}
+.breadcrumb-01 .pattern{
+    display:block; width:100%; height:100%; background-size:auto 100%;
+    background-position:top center; background-repeat:repeat;
+}
+.breadcrumb-01 .ss-icon-title-01{min-height:5.3125rem;}
+@media screen and (max-width:1199.98px){
+    .breadcrumb-01 .breadcrumb-container{min-height:24.625rem; padding:9rem 0 2.75rem 0;}
+    .breadcrumb-01 .breadcrumb-wrapper{margin:2.75rem 0 0 0;}
+}
+@media screen and (max-width:991.98px){
+    .breadcrumb-01 .breadcrumb-container{min-height:23.125rem; padding:8rem 0 2.75rem 0;}
+    .breadcrumb-01 .breadcrumb-wrapper{margin:2.5rem 0 0 0;}
+}
+@media screen and (max-width:767.98px){
+    .breadcrumb-01 .breadcrumb-container{min-height:21.75rem; padding:7rem 0 2.75rem 0;}
+    .breadcrumb-01 .breadcrumb-wrapper{margin:2.25rem 0 0 0;}
+}
+@media screen and (max-width:575.98px){
+    .breadcrumb-01 .breadcrumb-container{min-height:20rem; padding:6rem 0 2.75rem 0;}
+    .breadcrumb-01 .breadcrumb-wrapper{margin:2rem 0 0 0;}
+    .breadcrumb-01 .ss-icon-title-01 .desc br{display:none;}
+}
 
 
 /* Client 01 */
