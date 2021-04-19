@@ -149,7 +149,7 @@
                 </div>
             </div>
             <div class="grid xl-30 lg-25 sm-50 mt-0">
-                <table>
+                <table class="table-contact">
                     <tbody>
                         <tr>
                             <td><img src="public/assets/app/images/icon/footer-01.png" alt="Image Icon" /></td>

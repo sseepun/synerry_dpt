@@ -333,13 +333,16 @@ $(function(){ 'use strict';
     var faq01 = $('.faq-01');
     if(faq01.length){
         faq01.each(function(){
-            $(this).find('.faq > .question').click(function(e){
+            $(this).find('.faq > .question .btn.btn-action').click(function(e){
                 e.preventDefault();
-                var parent = $(this).parent();
+                var self = $(this),
+                    parent = $(this).closest('.faq');
                 if(parent.hasClass('active')){
+                    self.html('ดูคำตอบ');
                     parent.removeClass('active');
                     parent.find('> .answer').slideUp();
                 }else{
+                    self.html('ปิดคำตอบ');
                     parent.addClass('active');
                     parent.find('> .answer').slideDown();
                 }

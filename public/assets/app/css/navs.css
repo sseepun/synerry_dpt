@@ -245,13 +245,6 @@ nav.footer .btn-footer.active em{transform:rotate(180deg);}
 nav.sfooter{display:block; width:100%; overflow:hidden;}
 nav.sfooter .grids{padding-bottom:2rem;}
 nav.sfooter .grid{padding-top:1.5rem;}
-nav.sfooter table{width:100%;}
-nav.sfooter table td{vertical-align:top; padding:0 .875rem .375rem 0;}
-nav.sfooter table td:last-child{padding-right:0;}
-nav.sfooter table tr:last-child > td{padding-bottom:0;}
-nav.sfooter table img{
-    display:block; width:auto; max-width:.875rem; height:auto; max-height:.875rem;
-}
 nav.sfooter .copyright-container{position:relative; width:100%; padding:1rem 0 0 0;}
 nav.sfooter img.img-stat{
     display:block; width:9rem; height:auto; position:absolute; top:50%; right:0;

@@ -95,14 +95,16 @@ nav.sfooter .visitor-count{border:1px solid #ffff00;}
 
 
 /* Section & Container */
-.section-01 .section-bg{background:transparent!important;}
+.section-bg{background:transparent!important;}
 
 
 /* Buttons */
 .btn.btn-color-01, .btn.btn-color-01:focus, .btn.btn-color-01:hover, .btn.btn-color-01:active,
 .btn.btn-color-02, .btn.btn-color-02:focus, .btn.btn-color-02:hover, .btn.btn-color-02:active,
 .btn.btn-color-03, .btn.btn-color-03:focus, .btn.btn-color-03:hover, .btn.btn-color-03:active,
-.btn.btn-color-04, .btn.btn-color-04:focus, .btn.btn-color-04:hover, .btn.btn-color-04:active{
+.btn.btn-color-04, .btn.btn-color-04:focus, .btn.btn-color-04:hover, .btn.btn-color-04:active,
+.btn.btn-color-05, .btn.btn-color-05:focus, .btn.btn-color-05:hover, .btn.btn-color-05:active,
+.btn.btn-color-06, .btn.btn-color-06:focus, .btn.btn-color-06:hover, .btn.btn-color-06:active{
     color:#000000; background:#ffff00; border-color:#ffff00;
 }
 .btn.btn-more{color:#ffff00;}
@@ -116,7 +118,7 @@ input[type=number], input[type=phone], input[type=submit], input[type=file], sel
 }
 
 /* Input Wrapper */
-.select-wrapper::after, .search-wrapper::after, .date-wrapper::after{color:#000000;}
+.form-group .prepend .icon, .form-group .append .icon{color:#000000;}
 
 
 /* Calendar - Month */
@@ -218,6 +220,7 @@ input[type=number], input[type=phone], input[type=submit], input[type=file], sel
 .ss-box > .options > .option:hover{background:#ffff00; color:#000000;}
 
 /* Special Box Shadow */
+.ss-box-shadow::before{background:#000000;}
 
 
 /* Special Card 02 */
@@ -275,6 +278,13 @@ table.table.table-01 td{color:#ffff00; border-color:#ffff00!important;}
 table.table.table-01 td.header{border-color:#ffff00!important;}
 table.table.table-01 .status{color:#ffff00;}
 
+/* Table Download */
+table.table.table-download{border-top:1px solid #ffff00;}
+table.table.table-download td{border-bottom:1px solid #ffff00!important;}
+table.table.table-download .download-card{
+    border-right:1px solid #ffff00; border-color:#ffff00;
+}
+
 
 /* Toggle Target */
 .toggle-target{background:#000000; border-color:#ffff00;}
@@ -331,16 +341,8 @@ table.table.table-01 .status{color:#ffff00;}
 
 
 /* Faq 01 */
-.faq-01 .faq > .question{background:#000000; border-color:#ffff00;}
-.faq-01 .faq.active > .question{background:#ffff00;}
-.faq-01 .faq > .question h6{color:#ffff00;}
-.faq-01 .faq.active > .question h6{color:#000000;}
-.faq-01 .faq .ftag, .faq-01 .faq .arrow{background:#ffff00; color:#000000;}
-.faq-01 .faq.active .ftag, .faq-01 .faq.active .arrow{background:#000000; color:#ffff00;}
-.faq-01 .faq .arrow::before, .faq-01 .faq .arrow::after{background:#000000;}
-.faq-01 .faq.active .arrow::before, .faq-01 .faq.active .arrow::after{background:#ffff00;}
-.faq-01 .faq > .answer .ftag{background:#ffff00; color:#000000;}
-.faq-01 .faq > .answer .content{border-color:#ffff00;}
+.faq-01 .faq > .question{border:1px solid #ffff00;}
+.faq-01 .faq .ftag{background:#ffff00; color:#000000; border-color:#ffff00;}
 
 
 /* History 01 */

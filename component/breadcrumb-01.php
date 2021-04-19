@@ -2,7 +2,7 @@
     <section class="breadcrumb-01">
         <div class="breadcrumb-container" style="background-image:url('<?= $breadcrumb['image'] ?>');">
             <div class="container">
-                <div class="grids">
+                <div class="grids jc-space-between">
                     <div class="grid md-60 sm-100 mt-0" data-aos="fade-up" data-aos-delay="0">
                         <div class="ss-icon-title-01 <?php if(!empty($breadcrumb['leading_class']))echo $breadcrumb['leading_class']; ?>">
                             <div class="text-icon fw-400"><?= $breadcrumb['leading'] ?></div>
@@ -12,10 +12,17 @@
                             </div>
                         </div>
                     </div>
-                    <div class="grid md-40 sm-100 mt-0" data-aos="fade-up" data-aos-delay="150">
+                    <div class="grid xl-30 md-40 sm-100 mt-0" data-aos="fade-up" data-aos-delay="150">
                         <?php if($breadcrumb['show_search']){?>
                             <form action="/" method="GET">
-                                Search
+                                <div class="form-group">
+                                    <div class="append">
+                                        <input type="text" placeholder="พิมพ์คำค้นหาที่ต้องการ" required />
+                                        <button type="submit" class="icon lg bg-color-gray">
+                                            <em class="fas fa-search"></em>
+                                        </button>
+                                    </div>
+                                </div>
                             </form>
                         <?php }?>
                     </div>
