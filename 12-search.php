@@ -30,7 +30,7 @@
         include_once('component/breadcrumb-01.php');
     ?>
     
-    <section class="section-01 lg-bottom">
+    <section class="section-01 xl-bottom">
         <div class="container">
             <div class="section-bg" style="background-image:url('public/assets/app/images/bg/section-05.jpg');"></div>
             <div class="ss-box width-full position-relative" data-aos="fade-up" data-aos-delay="300">
@@ -192,7 +192,7 @@
                 <?php }?>
             </div>
 
-            <div class="pt-2 pb-5 mb-4 border-top bcolor-sgray" data-aos="fade-up" data-aos-delay="0">
+            <div class="pt-2 border-top bcolor-sgray" data-aos="fade-up" data-aos-delay="0">
                 <?php
                     $listFooter = ['total', 'pagination', 'pp'];
                     include('component/list-footer.php');

@@ -66,6 +66,7 @@ html.global-search-opened, body.global-search-opened{overflow-y:hidden!important
 /* Section 01 */
 .section-01{position:relative; margin-top:-7.375rem; padding:0 0 9rem 0;}
 .section-01.lg-bottom{padding-bottom:25.5rem;}
+.section-01.xl-bottom{padding-bottom:32rem;}
 .style-contact + .section-01{margin-top:-5.4375rem;}
 .style-contact + .section-01 .right-container{
     display:block; position:relative; width:100%; height:100%; padding:6.75rem 0 0 0;
@@ -76,28 +77,39 @@ html.global-search-opened, body.global-search-opened{overflow-y:hidden!important
 }
 @media screen and (max-width:1199.98px){
     .section-01.lg-bottom{padding-bottom:21.5rem;}
-    .section-01.lg-bottom .section-bg{background-size:1400px auto;}
+    .section-01.xl-bottom{padding-bottom:26rem;}
+    .section-01.lg-bottom .section-bg,
+    .section-01.xl-bottom .section-bg{background-size:1400px auto;}
     .style-contact + .section-01 .right-map{margin:1rem calc(82% - 50vw) 0 -1.25rem;}
 }
 @media screen and (max-width:991.98px){
     .section-01{padding:0 0 8rem 0;}
     .section-01.lg-bottom{padding-bottom:19.5rem;}
-    .section-01.lg-bottom .section-bg{background-size:1200px auto;}
+    .section-01.xl-bottom{padding-bottom:23rem;}
+    .section-01.lg-bottom .section-bg,
+    .section-01.xl-bottom .section-bg{background-size:1200px auto;}
     .style-contact + .section-01 .right-container{padding:1rem 0;}
-    .style-contact + .section-01.lg-bottom .right-container{padding-bottom:5rem;}
+    .style-contact + .section-01.lg-bottom .right-container,
+    .style-contact + .section-01.xl-bottom .right-container{padding-bottom:5rem;}
     .style-contact + .section-01 .right-map{width:100%; height:unset; margin:1rem 0 0 0;}
 }
 @media screen and (max-width:767.98px){
     .section-01{padding:0 0 6.5rem 0;}
     .section-01.lg-bottom{padding-bottom:15.5rem;}
-    .section-01.lg-bottom .section-bg{background-size:900px auto;}
-    .style-contact + .section-01.lg-bottom .right-container{padding-bottom:3rem;}
+    .section-01.xl-bottom{padding-bottom:17rem;}
+    .section-01.lg-bottom .section-bg,
+    .section-01.xl-bottom .section-bg{background-size:900px auto;}
+    .style-contact + .section-01.lg-bottom .right-container,
+    .style-contact + .section-01.xl-bottom .right-container{padding-bottom:3rem;}
 }
 @media screen and (max-width:575.98px){
     .section-01{padding:0 0 6rem 0;}
     .section-01.lg-bottom{padding-bottom:11rem;}
-    .section-01.lg-bottom .section-bg{background-size:600px auto;}
-    .style-contact + .section-01.lg-bottom .right-container{padding-bottom:2rem;}
+    .section-01.xl-bottom{padding-bottom:12rem;}
+    .section-01.lg-bottom .section-bg,
+    .section-01.xl-bottom .section-bg{background-size:600px auto;}
+    .style-contact + .section-01.lg-bottom .right-container,
+    .style-contact + .section-01.xl-bottom .right-container{padding-bottom:2rem;}
 }
 
 
@@ -397,6 +409,10 @@ textarea[data-copy]{pointer-events:none!important;}
 .ckeditor{display:block; position:relative; width:100%;}
 .ck-rounded-corners .ck.ck-editor__top .ck-sticky-panel .ck-toolbar{border:0;}
 .ck.ck-editor__main>.ck-editor__editable{min-height:260px; outline:none; box-shadow:none;}
+
+
+/* Date Picker */
+.datepicker.datepicker-dropdown{color:#000000!important;}
 
 
 /* Hamburger */

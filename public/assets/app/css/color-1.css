@@ -118,7 +118,8 @@ input[type=number], input[type=phone], input[type=submit], input[type=file], sel
 }
 
 /* Input Wrapper */
-.form-group .prepend .icon, .form-group .append .icon{color:#000000;}
+.form-group .prepend .icon, 
+.form-group .append .icon{color:#ffffff; border:1px solid #ffffff;}
 
 /* Checkbox Set */
 .checkbox-set > label::before{background:#000000; border-color:#ffffff;}
