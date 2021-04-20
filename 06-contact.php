@@ -98,10 +98,12 @@
                                         </div>
                                     </div>
                                     <div class="grid sm-100">
-                                        <label class="p fw-600">
-                                            <span class="font-01">ข้อความ</span> *
-                                        </label>
-                                        <textarea rows="6" class="fgray" required></textarea>
+                                        <div class="form-group">
+                                            <label class="p fw-600">
+                                                <span class="font-01">ข้อความ</span> *
+                                            </label>
+                                            <textarea rows="6" class="fgray" required></textarea>
+                                        </div>
                                     </div>
                                 </div>
                                 <div class="capcha-container mt-3">

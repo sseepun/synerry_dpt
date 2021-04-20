@@ -200,24 +200,113 @@
 <div class="global-search-container">
     <div class="wrapper">
         <div class="close-filter global-search-toggle"></div>
-        <div class="content-container">
-            <div class="ss-box-lg">
+        <div class="container">
+            <div class="search-panel">
                 <form action="/" method="GET">
-                    <h6 class="h4 lg fw-600 color-black text-center">
-                        กรุณาระบุคำค้นหาที่ท่านต้องการ
-                    </h6>
-                    <div class="form-group mt-1">
-                        <div class="search-wrapper">
-                            <input type="text" class="width-full" name="keywords" placeholder="ค้นหา" required title="General Text Input" />
+                    <div class="form-group mt-0">
+                        <div class="append">
+                            <input type="text" class="md sgray" placeholder="พิมพ์คำค้นหาที่ต้องการ" required />
+                            <button type="submit" class="icon lg">
+                                <em class="fas fa-search"></em>
+                            </button>
                         </div>
                     </div>
                 </form>
-            </div>
-            <div class="btn-container global-search-toggle">
-                <div class="hamburger active">
-                    <div></div><div></div><div></div>
+                <div class="item-container">
+                    <p class="fw-600 color-08">คำแนะนำค้นหา</p>
+                    <div class="items" data-simplebar>
+                        <?php
+                            foreach([
+                                'ร่างธรรมนูญว่าด้วยการผังเมือง',
+                                'นโยบายการตั้งถิ่นฐานและผังเมือง',
+                                'สำนักงานสภาพัฒนาการเศรษฐกิจและ',
+                                'สังคมแห่งชาติ',
+                                'ทิศทางการพัฒนาเชิงพื้นที่',
+                                'การจัดระบบเมืองที่มีคุณภาพ',
+                                'ร่างธรรมนูญว่าด้วยการผังเมือง',
+                                'นโยบายการตั้งถิ่นฐานและผังเมือง',
+                            ] as $d){
+                        ?>
+                            <a class="item p sm fw-600" href="#">
+                                <div class="text-container font-01">
+                                    <?= $d ?>
+                                </div>
+                                <div class="icon">
+                                    <img src="public/assets/app/images/icon/arrow-right-black.png" alt="Image Icon" />
+                                </div>
+                            </a>
+                        <?php }?>
+                    </div>
+                    <div class="btns">
+                        <a class="btn btn-action btn-color-05 width-full clip-path-01" href="#">
+                            ส่งข้อความ <em class="fas fa-chevron-right sm ml-2"></em>
+                        </a>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
 </div>
+
+
+<!-- Accessibility -->
+<nav class="side-panel access-panel">
+    <div class="wrapper">
+        <div class="panel">
+            <div class="panel-row">
+                <div class="icon">
+                    <img src="public/assets/app/images/icon/access.png" alt="Image Icon" />
+                </div>
+                <p><span class="font-01">การช่วยการเข้าถึง</span></p>
+            </div>
+            <div class="panel-row">
+                <div class="icon-width">
+                    <img src="public/assets/app/images/icon/icon-t.png" alt="Image Icon" />
+                    <p><span class="font-01">ขนาดตัวอักษร</span></p>
+                </div>
+                <div class="options">
+                
+                </div>
+            </div>
+            <div class="panel-row">
+                <div class="icon-width">
+                    <img src="public/assets/app/images/icon/icon-s.png" alt="Image Icon" />
+                    <p><span class="font-01">ระยะห่างตัวอักษร</span></p>
+                </div>
+                <div class="options">
+                
+                </div>
+            </div>
+            <div class="panel-row">
+                <div class="icon-width">
+                    <img src="public/assets/app/images/icon/icon-l.png" alt="Image Icon" />
+                    <p><span class="font-01">ความคมชัด</span></p>
+                </div>
+                <div class="options">
+                
+                </div>
+            </div>
+            <div class="panel-row">
+                <div class="icon-width">
+                    <img src="public/assets/app/images/icon/icon-c.png" alt="Image Icon" />
+                    <p><span class="font-01">ขนาดเคอเซอร์</span></p>
+                </div>
+                <div class="options">
+                
+                </div>
+            </div>
+        </div>
+        <a class="icon" href="#">
+            <img src="public/assets/app/images/icon/access.png" alt="Image Icon" />
+        </a>
+    </div>
+</nav>
+
+<!-- Quick Links -->
+<nav class="side-panel quicklink-panel">
+    <div class="wrapper">
+        <a class="icon" href="#">
+            <em class="fas fa-link"></em>
+        </a>
+    </div>
+</nav>

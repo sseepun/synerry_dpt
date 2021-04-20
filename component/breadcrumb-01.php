@@ -23,6 +23,15 @@
                                         </button>
                                     </div>
                                 </div>
+                                <?php if(!empty($breadcrumb['search_keywords'])){?>
+                                    <div class="keywords">
+                                        <?php foreach($breadcrumb['search_keywords'] as $k){?>
+                                            <a class="keyword" href="<?= $k['url'] ?>">
+                                                <?= $k['name'] ?>
+                                            </a>
+                                        <?php }?>
+                                    </div>
+                                <?php }?>
                             </form>
                         <?php }?>
                     </div>

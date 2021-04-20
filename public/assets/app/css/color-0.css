@@ -104,9 +104,12 @@ nav.sidenav .dropdown-toggle{color:#232323;}
 nav.topnav .option > .dropdown .flag-wrapper:hover{background:#e1e1e1;}
 
 /* Global Search Container */
-.global-search-container .btn-container{background:#333333;}
-.global-search-container .hamburger > *{background:#fdcd05;}
-.global-search-container .content-container{background:#ffffff;}
+.global-search-container .search-panel{background:#ffffff;}
+.global-search-container input[type=text],
+.global-search-container input[type=text]:focus{border-color:#fdcd05!important;}
+.global-search-container .form-group .append .icon{color:#49211f;}
+.global-search-container .item{color:#2e1213;}
+.global-search-container .item:hover{color:#fdcd05;}
 
 /* Back to Top */
 .back-to-top{background:rgba(255,183,57,.85); color:#ffffff!important; border-color:#ffffff;}
@@ -156,6 +159,7 @@ nav.sfooter .visitor-count .count > *{color:#ffffff;}
 }
 .btn.btn-color-05:hover{box-shadow:inset 0 0 0 100rem rgba(0,0,0,.05);}
 .btn.btn-color-05:active{box-shadow:inset 0 0 0 100rem rgba(0,0,0,.10);}
+.btn.btn-color-05 em{color:#ffffff;}
 
 .btn.btn-color-06, .btn.btn-color-06:focus{
     color:#ffffff; background:#211f1e; border-color:#211f1e;
@@ -185,6 +189,9 @@ input[type=file]:focus, select:focus, textarea:focus{border-color:#311916!import
 input[type=text].fgray, input[type=email].fgray, input[type=password].fgray, input[type=date].fgray, 
 input[type=tel].fgray, input[type=number].fgray, input[type=phone].fgray, input[type=submit].fgray, 
 input[type=file].fgray, select.fgray, textarea.fgray{background:#f8f9fa!important;}
+input[type=text].sgray, input[type=email].sgray, input[type=password].sgray, input[type=date].sgray, 
+input[type=tel].sgray, input[type=number].sgray, input[type=phone].sgray, input[type=submit].sgray, 
+input[type=file].sgray, select.sgray, textarea.sgray{background:#e1e1e1!important;}
 
 /* Input Wrapper */
 .form-group .prepend .icon, .form-group .append .icon{background:#3f3233; color:#ffffff;}
@@ -192,6 +199,10 @@ input[type=file].fgray, select.fgray, textarea.fgray{background:#f8f9fa!importan
 /* Input Form Group */
 .form-group label{color:#232323;}
 .form-check > label{color:#666666;}
+
+/* Checkbox Set */
+.checkbox-set > label::before{background:#f8f8f8; border-color:#cfcfcf;}
+.checkbox-set > label::after{background:#ffd000; border-color:#552b26;}
 
 
 /* Calendar - Month */
@@ -312,6 +323,10 @@ input[type=file].fgray, select.fgray, textarea.fgray{background:#f8f9fa!importan
 /* Special Card 03 */
 .ss-card-03{background:#000000;}
 
+/* Special Card 05 */
+.ss-card-05 > .info-container{background:#444243; color:#ffffff;}
+.ss-card-05 .card-header{background:#f5f5f5;}
+
 
 /* Special Date */
 .ss-date{background:#fdcd05; background:var(--pcolor); color:#ffffff;}
@@ -371,6 +386,9 @@ table.table.table-download td{background:#f4f4f4;}
 table.table.table-download tr:nth-child(even) td{background:#d8d8d8;}
 table.table.table-download .download-card{background:#5d3943; border-color:#ffd000;}
 table.table.table-download tr:nth-child(even) .download-card{background:#492e35;}
+
+/* Table Stat */
+table.table-stat, table.table-stat td{border-color:#ffffff;}
 
 
 /* Toggle Target */

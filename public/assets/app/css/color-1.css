@@ -77,9 +77,10 @@ nav.sidenav .dropdown-toggle{color:#ffffff;}
 nav.sidenav .submenu .dropdown-toggle{color:#000000;}
 
 /* Global Search Container */
-.global-search-container .btn-container{background:#ffffff;}
-.global-search-container .hamburger > *{background:#000000;}
-.global-search-container .content-container{background:#000000; border:1px solid #ffffff;}
+.global-search-container .search-panel{background:#000000; border:1px solid #ffffff;}
+.global-search-container input[type=text],
+.global-search-container input[type=text]:focus{border-color:#ffffff!important;}
+.global-search-container .form-group .append .icon{color:#000000;}
 
 /* Back to Top */
 .back-to-top{background:#000000; color:#ffffff!important; border-color:#ffffff;}
@@ -118,6 +119,10 @@ input[type=number], input[type=phone], input[type=submit], input[type=file], sel
 
 /* Input Wrapper */
 .form-group .prepend .icon, .form-group .append .icon{color:#000000;}
+
+/* Checkbox Set */
+.checkbox-set > label::before{background:#000000; border-color:#ffffff;}
+.checkbox-set > label::after{background:#ffffff; border-color:#ffffff;}
 
 
 /* Calendar - Month */
@@ -230,6 +235,11 @@ input[type=number], input[type=phone], input[type=submit], input[type=file], sel
 /* Special Card 03 */
 .ss-card-03{border:1px solid #ffffff;}
 
+/* Special Card 05 */
+.ss-card-05{border:1px solid #ffffff;}
+.ss-card-05 > .info-container{border-right:1px solid #ffffff;}
+.ss-card-05 .card-header{border-bottom:1px solid #ffffff;}
+
 
 /* Special Date */
 .ss-date, .ss-date-sm{background:#ffffff; color:#000000;}
@@ -283,6 +293,9 @@ table.table.table-download td{border-bottom:1px solid #ffffff!important;}
 table.table.table-download .download-card{
     border-right:1px solid #ffffff; border-color:#ffffff;
 }
+
+/* Table Stat */
+table.table-stat, table.table-stat td{border-color:#ffffff;}
 
 
 /* Toggle Target */

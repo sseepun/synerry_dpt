@@ -77,6 +77,7 @@ $(function(){ 'use strict';
         });
     }
 
+
     // Font Sizes
     var bodySize = 16;
     $('.btn.font-size-btn').click(function(e){
@@ -96,6 +97,14 @@ $(function(){ 'use strict';
         $('body').addClass('theme-'+$(this).data('theme'));
     });
 
+
+    // Accessibility
+    var accessibility = $('nav.access-panel');
+    accessibility.find('> .wrapper > .icon, .panel-row:first-child').click(function(e){
+        e.preventDefault();
+        accessibility.toggleClass('active');
+    });
+
     
     // Check on Scroll
     function checkOnScroll(st){
@@ -106,8 +115,10 @@ $(function(){ 'use strict';
         }
         if(st > 2.375*bodySize){
             topnav.addClass('sticky');
+            globalSearchContainer.addClass('sticky');
         }else{
             topnav.removeClass('sticky');
+            globalSearchContainer.removeClass('sticky');
         }
     }
     checkOnScroll( $(window).scrollTop() );

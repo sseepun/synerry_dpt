@@ -18,7 +18,7 @@
 
 .gallery-grids{
     width:calc(100% + var(--ggs)); display:flex; justify-content:flex-start; flex-wrap:wrap;
-    margin:0 calc(-1 * var(--ggs)); box-sizing:border-box; -moz-box-sizing:border-box;
+    margin:0 calc(-1 * var(--ggs)) 0 0; box-sizing:border-box; -moz-box-sizing:border-box;
     -webkit-box-sizing:border-box; outline:none;
 }
 .gallery-grids > .grid{
