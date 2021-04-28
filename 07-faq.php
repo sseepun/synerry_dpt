@@ -63,7 +63,7 @@
                                             <p class="xs fw-400">คำตอบ</p>
                                         </div>
                                         <div class="content">
-                                            <p>
+                                            <p class="fw-600">
                                                 <span class="font-01">
                                                     อาคารที่ต้องติดตั้งเครื่องดับเพลิงแบบมือถือ ได้แก่
                                                 </span>
@@ -121,7 +121,7 @@
                                                                     </div>
                                                                 </td>
                                                                 <td style="min-width:320px;">
-                                                                    <p>
+                                                                    <p class="fw-600">
                                                                         <span class="font-01">
                                                                             กฎหมายด้านโยธาธิการและผังเมือง
                                                                         </span>

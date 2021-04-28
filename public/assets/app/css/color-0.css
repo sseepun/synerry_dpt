@@ -21,6 +21,7 @@ html, body, a, a:hover, table.table{color:#000000;}
 .color-07, .h-color-07:hover{color:#340e15!important;}
 .color-08, .h-color-08:hover{color:#290b07!important;}
 .color-09, .h-color-09:hover{color:#70383a!important;}
+.color-10, .h-color-10:hover{color:#502e11!important;}
 
 .bg-white{background:#ffffff!important;}
 .bg-black{background:#000000!important;}
@@ -39,6 +40,7 @@ html, body, a, a:hover, table.table{color:#000000;}
 .bg-07{background:#340e15!important;}
 .bg-08{background:#290b07!important;}
 .bg-09{background:#70383a!important;}
+.bg-10{background:#502e11!important;}
 
 .bcolor-white{border-color:#ffffff!important;}
 .bcolor-black{border-color:#000000!important;}
@@ -57,7 +59,7 @@ html, body, a, a:hover, table.table{color:#000000;}
 .bcolor-07{border-color:#340e15!important;}
 .bcolor-08{border-color:#290b07!important;}
 .bcolor-09{border-color:#70383a!important;}
-
+.bcolor-10{border-color:#502e11!important;}
 
 /* Super Topnav */
 nav.stopnav .btn.btn-circle{border-color:#ffffff; background:#ffffff;}
@@ -166,6 +168,14 @@ nav.sfooter .visitor-count .count > *{color:#ffffff;}
 }
 .btn.btn-color-06:hover{box-shadow:inset 0 0 0 100rem rgba(255,255,255,.05);}
 .btn.btn-color-06:active{box-shadow:inset 0 0 0 100rem rgba(255,255,255,.10);}
+
+.btn.btn-color-07, .btn.btn-color-07:focus{
+    color:#000000; background:#ffffff; border-color:#000000;
+}
+.btn.btn-color-07:hover{color:#ffffff; background:#000000;}
+.btn.btn-color-07:active{box-shadow:inset 0 0 0 100rem rgba(255,255,255,.05);}
+.btn.btn-ss.btn-color-07::after{background:#000000;}
+.btn.btn-ss.btn-color-07:hover::after{background:#ffffff;}
 
 .btn.btn-social.fw{background:#3b56a3; color:#ffffff;}
 .btn.btn-social.gg{background:#b62c22; color:#ffffff;}
@@ -299,6 +309,10 @@ input[type=file].sgray, select.sgray, textarea.sgray{background:#e1e1e1!importan
 .slide-container-01 .slick-dots button{background:#2e1213;}
 
 
+/* Special Band */
+.ss-band::after{background:#70383a;}
+
+
 /* Special Border */
 .ss-border{border-top:4px solid #363434!important; border-bottom:1px solid #afaeae!important;}
 
@@ -308,6 +322,10 @@ input[type=file].sgray, select.sgray, textarea.sgray{background:#e1e1e1!importan
 .ss-box > .options > .option.option-search{background:#333333;}
 .ss-box > .options > .option:hover,
 .ss-box > .options > .option.option-search:hover{background:#fdcd05; color:#333333;}
+.ss-box > .options > .option.active{background:#2e1213; color:#fdcd05;}
+.ss-box > .options > .option.option-select, .ss-box > .options > .option.option-select select{
+    background:#2e1213!important; color:#ffffff!important;
+}
 
 /* Special Box Shadow */
 .ss-box-shadow::before{background:#ffffff;}

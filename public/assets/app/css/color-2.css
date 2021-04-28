@@ -105,9 +105,11 @@ nav.sfooter .visitor-count{border:1px solid #ffff00;}
 .btn.btn-color-03, .btn.btn-color-03:focus, .btn.btn-color-03:hover, .btn.btn-color-03:active,
 .btn.btn-color-04, .btn.btn-color-04:focus, .btn.btn-color-04:hover, .btn.btn-color-04:active,
 .btn.btn-color-05, .btn.btn-color-05:focus, .btn.btn-color-05:hover, .btn.btn-color-05:active,
-.btn.btn-color-06, .btn.btn-color-06:focus, .btn.btn-color-06:hover, .btn.btn-color-06:active{
+.btn.btn-color-06, .btn.btn-color-06:focus, .btn.btn-color-06:hover, .btn.btn-color-06:active,
+.btn.btn-color-07, .btn.btn-color-07:focus, .btn.btn-color-07:hover, .btn.btn-color-07:active{
     color:#000000; background:#ffff00; border-color:#ffff00;
 }
+.btn.btn-ss::after{background:#000000;}
 .btn.btn-more{color:#ffff00;}
 .btn.btn-more::after{background:#ffff00;}
 
@@ -214,6 +216,10 @@ input[type=number], input[type=phone], input[type=submit], input[type=file], sel
 .slide-container-01 .slick-dots button{background:#ffff00;}
 
 
+/* Special Band */
+.ss-band::after{background:#ffff00;}
+
+
 /* Special Border */
 .ss-border{border-top:4px solid #ffff00!important; border-bottom:1px solid #ffff00!important;}
 
@@ -224,6 +230,9 @@ input[type=number], input[type=phone], input[type=submit], input[type=file], sel
 .ss-box > .body{background:#000000;}
 .ss-box > .options > .option{background:#000000; color:#ffff00;}
 .ss-box > .options > .option:hover{background:#ffff00; color:#000000;}
+.ss-box > .options > .option.option-select, .ss-box > .options > .option.option-select select{
+    background:#000000!important; color:#ffff00!important;
+}
 
 /* Special Box Shadow */
 .ss-box-shadow::before{background:#000000;}

@@ -472,6 +472,28 @@
 }
 
 
+/* Post */
+.post-container{width:100%; display:flex; justify-content:space-between;}
+.post-container > .post-left-container{position:relative; width:4.25rem; margin:0; overflow:hidden;}
+.post-container > .post-right-container{
+    width:calc(100% - 5.5rem); margin:0; display:flex; flex-wrap:wrap;
+    justify-content:space-between;
+}
+.post-container .related-contents{width:14rem; margin:0;}
+.post-container .post-content{width:calc(100% - 15.25rem); margin:0;}
+.post-container .post-bottom{width:100%;}
+
+.post-container > .post-left-container .pattern{
+    position:absolute; left:0; right:1.5rem; height:100%; margin:1rem 0 0 0;
+    background-size:100% auto; background-position:top left; background-repeat:repeat-y;
+}
+
+@media screen and (max-width:991.98px){
+    .post-container .related-contents{width:100%;}
+    .post-container .post-content{width:100%;}
+}
+
+
 /* Progress 01 */
 .progress-01{
     width:100%; display:flex; align-items:center; justify-content:space-between; padding:1rem 0;

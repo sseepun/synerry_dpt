@@ -107,7 +107,7 @@
                     <?php for($i=0; $i<6; $i++){?>
                         <div class="tab-content <?php if($i==0)echo 'active'; ?>" data-tab="<?= $i ?>">
                             <div class="grids">
-                                <?php for($j=0; $j<4; $j++){?>
+                                <?php for($k=0; $k<4; $k++){ $j = ($i+$k)%4+1;?>
                                     <div class="grid lg-25">
                                         <?php include('component/ss-card-01.php'); ?>
                                     </div>
