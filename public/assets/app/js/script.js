@@ -171,11 +171,11 @@ $(function(){ 'use strict';
             target[0].setSelectionRange(0, target[0].value.length);
             document.execCommand('copy');
             target.blur();
-            self.html('<em class="fas fa-check mr-1"></em> คัดลอกโค๊ดสำเร็จ');
+            self.html('คัดลอกสำเร็จ');
             setTimeout(function(){
                 copyReady = true;
                 self.closest('.toggle-target').removeClass('active');
-                self.html('คัดลอกโค้ด');
+                self.html('คัดลอก');
             }, 2000);
         }
     });
@@ -241,6 +241,62 @@ $(function(){ 'use strict';
                     { breakpoint: 767.98, settings: { slidesToShow: 2, } }
                 ]
             });
+        });
+    }
+
+    
+    // Slide Target 01
+    var slideTarget01 = $('.slide-target-01');
+    if(slideTarget01.length){
+        slideTarget01.each(function(){
+            var self = $(this),
+                slideContainer = self.find('.slide-display'),
+                slideNav = self.find('.slide-nav');
+            if(slideContainer.length){
+                slideContainer.find('> .slides').slick({
+                    centerMode: true, centerPadding: 0, slidesToShow: 1, infinite: true,
+                    focusOnSelect: true, autoplay: false, speed: 900,  adaptiveHeight: true, 
+                    arrows: false, dots: false, asNavFor: slideNav.find('> .slides'),
+                });
+                slideNav.find('> .slides').slick({
+                    centerMode: true, centerPadding: 0, slidesToShow: 6, infinite: true,
+                    focusOnSelect: true, autoplay: false, speed: 900,
+                    arrows: false, dots: false, asNavFor: slideContainer.find('> .slides'),
+                    responsive: [
+                        { breakpoint: 1199.98, settings: { slidesToShow: 5, } },
+                        { breakpoint: 991.98, settings: { slidesToShow: 4, } },
+                        { breakpoint: 767.98, settings: { slidesToShow: 3, } },
+                        { breakpoint: 575.98, settings: { slidesToShow: 2, } },
+                    ]
+                });
+            }
+        });
+    }
+    
+    // Slide Target 02
+    var slideTarget02 = $('.slide-target-02');
+    if(slideTarget02.length){
+        slideTarget02.each(function(){
+            var self = $(this),
+                slideContainer = self.find('.slide-display'),
+                slideNav = self.find('.slide-nav');
+            if(slideContainer.length){
+                slideContainer.find('> .slides').slick({
+                    centerMode: true, centerPadding: 0, slidesToShow: 1, infinite: true,
+                    focusOnSelect: true, autoplay: false, speed: 900,  adaptiveHeight: true, 
+                    arrows: false, dots: false, asNavFor: slideNav.find('> .slides'),
+                });
+                slideNav.find('> .slides').slick({
+                    centerMode: true, centerPadding: 0, slidesToShow: 5, infinite: true,
+                    focusOnSelect: true, autoplay: false, speed: 900,
+                    arrows: false, dots: false, asNavFor: slideContainer.find('> .slides'),
+                    responsive: [
+                        { breakpoint: 1199.98, settings: { slidesToShow: 4, } },
+                        { breakpoint: 767.98, settings: { slidesToShow: 3, } },
+                        { breakpoint: 575.98, settings: { slidesToShow: 2, } },
+                    ]
+                });
+            }
         });
     }
 

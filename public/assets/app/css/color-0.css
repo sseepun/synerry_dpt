@@ -301,12 +301,22 @@ input[type=file].sgray, select.sgray, textarea.sgray{background:#e1e1e1!importan
 
 
 /* Post Stat */
-.post-stat .stat{color:#000000;}
-.post-stat .stat em{color:#ffffff; background:#fdcd05; background:var(--pcolor);}
+.post-stats, .post-stats .post-stat{border-color:#dbdbdb;}
+
+
+/* Shortcode */
+.shortcode-container textarea{
+    border-color:transparent!important; background:#f4f4f4!important;
+    color:#000000!important; box-shadow:0 0 10px 2px rgb(0 0 0 / 15%)!important;
+}
 
 
 /* Slide Container 01 */
 .slide-container-01 .slick-dots button{background:#2e1213;}
+
+
+/* Slide Target */
+.slide-target .slide-nav .slide.slick-current > .wrapper{border-color:#fdcd05;}
 
 
 /* Special Band */
@@ -347,8 +357,7 @@ input[type=file].sgray, select.sgray, textarea.sgray{background:#e1e1e1!importan
 
 
 /* Special Date */
-.ss-date{background:#fdcd05; background:var(--pcolor); color:#ffffff;}
-.ss-date-sm{background:none; color:#ffffff; border:2px solid #ffffff;}
+.ss-date{background:#211f1e; color:#ffffff;}
 
 
 /* Special File 01 */

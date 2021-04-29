@@ -12,24 +12,20 @@
 
     <?php
         $breadcrumb = [
-            'leading' => 'ข่',
-            'title' => 'าวสารประชาสัมพันธ์',
+            'leading' => 'ร',
+            'leading_class' => 'stripe-bottom',
+            'title' => 'ายการวิดีโอ',
             'desc' => 'กรมโยธาธิการและผังเมืองพร้อมให้ข้อมูลข่าวสาร <br> ที่เป็นประโยชน์ สำหรับคุณ',
-            'image' => 'public/assets/app/images/bg/breadcrumb-05.jpg',
+            'image' => 'public/assets/app/images/bg/breadcrumb-06.jpg',
             'show_search' => false,
             'structure' => [
-                [ 'name' => 'ข่าวสารประชาสัมพันธ์', 'url' => '#' ]
+                [ 'name' => 'รายการวิดีโอ', 'url' => '#' ]
             ]
         ];
         include_once('component/breadcrumb-01.php');
     ?>
     
-    <?php
-        $categories = [
-            'ข่าวกิจกรรม', 'ข่าวประชาสัมพันธ์', 'ข่าวตัดจากหนังสือพิมพ์',
-            'ข่าวกรม', 'วารสารกรมฯ', 'คลังข่าวมหาดไทย'
-        ];
-    ?>
+    <?php $categories = ['ภาพกิจกรรม', 'ภาพงาน CSR', 'อินโฟกราฟิก']; ?>
     <section class="section-01">
         <div class="container">
             <div class="section-bg" style="background-image:url('public/assets/app/images/bg/section-01.jpg');"></div>
@@ -81,10 +77,16 @@
                                         255
                                     </div>
                                     <div class="post-stat">
+                                        <div class="icon">
+                                            <img src="public/assets/app/images/icon/image.png" alt="Image Icon" />
+                                        </div>
+                                        20
+                                    </div>
+                                    <div class="post-stat">
                                         <div class="icon sm">
                                             <img src="public/assets/app/images/icon/share.png" alt="Image Icon" />
                                         </div>
-                                        20
+                                        12
                                     </div>
                                 </div>
                                 <div class="pattern" style="background-image:url('public/assets/app/images/misc/pattern-04.png');"></div>
@@ -94,9 +96,8 @@
                                 <div class="post-header">
                                     <div class="title-container">
                                         <h6 class="fw-500 color-09">
-                                            เชิญร่วมงานสัมมนาออนไลน์ How Can New Technology Fundamentally 
-                                            Reshape Government Workforce และ Examining Technology 
-                                            Advancement for Government
+                                            ยผ.ต่อยอดเขื่อนป้องกันตลิ่งริมน้ำโขง เนรมิต “ถนนสวรรค์ชายโขง” 
+                                            หนุนท่องเที่ยว จ.นครพนม
                                         </h6>
                                         <p class="sm fw-600 mt-1 mb-2">
                                             <span class="font-01">สร้างเมื่อ 20 มีนาคม 2564</span>
@@ -112,22 +113,49 @@
                                 </div>
 
                                 <div class="post-content">
-                                    <div class="ss-img horizontal no-hover clip-path-02">
-                                        <div class="img-bg" style="background-image:url('public/assets/app/images/content/06.jpg');"></div>
+                                    <div class="shortcode-container">
+                                        <textarea data-copy="0" title="Copy Area">Temporary code test temporary code test temporary code test</textarea>
+                                        <div class="btns">
+                                            <a class="btn-code-copy btn btn-action btn-color-01" data-copy="0" href="#">
+                                                คัดลอก
+                                            </a>
+                                        </div>
                                     </div>
-                                    <div class="gallery-grids">
-                                        <?php for($j=0; $j<5; $j++){?>
-                                            <div class="grid md-20 sm-1-3 xs-50">
-                                                <a class="ss-img" href="#">
-                                                    <div class="img-bg" style="background-image:url('public/assets/app/images/content/<?= sprintf('%02d', $j%4+1) ?>.jpg');"></div>
-                                                    <?php if($j==4){?>
-                                                        <div class="hover-container bg-01 op-80">
-                                                            <p class="h4 lg fw-400 color-black">24+</p>
+                                    <div class="slide-target slide-target-02 mt-3">
+                                        <div class="slide-display">
+                                            <div class="slides">
+                                                <?php for($j=0; $j<7; $j++){?>
+                                                    <div class="slide">
+                                                        <div class="post-video width-full">
+                                                            <div class="wrapper">
+                                                                <video class="fit" controls>
+                                                                    <source src="public/assets/app/video/01.mp4" type="video/mp4" />
+                                                                    Your browser does not support the video tag.
+                                                                </video>
+                                                            </div>
                                                         </div>
-                                                    <?php }?>
-                                                </a>
+                                                    </div>
+                                                <?php }?>
                                             </div>
-                                        <?php }?>
+                                        </div>
+                                        <div class="slide-nav">
+                                            <div class="slides">
+                                                <?php for($j=0; $j<7; $j++){?>
+                                                    <div class="slide">
+                                                        <div class="wrapper">
+                                                            <div class="ss-img no-hover">
+                                                                <div class="img-bg" style="background-image:url('public/assets/app/images/content/<?= empty($j)? '01': sprintf('%02d', $j%4+1) ?>.jpg');"></div>
+                                                                <div class="hover-container clear op-100">
+                                                                    <div class="icon xs">
+                                                                        <img src="public/assets/app/images/icon/play-black.png" alt="Image Icon" />
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                <?php }?>
+                                            </div>
+                                        </div>
                                     </div>
                                     <div class="p md fw-600 color-09 mt-4">
                                         <div class="font-01">
@@ -137,6 +165,18 @@
                                             แนวทางการแก้ไขปรับปรุงร่างธรรมนูญว่าด้วย การผังเมืองที่จัดทำขึ้น โดยคณะทำงาน ให้มีประสิทธิภาพมากยิ่งขึ้น
                                         </div>
                                     </div>
+                                    <div class="p fw-600 mt-3">
+                                        <div class="font-01">
+                                            นายพรพจน์ เพ็ญพาส อธิบดีกรมโยธาธิการและผังเมือง เปิดเผยว่า ผังเมืองถือเป็นเครื่องมือสำคัญในการกำหนดทิศทางการพัฒนาเชิงพื้นที่ 
+                                            รวมถึงลักษณะการใช้พื้นที่ตามศักยภาพและความเหมาะสม ซึ่งจะช่วยสร้างโอกาสในการพัฒนาเมือง ให้มีการเติบโตที่ยั่งยืน 
+                                            และสร้างประโยชน์แก่ทุกคนอย่างทั่วถึง ประกอบกับรัฐบาลได้ให้ความสำคัญกับการจัดระบบเมืองที่มีคุณภาพ ปลอดภัย 
+                                            และเป็นมิตรต่อสิ่งแวดล้อมพร้อมกำหนดแนวทางการแก้ไขปัญหาการใช้พื้นที่ให้เกิดความยั่งยืน 
+                                            โดยต้องมีการจัดทำนโยบายการตั้งถิ่นฐานและผังเมือง ด้วยการให้มีหน่วยงานระดับชาติกำกับดูแล 
+                                            และทำงานควบคู่ไปกับสำนักงานสภาพัฒนาการเศรษฐกิจและสังคมแห่งชาติ รวมถึงให้มีกฎหมายเฉพาะเหมือนเป็นธรรมนูญผังเมือง 
+                                            ในการกำกับกฎหมายอื่นๆไม่ให้หน่วยงานต่าง ๆ ละเมิด หรือปล่อยให้มีการพัฒนาเชิงพื้นที่ที่ไม่เป็นไปตามหลักการ
+                                        </div>
+                                    </div>
+                                    <img class="img sm mt-3" src="public/assets/app/images/content/06.jpg" alt="Image Content" />
                                     <div class="p fw-600 mt-3">
                                         <div class="font-01">
                                             นายพรพจน์ เพ็ญพาส อธิบดีกรมโยธาธิการและผังเมือง เปิดเผยว่า ผังเมืองถือเป็นเครื่องมือสำคัญในการกำหนดทิศทางการพัฒนาเชิงพื้นที่ 
@@ -251,54 +291,6 @@
                                                 <?php }?>
                                             </tbody>
                                         </table>
-                                    </div>
-                                    
-                                    <p class="h6 sm fw-500 color-08 mt-4">
-                                        <span class="ss-band left">วิดีโอที่เกียวข้อง</span>
-                                    </p>
-                                    <div class="shortcode-container mt-2">
-                                        <textarea data-copy="0" title="Copy Area">Temporary code test temporary code test temporary code test</textarea>
-                                        <div class="btns">
-                                            <a class="btn-code-copy btn btn-action btn-color-01" data-copy="0" href="#">
-                                                คัดลอก
-                                            </a>
-                                        </div>
-                                    </div>
-                                    <div class="slide-target slide-target-01 mt-3">
-                                        <div class="slide-display">
-                                            <div class="slides">
-                                                <?php for($j=0; $j<7; $j++){?>
-                                                    <div class="slide">
-                                                        <div class="post-video width-full">
-                                                            <div class="wrapper">
-                                                                <video class="fit" controls>
-                                                                    <source src="public/assets/app/video/01.mp4" type="video/mp4" />
-                                                                    Your browser does not support the video tag.
-                                                                </video>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                <?php }?>
-                                            </div>
-                                        </div>
-                                        <div class="slide-nav">
-                                            <div class="slides">
-                                                <?php for($j=0; $j<7; $j++){?>
-                                                    <div class="slide">
-                                                        <div class="wrapper">
-                                                            <div class="ss-img no-hover">
-                                                                <div class="img-bg" style="background-image:url('public/assets/app/images/content/<?= empty($j)? '01': sprintf('%02d', $j%4+1) ?>.jpg');"></div>
-                                                                <div class="hover-container clear op-100">
-                                                                    <div class="icon xs">
-                                                                        <img src="public/assets/app/images/icon/play-black.png" alt="Image Icon" />
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                <?php }?>
-                                            </div>
-                                        </div>
                                     </div>
 
                                 </div>

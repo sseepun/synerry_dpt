@@ -209,11 +209,22 @@ input[type=number], input[type=phone], input[type=submit], input[type=file], sel
 
 
 /* Post Stat */
-.post-stat .stat em{color:#000000; background:#ffff00;}
+.post-stats, .post-stats .post-stat{border-color:#ffff00;}
+
+
+/* Shortcode */
+.shortcode-container textarea{
+    border-color:#ffff00!important; background:#000000!important;
+    color:#ffff00!important; box-shadow:0 0 10px 2px rgb(0 0 0 / 15%)!important;
+}
 
 
 /* Slide Container 01 */
 .slide-container-01 .slick-dots button{background:#ffff00;}
+
+
+/* Slide Target */
+.slide-target .slide-nav .slide.slick-current > .wrapper{border-color:#ffff00;}
 
 
 /* Special Band */
@@ -253,7 +264,7 @@ input[type=number], input[type=phone], input[type=submit], input[type=file], sel
 
 
 /* Special Date */
-.ss-date, .ss-date-sm{background:#ffff00; color:#000000;}
+.ss-date{background:#ffff00; color:#000000;}
 
 
 /* Special File 01 */
