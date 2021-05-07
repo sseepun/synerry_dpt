@@ -239,7 +239,7 @@
                     </div>
                     <div class="btns">
                         <a class="btn btn-action btn-color-05 width-full clip-path-01" href="#">
-                            ส่งข้อความ <em class="fas fa-chevron-right sm ml-2"></em>
+                            ค้นหาขั้นสูง <em class="fas fa-chevron-right sm ml-2"></em>
                         </a>
                     </div>
                 </div>

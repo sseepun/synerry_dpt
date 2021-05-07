@@ -112,9 +112,18 @@
                                 </div>
 
                                 <div class="post-content">
-                                    <div class="ss-img horizontal no-hover clip-path-02">
+
+                                    <a class="ss-img horizontal no-hover clip-path-02"
+                                    href="public/assets/app/images/content/06.jpg" data-fancybox="gallery">
                                         <div class="img-bg" style="background-image:url('public/assets/app/images/content/06.jpg');"></div>
-                                    </div>
+                                    </a>
+                                    <?php for($j=0; $j<7; $j++){?>
+                                        <a class="d-none" data-fancybox="gallery" 
+                                        href="public/assets/app/images/content/<?= empty($j)? '01': sprintf('%02d', $j%4+1) ?>.jpg">
+                                            <img src="public/assets/app/images/content/<?= empty($j)? '01': sprintf('%02d', $j%4+1) ?>.jpg" alt="Image Preview" />
+                                        </a>
+                                    <?php }?>
+
                                     <div class="gallery-grids">
                                         <?php for($j=0; $j<5; $j++){?>
                                             <div class="grid md-20 sm-1-3 xs-50">
@@ -325,5 +334,20 @@
     
     <?php include_once('include/footer.php'); ?>
     <?php include_once('include/script.php'); ?>
+    <style>
+        .fancybox-thumbs__list a:before{border-color:#fdcd05;}
+        @media all and (min-width:768px){
+            .fancybox-thumbs{
+                top:auto; bottom:0; left:0; right:0; width:auto; height:95px;
+                padding:10px 10px 5px 10px; box-sizing:border-box; background:rgba(0,0,0,.3);
+            }
+            .fancybox-show-thumbs .fancybox-inner{right:0; bottom:95px;}
+        }
+    </style>
+    <script>
+        $('[data-fancybox="gallery"]').fancybox({
+            thumbs: { autoStart: true, axis: 'x'}
+        })
+    </script>
 </body>
 </html>

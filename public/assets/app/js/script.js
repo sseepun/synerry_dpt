@@ -146,6 +146,15 @@ $(function(){ 'use strict';
         });
     });
 
+    // Upload Wrapper
+    $('.form-group > .upload-wrapper > input[type="file"]').change(function(){
+        var filename = this.value.replace(/C:\\fakepath\\/i, ''),
+            parent = $(this).parent(),
+            text = parent.find('> .text');
+        if(text.length) text.html(filename);
+        else parent.append('<div class="text">'+filename+'</div>');
+    });
+
 
     // Button Toggle
     $('.btn-toggle').click(function(e){
@@ -283,8 +292,10 @@ $(function(){ 'use strict';
             if(slideContainer.length){
                 slideContainer.find('> .slides').slick({
                     centerMode: true, centerPadding: 0, slidesToShow: 1, infinite: true,
-                    focusOnSelect: true, autoplay: false, speed: 900,  adaptiveHeight: true, 
-                    arrows: false, dots: false, asNavFor: slideNav.find('> .slides'),
+                    focusOnSelect: true, autoplay: true, autoplaySpeed: 4000, speed: 900, 
+                    adaptiveHeight: true, dots: false,
+                    arrows: true, appendArrows: slideContainer.find('> .arrows'),
+                    asNavFor: slideNav.find('> .slides'),
                 });
                 slideNav.find('> .slides').slick({
                     centerMode: true, centerPadding: 0, slidesToShow: 5, infinite: true,

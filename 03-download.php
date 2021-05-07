@@ -32,6 +32,37 @@
 
             <div class="ss-box width-full position-relative" data-aos="fade-up" data-aos-delay="300">
                 <div class="ss-box-shadow xl"></div>
+                <div class="options">
+                    <div class="option option-select">
+                        <div class="select-wrapper">
+                            <select class="fw-300">
+                                <option value="">เลือกหมวดหมู่</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="option option-select">
+                        <div class="select-wrapper">
+                            <select class="fw-300">
+                                <option value="">ใหม่ล่าสุด</option>
+                            </select>
+                        </div>
+                    </div>
+                    <a class="option" href="#">
+                        <p class="fw-200 px-3">แชร์</p>
+                    </a>
+                    <a class="option" href="#">
+                        <em class="fab fa-facebook-f"></em>
+                    </a>
+                    <a class="option" href="#">
+                        <em class="fab fa-twitter"></em>
+                    </a>
+                    <a class="option" href="#">
+                        <em class="fab fa-line"></em>
+                    </a>
+                    <a class="option option-search" href="#">
+                        <em class="fas fa-search"></em>
+                    </a>
+                </div>
                 <div class="header bg-01 text-center">
                     <h6 class="p lg fw-500 color-03">
                         เกณฑ์การตรวจสอบความถูกต้องของการจัดทำข้อมูลกายภาพเพื่อการวางผังเมือง

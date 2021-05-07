@@ -587,6 +587,26 @@
 .slide-target .slide-nav .slide > .wrapper{
     cursor:pointer; border:.375rem solid transparent; transition:border-color .25s;
 }
+.slide-target .slide-display{position:relative;}
+.slide-target .arrows{
+    position:absolute; top:0; bottom:0; left:.625rem; right:.625rem; display:flex;
+    align-items:center; justify-content:space-between; pointer-events:none;  
+}
+.slide-target .arrows button{
+    border:0; padding:0; background:none; box-shadow:none; font-size:0; pointer-events:all;
+    outline:none; position:relative; padding:1rem .625rem; text-align:center;
+    transition:all .25s;
+}
+.slide-target .arrows button::before{
+    font-family:'Font Awesome 5 Free'; font-weight:900; font-size:1.125rem;
+}
+.slide-target .arrows button.slick-prev::before{content:'\f053';}
+.slide-target .arrows button.slick-next::before{content:'\f054';}
+@media screen and (max-width:767.98px){
+    .slide-target .arrows{left:.5rem; right:.5rem;}
+    .slide-target .arrows button{padding:.875rem .5rem;}
+    .slide-target .arrows button::before{font-size:1rem;}
+}
 
 
 /* Survey 01 */

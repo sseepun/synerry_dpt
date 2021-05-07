@@ -189,22 +189,30 @@ nav.sfooter .visitor-count .count > *{color:#ffffff;}
 
 /* Inputs */
 input[type=text], input[type=email], input[type=password], input[type=date], input[type=tel],
-input[type=number], input[type=phone], input[type=submit], input[type=file], select, textarea{
+input[type=number], input[type=phone], input[type=submit], input[type=file], select, textarea,
+.form-group .upload-wrapper::before{
     color:#000000!important; background:#ffffff!important; border-color:#dddddd!important;
 }
 input[type=text]:focus, input[type=email]:focus, input[type=password]:focus, input[type=date]:focus, 
 input[type=tel]:focus, input[type=number]:focus, input[type=phone]:focus, input[type=submit]:focus, 
-input[type=file]:focus, select:focus, textarea:focus{border-color:#311916!important;}
+input[type=file]:focus, select:focus, textarea:focus,
+.form-group .upload-wrapper:hover::before{border-color:#311916!important;}
 
 input[type=text].fgray, input[type=email].fgray, input[type=password].fgray, input[type=date].fgray, 
 input[type=tel].fgray, input[type=number].fgray, input[type=phone].fgray, input[type=submit].fgray, 
-input[type=file].fgray, select.fgray, textarea.fgray{background:#f8f9fa!important;}
+input[type=file].fgray, select.fgray, textarea.fgray,
+.form-group .upload-wrapper.fgray::before{background:#f8f9fa!important;}
 input[type=text].sgray, input[type=email].sgray, input[type=password].sgray, input[type=date].sgray, 
 input[type=tel].sgray, input[type=number].sgray, input[type=phone].sgray, input[type=submit].sgray, 
-input[type=file].sgray, select.sgray, textarea.sgray{background:#e1e1e1!important;}
+input[type=file].sgray, select.sgray, textarea.sgray,
+.form-group .upload-wrapper.sgray::before{background:#e1e1e1!important;}
 
 /* Input Wrapper */
 .form-group .prepend .icon, .form-group .append .icon{background:#3f3233; color:#ffffff;}
+.form-group .upload-wrapper::after{
+    color:#ffffff; background:#211f1e; border-color:#211f1e;
+}
+.form-group .upload-wrapper > .text{color:#000000;}
 
 /* Input Form Group */
 .form-group label{color:#232323;}
@@ -317,6 +325,7 @@ input[type=file].sgray, select.sgray, textarea.sgray{background:#e1e1e1!importan
 
 /* Slide Target */
 .slide-target .slide-nav .slide.slick-current > .wrapper{border-color:#fdcd05;}
+.slide-target .arrows button{color:#ffffff; background:#000000;}
 
 
 /* Special Band */
@@ -354,6 +363,9 @@ input[type=file].sgray, select.sgray, textarea.sgray{background:#e1e1e1!importan
 /* Special Card 05 */
 .ss-card-05 > .info-container{background:#444243; color:#ffffff;}
 .ss-card-05 .card-header{background:#f5f5f5;}
+
+/* Special Card 07 */
+.ss-card-07 .title-wrapper{background:#f5f5f5;}
 
 
 /* Special Date */

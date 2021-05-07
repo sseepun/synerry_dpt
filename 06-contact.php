@@ -100,6 +100,16 @@
                                     <div class="grid sm-100">
                                         <div class="form-group">
                                             <label class="p fw-600">
+                                                <span class="font-01">อัพโหลดหรือแนบไฟล์</span>
+                                            </label>
+                                            <div class="upload-wrapper fgray">
+                                                <input type="file" class="fgray" size="0" />
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="grid sm-100">
+                                        <div class="form-group">
+                                            <label class="p fw-600">
                                                 <span class="font-01">ข้อความ</span> *
                                             </label>
                                             <textarea rows="6" class="fgray" required></textarea>

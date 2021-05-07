@@ -116,13 +116,18 @@ nav.sfooter .visitor-count{border:1px solid #ffff00;}
 
 /* Inputs */
 input[type=text], input[type=email], input[type=password], input[type=date], input[type=tel],
-input[type=number], input[type=phone], input[type=submit], input[type=file], select, textarea{
+input[type=number], input[type=phone], input[type=submit], input[type=file], select, textarea,
+.form-group .upload-wrapper::before{
     color:#000000!important; background:#ffff00!important; border-color:#ffff00!important;
 }
 
 /* Input Wrapper */
 .form-group .prepend .icon, 
 .form-group .append .icon{color:#ffff00; border:1px solid #ffff00;}
+.form-group .upload-wrapper::after{
+    color:#ffff00; background:#000000; border-color:#ffff00;
+}
+.form-group .upload-wrapper > .text{color:#000000;}
 
 /* Checkbox Set */
 .checkbox-set > label::before{background:#000000; border-color:#ffff00;}
@@ -225,6 +230,7 @@ input[type=number], input[type=phone], input[type=submit], input[type=file], sel
 
 /* Slide Target */
 .slide-target .slide-nav .slide.slick-current > .wrapper{border-color:#ffff00;}
+.slide-target .arrows button{color:#ffff00; background:#000000;}
 
 
 /* Special Band */
@@ -261,6 +267,10 @@ input[type=number], input[type=phone], input[type=submit], input[type=file], sel
 .ss-card-05{border:1px solid #ffff00;}
 .ss-card-05 > .info-container{border-right:1px solid #ffff00;}
 .ss-card-05 .card-header{border-bottom:1px solid #ffff00;}
+
+/* Special Card 07 */
+.ss-card-07 .title-wrapper{background:#ffff00;}
+.ss-card-07 .title{color:#000000!important;}
 
 
 /* Special Date */

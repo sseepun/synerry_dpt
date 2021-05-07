@@ -114,18 +114,21 @@
 
                                 <div class="post-content">
                                     <div class="slide-target slide-target-02">
-                                        <div class="slide-display">
+                                        <div class="slide-display clip-path-02">
                                             <div class="slides">
                                                 <?php for($j=0; $j<7; $j++){?>
                                                     <div class="slide">
                                                         <div class="wrapper">
-                                                            <div class="ss-img no-hover clip-path-02">
+                                                            <a class="ss-img no-hover" data-fancybox="gallery"
+                                                            href="public/assets/app/images/content/<?= empty($j)? '01': sprintf('%02d', $j%4+1) ?>.jpg">
+                                                                <img class="d-none" src="public/assets/app/images/content/<?= empty($j)? '01': sprintf('%02d', $j%4+1) ?>.jpg" alt="Image Preview" />
                                                                 <div class="img-bg" style="background-image:url('public/assets/app/images/content/<?= empty($j)? '01': sprintf('%02d', $j%4+1) ?>.jpg');"></div>
-                                                            </div>
+                                                            </a>
                                                         </div>
                                                     </div>
                                                 <?php }?>
                                             </div>
+                                            <div class="arrows"></div>
                                         </div>
                                         <div class="slide-nav">
                                             <div class="slides">
@@ -186,7 +189,22 @@
                                 </div>
 
                                 <div class="related-contents">
-                                    <p class="h6 sm fw-500 color-08">
+                                    <p class="xs fw-400 color-gray">
+                                        ขนาดไฟล์ทั้งหมด 10 MB
+                                    </p>
+                                    <div class="btns mt-1">
+                                        <a class="btn btn-action btn-sm btn-color-05 clip-path-01" href="#">
+                                            ดาวน์โหลดภาพทั้งหมด (10)
+                                            <em class="fas fa-chevron-down sm ml-1"></em>
+                                        </a>
+                                    </div>
+                                    <div class="btns mt-2">
+                                        <a class="btn btn-icon color-black h-color-01" href="#">
+                                            <img class="mr-1" src="public/assets/app/images/icon/alert.png" alt="Image Icon" /> 
+                                            แจ้งไฟล์เสีย
+                                        </a>
+                                    </div>
+                                    <p class="h6 sm fw-500 color-08 mt-4">
                                         <span class="ss-band">ข่าวที่เกียวข้อง</span>
                                     </p>
                                     <div class="grids">
