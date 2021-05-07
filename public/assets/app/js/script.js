@@ -173,7 +173,8 @@ $(function(){ 'use strict';
     $('a[data-copy]').click(function(e){
         e.preventDefault();
         var self = $(this),
-            target = $('textarea[data-copy="'+self.data('copy')+'"]');
+            target = $('textarea[data-copy="'+self.data('copy')+'"]'),
+            popup = self.closest('.shortcode-container');
         if(copyReady && target.length){
             copyReady = false;
             target[0].select();
@@ -181,6 +182,11 @@ $(function(){ 'use strict';
             document.execCommand('copy');
             target.blur();
             self.html('คัดลอกสำเร็จ');
+            if(popup.length){
+                setTimeout(function(){
+                    popup.removeClass('active');
+                }, 1200);
+            }
             setTimeout(function(){
                 copyReady = true;
                 self.closest('.toggle-target').removeClass('active');
@@ -219,6 +225,16 @@ $(function(){ 'use strict';
             });
         });
     }
+
+
+    // Shortcode Container
+    $('.shortcode-container').each(function(){
+        var self = $(this);
+        self.find('> .btn, .btn-close').click(function(e){
+            e.preventDefault();
+            self.toggleClass('active');
+        });
+    })
 
 
     // Slide Container 01

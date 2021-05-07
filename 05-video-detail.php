@@ -113,13 +113,11 @@
                                 </div>
 
                                 <div class="post-content">
-                                    <div class="shortcode-container">
-                                        <textarea data-copy="0" title="Copy Area">Temporary code test temporary code test temporary code test</textarea>
-                                        <div class="btns">
-                                            <a class="btn-code-copy btn btn-action btn-color-01" data-copy="0" href="#">
-                                                คัดลอก
-                                            </a>
-                                        </div>
+                                    <div class="d-flex ai-center jc-space-between fw-wrap">
+                                        <p class="fw-400 color-03 my-2 pr-2">
+                                            สารคดีสั้น ชุด ฝังเมืองเรื่องต้องรู้ 18 ตอน
+                                        </p>
+                                        <?php include('component/shortcode.php'); ?>
                                     </div>
                                     <div class="slide-target slide-target-02 mt-3">
                                         <div class="slide-display">

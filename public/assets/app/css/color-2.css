@@ -218,9 +218,12 @@ input[type=number], input[type=phone], input[type=submit], input[type=file], sel
 
 
 /* Shortcode */
+.shortcode-container .shortcode-content,
+.shortcode-container .shortcode-content::after{background:#000000; border-color:#ffff00;}
+.shortcode-container .shortcode-content{box-shadow:0 0 10px 2px rgb(0 0 0 / 15%);}
 .shortcode-container textarea{
-    border-color:#ffff00!important; background:#000000!important;
-    color:#ffff00!important; box-shadow:0 0 10px 2px rgb(0 0 0 / 15%)!important;
+    border-color:transparent!important; background:transparent!important;
+    color:#ffff00!important;
 }
 
 

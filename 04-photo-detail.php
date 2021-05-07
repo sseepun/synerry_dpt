@@ -250,13 +250,11 @@
                                     <p class="h6 sm fw-500 color-08 mt-4">
                                         <span class="ss-band left">EMBED</span>
                                     </p>
-                                    <div class="shortcode-container mt-2">
-                                        <textarea data-copy="0" title="Copy Area">Temporary code test temporary code test temporary code test</textarea>
-                                        <div class="btns">
-                                            <a class="btn-code-copy btn btn-action btn-color-01" data-copy="0" href="#">
-                                                คัดลอก
-                                            </a>
-                                        </div>
+                                    <div class="d-flex ai-center jc-space-between fw-wrap mt-1">
+                                        <p class="fw-400 color-03 my-2 pr-2">
+                                            สารคดีสั้น ชุด ฝังเมืองเรื่องต้องรู้ 18 ตอน
+                                        </p>
+                                        <?php include('component/shortcode.php'); ?>
                                     </div>
 
                                     <p class="h6 sm fw-500 color-08 mt-4">

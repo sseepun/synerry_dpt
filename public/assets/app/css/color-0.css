@@ -313,9 +313,12 @@ input[type=file].sgray, select.sgray, textarea.sgray,
 
 
 /* Shortcode */
+.shortcode-container .shortcode-content,
+.shortcode-container .shortcode-content::after{background:#f4f4f4; border-color:#682d2f;}
+.shortcode-container .shortcode-content{box-shadow:0 0 10px 2px rgb(0 0 0 / 15%);}
 .shortcode-container textarea{
-    border-color:transparent!important; background:#f4f4f4!important;
-    color:#000000!important; box-shadow:0 0 10px 2px rgb(0 0 0 / 15%)!important;
+    border-color:transparent!important; background:transparent!important;
+    color:#000000!important;
 }
 
 
