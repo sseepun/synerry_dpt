@@ -1,6 +1,6 @@
 
 <?php if(isset($listFooter)){?>
-    <div class="list-footer minisite">
+    <div class="list-footer minisite <?php if(!empty($listFooterClass))echo $listFooterClass; ?>">
         <?php if(in_array('total', $listFooter)){?>
             <div class="block">
                 <p class="xs fw-200 color-gray">

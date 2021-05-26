@@ -14,6 +14,7 @@ html, body, a, a:hover, table.table{color:#000000;}
 .color-bgray, .h-color-bgray:hover, 
 .color-mgray, .h-color-mgray:hover, 
 .color-sgray, .h-color-sgray:hover,
+.color-hgray, .h-color-hgray:hover,
 .color-fgray, .h-color-fgray:hover,
 .color-01, .h-color-01:hover,
 .color-02, .h-color-02:hover,
@@ -27,13 +28,13 @@ html, body, a, a:hover, table.table{color:#000000;}
 .color-10, .h-color-10:hover{color:#000000!important;}
 
 .bg-p, .bg-s, .bg-t,
-.bg-white, .bg-black, .bg-gray, .bg-bgray, .bg-mgray, .bg-sgray, .bg-fgray,
+.bg-white, .bg-black, .bg-gray, .bg-bgray, .bg-mgray, .bg-sgray, .bg-hgray, .bg-fgray,
 .bg-01, .bg-02, .bg-03, .bg-04, .bg-05, .bg-06, .bg-07, .bg-08, .bg-09, 
 .bg-10{background:#ffffff!important;}
 
 .bcolor-p, .bcolor-s, .bcolor-t,
 .bcolor-white, .bcolor-black, .bcolor-gray, .bcolor-bgray, 
-.bcolor-mgray, .bcolor-sgray, .bcolor-fgray, 
+.bcolor-mgray, .bcolor-sgray, .bcolor-hgray, .bcolor-fgray, 
 .bcolor-01, .bcolor-02, .bcolor-03, .bcolor-04, .bcolor-05, .bcolor-06, .bcolor-07, 
 .bcolor-08, .bcolor-09, .bcolor-10{border-color:#000000!important;}
 
@@ -253,19 +254,15 @@ input[type=number], input[type=phone], input[type=submit], input[type=file], sel
 .post-stats, .post-stats .post-stat{border-color:#000000;}
 
 
-/* Section 02 */
-.section-02 .section-options .options{border:1px solid #000000;}
-.section-02 .section-options .option{
-    background:#000000; color:#ffffff; border-color:#ffffff;
-}
-.section-02 .section-options .option:hover,
-.section-02 .section-options .option.active{background:#ffffff; color:#000000;}
-.section-02 .section-options .option.option-search svg{fill:#ffffff;}
-.section-02 .section-options .option.option-search:hover svg{fill:#000000;}
-.section-02 .section-options .option.option-select{background:#000000;}
-.section-02 .section-options .option select{
-    background:transparent!important; color:#ffffff!important;
-}
+/* Section Options */
+.section-options .options{border:1px solid #000000;}
+.section-options .option{background:#000000; color:#ffffff; border-color:#ffffff;}
+.section-options .option:hover,
+.section-options .option.active{background:#ffffff; color:#000000;}
+.section-options .option.option-search svg{fill:#ffffff;}
+.section-options .option.option-search:hover svg{fill:#000000;}
+.section-options .option.option-select{background:#000000;}
+.section-options .option select{background:transparent!important; color:#ffffff!important;}
 
 
 /* Shortcode */
@@ -523,6 +520,13 @@ table.table-stat, table.table-stat td{border-color:#000000;}
 .sitemap-01 .grid, .sitemap-01 .sitemap > .header, .sitemap-01 .sitemap a,
 .sitemap-01 .sitemap li > ul{border-color:#000000!important;}
 .sitemap-01 .sitemap li > ul > li::before{background:#000000;}
+
+/* Sitemap 02 */
+.sitemap-02 .grid, .sitemap-02 .sitemap > .header, .sitemap-02 .sitemap a,
+.sitemap-02 .sitemap li > ul{border-color:#000000;}
+.sitemap-02 .sitemap a:hover{color:#ffd000;}
+.sitemap-02 .sitemap li > ul > li::before{background:#000000;}
+.sitemap-02 .sitemap .icon{background:#000000; color:#ffffff;}
 
 
 /* Survey 01 */

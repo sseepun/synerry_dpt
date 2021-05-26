@@ -40,6 +40,7 @@ html.global-search-opened, body.global-search-opened{overflow-y:hidden!important
 
 /* Section & Container */
 .section-padding{padding:4rem 0;}
+.container-padding{position:relative; padding-top:4rem; padding-bottom:4rem;}
 .section-bg{
     content:''; position:absolute; top:0; bottom:0; left:0; right:0;
     background-size:100% auto; background-position:bottom center;
@@ -48,16 +49,22 @@ html.global-search-opened, body.global-search-opened{overflow-y:hidden!important
 @media screen and (max-width:1299.98px){
     .section-bg{background-size:1600px auto;}
 }
+@media screen and (max-width:1199.98px){
+    .container-padding.adaptive{padding-top:0;}
+}
 @media screen and (max-width:991.98px){
     .section-padding{padding:3.5rem 0;}
+    .container-padding{padding-top:3.5rem; padding-bottom:3.5rem;}
     .section-bg{background-size:1400px auto;}
 }
 @media screen and (max-width:767.98px){
     .section-padding{padding:3rem 0;}
+    .container-padding{padding-top:3rem; padding-bottom:3rem;}
     .section-bg{background-size:1200px auto;}
 }
 @media screen and (max-width:575.98px){
     .section-padding{padding:2.5rem 0;}
+    .container-padding{padding-top:2.5rem; padding-bottom:2.5rem;}
     .section-bg{background-size:1100px auto;}
 }
 @media screen and (min-width:578px){
@@ -116,29 +123,6 @@ html.global-search-opened, body.global-search-opened{overflow-y:hidden!important
 /* Section 02 */
 .section-02{padding:0 0 4rem 0;}
 .section-02 > .container{position:relative;}
-.section-02 .section-options{
-    position:absolute; bottom:100%; right:0; display:flex; align-items:center;
-}
-.section-02 .section-options .options{display:flex; align-items:center;}
-.section-02 .section-options .option{
-    display:flex; align-items:center; justify-content:center; font-size:1.1875rem;
-    min-width:2.6875rem; height:2.6875rem; border-left:1px solid transparent;
-    transition:color .25s, background .25s;
-}
-.section-02 .section-options .option:first-child{border-left:0;}
-.section-02 .section-options .option.option-select{padding:0 .5rem 0 0;}
-.section-02 .section-options .option select{
-    display:block; border:0; padding:.5rem .25rem .5rem .75rem; font-size:.875rem;
-}
-.section-02 .section-options .option.option-search svg{
-    display:block; height:1.5rem; width:auto; transition:fill .25s;
-}
-@media screen and (max-width:1199.98px){
-    .section-02 .section-options{
-        position:relative; bottom:unset; right:unset; width:100%; justify-content:center;
-        padding:1rem 0;
-    }
-}
 @media screen and (max-width:991.98px){
     .section-02{padding:0 0 3.5rem 0;}
 }
@@ -147,6 +131,30 @@ html.global-search-opened, body.global-search-opened{overflow-y:hidden!important
 }
 @media screen and (max-width:575.98px){
     .section-02{padding:0 0 2.5rem 0;}
+}
+
+/* Section Options */
+.section-options{
+    position:absolute; bottom:100%; right:0; display:flex; align-items:center;
+}
+.section-options .options{display:flex; align-items:center;}
+.section-options .option{
+    display:flex; align-items:center; justify-content:center; font-size:1.1875rem;
+    min-width:2.6875rem; height:2.6875rem; border-right:1px solid transparent;
+    transition:color .25s, background .25s;
+}
+.section-options .option.option-select{padding:0 .5rem 0 0;}
+.section-options .option select{
+    display:block; border:0; padding:.5rem .25rem .5rem .75rem; font-size:.875rem;
+}
+.section-options .option.option-search svg{
+    display:block; height:1.5rem; width:auto; transition:fill .25s;
+}
+@media screen and (max-width:1199.98px){
+    .section-options{
+        position:relative; bottom:unset; right:unset; width:100%; justify-content:center;
+        padding:1rem 0;
+    }
 }
 
 
@@ -806,6 +814,8 @@ textarea[data-copy]{pointer-events:none!important;}
 .ss-card-01 .text-container .title.line-3{-webkit-line-clamp:3; min-height:3.875rem;}
 .ss-card-01 .text-container .desc{-webkit-line-clamp:3; min-height:3.75rem;}
 .ss-card-01.minisite .text-container{border:1px solid transparent; border-top:0;}
+.ss-card-01.minisite .text-container.weblink{padding-top:0; overflow:hidden;}
+.ss-card-01.minisite .text-container.weblink .stripe{padding:0 0 0 .625rem; overflow:hidden;}
 @media screen and (max-width:575.98px){
     .ss-card-01 .text-container .title, 
     .ss-card-01 .text-container .desc{min-height:0!important;}
@@ -881,6 +891,8 @@ textarea[data-copy]{pointer-events:none!important;}
 .ss-card-06.minisite .text-container{
     width:60%; border:1px solid transparent; border-left:0; padding:1rem 1.5rem;
 }
+.ss-card-06.minisite .text-container.sm{padding:1rem;}
+.ss-card-06.minisite .text-container.sm .title{min-height:2.625rem;}
 .ss-card-06.minisite .desc{min-height:3.75rem;}
 .ss-card-06.minisite .stripe{padding:0 0 0 .625rem;}
 @media screen and (max-width:991.98px){
@@ -890,7 +902,8 @@ textarea[data-copy]{pointer-events:none!important;}
     .ss-card-06:not(.minisite) .title, .ss-card-06:not(.minisite) .desc{min-height:auto;}
 }
 @media screen and (max-width:575.98px){
-    .ss-card-06.minisite .title, .ss-card-06.minisite .desc{min-height:auto;}
+    .ss-card-06.minisite .title, .ss-card-06.minisite .desc,
+    .ss-card-06.minisite .text-container.sm .title{min-height:auto;}
     .ss-card-06.minisite .img-container, .ss-card-06.minisite .text-container{width:100%;}
     .ss-card-06.minisite .text-container{border-left:1px solid transparent; border-top:0;}
 }
@@ -911,6 +924,20 @@ textarea[data-copy]{pointer-events:none!important;}
     .ss-card-07 > .text-content{width:100%;}
     .ss-card-07 > .img-content{width:100%;}
     .ss-card-07 .title, .ss-card-07 .desc{min-height:auto;}
+}
+
+/* Spacial Card 08 */
+.ss-card-08{width:100%; display:flex; padding:.75rem 0;}
+.ss-card-08 > .icon{width:3rem; padding:0 1rem 0 0;}
+.ss-card-08 > .icon p{margin:-.375rem 0 0 0;}
+.ss-card-08 > .text-container{width:calc(100% - 3rem); padding:.125rem 0 0 0;}
+@media screen and (max-width:991.98px){
+    .ss-card-08 > .icon{padding:0 .75rem 0 0;}
+    .ss-card-08 > .text-container{width:calc(100% - 2.75rem);}
+}
+@media screen and (max-width:575.98px){
+    .ss-card-08 > .icon{padding:0 .5rem 0 0;}
+    .ss-card-08 > .text-container{width:calc(100% - 2.5rem);}
 }
 
 

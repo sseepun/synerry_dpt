@@ -11,6 +11,7 @@ html, body, a, a:hover, table.table{color:#000000;}
 .color-bgray, .h-color-bgray:hover{color:#999999!important;}
 .color-mgray, .h-color-mgray:hover{color:#c6c6c6!important;}
 .color-sgray, .h-color-sgray:hover{color:#e4e2e0!important;}
+.color-hgray, .h-color-hgray:hover{color:#f2f2f2!important;}
 .color-fgray, .h-color-fgray:hover{color:#f8f9fa!important;}
 .color-01, .h-color-01:hover{color:#fdcd05!important;}
 .color-02, .h-color-02:hover{color:#270108!important;}
@@ -30,6 +31,7 @@ html, body, a, a:hover, table.table{color:#000000;}
 .bg-bgray{background:#999999!important;}
 .bg-sgray{background:#c6c6c6!important;}
 .bg-mgray{background:#e4e2e0!important;}
+.bg-hgray{background:#f2f2f2!important;}
 .bg-fgray{background:#f8f9fa!important;}
 .bg-01{background:#fdcd05!important;}
 .bg-02{background:#270108!important;}
@@ -49,6 +51,7 @@ html, body, a, a:hover, table.table{color:#000000;}
 .bcolor-bgray{border-color:#999999!important;}
 .bcolor-mgray{border-color:#c6c6c6!important;}
 .bcolor-sgray{border-color:#e4e2e0!important;}
+.bcolor-hgray{border-color:#f2f2f2!important;}
 .bcolor-fgray{border-color:#f8f9fa!important;}
 .bcolor-01{border-color:#fdcd05!important;}
 .bcolor-02{border-color:#270108!important;}
@@ -60,6 +63,13 @@ html, body, a, a:hover, table.table{color:#000000;}
 .bcolor-08{border-color:#290b07!important;}
 .bcolor-09{border-color:#70383a!important;}
 .bcolor-10{border-color:#502e11!important;}
+
+/* Gradient */
+.bg-gray-gradient{
+    background-image:linear-gradient(to bottom, #ffffff, #ffffff, #ffffff, #ffffff,
+        #ffffff, #ffffff, #ffffff, #ededed);
+}
+
 
 /* Super Topnav */
 nav.stopnav .btn.btn-circle{border-color:#ffffff; background:#ffffff;}
@@ -350,18 +360,16 @@ input[type=file].sgray, select.sgray, textarea.sgray,
 .post-stats, .post-stats .post-stat{border-color:#dbdbdb;}
 
 
-/* Section 02 */
-.section-02 .section-options .option{background:#4d2224; color:#ffffff;}
-.section-02 .section-options .option:hover,
-.section-02 .section-options .option.active{background:#ffd000;}
-.section-02 .section-options .option.option-select{background:#333333;}
-.section-02 .section-options .option.option-select + .option.option-select{border-color:#ffffff;}
-.section-02 .section-options .option select{
-    background:transparent!important; color:#ffffff!important;
-}
-.section-02 .section-options .option.option-search{background:#333333;}
-.section-02 .section-options .option.option-search:hover{background:#ffd000;}
-.section-02 .section-options .option.option-search svg{fill:#ffffff;}
+/* Section Options */
+.section-options .option{background:#4d2224; color:#ffffff;}
+.section-options .option:hover,
+.section-options .option.active{background:#ffd000;}
+.section-options .option.option-select{background:#333333;}
+.section-options .option.option-select{border-color:#ffffff;}
+.section-options .option select{background:transparent!important; color:#ffffff!important;}
+.section-options .option.option-search{background:#333333;}
+.section-options .option.option-search:hover{background:#ffd000;}
+.section-options .option.option-search svg{fill:#ffffff;}
 
 
 /* Shortcode */
@@ -666,6 +674,13 @@ table.table-stat, table.table-stat td{border-color:#ffffff;}
 .sitemap-01 .sitemap-card{border-color:#e1e1e1;}
 .sitemap-01 .sitemap-card .title{color:#000000;}
 .sitemap-01 .sitemap-card:hover .title{color:#fdcd05; color:var(--pcolor);}
+
+/* Sitemap 02 */
+.sitemap-02 .grid, .sitemap-02 .sitemap > .header, .sitemap-02 .sitemap a,
+.sitemap-02 .sitemap li > ul{border-color:#e1e1e1;}
+.sitemap-02 .sitemap a:hover{color:#ffd000;}
+.sitemap-02 .sitemap li > ul > li::before{background:#ffd000;}
+.sitemap-02 .sitemap .icon{background:#4d2224; color:#ffd000;}
 
 
 /* Survey 01 */

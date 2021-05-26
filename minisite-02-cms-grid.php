@@ -15,7 +15,7 @@
             'leading_class' => 'stripe-bottom',
             'title' => 'ลังภาพ',
             'desc' => 'กรมโยธาธิการและผังเมืองพร้อมให้ข้อมูลข่าวสารที่เป็นประโยชน์ สำหรับคุณ',
-            'image' => 'public/assets/app/images/bg/breadcrumb-01-minisite.jpg',
+            'image' => 'public/assets/app/images/bg/minisite-breadcrumb-01.jpg',
             'structure' => [
                 [ 'name' => 'แนะนำกรม', 'url' => '#' ],
                 [ 'name' => 'คลังภาพ', 'url' => '#' ]
@@ -26,12 +26,15 @@
 
     <section class="section-02">
         <div class="container">
-            <?php include_once('component/section-options.php'); ?>
+            <?php 
+                $sectionOptions = [ 'filter', 'order', 'display', 'rss', 'search' ];
+                include_once('component/section-options.php');
+            ?>
             <div class="tab-container">
                 <div class="grids">
                     <div class="grid xl-25 lg-30 md-40 sm-100 mt-0" data-aos="fade-up" data-aos-delay="300">
                         <div class="tabs tabs-04">
-                            <div class="bg-filter"></div>
+                            <div class="bg-filter mask"></div>
                             <a class="tab active" href="#">ภาพกิจกรรม</a>
                             <a class="tab" href="#">ภาพงาน CSR</a>
                             <a class="tab" href="#">อินโฟกราฟิก</a>
