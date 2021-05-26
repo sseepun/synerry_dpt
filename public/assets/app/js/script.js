@@ -2,7 +2,8 @@
 $(function(){ 'use strict';
 
     // Topnav
-    var topnav = $('nav.topnav');
+    var topnav = $('nav.topnav'),
+        topnavMinisite = $('nav.topnav-minisite');
     var sidenav = $('nav.sidenav'),
         sidenavMenus = sidenav.find('.menu-container'),
         sidenavToggle = $('nav .sidenav-toggle');
@@ -21,6 +22,8 @@ $(function(){ 'use strict';
             self.toggleClass('active');
             self.prev().slideToggle();
         });
+    }else if(topnavMinisite.length){
+
     }
 
     // Sidenav Toggle
@@ -113,12 +116,24 @@ $(function(){ 'use strict';
         }else{
             backToTop.removeClass('active');
         }
-        if(st > 2.375*bodySize){
-            topnav.addClass('sticky');
-            globalSearchContainer.addClass('sticky');
-        }else{
-            topnav.removeClass('sticky');
-            globalSearchContainer.removeClass('sticky');
+        if(topnav.length){
+            if(st > 2.375*bodySize){
+                topnav.addClass('sticky');
+                globalSearchContainer.addClass('sticky');
+            }else{
+                topnav.removeClass('sticky');
+                globalSearchContainer.removeClass('sticky');
+            }
+        }else if(topnavMinisite.length){
+            var scale = 4.4375;
+            if(window.innerWidth < 992) scale = 3.9375;
+            if(st > scale*bodySize){
+                topnavMinisite.addClass('sticky');
+                globalSearchContainer.addClass('sticky');
+            }else{
+                topnavMinisite.removeClass('sticky');
+                globalSearchContainer.removeClass('sticky');
+            }
         }
     }
     checkOnScroll( $(window).scrollTop() );
@@ -244,7 +259,7 @@ $(function(){ 'use strict';
             var self = $(this);
             self.find('.slides').slick({
                 centerMode: true, centerPadding: 0, slidesToShow: 1, swipeToSlide: true,
-                focusOnSelect: true, autoplay: true, autoplaySpeed: 4000, speed: 800,
+                focusOnSelect: true, autoplay: true, autoplaySpeed: 4000, speed: 600,
                 arrows: false, dots: true, appendDots: self.find('.dots')
             });
         });
@@ -257,7 +272,7 @@ $(function(){ 'use strict';
             var self = $(this);
             self.find('.slides').slick({
                 centerMode: false, centerPadding: 0, slidesToShow: 6, swipeToSlide: true,
-                focusOnSelect: true, autoplay: true, autoplaySpeed: 4000, speed: 800,
+                focusOnSelect: true, autoplay: true, autoplaySpeed: 4000, speed: 600,
                 arrows: false, dots: false,
                 responsive: [
                     { breakpoint: 1299.98, settings: { slidesToShow: 5, } },
@@ -335,14 +350,14 @@ $(function(){ 'use strict';
             var self = $(this),
                 options = {
                     centerMode: true, centerPadding: 0, slidesToShow: 1, swipeToSlide: true,
-                    focusOnSelect: true, autoplay: true, autoplaySpeed: 4000, speed: 800,
+                    focusOnSelect: true, autoplay: true, autoplaySpeed: 4000, speed: 600,
                     arrows: true, appendArrows: self.find('.arrows'),
                     dots: true, appendDots: self.find('.dots')
                 };
             if(self.hasClass('img-only')){
                 options = {
                     centerMode: true, centerPadding: 0, slidesToShow: 1, swipeToSlide: true,
-                    focusOnSelect: true, autoplay: true, autoplaySpeed: 4000, speed: 800,
+                    focusOnSelect: true, autoplay: true, autoplaySpeed: 4000, speed: 600,
                     arrows: true, appendArrows: self.find('.arrows'),
                     dots: true, appendDots: self.find('.dots'),
                     adaptiveHeight: false
@@ -360,7 +375,7 @@ $(function(){ 'use strict';
             var self = $(this);
             self.find('> .slides').slick({
                 centerMode: true, centerPadding: 0, slidesToShow: 4, swipeToSlide: true,
-                focusOnSelect: true, autoplay: true, autoplaySpeed: 4000, speed: 800,
+                focusOnSelect: true, autoplay: true, autoplaySpeed: 4000, speed: 600,
                 arrows: true, appendArrows: self.find('.arrows'), dots: false,
                 responsive: [
                     { breakpoint: 991.98, settings: { slidesToShow: 3, } },
@@ -378,7 +393,7 @@ $(function(){ 'use strict';
             var self = $(this);
             self.find('.slides').slick({
                 centerMode: true, centerPadding: 0, slidesToShow: 1, swipeToSlide: true,
-                focusOnSelect: true, autoplay: true, autoplaySpeed: 4000, speed: 800,
+                focusOnSelect: true, autoplay: true, autoplaySpeed: 4000, speed: 600,
                 dots: false, arrows: true, appendArrows: self.find('.arrows')
             });
         });
@@ -411,7 +426,7 @@ $(function(){ 'use strict';
             var self = $(this);
             self.find('> .slides').slick({
                 centerMode: true, centerPadding: 0, slidesToShow: 4, swipeToSlide: true,
-                focusOnSelect: true, autoplay: true, autoplaySpeed: 4000, speed: 800,
+                focusOnSelect: true, autoplay: true, autoplaySpeed: 4000, speed: 600,
                 arrows: true, appendArrows: self.find('.arrows'), dots: false,
                 responsive: [
                     { breakpoint: 991.98, settings: { slidesToShow: 3, } },

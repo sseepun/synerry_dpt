@@ -65,6 +65,20 @@ html, body, a, a:hover, table.table{color:#000000;}
 nav.stopnav .btn.btn-circle{border-color:#ffffff; background:#ffffff;}
 nav.stopnav .flag-wrapper{background:#ffffff; color:#000000;}
 
+/* Super Topnav Minisite */
+nav.stopnav-minisite{background:#ffffff; border-color:#eaeaea;}
+nav.stopnav-minisite .logo{color:#4d2224;}
+nav.stopnav-minisite .option,
+nav.stopnav-minisite .option .dropdown{background:#ffffff; border-color:#e1e1e1!important;}
+nav.stopnav-minisite .option > a{color:#232323;}
+nav.stopnav-minisite .option:hover > a,
+nav.stopnav-minisite .option .dropdown a:hover{background:#f4f4f4;}
+nav.stopnav-minisite .option .chev svg{fill:#232323;}
+nav.stopnav-minisite .btn-menu{background:#eaeaea; border-color:#eaeaea; color:#000000;}
+nav.stopnav-minisite .btn-menu:hover{background:#dddddd;}
+nav.stopnav-minisite .btn-menu svg{fill:#000000;}
+nav.stopnav-minisite .hamburger > *{background:#000000;}
+
 /* Topnav */
 nav.topnav{background:#ffffff; color:#232323;}
 nav.topnav .logo .img-container{background:#fdcd05;}
@@ -90,6 +104,14 @@ nav.topnav.clear:not(.sticky) .logo p{color:#ffffff!important;}
 nav.topnav.clear:not(.sticky) .menu > a,
 nav.topnav.clear:not(.sticky) .option{color:#ffffff;}
 nav.topnav.clear:not(.sticky) .option.sidenav-toggle{background:#000000;}
+
+/* Topnav Minisite */
+nav.topnav-minisite{background:#2a5947;}
+nav.topnav-minisite .menu > a{color:#ffffff;}
+nav.topnav-minisite .menu:hover > a,
+nav.topnav-minisite .menu.active > a{background:#1a362a; color:#efc50c;}
+nav.topnav-minisite .menu::before{background:#ffffff;}
+nav.topnav-minisite .menu::after{background:#ffffff;}
 
 /* Sidenav */
 nav.sidenav{background:#ffffff;}
@@ -129,6 +151,19 @@ nav.footer li ul > li > a:hover{color:#ffd000;}
 /* Super Footer */
 nav.sfooter .visitor-count{background:#000000;}
 nav.sfooter .visitor-count .count > *{color:#ffffff;}
+
+/* Super Footer Minisite */
+nav.sfooter-minisite{background:#250304; color:#ffffff;}
+nav.sfooter-minisite .logo h6{color:#d5aa03;}
+nav.sfooter-minisite table.table-contact td p{color:#d5aa03;}
+nav.sfooter-minisite table.table-contact td a{color:#ffffff;}
+nav.sfooter-minisite table.table-contact td a:hover{color:#d5aa03;}
+nav.sfooter-minisite .quick-links a{color:#ffffff;}
+nav.sfooter-minisite .quick-links a:hover{color:#d5aa03;}
+nav.sfooter-minisite .quick-links a::before{background:#ffffff;}
+nav.sfooter-minisite .visitor-count{border-color:#d5aa03;}
+nav.sfooter-minisite .btn.btn-social:hover{background:#ffffff; color:#250304;}
+nav.sfooter-minisite .grid-line > .line::before{background:#ffffff;}
 
 
 /* Buttons */
@@ -286,6 +321,9 @@ input[type=file].sgray, select.sgray, textarea.sgray,
 }
 .list-header .btn-icon em{background:#fe4d01; color:#ffffff;}
 
+/* List Footer */
+.list-footer.minisite .slot select{background:#4d2224!important; color:#ffd000!important;}
+
 
 /* Password Level */
 .password-level > .levels > *{background:#ebebeb;}
@@ -312,6 +350,20 @@ input[type=file].sgray, select.sgray, textarea.sgray,
 .post-stats, .post-stats .post-stat{border-color:#dbdbdb;}
 
 
+/* Section 02 */
+.section-02 .section-options .option{background:#4d2224; color:#ffffff;}
+.section-02 .section-options .option:hover,
+.section-02 .section-options .option.active{background:#ffd000;}
+.section-02 .section-options .option.option-select{background:#333333;}
+.section-02 .section-options .option.option-select + .option.option-select{border-color:#ffffff;}
+.section-02 .section-options .option select{
+    background:transparent!important; color:#ffffff!important;
+}
+.section-02 .section-options .option.option-search{background:#333333;}
+.section-02 .section-options .option.option-search:hover{background:#ffd000;}
+.section-02 .section-options .option.option-search svg{fill:#ffffff;}
+
+
 /* Shortcode */
 .shortcode-container .shortcode-content,
 .shortcode-container .shortcode-content::after{background:#f4f4f4; border-color:#682d2f;}
@@ -324,6 +376,8 @@ input[type=file].sgray, select.sgray, textarea.sgray,
 
 /* Slide Container 01 */
 .slide-container-01 .slick-dots button{background:#2e1213;}
+.slide-container-01 .dots-square .slick-dots button{background:#4d2224;}
+.slide-container-01 .dots-square .slick-dots li.slick-active button{background:#ffd000;}
 
 
 /* Slide Target */
@@ -353,6 +407,10 @@ input[type=file].sgray, select.sgray, textarea.sgray,
 .ss-box-shadow::before{background:#ffffff;}
 
 
+/* Special Card 01 */
+.ss-card-01.minisite .btn.btn-more:hover{color:#fdcd05;}
+.ss-card-01.minisite .btn.btn-more::after{background:#fdcd05;}
+
 /* Special Card 02 */
 .ss-card-02:hover{border-color:#fdcd05!important;}
 .ss-card-02 .date-container{background:#505050; color:#ffffff;}
@@ -366,6 +424,10 @@ input[type=file].sgray, select.sgray, textarea.sgray,
 /* Special Card 05 */
 .ss-card-05 > .info-container{background:#444243; color:#ffffff;}
 .ss-card-05 .card-header{background:#f5f5f5;}
+
+/* Special Card 06 */
+.ss-card-06.minisite .btn.btn-more:hover{color:#fdcd05;}
+.ss-card-06.minisite .btn.btn-more::after{background:#fdcd05;}
 
 /* Special Card 07 */
 .ss-card-07 .title-wrapper{background:#f5f5f5;}
@@ -393,6 +455,7 @@ input[type=file].sgray, select.sgray, textarea.sgray,
 
 /* Special Image */
 .ss-img .hover-container{border-color:#fdcd05!important; background:rgba(0,0,0,.4);}
+.ss-img .minisite-tag-counts > .tag-count{background:#4d2224; color:#fdcd05;}
 
 
 /* Special List */
@@ -482,6 +545,16 @@ table.table-stat, table.table-stat td{border-color:#ffffff;}
 .breadcrumb-01 .breadcrumb-wrapper a{color:#ffffff;}
 .breadcrumb-01.style-contact .contact-container::before{background:#ffffff;}
 
+/* Breadcrumb 02 */
+.breadcrumb-02 .breadcrumb-wrapper{background:#4d2224;}
+.breadcrumb-02 .breadcrumb-wrapper a{color:#ffffff;}
+.breadcrumb-02 .breadcrumb-wrapper a:hover,
+.breadcrumb-02 .breadcrumb-wrapper a:last-child{color:#ffd000;}
+.breadcrumb-02 .breadcrumb-wrapper em{color:#ffd000;}
+.breadcrumb-02 .ss-icon-title-01 > .text-icon, .breadcrumb-02 .ss-icon-title-01 .title,
+.breadcrumb-02 .ss-icon-title-01 .desc{color:#ffffff;}
+.breadcrumb-02 .ss-icon-title-01 > .text-icon::before{background:#ffffff;}
+
 
 /* Client 01 */
 .client-01 .arrows button{color:#2d2d2d;}
@@ -569,6 +642,15 @@ table.table-stat, table.table-stat td{border-color:#ffffff;}
     color:#fdcd05; background:transparent; border-color:transparent;
 }
 
+/* Pagination 03 */
+.pagination-03 .page-btn.active{background:#ffd000; color:#ffffff;}
+.pagination-03 .page-btn.page-prev, 
+.pagination-03 .page-btn.page-next{background:transparent; color:#000000;}
+.pagination-03 .page-btn.page-first, 
+.pagination-03 .page-btn.page-last{background:#363635; color:#ffffff;}
+.pagination-03 .page-btn.page-first:hover, 
+.pagination-03 .page-btn.page-last:hover{background:#ffd000;}
+
 
 /* Progress 01 */
 .progress-01 .track{background:#ebebeb;}
@@ -608,3 +690,12 @@ table.table-stat, table.table-stat td{border-color:#ffffff;}
 .tab-container .tabs.tabs-03 .tab:hover,
 .tab-container .tabs.tabs-03 .tab.active{color:#ffffff;}
 .tab-container .tabs.tabs-03 .btn-setting:hover{background:rgba(0,0,0,.1);}
+
+/* Tab Container - Tabs 04 */
+.tab-container .tabs.tabs-04 > .bg-filter{background:#efc50c;}
+.tab-container .tabs.tabs-04 .tab{color:#000000; border-color:#ffffff;}
+.tab-container .tabs.tabs-04 .tab:hover, 
+.tab-container .tabs.tabs-04 .tab.active{background:#4d2224; color:#efc50c;}
+.tab-container .tabs.tabs-04 .tab::before{background:#ffffff;}
+.tab-container .tabs.tabs-04 .tab:hover::before,
+.tab-container .tabs.tabs-04 .tab.active::before{background:#efc50c;}

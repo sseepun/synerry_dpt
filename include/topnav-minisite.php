@@ -1,155 +1,100 @@
 
-<!-- Super Topnav -->
-<nav class="stopnav color-sgray bcolor-02 bg-02">
+<!-- Super Topnav Minisite -->
+<nav class="stopnav-minisite">
     <div class="container">
         <div class="blocks">
-            <div class="block right color-white">
-                <div class="text-wrapper">
-                    บัญชีของ 
-                    <a class="color-01 h-color-white" href="#">
-                        คุณจักรพงษ
-                    </a>
-                    <span class="sep">|</span>
-                    <a class="color-white h-color-01" href="#">
-                        ออกจากระบบ
-                    </a>
+            <div class="block">
+                <a class="logo" href="#">
+                    <img src="public/assets/app/images/logo.png" alt="Image Logo" />
+                    <div class="text-container">
+                        <h6><span class="font-01">กรมโยธาธิการและผังเมือง</span></h6>
+                        <p><span class="font-01">จังหวัดนครปฐม</span></p>
+                    </div>
+                </a>
+            </div>
+            <div class="block right">
+                <div class="block">
+                    <div class="option">
+                        <a href="#">
+                            <em class="fas fa-lock"></em> เข้าสู่ระบบ
+                        </a>
+                    </div>
+                    <div class="option">
+                        <a href="#">
+                            <em class="fas fa-sitemap"></em> แผนผังเว็บไซต์
+                        </a>
+                    </div>
+                    <div class="option">
+                        <a href="#">
+                            <div class="flag" style="background-image:url('public/assets/app/images/misc/th-flag.png');"></div>
+                            <div class="chev">
+                                <svg width="12" height="7" viewBox="0 0 12 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M6 6.99995L0.75 1.74995L1.8 0.699951L6 4.89995L10.2 0.699951L11.25 1.74995L6 6.99995Z" />
+                                </svg>
+                            </div>
+                        </a>
+                        <div class="dropdown">
+                            <a href="#">
+                                <div class="flag" style="background-image:url('public/assets/app/images/misc/us-flag.png');"></div>
+                            </a>
+                        </div>
+                    </div>
                 </div>
+            </div>
+            <div class="block">
+                <a class="btn-menu" href="#">
+                    <div class="wrapper">
+                        <div class="icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M21.7502 20.6895L16.0861 15.0254C17.4471 13.3914 18.1258 11.2956 17.981 9.17399C17.8362 7.05236 16.8789 5.06824 15.3085 3.63438C13.738 2.20053 11.6752 1.42733 9.54918 1.47565C7.42316 1.52396 5.39761 2.39006 3.89389 3.89377C2.39018 5.39748 1.52408 7.42304 1.47577 9.54906C1.42746 11.6751 2.20065 13.7379 3.63451 15.3084C5.06836 16.8788 7.05248 17.836 9.17412 17.9809C11.2958 18.1257 13.3915 17.447 15.0255 16.086L20.6896 21.7501L21.7502 20.6895ZM3.00018 9.75006C3.00018 8.41503 3.39606 7.10999 4.13776 5.99996C4.87946 4.88992 5.93366 4.02476 7.16706 3.51387C8.40047 3.00298 9.75766 2.8693 11.067 3.12975C12.3764 3.39021 13.5791 4.03308 14.5231 4.97708C15.4672 5.92109 16.11 7.12382 16.3705 8.4332C16.6309 9.74257 16.4973 11.0998 15.9864 12.3332C15.4755 13.5666 14.6103 14.6208 13.5003 15.3625C12.3902 16.1042 11.0852 16.5001 9.75018 16.5001C7.96058 16.4981 6.24484 15.7863 4.9794 14.5208C3.71396 13.2554 3.00216 11.5397 3.00018 9.75006Z" />
+                            </svg>
+                        </div>
+                        ค้นหา
+                    </div>
+                </a>
+                <a class="btn-menu show-mobile" href="#">
+                    <div class="hamburger">
+                        <div></div><div></div><div></div>
+                    </div>
+                </a>
             </div>
         </div>
     </div>
 </nav>
 
-<!-- Topnav -->
-<nav class="topnav <?php if(!empty($topnavClass))echo $topnavClass; ?>">
+<!-- Topnav Minisite -->
+<?php
+    $topnavMenu = [
+        [
+            'href' => '#', 'text' => 'หน้าแรก'
+        ],
+        [
+            'href' => '#', 'text' => 'แนะนำกรม'
+        ],
+        [
+            'href' => '#', 'text' => 'หน่วยงานในสังกัดกรม'
+        ],
+        [
+            'href' => '#', 'text' => 'หน่วยงานใน มท.'
+        ],
+        [
+            'href' => '#', 'text' => 'ศูนย์ข้อมูล'
+        ],
+        [
+            'href' => '#', 'text' => 'ติดต่อสื่อสาร'
+        ]
+        ];
+?>
+<nav class="topnav-minisite" style="--nmenu:<?= sizeof($topnavMenu) ?>;">
     <div class="container">
-        <div class="blocks">
-            <div class="block ai-unset">
-                <a class="logo" href="#">
-                    <div class="img-container">
-                        <img src="public/assets/app/images/logo.png" alt="Website Logo" />
-                    </div>
-                    <div class="text-wrapper">
-                        <h6 class="color-02">
-                            <span class="font-01">
-                                กรมโยธาธิการและผังเมือง
-                            </span>
-                        </h6>
-                        <p class="color-dark">
-                            <span class="font-02">
-                                DEPARTMENT OF PUBLIC WORKS <br>
-                                AND TOWN & COUNTRY PLANNING
-                            </span>
-                        </p>
-                    </div>
-                </a>
-            </div>
-            <div class="menu-container hide-mobile" id="topnav-menu">
-                <?php
-                    foreach([
-                        'แนะนำกรม', 'หน่วยงานในสังกัดกรม', 'หน่วยงานในมท.', 
-                        'ศูนย์ข้อมูล', 'ติดตอสื่อสาร'
-                    ] as $i=>$d){
-                ?>
-                    <div class="menu has-children">
-                        <a href="#" data-dropdown="<?= $i ?>">
-                            <?= $d ?> <em class="fas fa-chevron-down"></em>
-                        </a>
-                        <div class="submenu-dropdown <?php
-                            if($i>3)echo 'anchor-right';
-                            else if($i>1)echo 'anchor-middle';
-                        ?>">
-                            <div class="submenu-blocks">
-                                <div class="submenu-block">
-                                    <h6 class="submenu-title p lg fw-600"><?= $d ?></h6>
-                                    <div class="submenu">
-                                        <a href="#">ทิศทางองค์กร</a>
-                                    </div>
-                                    <div class="submenu">
-                                        <a href="#">ภารกิจ 4 ด้าน</a>
-                                    </div>
-                                    <div class="submenu">
-                                        <a href="#">การแบ่งส่วนราชการกรมโยธาธิการและผังเมือง</a>
-                                    </div>
-                                    <div class="submenu">
-                                        <a href="#">อำนาจหน้าที่ของกรมและส่วนราชการ</a>
-                                    </div>
-                                    <div class="submenu">
-                                        <a href="#">ประวัติความเป็นมาและตราสัญลักษณ์</a>
-                                    </div>
-                                    <div class="submenu">
-                                        <a href="#">โครงสร้างองค์กร</a>
-                                    </div>
-                                    <div class="submenu">
-                                        <a href="#">ทำเนียบผู้บริหารกรมฯ</a>
-                                    </div>
-                                    <div class="submenu">
-                                        <a href="#">ผู้บริหารเทคโนโลยีสารสนเทศระดับสูง</a>
-                                    </div>
-                                    <div class="submenu">
-                                        <a href="#">รายงานผล</a>
-                                    </div>
-                                    <div class="submenu">
-                                        <a href="#">แผนงาน</a>
-                                    </div>
-                                </div>
-                                <!-- <div class="submenu-block">
-                                    <h6 class="submenu-title p lg fw-600"><?= $d ?></h6>
-                                    <div class="submenu">
-                                        <a href="#">การเสริมสร้างวัฒนธรรมองค์กร</a>
-                                    </div>
-                                    <div class="submenu">
-                                        <a href="#">สำนักงานพลังงานจังหวัด</a>
-                                    </div>
-                                    <div class="submenu">
-                                        <a href="#">ข้อมูลพลังงาน</a>
-                                    </div>
-                                    <div class="submenu has-children">
-                                        <a href="#">นโยบายพลังงาน</a>
-                                        <div class="submenu-block">
-                                            <div class="submenu">
-                                                <a href="#">นโยบายด้านพลังงานของรัฐบาล</a>
-                                            </div>
-                                            <div class="submenu">
-                                                <a href="#">คำแถลงนโยบายของคณะรัฐมนตรี</a>
-                                            </div>
-                                            <div class="submenu">
-                                                <a href="#">ยุทธศาสตร์ด้านพลังงาน</a>
-                                            </div>
-                                            <div class="submenu">
-                                                <a href="#">มติคณะ กพช./กบง.</a>
-                                            </div>
-                                            <div class="submenu">
-                                                <a href="#">แผนการบริหารราชการแผ่นดิน</a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div> -->
-                            </div>
-                        </div>
-                    </div>
-                <?php }?>
-            </div>
-            <div class="block mobile-right">
-                <a class="option sidenav-toggle" href="#">
-                    <div class="hamburger">
-                        <div></div><div></div><div></div>
-                    </div>
-                </a>
-                <div class="option pr-1">
-                    <div class="flag-wrapper">
-                        <div class="flag-icon" style="background-image:url('public/assets/app/images/misc/th-flag.png');"></div>
-                        <em class="fas fa-chevron-down"></em>
-                    </div>
-                    <div class="dropdown">
-                        <a class="flag-wrapper" href="#">
-                            <div class="flag-icon" style="background-image:url('public/assets/app/images/misc/us-flag.png');"></div>
-                        </a>
-                    </div>
+        <div class="menu-container">
+            <?php foreach($topnavMenu as $i=>$d){?>
+                <div class="menu <?php if($topnavActiveIndex==$i)echo 'active'; ?>">
+                    <a href="<?= $d['href'] ?>">
+                        <?= $d['text'] ?>
+                    </a>
                 </div>
-                <a class="option global-search-toggle" href="#">
-                    <em class="fas fa-search"></em>
-                </a>
-            </div>
+            <?php }?>
         </div>
     </div>
 </nav>
@@ -247,66 +192,3 @@
         </div>
     </div>
 </div>
-
-
-<!-- Accessibility -->
-<nav class="side-panel access-panel">
-    <div class="wrapper">
-        <div class="panel">
-            <div class="panel-row">
-                <div class="icon">
-                    <img src="public/assets/app/images/icon/access.png" alt="Image Icon" />
-                </div>
-                <p><span class="font-01">การช่วยการเข้าถึง</span></p>
-            </div>
-            <div class="panel-row">
-                <div class="icon-width">
-                    <img src="public/assets/app/images/icon/icon-t.png" alt="Image Icon" />
-                    <p><span class="font-01">ขนาดตัวอักษร</span></p>
-                </div>
-                <div class="options">
-                
-                </div>
-            </div>
-            <div class="panel-row">
-                <div class="icon-width">
-                    <img src="public/assets/app/images/icon/icon-s.png" alt="Image Icon" />
-                    <p><span class="font-01">ระยะห่างตัวอักษร</span></p>
-                </div>
-                <div class="options">
-                
-                </div>
-            </div>
-            <div class="panel-row">
-                <div class="icon-width">
-                    <img src="public/assets/app/images/icon/icon-l.png" alt="Image Icon" />
-                    <p><span class="font-01">ความคมชัด</span></p>
-                </div>
-                <div class="options">
-                
-                </div>
-            </div>
-            <div class="panel-row">
-                <div class="icon-width">
-                    <img src="public/assets/app/images/icon/icon-c.png" alt="Image Icon" />
-                    <p><span class="font-01">ขนาดเคอเซอร์</span></p>
-                </div>
-                <div class="options">
-                
-                </div>
-            </div>
-        </div>
-        <a class="icon" href="#">
-            <img src="public/assets/app/images/icon/access.png" alt="Image Icon" />
-        </a>
-    </div>
-</nav>
-
-<!-- Quick Links -->
-<nav class="side-panel quicklink-panel">
-    <div class="wrapper">
-        <a class="icon" href="#">
-            <em class="fas fa-link"></em>
-        </a>
-    </div>
-</nav>
