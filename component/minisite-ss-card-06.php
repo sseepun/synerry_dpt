@@ -40,7 +40,7 @@
                 </a>
             </div>
         </div>
-    <?php }else if($cardType=='Preview'){?>
+    <?php }else if($cardType=='Image Preview'){?>
         <div class="img-container">
             <a class="ss-img adaptive-xs" href="#">
                 <div class="img-bg" style="background-image:url('public/assets/app/images/content/minisite-<?= empty($j)? '01': sprintf('%02d', $j%6+1) ?>.jpg');"></div>

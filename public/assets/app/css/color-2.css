@@ -25,18 +25,20 @@ html, body, a, a:hover, table.table{color:#fecb00;}
 .color-07, .h-color-07:hover,
 .color-08, .h-color-08:hover,
 .color-09, .h-color-09:hover,
-.color-10, .h-color-10:hover{color:#fecb00!important;}
+.color-10, .h-color-10:hover,
+.color-11, .h-color-11:hover,
+.color-12, .h-color-12:hover{color:#fecb00!important;}
 
 .bg-p, .bg-s, .bg-t,
 .bg-white, .bg-black, .bg-gray, .bg-bgray, .bg-mgray, .bg-sgray, .bg-hgray, .bg-fgray,
 .bg-01, .bg-02, .bg-03, .bg-04, .bg-05, .bg-06, .bg-07, .bg-08, .bg-09, 
-.bg-10{background:#000000!important;}
+.bg-10, .bg-11, .bg-12{background:#000000!important;}
 
 .bcolor-p, .bcolor-s, .bcolor-t,
 .bcolor-white, .bcolor-black, .bcolor-gray, .bcolor-bgray, 
 .bcolor-mgray, .bcolor-sgray, .bcolor-hgray, .bcolor-fgray, 
 .bcolor-01, .bcolor-02, .bcolor-03, .bcolor-04, .bcolor-05, .bcolor-06, .bcolor-07, 
-.bcolor-08, .bcolor-09, .bcolor-10{border-color:#fecb00!important;}
+.bcolor-08, .bcolor-09, .bcolor-10, .bcolor-11, .bcolor-12{border-color:#fecb00!important;}
 
 
 /* Super Topnav */
@@ -142,7 +144,9 @@ nav.sfooter-minisite .grid-line > .line::before{background:#fecb00;}
 .btn.btn-color-04, .btn.btn-color-04:focus, .btn.btn-color-04:hover, .btn.btn-color-04:active,
 .btn.btn-color-05, .btn.btn-color-05:focus, .btn.btn-color-05:hover, .btn.btn-color-05:active,
 .btn.btn-color-06, .btn.btn-color-06:focus, .btn.btn-color-06:hover, .btn.btn-color-06:active,
-.btn.btn-color-07, .btn.btn-color-07:focus, .btn.btn-color-07:hover, .btn.btn-color-07:active{
+.btn.btn-color-07, .btn.btn-color-07:focus, .btn.btn-color-07:hover, .btn.btn-color-07:active,
+.btn.btn-color-08, .btn.btn-color-08:focus, .btn.btn-color-08:hover, .btn.btn-color-08:active,
+.btn.btn-color-09, .btn.btn-color-09:focus, .btn.btn-color-09:hover, .btn.btn-color-09:active{
     color:#000000; background:#fecb00; border-color:#fecb00;
 }
 .btn.btn-ss::after{background:#000000;}
@@ -154,7 +158,7 @@ nav.sfooter-minisite .grid-line > .line::before{background:#fecb00;}
 input[type=text], input[type=email], input[type=password], input[type=date], input[type=tel],
 input[type=number], input[type=phone], input[type=submit], input[type=file], select, textarea,
 .form-group .upload-wrapper::before{
-    color:#000000!important; background:#fecb00!important; border-color:#fecb00!important;
+    color:#fecb00!important; background:#000000!important; border-color:#fecb00!important;
 }
 
 /* Input Wrapper */
@@ -265,6 +269,7 @@ input[type=number], input[type=phone], input[type=submit], input[type=file], sel
 .section-options .option.option-search:hover svg{fill:#000000;}
 .section-options .option.option-select{background:#000000;}
 .section-options .option select{background:transparent!important; color:#fecb00!important;}
+.section-options .socials > .social{background:#fecb00; color:#000000;}
 
 
 /* Shortcode */
@@ -384,9 +389,10 @@ table.table.table-01 .status{color:#fecb00;}
 /* Table Download */
 table.table.table-download{border-top:1px solid #fecb00;}
 table.table.table-download td{border-bottom:1px solid #fecb00!important;}
-table.table.table-download .download-card{
-    border-right:1px solid #fecb00; border-color:#fecb00;
-}
+table.table.table-download .download-card{border-right:1px solid #fecb00; border-color:#fecb00;}
+
+/* Table Download 02 */
+table.table.table-download-02 td{border-color:#fecb00!important;}
 
 /* Table Stat */
 table.table-stat, table.table-stat td{border-color:#fecb00;}
@@ -462,6 +468,20 @@ table.table-stat, table.table-stat td{border-color:#fecb00;}
 .faq-01 .faq > .question{border:1px solid #fecb00;}
 .faq-01 .faq .ftag{background:#fecb00; color:#000000; border-color:#fecb00;}
 
+/* Faq 02 */
+.faq-02 .faq > .question{background:#000000; border-color:#fecb00;}
+.faq-02 .faq.active > .question{background:#fecb00; color:#000000;}
+.faq-02 .faq > .question h6{color:#fecb00;}
+.faq-02 .faq.active > .question h6{color:#000000;}
+.faq-02 .faq > .question .ftag{background:#fecb00; color:#000000;}
+.faq-02 .faq.active > .question .ftag{background:#000000; color:#fecb00;}
+.faq-02 .faq > .question .arrow{background:#fecb00;}
+.faq-02 .faq.active > .question .arrow{background:#000000;}
+.faq-02 .faq .arrow::before, .faq-02 .faq .arrow::after{background:#000000;}
+.faq-02 .faq.active .arrow::before, .faq-02 .faq.active .arrow::after{background:#fecb00;}
+.faq-02 .faq > .answer .ftag{background:#fecb00; color:#000000;}
+.faq-02 .faq > .answer > .wrapper{background:#000000; border-color:#fecb00;}
+
 
 /* History 01 */
 .history-01 .info::before{background:#fecb00;}
@@ -483,6 +503,9 @@ table.table-stat, table.table-stat td{border-color:#fecb00;}
 .intro-01 .content:nth-child(6n+4) .filter{background:#422e21;}
 .intro-01 .content:nth-child(6n+5) .filter{background:#6a0f1e;}
 .intro-01 .content:nth-child(6n) .filter{background:#196649;}
+
+/* Intro 07 */
+.intro-07 .slide-container .arrow svg{fill:#fecb00;}
 
 
 /* Org 01 */
@@ -528,6 +551,10 @@ table.table-stat, table.table-stat td{border-color:#fecb00;}
 .sitemap-02 .sitemap li > ul{border-color:#fecb00;}
 .sitemap-02 .sitemap li > ul > li::before{background:#fecb00;}
 .sitemap-02 .sitemap .icon{background:#fecb00; color:#000000;}
+
+
+/* Strip Line */
+.strip-line{background:#fecb00; color:#000000;}
 
 
 /* Survey 01 */

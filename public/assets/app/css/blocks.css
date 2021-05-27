@@ -195,22 +195,27 @@
 }
 
 /* Breadcrumb 02 */
-.breadcrumb-02{position:relative; display:block; width:100%; overflow:hidden;}
+.breadcrumb-02{position:relative; display:block; width:100%;}
 .breadcrumb-02 > .breadcrumb-container{
-    width:100%; background-size:cover; background-position:center;
+    position:relative; width:100%; background-size:cover; background-position:center;
 }
 .breadcrumb-02 > .breadcrumb-container > .container{
     height:14rem; position:relative; display:flex; align-items:flex-end;
 }
 .breadcrumb-02 .breadcrumb-wrapper{
-    position:absolute; top:0; left:0; display:flex; align-items:center;
-    padding:.875rem 1rem; min-width:19rem;
+    position:absolute; top:0; left:0; display:flex; align-items:center; flex-wrap:wrap;
+    padding:.875rem 1rem; min-width:19rem; max-width:calc(100% - 2rem);
 }
 .breadcrumb-02 .breadcrumb-wrapper a{font-size:.8125rem; font-weight:200;}
 .breadcrumb-02 .breadcrumb-wrapper em{font-size:.5625rem; margin:0 .5rem;}
 .breadcrumb-02 .ss-icon-title-01{transform-origin:bottom left; transform:scale(1.2);}
+.breadcrumb-02 > .img-content{display:block; position:absolute; top:0; left:0; width:100%;}
+@media screen and (max-width:1199.98px){
+    .breadcrumb-02 > .img-content{width:1200px; transform:translateX(calc(50vw - 600px));}
+}
 @media screen and (max-width:991.98px){
     .breadcrumb-02 > .breadcrumb-container > .container{height:12rem;}
+    .breadcrumb-02 > .img-content{width:1000px; transform:translateX(calc(50vw - 500px));}
 }
 @media screen and (max-width:767.98px){
     .breadcrumb-02 > .breadcrumb-container > .container{padding-bottom:1rem;}
@@ -354,6 +359,51 @@
 }
 
 
+/* Faq 02 */
+.faq-02{width:100%;}
+.faq-02 .faq{width:100%; margin:.4375rem 0 0 0;}
+.faq-02 .faq > .question{
+    width:100%; display:flex; padding:.4375rem; border:1px solid transparent;
+    cursor:pointer; transition:background .25s, border-color .25s;
+}
+.faq-02 .faq > .question h6{
+    display:block; width:calc(100% - 5rem); padding:0 .625rem; margin:.625rem 0 0 0;
+    transition:color .25s;
+}
+.faq-02 .faq .ftag, .faq-02 .faq .arrow{
+    display:block; width:2.625rem; height:2.625rem; line-height:2.625rem;
+    position:relative; font-size:1rem; text-align:center; font-weight:600;
+    transition:background .25s, border-color .25s, color .25s;
+}
+.faq-02 .faq .arrow::before, .faq-02 .faq .arrow::after{
+    content:''; position:absolute; transition:transform .25s, background .25s;
+}
+.faq-02 .faq .arrow::before{top:calc(50% - .0625rem); left:.5rem; right:.5rem; height:.125rem;}
+.faq-02 .faq .arrow::after{top:.5rem; bottom:.5rem; left:calc(50% - .0625rem); width:.125rem;}
+.faq-02 .faq.active .arrow::after{transform:rotate(90deg);}
+.faq-02 .faq > .answer{display:none; width:100%; padding:.75rem .4375rem;}
+.faq-02 .faq > .answer > .wrapper{
+    display:flex; justify-content:space-between; width:100%; max-width:calc(100% - 6.5rem);
+    margin:0 auto; border:.1875rem solid transparent;
+}
+.faq-02 .faq > .answer .content{width:calc(100% - 2.625rem); padding:1.25rem 1.25rem .5rem 1.25rem;}
+.faq-02.round .faq > .question{border-radius:1.8125rem;}
+.faq-02.round .faq .ftag, .faq-02.round .faq .arrow{border-radius:50%;}
+.faq-02.round .faq > .answer .content{width:calc(100% - 3rem); border-radius:1.5rem;}
+@media screen and (max-width:991.98px){
+    .faq-02 .faq > .answer > .wrapper{max-width:100%;}
+}
+@media screen and (max-width:767.98px){
+    .faq-02 .faq > .question h6{margin:.4375rem 0 0 0; width:calc(100% - 4.5rem);}
+    .faq-02 .faq > .question h6 > div{width:100%;}
+    .faq-02 .faq .ftag, .faq-02 .faq .arrow{
+        width:2.25rem; height:2.25rem; line-height:2.25rem; font-size:.9375rem;
+    }
+    .faq-02 .faq > .answer .content{padding:1rem 1rem 0 1rem;}
+    .faq-02.round .faq > .answer .content{width:calc(100% - 2.625rem);}
+}
+
+
 /* History 01 */
 .history-01{position:relative; width:100%; margin:.625rem 0 0 0;}
 .history-01 .info-wrapper{position:relative; width:100%;}
@@ -379,6 +429,11 @@
     .history-01 .info > .time{width:calc(100% - 2rem);}
     .history-01 .info > .time + .detail{width:100%; padding:.1875rem 0 0 2rem;}
 }
+
+
+/* History 02 */
+.history-02 .img-history{display:block; width:100%; max-width:10rem; margin:0 auto;}
+.history-02 .img-history.lg{max-width:17rem;}
 
 
 /* Intro 01 */
@@ -418,6 +473,24 @@
 @media screen and (max-width:575.98px){
     .intro-01 .content{width:calc(100% / 2 - 1px);}
 }
+
+
+/* Intro 07 */
+.intro-07 .slide-container{
+    position:relative; width:calc(100% + .875rem);
+    margin-left:-.4375rem; margin-right:-.4375rem;
+}
+.intro-07 .slide-container .slide{padding:0 .5rem;}
+.intro-07 .slide-container .arrows{
+    position:absolute; top:0; bottom:0; left:-3.75rem; right:-3.75rem; pointer-events:none;
+    display:flex; align-items:center; justify-content:space-between;
+}
+.intro-07 .slide-container .arrow{
+    display:block; padding:1rem; pointer-events:all; transition:opacity .25s;
+}
+.intro-07 .slide-container .arrow:hover{opacity:.6;}
+.intro-07 .slide-container .arrow svg{display:block; height:3rem; width:auto;}
+.intro-07 .slide-container .arrow.arrow-next svg{transform:rotate(180deg);}
 
 
 /* Org 01 */
@@ -680,6 +753,10 @@
     .slide-target .arrows button{padding:.875rem .5rem;}
     .slide-target .arrows button::before{font-size:1rem;}
 }
+
+
+/* Strip Line */
+.strip-line{display:block; width:100%; padding:.875rem 1rem;}
 
 
 /* Survey 01 */

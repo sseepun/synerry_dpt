@@ -427,7 +427,9 @@ $(function(){ 'use strict';
             self.find('> .slides').slick({
                 centerMode: true, centerPadding: 0, slidesToShow: 4, swipeToSlide: true,
                 focusOnSelect: true, autoplay: true, autoplaySpeed: 4000, speed: 600,
-                arrows: true, appendArrows: self.find('.arrows'), dots: false,
+                dots: false, arrows: true,
+                prevArrow: self.find('.arrow.arrow-prev'),
+                nextArrow: self.find('.arrow.arrow-next'),
                 responsive: [
                     { breakpoint: 991.98, settings: { slidesToShow: 3, } },
                     { breakpoint: 767.98, settings: { slidesToShow: 2, } },

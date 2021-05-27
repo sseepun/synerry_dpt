@@ -23,6 +23,8 @@ html, body, a, a:hover, table.table{color:#000000;}
 .color-08, .h-color-08:hover{color:#290b07!important;}
 .color-09, .h-color-09:hover{color:#70383a!important;}
 .color-10, .h-color-10:hover{color:#502e11!important;}
+.color-11, .h-color-11:hover{color:#993300!important;}
+.color-12, .h-color-12:hover{color:#4d2224!important;}
 
 .bg-white{background:#ffffff!important;}
 .bg-black{background:#000000!important;}
@@ -43,6 +45,8 @@ html, body, a, a:hover, table.table{color:#000000;}
 .bg-08{background:#290b07!important;}
 .bg-09{background:#70383a!important;}
 .bg-10{background:#502e11!important;}
+.bg-11{background:#993300!important;}
+.bg-12{background:#4d2224!important;}
 
 .bcolor-white{border-color:#ffffff!important;}
 .bcolor-black{border-color:#000000!important;}
@@ -63,6 +67,8 @@ html, body, a, a:hover, table.table{color:#000000;}
 .bcolor-08{border-color:#290b07!important;}
 .bcolor-09{border-color:#70383a!important;}
 .bcolor-10{border-color:#502e11!important;}
+.bcolor-11{border-color:#993300!important;}
+.bcolor-12{border-color:#4d2224!important;}
 
 /* Gradient */
 .bg-gray-gradient{
@@ -222,6 +228,18 @@ nav.sfooter-minisite .grid-line > .line::before{background:#ffffff;}
 .btn.btn-ss.btn-color-07::after{background:#000000;}
 .btn.btn-ss.btn-color-07:hover::after{background:#ffffff;}
 
+.btn.btn-color-08, .btn.btn-color-08:focus{
+    color:#ffffff; background:#a2a2a2; border-color:#a2a2a2;
+}
+.btn.btn-color-08:hover{box-shadow:inset 0 0 0 100rem rgba(255,255,255,.05);}
+.btn.btn-color-08:active{box-shadow:inset 0 0 0 100rem rgba(255,255,255,.10);}
+
+.btn.btn-color-09, .btn.btn-color-09:focus{
+    color:#fdcd05; background:#4d2224; border-color:#4d2224;
+}
+.btn.btn-color-09:hover{box-shadow:inset 0 0 0 100rem rgba(255,255,255,.05);}
+.btn.btn-color-09:active{box-shadow:inset 0 0 0 100rem rgba(255,255,255,.10);}
+
 .btn.btn-social.fw{background:#3b56a3; color:#ffffff;}
 .btn.btn-social.gg{background:#b62c22; color:#ffffff;}
 .btn.btn-social.tw{background:#05b0f6; color:#ffffff;}
@@ -370,6 +388,8 @@ input[type=file].sgray, select.sgray, textarea.sgray,
 .section-options .option.option-search{background:#333333;}
 .section-options .option.option-search:hover{background:#ffd000;}
 .section-options .option.option-search svg{fill:#ffffff;}
+.section-options .socials > .social{background:#ffd000; color:#ffffff;}
+.section-options .socials > .social:hover{background:#4d2224;}
 
 
 /* Shortcode */
@@ -500,6 +520,9 @@ table.table.table-download tr:nth-child(even) td{background:#d8d8d8;}
 table.table.table-download .download-card{background:#5d3943; border-color:#ffd000;}
 table.table.table-download tr:nth-child(even) .download-card{background:#492e35;}
 
+/* Table Download 02 */
+table.table.table-download-02 td{border-color:#e1e1e1!important;}
+
 /* Table Stat */
 table.table-stat, table.table-stat td{border-color:#ffffff;}
 
@@ -581,6 +604,20 @@ table.table-stat, table.table-stat td{border-color:#ffffff;}
 .faq-01 .faq .ftag{background:#5d3943; color:#ffffff; border-color:#ffd000;}
 .faq-01 .faq > .answer .ftag{background:#492e35;}
 
+/* Faq 02 */
+.faq-02 .faq > .question{background:#f1f1f1; border-color:#f1f1f1;}
+.faq-02 .faq.active > .question{background:#4d2224; border-color:#4d2224;}
+.faq-02 .faq > .question h6{color:#4d2224;}
+.faq-02 .faq.active > .question h6{color:#ffd000;}
+.faq-02 .faq > .question .ftag{background:#ffd000; color:#ffffff;}
+.faq-02 .faq.active > .question .ftag{background:#ffd000;}
+.faq-02 .faq > .question .arrow{background:#993300;}
+.faq-02 .faq.active > .question .arrow{background:#993300;}
+.faq-02 .faq .arrow::before, .faq-02 .faq .arrow::after{background:#ffffff;}
+.faq-02 .faq > .answer .ftag{background:#4d2224; color:#ffffff;}
+.faq-02 .faq > .answer > .wrapper{background:#f1f1f1; border-color:#4d2224;}
+.faq-02 .faq table.table-download-02 td{border-color:#d4d4d4!important;}
+
 
 /* History 01 */
 .history-01 .info::before{background:#afaeae;}
@@ -602,6 +639,9 @@ table.table-stat, table.table-stat td{border-color:#ffffff;}
 .intro-01 .content:nth-child(6n+4) .filter{background:#422e21;}
 .intro-01 .content:nth-child(6n+5) .filter{background:#6a0f1e;}
 .intro-01 .content:nth-child(6n) .filter{background:#196649;}
+
+/* Intro 07 */
+.intro-07 .slide-container .arrow svg{fill:#000000;}
 
 
 /* Org 01 */
@@ -681,6 +721,10 @@ table.table-stat, table.table-stat td{border-color:#ffffff;}
 .sitemap-02 .sitemap a:hover{color:#ffd000;}
 .sitemap-02 .sitemap li > ul > li::before{background:#ffd000;}
 .sitemap-02 .sitemap .icon{background:#4d2224; color:#ffd000;}
+
+
+/* Strip Line */
+.strip-line{background:#ffd000; color:#393939;}
 
 
 /* Survey 01 */

@@ -1,11 +1,11 @@
 
 
-<div class="block">
+<!-- <div class="block">
     <span class="text">ความตัดกันของสี</span>
     <a class="btn theme-btn btn-circle circular shadow" href="#" data-theme="0">C</a>
     <a class="btn theme-btn btn-circle" href="#" data-theme="1">C</a>
     <a class="btn theme-btn btn-circle" href="#" data-theme="2">C</a>
-</div>
+</div> -->
 
 <!-- Back to Top -->
 <a class="back-to-top active" href="#">

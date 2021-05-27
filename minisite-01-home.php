@@ -128,7 +128,7 @@
                                             <div class="grid lg-50 sm-100">
                                                 <?php
                                                     $j = $i + $k + 1;
-                                                    $cardType = 'Preview';
+                                                    $cardType = 'Image Preview';
                                                     include('component/minisite-ss-card-06.php');  
                                                 ?>
                                             </div>
@@ -150,9 +150,9 @@
         </div>
     </section>
     
-    <section class="section-padding">
+    <section class="section-padding" data-aos="fade-up" data-aos-delay="0">
         <div class="container">
-            <div class="text-center" data-aos="fade-up" data-aos-delay="0">
+            <div class="text-center">
                 <h6 class="h3 fw-500 color-03">
                     จัดซื้อจัดจ้าง (RSS บัญชีกลาง)
                 </h6>
@@ -163,7 +163,7 @@
                 </p>
             </div>
             <div class="grids jc-center pt-1 mt-4">
-                <div class="grid xl-2-3 lg-75 sm-100 mt-0" data-aos="fade-up" data-aos-delay="0">
+                <div class="grid xl-2-3 lg-75 sm-100 mt-0">
                     <div class="tab-container">
                         <div class="tabs tabs-02">
                             <a class="tab active" href="#" data-tab="0">
@@ -183,6 +183,45 @@
                             <?php }?>
                         </div>
                     </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="intro-07 section-padding" data-aos="fade-up" data-aos-delay="0">
+        <div class="container">
+            <div class="text-center">
+                <h6 class="h3 xs fw-500 color-03">
+                    ชวนดูวิดีโอ
+                </h6>
+                <p class="lg">
+                    <span class="font-01">
+                        ข้อมูลข่าวสารที่เป็นประโยชน์ สำหรับคุณ
+                    </span>
+                </p>
+            </div>
+            <div class="slide-container pt-1 mt-4">
+                <div class="slides">
+                    <?php for($j=0; $j<6; $j++){?>
+                        <div class="slide">
+                            <?php
+                                $cardType = 'Video Preview';
+                                include('component/minisite-ss-card-01.php');  
+                            ?>
+                        </div>
+                    <?php }?>
+                </div>
+                <div class="arrows">
+                    <a class="arrow arrow-prev" href="#">
+                        <svg width="10" height="16" viewBox="0 0 10 16" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M0.950197 8L8.45019 0.499999L9.50019 1.55L3.0502 8L9.5002 14.45L8.4502 15.5L0.950197 8Z" />
+                        </svg>
+                    </a>
+                    <a class="arrow arrow-next" href="#">
+                        <svg width="10" height="16" viewBox="0 0 10 16" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M0.950197 8L8.45019 0.499999L9.50019 1.55L3.0502 8L9.5002 14.45L8.4502 15.5L0.950197 8Z" />
+                        </svg>
+                    </a>
                 </div>
             </div>
         </div>

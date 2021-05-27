@@ -1,6 +1,11 @@
 <?php if(!empty($breadcrumb)){?>
     <section class="breadcrumb-02">
-        <div class="breadcrumb-container" style="background-image:url('<?= $breadcrumb['image'] ?>');">
+        <?php if(!empty($breadcrumb['image_bg'])){?>
+            <img class="img-content" src="<?= $breadcrumb['image_bg'] ?>" alt="Image Content" />
+            <div class="breadcrumb-container">
+        <?php }else{?>
+            <div class="breadcrumb-container" style="background-image:url('<?= $breadcrumb['image'] ?>');">
+        <?php }?>
             <div class="container">
                 <?php if(!empty($breadcrumb['structure'])){?>
                     <div class="breadcrumb-wrapper" data-aos="fade-right" data-aos-delay="0">
