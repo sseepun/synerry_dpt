@@ -38,7 +38,7 @@
             <div class="grids">
 
                 <div class="grid xl-75 lg-70 sm-100" data-aos="fade-up" data-aos-delay="300">
-                    <div class="hello-title mb-4" style="display:flex;">
+                    <div class="d-flex mb-4 ai-start">
                         <div class="ss-date">
                             <div class="date">28</div>
                             <div class="month">มี.ค.64</div>
@@ -94,35 +94,27 @@
 
                     <div class="border-top border-bottom bcolor-sgray py-3 mt-4">
                         <div class="ss-tags-02">
-                            <div class="tagtag" style="display:flex;align-items:center;">
+                            <div class="tags">
                                 <div style="width:5.5rem;">
                                     <span class="h6 color-dark fw-500 dash-mini">
                                         แท็ก
                                     </span>
                                 </div>
-                                <div class="tagg" style="background-color:#363635;color:white;font-size:1rem;padding:.35rem 1rem .25rem 1rem;font-weight:100;margin-right:1rem;">สำนักบริหารกลาง</div>
-                                <div class="tagg" style="background-color:#363635;color:white;font-size:1rem;padding:.35rem 1rem .25rem 1rem;font-weight:100;">ข่าวกิจกรรมและประชาสำพันธ์</div>    
+                                <div class="tag" style="">สำนักบริหารกลาง</div>
+                                <div class="tag" style="">ข่าวกิจกรรมและประชาสำพันธ์</div>    
                             </div>
-                            <div style="display:flex;align-items:center;justify-content:center;"> 
-                                <a href="#" style="margin-right:0.5rem;">
-                                    <div style="display:flex;align-items:center;justify-content:center;width:42px;height:42px;background-color:#ffd000;"> 
-                                        <img src="public/assets/app/images/icon/facebook.png">
-                                    </div>
+                            <div class="share"> 
+                                <a class="icon" href="#"> 
+                                    <img src="public/assets/app/images/icon/facebook.png">
                                 </a>
-                                <a href="#" style="margin-right:0.5rem;">
-                                <div style="display:flex;align-items:center;justify-content:center;width:42px;height:42px;background-color:#ffd000;">
-                                        <img src="public/assets/app/images/icon/twitter.png">
-                                    </div>
+                                <a class="icon" href="#">
+                                    <img src="public/assets/app/images/icon/twitter.png">
                                 </a>
-                                <a href="#" style="margin-right:0.5rem;">
-                                <div style="display:flex;align-items:center;justify-content:center;width:42px;height:42px;background-color:#ffd000;">
-                                        <img src="public/assets/app/images/icon/line.png">
-                                    </div>
+                                <a class="icon" href="#">
+                                    <img src="public/assets/app/images/icon/line.png">
                                 </a>
-                                <a href="#">
-                                <div style="display:flex;align-items:center;justify-content:center;width:42px;height:42px;background-color:#ffd000;">
-                                        <img src="public/assets/app/images/icon/link.png">
-                                    </div>
+                                <a class="icon" href="#">
+                                    <img src="public/assets/app/images/icon/link.png">
                                 </a>
                             </div>
                         </div>
@@ -237,32 +229,32 @@
                 </div>
 
                 <div class="grid xl-25 lg-30 sm-100" data-aos="fade-up" data-aos-delay="450">
-                    <a class="back" style="display:flex;height:2.5rem;background-color:#ffd000;align-items:center;" href="#">
-                        <div class="arrow" style="width:22px;height:21px;margin-left:1.5rem;">
-                            <img class="icon" src="public/assets/app/images/icon/arrow-back.png", alt="Icon">
+                    <a class="back" href="#">
+                        <div class="icon-box">
+                            <img src="public/assets/app/images/icon/arrow-back.png", alt="Icon">
                         </div>
-                        <div class="text" style="padding:.125rem 0 0 .5rem">
+                        <div class="text">
                             กลับไปหน้ารวมข่าวสาร
                         </div>
                     </a>
-                    <div class="view" style="display:flex; align-items:center;margin-top:1rem;">
-                        <div style="display:flex;align-items:center;margin-right:1.5rem;">
-                            <div class="eye" style="display:flex;align-items:center;justify-content:center;background-color:#ffd000;width:36px;height:36px;">
-                                <img style="margin:0;" src="public/assets/app/images/icon/eye.png" alt="eye">
+                    <div class="view">
+                        <div class="ele">
+                            <div class="icon-box">
+                                <img src="public/assets/app/images/icon/eye.png" alt="eye">
                             </div>
-                            <p style="margin-left:0.4rem;font-weight:600;">17</p>
+                            <p class="text">17</p>
                         </div>
-                        <div class="view" style="display:flex; align-items:center;margin-right:1.5rem;">
-                            <div class="eye" style="display:flex;align-items:center;justify-content:center;background-color:#ffd000;width:36px;height:36px;">
-                                <img style="margin:0;" src="public/assets/app/images/icon/star.png" alt="eye">
+                        <div class="ele">
+                            <div class="icon-box">
+                                <img src="public/assets/app/images/icon/star.png" alt="eye">
                             </div>
-                            <p style="margin-left:0.4rem;font-weight:600;">28</p>
+                            <p class="text">28</p>
                         </div>
-                        <div class="view" style="display:flex; align-items:center;">
-                            <div class="eye" style="display:flex;align-items:center;justify-content:center;background-color:#ffd000;width:36px;height:36px;">
-                                <img style="margin:0;" src="public/assets/app/images/icon/share-white.png" alt="eye">
+                        <div class="ele">
+                            <div class="icon-box">
+                                <img src="public/assets/app/images/icon/share-white.png" alt="eye">
                             </div>
-                            <p style="margin-left:0.4rem;font-weight:600;">231</p>
+                            <p class="text">231</p>
                         </div>
                     </div>
 

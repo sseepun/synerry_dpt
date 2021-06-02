@@ -1,3 +1,25 @@
 
 /* Special Tags 02 */
-.ss-tags-02{display:flex; align-items:center; justify-content:space-between;}
+.ss-tags-02{display:flex; align-items:center; justify-content:space-between;flex-wrap:wrap;}
+.ss-tags-02 .tags{display:flex;align-items:center;flex-wrap:wrap;} 
+.ss-tags-02 .tags .tag{background-color:#363635;color:white;font-size:1rem;padding:.35rem 1rem .25rem 1rem;
+	                   font-weight:100;margin-right:1rem;white-space:nowrap;}
+.ss-tags-02 .tags .tag:last-child{margin:0;}
+.ss-tags-02 .share{display:flex;align-items:center;justify-content:center;}
+@media screen and (max-width:768px){
+.ss-tags-02 .share{margin-top:1rem; display:flex;align-items:center;justify-content:center;}
+}
+
+.ss-tags-02 .share .icon{margin-right:.5rem;display:flex;align-items:center;justify-content:center;width:42px;height:42px;
+	                     background-color:#ffd000;}
+.ss-tags-02 .share .icon:last-child{margin-right:0;}
+
+
+.back{display:flex;height:2.5rem;background-color:#ffd000;align-items:center;}
+.back .icon-box{width:22px;height:21px;margin-left:1.5rem;}
+.back .text{padding:.125rem 0 0 .5rem}
+.view{display:flex; align-items:center;margin-top:1rem;}
+.view .ele{display:flex;align-items:center;margin-right:1.5rem;}
+.view .ele:last-child{margin-right:0}
+.view .ele .icon-box{display:flex;align-items:center;justify-content:center;background-color:#ffd000;width:36px;height:36px;}
+.view .ele .text{margin-left:0.4rem;font-weight:600;}
