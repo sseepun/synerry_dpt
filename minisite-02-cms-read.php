@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <?php include_once('include/header.php'); ?>
+    <?php include_once('include/style.php'); ?>
+<style>
+
+.dash-mini{position:relative;}
+.dash-mini::after{background:#ffd000}
+.dash-mini::after{content:''; position:absolute; top:calc(50% - .05rem); left:calc(100% + .5rem); width:2.125rem; height:.1rem; transition:background .25s;}
+.btn.btn-color-05-mini{color:#4d2224; background:#ffd000; border-color:#ffd000;}
+.btn.btn-color-05 em{color:#4d2224;}
+
+</style>
+</head>
+<body class="loading">
+    <?php 
+        $topnavActiveIndex = 1;
+        include_once('include/topnav-minisite.php');
+    ?>
+    <?php
+        $breadcrumb = [
+            'leading' => 'ข้',
+            'leading_class' => 'stripe-bottom',
+            'title' => 'อมูลข่าวสารประชาสัมพันธ์',
+            'desc' => 'กรมโยธาธิการและผังเมืองพร้อมให้ข้อมูลข่าวสารที่เป็นประโยชน์ สำหรับคุณ',
+            'image' => 'public/assets/app/images/bg/minisite-breadcrumb-01.jpg',
+            'structure' => [
+                [ 'name' => 'แนะนำกรม', 'url' => '#' ],
+                [ 'name' => 'ข่าวประชาสัมพันธ์', 'url' => '#' ]
+            ]
+        ];
+        include_once('component/breadcrumb-02.php');
+    ?>
+   
+   <section class="section-02">
+        <div class="container">
+            <div class="tab-container">
+
+                
+                <div class="grids">
+                    <div class="grid xl-75 lg-70 md-60 sm-100" data-aos="fade-up" data-aos-delay="300">
+                        <div class="hello-title mb-4" style="display:flex;">
+                            <div class="ss-date">
+                                <div class="date">28</div>
+                                <div class="month">มี.ค.64</div>
+                            </div>
+                            <h6 class="fw-500 color-001 ml-4">
+                                นายสุเมธ มีนาภา ผู้ตรวจราชการกรมโยธาธิการและผังเมือง เป็นประธานในพิธีวาง
+                                กระดูกงูเรือกำจัดผักตบชวาแบบสายพานลำเลียงพร้อมบีบอัด ยี่ห้อ ECOMARINE
+                                รุ่น อาร์เทมีส จำนวน 5 ลำ
+                            </h6>
+                        </div>
+                        <a class="ss-img horizontal no-hover" href="public/assets/app/images/content/06.jpg" data-fancybox="gallery">
+                            <div class="img-bg" style="background-image:url('public/assets/app/images/content/06.jpg');"></div>
+                        </a>
+                        <?php for($j=0; $j<7; $j++){?>
+                            <a class="d-none" data-fancybox="gallery" 
+                            href="public/assets/app/images/content/<?= empty($j)? '01': sprintf('%02d', $j%4+1) ?>.jpg">
+                                <img src="public/assets/app/images/content/<?= empty($j)? '01': sprintf('%02d', $j%4+1) ?>.jpg" alt="Image Preview" />
+                            </a>
+                        <?php }?>
+                        <div class="gallery-grids">
+                        <?php for($j=0; $j<5; $j++){?>
+                            <div class="grid md-20 sm-1-3 xs-50">
+                                <a class="ss-img" href="#">
+                                    <div class="img-bg" style="background-image:url('public/assets/app/images/content/<?= sprintf('%02d', $j%4+1) ?>.jpg');"></div>
+                                    <?php if($j==4){?>
+                                        <div class="hover-container bg-01 op-80">
+                                            <p class="h4 lg fw-400 color-black">24+</p>
+                                        </div>
+                                    <?php }?>
+                                </a>
+                            </div>
+                        <?php }?>
+                        </div>
+                        <div class="p md fw-600 color-09 mt-4">
+                            <div class="font-01">
+                                กระทรวงมหาดไทย โดยกรมโยธาธิการและผังเมือง จัดสัมมนา เรื่อง "การรับฟังความคิดเห็น 
+                                ประกอบการจัดทำร่างธรรมนูญว่าด้วยการผังเมือง" ที่ จ.ภูเก็ต เพื่อให้ผู้เข้าร่วมสัมมนา มีความรู้ความเข้าใจต่อสาระสำคัญ 
+                                ขั้นตอนการดำเนินการจัดทำร่างธรรมนูญว่าด้วยการผังเมือง และรับฟังความคิดเห็น ข้อเสนอแนะ 
+                                แนวทางการแก้ไขปรับปรุงร่างธรรมนูญว่าด้วย การผังเมืองที่จัดทำขึ้น โดยคณะทำงาน ให้มีประสิทธิภาพมากยิ่งขึ้น
+                            </div>
+                        </div>
+                        <div class="p fw-600 mt-3">
+                            <div class="font-01">
+                                นายพรพจน์ เพ็ญพาส อธิบดีกรมโยธาธิการและผังเมือง เปิดเผยว่า ผังเมืองถือเป็นเครื่องมือสำคัญในการกำหนดทิศทางการพัฒนาเชิงพื้นที่ 
+                                รวมถึงลักษณะการใช้พื้นที่ตามศักยภาพและความเหมาะสม ซึ่งจะช่วยสร้างโอกาสในการพัฒนาเมือง ให้มีการเติบโตที่ยั่งยืน 
+                                และสร้างประโยชน์แก่ทุกคนอย่างทั่วถึง ประกอบกับรัฐบาลได้ให้ความสำคัญกับการจัดระบบเมืองที่มีคุณภาพ ปลอดภัย 
+                                และเป็นมิตรต่อสิ่งแวดล้อมพร้อมกำหนดแนวทางการแก้ไขปัญหาการใช้พื้นที่ให้เกิดความยั่งยืน 
+                                โดยต้องมีการจัดทำนโยบายการตั้งถิ่นฐานและผังเมือง ด้วยการให้มีหน่วยงานระดับชาติกำกับดูแล 
+                                และทำงานควบคู่ไปกับสำนักงานสภาพัฒนาการเศรษฐกิจและสังคมแห่งชาติ รวมถึงให้มีกฎหมายเฉพาะเหมือนเป็นธรรมนูญผังเมือง 
+                                ในการกำกับกฎหมายอื่นๆไม่ให้หน่วยงานต่าง ๆ ละเมิด หรือปล่อยให้มีการพัฒนาเชิงพื้นที่ที่ไม่เป็นไปตามหลักการ
+                            </div>
+                        </div>
+                        <div class="border-top border-bottom bcolor-sgray py-3 mt-4">
+                            <div class="ss-tags2" style="display:flex;align-items:center;justify-content:space-between;">
+                                <div class="tagtag" style="display:flex;align-items:center;">
+                                    <div style="width:5.5rem;">
+                                        <span class="h6 color-dark fw-500 dash-mini">
+                                            แท็ก
+                                        </span>
+                                    </div>
+                                    <div class="tagg" style="background-color:#363635;color:white;font-size:1rem;padding:.35rem 1rem .25rem 1rem;font-weight:100;margin-right:1rem;">สำนักบริหารกลาง</div>
+                                    <div class="tagg" style="background-color:#363635;color:white;font-size:1rem;padding:.35rem 1rem .25rem 1rem;font-weight:100;">ข่าวกิจกรรมและประชาสำพันธ์</div>    
+                                </div>
+                                <div style="display:flex;align-items:center;justify-content:center;"> 
+                                    <a href="#" style="margin-right:0.5rem;">
+                                        <div style="display:flex;align-items:center;justify-content:center;width:42px;height:42px;background-color:#ffd000;"> 
+                                            <img src="public/assets/app/images/icon/facebook.png">
+                                        </div>
+                                    </a>
+                                    <a href="#" style="margin-right:0.5rem;">
+                                    <div style="display:flex;align-items:center;justify-content:center;width:42px;height:42px;background-color:#ffd000;">
+                                            <img src="public/assets/app/images/icon/twitter.png">
+                                        </div>
+                                    </a>
+                                    <a href="#" style="margin-right:0.5rem;">
+                                    <div style="display:flex;align-items:center;justify-content:center;width:42px;height:42px;background-color:#ffd000;">
+                                            <img src="public/assets/app/images/icon/line.png">
+                                        </div>
+                                    </a>
+                                    <a href="#">
+                                    <div style="display:flex;align-items:center;justify-content:center;width:42px;height:42px;background-color:#ffd000;">
+                                            <img src="public/assets/app/images/icon/link.png">
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+
+                            <p class="h6 sm fw300 color-gray mt-4">
+                                <span class="dash-mini">เอกสารที่เกียวข้อง</span>
+                            </p>
+                            <div class="scroll-x-wrapper">
+                                <table class="table table-download-02">
+                                    <tbody>
+                                        <?php
+                                            foreach([
+                                                [ 'name' => 'RAR', 'icon' => '<em class="far fa-file-archive color-01"></em>' ],
+                                                [ 'name' => 'PPT', 'icon' => '<em class="far fa-file-powerpoint color-01"></em>' ],
+                                                [ 'name' => 'XLS', 'icon' => '<em class="far fa-file-excel color-01"></em>' ],
+                                                [ 'name' => 'DOC', 'icon' => '<em class="far fa-file-word color-01"></em>' ],
+                                                [ 'name' => 'ZIP', 'icon' => '<em class="far fa-file-archive color-01"></em>' ],
+                                                [ 'name' => 'PDF', 'icon' => '<em class="far fa-file-pdf color-01"></em>' ]
+                                            ] as $f){
+                                        ?>
+                                            <tr>
+                                                <td class="column-icon">
+                                                    <div class="icon h5 text-center">
+                                                        <?= $f['icon'] ?>
+                                                        <p class="xxs fw-600"><?= $f['name'] ?></p>
+                                                    </div>
+                                                </td>
+                                                <td class="column-text">
+                                                    <p class="md fw-400 color-12">
+                                                        การขับเคลื่อนชุมชนเข้มแข็งในการจัดการอนามัยสิ่งแวดล้อมชุมชน 
+                                                    </p>
+                                                    <div class="p xxs fw-200 color-gray mt-2">
+                                                        ขนาดไฟล์ <span class="fw-900 color-12">1.31 MB</span>
+                                                        <span class="mx-2">|</span>
+                                                        จำนวนดาวน์โหลด <span class="fw-900 color-12">16 ครั้ง</span>
+                                                        <span class="mx-2">|</span>
+                                                        <a class="color-gray h-color-01" href="#">
+                                                            <em class="fas fa-clock color-01"></em>
+                                                            แจ้งไฟล์เสีย
+                                                        </a>
+                                                    </div>
+                                                </td>
+                                                <td class="column-btn">
+                                                    <a class="btn btn-action btn-sm btn-xs btn-color-09" href="#">
+                                                        ดาวน์โหลด <em class="far fa-share-square ml-1"></em>
+                                                    </a>
+                                                </td>
+                                            </tr>
+                                        <?php }?>
+                                    </tbody>
+                                </table>
+                            </div>
+
+                            <p class="h6 sm fw300 color-gray mt-4">
+                                <span class="sss-band left dash-mini">สื่อที่เกี่ยวข้อง</span>
+                            </p>
+                            <div class="d-flex ai-center jc-space-between fw-wrap mt-1">
+                                <p class="fw-400 color-03 my-2 pr-2">
+                                    พิธีวางกระดูกงูเรือกำจัดผักตบชวาแบบสายพานลำเลียงพร้อมบีบอัด ยี่ห้อ ECOMARINE
+                                </p>
+                                <?php include('component/shortcode.php'); ?>
+                            </div>
+                            <div class="slide-target slide-target-01 mt-3">
+                                <div class="slide-display">
+                                    <div class="slides">
+                                        <?php for($j=0; $j<7; $j++){?>
+                                            <div class="slide">
+                                                <div class="post-video width-full">
+                                                    <div class="wrapper">
+                                                        <video class="fit" controls>
+                                                            <source src="public/assets/app/video/01.mp4" type="video/mp4" />
+                                                            Your browser does not support the video tag.
+                                                        </video>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        <?php }?>
+                                    </div>
+                                </div>
+                                <div class="slide-nav">
+                                    <div class="slides">
+                                        <?php for($j=0; $j<7; $j++){?>
+                                            <div class="slide">
+                                                <div class="wrapper">
+                                                    <div class="ss-img no-hover">
+                                                        <div class="img-bg" style="background-image:url('public/assets/app/images/content/<?= empty($j)? '01': sprintf('%02d', $j%4+1) ?>.jpg');"></div>
+                                                        <div class="hover-container clear op-100">
+                                                            <div class="icon xs">
+                                                                <img src="public/assets/app/images/icon/play-black.png" alt="Image Icon" />
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        <?php }?>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="btns text-center py-4 d-flex jc-space-between" data-aos="fade-up" data-aos-delay="0">
+                                <a class="btn btn-action btn-color-05 mx-1 my-1" href="#">
+                                    <em class="fas fa-chevron-left sm mr-2"></em>
+                                    ข่าวก่อนหน้า
+                                </a>
+                                <a class="btn btn-action btn-color-05 mx-1 my-1" href="#">
+                                    ข่าวต่อไป
+                                    <em class="fas fa-chevron-right sm ml-2"></em>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="grid xl-25 lg-30 md-40 sm-100" data-aos="fade-up" data-aos-delay="450">
+                        <a class="back" style="display:flex;height:2.5rem;background-color:#ffd000;align-items:center;" href="#">
+                            <div class="arrow" style="width:22px;height:21px;margin-left:1.5rem;">
+                                <img class="icon" src="public/assets/app/images/icon/arrow-back.png", alt="Icon">
+                            </div>
+                            <div class="text" style="padding:.125rem 0 0 .5rem">
+                                กลับไปหน้ารวมข่าวสาร
+                            </div>
+                        </a>
+                        <div class="view" style="display:flex; align-items:center;margin-top:1rem;">
+                            <div style="display:flex;align-items:center;margin-right:1.5rem;">
+                                <div class="eye" style="display:flex;align-items:center;justify-content:center;background-color:#ffd000;width:36px;height:36px;">
+                                    <img style="margin:0;" src="public/assets/app/images/icon/eye.png" alt="eye">
+                                </div>
+                                <p style="margin-left:0.4rem;font-weight:600;">17</p>
+                            </div>
+                            <div class="view" style="display:flex; align-items:center;margin-right:1.5rem;">
+                                <div class="eye" style="display:flex;align-items:center;justify-content:center;background-color:#ffd000;width:36px;height:36px;">
+                                    <img style="margin:0;" src="public/assets/app/images/icon/star.png" alt="eye">
+                                </div>
+                                <p style="margin-left:0.4rem;font-weight:600;">28</p>
+                            </div>
+                            <div class="view" style="display:flex; align-items:center;">
+                                <div class="eye" style="display:flex;align-items:center;justify-content:center;background-color:#ffd000;width:36px;height:36px;">
+                                    <img style="margin:0;" src="public/assets/app/images/icon/share-white.png" alt="eye">
+                                </div>
+                                <p style="margin-left:0.4rem;font-weight:600;">231</p>
+                            </div>
+                        </div>
+
+                        <p class="h6 sm fw-300 color-gray mt-4">
+                            <span class="ss-band-mini dash-mini">ข่าวที่เกียวข้อง</span>
+                        </p>
+                        <div class="grids">
+                            <?php for($k=0; $k<2; $k++){ $j = $k%4+1;?>
+                                <div class="grid lg-100">                                    
+                                    <?php
+                                        $cardType = 'Image';
+                                        include('component/minisite-ss-card-01.php');   
+                                    ?>
+                                </div>
+                            <?php }?>
+                        </div>
+                    </div>
+                
+                </div>
+                    
+                
+
+
+
+            </div>
+        </div>
+    </section>
+    
+    <?php include_once('include/footer-minisite.php'); ?>
+    <?php include_once('include/script.php'); ?>
+    <style>
+        .fancybox-thumbs__list a:before{border-color:#fdcd05;}
+        @media all and (min-width:768px){
+            .fancybox-thumbs{
+                top:auto; bottom:0; left:0; right:0; width:auto; height:95px;
+                padding:10px 10px 5px 10px; box-sizing:border-box; background:rgba(0,0,0,.3);
+            }
+            .fancybox-show-thumbs .fancybox-inner{right:0; bottom:95px;}
+        }
+    </style>
+    <script>
+        $('[data-fancybox="gallery"]').fancybox({
+            thumbs: { autoStart: true, axis: 'x'}
+        })
+    </script>
+</body>
+</html>
