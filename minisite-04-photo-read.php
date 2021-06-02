@@ -185,7 +185,7 @@
                             </p>
                             <?php include('component/shortcode.php'); ?>
                         </div>
-                        <div class="slide-target slide-target-01 mt-3">
+                        <div class="border-bottom-4 bcolor-sgray slide-target slide-target-01 mt-3 pb-4">
                             <div class="slide-display sm">
                                 <div class="slides">
                                     <?php for($j=0; $j<7; $j++){?>
