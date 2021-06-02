@@ -42,7 +42,7 @@
                 </div>
             </div>
             <div class="block">
-                <a class="btn-menu" href="#">
+                <a class="btn-menu global-search-toggle" href="#">
                     <div class="wrapper">
                         <div class="icon">
                             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -52,7 +52,7 @@
                         ค้นหา
                     </div>
                 </a>
-                <a class="btn-menu show-mobile" href="#">
+                <a class="btn-menu show-mobile sidenav-toggle" href="#">
                     <div class="hamburger">
                         <div></div><div></div><div></div>
                     </div>
@@ -142,7 +142,7 @@
 <div class="sidenav-filter"></div>
 
 <!-- Global Search Container -->
-<div class="global-search-container">
+<div class="global-search-container minisite">
     <div class="wrapper">
         <div class="close-filter global-search-toggle"></div>
         <div class="container">
