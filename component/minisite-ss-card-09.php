@@ -73,6 +73,41 @@
             </p>
         </div>
     </div>
-<?php }else if($cardType=='E-book'){?>
-
+<?php }else if($cardType=='Ebook'){?>
+    <div class="ss-card ss-card-09">
+        <div class="img-container">
+            <a class="ss-img no-hover adaptive-xs" href="#">
+                <div class="img-bg" style="background-image:url('public/assets/app/images/bg/minisite-ebook-bg.jpg');"></div>
+                <div class="ebook-container">
+                    <img src="public/assets/app/images/ebook/<?= sprintf('%02d', $j%6+1) ?>.jpg" alt="Image Ebook" />
+                </div>
+            </a>
+        </div>
+        <div class="text-container bcolor-sgray">
+            <p class="xxs fw-500 color-gray">
+                มยผ. ด้านโยธาธิการ
+            </p>   
+            <a class="title p fw-400 color-03 h-color-01 mt-1" href="#">
+                มาตรฐานการตรวจสอบ การประเมิน การซ่อมแซม 
+                และการเสริมความมั่นคงแข็งแรงโครงสร้างอาคารเก่าและโครงสร้าง
+            </a>
+            <p class="xxs fw-500 mt-2">
+                19 กุมภาพันธ์ 2564
+                <em class="fas fa-eye color-01 ml-4 mr-1"></em>
+                388
+            </p>
+            <p class="desc p xs fw-600 color-dark mt-2">
+                <span class="font-01">
+                    นายพรพจน์ เพ็ญพาส อธิบดีกรมโยธาธิการและผังเมือง 
+                    ตรวจเยี่ยมอาคารสถานที่เพื่อเตรียมความพร้อมต่อมาตรการที่กำหนด 
+                    ให้ดำเนินการในพื้นที่ควบคุมสูงสุดตามแผนความต่อเนื่อง 
+                </span>
+            </p>
+            <div class="btns mt-2">
+                <a class="btn btn-more" href="#">
+                    อ่านเพิ่มเติม
+                </a>
+            </div>
+        </div>
+    </div>
 <?php }?>

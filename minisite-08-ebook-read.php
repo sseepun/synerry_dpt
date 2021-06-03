@@ -3,6 +3,7 @@
 <head>
     <?php include_once('include/header.php'); ?>
     <?php include_once('include/style.php'); ?>
+    <link rel="stylesheet" type="text/css" href="public/assets/lib/wow_book/wow_book/wow_book.css" />
 </head>
 <body class="loading">
     <?php 
@@ -11,14 +12,13 @@
     ?>
     <?php
         $breadcrumb = [
-            'leading' => 'ร',
-            'leading_class' => 'stripe-bottom',
-            'title' => 'ายการวีดีโอ',
+            'leading' => 'ข้',
+            'title' => 'อมูลเผยแพร่',
             'desc' => 'กรมโยธาธิการและผังเมืองพร้อมให้ข้อมูลข่าวสารที่เป็นประโยชน์ สำหรับคุณ',
-            'image' => 'public/assets/app/images/bg/minisite-breadcrumb-08.jpg',
+            'image' => 'public/assets/app/images/bg/minisite-breadcrumb-10.jpg',
             'structure' => [
                 [ 'name' => 'แนะนำกรม', 'url' => '#' ],
-                [ 'name' => 'รายการวีดีโอ', 'url' => '#' ]
+                [ 'name' => 'ข้อมูลเผยแพร่', 'url' => '#' ]
             ]
         ];
         include_once('component/breadcrumb-02.php');
@@ -41,38 +41,32 @@
                         </h6>
                     </div>
                     
-                    <div class="post-video width-full mt-3">
-                        <div class="wrapper">
-                            <video class="fit" controls>
-                                <source src="public/assets/app/video/01.mp4" type="video/mp4" />
-                                Your browser does not support the video tag.
-                            </video>
+                    <div class="book-container mt-3">
+                        <div class="wow-book" id="wow-book">
+                            <?php for($i=0; $i<6; $i++){?>
+                                <div><img class="img" src="public/assets/app/images/ebook/0<?= $i+1 ?>.jpg" alt="Page <?= $i ?>" /></div>
+                            <?php }?>
                         </div>
                     </div>
-
-                    <div class="d-flex ai-center jc-end fw-wrap mt-3">
-                        <div class="shortcode-container sm-right my-1">
-                            <a class="btn btn-action btn-sm btn-color-09" href="#">
-                                Embed <em class="fas fa-code ml-1"></em>
-                            </a>
-                            <div class="shortcode-popup">
-                                <div class="wrapper">
-                                    <div class="shortcode-content">
-                                        <textarea rows="4" data-copy="1" title="Copy Area">Temporary code test temporary code test temporary code test</textarea>
-                                        <a class="btn-close color-07" href="#">
-                                            <em class="fas fa-times"></em>
-                                        </a>
-                                    </div>
-                                    <a class="btn-code-copy btn btn-action btn-sm btn-color-09" data-copy="1" href="#">
-                                        คัดลอก
-                                    </a>
-                                </div>
-                            </div>
+                    
+                    <div class="p md fw-600 color-09 mt-4">
+                        <div class="font-01">
+                            กระทรวงมหาดไทย โดยกรมโยธาธิการและผังเมือง จัดสัมมนา เรื่อง "การรับฟังความคิดเห็น 
+                            ประกอบการจัดทำร่างธรรมนูญว่าด้วยการผังเมือง" ที่ จ.ภูเก็ต เพื่อให้ผู้เข้าร่วมสัมมนา มีความรู้ความเข้าใจต่อสาระสำคัญ 
+                            ขั้นตอนการดำเนินการจัดทำร่างธรรมนูญว่าด้วยการผังเมือง และรับฟังความคิดเห็น ข้อเสนอแนะ 
+                            แนวทางการแก้ไขปรับปรุงร่างธรรมนูญว่าด้วย การผังเมืองที่จัดทำขึ้น โดยคณะทำงาน ให้มีประสิทธิภาพมากยิ่งขึ้น
                         </div>
-                        <a class="btn btn-action btn-sm btn-color-09 ml-1" href="#">
-                            <em class="far fa-file-archive mr-1"></em>
-                            ดาวน์โหลดคลังภาพ [48 รูป | 15.4 MB]
-                        </a>
+                    </div>
+                    <div class="p fw-600 mt-3">
+                        <div class="font-01">
+                            นายพรพจน์ เพ็ญพาส อธิบดีกรมโยธาธิการและผังเมือง เปิดเผยว่า ผังเมืองถือเป็นเครื่องมือสำคัญในการกำหนดทิศทางการพัฒนาเชิงพื้นที่ 
+                            รวมถึงลักษณะการใช้พื้นที่ตามศักยภาพและความเหมาะสม ซึ่งจะช่วยสร้างโอกาสในการพัฒนาเมือง ให้มีการเติบโตที่ยั่งยืน 
+                            และสร้างประโยชน์แก่ทุกคนอย่างทั่วถึง ประกอบกับรัฐบาลได้ให้ความสำคัญกับการจัดระบบเมืองที่มีคุณภาพ ปลอดภัย 
+                            และเป็นมิตรต่อสิ่งแวดล้อมพร้อมกำหนดแนวทางการแก้ไขปัญหาการใช้พื้นที่ให้เกิดความยั่งยืน 
+                            โดยต้องมีการจัดทำนโยบายการตั้งถิ่นฐานและผังเมือง ด้วยการให้มีหน่วยงานระดับชาติกำกับดูแล 
+                            และทำงานควบคู่ไปกับสำนักงานสภาพัฒนาการเศรษฐกิจและสังคมแห่งชาติ รวมถึงให้มีกฎหมายเฉพาะเหมือนเป็นธรรมนูญผังเมือง 
+                            ในการกำกับกฎหมายอื่นๆไม่ให้หน่วยงานต่าง ๆ ละเมิด หรือปล่อยให้มีการพัฒนาเชิงพื้นที่ที่ไม่เป็นไปตามหลักการ
+                        </div>
                     </div>
 
                     <div class="mt-4">
@@ -133,10 +127,10 @@
                     <div class="btns d-flex jc-space-between py-4 border-top-4 bcolor-sgray">
                         <a class="btn btn-action btn-color-05 mx-1 my-1" href="#">
                             <em class="fas fa-chevron-left sm mr-2"></em>
-                            รายการวีดีโอก่อนหน้า
+                            ข้อมูลเผยแพร่ก่อนหน้า
                         </a>
                         <a class="btn btn-action btn-color-05 mx-1 my-1" href="#">
-                            รายการวีดีโอต่อไป
+                            ข้อมูลเผยแพร่โอต่อไป
                             <em class="fas fa-chevron-right sm ml-2"></em>
                         </a>
                     </div>
@@ -145,7 +139,7 @@
                 <div class="grid xl-25 lg-30 sm-100" data-aos="fade-up" data-aos-delay="450">
                     <a class="btn btn-action btn-color-11 w-full" href="#">
                         <em class="fas fa-arrow-left lg mr-2"></em>
-                        กลับไปหน้ารวมรายการวีดีโอ
+                        กลับไปหน้ารวมข้อมูลเผยแพร่
                     </a>
                     <div class="ss-stat">
                         <a class="stat" href="#">
@@ -169,13 +163,13 @@
                     </div>
 
                     <p class="h6 sm fw-600 color-dark ss-dash mt-4 pt-1">
-                        <span>วีดีโอที่เกียวข้อง</span>
+                        <span>ข้อมูลเผยแพร่ที่เกียวข้อง</span>
                     </p>
                     <div class="grids">
-                        <?php for($k=0; $k<3; $k++){ $j = $k%4+1;?>
+                        <?php for($k=0; $k<2; $k++){ $j = $k%4+1;?>
                             <div class="grid lg-100">                                    
                                 <?php
-                                    $cardType = 'Video Preview';
+                                    $cardType = 'Ebook';
                                     include('component/minisite-ss-card-01.php');   
                                 ?>
                             </div>
@@ -189,5 +183,21 @@
     
     <?php include_once('include/footer-minisite.php'); ?>
     <?php include_once('include/script.php'); ?>
+    
+    <script src="public/assets/lib/wow_book/wow_book/wow_book.min.js"></script>
+    <script>
+        $('#wow-book').wowBook({
+            height: 500,
+            width: 800,
+            container: true,
+            containerBackground: '#777',
+            containerWidth: '100%',
+            containerHeight: '100%',
+            containerPadding: '20px',
+            toolbarPosition: 'bottom',
+            thumbnails: true,
+            toolbar: 'first, back, next, last, zoomin, zoomout, slideshow, flipsound, fullscreen',
+        });
+    </script>
 </body>
 </html>

@@ -1,5 +1,5 @@
-<div class="ss-card ss-card-01 minisite">
-    <?php if($cardType=='Image'){?>
+<?php if($cardType=='Image'){?>
+    <div class="ss-card ss-card-01 minisite">
         <a class="ss-img horizontal-2" href="#">
             <div class="img-bg" style="background-image:url('public/assets/app/images/content/minisite-<?= empty($j)? '01': sprintf('%02d', $j%6+1) ?>.jpg');"></div>
             <?php if(!empty($cardImgCount)){?>
@@ -32,7 +32,9 @@
                 </a>
             </div>
         </div>
-    <?php }else if($cardType=='Weblink'){?>
+    </div>
+<?php }else if($cardType=='Weblink'){?>
+    <div class="ss-card ss-card-01 minisite">
         <a class="ss-img" href="#">
             <div class="img-bg" style="background-image:url('public/assets/app/images/content/weblink-<?= empty($j)? '01': sprintf('%02d', $j%8+1) ?>.jpg');"></div>
             <div class="hover-container">
@@ -52,7 +54,9 @@
                 </p>
             </div>
         </div>
-    <?php }else if($cardType=='Video Preview'){?>
+    </div>
+<?php }else if($cardType=='Video Preview'){?>
+    <div class="ss-card ss-card-01 minisite">
         <a class="ss-img horizontal-2" href="#">
             <div class="img-bg" style="background-image:url('public/assets/app/images/content/minisite-vdo-<?= empty($j)? '01': sprintf('%02d', $j%3+1) ?>.jpg');"></div>
             <div class="hover-container clear op-100">
@@ -64,13 +68,15 @@
         <div class="text-container bcolor-sgray weblink pt-2">
             <div class="stripe border-left-3 bcolor-01 pt-2">
                 <p class="xxs fw-500 color-gray">
-                    <?php if($j%2==0){ echo"เกี่ยวกับองค์กร";}
-                          else{echo"สารคดี";}
+                    <?php
+                        if($j%2==0) echo 'เกี่ยวกับองค์กร';
+                        else echo 'สารคดี';
                     ?>
                 </p>    
                 <a class="title p fw-400 color-03 h-color-01 mt-1" href="#">
-                    <?php if($j%2==0){ echo"2D Animation ให้ความรู้หน้าที่ของกรมโยธาธิการเเละผังเมือง";}
-                          else{echo"ผังเมืองเชียงใหม่ หนึ่งในการพัฒนาเมืองแห่งความสุข";}
+                    <?php
+                        if($j%2==0) echo '2D Animation ให้ความรู้หน้าที่ของกรมโยธาธิการเเละผังเมือง';
+                        else echo 'ผังเมืองเชียงใหม่ หนึ่งในการพัฒนาเมืองแห่งความสุข';
                     ?>
                 </a>
             </div>
@@ -78,5 +84,38 @@
                 19 กุมภาพันธ์ 2564
             </p>
         </div>
-    <?php }?>
-</div>
+    </div>
+<?php }else if($cardType=='Ebook'){?>
+    <div class="ss-card ss-card-01 minisite">
+        <a class="ss-img no-hover square" href="#">
+            <div class="img-bg" style="background-image:url('public/assets/app/images/bg/minisite-ebook-bg.jpg');"></div>
+            <div class="ebook-container">
+                <img src="public/assets/app/images/ebook/<?= sprintf('%02d', $j%6+1) ?>.jpg" alt="Image Ebook" />
+            </div>
+        </a>
+        <div class="text-container bcolor-sgray">
+            <p class="xs fw-400 color-gray">มยผ. ด้านโยธาธิการ</p>
+            <a class="title p fw-400 color-03 h-color-01 mt-1" href="#">
+                มาตรฐานการตรวจสอบ การประเมิน การซ่อมแซม 
+                และการเสริมความมั่นคงแข็งแรงโครงสร้างอาคารเก่าและโครงสร้าง
+            </a>
+            <p class="xxs fw-500 mt-2">
+                19 กุมภาพันธ์ 2564
+                <em class="fas fa-eye color-01 ml-4 mr-1"></em>
+                388
+            </p>
+            <p class="desc p xs fw-600 color-dark mt-2">
+                <span class="font-01">
+                    นายพรพจน์ เพ็ญพาส อธิบดีกรมโยธาธิการและผังเมือง 
+                    ตรวจเยี่ยมอาคารสถานที่เพื่อเตรียมความพร้อมต่อมาตรการที่กำหนด 
+                    ให้ดำเนินการในพื้นที่ควบคุมสูงสุดตามแผนความต่อเนื่อง 
+                </span>
+            </p>
+            <div class="btns mt-3">
+                <a class="btn btn-more" href="#">
+                    อ่านเพิ่มเติม
+                </a>
+            </div>
+        </div>
+    </div>
+<?php }?>

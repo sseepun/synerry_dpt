@@ -18,7 +18,7 @@
             'image' => 'public/assets/app/images/bg/minisite-breadcrumb-01.jpg',
             'structure' => [
                 [ 'name' => 'แนะนำกรม', 'url' => '#' ],
-                [ 'name' => 'ข่าวประชาสัมพันธ์', 'url' => '#' ]
+                [ 'name' => 'คลังภาพ', 'url' => '#' ]
             ]
         ];
         include_once('component/breadcrumb-02.php');
@@ -212,10 +212,10 @@
                     <div class="btns d-flex jc-space-between py-4 border-top-4 bcolor-sgray mt-4">
                         <a class="btn btn-action btn-color-05 mx-1 my-1" href="#">
                             <em class="fas fa-chevron-left sm mr-2"></em>
-                            ข่าวก่อนหน้า
+                            คลังภาพก่อนหน้า
                         </a>
                         <a class="btn btn-action btn-color-05 mx-1 my-1" href="#">
-                            ข่าวต่อไป
+                            คลังภาพต่อไป
                             <em class="fas fa-chevron-right sm ml-2"></em>
                         </a>
                     </div>
@@ -224,7 +224,7 @@
                 <div class="grid xl-25 lg-30 sm-100" data-aos="fade-up" data-aos-delay="450">
                     <a class="btn btn-action btn-color-11 w-full" href="#">
                         <em class="fas fa-arrow-left lg mr-2"></em>
-                        กลับไปหน้ารวมข่าวสาร
+                        กลับไปหน้ารวมคลังภาพ
                     </a>
                     <div class="ss-stat">
                         <a class="stat" href="#">
@@ -248,7 +248,7 @@
                     </div>
 
                     <p class="h6 sm fw-600 color-dark ss-dash mt-4 pt-1">
-                        <span>ข่าวที่เกียวข้อง</span>
+                        <span>คลังภาพที่เกียวข้อง</span>
                     </p>
                     <div class="grids">
                         <?php for($k=0; $k<3; $k++){ $j = $k%4+1;?>

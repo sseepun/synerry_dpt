@@ -23,7 +23,17 @@ $(function(){ 'use strict';
             self.prev().slideToggle();
         });
     }else if(topnavMinisite.length){
-
+        // Generate Sidenav
+        sidenavMenus.html( topnavMinisite.find('#topnav-menu').html() );
+        sidenavMenus.find('.has-children').each(function(){
+            $(this).append('<div class="dropdown-toggle"><em class="fas fa-chevron-right"></em></div>');
+        });
+        sidenavMenus.find('.dropdown-toggle').click(function(e){
+            e.preventDefault();
+            var self = $(this);
+            self.toggleClass('active');
+            self.prev().slideToggle();
+        });
     }
 
     // Sidenav Toggle
@@ -82,14 +92,21 @@ $(function(){ 'use strict';
 
 
     // Font Sizes
-    var bodySize = 16;
-    $('.btn.font-size-btn').click(function(e){
+    var bodySize = 16,
+        fontsizeBtns = $('.btn.font-size-btn')
+    fontsizeBtns.click(function(e){
         e.preventDefault();
-        var s = Number($(this).data('size'));
+        var self = $(this);
+        var s = Number(self.data('size'));
         if(s==0) bodySize = 16;
         else if(s==1 || s==-1) bodySize += s;
         else bodySize = s;
         $('html, body').css('font-size', bodySize+'px');
+
+        if(self.hasClass('option')){
+            fontsizeBtns.removeClass('active');
+            self.addClass('active');
+        }
     });
 
     // Themes

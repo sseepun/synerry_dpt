@@ -87,7 +87,7 @@
 ?>
 <nav class="topnav-minisite" style="--nmenu:<?= sizeof($topnavMenu) ?>;">
     <div class="container">
-        <div class="menu-container">
+        <div class="menu-container" id="topnav-menu">
             <?php foreach($topnavMenu as $i=>$d){?>
                 <div class="menu <?php if($topnavActiveIndex==$i)echo 'active'; ?>">
                     <a href="<?= $d['href'] ?>">
@@ -192,3 +192,45 @@
         </div>
     </div>
 </div>
+
+
+<!-- Accessibility -->
+<nav class="side-panel access-panel minisite">
+    <div class="wrapper">
+        <div class="panel">
+            <div class="panel-row">
+                <div class="icon">
+                    <img src="public/assets/app/images/icon/access.png" alt="Image Icon" />
+                </div>
+                <p class="fw-600"><span class="font-01">การช่วยการเข้าถึง</span></p>
+            </div>
+            <div class="panel-row">
+                <div class="icon-width">
+                    <p class="fw-600"><span class="font-01">ขนาดตัวอักษร</span></p>
+                </div>
+                <div class="options">
+                    <a class="option btn font-size-btn" data-size="14">
+                        <span style="font-size:14px;">ก</span>
+                    </a>
+                    <a class="option btn font-size-btn active" data-size="16">
+                        <span style="font-size:16px;">ก</span>
+                    </a>
+                    <a class="option btn font-size-btn" data-size="18">
+                        <span style="font-size:20px;">ก</span>
+                    </a>
+                </div>
+            </div>
+            <div class="panel-row">
+                <div class="icon-width">
+                    <p class="fw-600"><span class="font-01">การแสดงผล</span></p>
+                </div>
+                <div class="options">
+                    
+                </div>
+            </div>
+        </div>
+        <a class="icon" href="#">
+            <img src="public/assets/app/images/icon/access.png" alt="Image Icon" />
+        </a>
+    </div>
+</nav>
