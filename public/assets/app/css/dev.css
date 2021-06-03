@@ -25,3 +25,9 @@
 .view .ele .text{margin-left:0.4rem;font-weight:600;}
 /*add table border bottom*/
 .add-border-bot tr:last-child{border-bottom:solid 3px;border-color:#e4e2e0;}
+/* ss card 02 mini*/
+.ss-card-vertical{display:flex;}
+.ss-card-vertical .img-con{width:10.5rem;}
+.ss-card-vertical .text-container{height:10.5rem;width:calc(100% - 10.5rem);padding:1rem;transition:background .25s;border:1px solid transparent; border-left:0;}
+.ss-card-vertical .text-container .title{-webkit-line-clamp:2; min-height:2.5625rem;}
+.ss-card-vertical .text-container .stripe{padding:0 0 0 .625rem; overflow:hidden;}

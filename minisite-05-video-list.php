@@ -11,14 +11,14 @@
     ?>
     <?php
         $breadcrumb = [
-            'leading' => 'ข้',
+            'leading' => 'ร',
             'leading_class' => 'stripe-bottom',
-            'title' => 'อมูลข่าวสารประชาสัมพันธ์',
+            'title' => 'ายการวีดีโอ',
             'desc' => 'กรมโยธาธิการและผังเมืองพร้อมให้ข้อมูลข่าวสารที่เป็นประโยชน์ สำหรับคุณ',
-            'image' => 'public/assets/app/images/bg/minisite-breadcrumb-09.jpg',
+            'image' => 'public/assets/app/images/bg/minisite-breadcrumb-08.jpg',
             'structure' => [
                 [ 'name' => 'แนะนำกรม', 'url' => '#' ],
-                [ 'name' => 'ข่าวประชาสัมพันธ์', 'url' => '#' ]
+                [ 'name' => 'รายการวีดีโอ', 'url' => '#' ]
             ]
         ];
         include_once('component/breadcrumb-02.php');
@@ -35,12 +35,8 @@
                     <div class="grid xl-25 lg-30 md-40 sm-100 mt-0" data-aos="fade-up" data-aos-delay="300">
                         <div class="tabs tabs-04">
                             <div class="bg-filter mask"></div>
-                            <a class="tab active" href="#">ข่าวกิจกรรม</a>
-                            <a class="tab" href="#">ข่าวประชาสัมพันธ์</a>
-                            <a class="tab" href="#">ข่าวตัดจากหนังสือพิม</a>
-                            <a class="tab" href="#">ข่าวกรม</a>
-                            <a class="tab" href="#">วารสารกรม</a>
-                            <a class="tab" href="#">คลังข่าวมหาดไทย</a>
+                            <a class="tab active" href="#">วีดีโอกิจกรรม</a>
+                            <a class="tab" href="#">วีดีโอประชาสัมพันธ์</a>
                         </div>
                     </div>
                     <div class="grid xl-75 lg-70 md-60 sm-100" data-aos="fade-up" data-aos-delay="450">
@@ -49,8 +45,7 @@
                                 <?php for($j=0; $j<6; $j++){?>
                                     <div class="slide">
                                         <?php
-                                            $cardType = 'Image';
-                                            $TagCount = False;
+                                            $cardType = 'Video Preview';
                                             include('component/minisite-ss-card-06.php');   
                                         ?>
                                     </div>
@@ -60,10 +55,9 @@
                         </div>
                         <div class="grids">
                             <?php for($j=0; $j<10; $j++){?>
-                                <div class="grid xl-50">
+                                <div class="grid xl-50 sm-100">
                                     <?php
-                                        $cardType = 'Image';
-                                        $TagCount = False;
+                                        $cardType = 'Video Preview';
                                         include('component/minisite-ss-card-02_dev.php');   
                                     ?>
                                 </div>

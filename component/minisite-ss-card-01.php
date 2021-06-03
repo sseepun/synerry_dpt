@@ -2,12 +2,14 @@
     <?php if($cardType=='Image'){?>
         <a class="ss-img horizontal-2" href="#">
             <div class="img-bg" style="background-image:url('public/assets/app/images/content/minisite-<?= empty($j)? '01': sprintf('%02d', $j%6+1) ?>.jpg');"></div>
-            <div class="minisite-tag-counts">
-                <div class="tag-count">
-                    <em class="far fa-images mr-2"></em>
-                    84
-                </div>
-            </div>
+                <?php if ($TagCount==True) {?>
+                    <div class="minisite-tag-counts">
+                        <div class="tag-count">
+                            <em class="far fa-images mr-2"></em>
+                            84
+                        </div>
+                    </div>
+                <?php }?>
             <div class="hover-container">
                 <div class="icon sm">
                     <img src="public/assets/app/images/icon/plus.png" alt="Image Icon" />
