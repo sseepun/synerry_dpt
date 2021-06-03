@@ -2,14 +2,14 @@
     <?php if($cardType=='Image'){?>
         <a class="ss-img horizontal-2" href="#">
             <div class="img-bg" style="background-image:url('public/assets/app/images/content/minisite-<?= empty($j)? '01': sprintf('%02d', $j%6+1) ?>.jpg');"></div>
-                <?php if ($TagCount==True) {?>
-                    <div class="minisite-tag-counts">
-                        <div class="tag-count">
-                            <em class="far fa-images mr-2"></em>
-                            84
-                        </div>
+            <?php if(!empty($cardImgCount)){?>
+                <div class="minisite-tag-counts">
+                    <div class="tag-count">
+                        <em class="far fa-images mr-2"></em>
+                        84
                     </div>
-                <?php }?>
+                </div>
+            <?php }?>
             <div class="hover-container">
                 <div class="icon sm">
                     <img src="public/assets/app/images/icon/plus.png" alt="Image Icon" />
@@ -61,7 +61,7 @@
                 </div>
             </div>
         </a>
-        <div class="text-container bcolor-sgray weblink p-3">
+        <div class="text-container bcolor-sgray weblink pt-2">
             <div class="stripe border-left-3 bcolor-01 pt-2">
                 <p class="xxs fw-500 color-gray">
                     <?php if($j%2==0){ echo"เกี่ยวกับองค์กร";}

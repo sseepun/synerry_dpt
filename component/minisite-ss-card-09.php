@@ -1,17 +1,16 @@
-<!--["image"(list) , "Video Preview"(list) , "E-book"(list)]-->
 <?php if($cardType=='Image'){?> 
-    <div class="ss-card ss-card-vertical">
-        <div class="img-con">
-            <a class="ss-img adaptive" href="#">
+    <div class="ss-card ss-card-09">
+        <div class="img-container">
+            <a class="ss-img adaptive-xs" href="#">
                 <div class="img-bg" style="background-image:url('public/assets/app/images/content/minisite-<?= empty($j)? '01': sprintf('%02d', $j%6+1) ?>.jpg');"></div>
-                    <?php if ($TagCount==True) {?>
-                        <div class="minisite-tag-counts">
-                            <div class="tag-count">
-                                <em class="far fa-images mr-2"></em>
-                                84
-                            </div>
+                <?php if(!empty($cardImgCount)){?>
+                    <div class="minisite-tag-counts">
+                        <div class="tag-count">
+                            <em class="far fa-images mr-2"></em>
+                            84
                         </div>
-                    <?php }?>
+                    </div>
+                <?php }?>
                 <div class="hover-container">
                     <div class="icon sm">
                         <img src="public/assets/app/images/icon/plus.png" alt="Image Icon" />
@@ -29,7 +28,6 @@
                     การจำหน่ายที่ดินจัดหาประโยชน์ในโครงการจัดรูปที่ดินเพื่อพัฒนาพื้นที่บริเวณชุมชน หนองหลวงพัฒน
                     การจำหน่ายที่ดินจัดหาประโยชน์ในโครงการจัดรูปที่ดินเพื่อพัฒนาพื้นที่บริเวณชุมชน หนองหลวงพัฒนนา";
                 }?>
-
             </a>
             <p class="xxs fw-500 mt-2">
                 19 กุมภาพันธ์ 2564
@@ -43,11 +41,10 @@
             </div>
         </div>
     </div>
-
-<?php }else if($cardType=='Video Preview'){?>
-    <div class="ss-card ss-card-vertical">
-        <div class="img-con">
-            <a class="ss-img adaptive" href="#">
+<?php }else if($cardType=='Video'){?>
+    <div class="ss-card ss-card-09">
+        <div class="img-container">
+            <a class="ss-img adaptive-xs" href="#">
                 <div class="img-bg" style="background-image:url('public/assets/app/images/content/minisite-vdo-<?= empty($j)? '01': sprintf('%02d', $j%3+1) ?>.jpg');"></div>
                 <div class="hover-container clear op-100">
                     <div class="icon">
@@ -77,6 +74,5 @@
         </div>
     </div>
 <?php }else if($cardType=='E-book'){?>
-
 
 <?php }?>

@@ -57,8 +57,8 @@
                             <?php for($j=0; $j<10; $j++){?>
                                 <div class="grid xl-50 sm-100">
                                     <?php
-                                        $cardType = 'Video Preview';
-                                        include('component/minisite-ss-card-02_dev.php');   
+                                        $cardType = 'Video';
+                                        include('component/minisite-ss-card-09.php');   
                                     ?>
                                 </div>
                             <?php }?>

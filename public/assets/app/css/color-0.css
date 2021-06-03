@@ -212,7 +212,6 @@ nav.sfooter-minisite .grid-line > .line::before{background:#ffffff;}
 }
 .btn.btn-color-05:hover{box-shadow:inset 0 0 0 100rem rgba(0,0,0,.05);}
 .btn.btn-color-05:active{box-shadow:inset 0 0 0 100rem rgba(0,0,0,.10);}
-.btn.btn-color-05 em{color:#ffffff;}
 
 .btn.btn-color-06, .btn.btn-color-06:focus{
     color:#ffffff; background:#211f1e; border-color:#211f1e;
@@ -239,6 +238,18 @@ nav.sfooter-minisite .grid-line > .line::before{background:#ffffff;}
 }
 .btn.btn-color-09:hover{box-shadow:inset 0 0 0 100rem rgba(255,255,255,.05);}
 .btn.btn-color-09:active{box-shadow:inset 0 0 0 100rem rgba(255,255,255,.10);}
+
+.btn.btn-color-10, .btn.btn-color-10:focus{
+    color:#ffffff; background:#fdcd05; border-color:#fdcd05;
+}
+.btn.btn-color-10:hover{box-shadow:inset 0 0 0 100rem rgba(255,255,255,.05);}
+.btn.btn-color-10:active{box-shadow:inset 0 0 0 100rem rgba(255,255,255,.10);}
+
+.btn.btn-color-11, .btn.btn-color-11:focus{
+    color:#000000; background:#fdcd05; border-color:#fdcd05;
+}
+.btn.btn-color-11:hover{box-shadow:inset 0 0 0 100rem rgba(255,255,255,.05);}
+.btn.btn-color-11:active{box-shadow:inset 0 0 0 100rem rgba(255,255,255,.10);}
 
 .btn.btn-social.fw{background:#3b56a3; color:#ffffff;}
 .btn.btn-social.gg{background:#b62c22; color:#ffffff;}
@@ -461,6 +472,10 @@ input[type=file].sgray, select.sgray, textarea.sgray,
 .ss-card-07 .title-wrapper{background:#f5f5f5;}
 
 
+/* Specia Dash */
+.ss-dash > span::after{background:#ffd000;}
+
+
 /* Special Date */
 .ss-date{background:#211f1e; color:#ffffff;}
 
@@ -501,6 +516,9 @@ input[type=file].sgray, select.sgray, textarea.sgray,
 
 /* Special Tags */
 .ss-tags > .tag{background:#363635; color:#ffffff;}
+
+/* Special Tags 02 */
+.ss-tags-02 .tags .tag{background:#363635; color:#ffffff;}
 
 
 /* Table */

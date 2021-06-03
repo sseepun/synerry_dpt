@@ -146,7 +146,9 @@ nav.sfooter-minisite .grid-line > .line::before{background:#000000;}
 .btn.btn-color-06, .btn.btn-color-06:focus, .btn.btn-color-06:hover, .btn.btn-color-06:active,
 .btn.btn-color-07, .btn.btn-color-07:focus, .btn.btn-color-07:hover, .btn.btn-color-07:active,
 .btn.btn-color-08, .btn.btn-color-08:focus, .btn.btn-color-08:hover, .btn.btn-color-08:active,
-.btn.btn-color-09, .btn.btn-color-09:focus, .btn.btn-color-09:hover, .btn.btn-color-09:active{
+.btn.btn-color-09, .btn.btn-color-09:focus, .btn.btn-color-09:hover, .btn.btn-color-09:active, 
+.btn.btn-color-10, .btn.btn-color-10:focus, .btn.btn-color-10:hover, .btn.btn-color-10:active, 
+.btn.btn-color-11, .btn.btn-color-11:focus, .btn.btn-color-11:hover, .btn.btn-color-11:active{
     color:#ffffff; background:#000000; border-color:#000000;
 }
 .btn.btn-ss::after{background:#ffffff;}
@@ -337,6 +339,10 @@ input[type=number], input[type=phone], input[type=submit], input[type=file], sel
 .ss-card-07 .title{color:#ffffff!important;}
 
 
+/* Specia Dash */
+.ss-dash > span::after{background:#000000;}
+
+
 /* Special Date */
 .ss-date{background:#000000; color:#ffffff;}
 
@@ -373,6 +379,9 @@ input[type=number], input[type=phone], input[type=submit], input[type=file], sel
 
 /* Special Tags */
 .ss-tags> .tag{background:#000000; color:#ffffff;}
+
+/* Special Tags 02 */
+.ss-tags-02 .tags .tag{background:#000000; color:#ffffff;}
 
 
 /* Table */

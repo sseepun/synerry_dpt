@@ -47,7 +47,7 @@
                                     <div class="slide">
                                         <?php
                                             $cardType = 'Image';
-                                            $TagCount = True;
+                                            $cardImgCount = True;
                                             include('component/minisite-ss-card-06.php');   
                                         ?>
                                     </div>
@@ -60,8 +60,8 @@
                                 <div class="grid xl-50 sm-100">
                                     <?php
                                         $cardType = 'Image';
-                                        $TagCount = True;
-                                        include('component/minisite-ss-card-02_dev.php');   
+                                        $cardImgCount = True;
+                                        include('component/minisite-ss-card-09.php');   
                                     ?>
                                 </div>
                             <?php }?>

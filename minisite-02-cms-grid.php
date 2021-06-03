@@ -12,7 +12,6 @@
     <?php
         $breadcrumb = [
             'leading' => 'ข้',
-            'leading_class' => 'stripe-bottom',
             'title' => 'อมูลข่าวสารประชาสัมพันธ์',
             'desc' => 'กรมโยธาธิการและผังเมืองพร้อมให้ข้อมูลข่าวสารที่เป็นประโยชน์ สำหรับคุณ',
             'image' => 'public/assets/app/images/bg/minisite-breadcrumb-09.jpg',
@@ -50,7 +49,6 @@
                                     <div class="slide">
                                         <?php
                                             $cardType = 'Image';
-                                            $TagCount = False;
                                             include('component/minisite-ss-card-06.php');   
                                         ?>
                                     </div>
@@ -63,7 +61,6 @@
                                 <div class="grid xl-1-3">
                                     <?php
                                         $cardType = 'Image';
-                                        $TagCount = False;
                                         include('component/minisite-ss-card-01.php');   
                                     ?>
                                 </div>
