@@ -101,7 +101,7 @@
 <div class="topnav-spacer"></div>
 
 <!-- Sidenav -->
-<nav class="sidenav">
+<nav class="sidenav minisite">
     <div class="wrapper">
         <div class="sidenav-toggle">
             <div class="hamburger">
@@ -109,21 +109,10 @@
             </div>
         </div>
         <div class="options">
-            <div class="option">
-                <div class="icon">ก</div>
-                <div class="dropdown">
-                    <div class="icon font-size-btn" data-size="-1">-</div>
-                    <div class="icon font-size-btn" data-size="0">ก</div>
-                    <div class="icon font-size-btn" data-size="1">+</div>
-                </div>
-            </div>
-            <div class="option">
-                <div class="icon">C</div>
-                <div class="dropdown">
-                    <div class="icon theme-btn" data-theme="0">C</div>
-                    <div class="icon theme-btn" data-theme="1">C</div>
-                    <div class="icon theme-btn" data-theme="2">C</div>
-                </div>
+            <div class="option-btn">
+                <a href="#">
+                    <em class="fas fa-lock mr-2"></em> เข้าสู่ระบบ
+                </a>
             </div>
             <div class="option">
                 <div class="flag" style="background-image:url('public/assets/app/images/misc/th-flag.png');"></div>
@@ -225,7 +214,24 @@
                     <p class="fw-600"><span class="font-01">การแสดงผล</span></p>
                 </div>
                 <div class="options">
-                    
+                    <a class="option-row theme-btn active" data-theme="0" href="#">
+                        <div class="icon">
+                            <img src="public/assets/app/images/misc/color-0.png" alt="Image Icon" />
+                        </div>
+                        <p class="fw-600"><span class="font-01">สีปกติ</span></p>
+                    </a>
+                    <a class="option-row theme-btn" data-theme="1" href="#">
+                        <div class="icon">
+                            <img src="public/assets/app/images/misc/color-1.png" alt="Image Icon" />
+                        </div>
+                        <p class="fw-600"><span class="font-01">ขาว-ดำ</span></p>
+                    </a>
+                    <a class="option-row theme-btn" data-theme="2" href="#">
+                        <div class="icon">
+                            <img src="public/assets/app/images/misc/color-2.png" alt="Image Icon" />
+                        </div>
+                        <p class="fw-600"><span class="font-01">ดำ-เหลือง</span></p>
+                    </a>
                 </div>
             </div>
         </div>

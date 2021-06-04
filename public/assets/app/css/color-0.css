@@ -132,7 +132,8 @@ nav.topnav-minisite .menu::after{background:#ffffff;}
 /* Sidenav */
 nav.sidenav{background:#ffffff;}
 nav.sidenav .hamburger > *{background:#232323;}
-nav.sidenav .sidenav-toggle, nav.sidenav .options, nav.sidenav .options > .option, 
+nav.sidenav .sidenav-toggle, nav.sidenav .options, 
+nav.sidenav .options > .option, nav.sidenav .options > .option-btn,
 nav.sidenav .option > .dropdown, nav.sidenav .option > .dropdown > *, nav.sidenav .scroll-wrapper, 
 nav.sidenav .menu > a, nav.sidenav .submenu > a{border-color:#e1e1e1;}
 nav.sidenav .option > .dropdown{background:#ffffff;}
@@ -142,6 +143,7 @@ nav.sidenav .submenu > a{color:#232323; background:#fdcd05;}
 nav.sidenav .submenu .submenu > a{color:#232323; background:#fdcd05;}
 nav.sidenav .dropdown-toggle{color:#232323;}
 nav.topnav .option > .dropdown .flag-wrapper:hover{background:#e1e1e1;}
+nav.sidenav .options > .option-btn:hover > a{color:#fdcd05;}
 
 /* Global Search Container */
 .global-search-container .search-panel{background:#ffffff;}

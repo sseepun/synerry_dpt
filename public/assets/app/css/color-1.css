@@ -90,7 +90,8 @@ nav.topnav-minisite .menu::before, nav.topnav-minisite .menu::after{display:none
 /* Sidenav */
 nav.sidenav{background:#ffffff; border-left:1px solid #000000;}
 nav.sidenav .hamburger > *{background:#000000;}
-nav.sidenav .sidenav-toggle, nav.sidenav .options, nav.sidenav .options > .option, 
+nav.sidenav .sidenav-toggle, nav.sidenav .options, 
+nav.sidenav .options > .option, nav.sidenav .options > .option-btn,
 nav.sidenav .option > .dropdown, nav.sidenav .option > .dropdown > *, 
 nav.sidenav .scroll-wrapper, nav.sidenav .menu > a{border-color:#000000;}
 nav.sidenav .submenu > a{border-color:#ffffff;}

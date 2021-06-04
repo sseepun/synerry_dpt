@@ -7,6 +7,7 @@ $(function(){ 'use strict';
     var sidenav = $('nav.sidenav'),
         sidenavMenus = sidenav.find('.menu-container'),
         sidenavToggle = $('nav .sidenav-toggle');
+    var accessPanel = $('.side-panel.access-panel');
 
     if(topnav.length){
         // Generate Sidenav
@@ -93,7 +94,7 @@ $(function(){ 'use strict';
 
     // Font Sizes
     var bodySize = 16,
-        fontsizeBtns = $('.btn.font-size-btn')
+        fontsizeBtns = $('.btn.font-size-btn');
     fontsizeBtns.click(function(e){
         e.preventDefault();
         var self = $(this);
@@ -110,11 +111,18 @@ $(function(){ 'use strict';
     });
 
     // Themes
-    $('.theme-btn').click(function(e){
+    var themeBtns = $('.theme-btn');
+    themeBtns.click(function(e){
         e.preventDefault();
+        var self = $(this);
         $('#css-theme').attr('href', 'public/assets/app/css/color-'+$(this).data('theme')+'.css');
         $('body').removeClass('theme-0 theme-1 theme-2');
-        $('body').addClass('theme-'+$(this).data('theme'));
+        $('body').addClass('theme-'+self.data('theme'));
+
+        if(self.hasClass('option-row')){
+            themeBtns.removeClass('active');
+            self.addClass('active');
+        }
     });
 
 
@@ -147,9 +155,11 @@ $(function(){ 'use strict';
             if(st > scale*bodySize){
                 topnavMinisite.addClass('sticky');
                 globalSearchContainer.addClass('sticky');
+                accessPanel.addClass('sticky');
             }else{
                 topnavMinisite.removeClass('sticky');
                 globalSearchContainer.removeClass('sticky');
+                accessPanel.removeClass('sticky');
             }
         }
     }
