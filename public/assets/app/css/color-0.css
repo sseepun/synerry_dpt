@@ -25,6 +25,7 @@ html, body, a, a:hover, table.table{color:#000000;}
 .color-10, .h-color-10:hover{color:#502e11!important;}
 .color-11, .h-color-11:hover{color:#993300!important;}
 .color-12, .h-color-12:hover{color:#4d2224!important;}
+.color-13, .h-color-13:hover{color:#e1e1e1!important;}
 
 .bg-white{background:#ffffff!important;}
 .bg-black{background:#000000!important;}
@@ -47,6 +48,7 @@ html, body, a, a:hover, table.table{color:#000000;}
 .bg-10{background:#502e11!important;}
 .bg-11{background:#993300!important;}
 .bg-12{background:#4d2224!important;}
+.bg-13{background:#e1e1e1!important;}
 
 .bcolor-white{border-color:#ffffff!important;}
 .bcolor-black{border-color:#000000!important;}
@@ -69,6 +71,7 @@ html, body, a, a:hover, table.table{color:#000000;}
 .bcolor-10{border-color:#502e11!important;}
 .bcolor-11{border-color:#993300!important;}
 .bcolor-12{border-color:#4d2224!important;}
+.bcolor-13{border-color:#e1e1e1!important;}
 
 /* Gradient */
 .bg-gray-gradient{

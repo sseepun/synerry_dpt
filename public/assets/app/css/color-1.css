@@ -27,18 +27,20 @@ html, body, a, a:hover, table.table{color:#000000;}
 .color-09, .h-color-09:hover,
 .color-10, .h-color-10:hover,
 .color-11, .h-color-11:hover,
-.color-12, .h-color-12:hover{color:#000000!important;}
+.color-12, .h-color-12:hover,
+.color-13, .h-color-13:hover{color:#000000!important;}
 
 .bg-p, .bg-s, .bg-t,
 .bg-white, .bg-black, .bg-gray, .bg-bgray, .bg-mgray, .bg-sgray, .bg-hgray, .bg-fgray,
-.bg-01, .bg-02, .bg-03, .bg-04, .bg-05, .bg-06, .bg-07, .bg-08, .bg-09, 
-.bg-10, .bg-11, .bg-12{background:#ffffff!important;}
+.bg-01, .bg-02, .bg-03, .bg-04, .bg-05, .bg-06, .bg-07, .bg-08, .bg-09, .bg-10, .bg-11, 
+.bg-12, .bg-13{background:#ffffff!important;}
 
 .bcolor-p, .bcolor-s, .bcolor-t,
 .bcolor-white, .bcolor-black, .bcolor-gray, .bcolor-bgray, 
 .bcolor-mgray, .bcolor-sgray, .bcolor-hgray, .bcolor-fgray, 
-.bcolor-01, .bcolor-02, .bcolor-03, .bcolor-04, .bcolor-05, .bcolor-06, .bcolor-07, 
-.bcolor-08, .bcolor-09, .bcolor-10, .bcolor-11, .bcolor-12{border-color:#000000!important;}
+.bcolor-01, .bcolor-02, .bcolor-03, .bcolor-04, .bcolor-05, .bcolor-06, 
+.bcolor-07, .bcolor-08, .bcolor-09, .bcolor-10, .bcolor-11, .bcolor-12, 
+.bcolor-13{border-color:#000000!important;}
 
 
 /* Super Topnav */
