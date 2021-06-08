@@ -63,8 +63,8 @@
                                             <p class="xxs fw-600"><?= $row['name'] ?></p>
                                         </div>
                                     </td>
-                                    <td class="column-text" style="min-height: 93px">
-                                        <p class="md fw-400 color-12" style="display: -webkit-box;-webkit-line-clamp: 2; -webkit-box-orient: vertical;overflow: hidden;">
+                                    <td class="column-text">
+                                        <p class="md fw-400 color-12 title">
                                             <?php if ($key%2==0) {echo "การขับเคลื่อนชุมชนเข้มแข็งในการจัดการอนามัยสิ่งแวดล้อมชุมชน";}
                                                   else{echo "การขับเคลื่อนชุมชนเข้มแข็งในการจัดการอนามัยสิ่งแวดล้อมชุมชนการขับเคลื่อนชุมชนเข้
                                                   มแข็งในการจัดการอนามัยสิ่งแวดล้อมชุมชนการขับเคลื่อนชุมชนเข้มแข็งในการจัดการอนามัยสิ่งแวด
@@ -80,7 +80,7 @@
 
                                         </div>
                                     </td>
-                                    <td style="display: flex; flex-direction: column; min-height: 93px">
+                                    <td class="column-button">
                                         <a class="btn btn-action btn-sm btn-xs btn-color-09" href="#">
                                             <em class="far fa-edit mr-1"></em>สมัครออนไลน์
                                         </a>
