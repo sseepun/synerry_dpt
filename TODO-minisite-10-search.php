@@ -24,14 +24,14 @@
     ?>
     
     <section class="section-container" data-aos="fade-up" data-aos-delay="300">
-        <div class="container">
-            <h5 class="h5">"พลังงานสอาด" ผลลัพธ์การค้นหา 28 รายการ</h5>
+        <div class="container mt-5">
+            <h5 class="h5"> <span class="color-12 fw-600">พลังงานสะอาด"</span> ผลลัพธ์การค้นหา <span class="color-12 fw-600">28 รายการ</span></h5>
             <div class="grids">
                 <div class="grid xl-40 lg-25"> <!--search-->
                     <div class="form-group">
                         <div class="append">
                             <input type="text" placeholder="ค้นหา" required />
-                            <button type="submit" class="icon search-icon-color">
+                            <button type="submit" class="icon icon-color2">
                                 <em class="fas fa-search"></em>
                             </button>
                         </div>
@@ -40,17 +40,17 @@
                 <div class="grid xl-40 lg-50"> <!--date-->
                     <div class="form-group">
                         <div class="input-fit">
-                            <p class="ws-nowrap ml-1">ช่วงเวลา</p>
-                            <div class="append">
+                            <p class="ws-nowrap mr-2">ช่วงเวลา</p>
+                            <div class="prepend">
                                 <input type="text" class="date-picker fgray" />
-                                <div class="icon search-icon-color left0">
+                                <div class="icon icon-color2">
                                     <em class="far fa-calendar-alt"></em>
                                 </div>
                             </div>
                             <div class="h6 fw-600 px-2">-</div>
-                            <div class="append">
+                            <div class="prepend">
                                 <input type="text" class="date-picker fgray" />
-                                <div class="icon search-icon-color left0">
+                                <div class="icon icon-color2">
                                     <em class="far fa-calendar-alt"></em>
                                 </div>
                             </div>
@@ -69,7 +69,7 @@
                     </div>
                 </div>
             </div>
-            <p class="p lg fw-500">ประเภทข้อมูล</p>
+            <p class="p lg fw-500 mt-4">ประเภทข้อมูล</p>
             <div class="d-flex fw-wrap ws-nowrap">
                 <?php $a=array("ข่าว","อัลบั้มภาพ","วิดีโอ","ถาม-ตอบ","ไฟล์เอกสาร","ข้อมูลเว็บไซต์");
                 foreach ($a as $value) { ?>
@@ -85,8 +85,13 @@
                     </div>
                 <?php } ?>
             </div>
+            <div class="d-block mt-3">
+                <a class="btn btn-action btn-color-011" href="#">
+                    <em class="far fa-times mr-1"></em> ล้างข้อมูล
+                </a>
+            </div>
         </div>
-        <div class="container">
+        <div class="container mt-4">
             <div class="grids">
                 <div class="grid xl-25 lg-30 md-40 sm-100 mt-0" data-aos="fade-up" data-aos-delay="300">
                     <div class="pop-qus">
