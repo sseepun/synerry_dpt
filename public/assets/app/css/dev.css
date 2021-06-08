@@ -1,3 +1,23 @@
 .btn.btn-color-009, .btn.btn-color-009:focus{
     color:#fdcd05; background:#454545; border-color:#454545;
 }
+.btn.btn-color-010, .btn.btn-color-010:focus{
+    color:#ffffff; background:transparent; border-color:#ffffff;
+}
+.search-icon-color{background:transparent!important; color:#fdcd05!important;}
+.left0{left:0!important;}
+.pop-qus{background-color: #fdcd05}
+.pop-qus >.head{padding:.75rem;}
+.pop-qus .week-month{display:flex;justify-content:space-between;padding:.75rem;}
+.pop-qus .list{border-bottom: 2px solid;padding:.75rem;font-weight:500;}
+.pop-qus .list:last-child{border-bottom: none;padding-bottom:2rem;}
+
+
+
+.ss-card .text-container .head{
+    display:block; display:-webkit-box; text-overflow:ellipsis; overflow:hidden;
+    -webkit-box-orient:vertical; transition:color .25s;
+}
+.ss-card-09 > .text-container .head{-webkit-line-clamp:1;}
+
+.QA{margin:-.5rem .5rem 0 0;}
