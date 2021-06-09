@@ -24,10 +24,10 @@
     ?>
     
     <section class="section-container" data-aos="fade-up" data-aos-delay="300">
-        <div class="container">
+        <div class="container mt-5">
             <h5 class="fw-400">ใบสมัครคัดเลือกบุคคลเพื่อจ้างเหมาบริการงานด้านธุรการและบันทึกข้อมูล ในงบประมาณรายจ่าย
             ประจำปีงบประมาณ 2564 (สำนักควบคุมและตรวจสอบอาคาร)</h5>
-            <p class="p xs">กรุณากรอกข้อมูลที่จำเป็นให้ครบถ้วน โดยช่องเฉพาะที่มีเครื่องหมาย * </p>
+            <p class="p xs mt-4" style="text-align: center;">กรุณากรอกข้อมูลที่จำเป็นให้ครบถ้วน โดยช่องเฉพาะที่มีเครื่องหมาย * </p>
             <h6 class="h6 sm mt-3">ประวัติส่วนตัว</h6>
             <div class="grids">
                 <div class="grid all-50">
@@ -76,7 +76,7 @@
                     </div>
                 </div>
             </div>
-            <div class="border-bottom-3 bcolor-13 mt-3"></div>
+            <div class="border-bottom-3 bcolor-13 mt-4"></div>
             <h6 class="h6 sm mt-3">ที่อยู่ปัจจุบัน</h6>
             <div class="grids">
                 <div class="grid all-100">
@@ -228,7 +228,102 @@
                     </div>
                 </div>
             </div>
-            <div class="border-bottom-3 bcolor-13 mt-3"></div>
+            <div class="grids">
+                <div class="grid xl-50 lg-50 sm-100">
+                    <div class="d-flex ai-center border-2 bcolor-mgray p-3">
+                        <div class="icon ml-3">
+                            <em style="font-size: 60px; color:#fdcd05;" class="far fa-file"></em>
+                        </div>
+                        <div class="text" style="padding:1rem 0.5rem 1rem 1rem;">
+                                <p class="p lg fw-500">ลากหรือวางไฟล์ไว้ที่นี่</p>
+                                <p class="mt-1">ชนิดไฟล์ที่อนุญาติ .jpg , .jpeg , .png , .zip , .rar ไฟล์ทั้งหมดรวมกันไม่เกิน 5 MB</p>
+                        </div>
+                        <div class="button">
+                            <a class="btn btn-action btn-color-09" href="#">
+                                <em class="far fa-plus-circle mr-2"></em>เพิ่มไฟล์
+                            </a>
+                        </div>
+                    </div>
+                </div> 
+                <div class="grid xl-50 lg-50 sm-100">
+                    <div class="file border-bottom bcolor-13 d-flex jc-space-between ai-center">
+                        <p class="pt-2 pb-2">
+                            <em class="far fa-file-pdf mr-1 color-01"></em>
+                            job-16022564-1.pdf   [ 1.4 MB ]
+                        </p>
+                        <div style="font-size: 20px;">
+                            <a href="#"><em class="far fa-edit mr-1 color-11"></em></a>
+                            <span class="color-13">|</span>
+                            <a href="#"><em class="far fa-times-circle ml-2 color-13"></em></a>
+                        </div>
+                    </div>
+                    <div class="file border-bottom bcolor-13 d-flex jc-space-between ai-center">
+                        <p class="pt-2 pb-2">
+                            <em class="far fa-file-pdf mr-1 color-01"></em>
+                            job-16022564-1.pdf   [ 1.4 MB ]
+                        </p>
+                        <div style="font-size: 20px;">
+                            <a href="#"><em class="far fa-edit mr-1 color-11"></em></a>
+                            <span class="color-13">|</span>
+                            <a href="#"><em class="far fa-times-circle ml-2 color-13"></em></a>
+                        </div>
+                    </div>
+                    <div class="file border-bottom bcolor-13 d-flex jc-space-between ai-center">
+                        <p class="pt-2 pb-2">
+                            <em class="far fa-file-pdf mr-1 color-01"></em>
+                            job-16022564-1.pdf   [ 1.4 MB ]
+                        </p>
+                        <div style="font-size: 20px;">
+                            <a href="#"><em class="far fa-edit mr-1 color-11"></em></a>
+                            <span class="color-13">|</span>
+                            <a href="#"><em class="far fa-times-circle ml-2 color-13"></em></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="grids">
+                <div class="grid xl-50 lg-50 sm-100">
+                    <div class="d-flex ai-center border-2 bcolor-mgray p-3">
+                        <div class="icon ml-3">
+                            <em style="font-size: 60px; color:#fdcd05;" class="far fa-image"></em>
+                        </div>
+                        <div class="text" style="padding:1rem 0.5rem 1rem 1rem;">
+                            <p class="p lg fw-500">ลากหรือวางไฟล์ไว้ที่นี่</p>
+                            <p class="mt-1">ชนิดไฟล์ที่อนุญาติ .jpg , .jpeg , .png ไฟล์ทั้งหมดรวมกันไม่เกิน 5 MB</p>
+                        </div>
+                        <div class="button">
+                            <a class="btn btn-action btn-color-09" href="#">
+                                <em class="far fa-plus-circle mr-2"></em>เพิ่มรูปภาพ
+                            </a>
+                        </div>
+                    </div>
+                </div> 
+                <div class="grid xl-50 lg-50 sm-100">
+                    <div class="file border-bottom bcolor-13 d-flex jc-space-between ai-center">
+                        <p class="pt-2 pb-2">
+                            <em class="far fa-file-image mr-1 color-01"></em>
+                            job-16022564-1.pdf   [ 1.4 MB ]
+                        </p>
+                        <div style="font-size: 20px;">
+                            <a href="#"><em class="far fa-edit mr-1 color-11"></em></a>
+                            <span class="color-13">|</span>
+                            <a href="#"><em class="far fa-times-circle ml-2 color-13"></em></a>
+                        </div>
+                    </div>
+                    <div class="file border-bottom bcolor-13 d-flex jc-space-between ai-center">
+                        <p class="pt-2 pb-2">
+                            <em class="far fa-file-image mr-1 color-01"></em>
+                            job-16022564-1.pdf   [ 1.4 MB ]
+                        </p>
+                        <div style="font-size: 20px;">
+                            <a href="#"><em class="far fa-edit mr-1 color-11"></em></a>
+                            <span class="color-13">|</span>
+                            <a href="#"><em class="far fa-times-circle ml-2 color-13"></em></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="border-bottom-3 bcolor-13 mt-4"></div>
             <h6 class="h6 sm mt-3">ประวัติการศึกษา</h6>
             <p class="p xs mt-3">(ให้กรอกทุกวุฒิที่ได้รับและแนบสําเนาแสดงผลการเรียนเฉพาะวุฒิที่ใช้สมัครเข้ารับการประเมินพร้อมใบสมัคร)</p>
             <h6 class="h6 sm mt-3">ม.6/ปวช./ปวส.</h6>
@@ -259,14 +354,19 @@
                 <div class="grid all-25"><input type="text" required="" placeholder="ชื่อสถานศึกษา"></div>
                 <div class="grid all-25"><input type="text" required="" placeholder="พ.ศ. ที่สําเร็จการศึกษา"></div>
             </div>
-            <div class="border-bottom-3 bcolor-13 mt-3"></div>
+            <div class="border-bottom-3 bcolor-13 mt-4"></div>
             <h6 class="h6 sm mt-3">ประวัติฝึกอบรม</h6>
             <div class="grids">
                 <div class="grid all-50"><input type="text" required="" placeholder="ชื่อหลักสูตร"></div>
                 <div class="grid all-25"><input type="text" required="" placeholder="ระยะเวลาในการฝึกอบรม (ระบุช่วงเวลา)"></div>
                 <div class="grid all-25"><input type="text" required="" placeholder="หน่วยงานผู้จัด"></div>
             </div>
-            <div class="border-bottom-3 bcolor-13 mt-3"></div>
+            <div class="d-flex jc-end mt-3">
+                <a class="btn btn-action btn-color-10" href="#">
+                    <em class="far fa-plus-square mr-2"></em>เพิ่มประวัติฝึกอบรม
+                </a>
+            </div>                         
+            <div class="border-bottom-3 bcolor-13 mt-4"></div>
             <h6 class="h6 sm mt-3">ประวัติการทำงาน</h6>
             <div class="grids">
                 <div class="grid all-20"><input type="text" required="" placeholder="สถานที่ทํางาน"></div>
@@ -275,10 +375,16 @@
                 <div class="grid all-20"><input type="text" required="" placeholder="ระยะเวลา"></div>
                 <div class="grid all-20"><input type="text" required="" placeholder="เหตุผลที่ลาออก"></div>
             </div>
+            <div class="d-flex jc-end mt-3">
+                <a class="btn btn-action btn-color-10" href="#">
+                    <em class="far fa-plus-square mr-2"></em>เพิ่มประวัติการทำงาน
+                </a>
+            </div>
+            <div class="border-bottom-3 bcolor-13 mt-4"></div>
             <h6 class="h6 sm mt-3">รายระเอียดผลงานที่สำคัญ หรือโดดเด่น</h6>
             <textarea rows="6" required=""></textarea>
-            <div class="border-bottom-3 bcolor-13 mt-3"></div>
-            <div class="form-group">
+            <div class="border-bottom-3 bcolor-13 mt-4"></div>
+            <div class="form-group mt-3">
                 <div class="checkbox-set">
                     <input type="checkbox" name="checkbox[]">
                     <label for="checkbox_0" class="p">
@@ -286,7 +392,17 @@
                     </label>
                 </div>
             </div>
-            
+            <div class="d-flex jc-space-between ai-center mt-4">
+                <div style="width:300px;height:80px;background-color:red;">robot</div>
+                <div class="submit-clear">
+                    <a class="btn btn-action btn-color-09" href="#">
+                        ส่งใบสมัคร<em class="far fa-arrow-circle-right ml-2"></em>
+                    </a>
+                    <a class="btn btn-action btn-color-08" href="#">
+                        ล้างข้อมูล<em class="far fa-times-circle ml-2"></em>
+                    </a>
+                </div>
+            </div>
         </div>
     </section>
 
