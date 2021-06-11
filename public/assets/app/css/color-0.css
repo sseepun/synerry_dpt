@@ -155,6 +155,9 @@ nav.sidenav .options > .option-btn:hover > a{color:#fdcd05;}
 .global-search-container .form-group .append .icon{color:#49211f;}
 .global-search-container .item{color:#2e1213;}
 .global-search-container .item:hover{color:#fdcd05;}
+.global-search-container.minisite .btn-close{background:#ffd000;}
+.global-search-container.minisite .hamburger > *{background:#ffffff;}
+.global-search-container.minisite .form-group .append .icon{color:#ffd000;}
 
 /* Back to Top */
 .back-to-top{background:rgba(255,183,57,.85); color:#ffffff!important; border-color:#ffffff;}
@@ -235,8 +238,8 @@ nav.sfooter-minisite .grid-line > .line::before{background:#ffffff;}
 .btn.btn-color-08, .btn.btn-color-08:focus{
     color:#ffffff; background:#a2a2a2; border-color:#a2a2a2;
 }
-.btn.btn-color-08:hover{box-shadow:inset 0 0 0 100rem rgba(255,255,255,.05);}
-.btn.btn-color-08:active{box-shadow:inset 0 0 0 100rem rgba(255,255,255,.10);}
+.btn.btn-color-08:hover{box-shadow:inset 0 0 0 100rem rgba(0,0,0,.05);}
+.btn.btn-color-08:active{box-shadow:inset 0 0 0 100rem rgba(0,0,0,.10);}
 
 .btn.btn-color-09, .btn.btn-color-09:focus{
     color:#fdcd05; background:#4d2224; border-color:#4d2224;
@@ -247,14 +250,20 @@ nav.sfooter-minisite .grid-line > .line::before{background:#ffffff;}
 .btn.btn-color-10, .btn.btn-color-10:focus{
     color:#ffffff; background:#fdcd05; border-color:#fdcd05;
 }
-.btn.btn-color-10:hover{box-shadow:inset 0 0 0 100rem rgba(255,255,255,.05);}
-.btn.btn-color-10:active{box-shadow:inset 0 0 0 100rem rgba(255,255,255,.10);}
+.btn.btn-color-10:hover{box-shadow:inset 0 0 0 100rem rgba(0,0,0,.05);}
+.btn.btn-color-10:active{box-shadow:inset 0 0 0 100rem rgba(0,0,0,.10);}
 
 .btn.btn-color-11, .btn.btn-color-11:focus{
     color:#000000; background:#fdcd05; border-color:#fdcd05;
 }
-.btn.btn-color-11:hover{box-shadow:inset 0 0 0 100rem rgba(255,255,255,.05);}
-.btn.btn-color-11:active{box-shadow:inset 0 0 0 100rem rgba(255,255,255,.10);}
+.btn.btn-color-11:hover{box-shadow:inset 0 0 0 100rem rgba(0,0,0,.05);}
+.btn.btn-color-11:active{box-shadow:inset 0 0 0 100rem rgba(0,0,0,.10);}
+
+.btn.btn-color-12, .btn.btn-color-12:focus{
+    color:#000000; background:#ffffff; border-color:#ffffff;
+}
+.btn.btn-color-12:hover{box-shadow:inset 0 0 0 100rem rgba(0,0,0,.05);}
+.btn.btn-color-12:active{box-shadow:inset 0 0 0 100rem rgba(0,0,0,.10);}
 
 .btn.btn-social.fw{background:#3b56a3; color:#ffffff;}
 .btn.btn-social.gg{background:#b62c22; color:#ffffff;}
@@ -386,8 +395,10 @@ input[type=file].sgray, select.sgray, textarea.sgray,
 
 /* Popup */
 .popup-container .popup-box > .content-container{background:#ffffff;}
-.popup-container .popup-box > .btn-close{background:#fdcd05; background:var(--pcolor);}
-.popup-container .popup-box .hamburger > *{background:#181818; background:var(--tcolor);}
+.popup-container .popup-box > .btn-close{background:#fdcd05;}
+.popup-container .popup-box .hamburger > *{background:#181818;}
+.popup-container.simple .popup-box > .btn-close{background:#ffd000;}
+.popup-container.simple .hamburger > *{background:#ffffff;}
 
 
 /* Post Stat */
@@ -508,6 +519,9 @@ input[type=file].sgray, select.sgray, textarea.sgray,
 
 /* Special List */
 .ss-list > li::before{background:#fdcd05;}
+
+/* Special List 02 */
+.ss-list-02 > li::before{background:#fdcd05;}
 
 
 /* Special Stat */
@@ -693,6 +707,21 @@ table.table-stat, table.table-stat td{border-color:#ffffff;}
 .org-01 .node.node-04 > .node-container, 
 .org-01 .node.node-04 .child:hover > *{background:#b13601;}
 .org-01.round .node.node-04 > .node-container{background:#fe4d01;}
+
+/* Org 02 */
+.org-02 .node{background:#e1e1e1; color:#000000;}
+.org-02 .node h6{color:#993300;}
+.org-02 .node.node-slot{background:#993300; color:#ffffff;}
+.org-02 .node.node-slot h6{color:#ffffff;}
+.org-02 .node.node-slot.color-green{background:#169f96;}
+.org-02 .node-row::before, .org-02 .node-col .node::before,
+.org-02 .node-col .node::after{background:#000000;}
+.org-02 .node-tag{background:#000000; color:#ffffff;}
+.org-02 .node-tag.color-brown{background:#4d2224; color:#ffd000;}
+.org-02 .node-grid .title{background:#4d2224; color:#ffffff;}
+.org-02 .node-grid ol li{background:#ffd000; color:#000000; border-color:#ffffff;}
+.org-02 .node-grid ol li.stripe-01{background:#993300; color:#ffffff;}
+.org-02 .node-grid ol li.stripe-02{background:#4d2224; color:#ffd000;}
 
 
 /* Pagination 01 */

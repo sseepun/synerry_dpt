@@ -125,6 +125,30 @@ $(function(){ 'use strict';
         }
     });
 
+    // Letter Spacing
+    var lspBtns = $('.btn-lsp');
+    lspBtns.click(function(e){
+        e.preventDefault();
+        var self = $(this);
+        var val = Number(self.data('lsp'));
+        lspBtns.removeClass('active');
+        self.addClass('active');
+        if(!val){
+            $('body').css('letter-spacing', '');
+        }else{
+            $('body').css('letter-spacing', val+'px');
+        }
+    });
+
+    // Mouse Cursor
+    var cursorBtns = $('.btn-cursor');
+    cursorBtns.click(function(e){
+        e.preventDefault();
+        var self = $(this);
+        cursorBtns.removeClass('active');
+        self.addClass('active');
+    });
+
 
     // Accessibility
     var accessibility = $('nav.access-panel');

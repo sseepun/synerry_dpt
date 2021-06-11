@@ -12,6 +12,7 @@
     <?php
         $breadcrumb = [
             'leading' => 'ส',
+            'leading_class' => 'pull-right',
             'title' => 'มัครงาน',
             'desc' => 'กรมโยธาธิการและผังเมืองพร้อมให้ข้อมูลข่าวสารที่เป็นประโยชน์ สำหรับคุณ',
             'image' => 'public/assets/app/images/bg/minisite-breadcrumb-11.jpg',

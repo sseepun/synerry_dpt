@@ -108,6 +108,9 @@ nav.sidenav .submenu .dropdown-toggle{color:#ffffff;}
 .global-search-container input[type=text],
 .global-search-container input[type=text]:focus{border-color:#000000!important;}
 .global-search-container .form-group .append .icon{color:#ffffff;}
+.global-search-container.minisite .btn-close{background:#ffffff;}
+.global-search-container.minisite .hamburger > *{background:#000000;}
+.global-search-container.minisite .form-group .append .icon{color:#000000;}
 
 /* Back to Top */
 .back-to-top{background:#ffffff; color:#000000!important; border-color:#000000;}
@@ -151,7 +154,8 @@ nav.sfooter-minisite .grid-line > .line::before{background:#000000;}
 .btn.btn-color-08, .btn.btn-color-08:focus, .btn.btn-color-08:hover, .btn.btn-color-08:active,
 .btn.btn-color-09, .btn.btn-color-09:focus, .btn.btn-color-09:hover, .btn.btn-color-09:active, 
 .btn.btn-color-10, .btn.btn-color-10:focus, .btn.btn-color-10:hover, .btn.btn-color-10:active, 
-.btn.btn-color-11, .btn.btn-color-11:focus, .btn.btn-color-11:hover, .btn.btn-color-11:active{
+.btn.btn-color-11, .btn.btn-color-11:focus, .btn.btn-color-11:hover, .btn.btn-color-11:active, 
+.btn.btn-color-12, .btn.btn-color-12:focus, .btn.btn-color-12:hover, .btn.btn-color-12:active{
     color:#ffffff; background:#000000; border-color:#000000;
 }
 .btn.btn-ss::after{background:#ffffff;}
@@ -257,6 +261,8 @@ input[type=number], input[type=phone], input[type=submit], input[type=file], sel
 .popup-container .popup-box > .content-container{background:#ffffff; border-color:#000000;}
 .popup-container .popup-box > .btn-close{background:#000000; color:#ffffff;}
 .popup-container .popup-box .hamburger > *{background:#ffffff;}
+.popup-container.simple .popup-box > .btn-close{background:#000000;}
+.popup-container.simple .hamburger > *{background:#ffffff;}
 
 
 /* Post Stat */
@@ -369,6 +375,9 @@ input[type=number], input[type=phone], input[type=submit], input[type=file], sel
 
 /* Special List */
 .ss-list > li::before{background:#000000;}
+
+/* Special List 02 */
+.ss-list-02 > li::before{background:#000000;}
 
 
 /* Special Stat */
@@ -526,6 +535,15 @@ table.table-stat, table.table-stat td{border-color:#000000;}
 .org-01 .node.node-01 .children{background:#000000;}
 .org-01 .node .child{background:#ffffff; color:#000000;}
 .org-01 .node .child:hover > *{background:#000000; color:#ffffff;}
+
+/* Org 02 */
+.org-02 .node{background:#000000; color:#ffffff;}
+.org-02 .node.node-slot{background:#000000; color:#ffffff;}
+.org-02 .node-row::before, .org-02 .node-col .node::before,
+.org-02 .node-col .node::after{background:#000000;}
+.org-02 .node-tag{background:#000000; color:#ffffff;}
+.org-02 .node-grid .title{background:#000000; color:#ffffff;}
+.org-02 .node-grid ol li{background:#000000; color:#ffffff; border-color:#ffffff;}
 
 
 /* Pagination 01 */
